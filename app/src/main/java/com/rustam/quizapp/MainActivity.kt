@@ -4,15 +4,22 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.ui.navigation.AppNavHost
+import com.rustam.quizapp.ui.screens.settings.SettingsViewModel
 import com.rustam.quizapp.ui.theme.QuizappTheme
+import com.rustam.quizapp.ui.theme.shouldUseDarkTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            QuizappTheme {
+            val settingsViewModel: SettingsViewModel = viewModel()
+            val themeMode by settingsViewModel.themeMode.collectAsState()
+            QuizappTheme(darkTheme = shouldUseDarkTheme(themeMode)) {
                 AppNavHost()
             }
         }

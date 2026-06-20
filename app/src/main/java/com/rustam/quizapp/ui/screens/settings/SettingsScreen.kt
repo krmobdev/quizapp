@@ -2,6 +2,8 @@ package com.rustam.quizapp.ui.screens.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,6 +13,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Card
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -25,6 +28,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.data.ThemeMode
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
@@ -34,19 +38,24 @@ fun SettingsScreen(
     viewModel: SettingsViewModel = viewModel()
 ) {
     val soundEnabled by viewModel.soundEnabled.collectAsState()
+    val themeMode by viewModel.themeMode.collectAsState()
     SettingsContent(
         soundEnabled = soundEnabled,
+        themeMode = themeMode,
         onSoundEnabledChange = viewModel::setSoundEnabled,
+        onThemeModeChange = viewModel::setThemeMode,
         onBack = onBack,
         modifier = modifier
     )
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 private fun SettingsContent(
     soundEnabled: Boolean,
+    themeMode: ThemeMode,
     onSoundEnabledChange: (Boolean) -> Unit,
+    onThemeModeChange: (ThemeMode) -> Unit,
     onBack: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -79,6 +88,30 @@ private fun SettingsContent(
                 checked = soundEnabled,
                 onCheckedChange = onSoundEnabledChange
             )
+            Card(modifier = Modifier.fillMaxWidth()) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(text = "Тема", style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        text = "Внешний вид приложения",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        ThemeMode.entries.forEach { mode ->
+                            FilterChip(
+                                selected = themeMode == mode,
+                                onClick = { onThemeModeChange(mode) },
+                                label = { Text(mode.label) }
+                            )
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -121,7 +154,23 @@ private fun SettingsContentPreview() {
     QuizappTheme {
         SettingsContent(
             soundEnabled = true,
+            themeMode = ThemeMode.SYSTEM,
             onSoundEnabledChange = {},
+            onThemeModeChange = {},
+            onBack = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, name = "Dark")
+@Composable
+private fun SettingsContentDarkPreview() {
+    QuizappTheme(darkTheme = true) {
+        SettingsContent(
+            soundEnabled = true,
+            themeMode = ThemeMode.DARK,
+            onSoundEnabledChange = {},
+            onThemeModeChange = {},
             onBack = {}
         )
     }

@@ -3,6 +3,7 @@ package com.rustam.quizapp.data
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.stringPreferencesKey
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -24,8 +25,17 @@ class SettingsRepository(context: Context) {
         dataStore.edit { prefs -> prefs[SOUND_ENABLED] = enabled }
     }
 
+    val themeMode: Flow<ThemeMode> = dataStore.data.map { prefs ->
+        ThemeMode.fromStored(prefs[THEME_MODE])
+    }
+
+    suspend fun setThemeMode(mode: ThemeMode) {
+        dataStore.edit { prefs -> prefs[THEME_MODE] = mode.name }
+    }
+
     private companion object {
         const val DEFAULT_SOUND_ENABLED = true
         val SOUND_ENABLED = booleanPreferencesKey("sound_enabled")
+        val THEME_MODE = stringPreferencesKey("theme_mode")
     }
 }

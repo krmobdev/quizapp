@@ -1,31 +1,51 @@
 package com.rustam.quizapp.ui.screens.home
 
+import androidx.activity.compose.BackHandler
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
-import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -82,13 +102,30 @@ private fun HomeContent(
         modifier = modifier.fillMaxSize(),
         topBar = {
             CenterAlignedTopAppBar(
-                title = { Text("Викторина") },
-                actions = {
-                    TextButton(onClick = onOpenStats) {
-                        Text("Статистика")
+                title = {
+                    Text(
+                        if (state.selectedCategory == null) "Викторина"
+                        else "Уровень сложности"
+                    )
+                },
+                navigationIcon = {
+                    if (state.selectedCategory != null) {
+                        IconButton(onClick = onBack) {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                                contentDescription = "Назад"
+                            )
+                        }
                     }
-                    TextButton(onClick = onOpenSettings) {
-                        Text("Настройки")
+                },
+                actions = {
+                    if (state.selectedCategory == null) {
+                        TextButton(onClick = onOpenStats) {
+                            Text("Статистика")
+                        }
+                        TextButton(onClick = onOpenSettings) {
+                            Text("Настройки")
+                        }
                     }
                 }
             )
@@ -106,7 +143,6 @@ private fun HomeContent(
                 category = selected,
                 selectedDifficulty = state.selectedDifficulty,
                 onDifficultySelected = onDifficultySelected,
-                onBack = onBack,
                 onStart = { onStartQuiz(selected.id, state.selectedDifficulty.difficulty) },
                 modifier = Modifier.padding(innerPadding)
             )
@@ -141,7 +177,10 @@ private fun CategoryCard(
 ) {
     Card(
         onClick = onClick,
-        modifier = modifier.fillMaxWidth()
+        modifier = modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant
+        )
     ) {
         Column(
             modifier = Modifier
@@ -160,48 +199,207 @@ private fun CategoryCard(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun DifficultyPanel(
     category: Category,
     selectedDifficulty: DifficultyFilter,
     onDifficultySelected: (DifficultyFilter) -> Unit,
-    onBack: () -> Unit,
     onStart: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
         modifier = modifier
             .fillMaxSize()
-            .padding(24.dp),
+            .padding(horizontal = 20.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
-        Text(
-            text = "${category.emoji}  ${category.title}",
-            style = MaterialTheme.typography.headlineSmall
-        )
-        Text(
-            text = "Выберите сложность",
-            style = MaterialTheme.typography.titleMedium
-        )
-        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        CategoryHeroCard(category = category)
+
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(
+                text = "Выберите уровень",
+                style = MaterialTheme.typography.headlineSmall,
+                fontWeight = FontWeight.SemiBold
+            )
+            Text(
+                text = "10 вопросов · 10 секунд на ответ",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
+
+        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             DifficultyFilter.entries.forEach { filter ->
-                FilterChip(
+                DifficultyOptionCard(
+                    filter = filter,
                     selected = filter == selectedDifficulty,
-                    onClick = { onDifficultySelected(filter) },
-                    label = { Text(filter.label) }
+                    onClick = { onDifficultySelected(filter) }
                 )
             }
         }
+
+        Spacer(Modifier.weight(1f))
+
         Button(
             onClick = onStart,
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(12.dp)
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp),
+            shape = RoundedCornerShape(16.dp)
         ) {
-            Text("Начать квиз")
+            Text(
+                text = "Начать квиз",
+                style = MaterialTheme.typography.titleMedium
+            )
         }
-        TextButton(onClick = onBack) {
-            Text("Назад")
+        Spacer(Modifier.height(8.dp))
+    }
+}
+
+@Composable
+private fun CategoryHeroCard(
+    category: Category,
+    modifier: Modifier = Modifier
+) {
+    val gradient = Brush.linearGradient(
+        colors = listOf(
+            MaterialTheme.colorScheme.primaryContainer,
+            MaterialTheme.colorScheme.secondaryContainer
+        )
+    )
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(24.dp),
+        color = MaterialTheme.colorScheme.surface
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(gradient)
+                .padding(24.dp)
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(72.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.85f)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(text = category.emoji, style = MaterialTheme.typography.displayMedium)
+                }
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(
+                        text = category.title,
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
+                    Text(
+                        text = "400 вопросов в банке",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun DifficultyOptionCard(
+    filter: DifficultyFilter,
+    selected: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val containerColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primaryContainer
+        } else {
+            MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.55f)
+        },
+        animationSpec = tween(200),
+        label = "difficultyContainer"
+    )
+    val borderColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primary
+        } else {
+            MaterialTheme.colorScheme.outlineVariant
+        },
+        animationSpec = tween(200),
+        label = "difficultyBorder"
+    )
+    val scale by animateFloatAsState(
+        targetValue = if (selected) 1.02f else 1f,
+        animationSpec = tween(200),
+        label = "difficultyScale"
+    )
+
+    Card(
+        onClick = onClick,
+        modifier = modifier
+            .fillMaxWidth()
+            .scale(scale),
+        shape = RoundedCornerShape(20.dp),
+        colors = CardDefaults.cardColors(containerColor = containerColor),
+        border = BorderStroke(
+            width = if (selected) 2.dp else 1.dp,
+            color = borderColor
+        ),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = if (selected) 4.dp else 0.dp
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 14.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(48.dp)
+                    .clip(RoundedCornerShape(14.dp))
+                    .background(
+                        if (selected) {
+                            MaterialTheme.colorScheme.primary.copy(alpha = 0.15f)
+                        } else {
+                            MaterialTheme.colorScheme.surface.copy(alpha = 0.7f)
+                        }
+                    ),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(text = filter.emoji, style = MaterialTheme.typography.headlineSmall)
+            }
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                Text(
+                    text = filter.label,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Text(
+                    text = filter.subtitle,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            if (selected) {
+                Icon(
+                    imageVector = Icons.Rounded.CheckCircle,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(24.dp)
+                )
+            }
         }
     }
 }
@@ -233,6 +431,26 @@ private fun HomeContentDifficultyPreview() {
                 categories = listOf(Category("chemistry", "Химия", "🧪")),
                 selectedCategory = Category("chemistry", "Химия", "🧪"),
                 selectedDifficulty = DifficultyFilter.MEDIUM
+            ),
+            onCategoryClick = {},
+            onDifficultySelected = {},
+            onBack = {},
+            onStartQuiz = { _, _ -> },
+            onOpenStats = {},
+            onOpenSettings = {}
+        )
+    }
+}
+
+@Preview(showBackground = true, name = "Difficulty dark")
+@Composable
+private fun HomeContentDifficultyDarkPreview() {
+    QuizappTheme(darkTheme = true) {
+        HomeContent(
+            state = HomeUiState(
+                categories = listOf(Category("chemistry", "Химия", "🧪")),
+                selectedCategory = Category("chemistry", "Химия", "🧪"),
+                selectedDifficulty = DifficultyFilter.HARD
             ),
             onCategoryClick = {},
             onDifficultySelected = {},

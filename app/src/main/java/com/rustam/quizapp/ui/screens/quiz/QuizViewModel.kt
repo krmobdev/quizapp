@@ -15,6 +15,7 @@ import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.StatsRepository
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.domain.QuizSession
+import com.rustam.quizapp.ui.screens.quiz.QuizViewModel.Companion.QUESTION_TIME_SECONDS
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
