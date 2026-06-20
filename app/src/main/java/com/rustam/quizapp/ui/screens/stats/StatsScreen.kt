@@ -9,80 +9,64 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material3.Card
-import androidx.compose.material3.CenterAlignedTopAppBar
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
+import com.rustam.quizapp.ui.components.AppDimens
+import com.rustam.quizapp.ui.components.GlassCard
+import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
 fun StatsScreen(
-    onBack: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: StatsViewModel = viewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
-    StatsContent(state = state, onBack = onBack, modifier = modifier)
+    StatsContent(state = state, modifier = modifier)
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun StatsContent(
     state: StatsUiState,
-    onBack: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Scaffold(
+    val colors = rememberAppThemeColors()
+
+    LazyColumn(
         modifier = modifier.fillMaxSize(),
-        topBar = {
-            CenterAlignedTopAppBar(
-                title = { Text(stringResource(R.string.stats)) },
-                navigationIcon = {
-                    IconButton(onClick = onBack) {
-                        Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = stringResource(R.string.back)
-                        )
-                    }
-                }
+        contentPadding = PaddingValues(16.dp),
+        verticalArrangement = Arrangement.spacedBy(AppDimens.CardSpacing)
+    ) {
+        item {
+            Text(
+                text = stringResource(R.string.stats),
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(bottom = 4.dp)
             )
         }
-    ) { innerPadding ->
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(innerPadding),
-            contentPadding = PaddingValues(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
-            item {
-                SummaryCard(
-                    totalQuizzes = state.totalQuizzes,
-                    averageAccuracyPercent = state.averageAccuracyPercent
-                )
-            }
-            items(state.categories, key = { it.id }) { category ->
-                CategoryStatCard(category = category)
-            }
+        item {
+            SummaryCard(
+                totalQuizzes = state.totalQuizzes,
+                averageAccuracyPercent = state.averageAccuracyPercent,
+                colors = colors
+            )
+        }
+        items(state.categories, key = { it.id }) { category ->
+            CategoryStatCard(category = category, colors = colors)
         }
     }
 }
@@ -91,13 +75,14 @@ private fun StatsContent(
 private fun SummaryCard(
     totalQuizzes: Int,
     averageAccuracyPercent: Int?,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
     modifier: Modifier = Modifier
 ) {
-    Card(modifier = modifier.fillMaxWidth()) {
+    GlassCard(modifier = modifier, colors = colors) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(20.dp),
+                .padding(24.dp),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
             SummaryMetric(
@@ -127,12 +112,14 @@ private fun SummaryMetric(
         Text(
             text = value,
             style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary
         )
         Text(
             text = label,
             style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            textAlign = androidx.compose.ui.text.style.TextAlign.Center
         )
     }
 }
@@ -140,18 +127,20 @@ private fun SummaryMetric(
 @Composable
 private fun CategoryStatCard(
     category: CategoryStatsUi,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
     modifier: Modifier = Modifier
 ) {
-    Card(modifier = modifier.fillMaxWidth()) {
+    GlassCard(modifier = modifier, colors = colors) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .padding(AppDimens.CardPaddingH, AppDimens.CardPaddingV),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             Text(
                 text = "${category.emoji}  ${stringResource(category.titleRes)}",
-                style = MaterialTheme.typography.titleMedium
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold
             )
 
             if (category.hasData) {
@@ -160,7 +149,8 @@ private fun CategoryStatCard(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 2.dp),
-                    strokeCap = androidx.compose.ui.graphics.StrokeCap.Round
+                    strokeCap = StrokeCap.Round,
+                    trackColor = colors.progressTrack
                 )
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -226,8 +216,7 @@ private fun StatsContentPreview() {
                     CategoryStatsUi("chemistry", R.string.category_chemistry, "🧪", attempts = 4, accuracyPercent = 80, bestScorePercent = 90),
                     CategoryStatsUi("physics", R.string.category_physics, "⚛️", attempts = 0, accuracyPercent = 0, bestScorePercent = 0)
                 )
-            ),
-            onBack = {}
+            )
         )
     }
 }

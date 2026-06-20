@@ -14,20 +14,15 @@ import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.rustam.quizapp.data.Difficulty
-import com.rustam.quizapp.ui.screens.home.HomeScreen
 import com.rustam.quizapp.ui.screens.quiz.QuizScreen
 import com.rustam.quizapp.ui.screens.result.ResultScreen
-import com.rustam.quizapp.ui.screens.settings.SettingsScreen
-import com.rustam.quizapp.ui.screens.stats.StatsScreen
 
 /** Route definitions and helpers for building/parsing the quiz flow destinations. */
 object Routes {
     const val GRAPH = "quiz_flow"
-    const val HOME = "home"
+    const val MAIN = "main"
     const val QUIZ = "quiz/{categoryId}/{difficulty}"
     const val RESULT = "result"
-    const val STATS = "stats"
-    const val SETTINGS = "settings"
 
     private const val ANY = "ANY"
 
@@ -41,24 +36,14 @@ object Routes {
 @Composable
 fun AppNavHost(navController: NavHostController = rememberNavController()) {
     NavHost(navController = navController, startDestination = Routes.GRAPH) {
-        navigation(route = Routes.GRAPH, startDestination = Routes.HOME) {
+        navigation(route = Routes.GRAPH, startDestination = Routes.MAIN) {
 
-            composable(Routes.HOME) {
-                HomeScreen(
+            composable(Routes.MAIN) {
+                MainShell(
                     onStartQuiz = { categoryId, difficulty ->
                         navController.navigate(Routes.quiz(categoryId, difficulty))
-                    },
-                    onOpenStats = { navController.navigate(Routes.STATS) },
-                    onOpenSettings = { navController.navigate(Routes.SETTINGS) }
+                    }
                 )
-            }
-
-            composable(Routes.STATS) {
-                StatsScreen(onBack = { navController.navigateUp() })
-            }
-
-            composable(Routes.SETTINGS) {
-                SettingsScreen(onBack = { navController.navigateUp() })
             }
 
             composable(
@@ -102,8 +87,8 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                         }
                     },
                     onHome = {
-                        navController.navigate(Routes.HOME) {
-                            popUpTo(Routes.HOME) { inclusive = true }
+                        navController.navigate(Routes.MAIN) {
+                            popUpTo(Routes.MAIN) { inclusive = true }
                         }
                     }
                 )
@@ -118,8 +103,8 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
  * predictive-back gestures cannot pop past home and finish the activity.
  */
 private fun NavController.popBackToHome() {
-    navigate(Routes.HOME) {
-        popUpTo(Routes.HOME) { inclusive = false }
+    navigate(Routes.MAIN) {
+        popUpTo(Routes.MAIN) { inclusive = false }
         launchSingleTop = true
     }
 }

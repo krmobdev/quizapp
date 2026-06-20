@@ -25,7 +25,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.rounded.CheckCircle
-import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -36,16 +35,16 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -54,6 +53,10 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Category
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.ui.components.AppActionButton
+import com.rustam.quizapp.ui.components.AppShapes
+import com.rustam.quizapp.ui.components.GlassCard
+import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.localization.labelRes
 import com.rustam.quizapp.ui.localization.subtitleRes
 import com.rustam.quizapp.ui.theme.QuizappTheme
@@ -61,12 +64,14 @@ import com.rustam.quizapp.ui.theme.QuizappTheme
 @Composable
 fun HomeScreen(
     onStartQuiz: (categoryId: String, difficulty: Difficulty?) -> Unit,
-    onOpenStats: () -> Unit,
-    onOpenSettings: () -> Unit,
+    onOverlayModeChange: (Boolean) -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = viewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
+    LaunchedEffect(state.selectedCategory) {
+        onOverlayModeChange(state.selectedCategory != null)
+    }
     HomeContent(
         state = state,
         onCategoryClick = viewModel::selectCategory,
@@ -75,14 +80,6 @@ fun HomeScreen(
         onStartQuiz = { categoryId, difficulty ->
             viewModel.playClick()
             onStartQuiz(categoryId, difficulty)
-        },
-        onOpenStats = {
-            viewModel.playClick()
-            onOpenStats()
-        },
-        onOpenSettings = {
-            viewModel.playClick()
-            onOpenSettings()
         },
         modifier = modifier
     )
@@ -96,14 +93,13 @@ private fun HomeContent(
     onDifficultySelected: (DifficultyFilter) -> Unit,
     onBack: () -> Unit,
     onStartQuiz: (categoryId: String, difficulty: Difficulty?) -> Unit,
-    onOpenStats: () -> Unit,
-    onOpenSettings: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     BackHandler(enabled = state.selectedCategory != null, onBack = onBack)
 
     Scaffold(
         modifier = modifier.fillMaxSize(),
+        containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0f),
         topBar = {
             CenterAlignedTopAppBar(
                 title = {
@@ -121,16 +117,6 @@ private fun HomeContent(
                                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                                 contentDescription = stringResource(R.string.back)
                             )
-                        }
-                    }
-                },
-                actions = {
-                    if (state.selectedCategory == null) {
-                        TextButton(onClick = onOpenStats) {
-                            Text(stringResource(R.string.stats))
-                        }
-                        TextButton(onClick = onOpenSettings) {
-                            Text(stringResource(R.string.settings))
                         }
                     }
                 }
@@ -166,8 +152,8 @@ private fun CategoryGrid(
         columns = GridCells.Adaptive(minSize = 150.dp),
         modifier = modifier.fillMaxSize(),
         contentPadding = PaddingValues(16.dp),
-        horizontalArrangement = Arrangement.spacedBy(16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+        horizontalArrangement = Arrangement.spacedBy(14.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
         items(categories, key = { it.id }) { category ->
             CategoryCard(category = category, onClick = { onCategoryClick(category) })
@@ -181,24 +167,40 @@ private fun CategoryCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Card(
-        onClick = onClick,
-        modifier = modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant
+    val colors = rememberAppThemeColors()
+    val accent = Brush.linearGradient(
+        colors = listOf(
+            MaterialTheme.colorScheme.primary.copy(alpha = 0.18f),
+            MaterialTheme.colorScheme.tertiary.copy(alpha = 0.12f)
         )
+    )
+
+    GlassCard(
+        modifier = modifier,
+        colors = colors,
+        onClick = onClick
     ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
+                .background(accent)
                 .padding(vertical = 28.dp, horizontal = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(8.dp)
+            verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            Text(text = category.emoji, style = MaterialTheme.typography.displaySmall)
+            Box(
+                modifier = Modifier
+                    .size(56.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.75f)),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(text = category.emoji, style = MaterialTheme.typography.headlineLarge)
+            }
             Text(
                 text = stringResource(category.titleRes),
                 style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
                 textAlign = TextAlign.Center
             )
         }
@@ -246,18 +248,11 @@ private fun DifficultyPanel(
 
         Spacer(Modifier.weight(1f))
 
-        Button(
+        AppActionButton(
+            text = stringResource(R.string.start_quiz),
             onClick = onStart,
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp),
-            shape = RoundedCornerShape(16.dp)
-        ) {
-            Text(
-                text = stringResource(R.string.start_quiz),
-                style = MaterialTheme.typography.titleMedium
-            )
-        }
+            primary = true
+        )
         Spacer(Modifier.height(8.dp))
     }
 }
@@ -267,17 +262,14 @@ private fun CategoryHeroCard(
     category: Category,
     modifier: Modifier = Modifier
 ) {
+    val colors = rememberAppThemeColors()
     val gradient = Brush.linearGradient(
         colors = listOf(
             MaterialTheme.colorScheme.primaryContainer,
             MaterialTheme.colorScheme.secondaryContainer
         )
     )
-    Surface(
-        modifier = modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(24.dp),
-        color = MaterialTheme.colorScheme.surface
-    ) {
+    GlassCard(modifier = modifier, colors = colors) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -322,11 +314,12 @@ private fun DifficultyOptionCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val colors = rememberAppThemeColors()
     val containerColor by animateColorAsState(
         targetValue = if (selected) {
-            MaterialTheme.colorScheme.primaryContainer
+            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.9f)
         } else {
-            MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.55f)
+            colors.glassCard
         },
         animationSpec = tween(200),
         label = "difficultyContainer"
@@ -335,7 +328,7 @@ private fun DifficultyOptionCard(
         targetValue = if (selected) {
             MaterialTheme.colorScheme.primary
         } else {
-            MaterialTheme.colorScheme.outlineVariant
+            colors.glassBorder
         },
         animationSpec = tween(200),
         label = "difficultyBorder"
@@ -351,7 +344,7 @@ private fun DifficultyOptionCard(
         modifier = modifier
             .fillMaxWidth()
             .scale(scale),
-        shape = RoundedCornerShape(20.dp),
+        shape = AppShapes.Card,
         colors = CardDefaults.cardColors(containerColor = containerColor),
         border = BorderStroke(
             width = if (selected) 2.dp else 1.dp,
@@ -421,29 +414,7 @@ private fun HomeContentCategoriesPreview() {
             onCategoryClick = {},
             onDifficultySelected = {},
             onBack = {},
-            onStartQuiz = { _, _ -> },
-            onOpenStats = {},
-            onOpenSettings = {}
-        )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-private fun HomeContentDifficultyPreview() {
-    QuizappTheme {
-        HomeContent(
-            state = HomeUiState(
-                categories = listOf(Category("chemistry", R.string.category_chemistry, "🧪")),
-                selectedCategory = Category("chemistry", R.string.category_chemistry, "🧪"),
-                selectedDifficulty = DifficultyFilter.MEDIUM
-            ),
-            onCategoryClick = {},
-            onDifficultySelected = {},
-            onBack = {},
-            onStartQuiz = { _, _ -> },
-            onOpenStats = {},
-            onOpenSettings = {}
+            onStartQuiz = { _, _ -> }
         )
     }
 }
@@ -461,9 +432,7 @@ private fun HomeContentDifficultyDarkPreview() {
             onCategoryClick = {},
             onDifficultySelected = {},
             onBack = {},
-            onStartQuiz = { _, _ -> },
-            onOpenStats = {},
-            onOpenSettings = {}
+            onStartQuiz = { _, _ -> }
         )
     }
 }
