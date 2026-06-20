@@ -7,10 +7,12 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.rustam.quizapp.domain.DailyQuest
 import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.RewardCalculator
+import com.rustam.quizapp.domain.ShopCatalog
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
@@ -19,8 +21,17 @@ data class PlayerProfile(
     val name: String,
     val points: Int,
     val coins: Int,
+    val avatarEmoji: String,
     val dailyQuestCategoryId: String?,
     val dailyQuestCompleted: Boolean
+)
+
+/** Coins and the cosmetic items a player owns / has equipped, for the shop screen. */
+data class ShopState(
+    val coins: Int,
+    val ownedItemIds: Set<String>,
+    val equippedAvatarId: String,
+    val equippedThemeId: String
 )
 
 private val Context.playerDataStore: DataStore<Preferences> by preferencesDataStore(name = "quiz_player")
@@ -38,9 +49,52 @@ class PlayerRepository(
             name = prefs[PLAYER_NAME].orEmpty(),
             points = prefs[POINTS] ?: 0,
             coins = prefs[COINS] ?: 0,
+            avatarEmoji = ShopCatalog.avatarEmoji(prefs[EQUIPPED_AVATAR] ?: ShopCatalog.DEFAULT_AVATAR_ID),
             dailyQuestCategoryId = questCategory?.id,
             dailyQuestCompleted = completedDay == DailyQuest.epochDay()
         )
+    }
+
+    /** Coins and owned/equipped cosmetics, used by the shop screen. */
+    fun observeShop(): Flow<ShopState> = dataStore.data.map { prefs ->
+        ShopState(
+            coins = prefs[COINS] ?: 0,
+            ownedItemIds = (prefs[OWNED_ITEMS] ?: emptySet()) + ShopCatalog.freeItemIds,
+            equippedAvatarId = prefs[EQUIPPED_AVATAR] ?: ShopCatalog.DEFAULT_AVATAR_ID,
+            equippedThemeId = prefs[EQUIPPED_THEME] ?: ShopCatalog.DEFAULT_THEME_ID
+        )
+    }
+
+    /** The accent theme id applied app-wide. Defaults to the free theme. */
+    val equippedThemeId: Flow<String> = dataStore.data.map { prefs ->
+        prefs[EQUIPPED_THEME] ?: ShopCatalog.DEFAULT_THEME_ID
+    }
+
+    /**
+     * Buys [itemId] for [price] coins if affordable and not already owned.
+     * Returns `true` on a successful purchase. The read-and-write happens inside a
+     * single [edit] block so the balance check and deduction are atomic.
+     */
+    suspend fun purchase(itemId: String, price: Int): Boolean {
+        var purchased = false
+        dataStore.edit { prefs ->
+            val owned = (prefs[OWNED_ITEMS] ?: emptySet()) + ShopCatalog.freeItemIds
+            val coins = prefs[COINS] ?: 0
+            if (itemId !in owned && coins >= price) {
+                prefs[COINS] = coins - price
+                prefs[OWNED_ITEMS] = (prefs[OWNED_ITEMS] ?: emptySet()) + itemId
+                purchased = true
+            }
+        }
+        return purchased
+    }
+
+    suspend fun equipAvatar(avatarId: String) {
+        dataStore.edit { prefs -> prefs[EQUIPPED_AVATAR] = avatarId }
+    }
+
+    suspend fun equipTheme(themeId: String) {
+        dataStore.edit { prefs -> prefs[EQUIPPED_THEME] = themeId }
     }
 
     suspend fun setPlayerName(name: String) {
@@ -93,5 +147,8 @@ class PlayerRepository(
         val POINTS = intPreferencesKey("points")
         val COINS = intPreferencesKey("coins")
         val DAILY_COMPLETED_DAY = longPreferencesKey("daily_completed_day")
+        val OWNED_ITEMS = stringSetPreferencesKey("owned_items")
+        val EQUIPPED_AVATAR = stringPreferencesKey("equipped_avatar")
+        val EQUIPPED_THEME = stringPreferencesKey("equipped_theme")
     }
 }

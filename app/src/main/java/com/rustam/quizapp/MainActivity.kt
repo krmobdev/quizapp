@@ -21,8 +21,12 @@ class MainActivity : ComponentActivity() {
             val settingsViewModel: SettingsViewModel = viewModel()
             val themeMode by settingsViewModel.themeMode.collectAsState()
             val appLanguage by settingsViewModel.appLanguage.collectAsState()
+            val accentTheme by settingsViewModel.accentTheme.collectAsState()
             LocalizedApp(language = appLanguage) {
-                QuizappTheme(darkTheme = shouldUseDarkTheme(themeMode)) {
+                QuizappTheme(
+                    darkTheme = shouldUseDarkTheme(themeMode),
+                    accent = accentTheme
+                ) {
                     AppNavHost()
                 }
             }

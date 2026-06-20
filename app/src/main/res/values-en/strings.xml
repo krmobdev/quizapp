@@ -96,6 +96,19 @@
     <string name="stats_not_played">Not played yet</string>
     <string name="em_dash">—</string>
 
+    <string name="shop_title">Shop</string>
+    <string name="shop_balance">Your coins</string>
+    <string name="shop_avatars">Avatars</string>
+    <string name="shop_themes">Colour themes</string>
+    <string name="shop_equip">Equip</string>
+    <string name="shop_equipped">Equipped</string>
+    <string name="theme_accent_mint">Mint</string>
+    <string name="theme_accent_ocean">Ocean</string>
+    <string name="theme_accent_grape">Grape</string>
+    <string name="theme_accent_sunset">Sunset</string>
+    <string name="theme_accent_rose">Rose</string>
+    <string name="theme_accent_gold">Gold</string>
+
     <string-array name="daily_quotes">
         <item>Knowledge is power — practice is the key to mastery.</item>
         <item>Every expert was once a beginner.</item>

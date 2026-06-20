@@ -9,7 +9,11 @@
       "Bash(ls *.png)",
       "Bash(python -c ' *)",
       "PowerShell(winget upgrade *)",
-      "PowerShell(foreach \\($f in 'questions_history.json','questions_art.json'\\) { $p = \"app\\\\src\\\\main\\\\assets\\\\$f\"; try { $j = Get-Content $p -Raw | ConvertFrom-Json; $byDiff = $j | Group-Object difficulty | ForEach-Object { \"$\\($_.Name\\)=$\\($_.Count\\)\" }; $ids = \\($j.id | Sort-Object -Unique\\).Count; \"$f : OK, total=$\\($j.Count\\), uniqueIds=$ids, [$\\($byDiff -join ', '\\)]\" } catch { \"$f : PARSE ERROR -> $_\" } })"
+      "PowerShell(foreach \\($f in 'questions_history.json','questions_art.json'\\) { $p = \"app\\\\src\\\\main\\\\assets\\\\$f\"; try { $j = Get-Content $p -Raw | ConvertFrom-Json; $byDiff = $j | Group-Object difficulty | ForEach-Object { \"$\\($_.Name\\)=$\\($_.Count\\)\" }; $ids = \\($j.id | Sort-Object -Unique\\).Count; \"$f : OK, total=$\\($j.Count\\), uniqueIds=$ids, [$\\($byDiff -join ', '\\)]\" } catch { \"$f : PARSE ERROR -> $_\" } })",
+      "PowerShell(.\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 60)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr\"; .\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 70)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio1\\\\jbr\"; & \"$env:JAVA_HOME\\\\bin\\\\java.exe\" -version 2>&1)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio1\\\\jbr\"; .\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 80)"
     ]
   }
 }

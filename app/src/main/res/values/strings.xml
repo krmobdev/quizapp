@@ -96,6 +96,19 @@
     <string name="stats_not_played">Ещё не пройдено</string>
     <string name="em_dash">—</string>
 
+    <string name="shop_title">Магазин</string>
+    <string name="shop_balance">Ваши монеты</string>
+    <string name="shop_avatars">Аватары</string>
+    <string name="shop_themes">Цветовые темы</string>
+    <string name="shop_equip">Выбрать</string>
+    <string name="shop_equipped">Выбрано</string>
+    <string name="theme_accent_mint">Мятная</string>
+    <string name="theme_accent_ocean">Океан</string>
+    <string name="theme_accent_grape">Виноград</string>
+    <string name="theme_accent_sunset">Закат</string>
+    <string name="theme_accent_rose">Роза</string>
+    <string name="theme_accent_gold">Золото</string>
+
     <string-array name="daily_quotes">
         <item>Знание — сила, а практика — ключ к мастерству.</item>
         <item>Каждый эксперт когда-то был новичком.</item>

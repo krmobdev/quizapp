@@ -33,6 +33,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.ui.components.AppDimens
@@ -92,6 +93,7 @@ private fun StatsContent(
                 displayName = state.playerName.ifBlank {
                     stringResource(R.string.player_default_name)
                 },
+                avatarEmoji = state.avatarEmoji,
                 points = state.points,
                 coins = state.coins,
                 colors = colors,
@@ -138,6 +140,7 @@ private fun StatsContent(
 @Composable
 private fun PlayerProfileCard(
     displayName: String,
+    avatarEmoji: String,
     points: Int,
     coins: Int,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
@@ -155,8 +158,12 @@ private fun PlayerProfileCard(
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween
+                horizontalArrangement = Arrangement.spacedBy(14.dp)
             ) {
+                Text(
+                    text = avatarEmoji,
+                    fontSize = 34.sp
+                )
                 Text(
                     text = displayName,
                     style = MaterialTheme.typography.headlineSmall,

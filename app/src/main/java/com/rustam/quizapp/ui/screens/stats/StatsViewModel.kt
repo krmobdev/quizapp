@@ -28,6 +28,7 @@ data class CategoryStatsUi(
 
 data class PlayerUiState(
     val playerName: String = "",
+    val avatarEmoji: String = "🙂",
     val points: Int = 0,
     val coins: Int = 0,
     val dailyQuestCategoryId: String? = null,
@@ -77,6 +78,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
 
         return PlayerUiState(
             playerName = profile.name,
+            avatarEmoji = profile.avatarEmoji,
             points = profile.points,
             coins = profile.coins,
             dailyQuestCategoryId = profile.dailyQuestCategoryId,

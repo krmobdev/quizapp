@@ -4,11 +4,15 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.data.AppLanguage
+import com.rustam.quizapp.data.PlayerRepository
+import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.QuizProgressRepository
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.ThemeMode
+import com.rustam.quizapp.ui.theme.AccentTheme
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
@@ -16,6 +20,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     private val settingsRepository = SettingsRepository(application)
     private val progressRepository = QuizProgressRepository(application)
+    private val playerRepository = PlayerRepository(application, QuestionRepository(application))
 
     /** Mirrors the persisted `sound_enabled` flag (default `true`) for the UI switch. */
     val soundEnabled: StateFlow<Boolean> = settingsRepository.soundEnabled
@@ -26,6 +31,11 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     val appLanguage: StateFlow<AppLanguage> = settingsRepository.appLanguage
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), AppLanguage.defaultForSystem())
+
+    /** Accent palette equipped in the shop, applied app-wide by the theme. */
+    val accentTheme: StateFlow<AccentTheme> = playerRepository.equippedThemeId
+        .map { AccentTheme.fromId(it) }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), AccentTheme.DEFAULT)
 
     fun setSoundEnabled(enabled: Boolean) {
         viewModelScope.launch { settingsRepository.setSoundEnabled(enabled) }

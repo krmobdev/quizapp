@@ -5,6 +5,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material.icons.rounded.ShoppingCart
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -26,9 +27,10 @@ import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.ui.components.AppBackground
 import com.rustam.quizapp.ui.screens.home.HomeScreen
 import com.rustam.quizapp.ui.screens.settings.SettingsScreen
+import com.rustam.quizapp.ui.screens.shop.ShopScreen
 import com.rustam.quizapp.ui.screens.stats.StatsScreen
 
-private enum class MainTab { Home, Stats, Settings }
+private enum class MainTab { Home, Stats, Shop, Settings }
 
 @Composable
 fun MainShell(
@@ -72,6 +74,13 @@ fun MainShell(
                             colors = navItemColors
                         )
                         NavigationBarItem(
+                            selected = selectedTab == MainTab.Shop,
+                            onClick = { selectedTab = MainTab.Shop },
+                            icon = { Icon(Icons.Rounded.ShoppingCart, contentDescription = null) },
+                            label = { Text(stringResource(R.string.shop_title)) },
+                            colors = navItemColors
+                        )
+                        NavigationBarItem(
                             selected = selectedTab == MainTab.Settings,
                             onClick = { selectedTab = MainTab.Settings },
                             icon = { Icon(Icons.Rounded.Settings, contentDescription = null) },
@@ -89,6 +98,7 @@ fun MainShell(
                     modifier = Modifier.padding(innerPadding)
                 )
                 MainTab.Stats -> StatsScreen(modifier = Modifier.padding(innerPadding))
+                MainTab.Shop -> ShopScreen(modifier = Modifier.padding(innerPadding))
                 MainTab.Settings -> SettingsScreen(modifier = Modifier.padding(innerPadding))
             }
         }

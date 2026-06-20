@@ -1,0 +1,78 @@
+package com.rustam.quizapp.ui.theme
+
+import androidx.compose.ui.graphics.Color
+import com.rustam.quizapp.domain.ShopCatalog
+
+/**
+ * Accent colour palettes sold in the shop. Each palette overrides the
+ * primary / tertiary / container roles of the base [QuizappTheme] scheme,
+ * for both light and dark modes. [swatch] is the colour shown on the shop card.
+ *
+ * The palette id matches the corresponding [com.rustam.quizapp.domain.ThemeItem] id.
+ */
+enum class AccentTheme(
+    val id: String,
+    val swatch: Color,
+    val primaryLight: Color,
+    val onPrimaryLight: Color,
+    val containerLight: Color,
+    val tertiaryLight: Color,
+    val primaryDark: Color,
+    val onPrimaryDark: Color,
+    val containerDark: Color,
+    val tertiaryDark: Color
+) {
+    MINT(
+        id = ShopCatalog.DEFAULT_THEME_ID,
+        swatch = Color(0xFF1FB8A0),
+        primaryLight = Color(0xFF006B5B), onPrimaryLight = Color.White,
+        containerLight = Color(0xFF6FF7DD), tertiaryLight = Color(0xFF3A6470),
+        primaryDark = Color(0xFF50DBC0), onPrimaryDark = Color(0xFF00382F),
+        containerDark = Color(0xFF005144), tertiaryDark = Color(0xFFA2CEDC)
+    ),
+    OCEAN(
+        id = "theme_ocean",
+        swatch = Color(0xFF2C7BD6),
+        primaryLight = Color(0xFF0061A4), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFD1E4FF), tertiaryLight = Color(0xFF3F5C77),
+        primaryDark = Color(0xFF9FCAFF), onPrimaryDark = Color(0xFF003258),
+        containerDark = Color(0xFF00497D), tertiaryDark = Color(0xFFAAC7E0)
+    ),
+    GRAPE(
+        id = "theme_grape",
+        swatch = Color(0xFF7A5BD0),
+        primaryLight = Color(0xFF6750A4), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFEADDFF), tertiaryLight = Color(0xFF7D5260),
+        primaryDark = Color(0xFFD0BCFF), onPrimaryDark = Color(0xFF381E72),
+        containerDark = Color(0xFF4F378B), tertiaryDark = Color(0xFFEFB8C8)
+    ),
+    SUNSET(
+        id = "theme_sunset",
+        swatch = Color(0xFFE0651C),
+        primaryLight = Color(0xFFA23E00), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFFFDBCC), tertiaryLight = Color(0xFF6F5B40),
+        primaryDark = Color(0xFFFFB59B), onPrimaryDark = Color(0xFF5B1A00),
+        containerDark = Color(0xFF7D2D10), tertiaryDark = Color(0xFFDDC3A2)
+    ),
+    ROSE(
+        id = "theme_rose",
+        swatch = Color(0xFFD63B72),
+        primaryLight = Color(0xFFB3275E), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFFFD9E2), tertiaryLight = Color(0xFF7E5260),
+        primaryDark = Color(0xFFFFB1C8), onPrimaryDark = Color(0xFF5E1133),
+        containerDark = Color(0xFF8E2949), tertiaryDark = Color(0xFFE5BAD0)
+    ),
+    GOLD(
+        id = "theme_gold",
+        swatch = Color(0xFFD9A521),
+        primaryLight = Color(0xFF7D5700), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFFFDEA6), tertiaryLight = Color(0xFF50643F),
+        primaryDark = Color(0xFFF5BD48), onPrimaryDark = Color(0xFF422C00),
+        containerDark = Color(0xFF5F4100), tertiaryDark = Color(0xFFB5CC9C)
+    );
+
+    companion object {
+        val DEFAULT = MINT
+        fun fromId(id: String?): AccentTheme = entries.find { it.id == id } ?: DEFAULT
+    }
+}

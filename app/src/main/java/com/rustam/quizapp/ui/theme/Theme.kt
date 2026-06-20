@@ -3,6 +3,7 @@ package com.rustam.quizapp.ui.theme
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -57,6 +58,24 @@ private val LightColorScheme = lightColorScheme(
     outlineVariant = OutlineVariantLight
 )
 
+/** Overrides the primary/tertiary/container roles of a base scheme with a shop accent palette. */
+private fun ColorScheme.withAccent(accent: AccentTheme, dark: Boolean): ColorScheme =
+    if (dark) {
+        copy(
+            primary = accent.primaryDark,
+            onPrimary = accent.onPrimaryDark,
+            primaryContainer = accent.containerDark,
+            tertiary = accent.tertiaryDark
+        )
+    } else {
+        copy(
+            primary = accent.primaryLight,
+            onPrimary = accent.onPrimaryLight,
+            primaryContainer = accent.containerLight,
+            tertiary = accent.tertiaryLight
+        )
+    }
+
 @Composable
 fun shouldUseDarkTheme(themeMode: ThemeMode): Boolean = when (themeMode) {
     ThemeMode.DARK -> true
@@ -69,6 +88,8 @@ fun QuizappTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Brand "Химия" palette by default; flip to true for Material You wallpaper colors.
     dynamicColor: Boolean = false,
+    // Accent palette bought in the shop; overrides the brand primary/tertiary roles.
+    accent: AccentTheme = AccentTheme.DEFAULT,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -77,8 +98,8 @@ fun QuizappTheme(
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
 
-        darkTheme -> DarkColorScheme
-        else -> LightColorScheme
+        darkTheme -> DarkColorScheme.withAccent(accent, dark = true)
+        else -> LightColorScheme.withAccent(accent, dark = false)
     }
 
     val view = LocalView.current
