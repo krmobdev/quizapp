@@ -38,3 +38,14 @@ val OutlineVariantDark = Color(0xFF3F4945)
 // Answer feedback colors (kept distinct from the teal primary).
 val CorrectGreen = Color(0xFF2E7D32)
 val WrongRed = Color(0xFFC62828)
+val CorrectGreenDark = Color(0xFF4CAF50)
+val WrongRedDark = Color(0xFFEF5350)
+
+// Quiz screen — tuned for readability on dark backgrounds.
+val QuizBgTopDark = Color(0xFF0A1512)
+val QuizBgMidDark = Color(0xFF101413)
+val QuizBgBottomDark = Color(0xFF121A17)
+val QuizQuestionCardDark = Color(0xFF1E2825)
+val QuizAnswerCardDark = Color(0xFF2C3633)
+val QuizExplanationCardDark = Color(0xFF1F2E2A)
+val QuizCardBorderDark = Color(0xFF3D4A46)

@@ -12,8 +12,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.activity.compose.BackHandler
@@ -30,6 +30,44 @@ import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.ui.theme.QuizappTheme
+
+private val ResultButtonShape = RoundedCornerShape(24.dp)
+private val ResultButtonHeight = 72.dp
+private val ResultButtonSpacing = 12.dp
+
+@Composable
+private fun ResultActionButton(
+    text: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+    primary: Boolean = true
+) {
+    Button(
+        onClick = onClick,
+        enabled = enabled,
+        modifier = modifier
+            .fillMaxWidth()
+            .height(ResultButtonHeight),
+        shape = ResultButtonShape,
+        colors = if (primary) {
+            ButtonDefaults.buttonColors()
+        } else {
+            ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.secondaryContainer,
+                contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
+                disabledContainerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f),
+                disabledContentColor = MaterialTheme.colorScheme.onSecondaryContainer.copy(alpha = 0.5f)
+            )
+        }
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.SemiBold
+        )
+    }
+}
 
 @Composable
 fun ResultScreen(
@@ -118,22 +156,18 @@ private fun ResultContent(
         }
 
         Spacer(Modifier.height(16.dp))
-        Button(
+        ResultActionButton(
+            text = stringResource(R.string.result_retry_mistakes),
             onClick = onRetryMistakes,
             enabled = result.mistakes.isNotEmpty(),
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(12.dp)
-        ) {
-            Text(stringResource(R.string.result_retry_mistakes))
-        }
-        Spacer(Modifier.height(8.dp))
-        OutlinedButton(
+            primary = true
+        )
+        Spacer(Modifier.height(ResultButtonSpacing))
+        ResultActionButton(
+            text = stringResource(R.string.result_home),
             onClick = onHome,
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(12.dp)
-        ) {
-            Text(stringResource(R.string.result_home))
-        }
+            primary = false
+        )
     }
 }
 
@@ -178,7 +212,11 @@ private fun MissingResult(onHome: () -> Unit, modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.titleLarge
         )
         Spacer(Modifier.height(16.dp))
-        Button(onClick = onHome) { Text(stringResource(R.string.result_home)) }
+        ResultActionButton(
+            text = stringResource(R.string.result_home),
+            onClick = onHome,
+            primary = true
+        )
     }
 }
 
