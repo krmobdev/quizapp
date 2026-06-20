@@ -7,7 +7,9 @@
       "PowerShell(\"===\")",
       "Bash(rm -f shot_*.png ui_dump.xml)",
       "Bash(ls *.png)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "PowerShell(winget upgrade *)",
+      "PowerShell(foreach \\($f in 'questions_history.json','questions_art.json'\\) { $p = \"app\\\\src\\\\main\\\\assets\\\\$f\"; try { $j = Get-Content $p -Raw | ConvertFrom-Json; $byDiff = $j | Group-Object difficulty | ForEach-Object { \"$\\($_.Name\\)=$\\($_.Count\\)\" }; $ids = \\($j.id | Sort-Object -Unique\\).Count; \"$f : OK, total=$\\($j.Count\\), uniqueIds=$ids, [$\\($byDiff -join ', '\\)]\" } catch { \"$f : PARSE ERROR -> $_\" } })"
     ]
   }
 }
