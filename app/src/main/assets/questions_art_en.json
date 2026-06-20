@@ -1,0 +1,5602 @@
+[
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rubens?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Descent from the Cross"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rubens — Descent from the Cross.",
+    "id": "art_001"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist O'Keeffe?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "New Mexico landscapes"
+    ],
+    "correctIndex": 3,
+    "explanation": "O'Keeffe — New Mexico landscapes.",
+    "id": "art_002"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Delacroix?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Liberty Leading the People"
+    ],
+    "correctIndex": 3,
+    "explanation": "Delacroix — Liberty Leading the People.",
+    "id": "art_003"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Winter?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Korovin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Korovin — Winter.",
+    "id": "art_004"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Burial at Ornans?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Courbet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Courbet — Burial at Ornans.",
+    "id": "art_005"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Aivazovsky?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Black Sea"
+    ],
+    "correctIndex": 3,
+    "explanation": "Aivazovsky — Black Sea.",
+    "id": "art_006"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Harvest?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Goncharova"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Goncharova — Harvest.",
+    "id": "art_007"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Vasiliev?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Thaw"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vasiliev — Thaw.",
+    "id": "art_008"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which art movement is associated with: Malevich?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Suprematism"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Suprematism.",
+    "id": "art_009"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Descent from the Cross?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rubens"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rubens — Descent from the Cross.",
+    "id": "art_010"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Levitan?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Fresh Wind"
+    ],
+    "correctIndex": 3,
+    "explanation": "Levitan — Fresh Wind.",
+    "id": "art_011"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Archipenko?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Walking Woman"
+    ],
+    "correctIndex": 3,
+    "explanation": "Archipenko — Walking Woman.",
+    "id": "art_012"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In which city is the Vatican Museums located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "Vatican City"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Vatican Museums is in Vatican City.",
+    "id": "art_013"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Still Life?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Falk"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Falk — Still Life.",
+    "id": "art_014"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: American Gothic?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Grant Wood"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Grant Wood — American Gothic.",
+    "id": "art_015"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Formula of Color?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Filonov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Filonov — Formula of Color.",
+    "id": "art_016"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Harlequin?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Somov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Somov — Harlequin.",
+    "id": "art_017"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Spring Landscape?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Larionov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Larionov — Spring Landscape.",
+    "id": "art_018"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Tilled Field?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Miró"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Miró — The Tilled Field.",
+    "id": "art_019"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Seurat?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "pointillism"
+    ],
+    "correctIndex": 3,
+    "explanation": "Seurat — pointillism.",
+    "id": "art_020"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Rain in an Oak Forest?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Shishkin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Shishkin — Rain in an Oak Forest.",
+    "id": "art_021"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Somov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Promenade"
+    ],
+    "correctIndex": 3,
+    "explanation": "Somov — Promenade.",
+    "id": "art_022"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rerikh?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Overseas Guests"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rerikh — Overseas Guests.",
+    "id": "art_023"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Above the City?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Chagall"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Chagall — Above the City.",
+    "id": "art_024"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Larionov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Spring Landscape"
+    ],
+    "correctIndex": 3,
+    "explanation": "Larionov — Spring Landscape.",
+    "id": "art_025"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Falconet?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Bronze Horseman"
+    ],
+    "correctIndex": 3,
+    "explanation": "Falconet — Bronze Horseman.",
+    "id": "art_026"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Third of May?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Goya"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Goya — The Third of May.",
+    "id": "art_027"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Kustodiev?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Merchant's Wife"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kustodiev — Merchant's Wife.",
+    "id": "art_028"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Scream?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Munch"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Munch — The Scream.",
+    "id": "art_029"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Kiss?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Klimt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Klimt — The Kiss.",
+    "id": "art_030"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which technique is described: glass in a frame?",
+    "options": [
+      "Fresco",
+      "Oil painting",
+      "Watercolor",
+      "Stained glass"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Stained glass.",
+    "id": "art_031"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: mechanical forms?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Léger"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Léger — mechanical forms.",
+    "id": "art_032"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: pointillism?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Seurat"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Seurat — pointillism.",
+    "id": "art_033"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Bakst?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Costume Design"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bakst — Costume Design.",
+    "id": "art_034"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Detroit Industry?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rivera"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rivera — Detroit Industry.",
+    "id": "art_035"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Troika?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Perov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Perov — Troika.",
+    "id": "art_036"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: seascapes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Aivazovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Aivazovsky — seascapes.",
+    "id": "art_037"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Léger?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "mechanical forms"
+    ],
+    "correctIndex": 3,
+    "explanation": "Léger — mechanical forms.",
+    "id": "art_038"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Pablo Picasso create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Guernica"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pablo Picasso created \"Guernica\".",
+    "id": "art_039"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Vasnetsov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Ivan Tsarevich"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vasnetsov — Ivan Tsarevich.",
+    "id": "art_040"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Campbell's Soup?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Warhol"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Warhol — Campbell's Soup.",
+    "id": "art_041"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Rose and the Cross?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vrubel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vrubel — The Rose and the Cross.",
+    "id": "art_042"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Ge?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Last Supper"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ge — The Last Supper.",
+    "id": "art_043"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Cézanne?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Still Life with Apples"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cézanne — Still Life with Apples.",
+    "id": "art_044"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Goya?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Third of May"
+    ],
+    "correctIndex": 3,
+    "explanation": "Goya — Third of May.",
+    "id": "art_045"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Venus of Urbino?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Titian"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Titian — Venus of Urbino.",
+    "id": "art_046"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: pool paintings?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Hockney"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hockney — pool paintings.",
+    "id": "art_047"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Black Square?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Malevich"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Malevich — Black Square.",
+    "id": "art_048"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: jungle scenes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rousseau"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rousseau — jungle scenes.",
+    "id": "art_049"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Yaroshenko?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Life Is Everywhere"
+    ],
+    "correctIndex": 3,
+    "explanation": "Yaroshenko — Life Is Everywhere.",
+    "id": "art_050"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Schiele?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "portraits"
+    ],
+    "correctIndex": 3,
+    "explanation": "Schiele — portraits.",
+    "id": "art_051"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Reply of the Zaporozhian Cossacks?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Repin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Repin — Reply of the Zaporozhian Cossacks.",
+    "id": "art_052"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Two Fridas?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Frida Kahlo"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Frida Kahlo — The Two Fridas.",
+    "id": "art_053"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Vision to the Youth Bartholomew?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Nesterov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Nesterov — Vision to the Youth Bartholomew.",
+    "id": "art_054"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"The Ninth Wave\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Ivan Aivazovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Ninth Wave\" is by Ivan Aivazovsky.",
+    "id": "art_055"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: color fields?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Rothko"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rothko — color fields.",
+    "id": "art_056"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Persistence of Memory?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Dalí"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Dalí — Persistence of Memory.",
+    "id": "art_057"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Hopper?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Automat"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hopper — Automat.",
+    "id": "art_058"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Van Gogh?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Café Terrace at Night"
+    ],
+    "correctIndex": 3,
+    "explanation": "Van Gogh — Café Terrace at Night.",
+    "id": "art_059"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Filonov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Formula of Color"
+    ],
+    "correctIndex": 3,
+    "explanation": "Filonov — Formula of Color.",
+    "id": "art_060"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: illustrations?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bilibin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bilibin — illustrations.",
+    "id": "art_061"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Vrubel?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Seated Demon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vrubel — The Seated Demon.",
+    "id": "art_062"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rothko?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Orange and Yellow"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rothko — Orange and Yellow.",
+    "id": "art_063"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: demons?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vrubel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vrubel — demons.",
+    "id": "art_064"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Nolde?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "flowers"
+    ],
+    "correctIndex": 3,
+    "explanation": "Nolde — flowers.",
+    "id": "art_065"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Fountain?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Duchamp"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Duchamp — Fountain.",
+    "id": "art_066"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Kuindzhi?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Moonlit Night"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kuindzhi — Moonlit Night.",
+    "id": "art_067"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Repin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Barge Haulers"
+    ],
+    "correctIndex": 3,
+    "explanation": "Repin — Barge Haulers.",
+    "id": "art_068"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Mona Lisa?",
+    "options": [
+      "Michelangelo",
+      "Raphael",
+      "Botticelli",
+      "da Vinci"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is da Vinci — Mona Lisa.",
+    "id": "art_069"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Versailles?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Benois"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Benois — Versailles.",
+    "id": "art_070"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: drip painting?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Pollock"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Pollock — drip painting.",
+    "id": "art_071"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Calling of Matthew?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Caravaggio"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Caravaggio — The Calling of Matthew.",
+    "id": "art_072"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Las Meninas?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Velázquez"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Velázquez — Las Meninas.",
+    "id": "art_073"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Feshin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Bashkir"
+    ],
+    "correctIndex": 3,
+    "explanation": "Feshin — Bashkir.",
+    "id": "art_074"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Countess Mordvinova?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Shishkin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Shishkin — Countess Mordvinova.",
+    "id": "art_075"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Korin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Goalkeeper"
+    ],
+    "correctIndex": 3,
+    "explanation": "Korin — Goalkeeper.",
+    "id": "art_076"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Rain on Bridge?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Hiroshige"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hiroshige — Rain on Bridge.",
+    "id": "art_077"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Morning of the Streltsy Execution?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Surikov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Surikov — Morning of the Streltsy Execution.",
+    "id": "art_078"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Swan Princess?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vrubel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vrubel — The Swan Princess.",
+    "id": "art_079"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Christ and the Sinner?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Polenov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Polenov — Christ and the Sinner.",
+    "id": "art_080"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rauschenberg?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "combines"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rauschenberg — combines.",
+    "id": "art_081"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: optical illusions?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Escher"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Escher — optical illusions.",
+    "id": "art_082"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Raphael?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Birth of Venus",
+      "Sistine Madonna"
+    ],
+    "correctIndex": 3,
+    "explanation": "Raphael — Sistine Madonna.",
+    "id": "art_083"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Johns?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "flags"
+    ],
+    "correctIndex": 3,
+    "explanation": "Johns — flags.",
+    "id": "art_084"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: action painting?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Pollock"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Pollock — action painting.",
+    "id": "art_085"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: color theory?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Klee"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Klee — color theory.",
+    "id": "art_086"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Composition VII?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kandinsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kandinsky — Composition VII.",
+    "id": "art_087"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Golden Autumn?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Levitan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Levitan — Golden Autumn.",
+    "id": "art_088"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: International Klein Blue?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Klein"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Klein — International Klein Blue.",
+    "id": "art_089"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Great Wave?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Hokusai"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hokusai — Great Wave.",
+    "id": "art_090"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Frida Kahlo?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Two Fridas"
+    ],
+    "correctIndex": 3,
+    "explanation": "Frida Kahlo — The Two Fridas.",
+    "id": "art_091"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: abstract compositions?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kandinsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kandinsky — abstract compositions.",
+    "id": "art_092"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which art movement is associated with: Picasso and Braque?",
+    "options": [
+      "Impressionism",
+      "Surrealism",
+      "Renaissance",
+      "Cubism"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Cubism.",
+    "id": "art_093"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Kramskoy?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Christ in the Wilderness"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kramskoy — Christ in the Wilderness.",
+    "id": "art_094"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Merchant's Wife?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kustodiev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kustodiev — Merchant's Wife.",
+    "id": "art_095"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Café Terrace at Night?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Van Gogh"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Van Gogh — Café Terrace at Night.",
+    "id": "art_096"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Peter the Great?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Ge"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ge — Peter the Great.",
+    "id": "art_097"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Savrasov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Rooks Have Returned"
+    ],
+    "correctIndex": 3,
+    "explanation": "Savrasov — The Rooks Have Returned.",
+    "id": "art_098"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: mobiles?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Calder"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Calder — mobiles.",
+    "id": "art_099"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: guerrilla art?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Banksy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Banksy — guerrilla art.",
+    "id": "art_100"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which art movement is associated with: Warhol?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Pop Art"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Pop Art.",
+    "id": "art_101"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: zip paintings?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Newman"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Newman — zip paintings.",
+    "id": "art_102"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Seated Demon?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vrubel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vrubel — The Seated Demon.",
+    "id": "art_103"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"The Last Supper\"?",
+    "options": [
+      "Vincent van Gogh",
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Last Supper\" is by Leonardo da Vinci.",
+    "id": "art_104"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Starry Night?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Van Gogh"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Van Gogh — Starry Night.",
+    "id": "art_105"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Calder?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "wire sculptures"
+    ],
+    "correctIndex": 3,
+    "explanation": "Calder — wire sculptures.",
+    "id": "art_106"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait of Ida Rubinstein?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Serov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Serov — Portrait of Ida Rubinstein.",
+    "id": "art_107"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: After the Rain?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vasiliev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasiliev — After the Rain.",
+    "id": "art_108"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Munch?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Scream"
+    ],
+    "correctIndex": 3,
+    "explanation": "Munch — The Scream.",
+    "id": "art_109"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Toulouse-Lautrec?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Moulin Rouge"
+    ],
+    "correctIndex": 3,
+    "explanation": "Toulouse-Lautrec — Moulin Rouge.",
+    "id": "art_110"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: elephants?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Dali"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Dali — elephants.",
+    "id": "art_111"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: fauvism?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vlaminck"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vlaminck — fauvism.",
+    "id": "art_112"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Son of Man?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Magritte"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Magritte — The Son of Man.",
+    "id": "art_113"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which work did Michelangelo create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "David"
+    ],
+    "correctIndex": 3,
+    "explanation": "Michelangelo created \"David\".",
+    "id": "art_114"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: portraits?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Repin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Repin — portraits.",
+    "id": "art_115"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which work did Ilya Repin create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Barge Haulers on the Volga"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ilya Repin created \"Barge Haulers on the Volga\".",
+    "id": "art_116"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which art movement is associated with: Kandinsky?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Avant-garde"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Avant-garde.",
+    "id": "art_117"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Ecstasy of Saint Teresa?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bernini"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bernini — Ecstasy of Saint Teresa.",
+    "id": "art_118"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Claude Monet create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Water Lilies"
+    ],
+    "correctIndex": 3,
+    "explanation": "Claude Monet created \"Water Lilies\".",
+    "id": "art_119"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Shishkin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Rye"
+    ],
+    "correctIndex": 3,
+    "explanation": "Shishkin — Rye.",
+    "id": "art_120"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Three Princesses?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vasnetsov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasnetsov — Three Princesses.",
+    "id": "art_121"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Guests from Overseas?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rerikh"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rerikh — Guests from Overseas.",
+    "id": "art_122"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Grigoriev?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Peasant Children"
+    ],
+    "correctIndex": 3,
+    "explanation": "Grigoriev — Peasant Children.",
+    "id": "art_123"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Campbell's Soup Cans?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Warhol"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Warhol — Campbell's Soup Cans.",
+    "id": "art_124"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which technique is described: water-soluble paints?",
+    "options": [
+      "Fresco",
+      "Oil painting",
+      "Engraving",
+      "Watercolor"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Watercolor.",
+    "id": "art_125"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait of an Unknown Woman?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kramskoy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kramskoy — Portrait of an Unknown Woman.",
+    "id": "art_126"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Dance with Swords?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Semiradsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Semiradsky — Dance with Swords.",
+    "id": "art_127"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: pop art?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Lichtenstein"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Lichtenstein — pop art.",
+    "id": "art_128"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Vision After the Sermon?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Gauguin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Gauguin — Vision After the Sermon.",
+    "id": "art_129"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Walking Woman?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Archipenko"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Archipenko — Walking Woman.",
+    "id": "art_130"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Bauhaus?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Gropius"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Gropius — Bauhaus.",
+    "id": "art_131"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "In which city is the Tretyakov Gallery located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "Moscow"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Tretyakov Gallery is in Moscow.",
+    "id": "art_132"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Night Watch?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Rembrandt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rembrandt — The Night Watch.",
+    "id": "art_133"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Nesterov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Empty Tomb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Nesterov — The Empty Tomb.",
+    "id": "art_134"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: neoplasticism?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Mondrian"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Mondrian — neoplasticism.",
+    "id": "art_135"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: still lifes with apples?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Cézanne"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Cézanne — still lifes with apples.",
+    "id": "art_136"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Surikov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Boyarina Morozova"
+    ],
+    "correctIndex": 3,
+    "explanation": "Surikov — Boyarina Morozova.",
+    "id": "art_137"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Serov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Portrait of K.I. Girshman"
+    ],
+    "correctIndex": 3,
+    "explanation": "Serov — Portrait of K.I. Girshman.",
+    "id": "art_138"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: flowers?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Nolde"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Nolde — flowers.",
+    "id": "art_139"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Last Day of Pompeii?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bryullov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bryullov — Last Day of Pompeii.",
+    "id": "art_140"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Himalayas?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Roerich"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Roerich — Himalayas.",
+    "id": "art_141"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Grandmother's Garden?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Polenov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Polenov — Grandmother's Garden.",
+    "id": "art_142"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist da Vinci?",
+    "options": [
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Birth of Venus",
+      "Mona Lisa"
+    ],
+    "correctIndex": 3,
+    "explanation": "da Vinci — Mona Lisa.",
+    "id": "art_143"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Number 5?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Pollock"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Pollock — Number 5.",
+    "id": "art_144"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"Barge Haulers on the Volga\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Ilya Repin"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Barge Haulers on the Volga\" is by Ilya Repin.",
+    "id": "art_145"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rivera?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Detroit Industry"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rivera — Detroit Industry.",
+    "id": "art_146"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Russian Bride?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Makovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Makovsky — The Russian Bride.",
+    "id": "art_147"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Where Do We Come From?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Gauguin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Gauguin — Where Do We Come From.",
+    "id": "art_148"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: street murals?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Banksy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Banksy — street murals.",
+    "id": "art_149"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Kazimir Malevich create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Black Square"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kazimir Malevich created \"Black Square\".",
+    "id": "art_150"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Matisse?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Dance"
+    ],
+    "correctIndex": 3,
+    "explanation": "Matisse — The Dance.",
+    "id": "art_151"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Anxiety?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Munch"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Munch — Anxiety.",
+    "id": "art_152"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Luncheon on the Grass?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Manet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Manet — Luncheon on the Grass.",
+    "id": "art_153"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: biomorphic forms?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Miró"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Miró — biomorphic forms.",
+    "id": "art_154"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "In which city is the Louvre located?",
+    "options": [
+      "Saint Petersburg",
+      "Madrid",
+      "Florence",
+      "Paris"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Louvre is in Paris.",
+    "id": "art_155"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: combines?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rauschenberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rauschenberg — combines.",
+    "id": "art_156"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In which city is the Rijksmuseum located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "Amsterdam"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Rijksmuseum is in Amsterdam.",
+    "id": "art_157"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Life Is Everywhere?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Yaroshenko"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Yaroshenko — Life Is Everywhere.",
+    "id": "art_158"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Art Nouveau?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Mucha"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Mucha — Art Nouveau.",
+    "id": "art_159"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which work did Edvard Munch create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "The Scream"
+    ],
+    "correctIndex": 3,
+    "explanation": "Edvard Munch created \"The Scream\".",
+    "id": "art_160"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Los Angeles pools?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Hockney"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hockney — Los Angeles pools.",
+    "id": "art_161"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Rain, Steam and Speed?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Turner"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Turner — Rain, Steam and Speed.",
+    "id": "art_162"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"David\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Michelangelo"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"David\" is by Michelangelo.",
+    "id": "art_163"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Rooks Have Returned?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Savrasov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Savrasov — The Rooks Have Returned.",
+    "id": "art_164"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Water Lilies?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Monet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Monet — Water Lilies.",
+    "id": "art_165"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Menshikov in Berezovo?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Surikov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Surikov — Menshikov in Berezovo.",
+    "id": "art_166"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Luncheon of the Boating Party?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Renoir"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Renoir — Luncheon of the Boating Party.",
+    "id": "art_167"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: murals?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Diego Rivera"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Diego Rivera — murals.",
+    "id": "art_168"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Bryullov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Horsewoman"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bryullov — Horsewoman.",
+    "id": "art_169"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Murals?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Rivera"
+    ],
+    "correctIndex": 3,
+    "explanation": "Murals — Rivera.",
+    "id": "art_170"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Lichtenstein?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Drowning Girl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lichtenstein — Drowning Girl.",
+    "id": "art_171"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Warhol?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Campbell's Soup"
+    ],
+    "correctIndex": 3,
+    "explanation": "Warhol — Campbell's Soup.",
+    "id": "art_172"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Moulin Rouge?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Toulouse-Lautrec"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Toulouse-Lautrec — Moulin Rouge.",
+    "id": "art_173"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Velázquez?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Las Meninas"
+    ],
+    "correctIndex": 3,
+    "explanation": "Velázquez — Las Meninas.",
+    "id": "art_174"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: street art?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Banksy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Banksy — street art.",
+    "id": "art_175"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Dance?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Archipenko"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Archipenko — Dance.",
+    "id": "art_176"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which technique is described: printing from carved plate?",
+    "options": [
+      "Fresco",
+      "Oil painting",
+      "Watercolor",
+      "Engraving"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Engraving.",
+    "id": "art_177"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Barge Haulers?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Repin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Repin — Barge Haulers.",
+    "id": "art_178"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Hokusai?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Great Wave"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hokusai — Great Wave.",
+    "id": "art_179"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In which city is the MOMA located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "New York"
+    ],
+    "correctIndex": 3,
+    "explanation": "The MOMA is in New York.",
+    "id": "art_180"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"Water Lilies\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Claude Monet"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Water Lilies\" is by Claude Monet.",
+    "id": "art_181"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Promenade?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Somov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Somov — Promenade.",
+    "id": "art_182"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: David (sculpture)?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Donatello"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Donatello — David (sculpture).",
+    "id": "art_183"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Bronze Horseman?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Falconet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Falconet — Bronze Horseman.",
+    "id": "art_184"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Mucha?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Art Nouveau"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mucha — Art Nouveau.",
+    "id": "art_185"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rodin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Kiss"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rodin — The Kiss.",
+    "id": "art_186"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Malyavin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Laughter"
+    ],
+    "correctIndex": 3,
+    "explanation": "Malyavin — Laughter.",
+    "id": "art_187"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Drowning Girl?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Lichtenstein"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Lichtenstein — Drowning Girl.",
+    "id": "art_188"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Thaw?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vasiliev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasiliev — Thaw.",
+    "id": "art_189"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Benois?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Peter the Great"
+    ],
+    "correctIndex": 3,
+    "explanation": "Benois — Peter the Great.",
+    "id": "art_190"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Red Studio?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Matisse"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Matisse — The Red Studio.",
+    "id": "art_191"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Banksy?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "street murals"
+    ],
+    "correctIndex": 3,
+    "explanation": "Banksy — street murals.",
+    "id": "art_192"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Christ in the Wilderness?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kramskoy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kramskoy — Christ in the Wilderness.",
+    "id": "art_193"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Bilibin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "illustrations"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bilibin — illustrations.",
+    "id": "art_194"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Klein?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "International Klein Blue"
+    ],
+    "correctIndex": 3,
+    "explanation": "Klein — International Klein Blue.",
+    "id": "art_195"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Rivera?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Murals"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Murals — Rivera.",
+    "id": "art_196"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Spanish Women?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Korovin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Korovin — Spanish Women.",
+    "id": "art_197"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Hockney?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "pool paintings"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hockney — pool paintings.",
+    "id": "art_198"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Football?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Korin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Korin — Football.",
+    "id": "art_199"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Klee?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "color theory"
+    ],
+    "correctIndex": 3,
+    "explanation": "Klee — color theory.",
+    "id": "art_200"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Peasant Children?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Grigoriev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Grigoriev — Peasant Children.",
+    "id": "art_201"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Last Day of Pompeii?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Ivanov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ivanov — The Last Day of Pompeii.",
+    "id": "art_202"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "In which city is the Hermitage located?",
+    "options": [
+      "Paris",
+      "Madrid",
+      "Florence",
+      "Saint Petersburg"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Hermitage is in Saint Petersburg.",
+    "id": "art_203"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Vasily Surikov create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Boyarina Morozova"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vasily Surikov created \"Boyarina Morozova\".",
+    "id": "art_204"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Girl with Peaches?",
+    "options": [
+      "Shishkin",
+      "Levitan",
+      "Vrubel",
+      "Serov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Serov — Girl with Peaches.",
+    "id": "art_205"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Michelangelo?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Madonna",
+      "Birth of Venus",
+      "Sistine Chapel"
+    ],
+    "correctIndex": 3,
+    "explanation": "Michelangelo — Sistine Chapel.",
+    "id": "art_206"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Persistence of Memory?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Dalí"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Dalí — The Persistence of Memory.",
+    "id": "art_207"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Student?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Yaroshenko"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Yaroshenko — The Student.",
+    "id": "art_208"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: forest scenes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Shishkin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Shishkin — forest scenes.",
+    "id": "art_209"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Fresh Wind?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Levitan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Levitan — Fresh Wind.",
+    "id": "art_210"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Donatello?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "David (sculpture)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Donatello — David (sculpture).",
+    "id": "art_211"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Gauguin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Vision After the Sermon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gauguin — Vision After the Sermon.",
+    "id": "art_212"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Ivan Tsarevich?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vasnetsov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasnetsov — Ivan Tsarevich.",
+    "id": "art_213"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Sargent?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Madame X"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sargent — Madame X.",
+    "id": "art_214"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which technique is described: gluing materials together?",
+    "options": [
+      "Fresco",
+      "Oil painting",
+      "Watercolor",
+      "Collage"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Collage.",
+    "id": "art_215"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Great Wave?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Hokusai"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hokusai — The Great Wave.",
+    "id": "art_216"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Ivanov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Appearance of Christ"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ivanov — Appearance of Christ.",
+    "id": "art_217"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: flags?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Johns"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Johns — flags.",
+    "id": "art_218"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Kandinsky?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Composition VII"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kandinsky — Composition VII.",
+    "id": "art_219"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: swimming pools?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Hockney"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hockney — swimming pools.",
+    "id": "art_220"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Roerich?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Treasure of the Angels"
+    ],
+    "correctIndex": 3,
+    "explanation": "Roerich — Treasure of the Angels.",
+    "id": "art_221"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Falk"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Falk — Portrait.",
+    "id": "art_222"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"Bogatyrs\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Victor Vasnetsov"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Bogatyrs\" is by Victor Vasnetsov.",
+    "id": "art_223"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Morning in a Pine Forest?",
+    "options": [
+      "Serov",
+      "Levitan",
+      "Vrubel",
+      "Shishkin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Shishkin — Morning in a Pine Forest.",
+    "id": "art_224"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Street, Dresden?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kirchner"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kirchner — Street, Dresden.",
+    "id": "art_225"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which art movement is associated with: Repin and Surikov?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Peredvizhniki"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Peredvizhniki.",
+    "id": "art_226"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Card Players?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Cézanne"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Cézanne — The Card Players.",
+    "id": "art_227"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Automat?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Hopper"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hopper — Automat.",
+    "id": "art_228"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Turner?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Rain, Steam and Speed"
+    ],
+    "correctIndex": 3,
+    "explanation": "Turner — Rain, Steam and Speed.",
+    "id": "art_229"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Birth of Venus?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Botticelli"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Botticelli — Birth of Venus.",
+    "id": "art_230"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Treasure of the Angels?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Roerich"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Roerich — Treasure of the Angels.",
+    "id": "art_231"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which art movement is associated with: Friedrich?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Romanticism"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Romanticism.",
+    "id": "art_232"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Picasso?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Weeping Woman"
+    ],
+    "correctIndex": 3,
+    "explanation": "Picasso — The Weeping Woman.",
+    "id": "art_233"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Birth of Venus?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Botticelli"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Botticelli — The Birth of Venus.",
+    "id": "art_234"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Dali?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "elephants"
+    ],
+    "correctIndex": 3,
+    "explanation": "Dali — elephants.",
+    "id": "art_235"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Titian?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Venus of Urbino"
+    ],
+    "correctIndex": 3,
+    "explanation": "Titian — Venus of Urbino.",
+    "id": "art_236"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Braque?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "cubism"
+    ],
+    "correctIndex": 3,
+    "explanation": "Braque — cubism.",
+    "id": "art_237"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In which city is the Uffizi located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "Florence"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Uffizi is in Florence.",
+    "id": "art_238"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Chagall?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Above the City"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chagall — Above the City.",
+    "id": "art_239"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Ninth Wave?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Aivazovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Aivazovsky — The Ninth Wave.",
+    "id": "art_240"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"Mona Lisa\"?",
+    "options": [
+      "Vincent van Gogh",
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Mona Lisa\" is by Leonardo da Vinci.",
+    "id": "art_241"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Children Running from a Storm?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Makovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Makovsky — Children Running from a Storm.",
+    "id": "art_242"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Vlaminck?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "fauvism"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vlaminck — fauvism.",
+    "id": "art_243"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Botticelli?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Birth of Venus"
+    ],
+    "correctIndex": 3,
+    "explanation": "Botticelli — Birth of Venus.",
+    "id": "art_244"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Who created \"The Night Watch\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Rembrandt"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Night Watch\" is by Rembrandt.",
+    "id": "art_245"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Hiroshige?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Rain on Bridge"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hiroshige — Rain on Bridge.",
+    "id": "art_246"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Leonardo da Vinci create?",
+    "options": [
+      "Mona Lisa",
+      "Starry Night",
+      "Sunflowers",
+      "The Last Supper"
+    ],
+    "correctIndex": 3,
+    "explanation": "Leonardo da Vinci created \"The Last Supper\".",
+    "id": "art_247"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Magritte?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Treachery of Images"
+    ],
+    "correctIndex": 3,
+    "explanation": "Magritte — The Treachery of Images.",
+    "id": "art_248"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Above the Town?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Chagall"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Chagall — Above the Town.",
+    "id": "art_249"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: impossible constructions?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Escher"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Escher — impossible constructions.",
+    "id": "art_250"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Miró?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "biomorphic forms"
+    ],
+    "correctIndex": 3,
+    "explanation": "Miró — biomorphic forms.",
+    "id": "art_251"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Wood?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "American Gothic"
+    ],
+    "correctIndex": 3,
+    "explanation": "Wood — American Gothic.",
+    "id": "art_252"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Night Watch?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rembrandt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rembrandt — Night Watch.",
+    "id": "art_253"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Elephants?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Dalí"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Dalí — The Elephants.",
+    "id": "art_254"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Black Sea?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Aivazovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Aivazovsky — Black Sea.",
+    "id": "art_255"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"Starry Night\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Starry Night\" is by Vincent van Gogh.",
+    "id": "art_256"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Fairy Tales?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bilibin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bilibin — Fairy Tales.",
+    "id": "art_257"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Ballet Class?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Degas"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Degas — Ballet Class.",
+    "id": "art_258"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Orange and Yellow?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rothko"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rothko — Orange and Yellow.",
+    "id": "art_259"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Johannes Vermeer create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Girl with a Pearl Earring"
+    ],
+    "correctIndex": 3,
+    "explanation": "Johannes Vermeer created \"Girl with a Pearl Earring\".",
+    "id": "art_260"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: landscapes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Levitan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Levitan — landscapes.",
+    "id": "art_261"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Nero's Torches?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Semiradsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Semiradsky — Nero's Torches.",
+    "id": "art_262"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: On the Mountains?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Nesterov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Nesterov — On the Mountains.",
+    "id": "art_263"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"Sistine Chapel ceiling\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Michelangelo"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Sistine Chapel ceiling\" is by Michelangelo.",
+    "id": "art_264"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Costume Design?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bakst"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bakst — Costume Design.",
+    "id": "art_265"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Drowned?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Perov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Perov — The Drowned.",
+    "id": "art_266"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: angular figures?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Egon Schiele"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Egon Schiele — angular figures.",
+    "id": "art_267"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Olympia?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Manet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Manet — Olympia.",
+    "id": "art_268"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Constable?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Hay Wain"
+    ],
+    "correctIndex": 3,
+    "explanation": "Constable — The Hay Wain.",
+    "id": "art_269"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Degas?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Ballet Class"
+    ],
+    "correctIndex": 3,
+    "explanation": "Degas — The Ballet Class.",
+    "id": "art_270"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Dance?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Matisse"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Matisse — The Dance.",
+    "id": "art_271"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Sistine Chapel?",
+    "options": [
+      "da Vinci",
+      "Raphael",
+      "Botticelli",
+      "Michelangelo"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Michelangelo — Sistine Chapel.",
+    "id": "art_272"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait of Mother?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Whistler"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Whistler — Portrait of Mother.",
+    "id": "art_273"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Ballet Class?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Degas"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Degas — The Ballet Class.",
+    "id": "art_274"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"Boyarina Morozova\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Vasily Surikov"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Boyarina Morozova\" is by Vasily Surikov.",
+    "id": "art_275"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Girl with a Pearl Earring?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Vermeer"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vermeer — Girl with a Pearl Earring.",
+    "id": "art_276"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Thinker?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Rodin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rodin — The Thinker.",
+    "id": "art_277"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: March?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Levitan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Levitan — March.",
+    "id": "art_278"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Bogatyrs?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vasnetsov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasnetsov — Bogatyrs.",
+    "id": "art_279"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Perov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Hunters at Rest"
+    ],
+    "correctIndex": 3,
+    "explanation": "Perov — The Hunters at Rest.",
+    "id": "art_280"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Salvador Dalí create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "The Persistence of Memory"
+    ],
+    "correctIndex": 3,
+    "explanation": "Salvador Dalí created \"The Persistence of Memory\".",
+    "id": "art_281"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Lilac?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vrubel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vrubel — Lilac.",
+    "id": "art_282"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"The Persistence of Memory\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Salvador Dalí"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Persistence of Memory\" is by Salvador Dalí.",
+    "id": "art_283"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Laughter?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Malyavin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Malyavin — Laughter.",
+    "id": "art_284"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Sistine Madonna?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Botticelli",
+      "Raphael"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Raphael — Sistine Madonna.",
+    "id": "art_285"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Klimt?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Judith and the Head of Holofernes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Klimt — Judith and the Head of Holofernes.",
+    "id": "art_286"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Egon Schiele?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "angular figures"
+    ],
+    "correctIndex": 3,
+    "explanation": "Egon Schiele — angular figures.",
+    "id": "art_287"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In which city is the Prado located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Florence",
+      "Madrid"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Prado is in Madrid.",
+    "id": "art_288"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Guernica?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Picasso"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Picasso — Guernica.",
+    "id": "art_289"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Rye?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Shishkin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Shishkin — Rye.",
+    "id": "art_290"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: gold leaf?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Gustav Klimt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Gustav Klimt — gold leaf.",
+    "id": "art_291"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Goncharova?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Still Life"
+    ],
+    "correctIndex": 3,
+    "explanation": "Goncharova — Still Life.",
+    "id": "art_292"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait of Katya?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Feshin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Feshin — Portrait of Katya.",
+    "id": "art_293"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Alyonushka?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vasnetsov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasnetsov — Alyonushka.",
+    "id": "art_294"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Makovsky?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Children Running from a Storm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Makovsky — Children Running from a Storm.",
+    "id": "art_295"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which work did Victor Vasnetsov create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Bogatyrs"
+    ],
+    "correctIndex": 3,
+    "explanation": "Victor Vasnetsov created \"Bogatyrs\".",
+    "id": "art_296"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Overseas Guests?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Rerikh"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Rerikh — Overseas Guests.",
+    "id": "art_297"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Horsewoman?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bryullov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bryullov — Horsewoman.",
+    "id": "art_298"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"The Kiss\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Gustav Klimt"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Kiss\" is by Gustav Klimt.",
+    "id": "art_299"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: expressionism?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Munch"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Munch — expressionism.",
+    "id": "art_300"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Manet?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Olympia"
+    ],
+    "correctIndex": 3,
+    "explanation": "Manet — Olympia.",
+    "id": "art_301"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Pollock?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Number 5"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pollock — Number 5.",
+    "id": "art_302"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which work did Ivan Aivazovsky create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "The Ninth Wave"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ivan Aivazovsky created \"The Ninth Wave\".",
+    "id": "art_303"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which technique is described: painting on wet plaster?",
+    "options": [
+      "Oil painting",
+      "Watercolor",
+      "Engraving",
+      "Fresco"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Fresco.",
+    "id": "art_304"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Courbet?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Burial at Ornans"
+    ],
+    "correctIndex": 3,
+    "explanation": "Courbet — Burial at Ornans.",
+    "id": "art_305"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which technique is described: three-dimensional artwork?",
+    "options": [
+      "Fresco",
+      "Oil painting",
+      "Watercolor",
+      "Sculpture"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Sculpture.",
+    "id": "art_306"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Moonlit Night?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kuindzhi"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kuindzhi — Moonlit Night.",
+    "id": "art_307"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Third of May?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Goya"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Goya — Third of May.",
+    "id": "art_308"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Monet?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Water Lilies series"
+    ],
+    "correctIndex": 3,
+    "explanation": "Monet — Water Lilies series.",
+    "id": "art_309"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: expressive lines?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Schiele"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Schiele — expressive lines.",
+    "id": "art_310"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Gropius?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Bauhaus"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gropius — Bauhaus.",
+    "id": "art_311"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Bernini?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Ecstasy of Saint Teresa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bernini — Ecstasy of Saint Teresa.",
+    "id": "art_312"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Broadway Boogie Woogie?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Mondrian"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Mondrian — Broadway Boogie Woogie.",
+    "id": "art_313"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which work did Vincent van Gogh create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Sunflowers",
+      "Starry Night"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vincent van Gogh created \"Starry Night\".",
+    "id": "art_314"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Spring Day?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Savrasov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Savrasov — Spring Day.",
+    "id": "art_315"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Above Eternal Peace?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Vrubel",
+      "Levitan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Levitan — Above Eternal Peace.",
+    "id": "art_316"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Italian Morning?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bryullov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bryullov — Italian Morning.",
+    "id": "art_317"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which technique is described: pigments in oil?",
+    "options": [
+      "Fresco",
+      "Watercolor",
+      "Engraving",
+      "Oil painting"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Oil painting.",
+    "id": "art_318"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The School of Athens?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Raphael"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Raphael — The School of Athens.",
+    "id": "art_319"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Formula of Spring?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Filonov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Filonov — Formula of Spring.",
+    "id": "art_320"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: night scenes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kuindzhi"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kuindzhi — night scenes.",
+    "id": "art_321"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Polenov?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Grandmother's Garden"
+    ],
+    "correctIndex": 3,
+    "explanation": "Polenov — Grandmother's Garden.",
+    "id": "art_322"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Scheherazade?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Bakst"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bakst — Scheherazade.",
+    "id": "art_323"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Who created \"Sistine Madonna\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Raphael"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Sistine Madonna\" is by Raphael.",
+    "id": "art_324"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Water Lilies series?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Monet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Monet — Water Lilies series.",
+    "id": "art_325"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Red Canna?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "O'Keeffe"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is O'Keeffe — Red Canna.",
+    "id": "art_326"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In which city is the Guggenheim located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "New York"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Guggenheim is in New York.",
+    "id": "art_327"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Treachery of Images?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Magritte"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Magritte — The Treachery of Images.",
+    "id": "art_328"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which art movement is associated with: Rubens and Rembrandt?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Surrealism",
+      "Baroque"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Baroque.",
+    "id": "art_329"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rembrandt?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Night Watch"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rembrandt — Night Watch.",
+    "id": "art_330"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work did Raphael create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "Sistine Madonna"
+    ],
+    "correctIndex": 3,
+    "explanation": "Raphael created \"Sistine Madonna\".",
+    "id": "art_331"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Empty Tomb?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Nesterov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Nesterov — The Empty Tomb.",
+    "id": "art_332"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Semiradsky?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Nero's Torches"
+    ],
+    "correctIndex": 3,
+    "explanation": "Semiradsky — Nero's Torches.",
+    "id": "art_333"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Basquiat?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "graffiti art"
+    ],
+    "correctIndex": 3,
+    "explanation": "Basquiat — graffiti art.",
+    "id": "art_334"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Ivan the Terrible?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Repin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Repin — Ivan the Terrible.",
+    "id": "art_335"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Gustav Klimt create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "The Kiss"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gustav Klimt created \"The Kiss\".",
+    "id": "art_336"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Early Spring?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Savrasov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Savrasov — Early Spring.",
+    "id": "art_337"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Last Supper?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Ge"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ge — The Last Supper.",
+    "id": "art_338"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: historical paintings?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Surikov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Surikov — historical paintings.",
+    "id": "art_339"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Malevich?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Black Square"
+    ],
+    "correctIndex": 3,
+    "explanation": "Malevich — Black Square.",
+    "id": "art_340"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Birch Grove?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kuindzhi"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kuindzhi — Birch Grove.",
+    "id": "art_341"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Marc?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Blue Horses"
+    ],
+    "correctIndex": 3,
+    "explanation": "Marc — Blue Horses.",
+    "id": "art_342"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which art movement is associated with: Monet and Renoir?",
+    "options": [
+      "Cubism",
+      "Surrealism",
+      "Renaissance",
+      "Impressionism"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Impressionism.",
+    "id": "art_343"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Les Demoiselles d'Avignon?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Picasso"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Picasso — Les Demoiselles d'Avignon.",
+    "id": "art_344"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Bay of Naples?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Aivazovsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Aivazovsky — Bay of Naples.",
+    "id": "art_345"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Dance at Le Moulin de la Galette?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Renoir"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Renoir — Dance at Le Moulin de la Galette.",
+    "id": "art_346"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Impression, Sunrise?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Monet"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Monet — Impression, Sunrise.",
+    "id": "art_347"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Derain?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "fauvism"
+    ],
+    "correctIndex": 3,
+    "explanation": "Derain — fauvism.",
+    "id": "art_348"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which art movement is associated with: Dalí and Magritte?",
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Renaissance",
+      "Surrealism"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Surrealism.",
+    "id": "art_349"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Judith and the Head of Holofernes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Klimt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Klimt — Judith and the Head of Holofernes.",
+    "id": "art_350"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Madame X?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Sargent"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Sargent — Madame X.",
+    "id": "art_351"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Hay Wain?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Constable"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Constable — The Hay Wain.",
+    "id": "art_352"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Peasant Woman?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Grigoriev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Grigoriev — Peasant Woman.",
+    "id": "art_353"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Twittering Machine?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Klee"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Klee — Twittering Machine.",
+    "id": "art_354"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Appearance of Christ?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Ivanov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ivanov — Appearance of Christ.",
+    "id": "art_355"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Still Life with Apples?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Cézanne"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Cézanne — Still Life with Apples.",
+    "id": "art_356"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Kirchner?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Street, Dresden"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kirchner — Street, Dresden.",
+    "id": "art_357"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Whirlwind?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Malyavin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Malyavin — Whirlwind.",
+    "id": "art_358"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"The Scream\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Edvard Munch"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Scream\" is by Edvard Munch.",
+    "id": "art_359"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"Black Square\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Kazimir Malevich"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Black Square\" is by Kazimir Malevich.",
+    "id": "art_360"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: comic style?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Lichtenstein"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Lichtenstein — comic style.",
+    "id": "art_361"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Liberty Leading the People?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Delacroix"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Delacroix — Liberty Leading the People.",
+    "id": "art_362"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"Girl with a Pearl Earring\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Johannes Vermeer"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Girl with a Pearl Earring\" is by Johannes Vermeer.",
+    "id": "art_363"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: wire sculptures?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Calder"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Calder — wire sculptures.",
+    "id": "art_364"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"Guernica\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Pablo Picasso"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Guernica\" is by Pablo Picasso.",
+    "id": "art_365"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which work did Karl Bryullov create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "The Last Day of Pompeii"
+    ],
+    "correctIndex": 3,
+    "explanation": "Karl Bryullov created \"The Last Day of Pompeii\".",
+    "id": "art_366"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Holy Russia?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Nesterov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Nesterov — Holy Russia.",
+    "id": "art_367"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Newman?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "zip paintings"
+    ],
+    "correctIndex": 3,
+    "explanation": "Newman — zip paintings.",
+    "id": "art_368"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Spring?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Larionov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Larionov — Spring.",
+    "id": "art_369"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Dalí?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Elephants"
+    ],
+    "correctIndex": 3,
+    "explanation": "Dalí — The Elephants.",
+    "id": "art_370"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Rousseau?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "jungle scenes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rousseau — jungle scenes.",
+    "id": "art_371"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Whistler?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Portrait of Mother"
+    ],
+    "correctIndex": 3,
+    "explanation": "Whistler — Portrait of Mother.",
+    "id": "art_372"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Gustav Klimt?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "gold leaf"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gustav Klimt — gold leaf.",
+    "id": "art_373"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait of Chaliapin?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kustodiev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kustodiev — Portrait of Chaliapin.",
+    "id": "art_374"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Pan?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Vrubel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vrubel — Pan.",
+    "id": "art_375"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which technique is described: soft dry chalks?",
+    "options": [
+      "Fresco",
+      "Oil painting",
+      "Watercolor",
+      "Pastel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Pastel.",
+    "id": "art_376"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Boyarina Morozova?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Surikov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Surikov — Boyarina Morozova.",
+    "id": "art_377"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who created \"Sunflowers\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Sunflowers\" is by Vincent van Gogh.",
+    "id": "art_378"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: cubism?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Braque"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Braque — cubism.",
+    "id": "art_379"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who created \"The Last Day of Pompeii\"?",
+    "options": [
+      "Leonardo da Vinci",
+      "Leonardo da Vinci",
+      "Vincent van Gogh",
+      "Karl Bryullov"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Last Day of Pompeii\" is by Karl Bryullov.",
+    "id": "art_380"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: New Mexico landscapes?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "O'Keeffe"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is O'Keeffe — New Mexico landscapes.",
+    "id": "art_381"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Mondrian?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Broadway Boogie Woogie"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mondrian — Broadway Boogie Woogie.",
+    "id": "art_382"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Caravaggio?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Calling of Matthew"
+    ],
+    "correctIndex": 3,
+    "explanation": "Caravaggio — Calling of Matthew.",
+    "id": "art_383"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In which city is the British Museum located?",
+    "options": [
+      "Paris",
+      "Saint Petersburg",
+      "Madrid",
+      "London"
+    ],
+    "correctIndex": 3,
+    "explanation": "The British Museum is in London.",
+    "id": "art_384"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Escher?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "impossible constructions"
+    ],
+    "correctIndex": 3,
+    "explanation": "Escher — impossible constructions.",
+    "id": "art_385"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Calling of Matthew?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Caravaggio"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Caravaggio — Calling of Matthew.",
+    "id": "art_386"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Falk?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Still Life"
+    ],
+    "correctIndex": 3,
+    "explanation": "Falk — Still Life.",
+    "id": "art_387"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Shrovetide?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Kustodiev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kustodiev — Shrovetide.",
+    "id": "art_388"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Bashkir?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Feshin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Feshin — Bashkir.",
+    "id": "art_389"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: ballet dancers?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Degas"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Degas — ballet dancers.",
+    "id": "art_390"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Blue Horses?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Marc"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Marc — Blue Horses.",
+    "id": "art_391"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Nighthawks?",
+    "options": [
+      "Shishkin",
+      "Serov",
+      "Levitan",
+      "Hopper"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hopper — Nighthawks.",
+    "id": "art_392"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: The Hunters at Rest?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Perov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Perov — The Hunters at Rest.",
+    "id": "art_393"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Korovin?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Winter"
+    ],
+    "correctIndex": 3,
+    "explanation": "Korovin — Winter.",
+    "id": "art_394"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Portrait of K.I. Girshman?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Serov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Serov — Portrait of K.I. Girshman.",
+    "id": "art_395"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work did Rembrandt create?",
+    "options": [
+      "Mona Lisa",
+      "The Last Supper",
+      "Starry Night",
+      "The Night Watch"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rembrandt created \"The Night Watch\".",
+    "id": "art_396"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist is associated with the work/style: Goalkeeper?",
+    "options": [
+      "da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Korin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Korin — Goalkeeper.",
+    "id": "art_397"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Renoir?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "Luncheon of the Boating Party"
+    ],
+    "correctIndex": 3,
+    "explanation": "Renoir — Luncheon of the Boating Party.",
+    "id": "art_398"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Signac?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "pointillism"
+    ],
+    "correctIndex": 3,
+    "explanation": "Signac — pointillism.",
+    "id": "art_399"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which work/style is associated with artist Vermeer?",
+    "options": [
+      "Mona Lisa",
+      "Sistine Chapel",
+      "Sistine Madonna",
+      "The Milkmaid"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vermeer — The Milkmaid.",
+    "id": "art_400"
+  }
+]

@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.data.AppLanguage
+import com.rustam.quizapp.data.QuizProgressRepository
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.ThemeMode
 import kotlinx.coroutines.flow.SharingStarted
@@ -14,6 +15,7 @@ import kotlinx.coroutines.launch
 class SettingsViewModel(application: Application) : AndroidViewModel(application) {
 
     private val settingsRepository = SettingsRepository(application)
+    private val progressRepository = QuizProgressRepository(application)
 
     /** Mirrors the persisted `sound_enabled` flag (default `true`) for the UI switch. */
     val soundEnabled: StateFlow<Boolean> = settingsRepository.soundEnabled
@@ -34,6 +36,9 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     }
 
     fun setAppLanguage(language: AppLanguage) {
-        viewModelScope.launch { settingsRepository.setAppLanguage(language) }
+        viewModelScope.launch {
+            settingsRepository.setAppLanguage(language)
+            progressRepository.clear()
+        }
     }
 }

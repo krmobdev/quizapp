@@ -1,0 +1,5602 @@
+[
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1941?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "attack on Pearl Harbor"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1941: attack on Pearl Harbor.",
+    "id": "hist_001"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1960?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "independence of 17 African nations"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1960: independence of 17 African nations.",
+    "id": "hist_002"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1215?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Magna Carta"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1215: Magna Carta.",
+    "id": "hist_003"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Arab Spring?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2011"
+    ],
+    "correctIndex": 3,
+    "explanation": "2011: Arab Spring.",
+    "id": "hist_004"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Iraq War begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2003"
+    ],
+    "correctIndex": 3,
+    "explanation": "2003: Iraq War begins.",
+    "id": "hist_005"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: Summer Olympics in Moscow?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1980"
+    ],
+    "correctIndex": 3,
+    "explanation": "1980 — Summer Olympics in Moscow.",
+    "id": "hist_006"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1933?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Hitler comes to power"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1933: Hitler comes to power.",
+    "id": "hist_007"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1971?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "ping-pong diplomacy"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1971: ping-pong diplomacy.",
+    "id": "hist_008"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Napoleon's invasion of Russia?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1812"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1812.",
+    "id": "hist_009"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: industrialization of the USSR?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Stalin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Stalin.",
+    "id": "hist_010"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: first Russian Revolution?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1905"
+    ],
+    "correctIndex": 3,
+    "explanation": "1905: first Russian Revolution.",
+    "id": "hist_011"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Hijra of Muhammad?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "622"
+    ],
+    "correctIndex": 3,
+    "explanation": "622: Hijra of Muhammad.",
+    "id": "hist_012"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Rwandan genocide?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1994"
+    ],
+    "correctIndex": 3,
+    "explanation": "1994: Rwandan genocide.",
+    "id": "hist_013"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which event/period is associated with: Capture of Kazan?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Time of Troubles",
+      "Capture of Kazan"
+    ],
+    "correctIndex": 3,
+    "explanation": "Capture of Kazan — 1552.",
+    "id": "hist_014"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1492?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Columbus reaches America"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1492: Columbus reaches America.",
+    "id": "hist_015"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: Nazi Germany?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Hitler"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hitler.",
+    "id": "hist_016"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1989?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Berlin Wall falls"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1989: Berlin Wall falls.",
+    "id": "hist_017"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which country is associated with: Great Wall?",
+    "options": [
+      "France",
+      "USA",
+      "India",
+      "China"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is China.",
+    "id": "hist_018"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Spanish Armada defeated?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1588"
+    ],
+    "correctIndex": 3,
+    "explanation": "1588: Spanish Armada defeated.",
+    "id": "hist_019"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1957?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Sputnik launched"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1957: Sputnik launched.",
+    "id": "hist_020"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Poltava?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1709"
+    ],
+    "correctIndex": 3,
+    "explanation": "1709: Battle of Poltava.",
+    "id": "hist_021"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year did this happen: start of the Great Patriotic War?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1941"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1941.",
+    "id": "hist_022"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: US troops enter Vietnam?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1965"
+    ],
+    "correctIndex": 3,
+    "explanation": "1965: US troops enter Vietnam.",
+    "id": "hist_023"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Decembrist revolt?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1825"
+    ],
+    "correctIndex": 3,
+    "explanation": "1825: Decembrist revolt.",
+    "id": "hist_024"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2001?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "September 11 attacks"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2001: September 11 attacks.",
+    "id": "hist_025"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: independence of India?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1947"
+    ],
+    "correctIndex": 3,
+    "explanation": "1947 — independence of India.",
+    "id": "hist_026"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: first president of Russia?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Yeltsin"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Yeltsin.",
+    "id": "hist_027"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which event/period is associated with: Pushkin?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Pushkin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Pushkin — Golden Age of Russian literature.",
+    "id": "hist_028"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1974?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Nixon resigns"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1974: Nixon resigns.",
+    "id": "hist_029"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1975?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Vietnam War ends"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1975: Vietnam War ends.",
+    "id": "hist_030"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Treaty of Paris (US independence)?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1783"
+    ],
+    "correctIndex": 3,
+    "explanation": "1783: Treaty of Paris (US independence).",
+    "id": "hist_031"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1922?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "formation of the USSR"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1922: formation of the USSR.",
+    "id": "hist_032"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: coup of 18 Brumaire?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1799"
+    ],
+    "correctIndex": 3,
+    "explanation": "1799: coup of 18 Brumaire.",
+    "id": "hist_033"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: oil crisis?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1973"
+    ],
+    "correctIndex": 3,
+    "explanation": "1973: oil crisis.",
+    "id": "hist_034"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Königgrätz?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1866"
+    ],
+    "correctIndex": 3,
+    "explanation": "1866: Battle of Königgrätz.",
+    "id": "hist_035"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Munich Agreement?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1938"
+    ],
+    "correctIndex": 3,
+    "explanation": "1938: Munich Agreement.",
+    "id": "hist_036"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What event happened in 476?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "fall of the Western Roman Empire"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 476: fall of the Western Roman Empire.",
+    "id": "hist_037"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: fall of France?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1940"
+    ],
+    "correctIndex": 3,
+    "explanation": "1940: fall of France.",
+    "id": "hist_038"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1453?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "fall of Constantinople"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1453: fall of Constantinople.",
+    "id": "hist_039"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What event happened in 1066?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "Norman conquest of England"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1066: Norman conquest of England.",
+    "id": "hist_040"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which event/period is associated with: Dostoevsky?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Dostoevsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "Dostoevsky — Crime and Punishment.",
+    "id": "hist_041"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Catherine II ascends throne?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1762"
+    ],
+    "correctIndex": 3,
+    "explanation": "1762: Catherine II ascends throne.",
+    "id": "hist_042"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Crusaders sack Constantinople?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1204"
+    ],
+    "correctIndex": 3,
+    "explanation": "1204: Crusaders sack Constantinople.",
+    "id": "hist_043"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: start of the First Crusade?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1096"
+    ],
+    "correctIndex": 3,
+    "explanation": "1096 — start of the First Crusade.",
+    "id": "hist_044"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year did this happen: Battle of Waterloo?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1815"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1815.",
+    "id": "hist_045"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Chernobyl disaster?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1983"
+    ],
+    "correctIndex": 3,
+    "explanation": "1983: Chernobyl disaster.",
+    "id": "hist_046"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1943?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Kursk"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1943: Battle of Kursk.",
+    "id": "hist_047"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which event/period is associated with: Battle on the Ice?",
+    "options": [
+      "Battle of Kursk",
+      "Capture of Kazan",
+      "Time of Troubles",
+      "Battle on the Ice"
+    ],
+    "correctIndex": 3,
+    "explanation": "Battle on the Ice — 1242.",
+    "id": "hist_048"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Stalingrad?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1942"
+    ],
+    "correctIndex": 3,
+    "explanation": "1942: Battle of Stalingrad.",
+    "id": "hist_049"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: formation of Kievan Rus?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "862"
+    ],
+    "correctIndex": 3,
+    "explanation": "862 — formation of Kievan Rus.",
+    "id": "hist_050"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Euromaidan revolution?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2014"
+    ],
+    "correctIndex": 3,
+    "explanation": "2014: Euromaidan revolution.",
+    "id": "hist_051"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1961?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Berlin Wall built"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1961: Berlin Wall built.",
+    "id": "hist_052"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: formation of the USSR?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1922"
+    ],
+    "correctIndex": 3,
+    "explanation": "1922 — formation of the USSR.",
+    "id": "hist_053"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Iran-Iraq War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1980"
+    ],
+    "correctIndex": 3,
+    "explanation": "1980: start of Iran-Iraq War.",
+    "id": "hist_054"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Brusilov Offensive?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1916"
+    ],
+    "correctIndex": 3,
+    "explanation": "1916: Brusilov Offensive.",
+    "id": "hist_055"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1985?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "perestroika begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1985: perestroika begins.",
+    "id": "hist_056"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1936?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of Spanish Civil War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1936: start of Spanish Civil War.",
+    "id": "hist_057"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: World War I begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1914"
+    ],
+    "correctIndex": 3,
+    "explanation": "1914: World War I begins.",
+    "id": "hist_058"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Columbus reaches America?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1492"
+    ],
+    "correctIndex": 3,
+    "explanation": "1492: Columbus reaches America.",
+    "id": "hist_059"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: perestroika?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Gorbachev"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Gorbachev.",
+    "id": "hist_060"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Pearl Harbor attack?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1941"
+    ],
+    "correctIndex": 3,
+    "explanation": "1941: Pearl Harbor attack.",
+    "id": "hist_061"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1519?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Magellan's circumnavigation"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1519: Magellan's circumnavigation.",
+    "id": "hist_062"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Russian Revolution?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1917"
+    ],
+    "correctIndex": 3,
+    "explanation": "1917: Russian Revolution.",
+    "id": "hist_063"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1783?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Treaty of Paris (US independence)"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1783: Treaty of Paris (US independence).",
+    "id": "hist_064"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1789?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "French Revolution begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1789: French Revolution begins.",
+    "id": "hist_065"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Franco-Prussian War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1870"
+    ],
+    "correctIndex": 3,
+    "explanation": "1870: start of Franco-Prussian War.",
+    "id": "hist_066"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1992?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of Bosnian War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1992: start of Bosnian War.",
+    "id": "hist_067"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Gagarin's flight?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1961"
+    ],
+    "correctIndex": 3,
+    "explanation": "1961: Gagarin's flight.",
+    "id": "hist_068"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Hitler comes to power?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1933"
+    ],
+    "correctIndex": 3,
+    "explanation": "1933: Hitler comes to power.",
+    "id": "hist_069"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1204?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Crusaders sack Constantinople"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1204: Crusaders sack Constantinople.",
+    "id": "hist_070"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which historical figure is associated with: European wars of the early 19th century?",
+    "options": [
+      "Peter the Great",
+      "Ivan the Terrible",
+      "Catherine the Great",
+      "Napoleon Bonaparte"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Napoleon Bonaparte.",
+    "id": "hist_071"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: assassination of Lincoln?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1865"
+    ],
+    "correctIndex": 3,
+    "explanation": "1865: assassination of Lincoln.",
+    "id": "hist_072"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1983?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Chernobyl disaster"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1983: Chernobyl disaster.",
+    "id": "hist_073"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1762?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Catherine II ascends throne"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1762: Catherine II ascends throne.",
+    "id": "hist_074"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1979?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Islamic Revolution in Iran"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1979: Islamic Revolution in Iran.",
+    "id": "hist_075"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1969?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Moon landing"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1969: Moon landing.",
+    "id": "hist_076"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: September 11 attacks in the USA?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "2001"
+    ],
+    "correctIndex": 3,
+    "explanation": "2001 — September 11 attacks in the USA.",
+    "id": "hist_077"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Moon landing (Apollo 11)?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1969"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1969.",
+    "id": "hist_078"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2016?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Brexit referendum"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2016: Brexit referendum.",
+    "id": "hist_079"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1995?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Dayton Accords"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1995: Dayton Accords.",
+    "id": "hist_080"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: NATO in Yugoslavia?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1999"
+    ],
+    "correctIndex": 3,
+    "explanation": "1999: NATO in Yugoslavia.",
+    "id": "hist_081"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1991?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "USSR dissolves"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1991: USSR dissolves.",
+    "id": "hist_082"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: global financial crisis?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "2008"
+    ],
+    "correctIndex": 3,
+    "explanation": "2008 — global financial crisis.",
+    "id": "hist_083"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Columbus expedition?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1492"
+    ],
+    "correctIndex": 3,
+    "explanation": "1492: Columbus expedition.",
+    "id": "hist_084"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2011?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Arab Spring"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2011: Arab Spring.",
+    "id": "hist_085"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1950?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Korean War begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1950: Korean War begins.",
+    "id": "hist_086"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: boycott of Moscow Olympics?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1980"
+    ],
+    "correctIndex": 3,
+    "explanation": "1980: boycott of Moscow Olympics.",
+    "id": "hist_087"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1588?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Spanish Armada defeated"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1588: Spanish Armada defeated.",
+    "id": "hist_088"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1793?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "execution of Louis XVI"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1793: execution of Louis XVI.",
+    "id": "hist_089"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: 9/11 attacks?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2001"
+    ],
+    "correctIndex": 3,
+    "explanation": "2001: 9/11 attacks.",
+    "id": "hist_090"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which civilization is associated with: Nineveh?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Assyria"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Assyria.",
+    "id": "hist_091"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: US Declaration of Independence?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1776"
+    ],
+    "correctIndex": 3,
+    "explanation": "1776: US Declaration of Independence.",
+    "id": "hist_092"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: Academy of Athens?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Plato"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Plato.",
+    "id": "hist_093"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: October Revolution in Russia?",
+    "options": [
+      "1914",
+      "1918",
+      "1939",
+      "1917"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1917.",
+    "id": "hist_094"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1978?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Deng Xiaoping reforms"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1978: Deng Xiaoping reforms.",
+    "id": "hist_095"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1940?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "fall of France"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1940: fall of France.",
+    "id": "hist_096"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: fall of Saigon?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1975"
+    ],
+    "correctIndex": 3,
+    "explanation": "1975: fall of Saigon.",
+    "id": "hist_097"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: independence of 17 African nations?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1960"
+    ],
+    "correctIndex": 3,
+    "explanation": "1960: independence of 17 African nations.",
+    "id": "hist_098"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Treaty of Brest-Litovsk?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1918"
+    ],
+    "correctIndex": 3,
+    "explanation": "1918: Treaty of Brest-Litovsk.",
+    "id": "hist_099"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of the Korean War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1950"
+    ],
+    "correctIndex": 3,
+    "explanation": "1950: start of the Korean War.",
+    "id": "hist_100"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Armenian genocide?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1915"
+    ],
+    "correctIndex": 3,
+    "explanation": "1915: Armenian genocide.",
+    "id": "hist_101"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2008?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "financial crisis"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2008: financial crisis.",
+    "id": "hist_102"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which country is associated with: Declaration of Independence?",
+    "options": [
+      "France",
+      "China",
+      "India",
+      "USA"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is USA.",
+    "id": "hist_103"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Warsaw?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1920"
+    ],
+    "correctIndex": 3,
+    "explanation": "1920: Battle of Warsaw.",
+    "id": "hist_104"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which civilization is associated with: Pyramids of Giza?",
+    "options": [
+      "Ancient Greece",
+      "Ancient Rome",
+      "Byzantium",
+      "Ancient Egypt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ancient Egypt.",
+    "id": "hist_105"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1812?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "Napoleon's invasion of Russia"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1812: Napoleon's invasion of Russia.",
+    "id": "hist_106"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: formation of the USSR?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1922"
+    ],
+    "correctIndex": 3,
+    "explanation": "1922: formation of the USSR.",
+    "id": "hist_107"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What event happened in 1492?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "Columbus reaches the Americas"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1492: Columbus reaches the Americas.",
+    "id": "hist_108"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which country is associated with: empire of Genghis Khan?",
+    "options": [
+      "France",
+      "USA",
+      "China",
+      "Mongolia"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Mongolia.",
+    "id": "hist_109"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Russo-Japanese War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1904"
+    ],
+    "correctIndex": 3,
+    "explanation": "1904: Russo-Japanese War.",
+    "id": "hist_110"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Moon landing?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1969"
+    ],
+    "correctIndex": 3,
+    "explanation": "1969: Moon landing.",
+    "id": "hist_111"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1947?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "independence of India"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1947: independence of India.",
+    "id": "hist_112"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: fight against apartheid?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Mandela"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Mandela.",
+    "id": "hist_113"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1866?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Königgrätz"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1866: Battle of Königgrätz.",
+    "id": "hist_114"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1948?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "founding of Israel"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1948: founding of Israel.",
+    "id": "hist_115"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year did this happen: start of World War I?",
+    "options": [
+      "1917",
+      "1918",
+      "1939",
+      "1914"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1914.",
+    "id": "hist_116"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1994?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Rwandan genocide"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1994: Rwandan genocide.",
+    "id": "hist_117"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year did this happen: start of World War II?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1939"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1939.",
+    "id": "hist_118"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: attack on Pearl Harbor?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1941"
+    ],
+    "correctIndex": 3,
+    "explanation": "1941: attack on Pearl Harbor.",
+    "id": "hist_119"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Peace of Westphalia?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1648"
+    ],
+    "correctIndex": 3,
+    "explanation": "1648: Peace of Westphalia.",
+    "id": "hist_120"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What event happened in 1945?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "end of World War II"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1945: end of World War II.",
+    "id": "hist_121"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: Cuban Missile Crisis?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Kennedy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kennedy.",
+    "id": "hist_122"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: abolition of slavery in the USA?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Abraham Lincoln"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Abraham Lincoln.",
+    "id": "hist_123"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1929?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Great Depression begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1929: Great Depression begins.",
+    "id": "hist_124"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of US Civil War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1861"
+    ],
+    "correctIndex": 3,
+    "explanation": "1861: start of US Civil War.",
+    "id": "hist_125"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1989?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "fall of the Berlin Wall"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1989: fall of the Berlin Wall.",
+    "id": "hist_126"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1757?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of Seven Years' War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1757: start of Seven Years' War.",
+    "id": "hist_127"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Black Death?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1348"
+    ],
+    "correctIndex": 3,
+    "explanation": "1348: Black Death.",
+    "id": "hist_128"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2020?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "COVID-19 pandemic"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2020: COVID-19 pandemic.",
+    "id": "hist_129"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1865?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "assassination of Lincoln"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1865: assassination of Lincoln.",
+    "id": "hist_130"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: assassination of Julius Caesar?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "44 BCE"
+    ],
+    "correctIndex": 3,
+    "explanation": "44 BCE — assassination of Julius Caesar.",
+    "id": "hist_131"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What event happened in 1941?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "start of the Great Patriotic War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1941: start of the Great Patriotic War.",
+    "id": "hist_132"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: February Revolution?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1917"
+    ],
+    "correctIndex": 3,
+    "explanation": "1917: February Revolution.",
+    "id": "hist_133"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Crimean War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1853"
+    ],
+    "correctIndex": 3,
+    "explanation": "1853: start of Crimean War.",
+    "id": "hist_134"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: English Civil War begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1642"
+    ],
+    "correctIndex": 3,
+    "explanation": "1642: English Civil War begins.",
+    "id": "hist_135"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1688?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Glorious Revolution"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1688: Glorious Revolution.",
+    "id": "hist_136"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: Chernobyl disaster?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1986"
+    ],
+    "correctIndex": 3,
+    "explanation": "1986 — Chernobyl disaster.",
+    "id": "hist_137"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1861?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of US Civil War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1861: start of US Civil War.",
+    "id": "hist_138"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1963?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "assassination of Kennedy"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1963: assassination of Kennedy.",
+    "id": "hist_139"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: siege of Orléans?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Joan of Arc"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Joan of Arc.",
+    "id": "hist_140"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Apollo 8 mission?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1968"
+    ],
+    "correctIndex": 3,
+    "explanation": "1968: Apollo 8 mission.",
+    "id": "hist_141"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: Mongol Empire?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Genghis Khan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Genghis Khan.",
+    "id": "hist_142"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1998?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Russian financial crisis"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1998: Russian financial crisis.",
+    "id": "hist_143"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: Christianization of Rus?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "988"
+    ],
+    "correctIndex": 3,
+    "explanation": "988 — Christianization of Rus.",
+    "id": "hist_144"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Kosovo?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1389"
+    ],
+    "correctIndex": 3,
+    "explanation": "1389: Battle of Kosovo.",
+    "id": "hist_145"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: fire of Moscow?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1812"
+    ],
+    "correctIndex": 3,
+    "explanation": "1812: fire of Moscow.",
+    "id": "hist_146"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: formation of the German Empire?",
+    "options": [
+      "1912",
+      "1929",
+      "1933",
+      "1871"
+    ],
+    "correctIndex": 3,
+    "explanation": "1871: formation of the German Empire.",
+    "id": "hist_147"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: defeat at Dien Bien Phu?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1954"
+    ],
+    "correctIndex": 3,
+    "explanation": "1954: defeat at Dien Bien Phu.",
+    "id": "hist_148"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1918?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "end of World War I"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1918: end of World War I.",
+    "id": "hist_149"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: end of World War I?",
+    "options": [
+      "1914",
+      "1917",
+      "1939",
+      "1918"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1918.",
+    "id": "hist_150"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1949?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "founding of NATO"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1949: founding of NATO.",
+    "id": "hist_151"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: ancient Egypt?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Cleopatra"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Cleopatra.",
+    "id": "hist_152"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which event/period is associated with: Mendeleyev?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Mendeleyev"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mendeleyev — periodic table.",
+    "id": "hist_153"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1921?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "NEP in the USSR"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1921: NEP in the USSR.",
+    "id": "hist_154"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Chernobyl?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1986"
+    ],
+    "correctIndex": 3,
+    "explanation": "1986: Chernobyl.",
+    "id": "hist_155"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: Russian Empire proclaimed?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1721"
+    ],
+    "correctIndex": 3,
+    "explanation": "1721 — Russian Empire proclaimed.",
+    "id": "hist_156"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Holy Roman Empire?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "962"
+    ],
+    "correctIndex": 3,
+    "explanation": "962: Holy Roman Empire.",
+    "id": "hist_157"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Yom Kippur War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1973"
+    ],
+    "correctIndex": 3,
+    "explanation": "1973: Yom Kippur War.",
+    "id": "hist_158"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1683?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "siege of Vienna"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1683: siege of Vienna.",
+    "id": "hist_159"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1848?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Communist Manifesto published"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1848: Communist Manifesto published.",
+    "id": "hist_160"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1789?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "start of the French Revolution"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1789: start of the French Revolution.",
+    "id": "hist_161"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: assassination of Kennedy?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1963"
+    ],
+    "correctIndex": 3,
+    "explanation": "1963: assassination of Kennedy.",
+    "id": "hist_162"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1945?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "end of World War II"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1945: end of World War II.",
+    "id": "hist_163"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: COVID-19 pandemic?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2020"
+    ],
+    "correctIndex": 3,
+    "explanation": "2020: COVID-19 pandemic.",
+    "id": "hist_164"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1942?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Stalingrad"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1942: Battle of Stalingrad.",
+    "id": "hist_165"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which civilization is associated with: Colosseum and aqueducts?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Byzantium",
+      "Ancient Rome"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ancient Rome.",
+    "id": "hist_166"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Magna Carta?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1215"
+    ],
+    "correctIndex": 3,
+    "explanation": "1215: Magna Carta.",
+    "id": "hist_167"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of collectivization?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1927"
+    ],
+    "correctIndex": 3,
+    "explanation": "1927: start of collectivization.",
+    "id": "hist_168"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1955?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Warsaw Pact"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1955: Warsaw Pact.",
+    "id": "hist_169"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Great Depression begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1933",
+      "1929"
+    ],
+    "correctIndex": 3,
+    "explanation": "1929: Great Depression begins.",
+    "id": "hist_170"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 732?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Tours"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 732: Battle of Tours.",
+    "id": "hist_171"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Treaty of Nystad?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1721"
+    ],
+    "correctIndex": 3,
+    "explanation": "1721: Treaty of Nystad.",
+    "id": "hist_172"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which civilization is associated with: alphabet and seafaring?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Phoenicia"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Phoenicia.",
+    "id": "hist_173"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: first Russian Revolution?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1905"
+    ],
+    "correctIndex": 3,
+    "explanation": "1905 — first Russian Revolution.",
+    "id": "hist_174"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1911?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Xinhai Revolution in China"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1911: Xinhai Revolution in China.",
+    "id": "hist_175"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1920?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Warsaw"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1920: Battle of Warsaw.",
+    "id": "hist_176"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: start of the Korean War?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1950"
+    ],
+    "correctIndex": 3,
+    "explanation": "1950 — start of the Korean War.",
+    "id": "hist_177"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Dayton Accords?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1995"
+    ],
+    "correctIndex": 3,
+    "explanation": "1995: Dayton Accords.",
+    "id": "hist_178"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1973?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "oil crisis"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1973: oil crisis.",
+    "id": "hist_179"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: global financial crisis?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2008"
+    ],
+    "correctIndex": 3,
+    "explanation": "2008: global financial crisis.",
+    "id": "hist_180"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: siege of Vienna?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1683"
+    ],
+    "correctIndex": 3,
+    "explanation": "1683: siege of Vienna.",
+    "id": "hist_181"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1187?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Hattin"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1187: Battle of Hattin.",
+    "id": "hist_182"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1571?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Lepanto"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1571: Battle of Lepanto.",
+    "id": "hist_183"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1999?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "NATO in Yugoslavia"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1999: NATO in Yugoslavia.",
+    "id": "hist_184"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which historical figure is associated with: sea route to India?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Vasco da Gama"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Vasco da Gama.",
+    "id": "hist_185"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: end of World War II?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1945"
+    ],
+    "correctIndex": 3,
+    "explanation": "1945: end of World War II.",
+    "id": "hist_186"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: Battle of Kulikovo?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1380"
+    ],
+    "correctIndex": 3,
+    "explanation": "1380 — Battle of Kulikovo.",
+    "id": "hist_187"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: Cuban Missile Crisis?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1962"
+    ],
+    "correctIndex": 3,
+    "explanation": "1962 — Cuban Missile Crisis.",
+    "id": "hist_188"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which historical figure is associated with: voyage to the Americas?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Christopher Columbus"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Christopher Columbus.",
+    "id": "hist_189"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: Jacobin dictatorship?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Robespierre"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Robespierre.",
+    "id": "hist_190"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which historical figure is associated with: first circumnavigation?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Ferdinand Magellan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ferdinand Magellan.",
+    "id": "hist_191"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Grunwald?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1410"
+    ],
+    "correctIndex": 3,
+    "explanation": "1410: Battle of Grunwald.",
+    "id": "hist_192"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1721?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Treaty of Nystad"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1721: Treaty of Nystad.",
+    "id": "hist_193"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1871?",
+    "options": [
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Hitler comes to power",
+      "formation of the German Empire"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1871: formation of the German Empire.",
+    "id": "hist_194"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1917?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "February Revolution"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1917: February Revolution.",
+    "id": "hist_195"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Protestant Reformation begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1517"
+    ],
+    "correctIndex": 3,
+    "explanation": "1517: Protestant Reformation begins.",
+    "id": "hist_196"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year did this happen: Columbus reaches the Americas?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1492"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1492.",
+    "id": "hist_197"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year did this happen: Yuri Gagarin's first spaceflight?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1961"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1961.",
+    "id": "hist_198"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1986?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Chernobyl"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1986: Chernobyl.",
+    "id": "hist_199"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2003?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Iraq War begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2003: Iraq War begins.",
+    "id": "hist_200"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1969?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "Moon landing (Apollo 11)"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1969: Moon landing (Apollo 11).",
+    "id": "hist_201"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Korean War begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1950"
+    ],
+    "correctIndex": 3,
+    "explanation": "1950: Korean War begins.",
+    "id": "hist_202"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: September 11 attacks?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2001"
+    ],
+    "correctIndex": 3,
+    "explanation": "2001: September 11 attacks.",
+    "id": "hist_203"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Lepanto?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1571"
+    ],
+    "correctIndex": 3,
+    "explanation": "1571: Battle of Lepanto.",
+    "id": "hist_204"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: founding of NATO?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1949"
+    ],
+    "correctIndex": 3,
+    "explanation": "1949: founding of NATO.",
+    "id": "hist_205"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: Iliad and Odyssey?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Homer"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Homer.",
+    "id": "hist_206"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year did this happen: Norman conquest of England?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1066"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1066.",
+    "id": "hist_207"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: India gains independence?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1947"
+    ],
+    "correctIndex": 3,
+    "explanation": "1947: India gains independence.",
+    "id": "hist_208"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1987?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "INF Treaty"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1987: INF Treaty.",
+    "id": "hist_209"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: empire from Greece to India?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Alexander the Great"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Alexander the Great.",
+    "id": "hist_210"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Beer Hall Putsch?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1923"
+    ],
+    "correctIndex": 3,
+    "explanation": "1923: Beer Hall Putsch.",
+    "id": "hist_211"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: Britain in World War II?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Churchill"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Churchill.",
+    "id": "hist_212"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: start of the Great Depression?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1929"
+    ],
+    "correctIndex": 3,
+    "explanation": "1929 — start of the Great Depression.",
+    "id": "hist_213"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: perestroika begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1985"
+    ],
+    "correctIndex": 3,
+    "explanation": "1985: perestroika begins.",
+    "id": "hist_214"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which country is associated with: Warsaw Uprising 1944?",
+    "options": [
+      "France",
+      "USA",
+      "China",
+      "Poland"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Poland.",
+    "id": "hist_215"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which event/period is associated with: Alexander II?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Alexander II"
+    ],
+    "correctIndex": 3,
+    "explanation": "Alexander II — 1860s reforms.",
+    "id": "hist_216"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1648?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Peace of Westphalia"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1648: Peace of Westphalia.",
+    "id": "hist_217"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Spanish-American War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1898"
+    ],
+    "correctIndex": 3,
+    "explanation": "1898: Spanish-American War.",
+    "id": "hist_218"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which event/period is associated with: Gagarin?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Gagarin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gagarin — 1961.",
+    "id": "hist_219"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: fall of the Berlin Wall?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1989"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1989.",
+    "id": "hist_220"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: heliocentric system?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Copernicus"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Copernicus.",
+    "id": "hist_221"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: beginning of the Romanov dynasty?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1613"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1613.",
+    "id": "hist_222"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Nixon resigns?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1974"
+    ],
+    "correctIndex": 3,
+    "explanation": "1974: Nixon resigns.",
+    "id": "hist_223"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Hattin?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1187"
+    ],
+    "correctIndex": 3,
+    "explanation": "1187: Battle of Hattin.",
+    "id": "hist_224"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Thirty Years' War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1618"
+    ],
+    "correctIndex": 3,
+    "explanation": "1618: start of Thirty Years' War.",
+    "id": "hist_225"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1905?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "first Russian Revolution"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1905: first Russian Revolution.",
+    "id": "hist_226"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which historical figure is associated with: New Deal program?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Roosevelt"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Roosevelt.",
+    "id": "hist_227"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: coronation of Napoleon?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1804"
+    ],
+    "correctIndex": 3,
+    "explanation": "1804: coronation of Napoleon.",
+    "id": "hist_228"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which event/period is associated with: Battle of Kursk?",
+    "options": [
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Time of Troubles",
+      "Battle of Kursk"
+    ],
+    "correctIndex": 3,
+    "explanation": "Battle of Kursk — 1943.",
+    "id": "hist_229"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1938?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Munich Agreement"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1938: Munich Agreement.",
+    "id": "hist_230"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: 18th-century Russian Empire?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Catherine the Great"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Catherine the Great.",
+    "id": "hist_231"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Bosnian War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1992"
+    ],
+    "correctIndex": 3,
+    "explanation": "1992: start of Bosnian War.",
+    "id": "hist_232"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Operation Desert Storm?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1991"
+    ],
+    "correctIndex": 3,
+    "explanation": "1991: Operation Desert Storm.",
+    "id": "hist_233"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: founding of Saint Petersburg?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1703"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1703.",
+    "id": "hist_234"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: Battle of Kulikovo?",
+    "options": [
+      "Alexander Nevsky",
+      "Attila",
+      "Hannibal",
+      "Dmitry Donskoy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Dmitry Donskoy.",
+    "id": "hist_235"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: crossing the Alps?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Hannibal"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Hannibal.",
+    "id": "hist_236"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Wall Street crash?",
+    "options": [
+      "1871",
+      "1912",
+      "1933",
+      "1929"
+    ],
+    "correctIndex": 3,
+    "explanation": "1929: Wall Street crash.",
+    "id": "hist_237"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1776?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "US Declaration of Independence"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1776: US Declaration of Independence.",
+    "id": "hist_238"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which country is associated with: Orthodox Christianity?",
+    "options": [
+      "France",
+      "USA",
+      "China",
+      "Byzantium"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Byzantium.",
+    "id": "hist_239"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: death of Lenin?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1924"
+    ],
+    "correctIndex": 3,
+    "explanation": "1924: death of Lenin.",
+    "id": "hist_240"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year: US Declaration of Independence?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1776"
+    ],
+    "correctIndex": 3,
+    "explanation": "1776 — US Declaration of Independence.",
+    "id": "hist_241"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Cuban Missile Crisis?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1962"
+    ],
+    "correctIndex": 3,
+    "explanation": "1962: Cuban Missile Crisis.",
+    "id": "hist_242"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1804?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "coronation of Napoleon"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1804: coronation of Napoleon.",
+    "id": "hist_243"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1944?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Normandy landings"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1944: Normandy landings.",
+    "id": "hist_244"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Berlin Blockade?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1948"
+    ],
+    "correctIndex": 3,
+    "explanation": "1948: Berlin Blockade.",
+    "id": "hist_245"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1856?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Treaty of Paris"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1856: Treaty of Paris.",
+    "id": "hist_246"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Seven Years' War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1757"
+    ],
+    "correctIndex": 3,
+    "explanation": "1757: start of Seven Years' War.",
+    "id": "hist_247"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Berlin Wall falls?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1989"
+    ],
+    "correctIndex": 3,
+    "explanation": "1989: Berlin Wall falls.",
+    "id": "hist_248"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: handover of Hong Kong?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1997"
+    ],
+    "correctIndex": 3,
+    "explanation": "1997: handover of Hong Kong.",
+    "id": "hist_249"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which event/period is associated with: Time of Troubles?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Time of Troubles"
+    ],
+    "correctIndex": 3,
+    "explanation": "Time of Troubles — early 17th century.",
+    "id": "hist_250"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of the Great Depression?",
+    "options": [
+      "1871",
+      "1912",
+      "1933",
+      "1929"
+    ],
+    "correctIndex": 3,
+    "explanation": "1929: start of the Great Depression.",
+    "id": "hist_251"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Treaty of Verdun?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "843"
+    ],
+    "correctIndex": 3,
+    "explanation": "843: Treaty of Verdun.",
+    "id": "hist_252"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: fall of Constantinople?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1453"
+    ],
+    "correctIndex": 3,
+    "explanation": "1453: fall of Constantinople.",
+    "id": "hist_253"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which civilization is associated with: empire of Cyrus and Darius?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Persia"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Persia.",
+    "id": "hist_254"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: first US president?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Washington"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Washington.",
+    "id": "hist_255"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1953?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "death of Stalin"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1953: death of Stalin.",
+    "id": "hist_256"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: death of Stalin?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1953"
+    ],
+    "correctIndex": 3,
+    "explanation": "1953: death of Stalin.",
+    "id": "hist_257"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Cold War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1946"
+    ],
+    "correctIndex": 3,
+    "explanation": "1946: start of Cold War.",
+    "id": "hist_258"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which event/period is associated with: Chekhov?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Chekhov"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chekhov — short stories and plays.",
+    "id": "hist_259"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Glorious Revolution?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1688"
+    ],
+    "correctIndex": 3,
+    "explanation": "1688: Glorious Revolution.",
+    "id": "hist_260"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: People's Republic of China founded?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1949"
+    ],
+    "correctIndex": 3,
+    "explanation": "1949: People's Republic of China founded.",
+    "id": "hist_261"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 490 BCE?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Marathon"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 490 BCE: Battle of Marathon.",
+    "id": "hist_262"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of Spanish Civil War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1936"
+    ],
+    "correctIndex": 3,
+    "explanation": "1936: start of Spanish Civil War.",
+    "id": "hist_263"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: telescope and Jupiter's moons?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Galileo"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Galileo.",
+    "id": "hist_264"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1348?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Black Death"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1348: Black Death.",
+    "id": "hist_265"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Sputnik launched?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1957"
+    ],
+    "correctIndex": 3,
+    "explanation": "1957: Sputnik launched.",
+    "id": "hist_266"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year did this happen: signing of Magna Carta?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1215"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1215.",
+    "id": "hist_267"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: Red Army in the Civil War?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Trotsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Trotsky.",
+    "id": "hist_268"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of the French Revolution?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1789"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1789.",
+    "id": "hist_269"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Deng Xiaoping reforms?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1978"
+    ],
+    "correctIndex": 3,
+    "explanation": "1978: Deng Xiaoping reforms.",
+    "id": "hist_270"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1991?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "dissolution of the USSR"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1991: dissolution of the USSR.",
+    "id": "hist_271"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: Roman Republic and Gaul?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Julius Caesar"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Julius Caesar.",
+    "id": "hist_272"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1980?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "boycott of Moscow Olympics"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1980: boycott of Moscow Olympics.",
+    "id": "hist_273"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: unification of Germany?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Bismarck"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Bismarck.",
+    "id": "hist_274"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 962?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Holy Roman Empire"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 962: Holy Roman Empire.",
+    "id": "hist_275"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Normandy landings?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1944"
+    ],
+    "correctIndex": 3,
+    "explanation": "1944: Normandy landings.",
+    "id": "hist_276"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1997?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "handover of Hong Kong"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1997: handover of Hong Kong.",
+    "id": "hist_277"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: execution of Charles I in England?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1649"
+    ],
+    "correctIndex": 3,
+    "explanation": "1649 — execution of Charles I in England.",
+    "id": "hist_278"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which event/period is associated with: Alexander I?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Alexander I"
+    ],
+    "correctIndex": 3,
+    "explanation": "Alexander I — Patriotic War of 1812.",
+    "id": "hist_279"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: Sobornoye Ulozheniye enacted?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1689"
+    ],
+    "correctIndex": 3,
+    "explanation": "1689 — Sobornoye Ulozheniye enacted.",
+    "id": "hist_280"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Prague Spring?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1968"
+    ],
+    "correctIndex": 3,
+    "explanation": "1968: Prague Spring.",
+    "id": "hist_281"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: fall of Tenochtitlan?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1521"
+    ],
+    "correctIndex": 3,
+    "explanation": "1521: fall of Tenochtitlan.",
+    "id": "hist_282"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2019?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "COVID-19 begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2019: COVID-19 begins.",
+    "id": "hist_283"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: student of Plato?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Aristotle"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Aristotle.",
+    "id": "hist_284"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1990?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "reunification of Germany"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1990: reunification of Germany.",
+    "id": "hist_285"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1812?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "fire of Moscow"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1812: fire of Moscow.",
+    "id": "hist_286"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Crusaders capture Jerusalem?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1099"
+    ],
+    "correctIndex": 3,
+    "explanation": "1099: Crusaders capture Jerusalem.",
+    "id": "hist_287"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: death of Copernicus?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1543"
+    ],
+    "correctIndex": 3,
+    "explanation": "1543: death of Copernicus.",
+    "id": "hist_288"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1912?",
+    "options": [
+      "formation of the German Empire",
+      "start of the Great Depression",
+      "Hitler comes to power",
+      "sinking of the Titanic"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1912: sinking of the Titanic.",
+    "id": "hist_289"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1967?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Six-Day War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1967: Six-Day War.",
+    "id": "hist_290"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1815?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Waterloo"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1815: Battle of Waterloo.",
+    "id": "hist_291"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: 18th-century classical music?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Mozart"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Mozart.",
+    "id": "hist_292"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which civilization is associated with: Olympic Games and Athenian democracy?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Rome",
+      "Byzantium",
+      "Ancient Greece"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ancient Greece.",
+    "id": "hist_293"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: EU expansion?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2004"
+    ],
+    "correctIndex": 3,
+    "explanation": "2004: EU expansion.",
+    "id": "hist_294"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: invasion of Iraq?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2003"
+    ],
+    "correctIndex": 3,
+    "explanation": "2003: invasion of Iraq.",
+    "id": "hist_295"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Gaugamela?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "331 BCE"
+    ],
+    "correctIndex": 3,
+    "explanation": "331 BCE: Battle of Gaugamela.",
+    "id": "hist_296"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: division of the Roman Empire?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "395"
+    ],
+    "correctIndex": 3,
+    "explanation": "395 — division of the Roman Empire.",
+    "id": "hist_297"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1517?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Protestant Reformation begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1517: Protestant Reformation begins.",
+    "id": "hist_298"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1968?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Prague Spring"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1968: Prague Spring.",
+    "id": "hist_299"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Mongol invasion of Japan?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1274"
+    ],
+    "correctIndex": 3,
+    "explanation": "1274: Mongol invasion of Japan.",
+    "id": "hist_300"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1830?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "July Revolution in France"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1830: July Revolution in France.",
+    "id": "hist_301"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2014?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Euromaidan revolution"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2014: Euromaidan revolution.",
+    "id": "hist_302"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: reunification of Germany?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1990"
+    ],
+    "correctIndex": 3,
+    "explanation": "1990: reunification of Germany.",
+    "id": "hist_303"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: dissolution of Czechoslovakia?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1993"
+    ],
+    "correctIndex": 3,
+    "explanation": "1993: dissolution of Czechoslovakia.",
+    "id": "hist_304"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Tours?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "732"
+    ],
+    "correctIndex": 3,
+    "explanation": "732: Battle of Tours.",
+    "id": "hist_305"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Great Schism?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1054"
+    ],
+    "correctIndex": 3,
+    "explanation": "1054: Great Schism.",
+    "id": "hist_306"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which civilization is associated with: Machu Picchu?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Inca"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Inca.",
+    "id": "hist_307"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: coronation of Charlemagne?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "800"
+    ],
+    "correctIndex": 3,
+    "explanation": "800 — coronation of Charlemagne.",
+    "id": "hist_308"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which event/period is associated with: Tolstoy?",
+    "options": [
+      "Battle of Kursk",
+      "Battle on the Ice",
+      "Capture of Kazan",
+      "Tolstoy"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tolstoy — War and Peace.",
+    "id": "hist_309"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: dissolution of the USSR?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1991"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1991.",
+    "id": "hist_310"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Augustus becomes emperor?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "27 BCE"
+    ],
+    "correctIndex": 3,
+    "explanation": "27 BCE: Augustus becomes emperor.",
+    "id": "hist_311"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What event happened in 1453?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "fall of Constantinople"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1453: fall of Constantinople.",
+    "id": "hist_312"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year did this happen: assassination of Archduke Franz Ferdinand?",
+    "options": [
+      "1917",
+      "1918",
+      "1939",
+      "1914"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1914.",
+    "id": "hist_313"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: revolutions in Europe?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1848"
+    ],
+    "correctIndex": 3,
+    "explanation": "1848: revolutions in Europe.",
+    "id": "hist_314"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year did this happen: fall of the Western Roman Empire?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "476"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 476.",
+    "id": "hist_315"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1965?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "US troops enter Vietnam"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1965: US troops enter Vietnam.",
+    "id": "hist_316"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1054?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Great Schism"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1054: Great Schism.",
+    "id": "hist_317"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What event happened in 1215?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "signing of Magna Carta"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1215: signing of Magna Carta.",
+    "id": "hist_318"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1613?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "beginning of the Romanov dynasty"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1613: beginning of the Romanov dynasty.",
+    "id": "hist_319"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1915?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Armenian genocide"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1915: Armenian genocide.",
+    "id": "hist_320"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Marathon?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "490 BCE"
+    ],
+    "correctIndex": 3,
+    "explanation": "490 BCE: Battle of Marathon.",
+    "id": "hist_321"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What event happened in 1914?",
+    "options": [
+      "October Revolution in Russia",
+      "end of World War I",
+      "start of World War II",
+      "start of World War I"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1914: start of World War I.",
+    "id": "hist_322"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which country is associated with: Maurya Empire?",
+    "options": [
+      "France",
+      "USA",
+      "China",
+      "India"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is India.",
+    "id": "hist_323"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What event happened in 1961?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "Yuri Gagarin's first spaceflight"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1961: Yuri Gagarin's first spaceflight.",
+    "id": "hist_324"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: French Revolution begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1789"
+    ],
+    "correctIndex": 3,
+    "explanation": "1789: French Revolution begins.",
+    "id": "hist_325"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1521?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "fall of Tenochtitlan"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1521: fall of Tenochtitlan.",
+    "id": "hist_326"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1870?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of Franco-Prussian War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1870: start of Franco-Prussian War.",
+    "id": "hist_327"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1861?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "abolition of serfdom in Russia"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1861: abolition of serfdom in Russia.",
+    "id": "hist_328"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: financial crisis?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2008"
+    ],
+    "correctIndex": 3,
+    "explanation": "2008: financial crisis.",
+    "id": "hist_329"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Magellan's circumnavigation?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1519"
+    ],
+    "correctIndex": 3,
+    "explanation": "1519: Magellan's circumnavigation.",
+    "id": "hist_330"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 622?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Hijra of Muhammad"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 622: Hijra of Muhammad.",
+    "id": "hist_331"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which civilization is associated with: Constantinople?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Byzantium"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Byzantium.",
+    "id": "hist_332"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1066?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Hastings"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1066: Battle of Hastings.",
+    "id": "hist_333"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: abolition of serfdom in Russia?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1861"
+    ],
+    "correctIndex": 3,
+    "explanation": "This happened in 1861.",
+    "id": "hist_334"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Hastings?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1066"
+    ],
+    "correctIndex": 3,
+    "explanation": "1066: Battle of Hastings.",
+    "id": "hist_335"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: storming of the Bastille?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1789"
+    ],
+    "correctIndex": 3,
+    "explanation": "1789: storming of the Bastille.",
+    "id": "hist_336"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which historical figure is associated with: first Russian tsardom?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Catherine the Great",
+      "Ivan the Terrible"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Ivan the Terrible.",
+    "id": "hist_337"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1709?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Poltava"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1709: Battle of Poltava.",
+    "id": "hist_338"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: the Huns?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Hannibal",
+      "Attila"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Attila.",
+    "id": "hist_339"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 331 BCE?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Gaugamela"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 331 BCE: Battle of Gaugamela.",
+    "id": "hist_340"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which historical figure is associated with: the Reformation?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Martin Luther"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Martin Luther.",
+    "id": "hist_341"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1389?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Kosovo"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1389: Battle of Kosovo.",
+    "id": "hist_342"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1799?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "coup of 18 Brumaire"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1799: coup of 18 Brumaire.",
+    "id": "hist_343"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Berlin Wall built?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1961"
+    ],
+    "correctIndex": 3,
+    "explanation": "1961: Berlin Wall built.",
+    "id": "hist_344"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year: launch of Sputnik 1?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1957"
+    ],
+    "correctIndex": 3,
+    "explanation": "1957 — launch of Sputnik 1.",
+    "id": "hist_345"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: Battle of the Neva?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1240"
+    ],
+    "correctIndex": 3,
+    "explanation": "1240 — Battle of the Neva.",
+    "id": "hist_346"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1825?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Decembrist revolt"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1825: Decembrist revolt.",
+    "id": "hist_347"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1914?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "World War I begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1914: World War I begins.",
+    "id": "hist_348"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: Battle on the Ice?",
+    "options": [
+      "Dmitry Donskoy",
+      "Attila",
+      "Hannibal",
+      "Alexander Nevsky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Alexander Nevsky.",
+    "id": "hist_349"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1775?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of American Revolutionary War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1775: start of American Revolutionary War.",
+    "id": "hist_350"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1853?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of Crimean War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1853: start of Crimean War.",
+    "id": "hist_351"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1962?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Cuban Missile Crisis"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1962: Cuban Missile Crisis.",
+    "id": "hist_352"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which historical figure is associated with: slave revolt in Rome?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Spartacus"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Spartacus.",
+    "id": "hist_353"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1898?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Spanish-American War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1898: Spanish-American War.",
+    "id": "hist_354"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1703?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "founding of Saint Petersburg"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1703: founding of Saint Petersburg.",
+    "id": "hist_355"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Islamic Revolution in Iran?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1979"
+    ],
+    "correctIndex": 3,
+    "explanation": "1979: Islamic Revolution in Iran.",
+    "id": "hist_356"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1642?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "English Civil War begins"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1642: English Civil War begins.",
+    "id": "hist_357"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1805?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Austerlitz"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1805: Battle of Austerlitz.",
+    "id": "hist_358"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: World War II begins?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1939"
+    ],
+    "correctIndex": 3,
+    "explanation": "1939: World War II begins.",
+    "id": "hist_359"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Battle of Austerlitz?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1805"
+    ],
+    "correctIndex": 3,
+    "explanation": "1805: Battle of Austerlitz.",
+    "id": "hist_360"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What event happened in 1815?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "end of World War I",
+      "Battle of Waterloo"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1815: Battle of Waterloo.",
+    "id": "hist_361"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: NEP in the USSR?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1921"
+    ],
+    "correctIndex": 3,
+    "explanation": "1921: NEP in the USSR.",
+    "id": "hist_362"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2015?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Iran nuclear deal"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2015: Iran nuclear deal.",
+    "id": "hist_363"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: last Russian emperor?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Nicholas II"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Nicholas II.",
+    "id": "hist_364"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is associated with: Italian campaign?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Suvorov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Suvorov.",
+    "id": "hist_365"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1954?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "defeat at Dien Bien Phu"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1954: defeat at Dien Bien Phu.",
+    "id": "hist_366"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: July Revolution in France?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1830"
+    ],
+    "correctIndex": 3,
+    "explanation": "1830: July Revolution in France.",
+    "id": "hist_367"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: USSR dissolves?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1991"
+    ],
+    "correctIndex": 3,
+    "explanation": "1991: USSR dissolves.",
+    "id": "hist_368"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: defeat of the Spanish Armada?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1588"
+    ],
+    "correctIndex": 3,
+    "explanation": "1588: defeat of the Spanish Armada.",
+    "id": "hist_369"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Treaty of Paris?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1856"
+    ],
+    "correctIndex": 3,
+    "explanation": "1856: Treaty of Paris.",
+    "id": "hist_370"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Soviet invasion of Afghanistan?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1979"
+    ],
+    "correctIndex": 3,
+    "explanation": "1979: Soviet invasion of Afghanistan.",
+    "id": "hist_371"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 843?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Treaty of Verdun"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 843: Treaty of Verdun.",
+    "id": "hist_372"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1923?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Beer Hall Putsch"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1923: Beer Hall Putsch.",
+    "id": "hist_373"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 2004?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "EU expansion"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 2004: EU expansion.",
+    "id": "hist_374"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: Ivan IV crowned tsar?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1547"
+    ],
+    "correctIndex": 3,
+    "explanation": "1547 — Ivan IV crowned tsar.",
+    "id": "hist_375"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which civilization is associated with: calendar and cities in Central America?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Maya"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Maya.",
+    "id": "hist_376"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: Battle of Borodino?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Kutuzov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Kutuzov.",
+    "id": "hist_377"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who is associated with: Battle of Stalingrad?",
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Attila",
+      "Zhukov"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Zhukov.",
+    "id": "hist_378"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1927?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of collectivization"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1927: start of collectivization.",
+    "id": "hist_379"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Nixon visits China?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1972"
+    ],
+    "correctIndex": 3,
+    "explanation": "1972: Nixon visits China.",
+    "id": "hist_380"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: founding of Israel?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1948"
+    ],
+    "correctIndex": 3,
+    "explanation": "1948: founding of Israel.",
+    "id": "hist_381"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 27 BCE?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Augustus becomes emperor"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 27 BCE: Augustus becomes emperor.",
+    "id": "hist_382"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: start of American Revolutionary War?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1775"
+    ],
+    "correctIndex": 3,
+    "explanation": "1775: start of American Revolutionary War.",
+    "id": "hist_383"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: ping-pong diplomacy?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1971"
+    ],
+    "correctIndex": 3,
+    "explanation": "1971: ping-pong diplomacy.",
+    "id": "hist_384"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Apollo 11 Moon landing?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1969"
+    ],
+    "correctIndex": 3,
+    "explanation": "1969: Apollo 11 Moon landing.",
+    "id": "hist_385"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In what year: Russian army enters Paris?",
+    "options": [
+      "1914",
+      "1917",
+      "1918",
+      "1814"
+    ],
+    "correctIndex": 3,
+    "explanation": "1814 — Russian army enters Paris.",
+    "id": "hist_386"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: independence of India?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1947"
+    ],
+    "correctIndex": 3,
+    "explanation": "1947: independence of India.",
+    "id": "hist_387"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1543?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "death of Copernicus"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1543: death of Copernicus.",
+    "id": "hist_388"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which historical figure is associated with: English Reformation?",
+    "options": [
+      "Peter the Great",
+      "Napoleon Bonaparte",
+      "Ivan the Terrible",
+      "Henry VIII"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Henry VIII.",
+    "id": "hist_389"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: launch of Sputnik 1?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1957"
+    ],
+    "correctIndex": 3,
+    "explanation": "1957: launch of Sputnik 1.",
+    "id": "hist_390"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Vietnam War ends?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1975"
+    ],
+    "correctIndex": 3,
+    "explanation": "1975: Vietnam War ends.",
+    "id": "hist_391"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1972?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Nixon visits China"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1972: Nixon visits China.",
+    "id": "hist_392"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1946?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "start of Cold War"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1946: start of Cold War.",
+    "id": "hist_393"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What event happened in 1918?",
+    "options": [
+      "start of World War I",
+      "October Revolution in Russia",
+      "start of World War II",
+      "end of World War I"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1918: end of World War I.",
+    "id": "hist_394"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Xinhai Revolution in China?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "1911"
+    ],
+    "correctIndex": 3,
+    "explanation": "1911: Xinhai Revolution in China.",
+    "id": "hist_395"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1916?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Brusilov Offensive"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1916: Brusilov Offensive.",
+    "id": "hist_396"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1956?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Hungarian uprising"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1956: Hungarian uprising.",
+    "id": "hist_397"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which country is associated with: revolution of 1959?",
+    "options": [
+      "France",
+      "USA",
+      "China",
+      "Cuba"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Cuba.",
+    "id": "hist_398"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did this happen: Iran nuclear deal?",
+    "options": [
+      "1871",
+      "1912",
+      "1929",
+      "2015"
+    ],
+    "correctIndex": 3,
+    "explanation": "2015: Iran nuclear deal.",
+    "id": "hist_399"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What happened in 1410?",
+    "options": [
+      "formation of the German Empire",
+      "sinking of the Titanic",
+      "start of the Great Depression",
+      "Battle of Grunwald"
+    ],
+    "correctIndex": 3,
+    "explanation": "In 1410: Battle of Grunwald.",
+    "id": "hist_400"
+  }
+]

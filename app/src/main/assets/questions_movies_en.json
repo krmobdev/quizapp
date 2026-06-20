@@ -1,0 +1,5602 @@
+[
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Boogie Nights\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson PTA"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Boogie Nights\" — Anderson PTA.",
+    "id": "mov_001"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Campbell?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Casino Royale"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Casino Royale\".",
+    "id": "mov_002"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Coen?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Big Lebowski"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Big Lebowski\".",
+    "id": "mov_003"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Raging Bull\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Raging Bull\" — Scorsese.",
+    "id": "mov_004"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Dune\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Denis Villeneuve"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Dune\" (2021) — Denis Villeneuve.",
+    "id": "mov_005"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: NBC?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Friends"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Friends\".",
+    "id": "mov_006"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Nolan?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Prestige"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Prestige\".",
+    "id": "mov_007"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Avildsen?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Rocky"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Rocky\".",
+    "id": "mov_008"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Titanic\" released?",
+    "options": [
+      "2009",
+      "2010",
+      "2008",
+      "1997"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Titanic\" was released in 1997.",
+    "id": "mov_009"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Top Gun: Maverick\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kosinski"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Top Gun: Maverick\" — Kosinski.",
+    "id": "mov_010"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"The Matrix\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1999"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Matrix\" was released in 1999.",
+    "id": "mov_011"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Your Name\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Shinkai"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Your Name\" — Shinkai.",
+    "id": "mov_012"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"Alien\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1979"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Alien\" was released in 1979.",
+    "id": "mov_013"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Jackson?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Lord of the Rings"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Lord of the Rings\".",
+    "id": "mov_014"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Shinkai?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Your Name"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Your Name\".",
+    "id": "mov_015"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Amélie\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jeunet"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Amélie\" — Jeunet.",
+    "id": "mov_016"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Rush\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Howard"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Rush\" — Howard.",
+    "id": "mov_017"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Gladiator\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scott"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Gladiator\" — Scott.",
+    "id": "mov_018"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Forrest Gump\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Forrest Gump\" — Zemeckis.",
+    "id": "mov_019"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Scorsese?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Raging Bull"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Raging Bull\".",
+    "id": "mov_020"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"A Nightmare on Elm Street\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Craven"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"A Nightmare on Elm Street\" — Craven.",
+    "id": "mov_021"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: BBC?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Sherlock"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Sherlock\".",
+    "id": "mov_022"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Miyazaki?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Howl's Moving Castle"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Howl's Moving Castle\".",
+    "id": "mov_023"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Anderson PTA?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "There Will Be Blood"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"There Will Be Blood\".",
+    "id": "mov_024"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: Elsa?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "Frozen"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Frozen\".",
+    "id": "mov_025"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Doctor Who\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "BBC"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Doctor Who\" — BBC.",
+    "id": "mov_026"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Slumdog Millionaire\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Boyle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Slumdog Millionaire\" — Boyle.",
+    "id": "mov_027"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Avengers\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Whedon"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Avengers\" — Whedon.",
+    "id": "mov_028"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Silence of the Lambs\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Demme"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Silence of the Lambs\" — Demme.",
+    "id": "mov_029"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Green Book\"?",
+    "options": [
+      "Frank Darabont",
+      "Christopher Nolan",
+      "Denis Villeneuve",
+      "Peter Farrelly"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Green Book\" (2018) — Peter Farrelly.",
+    "id": "mov_030"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Black Hawk Down\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scott"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Black Hawk Down\" — Scott.",
+    "id": "mov_031"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Trainspotting\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Boyle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Trainspotting\" — Boyle.",
+    "id": "mov_032"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Roma\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cuarón"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Roma\" — Cuarón.",
+    "id": "mov_033"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Spielberg?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Pulp Fiction",
+      "Schindler's List"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Schindler's List\".",
+    "id": "mov_034"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Columbus?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Home Alone"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Home Alone\".",
+    "id": "mov_035"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: Thanos?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "The Avengers"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Avengers\".",
+    "id": "mov_036"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Inception\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Francis Ford Coppola",
+      "Christopher Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Inception\" (2010) was directed by Christopher Nolan.",
+    "id": "mov_037"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The King's Speech\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Hooper"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The King's Speech\" — Hooper.",
+    "id": "mov_038"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Grand Budapest Hotel\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Grand Budapest Hotel\" — Anderson.",
+    "id": "mov_039"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Hitchcock?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Vertigo"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Vertigo\".",
+    "id": "mov_040"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Shutter Island\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Martin Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Shutter Island\" (2010) — Martin Scorsese.",
+    "id": "mov_041"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Carpenter?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Halloween"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Halloween\".",
+    "id": "mov_042"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Kill Bill\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Kill Bill\" — Tarantino.",
+    "id": "mov_043"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Bird?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Ratatouille"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Ratatouille\".",
+    "id": "mov_044"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Mendes?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Skyfall"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Skyfall\".",
+    "id": "mov_045"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Fast & Furious\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cohen"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Fast & Furious\" — Cohen.",
+    "id": "mov_046"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Netflix?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Stranger Things"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Stranger Things\".",
+    "id": "mov_047"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Darth Vader belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Marvel / Iron Man",
+      "Arthur Conan Doyle",
+      "Star Wars"
+    ],
+    "correctIndex": 3,
+    "explanation": "Darth Vader is from Star Wars.",
+    "id": "mov_048"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"Forrest Gump\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1994"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Forrest Gump\" was released in 1994.",
+    "id": "mov_049"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"The Lord of the Rings\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Peter Jackson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Lord of the Rings\" (2001) was directed by Peter Jackson.",
+    "id": "mov_050"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Pulp Fiction\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Pulp Fiction\" — Tarantino.",
+    "id": "mov_051"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Forster?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Quantum of Solace"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Quantum of Solace\".",
+    "id": "mov_052"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Johnston?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Captain America"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Captain America\".",
+    "id": "mov_053"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Curious Case\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Curious Case\" — Fincher.",
+    "id": "mov_054"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Spirited Away\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Miyazaki"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Spirited Away\" — Miyazaki.",
+    "id": "mov_055"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which TV series is associated with: Geralt of Rivia?",
+    "options": [
+      "Game of Thrones",
+      "Breaking Bad",
+      "Friends",
+      "The Witcher"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Witcher\" (Netflix).",
+    "id": "mov_056"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Fincher?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Gone Girl"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Gone Girl\".",
+    "id": "mov_057"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Pan's Labyrinth\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "del Toro"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Pan's Labyrinth\" — del Toro.",
+    "id": "mov_058"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Frozen\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2013"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Frozen\" was released in 2013.",
+    "id": "mov_059"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Wachowskis?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Matrix"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Matrix\".",
+    "id": "mov_060"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: Iron Throne?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "Game of Thrones"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Game of Thrones\".",
+    "id": "mov_061"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Muschietti?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "It"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"It\".",
+    "id": "mov_062"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Hooper?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The King's Speech"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The King's Speech\".",
+    "id": "mov_063"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed the film \"Parasite\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Bong Joon-ho"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Parasite\" (2019) was directed by Bong Joon-ho.",
+    "id": "mov_064"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Inglourious Basterds\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Quentin Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Inglourious Basterds\" (2009) — Quentin Tarantino.",
+    "id": "mov_065"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"The Lion King\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1994"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Lion King\" was released in 1994.",
+    "id": "mov_066"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Zemeckis?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Polar Express"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Polar Express\".",
+    "id": "mov_067"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Anderson?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Grand Budapest Hotel"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Grand Budapest Hotel\".",
+    "id": "mov_068"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Kubrick?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "2001: A Space Odyssey"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"2001: A Space Odyssey\".",
+    "id": "mov_069"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"The Intouchables\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Olivier Nakache"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Intouchables\" (2011) was directed by Olivier Nakache.",
+    "id": "mov_070"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Edwards?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Godzilla"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Godzilla\".",
+    "id": "mov_071"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Matrix\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Wachowskis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Matrix\" — Wachowskis.",
+    "id": "mov_072"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Coppola?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Virgin Suicides"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Virgin Suicides\".",
+    "id": "mov_073"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"MI: Fallout\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "McQuarrie"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"MI: Fallout\" — McQuarrie.",
+    "id": "mov_074"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"GoldenEye\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Campbell"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"GoldenEye\" — Campbell.",
+    "id": "mov_075"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Frozen\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Buck"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Frozen\" — Buck.",
+    "id": "mov_076"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Stahelski?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "John Wick"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"John Wick\".",
+    "id": "mov_077"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"The Matrix\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Wachowskis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Matrix\" (1999) was directed by Wachowskis.",
+    "id": "mov_078"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Who Framed Roger Rabbit\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Who Framed Roger Rabbit\" — Zemeckis.",
+    "id": "mov_079"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Interstellar\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Interstellar\" — Nolan.",
+    "id": "mov_080"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Taxi Driver\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Taxi Driver\" — Scorsese.",
+    "id": "mov_081"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Mission Impossible\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "De Palma"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Mission Impossible\" — De Palma.",
+    "id": "mov_082"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Spider-Man\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Raimi"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Spider-Man\" — Raimi.",
+    "id": "mov_083"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Birds\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Hitchcock"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Birds\" — Hitchcock.",
+    "id": "mov_084"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Polar Express\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Polar Express\" — Zemeckis.",
+    "id": "mov_085"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Howard?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "A Beautiful Mind"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"A Beautiful Mind\".",
+    "id": "mov_086"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Shrek\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2001"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Shrek\" was released in 2001.",
+    "id": "mov_087"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Tarantino?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Django Unchained"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Django Unchained\".",
+    "id": "mov_088"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Catch Me If You Can\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Catch Me If You Can\" — Spielberg.",
+    "id": "mov_089"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Liman?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Bourne Identity"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Bourne Identity\".",
+    "id": "mov_090"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Luke Skywalker belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Marvel / Iron Man",
+      "Arthur Conan Doyle",
+      "Star Wars"
+    ],
+    "correctIndex": 3,
+    "explanation": "Luke Skywalker is from Star Wars.",
+    "id": "mov_091"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"127 Hours\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Boyle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"127 Hours\" — Boyle.",
+    "id": "mov_092"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Blade Runner 2049\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Villeneuve"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Blade Runner 2049\" — Villeneuve.",
+    "id": "mov_093"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Scott?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Gladiator"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Gladiator\".",
+    "id": "mov_094"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Dark Knight\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Dark Knight\" — Nolan.",
+    "id": "mov_095"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Kosinski?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Oblivion"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Oblivion\".",
+    "id": "mov_096"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Truman Show\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Weir"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Truman Show\" — Weir.",
+    "id": "mov_097"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Stranger Things\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Netflix"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Stranger Things\" — Netflix.",
+    "id": "mov_098"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Titanic\"?",
+    "options": [
+      "Christopher Nolan",
+      "Christopher Nolan",
+      "Francis Ford Coppola",
+      "James Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Titanic\" (1997) was directed by James Cameron.",
+    "id": "mov_099"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Craven?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Scream"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Scream\".",
+    "id": "mov_100"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"The Lord of the Rings\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2001"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Lord of the Rings\" was released in 2001.",
+    "id": "mov_101"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which TV series is associated with: diagnostics?",
+    "options": [
+      "Game of Thrones",
+      "Breaking Bad",
+      "Friends",
+      "House"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"House\" (Fox).",
+    "id": "mov_102"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Shining\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kubrick"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Shining\" — Kubrick.",
+    "id": "mov_103"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Friends\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "NBC"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Friends\" — NBC.",
+    "id": "mov_104"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Reeves?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Planet of the Apes"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Planet of the Apes\".",
+    "id": "mov_105"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Good, the Bad and the Ugly\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Leone"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Good, the Bad and the Ugly\" — Leone.",
+    "id": "mov_106"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Interstellar\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Denis Villeneuve",
+      "Christopher Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Interstellar\" (2014) — Christopher Nolan.",
+    "id": "mov_107"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Eleven belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "Stranger Things"
+    ],
+    "correctIndex": 3,
+    "explanation": "Eleven is from Stranger Things.",
+    "id": "mov_108"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Mangold?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Logan"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Logan\".",
+    "id": "mov_109"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Docter?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Up"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Up\".",
+    "id": "mov_110"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Wan?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Saw"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Saw\".",
+    "id": "mov_111"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Boyle?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "28 Days Later"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"28 Days Later\".",
+    "id": "mov_112"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In what year was the film \"The Godfather\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1972"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Godfather\" was released in 1972.",
+    "id": "mov_113"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Hobbit\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jackson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Hobbit\" — Jackson.",
+    "id": "mov_114"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Sherlock Holmes belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "Arthur Conan Doyle"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sherlock Holmes is from Arthur Conan Doyle.",
+    "id": "mov_115"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Curtiz?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Casablanca"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Casablanca\".",
+    "id": "mov_116"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"True Grit\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Coen"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"True Grit\" — Coen.",
+    "id": "mov_117"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Villeneuve?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Blade Runner 2049"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Blade Runner 2049\".",
+    "id": "mov_118"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Ice Age\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Ward"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Ice Age\" — Ward.",
+    "id": "mov_119"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Chazelle?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Whiplash"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Whiplash\".",
+    "id": "mov_120"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Zodiac\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Zodiac\" — Fincher.",
+    "id": "mov_121"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Gunn?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Guardians of the Galaxy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Guardians of the Galaxy\".",
+    "id": "mov_122"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Return of the Jedi\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Marquand"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Return of the Jedi\" — Marquand.",
+    "id": "mov_123"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Back to the Future\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1985"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Back to the Future\" was released in 1985.",
+    "id": "mov_124"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: HBO?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Game of Thrones"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Game of Thrones\".",
+    "id": "mov_125"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Top Gun\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scott"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Top Gun\" — Scott.",
+    "id": "mov_126"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Lee?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Brokeback Mountain"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Brokeback Mountain\".",
+    "id": "mov_127"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Once Upon a Time in Hollywood\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Once Upon a Time in Hollywood\" — Tarantino.",
+    "id": "mov_128"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"The Lion King\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Disney"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Lion King\" (1994) was directed by Disney.",
+    "id": "mov_129"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Derrickson?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Doctor Strange"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Doctor Strange\".",
+    "id": "mov_130"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Goodfellas\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Goodfellas\" — Scorsese.",
+    "id": "mov_131"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Tenet\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Tenet\" — Nolan.",
+    "id": "mov_132"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Pulp Fiction\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Quentin Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Pulp Fiction\" (1994) — Quentin Tarantino.",
+    "id": "mov_133"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Blade Runner\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scott"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Blade Runner\" — Scott.",
+    "id": "mov_134"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Miller?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Mad Max 2"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Mad Max 2\".",
+    "id": "mov_135"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Terminator\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Terminator\" — Cameron.",
+    "id": "mov_136"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Léon\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Besson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Léon\" — Besson.",
+    "id": "mov_137"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Darabont?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Shawshank Redemption"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Shawshank Redemption\".",
+    "id": "mov_138"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Jurassic Park\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1993"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Jurassic Park\" was released in 1993.",
+    "id": "mov_139"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Departed\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Departed\" — Scorsese.",
+    "id": "mov_140"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Gravity\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cuarón"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Gravity\" — Cuarón.",
+    "id": "mov_141"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Akira\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Otomo"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Akira\" — Otomo.",
+    "id": "mov_142"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: del Toro?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Pan's Labyrinth"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Pan's Labyrinth\".",
+    "id": "mov_143"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Jeunet?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Amélie"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Amélie\".",
+    "id": "mov_144"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Whedon?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Avengers"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Avengers\".",
+    "id": "mov_145"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Dune\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Villeneuve"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Dune\" — Villeneuve.",
+    "id": "mov_146"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"No Country for Old Men\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Coen"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"No Country for Old Men\" — Coen.",
+    "id": "mov_147"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Ju-on\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Shimizu"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Ju-on\" — Shimizu.",
+    "id": "mov_148"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Oshii?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Ghost in the Shell"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Ghost in the Shell\".",
+    "id": "mov_149"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Amélie\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Jean-Pierre Jeunet"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Amélie\" (2001) — Jean-Pierre Jeunet.",
+    "id": "mov_150"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Moore?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Zootopia"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Zootopia\".",
+    "id": "mov_151"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"A Clockwork Orange\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kubrick"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"A Clockwork Orange\" — Kubrick.",
+    "id": "mov_152"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"American Beauty\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Sam Mendes"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"American Beauty\" (1999) — Sam Mendes.",
+    "id": "mov_153"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"The Green Mile\"?",
+    "options": [
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Denis Villeneuve",
+      "Frank Darabont"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Green Mile\" (1999) — Frank Darabont.",
+    "id": "mov_154"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Mean Streets\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Mean Streets\" — Scorsese.",
+    "id": "mov_155"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Citizen Kane\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Welles"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Citizen Kane\" — Welles.",
+    "id": "mov_156"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Black Panther\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Coogler"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Black Panther\" — Coogler.",
+    "id": "mov_157"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Schindler's List\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Schindler's List\" — Spielberg.",
+    "id": "mov_158"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Schindler's List\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Steven Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Schindler's List\" (1993) was directed by Steven Spielberg.",
+    "id": "mov_159"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Alien\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scott"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Alien\" — Scott.",
+    "id": "mov_160"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Van Sant?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Good Will Hunting"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Good Will Hunting\".",
+    "id": "mov_161"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Skyfall\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Mendes"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Skyfall\" — Mendes.",
+    "id": "mov_162"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"Gladiator\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2000"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Gladiator\" was released in 2000.",
+    "id": "mov_163"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Shawshank Redemption\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Darabont"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Shawshank Redemption\" — Darabont.",
+    "id": "mov_164"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Gladiator\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Ridley Scott"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Gladiator\" (2000) was directed by Ridley Scott.",
+    "id": "mov_165"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Fight Club\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Fight Club\" — Fincher.",
+    "id": "mov_166"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Stanton?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Finding Nemo"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Finding Nemo\".",
+    "id": "mov_167"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Weathering With You\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Shinkai"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Weathering With You\" — Shinkai.",
+    "id": "mov_168"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Fifth Element\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Besson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Fifth Element\" — Besson.",
+    "id": "mov_169"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Lion King\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Allers"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Lion King\" — Allers.",
+    "id": "mov_170"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Vertigo\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Hitchcock"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Vertigo\" — Hitchcock.",
+    "id": "mov_171"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which TV series is associated with: methamphetamine?",
+    "options": [
+      "Game of Thrones",
+      "Friends",
+      "The Office",
+      "Breaking Bad"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Breaking Bad\" (AMC).",
+    "id": "mov_172"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Fight Club\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "David Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Fight Club\" (1999) — David Fincher.",
+    "id": "mov_173"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed the film \"The Godfather\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Francis Ford Coppola"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Godfather\" (1972) was directed by Francis Ford Coppola.",
+    "id": "mov_174"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"No Time to Die\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Mendes"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"No Time to Die\" — Mendes.",
+    "id": "mov_175"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which TV series is associated with: Iron Throne?",
+    "options": [
+      "Breaking Bad",
+      "Friends",
+      "The Office",
+      "Game of Thrones"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Game of Thrones\" (HBO).",
+    "id": "mov_176"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Fantastic Mr. Fox\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Fantastic Mr. Fox\" — Anderson.",
+    "id": "mov_177"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"The Dark Knight\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2008"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Dark Knight\" was released in 2008.",
+    "id": "mov_178"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Green Mile\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Darabont"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Green Mile\" — Darabont.",
+    "id": "mov_179"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"The Intouchables\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2011"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Intouchables\" was released in 2011.",
+    "id": "mov_180"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Gone Girl\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Gone Girl\" — Fincher.",
+    "id": "mov_181"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Minions\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Coffin"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Minions\" — Coffin.",
+    "id": "mov_182"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Shyamalan?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Sixth Sense"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Sixth Sense\".",
+    "id": "mov_183"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: red pill?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "The Matrix"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Matrix\".",
+    "id": "mov_184"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Deadpool\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Miller"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Deadpool\" — Miller.",
+    "id": "mov_185"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Cuarón?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Y Tu Mamá También"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Y Tu Mamá También\".",
+    "id": "mov_186"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Virgin Suicides\"?",
+    "options": [
+      "Nolan",
+      "Spielberg",
+      "Tarantino",
+      "Coppola"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Virgin Suicides\" — Coppola.",
+    "id": "mov_187"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Lucas?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Star Wars"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Star Wars\".",
+    "id": "mov_188"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Weir?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Truman Show"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Truman Show\".",
+    "id": "mov_189"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Big Lebowski\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Coen"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Big Lebowski\" — Coen.",
+    "id": "mov_190"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Despicable Me\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Coffin"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Despicable Me\" — Coffin.",
+    "id": "mov_191"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Bay?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Transformers"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Transformers\".",
+    "id": "mov_192"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Casablanca\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Curtiz"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Casablanca\" — Curtiz.",
+    "id": "mov_193"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: ABC?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Lost"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Lost\".",
+    "id": "mov_194"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Tron: Legacy\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kosinski"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Tron: Legacy\" — Kosinski.",
+    "id": "mov_195"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Saving Private Ryan\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Saving Private Ryan\" — Spielberg.",
+    "id": "mov_196"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"1917\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Mendes"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"1917\" — Mendes.",
+    "id": "mov_197"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"The Wolf of Wall Street\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Martin Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Wolf of Wall Street\" (2013) — Martin Scorsese.",
+    "id": "mov_198"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Marie Antoinette\"?",
+    "options": [
+      "Nolan",
+      "Spielberg",
+      "Tarantino",
+      "Coppola"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Marie Antoinette\" — Coppola.",
+    "id": "mov_199"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Pacific Rim\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "del Toro"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Pacific Rim\" — del Toro.",
+    "id": "mov_200"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Rocky\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Sylvester Stallone"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Rocky\" (1976) — Sylvester Stallone.",
+    "id": "mov_201"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Cameron?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Avatar"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Avatar\".",
+    "id": "mov_202"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Harry Potter and the Sorcerer's Stone\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Chris Columbus"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Harry Potter and the Sorcerer's Stone\" (2001) was directed by Chris Columbus.",
+    "id": "mov_203"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Game of Thrones\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "HBO"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Game of Thrones\" — HBO.",
+    "id": "mov_204"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Harry Potter belong to?",
+    "options": [
+      "Star Wars",
+      "Star Wars",
+      "Marvel / Iron Man",
+      "J.K. Rowling / Warner Bros."
+    ],
+    "correctIndex": 3,
+    "explanation": "Harry Potter is from J.K. Rowling / Warner Bros..",
+    "id": "mov_205"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Rocky\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Avildsen"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Rocky\" — Avildsen.",
+    "id": "mov_206"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Russo?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Avengers: Endgame"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Avengers: Endgame\".",
+    "id": "mov_207"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Tony Stark belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "Marvel / Iron Man"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tony Stark is from Marvel / Iron Man.",
+    "id": "mov_208"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Godfather\"?",
+    "options": [
+      "Nolan",
+      "Spielberg",
+      "Tarantino",
+      "Coppola"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Godfather\" — Coppola.",
+    "id": "mov_209"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: Judy Hopps?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "Zootopia"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Zootopia\".",
+    "id": "mov_210"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Benigni?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Life Is Beautiful"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Life Is Beautiful\".",
+    "id": "mov_211"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: ogre?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "Shrek"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Shrek\".",
+    "id": "mov_212"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Jaws\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Jaws\" — Spielberg.",
+    "id": "mov_213"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Joker\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Todd Phillips"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Joker\" (2019) was directed by Todd Phillips.",
+    "id": "mov_214"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Branagh?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Thor"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Thor\".",
+    "id": "mov_215"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Drive\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Refn"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Drive\" — Refn.",
+    "id": "mov_216"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Parasite\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Bong"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Parasite\" — Bong.",
+    "id": "mov_217"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which TV series is associated with: Hawkins?",
+    "options": [
+      "Game of Thrones",
+      "Breaking Bad",
+      "Friends",
+      "Stranger Things"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Stranger Things\" (Netflix).",
+    "id": "mov_218"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"The Pianist\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Roman Polanski"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Pianist\" (2002) — Roman Polanski.",
+    "id": "mov_219"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"A Beautiful Mind\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Howard"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"A Beautiful Mind\" — Howard.",
+    "id": "mov_220"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Oppenheimer\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Oppenheimer\" — Nolan.",
+    "id": "mov_221"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which actor is known for a role in \"The Godfather\"?",
+    "options": [
+      "Leonardo DiCaprio",
+      "Tom Hanks",
+      "Harrison Ford",
+      "Marlon Brando"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Marlon Brando.",
+    "id": "mov_222"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Y Tu Mamá También\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cuarón"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Y Tu Mamá También\" — Cuarón.",
+    "id": "mov_223"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Captain America\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Johnston"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Captain America\" — Johnston.",
+    "id": "mov_224"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Iñárritu?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Revenant"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Revenant\".",
+    "id": "mov_225"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Saw\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Wan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Saw\" — Wan.",
+    "id": "mov_226"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: De Palma?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Mission Impossible"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Mission Impossible\".",
+    "id": "mov_227"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"2001: A Space Odyssey\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kubrick"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"2001: A Space Odyssey\" — Kubrick.",
+    "id": "mov_228"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Casino\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Casino\" — Scorsese.",
+    "id": "mov_229"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Home Alone\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Columbus"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Home Alone\" — Columbus.",
+    "id": "mov_230"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Logan\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Mangold"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Logan\" — Mangold.",
+    "id": "mov_231"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Gondry?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Science of Sleep"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Science of Sleep\".",
+    "id": "mov_232"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Science of Sleep\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Gondry"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Science of Sleep\" — Gondry.",
+    "id": "mov_233"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Raimi?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Spider-Man"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Spider-Man\".",
+    "id": "mov_234"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character The Avengers belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "Marvel"
+    ],
+    "correctIndex": 3,
+    "explanation": "The Avengers is from Marvel.",
+    "id": "mov_235"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Se7en\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Se7en\" — Fincher.",
+    "id": "mov_236"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Bourne Ultimatum\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Greengrass"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Bourne Ultimatum\" — Greengrass.",
+    "id": "mov_237"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Crimson Peak\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "del Toro"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Crimson Peak\" — del Toro.",
+    "id": "mov_238"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Avatar\"?",
+    "options": [
+      "Christopher Nolan",
+      "Christopher Nolan",
+      "Francis Ford Coppola",
+      "James Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Avatar\" (2009) was directed by James Cameron.",
+    "id": "mov_239"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Moana\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Clements"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Moana\" — Clements.",
+    "id": "mov_240"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: Lightning McQueen?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "Cars"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Cars\".",
+    "id": "mov_241"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Jurassic Park\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Steven Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Jurassic Park\" (1993) was directed by Steven Spielberg.",
+    "id": "mov_242"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Her\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jonze"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Her\" — Jonze.",
+    "id": "mov_243"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Unkrich?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Coco"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Coco\".",
+    "id": "mov_244"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Oblivion\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kosinski"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Oblivion\" — Kosinski.",
+    "id": "mov_245"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: Jedi?",
+    "options": [
+      "Titanic",
+      "The Lord of the Rings",
+      "The Avengers",
+      "Star Wars"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Star Wars\".",
+    "id": "mov_246"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Coffin?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Despicable Me"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Despicable Me\".",
+    "id": "mov_247"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Inception\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Inception\" — Nolan.",
+    "id": "mov_248"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Up\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Docter"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Up\" — Docter.",
+    "id": "mov_249"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Quantum of Solace\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Forster"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Quantum of Solace\" — Forster.",
+    "id": "mov_250"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Demme?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Silence of the Lambs"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Silence of the Lambs\".",
+    "id": "mov_251"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Goodfellas\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Martin Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Goodfellas\" (1990) — Martin Scorsese.",
+    "id": "mov_252"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Oldboy\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Park"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Oldboy\" — Park.",
+    "id": "mov_253"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Life Is Beautiful\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Benigni"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Life Is Beautiful\" — Benigni.",
+    "id": "mov_254"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Dead Poets Society\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Weir"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Dead Poets Society\" — Weir.",
+    "id": "mov_255"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Princess Mononoke\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Miyazaki"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Princess Mononoke\" — Miyazaki.",
+    "id": "mov_256"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Nakata?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Ring"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Ring\".",
+    "id": "mov_257"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"Schindler's List\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1993"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Schindler's List\" was released in 1993.",
+    "id": "mov_258"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Contact\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Contact\" — Zemeckis.",
+    "id": "mov_259"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Home Alone\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Chris Columbus"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Home Alone\" (1990) was directed by Chris Columbus.",
+    "id": "mov_260"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Apollo 13\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Howard"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Apollo 13\" — Howard.",
+    "id": "mov_261"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Allers?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Lion King"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Lion King\".",
+    "id": "mov_262"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Crouching Tiger\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Lee"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Crouching Tiger\" — Lee.",
+    "id": "mov_263"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character James Bond belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "Ian Fleming"
+    ],
+    "correctIndex": 3,
+    "explanation": "James Bond is from Ian Fleming.",
+    "id": "mov_264"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Welles?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Citizen Kane"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Citizen Kane\".",
+    "id": "mov_265"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Planet of the Apes\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Reeves"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Planet of the Apes\" — Reeves.",
+    "id": "mov_266"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Spectre\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Mendes"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Spectre\" — Mendes.",
+    "id": "mov_267"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Only the Brave\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kosinski"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Only the Brave\" — Kosinski.",
+    "id": "mov_268"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Ghost in the Shell\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Oshii"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Ghost in the Shell\" — Oshii.",
+    "id": "mov_269"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Favreau?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Iron Man"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Iron Man\".",
+    "id": "mov_270"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Thor\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Branagh"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Thor\" — Branagh.",
+    "id": "mov_271"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Léon\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Luc Besson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Léon\" (1994) — Luc Besson.",
+    "id": "mov_272"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which TV series is associated with: Dunder Mifflin?",
+    "options": [
+      "Game of Thrones",
+      "Breaking Bad",
+      "Friends",
+      "The Office"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Office\" (NBC).",
+    "id": "mov_273"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Social Network\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Social Network\" — Fincher.",
+    "id": "mov_274"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Toy Story\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Lasseter"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Toy Story\" — Lasseter.",
+    "id": "mov_275"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Minions belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "Despicable Me"
+    ],
+    "correctIndex": 3,
+    "explanation": "Minions is from Despicable Me.",
+    "id": "mov_276"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Jaws\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Steven Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Jaws\" (1975) was directed by Steven Spielberg.",
+    "id": "mov_277"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Iron Man\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Favreau"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Iron Man\" — Favreau.",
+    "id": "mov_278"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Brokeback Mountain\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Lee"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Brokeback Mountain\" — Lee.",
+    "id": "mov_279"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Unforgiven\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Eastwood"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Unforgiven\" — Eastwood.",
+    "id": "mov_280"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Prisoner of Azkaban\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cuarón"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Prisoner of Azkaban\" — Cuarón.",
+    "id": "mov_281"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Children of Men\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cuarón"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Children of Men\" — Cuarón.",
+    "id": "mov_282"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Zootopia\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Moore"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Zootopia\" — Moore.",
+    "id": "mov_283"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Isle of Dogs\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Isle of Dogs\" — Anderson.",
+    "id": "mov_284"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: AMC?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Breaking Bad"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Breaking Bad\".",
+    "id": "mov_285"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Chaplin?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Great Dictator"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Great Dictator\".",
+    "id": "mov_286"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Besson?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Fifth Element"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Fifth Element\".",
+    "id": "mov_287"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Back to the Future\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Back to the Future\" — Zemeckis.",
+    "id": "mov_288"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Neo belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "The Matrix"
+    ],
+    "correctIndex": 3,
+    "explanation": "Neo is from The Matrix.",
+    "id": "mov_289"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Shape of Water\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "del Toro"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Shape of Water\" — del Toro.",
+    "id": "mov_290"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Eternal Sunshine\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Gondry"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Eternal Sunshine\" — Gondry.",
+    "id": "mov_291"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"28 Days Later\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Boyle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"28 Days Later\" — Boyle.",
+    "id": "mov_292"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Kershner?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Empire Strikes Back"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Empire Strikes Back\".",
+    "id": "mov_293"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Madagascar\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "DWA"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Madagascar\" — DWA.",
+    "id": "mov_294"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Sixth Sense\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Shyamalan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Sixth Sense\" — Shyamalan.",
+    "id": "mov_295"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"John Wick\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Stahelski"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"John Wick\" — Stahelski.",
+    "id": "mov_296"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Frozen\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Disney"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Frozen\" (2013) was directed by Disney.",
+    "id": "mov_297"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: McTiernan?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Die Hard"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Die Hard\".",
+    "id": "mov_298"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Magnolia\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson PTA"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Magnolia\" — Anderson PTA.",
+    "id": "mov_299"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Coogler?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Black Panther"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Black Panther\".",
+    "id": "mov_300"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Halloween\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Carpenter"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Halloween\" — Carpenter.",
+    "id": "mov_301"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Home Alone 2\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Columbus"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Home Alone 2\" — Columbus.",
+    "id": "mov_302"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which franchise does the character Gandalf belong to?",
+    "options": [
+      "J.K. Rowling / Warner Bros.",
+      "Star Wars",
+      "Star Wars",
+      "The Lord of the Rings"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gandalf is from The Lord of the Rings.",
+    "id": "mov_303"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Greengrass?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Bourne Ultimatum"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Bourne Ultimatum\".",
+    "id": "mov_304"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"King Kong\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jackson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"King Kong\" — Jackson.",
+    "id": "mov_305"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Life of Pi\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Lee"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Life of Pi\" — Lee.",
+    "id": "mov_306"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Somewhere\"?",
+    "options": [
+      "Nolan",
+      "Spielberg",
+      "Tarantino",
+      "Coppola"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Somewhere\" — Coppola.",
+    "id": "mov_307"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Forrest Gump\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Robert Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Forrest Gump\" (1994) was directed by Robert Zemeckis.",
+    "id": "mov_308"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Whiplash\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Chazelle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Whiplash\" — Chazelle.",
+    "id": "mov_309"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Finding Nemo\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Stanton"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Finding Nemo\" — Stanton.",
+    "id": "mov_310"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Memento\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Memento\" — Nolan.",
+    "id": "mov_311"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Ward?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Ice Age"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Ice Age\".",
+    "id": "mov_312"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Chernobyl\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "HBO"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Chernobyl\" — HBO.",
+    "id": "mov_313"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Witcher\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Netflix"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Witcher\" — Netflix.",
+    "id": "mov_314"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Clements?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Moana"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Moana\".",
+    "id": "mov_315"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"Joker\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2019"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Joker\" was released in 2019.",
+    "id": "mov_316"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"WALL-E\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Stanton"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"WALL-E\" — Stanton.",
+    "id": "mov_317"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Close Encounters\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Close Encounters\" — Spielberg.",
+    "id": "mov_318"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"La La Land\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Damien Chazelle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"La La Land\" (2016) — Damien Chazelle.",
+    "id": "mov_319"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Being John Malkovich\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jonze"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Being John Malkovich\" — Jonze.",
+    "id": "mov_320"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Finding Forrester\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Van Sant"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Finding Forrester\" — Van Sant.",
+    "id": "mov_321"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Eastwood?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Unforgiven"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Unforgiven\".",
+    "id": "mov_322"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Scream\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Craven"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Scream\" — Craven.",
+    "id": "mov_323"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Home Alone\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1990"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Home Alone\" was released in 1990.",
+    "id": "mov_324"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Django Unchained\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Django Unchained\" — Tarantino.",
+    "id": "mov_325"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Ratatouille\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Bird"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Ratatouille\" — Bird.",
+    "id": "mov_326"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Psycho\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Hitchcock"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Psycho\" — Hitchcock.",
+    "id": "mov_327"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Bridge of Spies\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Bridge of Spies\" — Spielberg.",
+    "id": "mov_328"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the film \"Jaws\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "1975"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Jaws\" was released in 1975.",
+    "id": "mov_329"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Park?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Oldboy"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Oldboy\".",
+    "id": "mov_330"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Peele?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Get Out"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Get Out\".",
+    "id": "mov_331"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which actor is known for a role in \"The Matrix\"?",
+    "options": [
+      "Leonardo DiCaprio",
+      "Tom Hanks",
+      "Marlon Brando",
+      "Keanu Reeves"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Keanu Reeves.",
+    "id": "mov_332"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Shimizu?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Ju-on"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Ju-on\".",
+    "id": "mov_333"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Disney+?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Mandalorian"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Mandalorian\".",
+    "id": "mov_334"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Moonrise Kingdom\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Moonrise Kingdom\" — Anderson.",
+    "id": "mov_335"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Lost\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "ABC"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Lost\" — ABC.",
+    "id": "mov_336"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which TV series is associated with: Central Perk?",
+    "options": [
+      "Game of Thrones",
+      "Breaking Bad",
+      "The Office",
+      "Friends"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Friends\" (NBC).",
+    "id": "mov_337"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Guardians of the Galaxy\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Gunn"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Guardians of the Galaxy\" — Gunn.",
+    "id": "mov_338"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Adamson?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Shrek"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Shrek\".",
+    "id": "mov_339"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Prestige\"?",
+    "options": [
+      "Coppola",
+      "Spielberg",
+      "Tarantino",
+      "Nolan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Prestige\" — Nolan.",
+    "id": "mov_340"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Cast Away\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Cast Away\" — Zemeckis.",
+    "id": "mov_341"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Two Towers\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jackson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Two Towers\" — Jackson.",
+    "id": "mov_342"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Aliens\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Aliens\" — Cameron.",
+    "id": "mov_343"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"There Will Be Blood\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson PTA"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"There Will Be Blood\" — Anderson PTA.",
+    "id": "mov_344"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Sherlock\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "BBC"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Sherlock\" — BBC.",
+    "id": "mov_345"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Hellboy\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "del Toro"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Hellboy\" — del Toro.",
+    "id": "mov_346"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Edge of Tomorrow\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Liman"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Edge of Tomorrow\" — Liman.",
+    "id": "mov_347"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Gangs of New York\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Scorsese"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Gangs of New York\" — Scorsese.",
+    "id": "mov_348"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: McQuarrie?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "MI: Fallout"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"MI: Fallout\".",
+    "id": "mov_349"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: DWA?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Madagascar"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Madagascar\".",
+    "id": "mov_350"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which actor is known for a role in \"Iron Man\"?",
+    "options": [
+      "Leonardo DiCaprio",
+      "Tom Hanks",
+      "Marlon Brando",
+      "Robert Downey Jr."
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Robert Downey Jr..",
+    "id": "mov_351"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"La La Land\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Chazelle"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"La La Land\" — Chazelle.",
+    "id": "mov_352"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which film/series is associated with: robot?",
+    "options": [
+      "Titanic",
+      "Star Wars",
+      "The Lord of the Rings",
+      "WALL-E"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"WALL-E\".",
+    "id": "mov_353"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Avengers: Endgame\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Russo"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Avengers: Endgame\" — Russo.",
+    "id": "mov_354"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Predator\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "McTiernan"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Predator\" — McTiernan.",
+    "id": "mov_355"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Phantom Thread\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Anderson PTA"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Phantom Thread\" — Anderson PTA.",
+    "id": "mov_356"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Lost in Translation\"?",
+    "options": [
+      "Nolan",
+      "Spielberg",
+      "Tarantino",
+      "Coppola"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Lost in Translation\" — Coppola.",
+    "id": "mov_357"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Ramis?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Groundhog Day"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Groundhog Day\".",
+    "id": "mov_358"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Da Vinci Code\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Howard"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Da Vinci Code\" — Howard.",
+    "id": "mov_359"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Soul\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Docter"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Soul\" — Docter.",
+    "id": "mov_360"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Marquand?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Return of the Jedi"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Return of the Jedi\".",
+    "id": "mov_361"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Buck?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Frozen"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Frozen\".",
+    "id": "mov_362"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Star Wars\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Lucas"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Star Wars\" — Lucas.",
+    "id": "mov_363"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Cohen?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Fast & Furious"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Fast & Furious\".",
+    "id": "mov_364"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Good Will Hunting\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Van Sant"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Good Will Hunting\" — Van Sant.",
+    "id": "mov_365"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Empire Strikes Back\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Kershner"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Empire Strikes Back\" — Kershner.",
+    "id": "mov_366"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Shrek\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Adamson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Shrek\" — Adamson.",
+    "id": "mov_367"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Avatar\" released?",
+    "options": [
+      "1997",
+      "2010",
+      "2008",
+      "2009"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Avatar\" was released in 2009.",
+    "id": "mov_368"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Bong?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Parasite"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Parasite\".",
+    "id": "mov_369"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Se7en\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "David Fincher"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Se7en\" (1995) — David Fincher.",
+    "id": "mov_370"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Hulk\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Lee"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Hulk\" — Lee.",
+    "id": "mov_371"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Beauty and the Beast\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Condon"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Beauty and the Beast\" — Condon.",
+    "id": "mov_372"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Mandalorian\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Disney+"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Mandalorian\" — Disney+.",
+    "id": "mov_373"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Leone?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "The Good, the Bad and the Ugly"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"The Good, the Bad and the Ugly\".",
+    "id": "mov_374"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Transformers\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Bay"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Transformers\" — Bay.",
+    "id": "mov_375"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Avatar\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Avatar\" — Cameron.",
+    "id": "mov_376"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Jurassic Park\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Tarantino",
+      "Spielberg"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Jurassic Park\" — Spielberg.",
+    "id": "mov_377"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Doctor Strange\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Derrickson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Doctor Strange\" — Derrickson.",
+    "id": "mov_378"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In what year was the film \"Parasite\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2019"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Parasite\" was released in 2019.",
+    "id": "mov_379"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Mad Max 2\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Miller"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Mad Max 2\" — Miller.",
+    "id": "mov_380"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Phillips?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Joker"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Joker\".",
+    "id": "mov_381"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Coco\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Unkrich"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Coco\" — Unkrich.",
+    "id": "mov_382"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"Once Upon a Time in Hollywood\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Quentin Tarantino"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Once Upon a Time in Hollywood\" (2019) — Quentin Tarantino.",
+    "id": "mov_383"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who directed the film \"Back to the Future\"?",
+    "options": [
+      "James Cameron",
+      "James Cameron",
+      "Christopher Nolan",
+      "Robert Zemeckis"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Back to the Future\" (1985) was directed by Robert Zemeckis.",
+    "id": "mov_384"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"The Terminator\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "James Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Terminator\" (1984) — James Cameron.",
+    "id": "mov_385"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Howl's Moving Castle\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Miyazaki"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Howl's Moving Castle\" — Miyazaki.",
+    "id": "mov_386"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Casino Royale\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Campbell"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Casino Royale\" — Campbell.",
+    "id": "mov_387"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Joker\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Phillips"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Joker\" — Phillips.",
+    "id": "mov_388"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed the film \"The Fifth Element\"?",
+    "options": [
+      "Frank Darabont",
+      "Peter Farrelly",
+      "Christopher Nolan",
+      "Luc Besson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Fifth Element\" (1997) — Luc Besson.",
+    "id": "mov_389"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Return of the King\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Jackson"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Return of the King\" — Jackson.",
+    "id": "mov_390"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Get Out\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Peele"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Get Out\" — Peele.",
+    "id": "mov_391"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which actor is known for a role in \"Titanic\"?",
+    "options": [
+      "Tom Hanks",
+      "Marlon Brando",
+      "Harrison Ford",
+      "Leonardo DiCaprio"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is Leonardo DiCaprio.",
+    "id": "mov_392"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Great Dictator\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Chaplin"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Great Dictator\" — Chaplin.",
+    "id": "mov_393"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Office\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "NBC"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Office\" — NBC.",
+    "id": "mov_394"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Titanic\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Cameron"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Titanic\" — Cameron.",
+    "id": "mov_395"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which film/series is associated with: Jonze?",
+    "options": [
+      "The Godfather",
+      "The Dark Knight",
+      "Schindler's List",
+      "Being John Malkovich"
+    ],
+    "correctIndex": 3,
+    "explanation": "This is \"Being John Malkovich\".",
+    "id": "mov_396"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Breaking Bad\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "AMC"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Breaking Bad\" — AMC.",
+    "id": "mov_397"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"The Ring\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Nakata"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"The Ring\" — Nakata.",
+    "id": "mov_398"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In what year was the film \"Harry Potter and the Sorcerer's Stone\" released?",
+    "options": [
+      "1997",
+      "2009",
+      "2010",
+      "2001"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Harry Potter and the Sorcerer's Stone\" was released in 2001.",
+    "id": "mov_399"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Who directed/created the film \"Harry Potter\"?",
+    "options": [
+      "Coppola",
+      "Nolan",
+      "Spielberg",
+      "Columbus"
+    ],
+    "correctIndex": 3,
+    "explanation": "\"Harry Potter\" — Columbus.",
+    "id": "mov_400"
+  }
+]

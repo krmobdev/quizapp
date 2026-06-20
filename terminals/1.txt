@@ -1,0 +1,14 @@
+---
+pid: 6080
+cwd: "D:\AndroidStudioProjects\quizapp"
+command: "pip install deep-translator -q && python \"D:\\AndroidStudioProjects\\quizapp\\scripts\\translate_questions_en.py\""
+started_at: 2026-06-20T18:24:59.876Z
+running_for_ms: 735009   
+---
+  WARNING: The script normalizer.exe is installed in 'C:\Users\ZaykaLab\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts deep-translator.exe and dt.exe are installed in 'C:\Users\ZaykaLab\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip

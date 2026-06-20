@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.audio.SoundManager
 import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
+import com.rustam.quizapp.data.AppLanguage
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
 import com.rustam.quizapp.data.QuestionRepository
@@ -57,6 +58,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = QuestionRepository(application)
     private val statsRepository = StatsRepository(application)
     private val progressRepository = QuizProgressRepository(application)
+    private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
@@ -66,6 +68,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var session: QuizSession? = null
     private var categoryId: String? = null
     private var difficulty: Difficulty? = null
+    private var quizLanguage: AppLanguage = AppLanguage.RU
     private var timerJob: Job? = null
 
     private val _uiState = MutableStateFlow(QuizUiState())
@@ -85,10 +88,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             return
         }
         viewModelScope.launch {
+            val language = settingsRepository.appLanguage.first()
             val saved = progressRepository.savedProgress.first()
             if (saved != null &&
                 saved.categoryId == categoryId &&
-                saved.difficulty == difficulty
+                saved.difficulty == difficulty &&
+                saved.language == language
             ) {
                 _uiState.value = QuizUiState(
                     isLoading = false,
@@ -104,6 +109,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val saved = _uiState.value.resumePrompt ?: return
         categoryId = saved.categoryId
         difficulty = saved.difficulty
+        quizLanguage = saved.language
         val restored = QuizSession(
             questions = saved.questions,
             startIndex = saved.currentIndex,
@@ -144,8 +150,9 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         this.difficulty = difficulty
         viewModelScope.launch {
             progressRepository.clear()
+            quizLanguage = settingsRepository.appLanguage.first()
             val questions = preset ?: withContext(Dispatchers.IO) {
-                repository.getQuestions(categoryId, difficulty)
+                repository.getQuestions(categoryId, difficulty, quizLanguage)
             }
             applySession(QuizSession(questions))
         }
@@ -223,6 +230,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val saved = SavedQuizProgress(
             categoryId = categoryId.orEmpty(),
             difficulty = difficulty,
+            language = quizLanguage,
             questions = current.questions,
             currentIndex = current.currentIndex,
             correctCount = current.correctCount,

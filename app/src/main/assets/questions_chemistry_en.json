@@ -1,0 +1,5602 @@
+[
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for hydrogen?",
+    "options": [
+      "Mo",
+      "F",
+      "Li",
+      "H"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hydrogen is represented by the symbol H.",
+    "id": "chem_001"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol H?",
+    "options": [
+      "Xenon",
+      "Potassium",
+      "Chlorine",
+      "Hydrogen"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol H stands for Hydrogen.",
+    "id": "chem_002"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of hydrogen?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hydrogen has atomic number 1.",
+    "id": "chem_003"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for helium?",
+    "options": [
+      "S",
+      "Ne",
+      "Xe",
+      "He"
+    ],
+    "correctIndex": 3,
+    "explanation": "Helium is represented by the symbol He.",
+    "id": "chem_004"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol He?",
+    "options": [
+      "Oxygen",
+      "Indium",
+      "Xenon",
+      "Helium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol He stands for Helium.",
+    "id": "chem_005"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of helium?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Helium has atomic number 2.",
+    "id": "chem_006"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for lithium?",
+    "options": [
+      "Kr",
+      "N",
+      "Y",
+      "Li"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lithium is represented by the symbol Li.",
+    "id": "chem_007"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Li?",
+    "options": [
+      "Copper",
+      "Beryllium",
+      "Helium",
+      "Lithium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Li stands for Lithium.",
+    "id": "chem_008"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of lithium?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lithium has atomic number 3.",
+    "id": "chem_009"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for beryllium?",
+    "options": [
+      "N",
+      "P",
+      "S",
+      "Be"
+    ],
+    "correctIndex": 3,
+    "explanation": "Beryllium is represented by the symbol Be.",
+    "id": "chem_010"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Be?",
+    "options": [
+      "Selenium",
+      "Zirconium",
+      "Helium",
+      "Beryllium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Be stands for Beryllium.",
+    "id": "chem_011"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of beryllium?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Beryllium has atomic number 4.",
+    "id": "chem_012"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for boron?",
+    "options": [
+      "Rb",
+      "Si",
+      "Sb",
+      "B"
+    ],
+    "correctIndex": 3,
+    "explanation": "Boron is represented by the symbol B.",
+    "id": "chem_013"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol B?",
+    "options": [
+      "Silver",
+      "Tin",
+      "Krypton",
+      "Boron"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol B stands for Boron.",
+    "id": "chem_014"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of boron?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Boron has atomic number 5.",
+    "id": "chem_015"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for carbon?",
+    "options": [
+      "Ni",
+      "S",
+      "Zn",
+      "C"
+    ],
+    "correctIndex": 3,
+    "explanation": "Carbon is represented by the symbol C.",
+    "id": "chem_016"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol C?",
+    "options": [
+      "Yttrium",
+      "Potassium",
+      "Platinum",
+      "Carbon"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol C stands for Carbon.",
+    "id": "chem_017"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of carbon?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carbon has atomic number 6.",
+    "id": "chem_018"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for nitrogen?",
+    "options": [
+      "U",
+      "H",
+      "Cs",
+      "N"
+    ],
+    "correctIndex": 3,
+    "explanation": "Nitrogen is represented by the symbol N.",
+    "id": "chem_019"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol N?",
+    "options": [
+      "Platinum",
+      "Magnesium",
+      "Tin",
+      "Nitrogen"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol N stands for Nitrogen.",
+    "id": "chem_020"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of nitrogen?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nitrogen has atomic number 7.",
+    "id": "chem_021"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for oxygen?",
+    "options": [
+      "Cu",
+      "V",
+      "K",
+      "O"
+    ],
+    "correctIndex": 3,
+    "explanation": "Oxygen is represented by the symbol O.",
+    "id": "chem_022"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol O?",
+    "options": [
+      "Sodium",
+      "Phosphorus",
+      "Cesium",
+      "Oxygen"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol O stands for Oxygen.",
+    "id": "chem_023"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of oxygen?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oxygen has atomic number 8.",
+    "id": "chem_024"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for fluorine?",
+    "options": [
+      "V",
+      "N",
+      "C",
+      "F"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fluorine is represented by the symbol F.",
+    "id": "chem_025"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol F?",
+    "options": [
+      "Iron",
+      "Nitrogen",
+      "Chromium",
+      "Fluorine"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol F stands for Fluorine.",
+    "id": "chem_026"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of fluorine?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fluorine has atomic number 9.",
+    "id": "chem_027"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for neon?",
+    "options": [
+      "Pb",
+      "Cr",
+      "Zr",
+      "Ne"
+    ],
+    "correctIndex": 3,
+    "explanation": "Neon is represented by the symbol Ne.",
+    "id": "chem_028"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Ne?",
+    "options": [
+      "Argon",
+      "Platinum",
+      "Lithium",
+      "Neon"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ne stands for Neon.",
+    "id": "chem_029"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of neon?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Neon has atomic number 10.",
+    "id": "chem_030"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for sodium?",
+    "options": [
+      "I",
+      "Ga",
+      "Kr",
+      "Na"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sodium is represented by the symbol Na.",
+    "id": "chem_031"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Na?",
+    "options": [
+      "Oxygen",
+      "Iron",
+      "Carbon",
+      "Sodium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Na stands for Sodium.",
+    "id": "chem_032"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of sodium?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sodium has atomic number 11.",
+    "id": "chem_033"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for magnesium?",
+    "options": [
+      "Rb",
+      "Ca",
+      "Hg",
+      "Mg"
+    ],
+    "correctIndex": 3,
+    "explanation": "Magnesium is represented by the symbol Mg.",
+    "id": "chem_034"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Mg?",
+    "options": [
+      "Molybdenum",
+      "Niobium",
+      "Uranium",
+      "Magnesium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Mg stands for Magnesium.",
+    "id": "chem_035"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of magnesium?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Magnesium has atomic number 12.",
+    "id": "chem_036"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for aluminum?",
+    "options": [
+      "Mn",
+      "Sr",
+      "Si",
+      "Al"
+    ],
+    "correctIndex": 3,
+    "explanation": "Aluminum is represented by the symbol Al.",
+    "id": "chem_037"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Al?",
+    "options": [
+      "Antimony",
+      "Boron",
+      "Lithium",
+      "Aluminum"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Al stands for Aluminum.",
+    "id": "chem_038"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of aluminum?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aluminum has atomic number 13.",
+    "id": "chem_039"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for silicon?",
+    "options": [
+      "Cd",
+      "S",
+      "Ba",
+      "Si"
+    ],
+    "correctIndex": 3,
+    "explanation": "Silicon is represented by the symbol Si.",
+    "id": "chem_040"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Si?",
+    "options": [
+      "Calcium",
+      "Carbon",
+      "Lead",
+      "Silicon"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Si stands for Silicon.",
+    "id": "chem_041"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of silicon?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Silicon has atomic number 14.",
+    "id": "chem_042"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for phosphorus?",
+    "options": [
+      "S",
+      "U",
+      "N",
+      "P"
+    ],
+    "correctIndex": 3,
+    "explanation": "Phosphorus is represented by the symbol P.",
+    "id": "chem_043"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol P?",
+    "options": [
+      "Iron",
+      "Potassium",
+      "Gallium",
+      "Phosphorus"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol P stands for Phosphorus.",
+    "id": "chem_044"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of phosphorus?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phosphorus has atomic number 15.",
+    "id": "chem_045"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for sulfur?",
+    "options": [
+      "Mo",
+      "Hg",
+      "Mn",
+      "S"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sulfur is represented by the symbol S.",
+    "id": "chem_046"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol S?",
+    "options": [
+      "Sodium",
+      "Manganese",
+      "Chromium",
+      "Sulfur"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol S stands for Sulfur.",
+    "id": "chem_047"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of sulfur?",
+    "options": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sulfur has atomic number 16.",
+    "id": "chem_048"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for chlorine?",
+    "options": [
+      "Si",
+      "Cd",
+      "K",
+      "Cl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chlorine is represented by the symbol Cl.",
+    "id": "chem_049"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Cl?",
+    "options": [
+      "Tin",
+      "Indium",
+      "Silver",
+      "Chlorine"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Cl stands for Chlorine.",
+    "id": "chem_050"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of chlorine?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chlorine has atomic number 17.",
+    "id": "chem_051"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for argon?",
+    "options": [
+      "B",
+      "Zr",
+      "Mo",
+      "Ar"
+    ],
+    "correctIndex": 3,
+    "explanation": "Argon is represented by the symbol Ar.",
+    "id": "chem_052"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Ar?",
+    "options": [
+      "Sodium",
+      "Krypton",
+      "Iodine",
+      "Argon"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ar stands for Argon.",
+    "id": "chem_053"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of argon?",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Argon has atomic number 18.",
+    "id": "chem_054"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for potassium?",
+    "options": [
+      "S",
+      "Na",
+      "Ga",
+      "K"
+    ],
+    "correctIndex": 3,
+    "explanation": "Potassium is represented by the symbol K.",
+    "id": "chem_055"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol K?",
+    "options": [
+      "Iron",
+      "Argon",
+      "Molybdenum",
+      "Potassium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol K stands for Potassium.",
+    "id": "chem_056"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of potassium?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Potassium has atomic number 19.",
+    "id": "chem_057"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical symbol for calcium?",
+    "options": [
+      "Sn",
+      "Rb",
+      "P",
+      "Ca"
+    ],
+    "correctIndex": 3,
+    "explanation": "Calcium is represented by the symbol Ca.",
+    "id": "chem_058"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the symbol Ca?",
+    "options": [
+      "Indium",
+      "Titanium",
+      "Mercury",
+      "Calcium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ca stands for Calcium.",
+    "id": "chem_059"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic number of calcium?",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "Calcium has atomic number 20.",
+    "id": "chem_060"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for scandium?",
+    "options": [
+      "Ba",
+      "Be",
+      "P",
+      "Sc"
+    ],
+    "correctIndex": 3,
+    "explanation": "Scandium is represented by the symbol Sc.",
+    "id": "chem_061"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Sc?",
+    "options": [
+      "Gold",
+      "Lithium",
+      "Platinum",
+      "Scandium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Sc stands for Scandium.",
+    "id": "chem_062"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of scandium?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Scandium has atomic number 21.",
+    "id": "chem_063"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for titanium?",
+    "options": [
+      "Sc",
+      "Co",
+      "Ar",
+      "Ti"
+    ],
+    "correctIndex": 3,
+    "explanation": "Titanium is represented by the symbol Ti.",
+    "id": "chem_064"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Ti?",
+    "options": [
+      "Boron",
+      "Silicon",
+      "Strontium",
+      "Titanium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ti stands for Titanium.",
+    "id": "chem_065"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of titanium?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Titanium has atomic number 22.",
+    "id": "chem_066"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for vanadium?",
+    "options": [
+      "Sb",
+      "Sc",
+      "Si",
+      "V"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vanadium is represented by the symbol V.",
+    "id": "chem_067"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol V?",
+    "options": [
+      "Silver",
+      "Arsenic",
+      "Cobalt",
+      "Vanadium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol V stands for Vanadium.",
+    "id": "chem_068"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of vanadium?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vanadium has atomic number 23.",
+    "id": "chem_069"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for chromium?",
+    "options": [
+      "Ag",
+      "Ga",
+      "Ne",
+      "Cr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chromium is represented by the symbol Cr.",
+    "id": "chem_070"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Cr?",
+    "options": [
+      "Chlorine",
+      "Fluorine",
+      "Sulfur",
+      "Chromium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Cr stands for Chromium.",
+    "id": "chem_071"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of chromium?",
+    "options": [
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chromium has atomic number 24.",
+    "id": "chem_072"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for manganese?",
+    "options": [
+      "Xe",
+      "Rb",
+      "Kr",
+      "Mn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Manganese is represented by the symbol Mn.",
+    "id": "chem_073"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Mn?",
+    "options": [
+      "Chlorine",
+      "Xenon",
+      "Yttrium",
+      "Manganese"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Mn stands for Manganese.",
+    "id": "chem_074"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of manganese?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Manganese has atomic number 25.",
+    "id": "chem_075"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for iron?",
+    "options": [
+      "Cu",
+      "Y",
+      "Co",
+      "Fe"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iron is represented by the symbol Fe.",
+    "id": "chem_076"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Fe?",
+    "options": [
+      "Chromium",
+      "Phosphorus",
+      "Fluorine",
+      "Iron"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Fe stands for Iron.",
+    "id": "chem_077"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of iron?",
+    "options": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iron has atomic number 26.",
+    "id": "chem_078"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for cobalt?",
+    "options": [
+      "Se",
+      "As",
+      "C",
+      "Co"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cobalt is represented by the symbol Co.",
+    "id": "chem_079"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Co?",
+    "options": [
+      "Cesium",
+      "Beryllium",
+      "Uranium",
+      "Cobalt"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Co stands for Cobalt.",
+    "id": "chem_080"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of cobalt?",
+    "options": [
+      "26",
+      "27",
+      "28",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cobalt has atomic number 27.",
+    "id": "chem_081"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for nickel?",
+    "options": [
+      "O",
+      "Ne",
+      "Mo",
+      "Ni"
+    ],
+    "correctIndex": 3,
+    "explanation": "Nickel is represented by the symbol Ni.",
+    "id": "chem_082"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Ni?",
+    "options": [
+      "Sodium",
+      "Tungsten",
+      "Indium",
+      "Nickel"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ni stands for Nickel.",
+    "id": "chem_083"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of nickel?",
+    "options": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nickel has atomic number 28.",
+    "id": "chem_084"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for copper?",
+    "options": [
+      "Ni",
+      "Zr",
+      "B",
+      "Cu"
+    ],
+    "correctIndex": 3,
+    "explanation": "Copper is represented by the symbol Cu.",
+    "id": "chem_085"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Cu?",
+    "options": [
+      "Manganese",
+      "Zirconium",
+      "Gallium",
+      "Copper"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Cu stands for Copper.",
+    "id": "chem_086"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of copper?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "Copper has atomic number 29.",
+    "id": "chem_087"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for zinc?",
+    "options": [
+      "Br",
+      "Cl",
+      "Rb",
+      "Zn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Zinc is represented by the symbol Zn.",
+    "id": "chem_088"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Zn?",
+    "options": [
+      "Uranium",
+      "Hydrogen",
+      "Indium",
+      "Zinc"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Zn stands for Zinc.",
+    "id": "chem_089"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of zinc?",
+    "options": [
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zinc has atomic number 30.",
+    "id": "chem_090"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for gallium?",
+    "options": [
+      "I",
+      "O",
+      "In",
+      "Ga"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gallium is represented by the symbol Ga.",
+    "id": "chem_091"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Ga?",
+    "options": [
+      "Krypton",
+      "Cesium",
+      "Argon",
+      "Gallium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ga stands for Gallium.",
+    "id": "chem_092"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of gallium?",
+    "options": [
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gallium has atomic number 31.",
+    "id": "chem_093"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for germanium?",
+    "options": [
+      "Ba",
+      "Ag",
+      "Ti",
+      "Ge"
+    ],
+    "correctIndex": 3,
+    "explanation": "Germanium is represented by the symbol Ge.",
+    "id": "chem_094"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Ge?",
+    "options": [
+      "Oxygen",
+      "Potassium",
+      "Nickel",
+      "Germanium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ge stands for Germanium.",
+    "id": "chem_095"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of germanium?",
+    "options": [
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Germanium has atomic number 32.",
+    "id": "chem_096"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for arsenic?",
+    "options": [
+      "Na",
+      "Zn",
+      "H",
+      "As"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arsenic is represented by the symbol As.",
+    "id": "chem_097"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol As?",
+    "options": [
+      "Iodine",
+      "Chlorine",
+      "Selenium",
+      "Arsenic"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol As stands for Arsenic.",
+    "id": "chem_098"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of arsenic?",
+    "options": [
+      "32",
+      "33",
+      "34",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "Arsenic has atomic number 33.",
+    "id": "chem_099"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for selenium?",
+    "options": [
+      "Cs",
+      "Mg",
+      "As",
+      "Se"
+    ],
+    "correctIndex": 3,
+    "explanation": "Selenium is represented by the symbol Se.",
+    "id": "chem_100"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Se?",
+    "options": [
+      "Nitrogen",
+      "Uranium",
+      "Molybdenum",
+      "Selenium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Se stands for Selenium.",
+    "id": "chem_101"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of selenium?",
+    "options": [
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "Selenium has atomic number 34.",
+    "id": "chem_102"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for bromine?",
+    "options": [
+      "Ca",
+      "Hg",
+      "Mo",
+      "Br"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bromine is represented by the symbol Br.",
+    "id": "chem_103"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Br?",
+    "options": [
+      "Arsenic",
+      "Zirconium",
+      "Aluminum",
+      "Bromine"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Br stands for Bromine.",
+    "id": "chem_104"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of bromine?",
+    "options": [
+      "34",
+      "35",
+      "36",
+      "37"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bromine has atomic number 35.",
+    "id": "chem_105"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for krypton?",
+    "options": [
+      "Ne",
+      "Cr",
+      "Cs",
+      "Kr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Krypton is represented by the symbol Kr.",
+    "id": "chem_106"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Kr?",
+    "options": [
+      "Sodium",
+      "Bromine",
+      "Barium",
+      "Krypton"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Kr stands for Krypton.",
+    "id": "chem_107"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of krypton?",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "correctIndex": 1,
+    "explanation": "Krypton has atomic number 36.",
+    "id": "chem_108"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for rubidium?",
+    "options": [
+      "Se",
+      "H",
+      "Zr",
+      "Rb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Rubidium is represented by the symbol Rb.",
+    "id": "chem_109"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Rb?",
+    "options": [
+      "Scandium",
+      "Germanium",
+      "Helium",
+      "Rubidium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Rb stands for Rubidium.",
+    "id": "chem_110"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of rubidium?",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rubidium has atomic number 37.",
+    "id": "chem_111"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for strontium?",
+    "options": [
+      "O",
+      "Cr",
+      "Hg",
+      "Sr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Strontium is represented by the symbol Sr.",
+    "id": "chem_112"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Sr?",
+    "options": [
+      "Platinum",
+      "Calcium",
+      "Sulfur",
+      "Strontium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Sr stands for Strontium.",
+    "id": "chem_113"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of strontium?",
+    "options": [
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "Strontium has atomic number 38.",
+    "id": "chem_114"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for yttrium?",
+    "options": [
+      "Be",
+      "S",
+      "Rb",
+      "Y"
+    ],
+    "correctIndex": 3,
+    "explanation": "Yttrium is represented by the symbol Y.",
+    "id": "chem_115"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Y?",
+    "options": [
+      "Carbon",
+      "Iodine",
+      "Germanium",
+      "Yttrium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Y stands for Yttrium.",
+    "id": "chem_116"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of yttrium?",
+    "options": [
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Yttrium has atomic number 39.",
+    "id": "chem_117"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for zirconium?",
+    "options": [
+      "Au",
+      "B",
+      "Cs",
+      "Zr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Zirconium is represented by the symbol Zr.",
+    "id": "chem_118"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Zr?",
+    "options": [
+      "Bromine",
+      "Barium",
+      "Fluorine",
+      "Zirconium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Zr stands for Zirconium.",
+    "id": "chem_119"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of zirconium?",
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zirconium has atomic number 40.",
+    "id": "chem_120"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for niobium?",
+    "options": [
+      "F",
+      "Cd",
+      "Ga",
+      "Nb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Niobium is represented by the symbol Nb.",
+    "id": "chem_121"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Nb?",
+    "options": [
+      "Krypton",
+      "Sodium",
+      "Chlorine",
+      "Niobium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Nb stands for Niobium.",
+    "id": "chem_122"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of niobium?",
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "correctIndex": 1,
+    "explanation": "Niobium has atomic number 41.",
+    "id": "chem_123"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for molybdenum?",
+    "options": [
+      "Se",
+      "U",
+      "Y",
+      "Mo"
+    ],
+    "correctIndex": 3,
+    "explanation": "Molybdenum is represented by the symbol Mo.",
+    "id": "chem_124"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Mo?",
+    "options": [
+      "Nickel",
+      "Silicon",
+      "Bromine",
+      "Molybdenum"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Mo stands for Molybdenum.",
+    "id": "chem_125"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of molybdenum?",
+    "options": [
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "Molybdenum has atomic number 42.",
+    "id": "chem_126"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for silver?",
+    "options": [
+      "Cs",
+      "I",
+      "Sn",
+      "Ag"
+    ],
+    "correctIndex": 3,
+    "explanation": "Silver is represented by the symbol Ag.",
+    "id": "chem_127"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Ag?",
+    "options": [
+      "Aluminum",
+      "Antimony",
+      "Calcium",
+      "Silver"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ag stands for Silver.",
+    "id": "chem_128"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of silver?",
+    "options": [
+      "46",
+      "47",
+      "48",
+      "49"
+    ],
+    "correctIndex": 1,
+    "explanation": "Silver has atomic number 47.",
+    "id": "chem_129"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for cadmium?",
+    "options": [
+      "Fe",
+      "Ag",
+      "Mo",
+      "Cd"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cadmium is represented by the symbol Cd.",
+    "id": "chem_130"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Cd?",
+    "options": [
+      "Chromium",
+      "Copper",
+      "Selenium",
+      "Cadmium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Cd stands for Cadmium.",
+    "id": "chem_131"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of cadmium?",
+    "options": [
+      "47",
+      "48",
+      "49",
+      "50"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cadmium has atomic number 48.",
+    "id": "chem_132"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for indium?",
+    "options": [
+      "Cu",
+      "O",
+      "S",
+      "In"
+    ],
+    "correctIndex": 3,
+    "explanation": "Indium is represented by the symbol In.",
+    "id": "chem_133"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol In?",
+    "options": [
+      "Phosphorus",
+      "Boron",
+      "Titanium",
+      "Indium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol In stands for Indium.",
+    "id": "chem_134"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of indium?",
+    "options": [
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "correctIndex": 1,
+    "explanation": "Indium has atomic number 49.",
+    "id": "chem_135"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical symbol for tin?",
+    "options": [
+      "He",
+      "Sr",
+      "Kr",
+      "Sn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tin is represented by the symbol Sn.",
+    "id": "chem_136"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the symbol Sn?",
+    "options": [
+      "Phosphorus",
+      "Strontium",
+      "Hydrogen",
+      "Tin"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Sn stands for Tin.",
+    "id": "chem_137"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of tin?",
+    "options": [
+      "49",
+      "50",
+      "51",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tin has atomic number 50.",
+    "id": "chem_138"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for antimony?",
+    "options": [
+      "B",
+      "Sn",
+      "Nb",
+      "Sb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Antimony is represented by the symbol Sb.",
+    "id": "chem_139"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Sb?",
+    "options": [
+      "Beryllium",
+      "Phosphorus",
+      "Boron",
+      "Antimony"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Sb stands for Antimony.",
+    "id": "chem_140"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the atomic number of antimony?",
+    "options": [
+      "50",
+      "51",
+      "52",
+      "53"
+    ],
+    "correctIndex": 1,
+    "explanation": "Antimony has atomic number 51.",
+    "id": "chem_141"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for iodine?",
+    "options": [
+      "Li",
+      "U",
+      "Ti",
+      "I"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iodine is represented by the symbol I.",
+    "id": "chem_142"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol I?",
+    "options": [
+      "Boron",
+      "Arsenic",
+      "Sulfur",
+      "Iodine"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol I stands for Iodine.",
+    "id": "chem_143"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the atomic number of iodine?",
+    "options": [
+      "52",
+      "53",
+      "54",
+      "55"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iodine has atomic number 53.",
+    "id": "chem_144"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for xenon?",
+    "options": [
+      "Ar",
+      "Ag",
+      "Ge",
+      "Xe"
+    ],
+    "correctIndex": 3,
+    "explanation": "Xenon is represented by the symbol Xe.",
+    "id": "chem_145"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Xe?",
+    "options": [
+      "Silicon",
+      "Bromine",
+      "Fluorine",
+      "Xenon"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Xe stands for Xenon.",
+    "id": "chem_146"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the atomic number of xenon?",
+    "options": [
+      "53",
+      "54",
+      "55",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "Xenon has atomic number 54.",
+    "id": "chem_147"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for cesium?",
+    "options": [
+      "Sb",
+      "Rb",
+      "Ga",
+      "Cs"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cesium is represented by the symbol Cs.",
+    "id": "chem_148"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Cs?",
+    "options": [
+      "Sulfur",
+      "Tungsten",
+      "Gallium",
+      "Cesium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Cs stands for Cesium.",
+    "id": "chem_149"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the atomic number of cesium?",
+    "options": [
+      "54",
+      "55",
+      "56",
+      "57"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cesium has atomic number 55.",
+    "id": "chem_150"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for barium?",
+    "options": [
+      "Pt",
+      "Co",
+      "Al",
+      "Ba"
+    ],
+    "correctIndex": 3,
+    "explanation": "Barium is represented by the symbol Ba.",
+    "id": "chem_151"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Ba?",
+    "options": [
+      "Nitrogen",
+      "Silver",
+      "Nickel",
+      "Barium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Ba stands for Barium.",
+    "id": "chem_152"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the atomic number of barium?",
+    "options": [
+      "55",
+      "56",
+      "57",
+      "58"
+    ],
+    "correctIndex": 1,
+    "explanation": "Barium has atomic number 56.",
+    "id": "chem_153"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for tungsten?",
+    "options": [
+      "V",
+      "Ni",
+      "Co",
+      "W"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tungsten is represented by the symbol W.",
+    "id": "chem_154"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol W?",
+    "options": [
+      "Zinc",
+      "Uranium",
+      "Antimony",
+      "Tungsten"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol W stands for Tungsten.",
+    "id": "chem_155"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for platinum?",
+    "options": [
+      "Be",
+      "Cd",
+      "Mo",
+      "Pt"
+    ],
+    "correctIndex": 3,
+    "explanation": "Platinum is represented by the symbol Pt.",
+    "id": "chem_156"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Pt?",
+    "options": [
+      "Molybdenum",
+      "Nitrogen",
+      "Beryllium",
+      "Platinum"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Pt stands for Platinum.",
+    "id": "chem_157"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for gold?",
+    "options": [
+      "Fe",
+      "Sb",
+      "Ti",
+      "Au"
+    ],
+    "correctIndex": 3,
+    "explanation": "Gold is represented by the symbol Au.",
+    "id": "chem_158"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Au?",
+    "options": [
+      "Tungsten",
+      "Uranium",
+      "Nitrogen",
+      "Gold"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Au stands for Gold.",
+    "id": "chem_159"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for mercury?",
+    "options": [
+      "S",
+      "Al",
+      "Br",
+      "Hg"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mercury is represented by the symbol Hg.",
+    "id": "chem_160"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Hg?",
+    "options": [
+      "Copper",
+      "Fluorine",
+      "Nickel",
+      "Mercury"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Hg stands for Mercury.",
+    "id": "chem_161"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for lead?",
+    "options": [
+      "Mg",
+      "Ar",
+      "Zn",
+      "Pb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lead is represented by the symbol Pb.",
+    "id": "chem_162"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol Pb?",
+    "options": [
+      "Sulfur",
+      "Uranium",
+      "Boron",
+      "Lead"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol Pb stands for Lead.",
+    "id": "chem_163"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical symbol for uranium?",
+    "options": [
+      "Cu",
+      "W",
+      "Pb",
+      "U"
+    ],
+    "correctIndex": 3,
+    "explanation": "Uranium is represented by the symbol U.",
+    "id": "chem_164"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which element has the symbol U?",
+    "options": [
+      "Mercury",
+      "Krypton",
+      "Nitrogen",
+      "Uranium"
+    ],
+    "correctIndex": 3,
+    "explanation": "The symbol U stands for Uranium.",
+    "id": "chem_165"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical formula of methane?",
+    "options": [
+      "C₃H₈",
+      "NaHCO₃",
+      "CuSO₄",
+      "CH₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of methane is CH₄.",
+    "id": "chem_166"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which substance has the formula CH₄?",
+    "options": [
+      "Chalk",
+      "Ethane",
+      "Butane",
+      "Methane"
+    ],
+    "correctIndex": 3,
+    "explanation": "CH₄ is methane.",
+    "id": "chem_167"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of ethane?",
+    "options": [
+      "NH₄NO₃",
+      "Na₂B₄O₇",
+      "C₆H₁₂O₆",
+      "C₂H₆"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of ethane is C₂H₆.",
+    "id": "chem_168"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula C₂H₆?",
+    "options": [
+      "Methanol",
+      "Phosphoric acid",
+      "Iron(III) oxide",
+      "Ethane"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₆ is ethane.",
+    "id": "chem_169"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of propane?",
+    "options": [
+      "Fe₂O₃",
+      "C₂H₅OH",
+      "Na₂B₄O₇",
+      "C₃H₈"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of propane is C₃H₈.",
+    "id": "chem_170"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula C₃H₈?",
+    "options": [
+      "Carbonic acid",
+      "Table salt",
+      "Ethane",
+      "Propane"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₃H₈ is propane.",
+    "id": "chem_171"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of butane?",
+    "options": [
+      "CH₃OH",
+      "H₂CO₃",
+      "CH₄",
+      "C₄H₁₀"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of butane is C₄H₁₀.",
+    "id": "chem_172"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula C₄H₁₀?",
+    "options": [
+      "Carbonic acid",
+      "Sodium hydroxide",
+      "Gypsum",
+      "Butane"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₄H₁₀ is butane.",
+    "id": "chem_173"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of ethylene?",
+    "options": [
+      "CaSO₄·2H₂O",
+      "CaO",
+      "KOH",
+      "C₂H₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of ethylene is C₂H₄.",
+    "id": "chem_174"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula C₂H₄?",
+    "options": [
+      "Phosphoric acid",
+      "Calcium fluoride",
+      "Sodium silicate",
+      "Ethylene"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₄ is ethylene.",
+    "id": "chem_175"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of acetylene?",
+    "options": [
+      "CaSO₄·2H₂O",
+      "CuSO₄",
+      "Na₂SO₄",
+      "C₂H₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of acetylene is C₂H₂.",
+    "id": "chem_176"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula C₂H₂?",
+    "options": [
+      "Calcium fluoride",
+      "Iron(III) oxide",
+      "Ethylene",
+      "Acetylene"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₂ is acetylene.",
+    "id": "chem_177"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of methanol?",
+    "options": [
+      "C₂H₅OH",
+      "KOH",
+      "C₂H₆",
+      "CH₃OH"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of methanol is CH₃OH.",
+    "id": "chem_178"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula CH₃OH?",
+    "options": [
+      "Silver nitrate",
+      "Sodium silicate",
+      "Copper sulfate",
+      "Methanol"
+    ],
+    "correctIndex": 3,
+    "explanation": "CH₃OH is methanol.",
+    "id": "chem_179"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of ethanol?",
+    "options": [
+      "C₂H₆",
+      "Na₂SiO₃",
+      "HNO₃",
+      "C₂H₅OH"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of ethanol is C₂H₅OH.",
+    "id": "chem_180"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula C₂H₅OH?",
+    "options": [
+      "Ethane",
+      "Silver nitrate",
+      "Iron(III) oxide",
+      "Ethanol"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₅OH is ethanol.",
+    "id": "chem_181"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of glucose?",
+    "options": [
+      "KCl",
+      "Na₂B₄O₇",
+      "C₂H₂",
+      "C₆H₁₂O₆"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of glucose is C₆H₁₂O₆.",
+    "id": "chem_182"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula C₆H₁₂O₆?",
+    "options": [
+      "Ethane",
+      "Potassium chloride",
+      "Propane",
+      "Glucose"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₆H₁₂O₆ is glucose.",
+    "id": "chem_183"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of sodium hydroxide?",
+    "options": [
+      "Na₂B₄O₇",
+      "C₂H₂",
+      "C₃H₈",
+      "NaOH"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of sodium hydroxide is NaOH.",
+    "id": "chem_184"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula NaOH?",
+    "options": [
+      "Hydrogen peroxide",
+      "Propane",
+      "Sodium sulfate",
+      "Sodium hydroxide"
+    ],
+    "correctIndex": 3,
+    "explanation": "NaOH is sodium hydroxide.",
+    "id": "chem_185"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of potassium hydroxide?",
+    "options": [
+      "Na₂B₄O₇",
+      "C₂H₅OH",
+      "H₂CO₃",
+      "KOH"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of potassium hydroxide is KOH.",
+    "id": "chem_186"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula KOH?",
+    "options": [
+      "Butane",
+      "Table salt",
+      "Silver nitrate",
+      "Potassium hydroxide"
+    ],
+    "correctIndex": 3,
+    "explanation": "KOH is potassium hydroxide.",
+    "id": "chem_187"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of nitric acid?",
+    "options": [
+      "C₂H₅OH",
+      "AgNO₃",
+      "H₂O₂",
+      "HNO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of nitric acid is HNO₃.",
+    "id": "chem_188"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula HNO₃?",
+    "options": [
+      "Ethane",
+      "Hydrogen peroxide",
+      "Propane",
+      "Nitric acid"
+    ],
+    "correctIndex": 3,
+    "explanation": "HNO₃ is nitric acid.",
+    "id": "chem_189"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical formula of hydrochloric acid?",
+    "options": [
+      "H₃PO₄",
+      "Na₂SO₄",
+      "AgNO₃",
+      "HCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of hydrochloric acid is HCl.",
+    "id": "chem_190"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which substance has the formula HCl?",
+    "options": [
+      "Silver nitrate",
+      "Potassium chloride",
+      "Potassium hydroxide",
+      "Hydrochloric acid"
+    ],
+    "correctIndex": 3,
+    "explanation": "HCl is hydrochloric acid.",
+    "id": "chem_191"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of carbonic acid?",
+    "options": [
+      "C₆H₁₂O₆",
+      "CH₃OH",
+      "Na₂SO₄",
+      "H₂CO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of carbonic acid is H₂CO₃.",
+    "id": "chem_192"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula H₂CO₃?",
+    "options": [
+      "Calcium fluoride",
+      "Potassium hydroxide",
+      "Ethanol",
+      "Carbonic acid"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₂CO₃ is carbonic acid.",
+    "id": "chem_193"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of phosphoric acid?",
+    "options": [
+      "C₆H₁₂O₆",
+      "HCl",
+      "C₂H₄",
+      "H₃PO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of phosphoric acid is H₃PO₄.",
+    "id": "chem_194"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula H₃PO₄?",
+    "options": [
+      "Sodium sulfate",
+      "Sodium bicarbonate",
+      "Sodium hydroxide",
+      "Phosphoric acid"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₃PO₄ is phosphoric acid.",
+    "id": "chem_195"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of calcium oxide?",
+    "options": [
+      "H₃PO₄",
+      "KOH",
+      "NH₄NO₃",
+      "CaO"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of calcium oxide is CaO.",
+    "id": "chem_196"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula CaO?",
+    "options": [
+      "Propane",
+      "Methane",
+      "Phosphoric acid",
+      "Calcium oxide"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaO is calcium oxide.",
+    "id": "chem_197"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of iron(iii) oxide?",
+    "options": [
+      "H₂O₂",
+      "AgNO₃",
+      "C₄H₁₀",
+      "Fe₂O₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of iron(iii) oxide is Fe₂O₃.",
+    "id": "chem_198"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula Fe₂O₃?",
+    "options": [
+      "Propane",
+      "Copper sulfate",
+      "Methanol",
+      "Iron(III) oxide"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fe₂O₃ is iron(iii) oxide.",
+    "id": "chem_199"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of potassium chloride?",
+    "options": [
+      "Fe₂O₃",
+      "C₆H₁₂O₆",
+      "C₂H₄",
+      "KCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of potassium chloride is KCl.",
+    "id": "chem_200"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula KCl?",
+    "options": [
+      "Nitric acid",
+      "Table salt",
+      "Propane",
+      "Potassium chloride"
+    ],
+    "correctIndex": 3,
+    "explanation": "KCl is potassium chloride.",
+    "id": "chem_201"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of copper sulfate?",
+    "options": [
+      "NaCl",
+      "C₂H₅OH",
+      "HNO₃",
+      "CuSO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of copper sulfate is CuSO₄.",
+    "id": "chem_202"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula CuSO₄?",
+    "options": [
+      "Sodium hydroxide",
+      "Acetylene",
+      "Phosphoric acid",
+      "Copper sulfate"
+    ],
+    "correctIndex": 3,
+    "explanation": "CuSO₄ is copper sulfate.",
+    "id": "chem_203"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of silver nitrate?",
+    "options": [
+      "CaCO₃",
+      "KCl",
+      "CaF₂",
+      "AgNO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of silver nitrate is AgNO₃.",
+    "id": "chem_204"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula AgNO₃?",
+    "options": [
+      "Sodium hydroxide",
+      "Hydrogen peroxide",
+      "Gypsum",
+      "Silver nitrate"
+    ],
+    "correctIndex": 3,
+    "explanation": "AgNO₃ is silver nitrate.",
+    "id": "chem_205"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of hydrogen peroxide?",
+    "options": [
+      "NaHCO₃",
+      "Fe₂O₃",
+      "CH₄",
+      "H₂O₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of hydrogen peroxide is H₂O₂.",
+    "id": "chem_206"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula H₂O₂?",
+    "options": [
+      "Sodium sulfate",
+      "Chalk",
+      "Potassium chloride",
+      "Hydrogen peroxide"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₂O₂ is hydrogen peroxide.",
+    "id": "chem_207"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of sodium bicarbonate?",
+    "options": [
+      "NaOH",
+      "Na₂SO₄",
+      "C₄H₁₀",
+      "NaHCO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of sodium bicarbonate is NaHCO₃.",
+    "id": "chem_208"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula NaHCO₃?",
+    "options": [
+      "Table salt",
+      "Ethylene",
+      "Glucose",
+      "Sodium bicarbonate"
+    ],
+    "correctIndex": 3,
+    "explanation": "NaHCO₃ is sodium bicarbonate.",
+    "id": "chem_209"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula of sodium sulfate?",
+    "options": [
+      "C₄H₁₀",
+      "NaCl",
+      "Na₂SiO₃",
+      "Na₂SO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of sodium sulfate is Na₂SO₄.",
+    "id": "chem_210"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which substance has the formula Na₂SO₄?",
+    "options": [
+      "Potassium chloride",
+      "Ethylene",
+      "Glucose",
+      "Sodium sulfate"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na₂SO₄ is sodium sulfate.",
+    "id": "chem_211"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of calcium fluoride?",
+    "options": [
+      "NaOH",
+      "AgNO₃",
+      "CH₃OH",
+      "CaF₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of calcium fluoride is CaF₂.",
+    "id": "chem_212"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula CaF₂?",
+    "options": [
+      "Sodium sulfate",
+      "Potassium hydroxide",
+      "Methanol",
+      "Calcium fluoride"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaF₂ is calcium fluoride.",
+    "id": "chem_213"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of sodium silicate?",
+    "options": [
+      "NaHCO₃",
+      "H₂O₂",
+      "Na₂B₄O₇",
+      "Na₂SiO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of sodium silicate is Na₂SiO₃.",
+    "id": "chem_214"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula Na₂SiO₃?",
+    "options": [
+      "Glucose",
+      "Iron(III) oxide",
+      "Calcium oxide",
+      "Sodium silicate"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na₂SiO₃ is sodium silicate.",
+    "id": "chem_215"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of ammonium nitrate?",
+    "options": [
+      "C₆H₁₂O₆",
+      "NaCl",
+      "Na₂B₄O₇",
+      "NH₄NO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of ammonium nitrate is NH₄NO₃.",
+    "id": "chem_216"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula NH₄NO₃?",
+    "options": [
+      "Ethane",
+      "Propane",
+      "Hydrogen peroxide",
+      "Ammonium nitrate"
+    ],
+    "correctIndex": 3,
+    "explanation": "NH₄NO₃ is ammonium nitrate.",
+    "id": "chem_217"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of gypsum?",
+    "options": [
+      "H₂CO₃",
+      "CaCO₃",
+      "C₆H₁₂O₆",
+      "CaSO₄·2H₂O"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of gypsum is CaSO₄·2H₂O.",
+    "id": "chem_218"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula CaSO₄·2H₂O?",
+    "options": [
+      "Ethane",
+      "Methane",
+      "Potassium hydroxide",
+      "Gypsum"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaSO₄·2H₂O is gypsum.",
+    "id": "chem_219"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical formula of chalk?",
+    "options": [
+      "Na₂SiO₃",
+      "C₂H₄",
+      "H₂O₂",
+      "CaCO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of chalk is CaCO₃.",
+    "id": "chem_220"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which substance has the formula CaCO₃?",
+    "options": [
+      "Glucose",
+      "Acetylene",
+      "Calcium fluoride",
+      "Chalk"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaCO₃ is chalk.",
+    "id": "chem_221"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the chemical formula of borax?",
+    "options": [
+      "H₃PO₄",
+      "KCl",
+      "Na₂SO₄",
+      "Na₂B₄O₇"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of borax is Na₂B₄O₇.",
+    "id": "chem_222"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which substance has the formula Na₂B₄O₇?",
+    "options": [
+      "Carbonic acid",
+      "Potassium chloride",
+      "Methane",
+      "Borax"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na₂B₄O₇ is borax.",
+    "id": "chem_223"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical formula of table salt?",
+    "options": [
+      "C₄H₁₀",
+      "C₃H₈",
+      "Na₂B₄O₇",
+      "NaCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "The formula of table salt is NaCl.",
+    "id": "chem_224"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which substance has the formula NaCl?",
+    "options": [
+      "Sodium sulfate",
+      "Borax",
+      "Ethylene",
+      "Table salt"
+    ],
+    "correctIndex": 3,
+    "explanation": "NaCl is table salt.",
+    "id": "chem_225"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 1?",
+    "options": [
+      "Helium",
+      "Lithium",
+      "Beryllium",
+      "Hydrogen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 1 is Hydrogen.",
+    "id": "chem_226"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 2?",
+    "options": [
+      "Hydrogen",
+      "Lithium",
+      "Beryllium",
+      "Helium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 2 is Helium.",
+    "id": "chem_227"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 3?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Beryllium",
+      "Lithium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 3 is Lithium.",
+    "id": "chem_228"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 4?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Beryllium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 4 is Beryllium.",
+    "id": "chem_229"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 5?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Boron"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 5 is Boron.",
+    "id": "chem_230"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 6?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Carbon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 6 is Carbon.",
+    "id": "chem_231"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 7?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Nitrogen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 7 is Nitrogen.",
+    "id": "chem_232"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 8?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Oxygen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 8 is Oxygen.",
+    "id": "chem_233"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 9?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Fluorine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 9 is Fluorine.",
+    "id": "chem_234"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 10?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Neon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 10 is Neon.",
+    "id": "chem_235"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 11?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Sodium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 11 is Sodium.",
+    "id": "chem_236"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 12?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Magnesium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 12 is Magnesium.",
+    "id": "chem_237"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 13?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Aluminum"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 13 is Aluminum.",
+    "id": "chem_238"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 14?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Silicon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 14 is Silicon.",
+    "id": "chem_239"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 15?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Phosphorus"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 15 is Phosphorus.",
+    "id": "chem_240"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 16?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Sulfur"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 16 is Sulfur.",
+    "id": "chem_241"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 17?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Chlorine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 17 is Chlorine.",
+    "id": "chem_242"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 18?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Argon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 18 is Argon.",
+    "id": "chem_243"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 19?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Potassium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 19 is Potassium.",
+    "id": "chem_244"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has atomic number 20?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Calcium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 20 is Calcium.",
+    "id": "chem_245"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 21?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Scandium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 21 is Scandium.",
+    "id": "chem_246"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 22?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Titanium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 22 is Titanium.",
+    "id": "chem_247"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 23?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Vanadium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 23 is Vanadium.",
+    "id": "chem_248"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 24?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Chromium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 24 is Chromium.",
+    "id": "chem_249"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 25?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Manganese"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 25 is Manganese.",
+    "id": "chem_250"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 26?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Iron"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 26 is Iron.",
+    "id": "chem_251"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 27?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Cobalt"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 27 is Cobalt.",
+    "id": "chem_252"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 28?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Nickel"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 28 is Nickel.",
+    "id": "chem_253"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 29?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Copper"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 29 is Copper.",
+    "id": "chem_254"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 30?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Zinc"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 30 is Zinc.",
+    "id": "chem_255"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 31?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Gallium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 31 is Gallium.",
+    "id": "chem_256"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 32?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Germanium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 32 is Germanium.",
+    "id": "chem_257"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 33?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Arsenic"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 33 is Arsenic.",
+    "id": "chem_258"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 34?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Selenium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 34 is Selenium.",
+    "id": "chem_259"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 35?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Bromine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 35 is Bromine.",
+    "id": "chem_260"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 36?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Krypton"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 36 is Krypton.",
+    "id": "chem_261"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 37?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Rubidium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 37 is Rubidium.",
+    "id": "chem_262"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 38?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Strontium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 38 is Strontium.",
+    "id": "chem_263"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 39?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Yttrium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 39 is Yttrium.",
+    "id": "chem_264"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 40?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Zirconium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 40 is Zirconium.",
+    "id": "chem_265"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 41?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Niobium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 41 is Niobium.",
+    "id": "chem_266"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 42?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Molybdenum"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 42 is Molybdenum.",
+    "id": "chem_267"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 47?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Silver"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 47 is Silver.",
+    "id": "chem_268"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 48?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Cadmium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 48 is Cadmium.",
+    "id": "chem_269"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 49?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Indium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 49 is Indium.",
+    "id": "chem_270"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 50?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Tin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 50 is Tin.",
+    "id": "chem_271"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 51?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Antimony"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 51 is Antimony.",
+    "id": "chem_272"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 53?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Iodine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 53 is Iodine.",
+    "id": "chem_273"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 54?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Xenon"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 54 is Xenon.",
+    "id": "chem_274"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 55?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Cesium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 55 is Cesium.",
+    "id": "chem_275"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 56?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Barium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 56 is Barium.",
+    "id": "chem_276"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 74?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Tungsten"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 74 is Tungsten.",
+    "id": "chem_277"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 78?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Platinum"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 78 is Platinum.",
+    "id": "chem_278"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 79?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Gold"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 79 is Gold.",
+    "id": "chem_279"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 80?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Mercury"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 80 is Mercury.",
+    "id": "chem_280"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 82?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Lead"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 82 is Lead.",
+    "id": "chem_281"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has atomic number 92?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Uranium"
+    ],
+    "correctIndex": 3,
+    "explanation": "Atomic number 92 is Uranium.",
+    "id": "chem_282"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which gas is needed for combustion?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Helium",
+      "Argon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Combustion requires oxygen.",
+    "id": "chem_283"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which gas makes up most of the atmosphere?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Hydrogen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nitrogen is about 78% of the atmosphere.",
+    "id": "chem_284"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the reaction of a substance with oxygen called?",
+    "options": [
+      "Hydrolysis",
+      "Oxidation",
+      "Distillation",
+      "Sublimation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oxidation is reaction with oxygen.",
+    "id": "chem_285"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the pH of a neutral solution?",
+    "options": [
+      "0",
+      "7",
+      "10",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Neutral pH equals 7.",
+    "id": "chem_286"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the pH of a strong acid (approx.)?",
+    "options": [
+      "1–3",
+      "7",
+      "10–12",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "Strong acids have low pH.",
+    "id": "chem_287"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the pH of a base (approx.)?",
+    "options": [
+      "1",
+      "5",
+      "7",
+      "11–13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bases have pH above 7.",
+    "id": "chem_288"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is a catalyst?",
+    "options": [
+      "Speeds reaction without being consumed",
+      "Slows reaction",
+      "Is a product",
+      "Absorbs heat"
+    ],
+    "correctIndex": 0,
+    "explanation": "A catalyst speeds up a reaction.",
+    "id": "chem_289"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Direct transition from solid to gas?",
+    "options": [
+      "Melting",
+      "Boiling",
+      "Sublimation",
+      "Condensation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sublimation: solid → gas.",
+    "id": "chem_290"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Transition from gas to liquid?",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Sublimation",
+      "Diffusion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Condensation: gas → liquid.",
+    "id": "chem_291"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is in all organic compounds?",
+    "options": [
+      "Nitrogen",
+      "Carbon",
+      "Oxygen",
+      "Sulfur"
+    ],
+    "correctIndex": 1,
+    "explanation": "Organic chemistry studies carbon compounds.",
+    "id": "chem_292"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the formula H₂O?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Water",
+      "Peroxide"
+    ],
+    "correctIndex": 2,
+    "explanation": "H₂O is water.",
+    "id": "chem_293"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which gas is often released when acid reacts with metal?",
+    "options": [
+      "Nitrogen",
+      "Hydrogen",
+      "Helium",
+      "Argon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Acid + metal → salt + hydrogen.",
+    "id": "chem_294"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Product of acid and base reaction?",
+    "options": [
+      "Salt",
+      "Oxide",
+      "Alcohol",
+      "Ether"
+    ],
+    "correctIndex": 0,
+    "explanation": "Neutralization gives salt and water.",
+    "id": "chem_295"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which metal is liquid at room temperature?",
+    "options": [
+      "Iron",
+      "Mercury",
+      "Copper",
+      "Aluminum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mercury is liquid at 20°C.",
+    "id": "chem_296"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which gas is used in balloons (light)?",
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Helium",
+      "Chlorine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Helium is lighter than air.",
+    "id": "chem_297"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Separation of a mixture by boiling?",
+    "options": [
+      "Filtration",
+      "Distillation",
+      "Electrolysis",
+      "Crystallization"
+    ],
+    "correctIndex": 1,
+    "explanation": "Distillation uses different boiling points.",
+    "id": "chem_298"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Au?",
+    "options": [
+      "Silver",
+      "Gold",
+      "Aluminum",
+      "Copper"
+    ],
+    "correctIndex": 1,
+    "explanation": "Au is gold (Latin: aurum).",
+    "id": "chem_299"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Ag?",
+    "options": [
+      "Gold",
+      "Silver",
+      "Argon",
+      "Aluminum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ag is silver (Latin: argentum).",
+    "id": "chem_300"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Fe?",
+    "options": [
+      "Fluorine",
+      "Iron",
+      "Phosphorus",
+      "Francium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fe is iron (Latin: ferrum).",
+    "id": "chem_301"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Cu?",
+    "options": [
+      "Cobalt",
+      "Copper",
+      "Potassium",
+      "Krypton"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cu is copper (Latin: cuprum).",
+    "id": "chem_302"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Pb?",
+    "options": [
+      "Platinum",
+      "Lead",
+      "Palladium",
+      "Polonium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pb is lead (Latin: plumbum).",
+    "id": "chem_303"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Sn?",
+    "options": [
+      "Sulfur",
+      "Tin",
+      "Selenium",
+      "Strontium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sn is tin (Latin: stannum).",
+    "id": "chem_304"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is K?",
+    "options": [
+      "Calcium",
+      "Potassium",
+      "Krypton",
+      "Cobalt"
+    ],
+    "correctIndex": 1,
+    "explanation": "K is potassium (Latin: kalium).",
+    "id": "chem_305"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element is Na?",
+    "options": [
+      "Neon",
+      "Sodium",
+      "Nitrogen",
+      "Nickel"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na is sodium (Latin: natrium).",
+    "id": "chem_306"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element is W?",
+    "options": [
+      "Tungsten",
+      "Vanadium",
+      "Hydrogen",
+      "Bismuth"
+    ],
+    "correctIndex": 0,
+    "explanation": "W is tungsten (German: Wolfram).",
+    "id": "chem_307"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element is Hg?",
+    "options": [
+      "Helium",
+      "Mercury",
+      "Hafnium",
+      "Holmium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hg is mercury (Latin: hydrargyrum).",
+    "id": "chem_308"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Valence electrons in noble gases (except He)?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "Noble gases (except He) have 8 valence electrons.",
+    "id": "chem_309"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Bond type in NaCl?",
+    "options": [
+      "Covalent",
+      "Ionic",
+      "Metallic",
+      "Hydrogen"
+    ],
+    "correctIndex": 1,
+    "explanation": "NaCl is typical ionic bonding.",
+    "id": "chem_310"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Bond type in O₂?",
+    "options": [
+      "Ionic",
+      "Covalent",
+      "Metallic",
+      "Van der Waals"
+    ],
+    "correctIndex": 1,
+    "explanation": "O₂ has covalent bonding.",
+    "id": "chem_311"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Smallest particle of an element?",
+    "options": [
+      "Molecule",
+      "Atom",
+      "Ion",
+      "Radical"
+    ],
+    "correctIndex": 1,
+    "explanation": "An atom is the smallest unit of an element.",
+    "id": "chem_312"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is an ion?",
+    "options": [
+      "Atom",
+      "Molecule",
+      "Charged particle",
+      "Isotope"
+    ],
+    "correctIndex": 2,
+    "explanation": "An ion is an atom or group with a charge.",
+    "id": "chem_313"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is an isotope?",
+    "options": [
+      "Atoms with different neutrons",
+      "Different elements",
+      "Water molecules",
+      "Metal ions"
+    ],
+    "correctIndex": 0,
+    "explanation": "Isotopes: same element, different neutrons.",
+    "id": "chem_314"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which gas is a greenhouse gas?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "CO₂",
+      "Argon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Carbon dioxide is a greenhouse gas.",
+    "id": "chem_315"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which metal is used in thermometers?",
+    "options": [
+      "Iron",
+      "Mercury",
+      "Zinc",
+      "Magnesium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mercury expands evenly when heated.",
+    "id": "chem_316"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Decomposition of water by electricity?",
+    "options": [
+      "Hydrolysis",
+      "Electrolysis",
+      "Hydration",
+      "Dehydration"
+    ],
+    "correctIndex": 1,
+    "explanation": "Electrolysis uses electric current.",
+    "id": "chem_317"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Products of complete hydrocarbon combustion?",
+    "options": [
+      "CO and H₂O",
+      "CO₂ and H₂O",
+      "Only CO₂",
+      "Only H₂O"
+    ],
+    "correctIndex": 1,
+    "explanation": "Complete combustion: CO₂ + H₂O.",
+    "id": "chem_318"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Indicator that turns red in acid?",
+    "options": [
+      "Phenolphthalein",
+      "Litmus",
+      "Methyl orange",
+      "Both litmus and methyl orange"
+    ],
+    "correctIndex": 3,
+    "explanation": "Litmus and methyl orange turn red in acid.",
+    "id": "chem_319"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Indicator that turns blue/pink in base?",
+    "options": [
+      "Litmus",
+      "Phenolphthalein",
+      "Methyl orange",
+      "Iodine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phenolphthalein is pink in base.",
+    "id": "chem_320"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Formula of sulfuric acid?",
+    "options": [
+      "H₂SO₄",
+      "HNO₃",
+      "HCl",
+      "H₃PO₄"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sulfuric acid is H₂SO₄.",
+    "id": "chem_321"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Gas that smells like rotten eggs?",
+    "options": [
+      "Ammonia",
+      "Hydrogen sulfide",
+      "Chlorine",
+      "Methane"
+    ],
+    "correctIndex": 1,
+    "explanation": "H₂S smells like rotten eggs.",
+    "id": "chem_322"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Gas used to disinfect water?",
+    "options": [
+      "Nitrogen",
+      "Chlorine",
+      "Helium",
+      "Methane"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chlorine disinfects water.",
+    "id": "chem_323"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Alcohol with formula C₂H₅OH?",
+    "options": [
+      "Methanol",
+      "Ethanol",
+      "Glycerin",
+      "Phenol"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ethanol is drinking/technical alcohol.",
+    "id": "chem_324"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which alcohol is toxic?",
+    "options": [
+      "Ethanol",
+      "Methanol",
+      "Glycerin",
+      "Propanol"
+    ],
+    "correctIndex": 1,
+    "explanation": "Methanol (CH₃OH) is dangerous.",
+    "id": "chem_325"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Sugar found in grapes and fruits?",
+    "options": [
+      "Sucrose",
+      "Glucose",
+      "Starch",
+      "Cellulose"
+    ],
+    "correctIndex": 1,
+    "explanation": "Glucose is a simple sugar.",
+    "id": "chem_326"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Polymer known as 'organic glass'?",
+    "options": [
+      "Polyethylene",
+      "Polystyrene",
+      "PMMA",
+      "PVC"
+    ],
+    "correctIndex": 2,
+    "explanation": "Plexiglas is polymethyl methacrylate.",
+    "id": "chem_327"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Gas released by plants in photosynthesis?",
+    "options": [
+      "CO₂",
+      "O₂",
+      "N₂",
+      "H₂"
+    ],
+    "correctIndex": 1,
+    "explanation": "Photosynthesis releases oxygen.",
+    "id": "chem_328"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Gas absorbed by plants in photosynthesis?",
+    "options": [
+      "O₂",
+      "N₂",
+      "CO₂",
+      "H₂"
+    ],
+    "correctIndex": 2,
+    "explanation": "Plants use CO₂.",
+    "id": "chem_329"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Process of iron 'rusting'?",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Hydration",
+      "Polymerization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rust is iron oxide.",
+    "id": "chem_330"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Metal coated with zinc against corrosion?",
+    "options": [
+      "Gold",
+      "Iron",
+      "Copper",
+      "Silver"
+    ],
+    "correctIndex": 1,
+    "explanation": "Galvanizing protects iron.",
+    "id": "chem_331"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Mixture of a metal with other elements?",
+    "options": [
+      "Salt",
+      "Alloy",
+      "Solution",
+      "Suspension"
+    ],
+    "correctIndex": 1,
+    "explanation": "An alloy is a metal mixture.",
+    "id": "chem_332"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Brass is mainly made of?",
+    "options": [
+      "Iron and carbon",
+      "Copper and zinc",
+      "Aluminum and magnesium",
+      "Lead and tin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Brass is copper and zinc.",
+    "id": "chem_333"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Classic bronze is made of?",
+    "options": [
+      "Copper and tin",
+      "Copper and zinc",
+      "Iron and nickel",
+      "Aluminum and silicon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bronze is copper + tin.",
+    "id": "chem_334"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element needed for bones and teeth?",
+    "options": [
+      "Sodium",
+      "Calcium",
+      "Potassium",
+      "Magnesium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Calcium is vital for bone tissue.",
+    "id": "chem_335"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element in hemoglobin?",
+    "options": [
+      "Magnesium",
+      "Iron",
+      "Zinc",
+      "Copper"
+    ],
+    "correctIndex": 1,
+    "explanation": "Iron binds oxygen in blood.",
+    "id": "chem_336"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Gas used in red neon signs?",
+    "options": [
+      "Argon",
+      "Neon",
+      "Xenon",
+      "Krypton"
+    ],
+    "correctIndex": 1,
+    "explanation": "Neon gives red glow.",
+    "id": "chem_337"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Avogadro's number (approx.)?",
+    "options": [
+      "6·10²³",
+      "3·10⁸",
+      "9.8",
+      "6.02·10²⁴"
+    ],
+    "correctIndex": 0,
+    "explanation": "6.02·10²³ particles per mole.",
+    "id": "chem_338"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Amount of substance in moles?",
+    "options": [
+      "Mass",
+      "Volume",
+      "Amount of substance",
+      "Density"
+    ],
+    "correctIndex": 2,
+    "explanation": "The mole measures amount of substance.",
+    "id": "chem_339"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Law: mass of reactants = mass of products?",
+    "options": [
+      "Law of conservation of mass",
+      "Ohm's law",
+      "Boyle's law",
+      "Hooke's law"
+    ],
+    "correctIndex": 0,
+    "explanation": "Law of conservation of mass — Lavoisier.",
+    "id": "chem_340"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Reaction that releases heat?",
+    "options": [
+      "Endothermic",
+      "Exothermic",
+      "Reversible",
+      "Catalytic"
+    ],
+    "correctIndex": 1,
+    "explanation": "Exothermic reactions release heat.",
+    "id": "chem_341"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Reaction that absorbs heat?",
+    "options": [
+      "Endothermic",
+      "Exothermic",
+      "Hydrolysis",
+      "Polymerization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Endothermic reactions absorb heat.",
+    "id": "chem_342"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Lightest element?",
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Lithium",
+      "Carbon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hydrogen is the lightest element.",
+    "id": "chem_343"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Heaviest stable element?",
+    "options": [
+      "Uranium",
+      "Lead",
+      "Tungsten",
+      "Mercury"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lead ends the stable elements.",
+    "id": "chem_344"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Name of the elements table?",
+    "options": [
+      "Dalton's table",
+      "Periodic table",
+      "Newton's table",
+      "Boyle's table"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mendeleev's periodic table.",
+    "id": "chem_345"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "How many periods in the periodic table?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "There are 7 periods.",
+    "id": "chem_346"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Gas formed when hydrogen burns?",
+    "options": [
+      "Nitrogen",
+      "Water (steam)",
+      "CO₂",
+      "Methane"
+    ],
+    "correctIndex": 1,
+    "explanation": "2H₂ + O₂ → 2H₂O.",
+    "id": "chem_347"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Acid in the stomach?",
+    "options": [
+      "Sulfuric",
+      "Hydrochloric",
+      "Acetic",
+      "Citric"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hydrochloric acid in gastric juice.",
+    "id": "chem_348"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Vitamin in ascorbic acid?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vitamin C is ascorbic acid.",
+    "id": "chem_349"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Formation of a precipitate?",
+    "options": [
+      "Distillation",
+      "Precipitation",
+      "Sublimation",
+      "Evaporation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Precipitation — solid forms.",
+    "id": "chem_350"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Metal used in beverage cans?",
+    "options": [
+      "Iron",
+      "Aluminum",
+      "Tin",
+      "Zinc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cans are made of aluminum.",
+    "id": "chem_351"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Main component of natural gas?",
+    "options": [
+      "Ethane",
+      "Methane",
+      "Propane",
+      "Butane"
+    ],
+    "correctIndex": 1,
+    "explanation": "Methane CH₄ is the main component.",
+    "id": "chem_352"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Scientific name for table salt?",
+    "options": [
+      "Sodium chloride",
+      "Sodium sulfate",
+      "Sodium nitrate",
+      "Sodium carbonate"
+    ],
+    "correctIndex": 0,
+    "explanation": "NaCl is sodium chloride.",
+    "id": "chem_353"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Product at cathode in water electrolysis?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Nitrogen",
+      "Chlorine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hydrogen forms at the cathode.",
+    "id": "chem_354"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Product at anode in water electrolysis?",
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Nitrogen",
+      "CO₂"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oxygen forms at the anode.",
+    "id": "chem_355"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element in a diamond?",
+    "options": [
+      "Silicon",
+      "Carbon",
+      "Boron",
+      "Nitrogen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Diamond is a form of carbon.",
+    "id": "chem_356"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element in quartz?",
+    "options": [
+      "Carbon",
+      "Silicon",
+      "Aluminum",
+      "Iron"
+    ],
+    "correctIndex": 1,
+    "explanation": "SiO₂ is silicon dioxide.",
+    "id": "chem_357"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Acid in vinegar?",
+    "options": [
+      "Lactic",
+      "Acetic",
+      "Oxalic",
+      "Tartaric"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vinegar is dilute acetic acid.",
+    "id": "chem_358"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Process of forming polymers?",
+    "options": [
+      "Hydrolysis",
+      "Polymerization",
+      "Distillation",
+      "Crystallization"
+    ],
+    "correctIndex": 1,
+    "explanation": "Polymerization joins monomers.",
+    "id": "chem_359"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Formula of ammonia?",
+    "options": [
+      "NH₃",
+      "NO₂",
+      "N₂O",
+      "HNO₃"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ammonia is NH₃.",
+    "id": "chem_360"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Smell of ammonia?",
+    "options": [
+      "Sweet",
+      "Sharp alkaline",
+      "Rotten eggs",
+      "Odorless"
+    ],
+    "correctIndex": 1,
+    "explanation": "NH₃ has a sharp smell.",
+    "id": "chem_361"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Nitrogen fertilizer example?",
+    "options": [
+      "Superphosphate",
+      "Ammonium nitrate",
+      "Potash",
+      "Lime"
+    ],
+    "correctIndex": 1,
+    "explanation": "NH₄NO₃ is a nitrogen fertilizer.",
+    "id": "chem_362"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Formula of ozone?",
+    "options": [
+      "O",
+      "O₂",
+      "O₃",
+      "O₄"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ozone is O₃.",
+    "id": "chem_363"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Layer containing ozone?",
+    "options": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ozone layer in the stratosphere.",
+    "id": "chem_364"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Reaction splitting into simpler substances?",
+    "options": [
+      "Synthesis",
+      "Decomposition",
+      "Substitution",
+      "Exchange"
+    ],
+    "correctIndex": 1,
+    "explanation": "Decomposition breaks compounds apart.",
+    "id": "chem_365"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Reaction combining simple substances?",
+    "options": [
+      "Synthesis",
+      "Hydrolysis",
+      "Distillation",
+      "Crystallization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Synthesis forms a complex substance.",
+    "id": "chem_366"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Metal that reacts vigorously with acid?",
+    "options": [
+      "Gold",
+      "Sodium",
+      "Copper",
+      "Silver"
+    ],
+    "correctIndex": 1,
+    "explanation": "Alkali metals are very reactive.",
+    "id": "chem_367"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Metal that does not react with dilute HCl?",
+    "options": [
+      "Zinc",
+      "Iron",
+      "Copper",
+      "Magnesium"
+    ],
+    "correctIndex": 2,
+    "explanation": "Copper does not displace hydrogen from HCl.",
+    "id": "chem_368"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Transfer of electrons between reactants?",
+    "options": [
+      "Redox",
+      "Acid-base",
+      "Polymerization",
+      "Hydration"
+    ],
+    "correctIndex": 0,
+    "explanation": "Redox involves electron transfer.",
+    "id": "chem_369"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Basis of silicon electronics?",
+    "options": [
+      "Carbon",
+      "Silicon",
+      "Germanium",
+      "Copper"
+    ],
+    "correctIndex": 1,
+    "explanation": "Silicon is a semiconductor.",
+    "id": "chem_370"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "CO₂ used in fire extinguishers?",
+    "options": [
+      "Oxygen",
+      "CO₂",
+      "Methane",
+      "Hydrogen"
+    ],
+    "correctIndex": 1,
+    "explanation": "CO₂ displaces oxygen.",
+    "id": "chem_371"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Acid + base reaction called?",
+    "options": [
+      "Neutralization",
+      "Combustion",
+      "Polymerization",
+      "Fermentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acid + base → salt + water.",
+    "id": "chem_372"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element in all proteins?",
+    "options": [
+      "Only carbon",
+      "C, H, O, N",
+      "Only nitrogen",
+      "Only oxygen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Proteins contain C, H, O, N and more.",
+    "id": "chem_373"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Sugar fermentation process?",
+    "options": [
+      "Distillation",
+      "Fermentation",
+      "Electrolysis",
+      "Sublimation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fermentation is microbial breakdown.",
+    "id": "chem_374"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Product of grape fermentation?",
+    "options": [
+      "Beer",
+      "Wine",
+      "Bread",
+      "Cheese"
+    ],
+    "correctIndex": 1,
+    "explanation": "Wine comes from fermentation.",
+    "id": "chem_375"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Gas released when dough rises?",
+    "options": [
+      "Oxygen",
+      "CO₂",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Yeast releases CO₂.",
+    "id": "chem_376"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Saturated solution means?",
+    "options": [
+      "Excess solute",
+      "Max concentration at given T",
+      "Empty solution",
+      "Concentrated acid"
+    ],
+    "correctIndex": 1,
+    "explanation": "No more solute dissolves.",
+    "id": "chem_377"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Universal solvent?",
+    "options": [
+      "Oil",
+      "Water",
+      "Alcohol",
+      "Gasoline"
+    ],
+    "correctIndex": 1,
+    "explanation": "Water is the most important solvent.",
+    "id": "chem_378"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Homogeneous mixture?",
+    "options": [
+      "Suspension",
+      "Solution",
+      "Precipitate",
+      "Crystal"
+    ],
+    "correctIndex": 1,
+    "explanation": "A solution is homogeneous.",
+    "id": "chem_379"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Heterogeneous mixture with visible particles?",
+    "options": [
+      "Solution",
+      "Suspension",
+      "Emulsion",
+      "Alloy"
+    ],
+    "correctIndex": 1,
+    "explanation": "A suspension has visible particles.",
+    "id": "chem_380"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Flame color of copper salts?",
+    "options": [
+      "Yellow",
+      "Green",
+      "Red",
+      "Blue"
+    ],
+    "correctIndex": 1,
+    "explanation": "Copper gives a greenish flame.",
+    "id": "chem_381"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Flame color of sodium?",
+    "options": [
+      "Green",
+      "Yellow",
+      "Red",
+      "Violet"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sodium has a characteristic yellow flame.",
+    "id": "chem_382"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Flame color of potassium?",
+    "options": [
+      "Yellow",
+      "Green",
+      "Lilac",
+      "Orange"
+    ],
+    "correctIndex": 2,
+    "explanation": "Potassium gives a lilac flame.",
+    "id": "chem_383"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Flame color of calcium?",
+    "options": [
+      "Red",
+      "Brick red",
+      "Blue",
+      "White"
+    ],
+    "correctIndex": 1,
+    "explanation": "Calcium gives a brick-red flame.",
+    "id": "chem_384"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "NaOH is also called?",
+    "options": [
+      "Soda",
+      "Caustic soda",
+      "Chalk",
+      "Saltpeter"
+    ],
+    "correctIndex": 1,
+    "explanation": "NaOH is caustic soda.",
+    "id": "chem_385"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "NaHCO₃ in everyday use?",
+    "options": [
+      "Soda",
+      "Baking soda",
+      "Saltpeter",
+      "Salt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Baking soda is sodium bicarbonate.",
+    "id": "chem_386"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element in all acids (classically)?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Nitrogen",
+      "Carbon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Classically acids contain hydrogen.",
+    "id": "chem_387"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol Si?",
+    "options": [
+      "Sulfur",
+      "Silicon",
+      "Selenium",
+      "Scandium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Si is silicon.",
+    "id": "chem_388"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol S?",
+    "options": [
+      "Selenium",
+      "Sulfur",
+      "Scandium",
+      "Silver"
+    ],
+    "correctIndex": 1,
+    "explanation": "S is sulfur.",
+    "id": "chem_389"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol P?",
+    "options": [
+      "Platinum",
+      "Phosphorus",
+      "Polonium",
+      "Praseodymium"
+    ],
+    "correctIndex": 1,
+    "explanation": "P is phosphorus.",
+    "id": "chem_390"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol Cl?",
+    "options": [
+      "Chromium",
+      "Chlorine",
+      "Calcium",
+      "Cobalt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cl is chlorine.",
+    "id": "chem_391"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol Zn?",
+    "options": [
+      "Zirconium",
+      "Zinc",
+      "Gold",
+      "Xenon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zn is zinc.",
+    "id": "chem_392"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol Al?",
+    "options": [
+      "Argon",
+      "Aluminum",
+      "Actinium",
+      "Astatine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Al is aluminum.",
+    "id": "chem_393"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol Mg?",
+    "options": [
+      "Manganese",
+      "Magnesium",
+      "Molybdenum",
+      "Copper"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mg is magnesium.",
+    "id": "chem_394"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Element symbol Ca?",
+    "options": [
+      "Calcium",
+      "Potassium",
+      "Cadmium",
+      "Cobalt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ca is calcium.",
+    "id": "chem_395"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element symbol Ti?",
+    "options": [
+      "Thallium",
+      "Titanium",
+      "Thorium",
+      "Tellurium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ti is titanium.",
+    "id": "chem_396"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element symbol Cr?",
+    "options": [
+      "Chromium",
+      "Chlorine",
+      "Cesium",
+      "Krypton"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cr is chromium.",
+    "id": "chem_397"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element symbol Mn?",
+    "options": [
+      "Magnesium",
+      "Manganese",
+      "Molybdenum",
+      "Copper"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mn is manganese.",
+    "id": "chem_398"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element symbol Ni?",
+    "options": [
+      "Sodium",
+      "Nickel",
+      "Neon",
+      "Niobium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ni is nickel.",
+    "id": "chem_399"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Element symbol Co?",
+    "options": [
+      "Cobalt",
+      "Calcium",
+      "Krypton",
+      "Cadmium"
+    ],
+    "correctIndex": 0,
+    "explanation": "Co is cobalt.",
+    "id": "chem_400"
+  }
+]

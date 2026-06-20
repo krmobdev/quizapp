@@ -7,19 +7,23 @@ import kotlinx.serialization.json.Json
 /**
  * Loads quiz questions from the app's assets and serves them per category.
  *
- * Each `assets/questions_<categoryId>.json` file is parsed on first use for that
- * category and cached for the lifetime of the repository instance.
+ * Russian banks live in `questions_<categoryId>.json`; English banks in
+ * `questions_<categoryId>_en.json`. Parsed lists are cached per language and category.
  */
 class QuestionRepository(private val context: Context) {
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    /** Parsed questions per category, loaded on first access. */
-    private val questionsByCategory: MutableMap<String, List<Question>> = mutableMapOf()
+    /** Parsed questions per language and category, loaded on first access. */
+    private val questionsByLanguageAndCategory: MutableMap<String, List<Question>> = mutableMapOf()
 
-    private fun questionsFor(categoryId: String): List<Question> =
-        questionsByCategory.getOrPut(categoryId) {
-            val fileName = "questions_$categoryId.json"
+    private fun cacheKey(language: AppLanguage, categoryId: String): String =
+        "${language.name}:$categoryId"
+
+    private fun questionsFor(language: AppLanguage, categoryId: String): List<Question> =
+        questionsByLanguageAndCategory.getOrPut(cacheKey(language, categoryId)) {
+            val suffix = if (language == AppLanguage.EN) "_en" else ""
+            val fileName = "questions_${categoryId}$suffix.json"
             context.assets.open(fileName).bufferedReader().use { reader ->
                 json.decodeFromString<List<Question>>(reader.readText())
             }
@@ -47,10 +51,11 @@ class QuestionRepository(private val context: Context) {
     fun getQuestions(
         categoryId: String,
         difficulty: Difficulty?,
+        language: AppLanguage = AppLanguage.RU,
         bankSize: Int = BANK_SIZE,
         quizSize: Int = QUIZ_SIZE
     ): List<Question> =
-        questionsFor(categoryId)
+        questionsFor(language, categoryId)
             .filter { difficulty == null || it.difficulty == difficulty }
             .shuffled()
             .take(bankSize)

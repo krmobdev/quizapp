@@ -13,6 +13,7 @@ import kotlinx.serialization.json.Json
 data class SavedQuizProgress(
     val categoryId: String,
     val difficulty: Difficulty?,
+    val language: AppLanguage = AppLanguage.RU,
     val questions: List<Question>,
     val currentIndex: Int,
     val correctCount: Int,
