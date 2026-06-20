@@ -1,6 +1,7 @@
 package com.rustam.quizapp.data
 
 import android.content.Context
+import com.rustam.quizapp.R
 import kotlinx.serialization.json.Json
 
 /**
@@ -26,16 +27,16 @@ class QuestionRepository(private val context: Context) {
 
     /** Categories shown on the home screen. Hardcoded for now. */
     fun getCategories(): List<Category> = listOf(
-        Category(id = "chemistry", title = "Химия", emoji = "🧪"),
-        Category(id = "physics", title = "Физика", emoji = "⚛️"),
-        Category(id = "history", title = "История", emoji = "📜"),
-        Category(id = "movies", title = "Кино и сериалы", emoji = "🎬"),
-        Category(id = "art", title = "Искусство", emoji = "🎨"),
-        Category(id = "animals", title = "Животные", emoji = "🐾"),
-        Category(id = "geography", title = "География", emoji = "🌍"),
-        Category(id = "math", title = "Математика", emoji = "🔢"),
-        Category(id = "informatics", title = "Информатика", emoji = "💻"),
-        Category(id = "astronomy", title = "Астрономия", emoji = "🔭")
+        Category(id = "chemistry", titleRes = R.string.category_chemistry, emoji = "🧪"),
+        Category(id = "physics", titleRes = R.string.category_physics, emoji = "⚛️"),
+        Category(id = "history", titleRes = R.string.category_history, emoji = "📜"),
+        Category(id = "movies", titleRes = R.string.category_movies, emoji = "🎬"),
+        Category(id = "art", titleRes = R.string.category_art, emoji = "🎨"),
+        Category(id = "animals", titleRes = R.string.category_animals, emoji = "🐾"),
+        Category(id = "geography", titleRes = R.string.category_geography, emoji = "🌍"),
+        Category(id = "math", titleRes = R.string.category_math, emoji = "🔢"),
+        Category(id = "informatics", titleRes = R.string.category_informatics, emoji = "💻"),
+        Category(id = "astronomy", titleRes = R.string.category_astronomy, emoji = "🔭")
     )
 
     /**

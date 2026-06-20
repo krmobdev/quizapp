@@ -42,6 +42,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
@@ -50,8 +51,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Category
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.ui.localization.labelRes
+import com.rustam.quizapp.ui.localization.subtitleRes
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
@@ -104,8 +108,10 @@ private fun HomeContent(
             CenterAlignedTopAppBar(
                 title = {
                     Text(
-                        if (state.selectedCategory == null) "Викторина"
-                        else "Уровень сложности"
+                        stringResource(
+                            if (state.selectedCategory == null) R.string.home_title
+                            else R.string.difficulty_screen_title
+                        )
                     )
                 },
                 navigationIcon = {
@@ -113,7 +119,7 @@ private fun HomeContent(
                         IconButton(onClick = onBack) {
                             Icon(
                                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                                contentDescription = "Назад"
+                                contentDescription = stringResource(R.string.back)
                             )
                         }
                     }
@@ -121,10 +127,10 @@ private fun HomeContent(
                 actions = {
                     if (state.selectedCategory == null) {
                         TextButton(onClick = onOpenStats) {
-                            Text("Статистика")
+                            Text(stringResource(R.string.stats))
                         }
                         TextButton(onClick = onOpenSettings) {
-                            Text("Настройки")
+                            Text(stringResource(R.string.settings))
                         }
                     }
                 }
@@ -191,7 +197,7 @@ private fun CategoryCard(
         ) {
             Text(text = category.emoji, style = MaterialTheme.typography.displaySmall)
             Text(
-                text = category.title,
+                text = stringResource(category.titleRes),
                 style = MaterialTheme.typography.titleMedium,
                 textAlign = TextAlign.Center
             )
@@ -217,12 +223,12 @@ private fun DifficultyPanel(
 
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
             Text(
-                text = "Выберите уровень",
+                text = stringResource(R.string.choose_level),
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.SemiBold
             )
             Text(
-                text = "10 вопросов · 10 секунд на ответ",
+                text = stringResource(R.string.quiz_rules),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -248,7 +254,7 @@ private fun DifficultyPanel(
             shape = RoundedCornerShape(16.dp)
         ) {
             Text(
-                text = "Начать квиз",
+                text = stringResource(R.string.start_quiz),
                 style = MaterialTheme.typography.titleMedium
             )
         }
@@ -293,13 +299,13 @@ private fun CategoryHeroCard(
                 }
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text(
-                        text = category.title,
+                        text = stringResource(category.titleRes),
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onPrimaryContainer
                     )
                     Text(
-                        text = "400 вопросов в банке",
+                        text = stringResource(R.string.question_bank_size),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
                     )
@@ -382,12 +388,12 @@ private fun DifficultyOptionCard(
                 verticalArrangement = Arrangement.spacedBy(2.dp)
             ) {
                 Text(
-                    text = filter.label,
+                    text = stringResource(filter.labelRes),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold
                 )
                 Text(
-                    text = filter.subtitle,
+                    text = stringResource(filter.subtitleRes),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -410,7 +416,7 @@ private fun HomeContentCategoriesPreview() {
     QuizappTheme {
         HomeContent(
             state = HomeUiState(
-                categories = listOf(Category("chemistry", "Химия", "🧪"))
+                categories = listOf(Category("chemistry", R.string.category_chemistry, "🧪"))
             ),
             onCategoryClick = {},
             onDifficultySelected = {},
@@ -428,8 +434,8 @@ private fun HomeContentDifficultyPreview() {
     QuizappTheme {
         HomeContent(
             state = HomeUiState(
-                categories = listOf(Category("chemistry", "Химия", "🧪")),
-                selectedCategory = Category("chemistry", "Химия", "🧪"),
+                categories = listOf(Category("chemistry", R.string.category_chemistry, "🧪")),
+                selectedCategory = Category("chemistry", R.string.category_chemistry, "🧪"),
                 selectedDifficulty = DifficultyFilter.MEDIUM
             ),
             onCategoryClick = {},
@@ -448,8 +454,8 @@ private fun HomeContentDifficultyDarkPreview() {
     QuizappTheme(darkTheme = true) {
         HomeContent(
             state = HomeUiState(
-                categories = listOf(Category("chemistry", "Химия", "🧪")),
-                selectedCategory = Category("chemistry", "Химия", "🧪"),
+                categories = listOf(Category("chemistry", R.string.category_chemistry, "🧪")),
+                selectedCategory = Category("chemistry", R.string.category_chemistry, "🧪"),
                 selectedDifficulty = DifficultyFilter.HARD
             ),
             onCategoryClick = {},

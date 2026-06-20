@@ -25,10 +25,14 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.R
+import com.rustam.quizapp.data.AppLanguage
 import com.rustam.quizapp.data.ThemeMode
+import com.rustam.quizapp.ui.localization.labelRes
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
@@ -39,11 +43,14 @@ fun SettingsScreen(
 ) {
     val soundEnabled by viewModel.soundEnabled.collectAsState()
     val themeMode by viewModel.themeMode.collectAsState()
+    val appLanguage by viewModel.appLanguage.collectAsState()
     SettingsContent(
         soundEnabled = soundEnabled,
         themeMode = themeMode,
+        appLanguage = appLanguage,
         onSoundEnabledChange = viewModel::setSoundEnabled,
         onThemeModeChange = viewModel::setThemeMode,
+        onAppLanguageChange = viewModel::setAppLanguage,
         onBack = onBack,
         modifier = modifier
     )
@@ -54,8 +61,10 @@ fun SettingsScreen(
 private fun SettingsContent(
     soundEnabled: Boolean,
     themeMode: ThemeMode,
+    appLanguage: AppLanguage,
     onSoundEnabledChange: (Boolean) -> Unit,
     onThemeModeChange: (ThemeMode) -> Unit,
+    onAppLanguageChange: (AppLanguage) -> Unit,
     onBack: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -63,12 +72,12 @@ private fun SettingsContent(
         modifier = modifier.fillMaxSize(),
         topBar = {
             CenterAlignedTopAppBar(
-                title = { Text("Настройки") },
+                title = { Text(stringResource(R.string.settings)) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Назад"
+                            contentDescription = stringResource(R.string.back)
                         )
                     }
                 }
@@ -83,8 +92,8 @@ private fun SettingsContent(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             SettingSwitchRow(
-                title = "Звук",
-                subtitle = "Звуковые эффекты в квизе",
+                title = stringResource(R.string.settings_sound_title),
+                subtitle = stringResource(R.string.settings_sound_subtitle),
                 checked = soundEnabled,
                 onCheckedChange = onSoundEnabledChange
             )
@@ -95,9 +104,33 @@ private fun SettingsContent(
                         .padding(16.dp),
                     verticalArrangement = Arrangement.spacedBy(12.dp)
                 ) {
-                    Text(text = "Тема", style = MaterialTheme.typography.titleMedium)
+                    Text(text = stringResource(R.string.settings_language_title), style = MaterialTheme.typography.titleMedium)
                     Text(
-                        text = "Внешний вид приложения",
+                        text = stringResource(R.string.settings_language_subtitle),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        AppLanguage.entries.forEach { language ->
+                            FilterChip(
+                                selected = appLanguage == language,
+                                onClick = { onAppLanguageChange(language) },
+                                label = { Text(stringResource(language.labelRes)) }
+                            )
+                        }
+                    }
+                }
+            }
+            Card(modifier = Modifier.fillMaxWidth()) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(text = stringResource(R.string.settings_theme_title), style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        text = stringResource(R.string.settings_theme_subtitle),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -106,7 +139,7 @@ private fun SettingsContent(
                             FilterChip(
                                 selected = themeMode == mode,
                                 onClick = { onThemeModeChange(mode) },
-                                label = { Text(mode.label) }
+                                label = { Text(stringResource(mode.labelRes)) }
                             )
                         }
                     }
@@ -155,22 +188,10 @@ private fun SettingsContentPreview() {
         SettingsContent(
             soundEnabled = true,
             themeMode = ThemeMode.SYSTEM,
+            appLanguage = AppLanguage.RU,
             onSoundEnabledChange = {},
             onThemeModeChange = {},
-            onBack = {}
-        )
-    }
-}
-
-@Preview(showBackground = true, name = "Dark")
-@Composable
-private fun SettingsContentDarkPreview() {
-    QuizappTheme(darkTheme = true) {
-        SettingsContent(
-            soundEnabled = true,
-            themeMode = ThemeMode.DARK,
-            onSoundEnabledChange = {},
-            onThemeModeChange = {},
+            onAppLanguageChange = {},
             onBack = {}
         )
     }

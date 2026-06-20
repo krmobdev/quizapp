@@ -20,10 +20,12 @@ import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
 import com.rustam.quizapp.domain.QuizResult
@@ -73,14 +75,14 @@ private fun ResultContent(
         )
         Spacer(Modifier.height(8.dp))
         Text(
-            text = "${result.score} из ${result.total}",
+            text = stringResource(R.string.result_score, result.score, result.total),
             style = MaterialTheme.typography.displaySmall,
             color = MaterialTheme.colorScheme.primary
         )
         if (result.penalties > 0) {
             Spacer(Modifier.height(4.dp))
             Text(
-                text = "Верно: ${result.correct} · Штрафы: −${result.penalties}",
+                text = stringResource(R.string.result_penalties, result.correct, result.penalties),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -89,7 +91,7 @@ private fun ResultContent(
 
         if (result.mistakes.isNotEmpty()) {
             Text(
-                text = "Ошибки",
+                text = stringResource(R.string.result_mistakes),
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -108,7 +110,7 @@ private fun ResultContent(
         } else {
             Spacer(Modifier.weight(1f))
             Text(
-                text = "Без единой ошибки — отличная работа!",
+                text = stringResource(R.string.result_perfect),
                 style = MaterialTheme.typography.bodyLarge,
                 textAlign = TextAlign.Center
             )
@@ -122,7 +124,7 @@ private fun ResultContent(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         ) {
-            Text("Повторить ошибки")
+            Text(stringResource(R.string.result_retry_mistakes))
         }
         Spacer(Modifier.height(8.dp))
         OutlinedButton(
@@ -130,7 +132,7 @@ private fun ResultContent(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp)
         ) {
-            Text("На главную")
+            Text(stringResource(R.string.result_home))
         }
     }
 }
@@ -151,7 +153,10 @@ private fun MistakeItem(question: Question) {
             )
             Spacer(Modifier.height(6.dp))
             Text(
-                text = "Правильный ответ: ${question.options[question.correctIndex]}",
+                text = stringResource(
+                    R.string.result_correct_answer,
+                    question.options[question.correctIndex]
+                ),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.primary
             )
@@ -169,22 +174,25 @@ private fun MissingResult(onHome: () -> Unit, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "Результат недоступен",
+            text = stringResource(R.string.result_unavailable),
             style = MaterialTheme.typography.titleLarge
         )
         Spacer(Modifier.height(16.dp))
-        Button(onClick = onHome) { Text("На главную") }
+        Button(onClick = onHome) { Text(stringResource(R.string.result_home)) }
     }
 }
 
+@Composable
 private fun headlineFor(correct: Int, total: Int): String {
     val ratio = if (total == 0) 0f else correct.toFloat() / total
-    return when {
-        ratio >= 1f -> "Идеально! 🎉"
-        ratio >= 0.8f -> "Отличный результат! 👏"
-        ratio >= 0.5f -> "Неплохо, но есть куда расти 🙂"
-        else -> "Стоит повторить материал 📚"
-    }
+    return stringResource(
+        when {
+            ratio >= 1f -> R.string.result_headline_perfect
+            ratio >= 0.8f -> R.string.result_headline_great
+            ratio >= 0.5f -> R.string.result_headline_ok
+            else -> R.string.result_headline_low
+        }
+    )
 }
 
 @Preview(showBackground = true)

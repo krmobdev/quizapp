@@ -26,10 +26,12 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.R
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
@@ -53,12 +55,12 @@ private fun StatsContent(
         modifier = modifier.fillMaxSize(),
         topBar = {
             CenterAlignedTopAppBar(
-                title = { Text("Статистика") },
+                title = { Text(stringResource(R.string.stats)) },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Назад"
+                            contentDescription = stringResource(R.string.back)
                         )
                     }
                 }
@@ -100,11 +102,12 @@ private fun SummaryCard(
         ) {
             SummaryMetric(
                 value = totalQuizzes.toString(),
-                label = "Пройдено квизов"
+                label = stringResource(R.string.stats_quizzes_completed)
             )
             SummaryMetric(
-                value = averageAccuracyPercent?.let { "$it%" } ?: "—",
-                label = "Средняя точность"
+                value = averageAccuracyPercent?.let { "$it%" }
+                    ?: stringResource(R.string.em_dash),
+                label = stringResource(R.string.stats_avg_accuracy)
             )
         }
     }
@@ -147,7 +150,7 @@ private fun CategoryStatCard(
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             Text(
-                text = "${category.emoji}  ${category.title}",
+                text = "${category.emoji}  ${stringResource(category.titleRes)}",
                 style = MaterialTheme.typography.titleMedium
             )
 
@@ -163,13 +166,22 @@ private fun CategoryStatCard(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    StatLine(label = "Точность", value = "${category.accuracyPercent}%")
-                    StatLine(label = "Лучший", value = "${category.bestScorePercent}%")
-                    StatLine(label = "Попыток", value = category.attempts.toString())
+                    StatLine(
+                        label = stringResource(R.string.stats_accuracy),
+                        value = "${category.accuracyPercent}%"
+                    )
+                    StatLine(
+                        label = stringResource(R.string.stats_best),
+                        value = "${category.bestScorePercent}%"
+                    )
+                    StatLine(
+                        label = stringResource(R.string.stats_attempts),
+                        value = category.attempts.toString()
+                    )
                 }
             } else {
                 Text(
-                    text = "Ещё не пройдено",
+                    text = stringResource(R.string.stats_not_played),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -211,8 +223,8 @@ private fun StatsContentPreview() {
                 totalQuizzes = 7,
                 averageAccuracyPercent = 74,
                 categories = listOf(
-                    CategoryStatsUi("chemistry", "Химия", "🧪", attempts = 4, accuracyPercent = 80, bestScorePercent = 90),
-                    CategoryStatsUi("physics", "Физика", "⚛️", attempts = 0, accuracyPercent = 0, bestScorePercent = 0)
+                    CategoryStatsUi("chemistry", R.string.category_chemistry, "🧪", attempts = 4, accuracyPercent = 80, bestScorePercent = 90),
+                    CategoryStatsUi("physics", R.string.category_physics, "⚛️", attempts = 0, accuracyPercent = 0, bestScorePercent = 0)
                 )
             ),
             onBack = {}

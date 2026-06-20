@@ -1,3 +1,82 @@
 <resources>
-    <string name="app_name">quizapp</string>
+    <string name="app_name">Викторина</string>
+
+    <string name="back">Назад</string>
+    <string name="home_title">Викторина</string>
+    <string name="difficulty_screen_title">Уровень сложности</string>
+    <string name="stats">Статистика</string>
+    <string name="settings">Настройки</string>
+
+    <string name="choose_level">Выберите уровень</string>
+    <string name="quiz_rules">10 вопросов · 10 секунд на ответ</string>
+    <string name="question_bank_size">400 вопросов в банке</string>
+    <string name="start_quiz">Начать квиз</string>
+
+    <string name="difficulty_easy_label">Лёгкий</string>
+    <string name="difficulty_easy_subtitle">Базовые вопросы без подвоха</string>
+    <string name="difficulty_medium_label">Средний</string>
+    <string name="difficulty_medium_subtitle">Нужно вспомнить и подумать</string>
+    <string name="difficulty_hard_label">Сложный</string>
+    <string name="difficulty_hard_subtitle">Для настоящих знатоков</string>
+    <string name="difficulty_any_label">Смешанный</string>
+    <string name="difficulty_any_subtitle">Все уровни в одном квизе</string>
+
+    <string name="category_chemistry">Химия</string>
+    <string name="category_physics">Физика</string>
+    <string name="category_history">История</string>
+    <string name="category_movies">Кино и сериалы</string>
+    <string name="category_art">Искусство</string>
+    <string name="category_animals">Животные</string>
+    <string name="category_geography">География</string>
+    <string name="category_math">Математика</string>
+    <string name="category_informatics">Информатика</string>
+    <string name="category_astronomy">Астрономия</string>
+
+    <string name="settings_sound_title">Звук</string>
+    <string name="settings_sound_subtitle">Звуковые эффекты в квизе</string>
+    <string name="settings_theme_title">Тема</string>
+    <string name="settings_theme_subtitle">Внешний вид приложения</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+
+    <string name="settings_language_title">Язык</string>
+    <string name="settings_language_subtitle">Язык интерфейса</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_english">English</string>
+
+    <string name="quiz_question_progress">Вопрос %1$d из %2$d</string>
+    <string name="quiz_score">Счёт: %1$d</string>
+    <string name="quiz_seconds">%1$d с</string>
+    <string name="quiz_timeout">Время вышло! Штраф −1</string>
+    <string name="quiz_next">Дальше</string>
+    <string name="quiz_finish">Завершить</string>
+    <string name="answer_correct">Верно</string>
+    <string name="answer_wrong">Неверно</string>
+
+    <string name="resume_title">Продолжить квиз?</string>
+    <string name="resume_message">У вас есть незавершённая игра (вопрос %1$d из %2$d). Продолжить или начать заново?</string>
+    <string name="resume_continue">Продолжить</string>
+    <string name="resume_new_game">Новая игра</string>
+
+    <string name="result_score">%1$d из %2$d</string>
+    <string name="result_penalties">Верно: %1$d · Штрафы: −%2$d</string>
+    <string name="result_mistakes">Ошибки</string>
+    <string name="result_perfect">Без единой ошибки — отличная работа!</string>
+    <string name="result_retry_mistakes">Повторить ошибки</string>
+    <string name="result_home">На главную</string>
+    <string name="result_unavailable">Результат недоступен</string>
+    <string name="result_correct_answer">Правильный ответ: %1$s</string>
+    <string name="result_headline_perfect">Идеально! 🎉</string>
+    <string name="result_headline_great">Отличный результат! 👏</string>
+    <string name="result_headline_ok">Неплохо, но есть куда расти 🙂</string>
+    <string name="result_headline_low">Стоит повторить материал 📚</string>
+
+    <string name="stats_quizzes_completed">Пройдено квизов</string>
+    <string name="stats_avg_accuracy">Средняя точность</string>
+    <string name="stats_accuracy">Точность</string>
+    <string name="stats_best">Лучший</string>
+    <string name="stats_attempts">Попыток</string>
+    <string name="stats_not_played">Ещё не пройдено</string>
+    <string name="em_dash">—</string>
 </resources>

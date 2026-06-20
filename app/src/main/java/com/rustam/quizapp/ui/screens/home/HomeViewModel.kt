@@ -16,16 +16,11 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 
 /** Difficulty options offered on the home screen. [ANY] maps to "no filter" (null). */
-enum class DifficultyFilter(
-    val label: String,
-    val subtitle: String,
-    val emoji: String,
-    val difficulty: Difficulty?
-) {
-    EASY("Лёгкий", "Базовые вопросы без подвоха", "🌱", Difficulty.EASY),
-    MEDIUM("Средний", "Нужно вспомнить и подумать", "⚡", Difficulty.MEDIUM),
-    HARD("Сложный", "Для настоящих знатоков", "🔥", Difficulty.HARD),
-    ANY("Смешанный", "Все уровни в одном квизе", "🎲", null)
+enum class DifficultyFilter(val emoji: String, val difficulty: Difficulty?) {
+    EASY("🌱", Difficulty.EASY),
+    MEDIUM("⚡", Difficulty.MEDIUM),
+    HARD("🔥", Difficulty.HARD),
+    ANY("🎲", null)
 }
 
 data class HomeUiState(

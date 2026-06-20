@@ -1,9 +1,9 @@
 package com.rustam.quizapp.data
 
-enum class ThemeMode(val label: String) {
-    SYSTEM("Системная"),
-    LIGHT("Светлая"),
-    DARK("Тёмная");
+enum class ThemeMode {
+    SYSTEM,
+    LIGHT,
+    DARK;
 
     companion object {
         fun fromStored(value: String?): ThemeMode =

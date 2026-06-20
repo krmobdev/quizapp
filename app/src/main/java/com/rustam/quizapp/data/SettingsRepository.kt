@@ -33,9 +33,18 @@ class SettingsRepository(context: Context) {
         dataStore.edit { prefs -> prefs[THEME_MODE] = mode.name }
     }
 
+    val appLanguage: Flow<AppLanguage> = dataStore.data.map { prefs ->
+        AppLanguage.fromStored(prefs[APP_LANGUAGE])
+    }
+
+    suspend fun setAppLanguage(language: AppLanguage) {
+        dataStore.edit { prefs -> prefs[APP_LANGUAGE] = language.name }
+    }
+
     private companion object {
         const val DEFAULT_SOUND_ENABLED = true
         val SOUND_ENABLED = booleanPreferencesKey("sound_enabled")
         val THEME_MODE = stringPreferencesKey("theme_mode")
+        val APP_LANGUAGE = stringPreferencesKey("app_language")
     }
 }

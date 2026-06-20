@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.ui.localization.LocalizedApp
 import com.rustam.quizapp.ui.navigation.AppNavHost
 import com.rustam.quizapp.ui.screens.settings.SettingsViewModel
 import com.rustam.quizapp.ui.theme.QuizappTheme
@@ -19,8 +20,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             val settingsViewModel: SettingsViewModel = viewModel()
             val themeMode by settingsViewModel.themeMode.collectAsState()
-            QuizappTheme(darkTheme = shouldUseDarkTheme(themeMode)) {
-                AppNavHost()
+            val appLanguage by settingsViewModel.appLanguage.collectAsState()
+            LocalizedApp(language = appLanguage) {
+                QuizappTheme(darkTheme = shouldUseDarkTheme(themeMode)) {
+                    AppNavHost()
+                }
             }
         }
     }

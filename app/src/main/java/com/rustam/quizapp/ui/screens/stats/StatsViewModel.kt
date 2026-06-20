@@ -1,6 +1,7 @@
 package com.rustam.quizapp.ui.screens.stats
 
 import android.app.Application
+import androidx.annotation.StringRes
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.data.AppStats
@@ -14,7 +15,7 @@ import kotlinx.coroutines.flow.stateIn
 /** Per-category statistics prepared for display. [hasData] gates the neutral state. */
 data class CategoryStatsUi(
     val id: String,
-    val title: String,
+    @param:StringRes val titleRes: Int,
     val emoji: String,
     val attempts: Int,
     val accuracyPercent: Int,
@@ -49,7 +50,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             val saved = statsById[category.id]
             CategoryStatsUi(
                 id = category.id,
-                title = category.title,
+                titleRes = category.titleRes,
                 emoji = category.emoji,
                 attempts = saved?.quizzesCompleted ?: 0,
                 accuracyPercent = if (saved != null && saved.questionsAnswered > 0) {

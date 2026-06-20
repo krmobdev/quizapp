@@ -42,6 +42,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
@@ -50,6 +51,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
 import com.rustam.quizapp.domain.QuizResult
@@ -108,15 +110,15 @@ private fun ResumeDialog(
 ) {
     AlertDialog(
         onDismissRequest = onContinue,
-        title = { Text("Продолжить квиз?") },
+        title = { Text(stringResource(R.string.resume_title)) },
         text = {
-            Text("У вас есть незавершённая игра (вопрос $questionNumber из $total). Продолжить или начать заново?")
+            Text(stringResource(R.string.resume_message, questionNumber, total))
         },
         confirmButton = {
-            Button(onClick = onContinue) { Text("Продолжить") }
+            Button(onClick = onContinue) { Text(stringResource(R.string.resume_continue)) }
         },
         dismissButton = {
-            TextButton(onClick = onNewGame) { Text("Новая игра") }
+            TextButton(onClick = onNewGame) { Text(stringResource(R.string.resume_new_game)) }
         }
     )
 }
@@ -168,11 +170,15 @@ private fun QuestionLayout(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = "Вопрос ${state.questionNumber} из ${state.totalQuestions}",
+                text = stringResource(
+                    R.string.quiz_question_progress,
+                    state.questionNumber,
+                    state.totalQuestions
+                ),
                 style = MaterialTheme.typography.labelLarge
             )
             Text(
-                text = "Счёт: ${state.score}",
+                text = stringResource(R.string.quiz_score, state.score),
                 style = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.SemiBold,
                 color = MaterialTheme.colorScheme.primary
@@ -206,7 +212,7 @@ private fun QuestionLayout(
                     trackColor = MaterialTheme.colorScheme.surfaceVariant
                 )
                 Text(
-                    text = "${state.timeLeftSeconds} с",
+                    text = stringResource(R.string.quiz_seconds, state.timeLeftSeconds),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     color = if (state.timeLeftSeconds <= 3) WrongRed else MaterialTheme.colorScheme.onSurface
@@ -215,7 +221,7 @@ private fun QuestionLayout(
             Spacer(Modifier.height(16.dp))
         } else if (state.isTimeout) {
             Text(
-                text = "Время вышло! Штраф −1",
+                text = stringResource(R.string.quiz_timeout),
                 style = MaterialTheme.typography.titleSmall,
                 color = WrongRed,
                 fontWeight = FontWeight.SemiBold
@@ -275,10 +281,19 @@ private fun QuestionLayout(
             Spacer(Modifier.height(12.dp))
             Button(
                 onClick = onNext,
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(12.dp)
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(80.dp),
+                shape = RoundedCornerShape(16.dp)
             ) {
-                Text(if (state.questionNumber == state.totalQuestions) "Завершить" else "Дальше")
+                Text(
+                    text = stringResource(
+                        if (state.questionNumber == state.totalQuestions) R.string.quiz_finish
+                        else R.string.quiz_next
+                    ),
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.SemiBold
+                )
             }
         }
     }
@@ -331,12 +346,12 @@ private fun AnswerButton(
             when (answerState) {
                 AnswerVisual.CORRECT -> Icon(
                     imageVector = Icons.Rounded.Check,
-                    contentDescription = "Верно",
+                    contentDescription = stringResource(R.string.answer_correct),
                     modifier = Modifier.size(22.dp)
                 )
                 AnswerVisual.WRONG -> Icon(
                     imageVector = Icons.Rounded.Close,
-                    contentDescription = "Неверно",
+                    contentDescription = stringResource(R.string.answer_wrong),
                     modifier = Modifier.size(22.dp)
                 )
                 AnswerVisual.NEUTRAL -> Unit
