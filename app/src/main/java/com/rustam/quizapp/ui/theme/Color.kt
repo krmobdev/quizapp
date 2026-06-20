@@ -7,15 +7,15 @@ import androidx.compose.ui.graphics.Color
 // Light
 val Teal40 = Color(0xFF006B5B)
 val TealContainerLight = Color(0xFF6FF7DD)
-val OnTealContainerLight = Color(0xFF00201A)
+val OnTealContainerLight = Color.Black
 val GreenSecondary40 = Color(0xFF4A635C)
 val GreenSecondaryContainerLight = Color(0xFFCCE8DF)
-val OnGreenSecondaryContainerLight = Color(0xFF06201A)
+val OnGreenSecondaryContainerLight = Color.Black
 val Aqua40 = Color(0xFF3A6470)
 val SurfaceLight = Color(0xFFF4FBF7)
-val OnSurfaceLight = Color(0xFF191C1B)
+val OnSurfaceLight = Color.Black
 val SurfaceVariantLight = Color(0xFFDBE5E0)
-val OnSurfaceVariantLight = Color(0xFF3F4945)
+val OnSurfaceVariantLight = Color.Black
 val OutlineLight = Color(0xFF6F7975)
 val OutlineVariantLight = Color(0xFFBFC9C3)
 
@@ -23,15 +23,15 @@ val OutlineVariantLight = Color(0xFFBFC9C3)
 val Teal80 = Color(0xFF50DBC0)
 val OnTeal80 = Color(0xFF00382F)
 val TealContainerDark = Color(0xFF005144)
-val OnTealContainerDark = Color(0xFF6FF7DD)
+val OnTealContainerDark = Color.White
 val GreenSecondary80 = Color(0xFFB1CCC3)
 val GreenSecondaryContainerDark = Color(0xFF334B45)
-val OnGreenSecondaryContainerDark = Color(0xFFCCE8DF)
+val OnGreenSecondaryContainerDark = Color.White
 val Aqua80 = Color(0xFFA2CEDC)
 val SurfaceDark = Color(0xFF101413)
-val OnSurfaceDark = Color(0xFFE0E3E1)
+val OnSurfaceDark = Color.White
 val SurfaceVariantDark = Color(0xFF2A3230)
-val OnSurfaceVariantDark = Color(0xFFBEC9C3)
+val OnSurfaceVariantDark = Color.White
 val OutlineDark = Color(0xFF89938F)
 val OutlineVariantDark = Color(0xFF3F4945)
 

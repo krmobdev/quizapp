@@ -1,7 +1,9 @@
 package com.rustam.quizapp.ui.components
 
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -17,8 +19,13 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -38,6 +45,7 @@ import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.rustam.quizapp.ui.theme.CorrectGreen
 import com.rustam.quizapp.ui.theme.CorrectGreenDark
 import com.rustam.quizapp.ui.theme.QuizAnswerCardDark
@@ -62,6 +70,103 @@ object AppDimens {
     val CardSpacing = 14.dp
     val ButtonHeight = 72.dp
     val ButtonSpacing = 12.dp
+    val SettingChoiceHeight = 64.dp
+}
+
+@Composable
+fun appTextColor(): Color = MaterialTheme.colorScheme.onSurface
+
+@Composable
+fun ScreenTitle(
+    title: String,
+    modifier: Modifier = Modifier
+) {
+    Text(
+        text = title,
+        modifier = modifier,
+        style = MaterialTheme.typography.displaySmall,
+        fontWeight = FontWeight.Bold,
+        fontSize = 32.sp,
+        color = appTextColor()
+    )
+}
+
+@Composable
+fun ScreenSubtitle(
+    text: String,
+    modifier: Modifier = Modifier
+) {
+    Text(
+        text = text,
+        modifier = modifier,
+        style = MaterialTheme.typography.bodyMedium,
+        fontSize = 15.sp,
+        lineHeight = 21.sp,
+        color = appTextColor()
+    )
+}
+
+@Composable
+fun SettingChoiceCard(
+    label: String,
+    selected: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    val containerColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.55f)
+        } else {
+            colors.glassCard
+        },
+        animationSpec = tween(200),
+        label = "settingChoiceContainer"
+    )
+    val borderColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primary.copy(alpha = 0.65f)
+        } else {
+            colors.glassBorder
+        },
+        animationSpec = tween(200),
+        label = "settingChoiceBorder"
+    )
+
+    Card(
+        onClick = onClick,
+        modifier = modifier
+            .fillMaxWidth()
+            .height(AppDimens.SettingChoiceHeight),
+        shape = AppShapes.Card,
+        colors = CardDefaults.cardColors(containerColor = containerColor),
+        border = BorderStroke(width = if (selected) 2.dp else 1.dp, color = borderColor),
+        elevation = CardDefaults.cardElevation(defaultElevation = if (selected) 3.dp else 0.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 22.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Text(
+                text = label,
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor
+            )
+            if (selected) {
+                Icon(
+                    imageVector = Icons.Rounded.CheckCircle,
+                    contentDescription = null,
+                    tint = textColor,
+                    modifier = Modifier.size(26.dp)
+                )
+            }
+        }
+    }
 }
 
 val OptionLabels = listOf("A", "B", "C", "D")
@@ -100,19 +205,19 @@ fun rememberAppThemeColors(): AppThemeColors {
                 baseGradient = Brush.verticalGradient(
                     listOf(QuizBgTopDark, QuizBgMidDark, QuizBgBottomDark)
                 ),
-                blobPrimary = scheme.primary.copy(alpha = 0.14f),
-                blobSecondary = scheme.tertiary.copy(alpha = 0.1f),
+                blobPrimary = scheme.primary.copy(alpha = 0.07f),
+                blobSecondary = scheme.tertiary.copy(alpha = 0.05f),
                 questionCard = QuizQuestionCardDark,
                 questionText = scheme.onSurface,
                 answerCard = QuizAnswerCardDark,
                 answerText = scheme.onSurface,
                 answerBorder = QuizCardBorderDark,
                 answerBadgeBg = Color(0xFF3A4643),
-                answerBadgeText = scheme.primary,
+                answerBadgeText = scheme.onSurface,
                 glassCard = QuizQuestionCardDark,
                 glassBorder = QuizCardBorderDark,
                 explanationCard = QuizExplanationCardDark,
-                explanationText = scheme.onSecondaryContainer,
+                explanationText = scheme.onSurface,
                 progressTrack = QuizCardBorderDark,
                 correct = CorrectGreenDark,
                 wrong = WrongRedDark
@@ -135,11 +240,11 @@ fun rememberAppThemeColors(): AppThemeColors {
                 answerText = scheme.onSurface,
                 answerBorder = scheme.outlineVariant.copy(alpha = 0.55f),
                 answerBadgeBg = scheme.primaryContainer.copy(alpha = 0.55f),
-                answerBadgeText = scheme.primary,
+                answerBadgeText = scheme.onSurface,
                 glassCard = Color.White.copy(alpha = 0.82f),
                 glassBorder = scheme.outlineVariant.copy(alpha = 0.45f),
                 explanationCard = scheme.secondaryContainer.copy(alpha = 0.85f),
-                explanationText = scheme.onSecondaryContainer,
+                explanationText = scheme.onSurface,
                 progressTrack = scheme.surfaceVariant,
                 correct = CorrectGreen,
                 wrong = WrongRed
@@ -162,16 +267,16 @@ fun AppBackground(
         )
         Box(
             modifier = Modifier
-                .size(280.dp)
-                .offset(x = (-80).dp, y = 40.dp)
+                .size(240.dp)
+                .offset(x = (-130).dp, y = 80.dp)
                 .clip(CircleShape)
                 .background(colors.blobPrimary)
         )
         Box(
             modifier = Modifier
-                .size(220.dp)
+                .size(200.dp)
                 .align(Alignment.BottomEnd)
-                .offset(x = 60.dp, y = (-40).dp)
+                .offset(x = 110.dp, y = (-20).dp)
                 .clip(CircleShape)
                 .background(colors.blobSecondary)
         )
@@ -194,22 +299,23 @@ fun GlassCard(
         .fillMaxWidth()
         .glassBorder(colors)
 
+    val shape = AppShapes.Card
     if (onClick != null) {
         Surface(
             onClick = onClick,
-            shape = AppShapes.Card,
+            shape = shape,
             color = colors.glassCard,
             modifier = cardModifier
         ) {
-            content()
+            Box(Modifier.clip(shape)) { content() }
         }
     } else {
         Surface(
-            shape = AppShapes.Card,
+            shape = shape,
             color = colors.glassCard,
             modifier = cardModifier
         ) {
-            content()
+            Box(Modifier.clip(shape)) { content() }
         }
     }
 }
@@ -230,20 +336,23 @@ fun AppActionButton(
             .height(AppDimens.ButtonHeight),
         shape = AppShapes.Button,
         colors = if (primary) {
-            ButtonDefaults.buttonColors()
+            ButtonDefaults.buttonColors(
+                contentColor = appTextColor()
+            )
         } else {
             ButtonDefaults.buttonColors(
                 containerColor = MaterialTheme.colorScheme.secondaryContainer,
-                contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
+                contentColor = appTextColor(),
                 disabledContainerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f),
-                disabledContentColor = MaterialTheme.colorScheme.onSecondaryContainer.copy(alpha = 0.5f)
+                disabledContentColor = appTextColor().copy(alpha = 0.5f)
             )
         }
     ) {
         Text(
             text = text,
             style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.SemiBold
+            fontWeight = FontWeight.SemiBold,
+            color = appTextColor()
         )
     }
 }
@@ -298,12 +407,12 @@ fun ScoreRing(
                 text = score.toString(),
                 style = MaterialTheme.typography.displaySmall,
                 fontWeight = FontWeight.Bold,
-                color = scheme.primary
+                color = scheme.onSurface
             )
             Text(
                 text = "/ $total",
                 style = MaterialTheme.typography.titleMedium,
-                color = scheme.onSurfaceVariant
+                color = scheme.onSurface
             )
         }
     }

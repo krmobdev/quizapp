@@ -2,15 +2,17 @@ package com.rustam.quizapp.ui.screens.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.FilterChip
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
+import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -27,6 +29,10 @@ import com.rustam.quizapp.data.AppLanguage
 import com.rustam.quizapp.data.ThemeMode
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.GlassCard
+import com.rustam.quizapp.ui.components.ScreenSubtitle
+import com.rustam.quizapp.ui.components.ScreenTitle
+import com.rustam.quizapp.ui.components.SettingChoiceCard
+import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.localization.labelRes
 import com.rustam.quizapp.ui.theme.QuizappTheme
@@ -50,7 +56,6 @@ fun SettingsScreen(
     )
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun SettingsContent(
     soundEnabled: Boolean,
@@ -62,106 +67,129 @@ private fun SettingsContent(
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
 
     Column(
         modifier = modifier
             .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(AppDimens.CardSpacing)
+            .verticalScroll(rememberScrollState())
+            .padding(horizontal = 20.dp, vertical = 12.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        Text(
-            text = stringResource(R.string.settings),
-            style = MaterialTheme.typography.headlineMedium,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(bottom = 4.dp)
-        )
-        SettingSwitchRow(
+        ScreenTitle(stringResource(R.string.settings))
+
+        SoundSettingCard(
             title = stringResource(R.string.settings_sound_title),
             subtitle = stringResource(R.string.settings_sound_subtitle),
             checked = soundEnabled,
             onCheckedChange = onSoundEnabledChange,
-            colors = colors
+            colors = colors,
+            textColor = textColor
         )
-        GlassCard(colors = colors) {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(AppDimens.CardPaddingH, AppDimens.CardPaddingV),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                Text(text = stringResource(R.string.settings_language_title), style = MaterialTheme.typography.titleMedium)
-                Text(
-                    text = stringResource(R.string.settings_language_subtitle),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+
+        SettingsSection(
+            title = stringResource(R.string.settings_language_title),
+            subtitle = stringResource(R.string.settings_language_subtitle),
+            colors = colors
+        ) {
+            AppLanguage.entries.forEach { language ->
+                SettingChoiceCard(
+                    label = stringResource(language.labelRes),
+                    selected = appLanguage == language,
+                    onClick = { onAppLanguageChange(language) }
                 )
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    AppLanguage.entries.forEach { language ->
-                        FilterChip(
-                            selected = appLanguage == language,
-                            onClick = { onAppLanguageChange(language) },
-                            label = { Text(stringResource(language.labelRes)) }
-                        )
-                    }
-                }
             }
         }
-        GlassCard(colors = colors) {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(AppDimens.CardPaddingH, AppDimens.CardPaddingV),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                Text(text = stringResource(R.string.settings_theme_title), style = MaterialTheme.typography.titleMedium)
-                Text(
-                    text = stringResource(R.string.settings_theme_subtitle),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+
+        SettingsSection(
+            title = stringResource(R.string.settings_theme_title),
+            subtitle = stringResource(R.string.settings_theme_subtitle),
+            colors = colors
+        ) {
+            ThemeMode.entries.forEach { mode ->
+                SettingChoiceCard(
+                    label = stringResource(mode.labelRes),
+                    selected = themeMode == mode,
+                    onClick = { onThemeModeChange(mode) }
                 )
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    ThemeMode.entries.forEach { mode ->
-                        FilterChip(
-                            selected = themeMode == mode,
-                            onClick = { onThemeModeChange(mode) },
-                            label = { Text(stringResource(mode.labelRes)) }
-                        )
-                    }
-                }
+            }
+        }
+
+        Spacer(Modifier.height(8.dp))
+    }
+}
+
+@Composable
+private fun SettingsSection(
+    title: String,
+    subtitle: String,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    modifier: Modifier = Modifier,
+    content: @Composable () -> Unit
+) {
+    GlassCard(colors = colors, modifier = modifier) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = AppDimens.CardPaddingH, vertical = 20.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.SemiBold,
+                color = appTextColor()
+            )
+            ScreenSubtitle(subtitle)
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                content()
             }
         }
     }
 }
 
 @Composable
-private fun SettingSwitchRow(
+private fun SoundSettingCard(
     title: String,
     subtitle: String,
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
     modifier: Modifier = Modifier
 ) {
     GlassCard(modifier = modifier, colors = colors) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = AppDimens.CardPaddingH, vertical = 14.dp),
+                .height(AppDimens.SettingChoiceHeight)
+                .padding(horizontal = AppDimens.CardPaddingH),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Column(
                 modifier = Modifier.weight(1f),
-                verticalArrangement = Arrangement.spacedBy(2.dp)
+                verticalArrangement = Arrangement.spacedBy(4.dp)
             ) {
-                Text(text = title, style = MaterialTheme.typography.titleMedium)
                 Text(
-                    text = subtitle,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    text = title,
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
                 )
+                ScreenSubtitle(subtitle)
             }
-            Switch(checked = checked, onCheckedChange = onCheckedChange)
+            Switch(
+                checked = checked,
+                onCheckedChange = onCheckedChange,
+                colors = SwitchDefaults.colors(
+                    checkedThumbColor = textColor,
+                    checkedTrackColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.45f),
+                    uncheckedThumbColor = textColor,
+                    uncheckedTrackColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f),
+                    uncheckedBorderColor = colors.glassBorder
+                )
+            )
         }
     }
 }

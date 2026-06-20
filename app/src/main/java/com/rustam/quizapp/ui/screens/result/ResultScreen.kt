@@ -34,6 +34,7 @@ import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppThemeColors
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.ScoreRing
+import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
@@ -66,6 +67,7 @@ private fun ResultContent(
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
     val headlineAlpha by animateFloatAsState(
         targetValue = 1f,
         animationSpec = tween(600),
@@ -98,18 +100,42 @@ private fun ResultContent(
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,
+                color = textColor,
                 modifier = Modifier.alpha(headlineAlpha)
             )
             Spacer(Modifier.height(20.dp))
 
             ScoreRing(score = result.score, total = result.total)
 
+            result.reward?.let { reward ->
+                Spacer(Modifier.height(12.dp))
+                Text(
+                    text = if (reward.dailyQuestBonus) {
+                        stringResource(
+                            R.string.rewards_earned_daily,
+                            reward.points,
+                            reward.coins
+                        )
+                    } else {
+                        stringResource(
+                            R.string.rewards_earned,
+                            reward.points,
+                            reward.coins
+                        )
+                    },
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    textAlign = TextAlign.Center,
+                    color = MaterialTheme.colorScheme.primary
+                )
+            }
+
             if (result.penalties > 0) {
                 Spacer(Modifier.height(8.dp))
                 Text(
                     text = stringResource(R.string.result_penalties, result.correct, result.penalties),
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = textColor
                 )
             }
             Spacer(Modifier.height(20.dp))
@@ -119,6 +145,7 @@ private fun ResultContent(
                     text = stringResource(R.string.result_mistakes),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold,
+                    color = textColor,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 8.dp)
@@ -138,7 +165,8 @@ private fun ResultContent(
                 Text(
                     text = stringResource(R.string.result_perfect),
                     style = MaterialTheme.typography.bodyLarge,
-                    textAlign = TextAlign.Center
+                    textAlign = TextAlign.Center,
+                    color = textColor
                 )
                 Spacer(Modifier.weight(1f))
             }
@@ -176,7 +204,8 @@ private fun MistakeItem(
             Text(
                 text = question.text,
                 style = MaterialTheme.typography.bodyLarge,
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Medium,
+                color = appTextColor()
             )
             Text(
                 text = stringResource(
@@ -184,7 +213,7 @@ private fun MistakeItem(
                     question.options[question.correctIndex]
                 ),
                 style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.primary,
+                color = MaterialTheme.colorScheme.onSurface,
                 fontWeight = FontWeight.SemiBold
             )
         }
@@ -203,7 +232,8 @@ private fun MissingResult(onHome: () -> Unit, modifier: Modifier = Modifier) {
         ) {
             Text(
                 text = stringResource(R.string.result_unavailable),
-                style = MaterialTheme.typography.titleLarge
+                style = MaterialTheme.typography.titleLarge,
+                color = appTextColor()
             )
             Spacer(Modifier.height(16.dp))
             AppActionButton(

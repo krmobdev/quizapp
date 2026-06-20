@@ -14,9 +14,13 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
@@ -35,6 +39,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -44,19 +49,24 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Category
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.ui.components.AppActionButton
+import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppShapes
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
+import com.rustam.quizapp.ui.components.appTextColor
+import com.rustam.quizapp.ui.components.rememberDailyQuote
 import com.rustam.quizapp.ui.localization.labelRes
 import com.rustam.quizapp.ui.localization.subtitleRes
 import com.rustam.quizapp.ui.theme.QuizappTheme
@@ -97,21 +107,27 @@ private fun HomeContent(
 ) {
     BackHandler(enabled = state.selectedCategory != null, onBack = onBack)
 
+    val selected = state.selectedCategory
+
     Scaffold(
         modifier = modifier.fillMaxSize(),
         containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0f),
         topBar = {
-            CenterAlignedTopAppBar(
-                title = {
-                    Text(
-                        stringResource(
-                            if (state.selectedCategory == null) R.string.home_title
-                            else R.string.difficulty_screen_title
+            if (selected != null) {
+                CenterAlignedTopAppBar(
+                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+                        containerColor = Color.Transparent,
+                        scrolledContainerColor = Color.Transparent,
+                        titleContentColor = MaterialTheme.colorScheme.onSurface,
+                        navigationIconContentColor = MaterialTheme.colorScheme.onSurface
+                    ),
+                    title = {
+                        Text(
+                            stringResource(R.string.difficulty_screen_title),
+                            color = appTextColor()
                         )
-                    )
-                },
-                navigationIcon = {
-                    if (state.selectedCategory != null) {
+                    },
+                    navigationIcon = {
                         IconButton(onClick = onBack) {
                             Icon(
                                 imageVector = Icons.AutoMirrored.Filled.ArrowBack,
@@ -119,17 +135,30 @@ private fun HomeContent(
                             )
                         }
                     }
-                }
-            )
+                )
+            }
         }
     ) { innerPadding ->
-        val selected = state.selectedCategory
         if (selected == null) {
-            CategoryGrid(
-                categories = state.categories,
-                onCategoryClick = onCategoryClick,
-                modifier = Modifier.padding(innerPadding)
-            )
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(innerPadding)
+            ) {
+                HomeHeroHeader(modifier = Modifier.fillMaxWidth())
+                state.dailyQuest?.let { quest ->
+                    DailyQuestCard(
+                        quest = quest,
+                        onStartQuest = { onStartQuiz(quest.category.id, null) },
+                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp)
+                    )
+                }
+                CategoryGrid(
+                    categories = state.categories,
+                    onCategoryClick = onCategoryClick,
+                    modifier = Modifier.weight(1f)
+                )
+            }
         } else {
             DifficultyPanel(
                 category = selected,
@@ -143,17 +172,107 @@ private fun HomeContent(
 }
 
 @Composable
+private fun HomeHeroHeader(modifier: Modifier = Modifier) {
+    val quote = rememberDailyQuote()
+    val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
+    val lift = (topInset + 16.dp) * 0.3f
+
+    Column(
+        modifier = modifier
+            .offset(y = -lift)
+            .padding(horizontal = 24.dp)
+            .padding(top = 0.dp, bottom = 12.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        Text(
+            text = stringResource(R.string.home_title),
+            style = MaterialTheme.typography.displaySmall,
+            fontWeight = FontWeight.Bold,
+            fontSize = 36.sp,
+            letterSpacing = (-0.5).sp,
+            color = MaterialTheme.colorScheme.onSurface
+        )
+        if (quote.isNotBlank()) {
+            Text(
+                text = quote,
+                style = MaterialTheme.typography.bodyMedium,
+                fontSize = 14.sp,
+                lineHeight = 20.sp,
+                color = MaterialTheme.colorScheme.onSurface,
+                textAlign = TextAlign.Center,
+                maxLines = 2,
+                modifier = Modifier.padding(horizontal = 4.dp)
+            )
+        }
+    }
+}
+
+@Composable
+private fun DailyQuestCard(
+    quest: DailyQuestUi,
+    onStartQuest: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+
+    GlassCard(modifier = modifier, colors = colors) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(AppDimens.CardPaddingH, AppDimens.CardPaddingV),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text(
+                text = stringResource(R.string.daily_quest_title),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor
+            )
+            Text(
+                text = stringResource(
+                    R.string.daily_quest_topic,
+                    "${quest.category.emoji} ${stringResource(quest.category.titleRes)}"
+                ),
+                style = MaterialTheme.typography.bodyLarge,
+                color = textColor
+            )
+            Text(
+                text = stringResource(R.string.daily_quest_bonus),
+                style = MaterialTheme.typography.bodyMedium,
+                color = textColor
+            )
+            if (quest.completed) {
+                Text(
+                    text = stringResource(R.string.daily_quest_completed),
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = MaterialTheme.colorScheme.primary
+                )
+            } else {
+                AppActionButton(
+                    text = stringResource(R.string.daily_quest_start),
+                    onClick = onStartQuest,
+                    primary = true
+                )
+            }
+        }
+    }
+}
+
+@Composable
 private fun CategoryGrid(
     categories: List<Category>,
     onCategoryClick: (Category) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyVerticalGrid(
-        columns = GridCells.Adaptive(minSize = 150.dp),
+        columns = GridCells.Fixed(2),
         modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(16.dp),
-        horizontalArrangement = Arrangement.spacedBy(14.dp),
-        verticalArrangement = Arrangement.spacedBy(14.dp)
+        contentPadding = PaddingValues(start = 20.dp, end = 20.dp, bottom = 12.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         items(categories, key = { it.id }) { category ->
             CategoryCard(category = category, onClick = { onCategoryClick(category) })
@@ -168,12 +287,11 @@ private fun CategoryCard(
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
-    val accent = Brush.linearGradient(
-        colors = listOf(
-            MaterialTheme.colorScheme.primary.copy(alpha = 0.18f),
-            MaterialTheme.colorScheme.tertiary.copy(alpha = 0.12f)
-        )
-    )
+    val iconCircleColor = if (colors.isDark) {
+        Color(0xFF141A18)
+    } else {
+        MaterialTheme.colorScheme.surface.copy(alpha = 0.92f)
+    }
 
     GlassCard(
         modifier = modifier,
@@ -183,8 +301,7 @@ private fun CategoryCard(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(accent)
-                .padding(vertical = 28.dp, horizontal = 16.dp),
+                .padding(vertical = 24.dp, horizontal = 12.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
@@ -192,7 +309,7 @@ private fun CategoryCard(
                 modifier = Modifier
                     .size(56.dp)
                     .clip(CircleShape)
-                    .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.75f)),
+                    .background(iconCircleColor),
                 contentAlignment = Alignment.Center
             ) {
                 Text(text = category.emoji, style = MaterialTheme.typography.headlineLarge)
@@ -201,7 +318,8 @@ private fun CategoryCard(
                 text = stringResource(category.titleRes),
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
-                textAlign = TextAlign.Center
+                textAlign = TextAlign.Center,
+                color = MaterialTheme.colorScheme.onSurface
             )
         }
     }
@@ -227,12 +345,13 @@ private fun DifficultyPanel(
             Text(
                 text = stringResource(R.string.choose_level),
                 style = MaterialTheme.typography.headlineSmall,
-                fontWeight = FontWeight.SemiBold
+                fontWeight = FontWeight.SemiBold,
+                color = appTextColor()
             )
             Text(
                 text = stringResource(R.string.quiz_rules),
                 style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                color = appTextColor()
             )
         }
 
@@ -294,12 +413,12 @@ private fun CategoryHeroCard(
                         text = stringResource(category.titleRes),
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                        color = appTextColor()
                     )
                     Text(
                         text = stringResource(R.string.question_bank_size),
                         style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
+                        color = appTextColor()
                     )
                 }
             }
@@ -383,12 +502,13 @@ private fun DifficultyOptionCard(
                 Text(
                     text = stringResource(filter.labelRes),
                     style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.SemiBold
+                    fontWeight = FontWeight.SemiBold,
+                    color = appTextColor()
                 )
                 Text(
                     text = stringResource(filter.subtitleRes),
                     style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = appTextColor()
                 )
             }
             if (selected) {

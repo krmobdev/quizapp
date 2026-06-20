@@ -13,7 +13,9 @@ import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.QuizProgressRepository
 import com.rustam.quizapp.data.SavedQuizProgress
 import com.rustam.quizapp.data.SettingsRepository
+import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.StatsRepository
+import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.domain.QuizSession
 import com.rustam.quizapp.ui.screens.quiz.QuizViewModel.Companion.QUESTION_TIME_SECONDS
@@ -57,6 +59,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = QuestionRepository(application)
     private val statsRepository = StatsRepository(application)
+    private val playerRepository = PlayerRepository(application, repository)
     private val progressRepository = QuizProgressRepository(application)
     private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
@@ -70,6 +73,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var difficulty: Difficulty? = null
     private var quizLanguage: AppLanguage = AppLanguage.RU
     private var timerJob: Job? = null
+    private var isRetryRun = false
+    private var lastReward: QuizReward? = null
 
     private val _uiState = MutableStateFlow(QuizUiState())
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
@@ -84,9 +89,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         preset: List<Question>? = null
     ) {
         if (preset != null) {
+            isRetryRun = true
             startNew(categoryId, difficulty, preset)
             return
         }
+        isRetryRun = false
         viewModelScope.launch {
             val language = settingsRepository.appLanguage.first()
             val saved = progressRepository.savedProgress.first()
@@ -197,10 +204,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         current.nextQuestion()
         if (current.isFinished()) {
             if (!_uiState.value.isFinished) {
-                _uiState.update { it.copy(isFinished = true) }
-                soundManager.play(SoundType.COMPLETE)
-                viewModelScope.launch { progressRepository.clear() }
-                recordResult(current)
+                viewModelScope.launch {
+                    progressRepository.clear()
+                    lastReward = recordResult(current)
+                    soundManager.play(SoundType.COMPLETE)
+                    _uiState.update { it.copy(isFinished = true) }
+                }
             }
         } else {
             _uiState.update {
@@ -253,7 +262,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             correct = _uiState.value.correctCount,
             total = _uiState.value.totalQuestions,
             penalties = _uiState.value.penaltyCount,
-            mistakes = current?.mistakes ?: emptyList()
+            mistakes = current?.mistakes ?: emptyList(),
+            reward = lastReward
         )
     }
 
@@ -292,11 +302,16 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    private fun recordResult(session: QuizSession) {
-        val category = categoryId ?: return
-        viewModelScope.launch {
-            statsRepository.recordQuizResult(category, session.correctCount, session.total)
-        }
+    private suspend fun recordResult(session: QuizSession): QuizReward? {
+        val category = categoryId ?: return null
+        statsRepository.recordQuizResult(category, session.correctCount, session.total)
+        val score = session.correctCount - session.penaltyCount
+        return playerRepository.grantQuizReward(
+            categoryId = category,
+            score = score,
+            total = session.total,
+            allowDailyBonus = !isRetryRun
+        )
     }
 
     override fun onCleared() {

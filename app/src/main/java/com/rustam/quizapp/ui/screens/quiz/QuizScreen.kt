@@ -65,6 +65,7 @@ import com.rustam.quizapp.ui.components.AppThemeColors
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.OptionBadge
 import com.rustam.quizapp.ui.components.OptionLabels
+import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
@@ -196,7 +197,8 @@ private fun QuestionLayout(
                     state.questionNumber,
                     state.totalQuestions
                 ),
-                style = MaterialTheme.typography.labelLarge
+                style = MaterialTheme.typography.labelLarge,
+                color = appTextColor()
             )
             Surface(
                 shape = AppShapes.Badge,
@@ -206,7 +208,7 @@ private fun QuestionLayout(
                     text = stringResource(R.string.quiz_score, state.score),
                     style = MaterialTheme.typography.labelLarge,
                     fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    color = appTextColor(),
                     modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp)
                 )
             }
@@ -231,7 +233,7 @@ private fun QuestionLayout(
                 Icon(
                     imageVector = Icons.Rounded.Timer,
                     contentDescription = null,
-                    tint = if (state.timeLeftSeconds <= 3) colors.wrong else MaterialTheme.colorScheme.primary
+                    tint = if (state.timeLeftSeconds <= 3) colors.wrong else appTextColor()
                 )
                 LinearProgressIndicator(
                     progress = { animatedTimer },
@@ -441,7 +443,7 @@ private fun ExplanationCard(explanation: String, colors: AppThemeColors) {
             Icon(
                 imageVector = Icons.Rounded.Lightbulb,
                 contentDescription = null,
-                tint = MaterialTheme.colorScheme.primary,
+                tint = appTextColor(),
                 modifier = Modifier.size(24.dp)
             )
             Text(

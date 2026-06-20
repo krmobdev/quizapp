@@ -1,10 +1,26 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">AnimaQuiz</string>
 
     <string name="back">Back</string>
-    <string name="home_title">Quiz</string>
+    <string name="home_title">AnimaQuiz</string>
     <string name="difficulty_screen_title">Difficulty</string>
     <string name="stats">Statistics</string>
+    <string name="player_tab">Player</string>
+    <string name="player_default_name">Player</string>
+    <string name="player_points">Points</string>
+    <string name="player_coins">Coins</string>
+    <string name="player_edit_name">Edit name</string>
+    <string name="player_name_hint">Your name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="daily_quest_title">Daily Quest</string>
+    <string name="daily_quest_topic">Topic: %1$s</string>
+    <string name="daily_quest_bonus">Bonus: ×3 coins and +100 points</string>
+    <string name="daily_quest_completed">Completed today</string>
+    <string name="daily_quest_start">Start quest</string>
+    <string name="player_stats_section">Stats by topic</string>
+    <string name="rewards_earned">+%1$d points · +%2$d coins</string>
+    <string name="rewards_earned_daily">+%1$d points · +%2$d coins · quest bonus!</string>
     <string name="settings">Settings</string>
 
     <string name="choose_level">Choose a level</string>
@@ -79,4 +95,19 @@
     <string name="stats_attempts">Attempts</string>
     <string name="stats_not_played">Not played yet</string>
     <string name="em_dash">—</string>
+
+    <string-array name="daily_quotes">
+        <item>Knowledge is power — practice is the key to mastery.</item>
+        <item>Every expert was once a beginner.</item>
+        <item>It\'s never too late to learn — start with one question.</item>
+        <item>Mistakes are the best teachers.</item>
+        <item>Curiosity is the engine of discovery.</item>
+        <item>Small steps every day lead to big results.</item>
+        <item>Today\'s quiz is tomorrow\'s confidence.</item>
+        <item>A question you answered is already yours.</item>
+        <item>Interest in the world makes every day brighter.</item>
+        <item>Test yourself — learn more.</item>
+        <item>Science begins with the question \"why?\"</item>
+        <item>Fifteen minutes of quiz beats an hour of boredom.</item>
+    </string-array>
 </resources>

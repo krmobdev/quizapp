@@ -1,10 +1,26 @@
 <resources>
-    <string name="app_name">Викторина</string>
+    <string name="app_name">AnimaQuiz</string>
 
     <string name="back">Назад</string>
-    <string name="home_title">Викторина</string>
+    <string name="home_title">AnimaQuiz</string>
     <string name="difficulty_screen_title">Уровень сложности</string>
     <string name="stats">Статистика</string>
+    <string name="player_tab">Игрок</string>
+    <string name="player_default_name">Игрок</string>
+    <string name="player_points">Очки</string>
+    <string name="player_coins">Монеты</string>
+    <string name="player_edit_name">Изменить имя</string>
+    <string name="player_name_hint">Ваше имя</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="daily_quest_title">Квест дня</string>
+    <string name="daily_quest_topic">Тема: %1$s</string>
+    <string name="daily_quest_bonus">Бонус: ×3 монет и +100 очков</string>
+    <string name="daily_quest_completed">Выполнен сегодня</string>
+    <string name="daily_quest_start">Начать квест</string>
+    <string name="player_stats_section">Статистика по темам</string>
+    <string name="rewards_earned">+%1$d очков · +%2$d монет</string>
+    <string name="rewards_earned_daily">+%1$d очков · +%2$d монет · бонус квеста!</string>
     <string name="settings">Настройки</string>
 
     <string name="choose_level">Выберите уровень</string>
@@ -79,4 +95,19 @@
     <string name="stats_attempts">Попыток</string>
     <string name="stats_not_played">Ещё не пройдено</string>
     <string name="em_dash">—</string>
+
+    <string-array name="daily_quotes">
+        <item>Знание — сила, а практика — ключ к мастерству.</item>
+        <item>Каждый эксперт когда-то был новичком.</item>
+        <item>Учиться никогда не поздно — начните с одного вопроса.</item>
+        <item>Ошибки — лучшие учителя.</item>
+        <item>Любопытство — двигатель открытий.</item>
+        <item>Маленькие шаги каждый день ведут к большим результатам.</item>
+        <item>Сегодняшний квиз — завтрашняя уверенность.</item>
+        <item>Вопрос, на который вы ответили, уже ваш.</item>
+        <item>Интерес к миру делает каждый день ярче.</item>
+        <item>Проверь себя — узнай больше.</item>
+        <item>Наука начинается с вопроса «почему?»</item>
+        <item>Пятнадцать минут квиза лучше часа пустой скуки.</item>
+    </string-array>
 </resources>

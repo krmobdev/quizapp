@@ -8,11 +8,15 @@ import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.Category
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
+import com.rustam.quizapp.domain.DailyQuest
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 
 /** Difficulty options offered on the home screen. [ANY] maps to "no filter" (null). */
@@ -23,15 +27,22 @@ enum class DifficultyFilter(val emoji: String, val difficulty: Difficulty?) {
     ANY("🎲", null)
 }
 
+data class DailyQuestUi(
+    val category: Category,
+    val completed: Boolean
+)
+
 data class HomeUiState(
     val categories: List<Category> = emptyList(),
     val selectedCategory: Category? = null,
-    val selectedDifficulty: DifficultyFilter = DifficultyFilter.ANY
+    val selectedDifficulty: DifficultyFilter = DifficultyFilter.ANY,
+    val dailyQuest: DailyQuestUi? = null
 )
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = QuestionRepository(application)
+    private val playerRepository = PlayerRepository(application, repository)
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
@@ -39,25 +50,43 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         scope = viewModelScope
     )
 
-    private val _uiState = MutableStateFlow(
-        HomeUiState(categories = repository.getCategories())
+    private val navigationState = MutableStateFlow(
+        NavigationSlice(categories = repository.getCategories())
     )
-    val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
+
+    val uiState: StateFlow<HomeUiState> = combine(
+        navigationState,
+        playerRepository.observeProfile()
+    ) { nav, profile ->
+        val questCategory = DailyQuest.categoryForDay(nav.categories)
+        HomeUiState(
+            categories = nav.categories,
+            selectedCategory = nav.selectedCategory,
+            selectedDifficulty = nav.selectedDifficulty,
+            dailyQuest = questCategory?.let { category ->
+                DailyQuestUi(
+                    category = category,
+                    completed = profile.dailyQuestCompleted
+                )
+            }
+        )
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), HomeUiState())
 
     fun selectCategory(category: Category) {
         soundManager.play(SoundType.CLICK)
-        _uiState.update { it.copy(selectedCategory = category) }
+        navigationState.update { it.copy(selectedCategory = category) }
     }
 
-    /** Returns to the category list, resetting the difficulty choice. */
     fun clearSelection() {
         soundManager.play(SoundType.CLICK)
-        _uiState.update { it.copy(selectedCategory = null, selectedDifficulty = DifficultyFilter.ANY) }
+        navigationState.update {
+            it.copy(selectedCategory = null, selectedDifficulty = DifficultyFilter.ANY)
+        }
     }
 
     fun selectDifficulty(filter: DifficultyFilter) {
         soundManager.play(SoundType.CLICK)
-        _uiState.update { it.copy(selectedDifficulty = filter) }
+        navigationState.update { it.copy(selectedDifficulty = filter) }
     }
 
     fun playClick() {
@@ -67,4 +96,10 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     override fun onCleared() {
         soundManager.release()
     }
+
+    private data class NavigationSlice(
+        val categories: List<Category>,
+        val selectedCategory: Category? = null,
+        val selectedDifficulty: DifficultyFilter = DifficultyFilter.ANY
+    )
 }
