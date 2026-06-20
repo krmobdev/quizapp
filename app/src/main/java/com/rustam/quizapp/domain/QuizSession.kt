@@ -1,0 +1,54 @@
+package com.rustam.quizapp.domain
+
+import com.rustam.quizapp.data.Question
+
+/**
+ * Holds the state of a single quiz run: the question list, the current position,
+ * the number of correct answers, timeout penalties and mistakes.
+ */
+class QuizSession(
+    val questions: List<Question>,
+    startIndex: Int = 0,
+    initialCorrect: Int = 0,
+    initialPenalties: Int = 0,
+    initialMistakes: List<Question> = emptyList()
+) {
+
+    var currentIndex: Int = startIndex
+        private set
+
+    var correctCount: Int = initialCorrect
+        private set
+
+    var penaltyCount: Int = initialPenalties
+        private set
+
+    private val _mistakes = initialMistakes.toMutableList()
+    val mistakes: List<Question> get() = _mistakes
+
+    val total: Int get() = questions.size
+
+    val score: Int get() = correctCount - penaltyCount
+
+    fun currentQuestion(): Question? = questions.getOrNull(currentIndex)
+
+    fun submitAnswer(selectedIndex: Int): Boolean {
+        val question = currentQuestion() ?: return false
+        val isCorrect = selectedIndex == question.correctIndex
+        if (isCorrect) correctCount++ else _mistakes.add(question)
+        return isCorrect
+    }
+
+    /** Time ran out — counts as a mistake and applies a −1 penalty. */
+    fun submitTimeout() {
+        val question = currentQuestion() ?: return
+        _mistakes.add(question)
+        penaltyCount++
+    }
+
+    fun nextQuestion() {
+        if (currentIndex < questions.size) currentIndex++
+    }
+
+    fun isFinished(): Boolean = currentIndex >= questions.size
+}

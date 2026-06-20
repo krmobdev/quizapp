@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Adaptive launcher icon — app teal palette -->
+    <color name="ic_launcher_bg_start">#FF004D40</color>
+    <color name="ic_launcher_bg_mid">#FF006B5B</color>
+    <color name="ic_launcher_bg_end">#FF00251F</color>
+    <color name="ic_launcher_bg_glow">#406FF7DD</color>
+    <color name="ic_launcher_fg">#FFFFFFFF</color>
+    <color name="ic_launcher_accent">#FF6FF7DD</color>
+</resources>

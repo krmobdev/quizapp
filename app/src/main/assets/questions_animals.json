@@ -1,0 +1,5602 @@
+[
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Единственное яйцекладущее млекопитающее?",
+    "options": [
+      "Кенгуру",
+      "Утконос",
+      "Ехидна",
+      "Утконос и ехидна"
+    ],
+    "correctIndex": 3,
+    "explanation": "Утконос и ехидна откладывают яйца.",
+    "id": "anim_001"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бурый медведь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Бурый медведь — млекопитающее.",
+    "id": "anim_002"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится дельфин?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Дельфин — млекопитающее.",
+    "id": "anim_003"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ленивец?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ленивец — млекопитающее.",
+    "id": "anim_004"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится белуха?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Белуха — млекопитающее.",
+    "id": "anim_005"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Где обитает Осьминог (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Осьминог обитает в: океан.",
+    "id": "anim_006"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у орёл?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Орёл — хищник.",
+    "id": "anim_007"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится морская черепаха?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Морская черепаха — рептилия.",
+    "id": "anim_008"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: амфибия?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Лягушка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Лягушка.",
+    "id": "anim_009"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: крупнейший хищный кит?",
+    "options": [
+      "Нарвал",
+      "Фламинго",
+      "Павлин",
+      "Кашалот"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Кашалот.",
+    "id": "anim_010"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится таракан?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Таракан — насекомое.",
+    "id": "anim_011"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сайга?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Сайга — млекопитающее.",
+    "id": "anim_012"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ласка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ласка — млекопитающее.",
+    "id": "anim_013"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится коала?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Коала — млекопитающее.",
+    "id": "anim_014"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится гребешок?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Гребешок — моллюск.",
+    "id": "anim_015"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится мамонт?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Мамонт — млекопитающее.",
+    "id": "anim_016"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: скорость?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Гепард"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Гепард.",
+    "id": "anim_017"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает акула?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Акула — океан.",
+    "id": "anim_018"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится суслик?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Суслик — млекопитающее.",
+    "id": "anim_019"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ёж?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ёж — млекопитающее.",
+    "id": "anim_020"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает заяц?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "степь"
+    ],
+    "correctIndex": 3,
+    "explanation": "Заяц — степь.",
+    "id": "anim_021"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тарантул?",
+    "options": [
+      "Насекомые",
+      "Паукообразные",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Тарантул — паукообразное.",
+    "id": "anim_022"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сельдь?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сельдь — рыба.",
+    "id": "anim_023"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Бабочка (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "сады"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бабочка обитает в: сады.",
+    "id": "anim_024"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится гюрза?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Гюрза — рептилия.",
+    "id": "anim_025"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: близкий родственник человека?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Шимпанзе"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Шимпанзе.",
+    "id": "anim_026"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится антилопа?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Антилопа — млекопитающее.",
+    "id": "anim_027"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает Крокодил (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "тропики"
+    ],
+    "correctIndex": 3,
+    "explanation": "Крокодил обитает в: тропики.",
+    "id": "anim_028"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится собака?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Собака — млекопитающее.",
+    "id": "anim_029"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: киты)?",
+    "options": [
+      "стая",
+      "прайд",
+      "табун",
+      "загон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа киты — загон.",
+    "id": "anim_030"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Верблюд (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "пустыни"
+    ],
+    "correctIndex": 3,
+    "explanation": "Верблюд обитает в: пустыни.",
+    "id": "anim_031"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой зверь спит стоя?",
+    "options": [
+      "Лошадь",
+      "Корова",
+      "Кошка",
+      "Собака"
+    ],
+    "correctIndex": 0,
+    "explanation": "Лошади могут дремать стоя.",
+    "id": "anim_032"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лошадь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Лошадь — млекопитающее.",
+    "id": "anim_033"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное известно тем, что имеет/делает: хрящевой скелет?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Акула"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Акула.",
+    "id": "anim_034"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится мангуст?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Мангуст — млекопитающее.",
+    "id": "anim_035"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: рог?",
+    "options": [
+      "Кашалот",
+      "Фламинго",
+      "Павлин",
+      "Нарвал"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Нарвал.",
+    "id": "anim_036"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает Колибри (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "Америка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Колибри обитает в: Америка.",
+    "id": "anim_037"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: эвкалипт?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Коала"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Коала.",
+    "id": "anim_038"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Лягушка (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "болота"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лягушка обитает в: болота.",
+    "id": "anim_039"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится серый паук?",
+    "options": [
+      "Насекомые",
+      "Паукообразные",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Серый паук — паукообразное.",
+    "id": "anim_040"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: северный хищник?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Росомаха"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Росомаха.",
+    "id": "anim_041"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ящерица?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ящерица — рептилия.",
+    "id": "anim_042"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает кит?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кит — океан.",
+    "id": "anim_043"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой тип питания у Волк?",
+    "options": [
+      "травоядное",
+      "всеядное",
+      "травоядное",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Волк — хищник.",
+    "id": "anim_044"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: эхолокация?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Дельфин"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Дельфин.",
+    "id": "anim_045"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает кобра?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Азия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кобра — Азия.",
+    "id": "anim_046"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: полосатая шкура?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Тигр"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Тигр.",
+    "id": "anim_047"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится зебу?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Зебу — млекопитающее.",
+    "id": "anim_048"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лось?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Лось — млекопитающее.",
+    "id": "anim_049"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится нерпа?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Нерпа — млекопитающее.",
+    "id": "anim_050"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится выдра?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Выдра — млекопитающее.",
+    "id": "anim_051"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у тигр?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Тигр — хищник.",
+    "id": "anim_052"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: опыление?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Пчела"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Пчела.",
+    "id": "anim_053"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится слониха?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Слониха — млекопитающее.",
+    "id": "anim_054"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится павлин?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Павлин — птица.",
+    "id": "anim_055"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой класс животных описан: жабры?",
+    "options": [
+      "Млекопитающие",
+      "Птицы",
+      "Рептилии",
+      "Рыбы"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Рыбы.",
+    "id": "anim_056"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: крупнейший олень?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Лось"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Лось.",
+    "id": "anim_057"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится муравей?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Муравей — насекомое.",
+    "id": "anim_058"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится питон?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Питон — рептилия.",
+    "id": "anim_059"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лиса?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Лиса — млекопитающее.",
+    "id": "anim_060"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает крокодил?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "реки Африки"
+    ],
+    "correctIndex": 3,
+    "explanation": "Крокодил — реки Африки.",
+    "id": "anim_061"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает кенгуру?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Австралия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кенгуру — Австралия.",
+    "id": "anim_062"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает орёл?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "горы"
+    ],
+    "correctIndex": 3,
+    "explanation": "Орёл — горы.",
+    "id": "anim_063"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у лев?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лев — хищник.",
+    "id": "anim_064"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится хомяк?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Хомяк — млекопитающее.",
+    "id": "anim_065"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: очень медленное?",
+    "options": [
+      "гепард",
+      "стриж",
+      "сапсан",
+      "улитка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это улитка.",
+    "id": "anim_066"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тунец?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Тунец — рыба.",
+    "id": "anim_067"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой класс животных описан: шесть ног?",
+    "options": [
+      "Млекопитающие",
+      "Птицы",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Насекомые.",
+    "id": "anim_068"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится муха?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Муха — насекомое.",
+    "id": "anim_069"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает ёж?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ёж — лес.",
+    "id": "anim_070"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: клешни?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Краб"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Краб.",
+    "id": "anim_071"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сухопутная черепаха?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сухопутная черепаха — рептилия.",
+    "id": "anim_072"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: волки)?",
+    "options": [
+      "прайд",
+      "табун",
+      "стадо",
+      "стая"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа волки — стая.",
+    "id": "anim_073"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сверчок?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сверчок — насекомое.",
+    "id": "anim_074"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: жало?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Медуза"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Медуза.",
+    "id": "anim_075"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает морской конёк?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "море"
+    ],
+    "correctIndex": 3,
+    "explanation": "Морской конёк — море.",
+    "id": "anim_076"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой класс животных описан: живут в воде и на суше?",
+    "options": [
+      "Млекопитающие",
+      "Птицы",
+      "Рыбы",
+      "Амфибии"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Амфибии.",
+    "id": "anim_077"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кошка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кошка — млекопитающее.",
+    "id": "anim_078"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится марал?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Марал — млекопитающее.",
+    "id": "anim_079"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кобра?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кобра — рептилия.",
+    "id": "anim_080"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: клюв?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Китоглав"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Китоглав.",
+    "id": "anim_081"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: розовый цвет?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Павлин",
+      "Фламинго"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Фламинго.",
+    "id": "anim_082"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает сова?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес"
+    ],
+    "correctIndex": 3,
+    "explanation": "Сова — лес.",
+    "id": "anim_083"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: ласты?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Тюлень"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Тюлень.",
+    "id": "anim_084"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает страус?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Страус — Африка.",
+    "id": "anim_085"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится буйвол?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Буйвол — млекопитающее.",
+    "id": "anim_086"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у слон?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Слон — травоядный.",
+    "id": "anim_087"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится устрица?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Устрица — моллюск.",
+    "id": "anim_088"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тапир?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Тапир — млекопитающее.",
+    "id": "anim_089"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Зебра (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Австралия",
+      "Китай",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Зебра обитает в: Африка.",
+    "id": "anim_090"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное известно тем, что имеет/делает: яд?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Кобра"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Кобра.",
+    "id": "anim_091"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится пони?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Пони — млекопитающее.",
+    "id": "anim_092"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится хорёк?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Хорёк — млекопитающее.",
+    "id": "anim_093"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится белый медведь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Белый медведь — млекопитающее.",
+    "id": "anim_094"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает морж?",
+    "options": [
+      "Антарктида",
+      "пустыня",
+      "Африка",
+      "Арктика"
+    ],
+    "correctIndex": 3,
+    "explanation": "Морж — Арктика.",
+    "id": "anim_095"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: панцирь?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Черепаха"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Черепаха.",
+    "id": "anim_096"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится страус?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Страус — птица.",
+    "id": "anim_097"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится крокодил?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Крокодил — рептилия.",
+    "id": "anim_098"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: пятна?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Леопард"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Леопард.",
+    "id": "anim_099"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: водоём?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Выдра"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Выдра.",
+    "id": "anim_100"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бобр?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Бобр — млекопитающее.",
+    "id": "anim_101"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Лев (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Австралия",
+      "Китай",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лев обитает в: Африка.",
+    "id": "anim_102"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает питон?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "тропики"
+    ],
+    "correctIndex": 3,
+    "explanation": "Питон — тропики.",
+    "id": "anim_103"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Медведь (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "леса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Медведь обитает в: леса.",
+    "id": "anim_104"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Кенгуру (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Китай",
+      "Австралия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кенгуру обитает в: Австралия.",
+    "id": "anim_105"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится игуана?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Игуана — рептилия.",
+    "id": "anim_106"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится улитка?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Улитка — моллюск.",
+    "id": "anim_107"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится финвал?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Финвал — млекопитающее.",
+    "id": "anim_108"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится крыса?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Крыса — млекопитающее.",
+    "id": "anim_109"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится индри?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Индри — млекопитающее.",
+    "id": "anim_110"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает Акула (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Акула обитает в: океан.",
+    "id": "anim_111"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает утконос?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Австралия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Утконос — Австралия.",
+    "id": "anim_112"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: Мадагаскар?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Лемур"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Лемур.",
+    "id": "anim_113"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится пума?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Пума — млекопитающее.",
+    "id": "anim_114"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится черепаха?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Черепаха — рептилия.",
+    "id": "anim_115"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Сова (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "леса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Сова обитает в: леса.",
+    "id": "anim_116"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится гиена?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Гиена — млекопитающее.",
+    "id": "anim_117"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает кальмар?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кальмар — океан.",
+    "id": "anim_118"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает верблюд?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "Африка",
+      "пустыня"
+    ],
+    "correctIndex": 3,
+    "explanation": "Верблюд — пустыня.",
+    "id": "anim_119"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает сокол?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "степи"
+    ],
+    "correctIndex": 3,
+    "explanation": "Сокол — степи.",
+    "id": "anim_120"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кузнечик?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кузнечик — насекомое.",
+    "id": "anim_121"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: хищная птица?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Орёл"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Орёл.",
+    "id": "anim_122"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится утка?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Утка — птица.",
+    "id": "anim_123"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится леопард?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Леопард — млекопитающее.",
+    "id": "anim_124"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ежевик?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ежевик — млекопитающее.",
+    "id": "anim_125"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится аист?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Аист — птица.",
+    "id": "anim_126"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тюлень?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Тюлень — млекопитающее.",
+    "id": "anim_127"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой тип питания у Кит?",
+    "options": [
+      "хищник",
+      "травоядное",
+      "всеядное",
+      "планктон/рыба"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кит — планктон/рыба.",
+    "id": "anim_128"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится рысь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Рысь — млекопитающее.",
+    "id": "anim_129"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится корова?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Корова — млекопитающее.",
+    "id": "anim_130"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится мустанг?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Мустанг — млекопитающее.",
+    "id": "anim_131"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится як?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Як — млекопитающее.",
+    "id": "anim_132"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится варан?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Варан — рептилия.",
+    "id": "anim_133"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится галаго?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Галаго — млекопитающее.",
+    "id": "anim_134"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: лошади)?",
+    "options": [
+      "стая",
+      "прайд",
+      "стадо",
+      "табун"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа лошади — табун.",
+    "id": "anim_135"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у олень?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Олень — травоядный.",
+    "id": "anim_136"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает скорпион?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "Африка",
+      "пустыня"
+    ],
+    "correctIndex": 3,
+    "explanation": "Скорпион — пустыня.",
+    "id": "anim_137"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: крупнейшая птица?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Страус"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Страус.",
+    "id": "anim_138"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится мартышка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Мартышка — млекопитающее.",
+    "id": "anim_139"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: хобот?",
+    "options": [
+      "Жираф",
+      "Кенгуру",
+      "Панда",
+      "Слон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Слон.",
+    "id": "anim_140"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: олени)?",
+    "options": [
+      "стая",
+      "прайд",
+      "табун",
+      "стадо"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа олени — стадо.",
+    "id": "anim_141"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится крестовик?",
+    "options": [
+      "Насекомые",
+      "Паукообразные",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Крестовик — паукообразное.",
+    "id": "anim_142"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится оса?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Оса — насекомое.",
+    "id": "anim_143"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится альпака?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Альпака — млекопитающее.",
+    "id": "anim_144"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у коала?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Коала — травоядный.",
+    "id": "anim_145"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лосось?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Лосось — рыба.",
+    "id": "anim_146"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное известно тем, что имеет/делает: рептилия?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Крокодил"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Крокодил.",
+    "id": "anim_147"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится крот?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Крот — млекопитающее.",
+    "id": "anim_148"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится дикобраз?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Дикобраз — млекопитающее.",
+    "id": "anim_149"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у енот?",
+    "options": [
+      "хищник",
+      "травоядный",
+      "травоядный",
+      "всеядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Енот — всеядный.",
+    "id": "anim_150"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: стая?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Волк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Волк.",
+    "id": "anim_151"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: львы)?",
+    "options": [
+      "стая",
+      "табун",
+      "стадо",
+      "прайд"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа львы — прайд.",
+    "id": "anim_152"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится окунь?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Окунь — рыба.",
+    "id": "anim_153"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: пять лучей?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Морская звезда"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Морская звезда.",
+    "id": "anim_154"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой тип питания у Медведь?",
+    "options": [
+      "хищник",
+      "травоядное",
+      "травоядное",
+      "всеядное"
+    ],
+    "correctIndex": 3,
+    "explanation": "Медведь — всеядное.",
+    "id": "anim_155"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бурундук?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Бурундук — млекопитающее.",
+    "id": "anim_156"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает орангутан?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Борнео"
+    ],
+    "correctIndex": 3,
+    "explanation": "Орангутан — Борнео.",
+    "id": "anim_157"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает панда?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Китай"
+    ],
+    "correctIndex": 3,
+    "explanation": "Панда — Китай.",
+    "id": "anim_158"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: пингвины)?",
+    "options": [
+      "стая",
+      "прайд",
+      "табун",
+      "колония"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа пингвины — колония.",
+    "id": "anim_159"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится попугай?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Попугай — птица.",
+    "id": "anim_160"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кабанчик?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кабанчик — млекопитающее.",
+    "id": "anim_161"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится чёрная вдова?",
+    "options": [
+      "Насекомые",
+      "Паукообразные",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Чёрная вдова — паукообразное.",
+    "id": "anim_162"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: Антарктида?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Пингвин"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Пингвин.",
+    "id": "anim_163"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное меняет цвет?",
+    "options": [
+      "Хамелеон",
+      "Лиса",
+      "Волк",
+      "Медведь"
+    ],
+    "correctIndex": 0,
+    "explanation": "Хамелеон меняет окраску.",
+    "id": "anim_164"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: пчёлы)?",
+    "options": [
+      "стая",
+      "прайд",
+      "табун",
+      "рой"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа пчёлы — рой.",
+    "id": "anim_165"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой класс животных описан: перья и клюв?",
+    "options": [
+      "Млекопитающие",
+      "Рыбы",
+      "Рептилии",
+      "Птицы"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Птицы.",
+    "id": "anim_166"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает пингвин?",
+    "options": [
+      "Арктика",
+      "пустыня",
+      "Африка",
+      "Антарктида"
+    ],
+    "correctIndex": 3,
+    "explanation": "Пингвин — Антарктида.",
+    "id": "anim_167"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится синица?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Синица — птица.",
+    "id": "anim_168"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает анаконда?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Амазонка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Анаконда — Амазонка.",
+    "id": "anim_169"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится жаба?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 0,
+    "explanation": "Жаба — амфибия.",
+    "id": "anim_170"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится грач?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Грач — птица.",
+    "id": "anim_171"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кайман?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кайман — рептилия.",
+    "id": "anim_172"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает бобр?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "реки"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бобр — реки.",
+    "id": "anim_173"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится осёл?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Осёл — млекопитающее.",
+    "id": "anim_174"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится панда?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Панда — млекопитающее.",
+    "id": "anim_175"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у панда?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Панда — травоядный.",
+    "id": "anim_176"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Пингвин (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "не умеет летать"
+    ],
+    "correctIndex": 3,
+    "explanation": "Пингвин обитает в: не умеет летать.",
+    "id": "anim_177"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает медуза?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Медуза — океан.",
+    "id": "anim_178"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится фламинго?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Фламинго — птица.",
+    "id": "anim_179"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится геккон?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Геккон — рептилия.",
+    "id": "anim_180"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: рога?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Олень"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Олень.",
+    "id": "anim_181"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у лягушка?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лягушка — хищник.",
+    "id": "anim_182"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится верблюд?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Верблюд — млекопитающее.",
+    "id": "anim_183"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится зебра?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Зебра — млекопитающее.",
+    "id": "anim_184"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: страж?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Сурикат"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Сурикат.",
+    "id": "anim_185"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кролик?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кролик — млекопитающее.",
+    "id": "anim_186"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает лосось?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "реки"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лосось — реки.",
+    "id": "anim_187"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лемур?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Лемур — млекопитающее.",
+    "id": "anim_188"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: долгие дистанции?",
+    "options": [
+      "гепард",
+      "стриж",
+      "сапсан",
+      "марафонец-антилопа"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это марафонец-антилопа.",
+    "id": "anim_189"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у гепард?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Гепард — хищник.",
+    "id": "anim_190"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится шмель?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Шмель — насекомое.",
+    "id": "anim_191"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится койот?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Койот — млекопитающее.",
+    "id": "anim_192"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает бабочка?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "луга"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бабочка — луга.",
+    "id": "anim_193"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сокол?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сокол — птица.",
+    "id": "anim_194"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится орёл?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Орёл — птица.",
+    "id": "anim_195"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: быстрая птица?",
+    "options": [
+      "гепард",
+      "сапсан",
+      "марафонец-антилопа",
+      "стриж"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это стриж.",
+    "id": "anim_196"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится гепард?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Гепард — млекопитающее.",
+    "id": "anim_197"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Лошадь (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "одомашнена"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лошадь обитает в: одомашнена.",
+    "id": "anim_198"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает крот?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "почва"
+    ],
+    "correctIndex": 3,
+    "explanation": "Крот — почва.",
+    "id": "anim_199"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сом?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сом — рыба.",
+    "id": "anim_200"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кашалот?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кашалот — млекопитающее.",
+    "id": "anim_201"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает коала?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Австралия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Коала — Австралия.",
+    "id": "anim_202"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится опоссум?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Опоссум — млекопитающее.",
+    "id": "anim_203"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится медведь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Медведь — млекопитающее.",
+    "id": "anim_204"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Жираф (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Австралия",
+      "Китай",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Жираф обитает в: Африка.",
+    "id": "anim_205"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: ядовитые шпоры?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Утконос"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Утконос.",
+    "id": "anim_206"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у свинья?",
+    "options": [
+      "хищник",
+      "травоядный",
+      "травоядный",
+      "всеядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Свинья — всеядный.",
+    "id": "anim_207"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: царь зверей?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Лев"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Лев.",
+    "id": "anim_208"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: медленное?",
+    "options": [
+      "гепард",
+      "стриж",
+      "сапсан",
+      "черепаха"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это черепаха.",
+    "id": "anim_209"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится скунс?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Скунс — млекопитающее.",
+    "id": "anim_210"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает скат?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "море"
+    ],
+    "correctIndex": 3,
+    "explanation": "Скат — море.",
+    "id": "anim_211"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится овца?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Овца — млекопитающее.",
+    "id": "anim_212"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится воробей?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Воробей — птица.",
+    "id": "anim_213"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится броненосец?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Броненосец — млекопитающее.",
+    "id": "anim_214"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится коза?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Коза — млекопитающее.",
+    "id": "anim_215"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бегемот?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Бегемот — млекопитающее.",
+    "id": "anim_216"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает фламинго?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка/Южная Америка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Фламинго — Африка/Южная Америка.",
+    "id": "anim_217"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится норка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Норка — млекопитающее.",
+    "id": "anim_218"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бабуин?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Бабуин — млекопитающее.",
+    "id": "anim_219"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное умеет регенерировать хвост?",
+    "options": [
+      "Ящерица",
+      "Лев",
+      "Слон",
+      "Волк"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ящерица сбрасывает хвост.",
+    "id": "anim_220"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится летучая мышь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Летучая мышь — млекопитающее.",
+    "id": "anim_221"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится белка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Белка — млекопитающее.",
+    "id": "anim_222"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у утконос?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Утконос — хищник.",
+    "id": "anim_223"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у заяц?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Заяц — травоядный.",
+    "id": "anim_224"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится змея?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Змея — рептилия.",
+    "id": "anim_225"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: риф?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Коралл"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Коралл.",
+    "id": "anim_226"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ягуар?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ягуар — млекопитающее.",
+    "id": "anim_227"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится щука?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Щука — рыба.",
+    "id": "anim_228"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится окапи?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Окапи — млекопитающее.",
+    "id": "anim_229"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой тип питания у Лошадь?",
+    "options": [
+      "хищник",
+      "всеядное",
+      "хищник",
+      "травоядное"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лошадь — травоядное.",
+    "id": "anim_230"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится аллигатор?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Аллигатор — рептилия.",
+    "id": "anim_231"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у корова?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Корова — травоядный.",
+    "id": "anim_232"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тритон?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 0,
+    "explanation": "Тритон — амфибия.",
+    "id": "anim_233"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: полоски?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Зебра"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Зебра.",
+    "id": "anim_234"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное известно тем, что имеет/делает: парение?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Колибри"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Колибри.",
+    "id": "anim_235"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится шимпанзе?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Шимпанзе — млекопитающее.",
+    "id": "anim_236"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Орёл (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "небеса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Орёл обитает в: небеса.",
+    "id": "anim_237"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится носорог?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Носорог — млекопитающее.",
+    "id": "anim_238"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится шакал?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Шакал — млекопитающее.",
+    "id": "anim_239"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится наутилус?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Наутилус — моллюск.",
+    "id": "anim_240"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: горбы?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Верблюд"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Верблюд.",
+    "id": "anim_241"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: ночной хищник?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Сова"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Сова.",
+    "id": "anim_242"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится шиншилла?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Шиншилла — млекопитающее.",
+    "id": "anim_243"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится морж?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Морж — млекопитающее.",
+    "id": "anim_244"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится блоха?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Блоха — насекомое.",
+    "id": "anim_245"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: плоское тело?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Скат"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Скат.",
+    "id": "anim_246"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: хищная птица?",
+    "options": [
+      "гепард",
+      "стриж",
+      "марафонец-антилопа",
+      "сапсан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это сапсан.",
+    "id": "anim_247"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится горилла?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Горилла — млекопитающее.",
+    "id": "anim_248"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у кролик?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кролик — травоядный.",
+    "id": "anim_249"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кабан?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кабан — млекопитающее.",
+    "id": "anim_250"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится пингвин?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Пингвин — птица.",
+    "id": "anim_251"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится гавиал?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Гавиал — рептилия.",
+    "id": "anim_252"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится куница?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Куница — млекопитающее.",
+    "id": "anim_253"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сурок?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Сурок — млекопитающее.",
+    "id": "anim_254"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает муравей?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес"
+    ],
+    "correctIndex": 3,
+    "explanation": "Муравей — лес.",
+    "id": "anim_255"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: кисточки на ушах?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Рысь"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Рысь.",
+    "id": "anim_256"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится паук?",
+    "options": [
+      "Насекомые",
+      "Паукообразные",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Паук — паукообразное.",
+    "id": "anim_257"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится газель?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Газель — млекопитающее.",
+    "id": "anim_258"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Муравей (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "везде"
+    ],
+    "correctIndex": 3,
+    "explanation": "Муравей обитает в: везде.",
+    "id": "anim_259"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится гусь?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Гусь — птица.",
+    "id": "anim_260"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится косатка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Косатка — млекопитающее.",
+    "id": "anim_261"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает хамелеон?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "тропики"
+    ],
+    "correctIndex": 3,
+    "explanation": "Хамелеон — тропики.",
+    "id": "anim_262"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лев?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Лев — млекопитающее.",
+    "id": "anim_263"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: симбиоз с носорогом?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Носорога птица"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Носорога птица.",
+    "id": "anim_264"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает альбатрос?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Альбатрос — океан.",
+    "id": "anim_265"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает белка?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес"
+    ],
+    "correctIndex": 3,
+    "explanation": "Белка — лес.",
+    "id": "anim_266"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится каракатица?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Каракатица — моллюск.",
+    "id": "anim_267"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: метаморфоз?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Бабочка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Бабочка.",
+    "id": "anim_268"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает волк?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес/тундра"
+    ],
+    "correctIndex": 3,
+    "explanation": "Волк — лес/тундра.",
+    "id": "anim_269"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится орангутан?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Орангутан — млекопитающее.",
+    "id": "anim_270"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится стрекоза?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Стрекоза — насекомое.",
+    "id": "anim_271"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится слон?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Слон — млекопитающее.",
+    "id": "anim_272"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у крокодил?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Крокодил — хищник.",
+    "id": "anim_273"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится червяга?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 0,
+    "explanation": "Червяга — амфибия.",
+    "id": "anim_274"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится хамелеон?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Хамелеон — рептилия.",
+    "id": "anim_275"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Лиса (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "леса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лиса обитает в: леса.",
+    "id": "anim_276"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лама?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Лама — млекопитающее.",
+    "id": "anim_277"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится курица?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Курица — птица.",
+    "id": "anim_278"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает белый медведь?",
+    "options": [
+      "Антарктида",
+      "пустыня",
+      "Африка",
+      "Арктика"
+    ],
+    "correctIndex": 3,
+    "explanation": "Белый медведь — Арктика.",
+    "id": "anim_279"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится осьминог?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Осьминог — моллюск.",
+    "id": "anim_280"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сова?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сова — птица.",
+    "id": "anim_281"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает осьминог?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Осьминог — океан.",
+    "id": "anim_282"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Какое животное известно тем, что имеет/делает: три сердца?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Осьминог"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Осьминог.",
+    "id": "anim_283"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает какаду?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Австралия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Какаду — Австралия.",
+    "id": "anim_284"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: колония?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Муравей"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Муравей.",
+    "id": "anim_285"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: хвост?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Павлин"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Павлин.",
+    "id": "anim_286"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится морская свинка?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Морская свинка — млекопитающее.",
+    "id": "anim_287"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится удав?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Млекопитающие"
+    ],
+    "correctIndex": 1,
+    "explanation": "Удав — рептилия.",
+    "id": "anim_288"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: степи?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Лошадь"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Лошадь.",
+    "id": "anim_289"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Пчела (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "ульи"
+    ],
+    "correctIndex": 3,
+    "explanation": "Пчела обитает в: ульи.",
+    "id": "anim_290"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: бамбук?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Панда"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Панда.",
+    "id": "anim_291"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Слон (в основном)?",
+    "options": [
+      "Африка",
+      "Австралия",
+      "Китай",
+      "саванна и леса Африки/Азии"
+    ],
+    "correctIndex": 3,
+    "explanation": "Слон обитает в: саванна и леса Африки/Азии.",
+    "id": "anim_292"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой тип питания у Обезьяна?",
+    "options": [
+      "хищник",
+      "травоядное",
+      "травоядное",
+      "всеядное"
+    ],
+    "correctIndex": 3,
+    "explanation": "Обезьяна — всеядное.",
+    "id": "anim_293"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тигр?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Тигр — млекопитающее.",
+    "id": "anim_294"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится свинья?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Свинья — млекопитающее.",
+    "id": "anim_295"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: косатка?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Касатка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Касатка.",
+    "id": "anim_296"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает лев?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лев — Африка.",
+    "id": "anim_297"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает выдра?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "реки"
+    ],
+    "correctIndex": 3,
+    "explanation": "Выдра — реки.",
+    "id": "anim_298"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: зимняя спячка?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Медведь"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Медведь.",
+    "id": "anim_299"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: крупнейшая обезьяна?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Горилла"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Горилла.",
+    "id": "anim_300"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится акула?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Акула — рыба.",
+    "id": "anim_301"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится мышь?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Мышь — млекопитающее.",
+    "id": "anim_302"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у акула?",
+    "options": [
+      "травоядный",
+      "всеядный",
+      "травоядный",
+      "хищник"
+    ],
+    "correctIndex": 3,
+    "explanation": "Акула — хищник.",
+    "id": "anim_303"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: клыки?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Морж"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Морж.",
+    "id": "anim_304"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится утконос?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Утконос — млекопитающее.",
+    "id": "anim_305"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится петух?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Петух — птица.",
+    "id": "anim_306"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: морская корова?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Манат"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Манат.",
+    "id": "anim_307"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает слон?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка/Азия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Слон — Африка/Азия.",
+    "id": "anim_308"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: хобот?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Тапир"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Тапир.",
+    "id": "anim_309"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится заяц?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Заяц — млекопитающее.",
+    "id": "anim_310"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: орехи?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Белка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Белка.",
+    "id": "anim_311"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: жвачное?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Корова"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Корова.",
+    "id": "anim_312"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится карп?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Карп — рыба.",
+    "id": "anim_313"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какой класс животных описан: кормят молоком?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Рептилии",
+      "Млекопитающие"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Млекопитающие.",
+    "id": "anim_314"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает тигр?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Азия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Тигр — Азия.",
+    "id": "anim_315"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится капибара?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Капибара — млекопитающее.",
+    "id": "anim_316"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Еж (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "Европа"
+    ],
+    "correctIndex": 3,
+    "explanation": "Еж обитает в: Европа.",
+    "id": "anim_317"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится енот?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Енот — млекопитающее.",
+    "id": "anim_318"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Сколько сердец у осьминога?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "explanation": "У осьминога три сердца.",
+    "id": "anim_319"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает жираф?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Жираф — Африка.",
+    "id": "anim_320"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает зебра?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Зебра — Африка.",
+    "id": "anim_321"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лебедь?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Лебедь — птица.",
+    "id": "anim_322"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится мидия?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Мидия — моллюск.",
+    "id": "anim_323"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает Кобра (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "Азия/Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кобра обитает в: Азия/Африка.",
+    "id": "anim_324"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится обезьяна?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Обезьяна — млекопитающее.",
+    "id": "anim_325"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится жук?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Жук — насекомое.",
+    "id": "anim_326"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: сумка?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Панда",
+      "Кенгуру"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Кенгуру.",
+    "id": "anim_327"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает лемур?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Мадагаскар"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лемур — Мадагаскар.",
+    "id": "anim_328"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: интеллект?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Дельфин"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Дельфин.",
+    "id": "anim_329"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: говорит?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Попугай"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Попугай.",
+    "id": "anim_330"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ослик?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ослик — млекопитающее.",
+    "id": "anim_331"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится цапля?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Цапля — птица.",
+    "id": "anim_332"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится песец?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Песец — млекопитающее.",
+    "id": "anim_333"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: самое быстрое наземное?",
+    "options": [
+      "стриж",
+      "сапсан",
+      "марафонец-антилопа",
+      "гепард"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это гепард.",
+    "id": "anim_334"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится олень?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Олень — млекопитающее.",
+    "id": "anim_335"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится котик?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Котик — млекопитающее.",
+    "id": "anim_336"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится сурикат?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Сурикат — млекопитающее.",
+    "id": "anim_337"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Корова (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "фермы"
+    ],
+    "correctIndex": 3,
+    "explanation": "Корова обитает в: фермы.",
+    "id": "anim_338"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится скакун?",
+    "options": [
+      "Насекомые",
+      "Паукообразные",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Скакун — паукообразное.",
+    "id": "anim_339"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: крупнейшее животное?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Кит"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Кит.",
+    "id": "anim_340"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает омар?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "море"
+    ],
+    "correctIndex": 3,
+    "explanation": "Омар — море.",
+    "id": "anim_341"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Белка (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "леса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Белка обитает в: леса.",
+    "id": "anim_342"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает тюлень?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "полюса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Тюлень — полюса.",
+    "id": "anim_343"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает пчела?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "луга"
+    ],
+    "correctIndex": 3,
+    "explanation": "Пчела — луга.",
+    "id": "anim_344"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится саламандра?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 0,
+    "explanation": "Саламандра — амфибия.",
+    "id": "anim_345"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: рыжая шкура?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Лиса"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Лиса.",
+    "id": "anim_346"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает бегемот?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бегемот — Африка.",
+    "id": "anim_347"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится павиан?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Павиан — млекопитающее.",
+    "id": "anim_348"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится дятел?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Дятел — птица.",
+    "id": "anim_349"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает дельфин?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "океан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Дельфин — океан.",
+    "id": "anim_350"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бизон?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Бизон — млекопитающее.",
+    "id": "anim_351"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Тигр (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "Азия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Тигр обитает в: Азия.",
+    "id": "anim_352"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает краб?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "море"
+    ],
+    "correctIndex": 3,
+    "explanation": "Краб — море.",
+    "id": "anim_353"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится жираф?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Жираф — млекопитающее.",
+    "id": "anim_354"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой класс животных описан: чешуя?",
+    "options": [
+      "Млекопитающие",
+      "Птицы",
+      "Рыбы",
+      "Рептилии"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Рептилии.",
+    "id": "anim_355"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: реки Африки?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Бегемот"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Бегемот.",
+    "id": "anim_356"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится топи?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Топи — млекопитающее.",
+    "id": "anim_357"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Кит (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "океаны"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кит обитает в: океаны.",
+    "id": "anim_358"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: самец носит икру?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Морской конёк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Морской конёк.",
+    "id": "anim_359"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Самое быстрое наземное животное?",
+    "options": [
+      "Гепард",
+      "Лев",
+      "Антилопа",
+      "Лошадь"
+    ],
+    "correctIndex": 0,
+    "explanation": "Гепард развивает до 110 км/ч.",
+    "id": "anim_360"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: иглы?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Морской ёж"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Морской ёж.",
+    "id": "anim_361"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип питания у жираф?",
+    "options": [
+      "хищник",
+      "всеядный",
+      "хищник",
+      "травоядный"
+    ],
+    "correctIndex": 3,
+    "explanation": "Жираф — травоядный.",
+    "id": "anim_362"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится барсук?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Барсук — млекопитающее.",
+    "id": "anim_363"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: рыжий примат?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Орангутан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Орангутан.",
+    "id": "anim_364"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какое животное: плотина?",
+    "options": [
+      "Кашалот",
+      "Нарвал",
+      "Фламинго",
+      "Бобр"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Бобр.",
+    "id": "anim_365"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кенгуру?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кенгуру — млекопитающее.",
+    "id": "anim_366"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится хорьк?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Хорьк — млекопитающее.",
+    "id": "anim_367"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится барс?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Барс — млекопитающее.",
+    "id": "anim_368"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Самое крупное наземное животное?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Слон (африканский)",
+      "Бегемот"
+    ],
+    "correctIndex": 2,
+    "explanation": "Африканский слон — крупнейшее наземное.",
+    "id": "anim_369"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает жук?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес"
+    ],
+    "correctIndex": 3,
+    "explanation": "Жук — лес.",
+    "id": "anim_370"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится кит?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Кит — млекопитающее.",
+    "id": "anim_371"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится пантера?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Пантера — млекопитающее.",
+    "id": "anim_372"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится еж?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Еж — млекопитающее.",
+    "id": "anim_373"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится аксолотль?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 0,
+    "explanation": "Аксолотль — амфибия.",
+    "id": "anim_374"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится калан?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Калан — млекопитающее.",
+    "id": "anim_375"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: рыбы)?",
+    "options": [
+      "стая",
+      "прайд",
+      "табун",
+      "косяк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа рыбы — косяк.",
+    "id": "anim_376"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится муравьед?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Муравьед — млекопитающее.",
+    "id": "anim_377"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится форель?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Форель — рыба.",
+    "id": "anim_378"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится скат?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Насекомые",
+      "Млекопитающие"
+    ],
+    "correctIndex": 0,
+    "explanation": "Скат — рыба.",
+    "id": "anim_379"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Волк (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "леса и тундра"
+    ],
+    "correctIndex": 3,
+    "explanation": "Волк обитает в: леса и тундра.",
+    "id": "anim_380"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Черепаха (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "суша и вода"
+    ],
+    "correctIndex": 3,
+    "explanation": "Черепаха обитает в: суша и вода.",
+    "id": "anim_381"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится пчела?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Пчела — насекомое.",
+    "id": "anim_382"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится лягушка?",
+    "options": [
+      "Амфибии",
+      "Рептилии",
+      "Рыбы",
+      "Насекомые"
+    ],
+    "correctIndex": 0,
+    "explanation": "Лягушка — амфибия.",
+    "id": "anim_383"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится гну?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Гну — млекопитающее.",
+    "id": "anim_384"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится косуля?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Косуля — млекопитающее.",
+    "id": "anim_385"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: иглы?",
+    "options": [
+      "Слон",
+      "Жираф",
+      "Кенгуру",
+      "Еж"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Еж.",
+    "id": "anim_386"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Какой класс животных описан: восемь ног?",
+    "options": [
+      "Млекопитающие",
+      "Птицы",
+      "Рыбы",
+      "Паукообразные"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Паукообразные.",
+    "id": "anim_387"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится бабочка?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Бабочка — насекомое.",
+    "id": "anim_388"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится волк?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Волк — млекопитающее.",
+    "id": "anim_389"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает паук?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "везде"
+    ],
+    "correctIndex": 3,
+    "explanation": "Паук — везде.",
+    "id": "anim_390"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится ласточка?",
+    "options": [
+      "Рыбы",
+      "Птицы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ласточка — птица.",
+    "id": "anim_391"
+  },
+  {
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "Как называется группа животных (пример: слоны)?",
+    "options": [
+      "стая",
+      "прайд",
+      "табун",
+      "семейство"
+    ],
+    "correctIndex": 3,
+    "explanation": "Группа слоны — семейство.",
+    "id": "anim_392"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает носорог?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "Африка/Азия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Носорог — Африка/Азия.",
+    "id": "anim_393"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Какое животное известно тем, что имеет/делает: самая длинная шея?",
+    "options": [
+      "Слон",
+      "Кенгуру",
+      "Панда",
+      "Жираф"
+    ],
+    "correctIndex": 3,
+    "explanation": "Это Жираф.",
+    "id": "anim_394"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Где обитает лиса?",
+    "options": [
+      "Антарктида",
+      "Арктика",
+      "пустыня",
+      "лес"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лиса — лес.",
+    "id": "anim_395"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Дельфин (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "океаны"
+    ],
+    "correctIndex": 3,
+    "explanation": "Дельфин обитает в: океаны.",
+    "id": "anim_396"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится тамарин?",
+    "options": [
+      "Птицы",
+      "Рыбы",
+      "Млекопитающие",
+      "Рептилии"
+    ],
+    "correctIndex": 2,
+    "explanation": "Тамарин — млекопитающее.",
+    "id": "anim_397"
+  },
+  {
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "К какому типу относится кальмар?",
+    "options": [
+      "Хордовые",
+      "Моллюски",
+      "Членистоногие",
+      "Кольчатые"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кальмар — моллюск.",
+    "id": "anim_398"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "К какому классу относится комар?",
+    "options": [
+      "Паукообразные",
+      "Насекомые",
+      "Рыбы",
+      "Моллюски"
+    ],
+    "correctIndex": 1,
+    "explanation": "Комар — насекомое.",
+    "id": "anim_399"
+  },
+  {
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Где обитает Панда (в основном)?",
+    "options": [
+      "саванна и леса Африки/Азии",
+      "Африка",
+      "Австралия",
+      "Китай"
+    ],
+    "correctIndex": 3,
+    "explanation": "Панда обитает в: Китай.",
+    "id": "anim_400"
+  }
+]

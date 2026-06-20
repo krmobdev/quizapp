@@ -1,0 +1,5602 @@
+[
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается водород?",
+    "options": [
+      "Mo",
+      "F",
+      "Li",
+      "H"
+    ],
+    "correctIndex": 3,
+    "explanation": "Водород обозначается символом H.",
+    "id": "chem_001"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом H?",
+    "options": [
+      "Ксенон",
+      "Калий",
+      "Хлор",
+      "Водород"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ H соответствует элементу Водород.",
+    "id": "chem_002"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента водород?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "explanation": "Водород имеет порядковый номер 1 в таблице Менделеева.",
+    "id": "chem_003"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается гелий?",
+    "options": [
+      "S",
+      "Ne",
+      "Xe",
+      "He"
+    ],
+    "correctIndex": 3,
+    "explanation": "Гелий обозначается символом He.",
+    "id": "chem_004"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом He?",
+    "options": [
+      "Кислород",
+      "Индий",
+      "Ксенон",
+      "Гелий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ He соответствует элементу Гелий.",
+    "id": "chem_005"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента гелий?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "Гелий имеет порядковый номер 2 в таблице Менделеева.",
+    "id": "chem_006"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается литий?",
+    "options": [
+      "Kr",
+      "N",
+      "Y",
+      "Li"
+    ],
+    "correctIndex": 3,
+    "explanation": "Литий обозначается символом Li.",
+    "id": "chem_007"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Li?",
+    "options": [
+      "Медь",
+      "Бериллий",
+      "Гелий",
+      "Литий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Li соответствует элементу Литий.",
+    "id": "chem_008"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента литий?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "Литий имеет порядковый номер 3 в таблице Менделеева.",
+    "id": "chem_009"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается бериллий?",
+    "options": [
+      "N",
+      "P",
+      "S",
+      "Be"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бериллий обозначается символом Be.",
+    "id": "chem_010"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Be?",
+    "options": [
+      "Селен",
+      "Цирконий",
+      "Гелий",
+      "Бериллий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Be соответствует элементу Бериллий.",
+    "id": "chem_011"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента бериллий?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Бериллий имеет порядковый номер 4 в таблице Менделеева.",
+    "id": "chem_012"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается бор?",
+    "options": [
+      "Rb",
+      "Si",
+      "Sb",
+      "B"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бор обозначается символом B.",
+    "id": "chem_013"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом B?",
+    "options": [
+      "Серебро",
+      "Олово",
+      "Криптон",
+      "Бор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ B соответствует элементу Бор.",
+    "id": "chem_014"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента бор?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "Бор имеет порядковый номер 5 в таблице Менделеева.",
+    "id": "chem_015"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается углерод?",
+    "options": [
+      "Ni",
+      "S",
+      "Zn",
+      "C"
+    ],
+    "correctIndex": 3,
+    "explanation": "Углерод обозначается символом C.",
+    "id": "chem_016"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом C?",
+    "options": [
+      "Иттрий",
+      "Калий",
+      "Платина",
+      "Углерод"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ C соответствует элементу Углерод.",
+    "id": "chem_017"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента углерод?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "explanation": "Углерод имеет порядковый номер 6 в таблице Менделеева.",
+    "id": "chem_018"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается азот?",
+    "options": [
+      "U",
+      "H",
+      "Cs",
+      "N"
+    ],
+    "correctIndex": 3,
+    "explanation": "Азот обозначается символом N.",
+    "id": "chem_019"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом N?",
+    "options": [
+      "Платина",
+      "Магний",
+      "Олово",
+      "Азот"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ N соответствует элементу Азот.",
+    "id": "chem_020"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента азот?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 1,
+    "explanation": "Азот имеет порядковый номер 7 в таблице Менделеева.",
+    "id": "chem_021"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается кислород?",
+    "options": [
+      "Cu",
+      "V",
+      "K",
+      "O"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кислород обозначается символом O.",
+    "id": "chem_022"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом O?",
+    "options": [
+      "Натрий",
+      "Фосфор",
+      "Цезий",
+      "Кислород"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ O соответствует элементу Кислород.",
+    "id": "chem_023"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента кислород?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кислород имеет порядковый номер 8 в таблице Менделеева.",
+    "id": "chem_024"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается фтор?",
+    "options": [
+      "V",
+      "N",
+      "C",
+      "F"
+    ],
+    "correctIndex": 3,
+    "explanation": "Фтор обозначается символом F.",
+    "id": "chem_025"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом F?",
+    "options": [
+      "Железо",
+      "Азот",
+      "Хром",
+      "Фтор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ F соответствует элементу Фтор.",
+    "id": "chem_026"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента фтор?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Фтор имеет порядковый номер 9 в таблице Менделеева.",
+    "id": "chem_027"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается неон?",
+    "options": [
+      "Pb",
+      "Cr",
+      "Zr",
+      "Ne"
+    ],
+    "correctIndex": 3,
+    "explanation": "Неон обозначается символом Ne.",
+    "id": "chem_028"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Ne?",
+    "options": [
+      "Аргон",
+      "Платина",
+      "Литий",
+      "Неон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ne соответствует элементу Неон.",
+    "id": "chem_029"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента неон?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctIndex": 1,
+    "explanation": "Неон имеет порядковый номер 10 в таблице Менделеева.",
+    "id": "chem_030"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается натрий?",
+    "options": [
+      "I",
+      "Ga",
+      "Kr",
+      "Na"
+    ],
+    "correctIndex": 3,
+    "explanation": "Натрий обозначается символом Na.",
+    "id": "chem_031"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Na?",
+    "options": [
+      "Кислород",
+      "Железо",
+      "Углерод",
+      "Натрий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Na соответствует элементу Натрий.",
+    "id": "chem_032"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента натрий?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "Натрий имеет порядковый номер 11 в таблице Менделеева.",
+    "id": "chem_033"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается магний?",
+    "options": [
+      "Rb",
+      "Ca",
+      "Hg",
+      "Mg"
+    ],
+    "correctIndex": 3,
+    "explanation": "Магний обозначается символом Mg.",
+    "id": "chem_034"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Mg?",
+    "options": [
+      "Молибден",
+      "Ниобий",
+      "Уран",
+      "Магний"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Mg соответствует элементу Магний.",
+    "id": "chem_035"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента магний?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Магний имеет порядковый номер 12 в таблице Менделеева.",
+    "id": "chem_036"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается алюминий?",
+    "options": [
+      "Mn",
+      "Sr",
+      "Si",
+      "Al"
+    ],
+    "correctIndex": 3,
+    "explanation": "Алюминий обозначается символом Al.",
+    "id": "chem_037"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Al?",
+    "options": [
+      "Сурьма",
+      "Бор",
+      "Литий",
+      "Алюминий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Al соответствует элементу Алюминий.",
+    "id": "chem_038"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента алюминий?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "correctIndex": 1,
+    "explanation": "Алюминий имеет порядковый номер 13 в таблице Менделеева.",
+    "id": "chem_039"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается кремний?",
+    "options": [
+      "Cd",
+      "S",
+      "Ba",
+      "Si"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кремний обозначается символом Si.",
+    "id": "chem_040"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Si?",
+    "options": [
+      "Кальций",
+      "Углерод",
+      "Свинец",
+      "Кремний"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Si соответствует элементу Кремний.",
+    "id": "chem_041"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента кремний?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кремний имеет порядковый номер 14 в таблице Менделеева.",
+    "id": "chem_042"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается фосфор?",
+    "options": [
+      "S",
+      "U",
+      "N",
+      "P"
+    ],
+    "correctIndex": 3,
+    "explanation": "Фосфор обозначается символом P.",
+    "id": "chem_043"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом P?",
+    "options": [
+      "Железо",
+      "Калий",
+      "Галлий",
+      "Фосфор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ P соответствует элементу Фосфор.",
+    "id": "chem_044"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента фосфор?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "correctIndex": 1,
+    "explanation": "Фосфор имеет порядковый номер 15 в таблице Менделеева.",
+    "id": "chem_045"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается сера?",
+    "options": [
+      "Mo",
+      "Hg",
+      "Mn",
+      "S"
+    ],
+    "correctIndex": 3,
+    "explanation": "Сера обозначается символом S.",
+    "id": "chem_046"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом S?",
+    "options": [
+      "Натрий",
+      "Марганец",
+      "Хром",
+      "Сера"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ S соответствует элементу Сера.",
+    "id": "chem_047"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента сера?",
+    "options": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сера имеет порядковый номер 16 в таблице Менделеева.",
+    "id": "chem_048"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается хлор?",
+    "options": [
+      "Si",
+      "Cd",
+      "K",
+      "Cl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Хлор обозначается символом Cl.",
+    "id": "chem_049"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Cl?",
+    "options": [
+      "Олово",
+      "Индий",
+      "Серебро",
+      "Хлор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Cl соответствует элементу Хлор.",
+    "id": "chem_050"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента хлор?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "Хлор имеет порядковый номер 17 в таблице Менделеева.",
+    "id": "chem_051"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается аргон?",
+    "options": [
+      "B",
+      "Zr",
+      "Mo",
+      "Ar"
+    ],
+    "correctIndex": 3,
+    "explanation": "Аргон обозначается символом Ar.",
+    "id": "chem_052"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Ar?",
+    "options": [
+      "Натрий",
+      "Криптон",
+      "Йод",
+      "Аргон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ar соответствует элементу Аргон.",
+    "id": "chem_053"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента аргон?",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "Аргон имеет порядковый номер 18 в таблице Менделеева.",
+    "id": "chem_054"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается калий?",
+    "options": [
+      "S",
+      "Na",
+      "Ga",
+      "K"
+    ],
+    "correctIndex": 3,
+    "explanation": "Калий обозначается символом K.",
+    "id": "chem_055"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом K?",
+    "options": [
+      "Железо",
+      "Аргон",
+      "Молибден",
+      "Калий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ K соответствует элементу Калий.",
+    "id": "chem_056"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента калий?",
+    "options": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "Калий имеет порядковый номер 19 в таблице Менделеева.",
+    "id": "chem_057"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каким символом обозначается кальций?",
+    "options": [
+      "Sn",
+      "Rb",
+      "P",
+      "Ca"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кальций обозначается символом Ca.",
+    "id": "chem_058"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой химический элемент обозначается символом Ca?",
+    "options": [
+      "Индий",
+      "Титан",
+      "Ртуть",
+      "Кальций"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ca соответствует элементу Кальций.",
+    "id": "chem_059"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Каков порядковый номер элемента кальций?",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кальций имеет порядковый номер 20 в таблице Менделеева.",
+    "id": "chem_060"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается скандий?",
+    "options": [
+      "Ba",
+      "Be",
+      "P",
+      "Sc"
+    ],
+    "correctIndex": 3,
+    "explanation": "Скандий обозначается символом Sc.",
+    "id": "chem_061"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Sc?",
+    "options": [
+      "Золото",
+      "Литий",
+      "Платина",
+      "Скандий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Sc соответствует элементу Скандий.",
+    "id": "chem_062"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента скандий?",
+    "options": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "Скандий имеет порядковый номер 21 в таблице Менделеева.",
+    "id": "chem_063"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается титан?",
+    "options": [
+      "Sc",
+      "Co",
+      "Ar",
+      "Ti"
+    ],
+    "correctIndex": 3,
+    "explanation": "Титан обозначается символом Ti.",
+    "id": "chem_064"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Ti?",
+    "options": [
+      "Бор",
+      "Кремний",
+      "Стронций",
+      "Титан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ti соответствует элементу Титан.",
+    "id": "chem_065"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента титан?",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "Титан имеет порядковый номер 22 в таблице Менделеева.",
+    "id": "chem_066"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается ванадий?",
+    "options": [
+      "Sb",
+      "Sc",
+      "Si",
+      "V"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ванадий обозначается символом V.",
+    "id": "chem_067"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом V?",
+    "options": [
+      "Серебро",
+      "Мышьяк",
+      "Кобальт",
+      "Ванадий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ V соответствует элементу Ванадий.",
+    "id": "chem_068"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента ванадий?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ванадий имеет порядковый номер 23 в таблице Менделеева.",
+    "id": "chem_069"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается хром?",
+    "options": [
+      "Ag",
+      "Ga",
+      "Ne",
+      "Cr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Хром обозначается символом Cr.",
+    "id": "chem_070"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Cr?",
+    "options": [
+      "Хлор",
+      "Фтор",
+      "Сера",
+      "Хром"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Cr соответствует элементу Хром.",
+    "id": "chem_071"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента хром?",
+    "options": [
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "Хром имеет порядковый номер 24 в таблице Менделеева.",
+    "id": "chem_072"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается марганец?",
+    "options": [
+      "Xe",
+      "Rb",
+      "Kr",
+      "Mn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Марганец обозначается символом Mn.",
+    "id": "chem_073"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Mn?",
+    "options": [
+      "Хлор",
+      "Ксенон",
+      "Иттрий",
+      "Марганец"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Mn соответствует элементу Марганец.",
+    "id": "chem_074"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента марганец?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "Марганец имеет порядковый номер 25 в таблице Менделеева.",
+    "id": "chem_075"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается железо?",
+    "options": [
+      "Cu",
+      "Y",
+      "Co",
+      "Fe"
+    ],
+    "correctIndex": 3,
+    "explanation": "Железо обозначается символом Fe.",
+    "id": "chem_076"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Fe?",
+    "options": [
+      "Хром",
+      "Фосфор",
+      "Фтор",
+      "Железо"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Fe соответствует элементу Железо.",
+    "id": "chem_077"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента железо?",
+    "options": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "Железо имеет порядковый номер 26 в таблице Менделеева.",
+    "id": "chem_078"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается кобальт?",
+    "options": [
+      "Se",
+      "As",
+      "C",
+      "Co"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кобальт обозначается символом Co.",
+    "id": "chem_079"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Co?",
+    "options": [
+      "Цезий",
+      "Бериллий",
+      "Уран",
+      "Кобальт"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Co соответствует элементу Кобальт.",
+    "id": "chem_080"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента кобальт?",
+    "options": [
+      "26",
+      "27",
+      "28",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кобальт имеет порядковый номер 27 в таблице Менделеева.",
+    "id": "chem_081"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается никель?",
+    "options": [
+      "O",
+      "Ne",
+      "Mo",
+      "Ni"
+    ],
+    "correctIndex": 3,
+    "explanation": "Никель обозначается символом Ni.",
+    "id": "chem_082"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Ni?",
+    "options": [
+      "Натрий",
+      "Вольфрам",
+      "Индий",
+      "Никель"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ni соответствует элементу Никель.",
+    "id": "chem_083"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента никель?",
+    "options": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "correctIndex": 1,
+    "explanation": "Никель имеет порядковый номер 28 в таблице Менделеева.",
+    "id": "chem_084"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается медь?",
+    "options": [
+      "Ni",
+      "Zr",
+      "B",
+      "Cu"
+    ],
+    "correctIndex": 3,
+    "explanation": "Медь обозначается символом Cu.",
+    "id": "chem_085"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Cu?",
+    "options": [
+      "Марганец",
+      "Цирконий",
+      "Галлий",
+      "Медь"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Cu соответствует элементу Медь.",
+    "id": "chem_086"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента медь?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "Медь имеет порядковый номер 29 в таблице Менделеева.",
+    "id": "chem_087"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается цинк?",
+    "options": [
+      "Br",
+      "Cl",
+      "Rb",
+      "Zn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Цинк обозначается символом Zn.",
+    "id": "chem_088"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Zn?",
+    "options": [
+      "Уран",
+      "Водород",
+      "Индий",
+      "Цинк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Zn соответствует элементу Цинк.",
+    "id": "chem_089"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента цинк?",
+    "options": [
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "correctIndex": 1,
+    "explanation": "Цинк имеет порядковый номер 30 в таблице Менделеева.",
+    "id": "chem_090"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается галлий?",
+    "options": [
+      "I",
+      "O",
+      "In",
+      "Ga"
+    ],
+    "correctIndex": 3,
+    "explanation": "Галлий обозначается символом Ga.",
+    "id": "chem_091"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Ga?",
+    "options": [
+      "Криптон",
+      "Цезий",
+      "Аргон",
+      "Галлий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ga соответствует элементу Галлий.",
+    "id": "chem_092"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента галлий?",
+    "options": [
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "correctIndex": 1,
+    "explanation": "Галлий имеет порядковый номер 31 в таблице Менделеева.",
+    "id": "chem_093"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается германий?",
+    "options": [
+      "Ba",
+      "Ag",
+      "Ti",
+      "Ge"
+    ],
+    "correctIndex": 3,
+    "explanation": "Германий обозначается символом Ge.",
+    "id": "chem_094"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Ge?",
+    "options": [
+      "Кислород",
+      "Калий",
+      "Никель",
+      "Германий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ge соответствует элементу Германий.",
+    "id": "chem_095"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента германий?",
+    "options": [
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Германий имеет порядковый номер 32 в таблице Менделеева.",
+    "id": "chem_096"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается мышьяк?",
+    "options": [
+      "Na",
+      "Zn",
+      "H",
+      "As"
+    ],
+    "correctIndex": 3,
+    "explanation": "Мышьяк обозначается символом As.",
+    "id": "chem_097"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом As?",
+    "options": [
+      "Йод",
+      "Хлор",
+      "Селен",
+      "Мышьяк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ As соответствует элементу Мышьяк.",
+    "id": "chem_098"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента мышьяк?",
+    "options": [
+      "32",
+      "33",
+      "34",
+      "35"
+    ],
+    "correctIndex": 1,
+    "explanation": "Мышьяк имеет порядковый номер 33 в таблице Менделеева.",
+    "id": "chem_099"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается селен?",
+    "options": [
+      "Cs",
+      "Mg",
+      "As",
+      "Se"
+    ],
+    "correctIndex": 3,
+    "explanation": "Селен обозначается символом Se.",
+    "id": "chem_100"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Se?",
+    "options": [
+      "Азот",
+      "Уран",
+      "Молибден",
+      "Селен"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Se соответствует элементу Селен.",
+    "id": "chem_101"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента селен?",
+    "options": [
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "Селен имеет порядковый номер 34 в таблице Менделеева.",
+    "id": "chem_102"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается бром?",
+    "options": [
+      "Ca",
+      "Hg",
+      "Mo",
+      "Br"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бром обозначается символом Br.",
+    "id": "chem_103"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Br?",
+    "options": [
+      "Мышьяк",
+      "Цирконий",
+      "Алюминий",
+      "Бром"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Br соответствует элементу Бром.",
+    "id": "chem_104"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента бром?",
+    "options": [
+      "34",
+      "35",
+      "36",
+      "37"
+    ],
+    "correctIndex": 1,
+    "explanation": "Бром имеет порядковый номер 35 в таблице Менделеева.",
+    "id": "chem_105"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается криптон?",
+    "options": [
+      "Ne",
+      "Cr",
+      "Cs",
+      "Kr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Криптон обозначается символом Kr.",
+    "id": "chem_106"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Kr?",
+    "options": [
+      "Натрий",
+      "Бром",
+      "Барий",
+      "Криптон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Kr соответствует элементу Криптон.",
+    "id": "chem_107"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента криптон?",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "correctIndex": 1,
+    "explanation": "Криптон имеет порядковый номер 36 в таблице Менделеева.",
+    "id": "chem_108"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается рубидий?",
+    "options": [
+      "Se",
+      "H",
+      "Zr",
+      "Rb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Рубидий обозначается символом Rb.",
+    "id": "chem_109"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Rb?",
+    "options": [
+      "Скандий",
+      "Германий",
+      "Гелий",
+      "Рубидий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Rb соответствует элементу Рубидий.",
+    "id": "chem_110"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента рубидий?",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "Рубидий имеет порядковый номер 37 в таблице Менделеева.",
+    "id": "chem_111"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается стронций?",
+    "options": [
+      "O",
+      "Cr",
+      "Hg",
+      "Sr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Стронций обозначается символом Sr.",
+    "id": "chem_112"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Sr?",
+    "options": [
+      "Платина",
+      "Кальций",
+      "Сера",
+      "Стронций"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Sr соответствует элементу Стронций.",
+    "id": "chem_113"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента стронций?",
+    "options": [
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "Стронций имеет порядковый номер 38 в таблице Менделеева.",
+    "id": "chem_114"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается иттрий?",
+    "options": [
+      "Be",
+      "S",
+      "Rb",
+      "Y"
+    ],
+    "correctIndex": 3,
+    "explanation": "Иттрий обозначается символом Y.",
+    "id": "chem_115"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Y?",
+    "options": [
+      "Углерод",
+      "Йод",
+      "Германий",
+      "Иттрий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Y соответствует элементу Иттрий.",
+    "id": "chem_116"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента иттрий?",
+    "options": [
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "correctIndex": 1,
+    "explanation": "Иттрий имеет порядковый номер 39 в таблице Менделеева.",
+    "id": "chem_117"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается цирконий?",
+    "options": [
+      "Au",
+      "B",
+      "Cs",
+      "Zr"
+    ],
+    "correctIndex": 3,
+    "explanation": "Цирконий обозначается символом Zr.",
+    "id": "chem_118"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Zr?",
+    "options": [
+      "Бром",
+      "Барий",
+      "Фтор",
+      "Цирконий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Zr соответствует элементу Цирконий.",
+    "id": "chem_119"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента цирконий?",
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "correctIndex": 1,
+    "explanation": "Цирконий имеет порядковый номер 40 в таблице Менделеева.",
+    "id": "chem_120"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается ниобий?",
+    "options": [
+      "F",
+      "Cd",
+      "Ga",
+      "Nb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ниобий обозначается символом Nb.",
+    "id": "chem_121"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Nb?",
+    "options": [
+      "Криптон",
+      "Натрий",
+      "Хлор",
+      "Ниобий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Nb соответствует элементу Ниобий.",
+    "id": "chem_122"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента ниобий?",
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ниобий имеет порядковый номер 41 в таблице Менделеева.",
+    "id": "chem_123"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается молибден?",
+    "options": [
+      "Se",
+      "U",
+      "Y",
+      "Mo"
+    ],
+    "correctIndex": 3,
+    "explanation": "Молибден обозначается символом Mo.",
+    "id": "chem_124"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Mo?",
+    "options": [
+      "Никель",
+      "Кремний",
+      "Бром",
+      "Молибден"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Mo соответствует элементу Молибден.",
+    "id": "chem_125"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента молибден?",
+    "options": [
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "correctIndex": 1,
+    "explanation": "Молибден имеет порядковый номер 42 в таблице Менделеева.",
+    "id": "chem_126"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается серебро?",
+    "options": [
+      "Cs",
+      "I",
+      "Sn",
+      "Ag"
+    ],
+    "correctIndex": 3,
+    "explanation": "Серебро обозначается символом Ag.",
+    "id": "chem_127"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Ag?",
+    "options": [
+      "Алюминий",
+      "Сурьма",
+      "Кальций",
+      "Серебро"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ag соответствует элементу Серебро.",
+    "id": "chem_128"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента серебро?",
+    "options": [
+      "46",
+      "47",
+      "48",
+      "49"
+    ],
+    "correctIndex": 1,
+    "explanation": "Серебро имеет порядковый номер 47 в таблице Менделеева.",
+    "id": "chem_129"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается кадмий?",
+    "options": [
+      "Fe",
+      "Ag",
+      "Mo",
+      "Cd"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кадмий обозначается символом Cd.",
+    "id": "chem_130"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Cd?",
+    "options": [
+      "Хром",
+      "Медь",
+      "Селен",
+      "Кадмий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Cd соответствует элементу Кадмий.",
+    "id": "chem_131"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента кадмий?",
+    "options": [
+      "47",
+      "48",
+      "49",
+      "50"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кадмий имеет порядковый номер 48 в таблице Менделеева.",
+    "id": "chem_132"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается индий?",
+    "options": [
+      "Cu",
+      "O",
+      "S",
+      "In"
+    ],
+    "correctIndex": 3,
+    "explanation": "Индий обозначается символом In.",
+    "id": "chem_133"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом In?",
+    "options": [
+      "Фосфор",
+      "Бор",
+      "Титан",
+      "Индий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ In соответствует элементу Индий.",
+    "id": "chem_134"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента индий?",
+    "options": [
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "correctIndex": 1,
+    "explanation": "Индий имеет порядковый номер 49 в таблице Менделеева.",
+    "id": "chem_135"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каким символом обозначается олово?",
+    "options": [
+      "He",
+      "Sr",
+      "Kr",
+      "Sn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Олово обозначается символом Sn.",
+    "id": "chem_136"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой химический элемент обозначается символом Sn?",
+    "options": [
+      "Фосфор",
+      "Стронций",
+      "Водород",
+      "Олово"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Sn соответствует элементу Олово.",
+    "id": "chem_137"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Каков порядковый номер элемента олово?",
+    "options": [
+      "49",
+      "50",
+      "51",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "Олово имеет порядковый номер 50 в таблице Менделеева.",
+    "id": "chem_138"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается сурьма?",
+    "options": [
+      "B",
+      "Sn",
+      "Nb",
+      "Sb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Сурьма обозначается символом Sb.",
+    "id": "chem_139"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Sb?",
+    "options": [
+      "Бериллий",
+      "Фосфор",
+      "Бор",
+      "Сурьма"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Sb соответствует элементу Сурьма.",
+    "id": "chem_140"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каков порядковый номер элемента сурьма?",
+    "options": [
+      "50",
+      "51",
+      "52",
+      "53"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сурьма имеет порядковый номер 51 в таблице Менделеева.",
+    "id": "chem_141"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается йод?",
+    "options": [
+      "Li",
+      "U",
+      "Ti",
+      "I"
+    ],
+    "correctIndex": 3,
+    "explanation": "Йод обозначается символом I.",
+    "id": "chem_142"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом I?",
+    "options": [
+      "Бор",
+      "Мышьяк",
+      "Сера",
+      "Йод"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ I соответствует элементу Йод.",
+    "id": "chem_143"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каков порядковый номер элемента йод?",
+    "options": [
+      "52",
+      "53",
+      "54",
+      "55"
+    ],
+    "correctIndex": 1,
+    "explanation": "Йод имеет порядковый номер 53 в таблице Менделеева.",
+    "id": "chem_144"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается ксенон?",
+    "options": [
+      "Ar",
+      "Ag",
+      "Ge",
+      "Xe"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ксенон обозначается символом Xe.",
+    "id": "chem_145"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Xe?",
+    "options": [
+      "Кремний",
+      "Бром",
+      "Фтор",
+      "Ксенон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Xe соответствует элементу Ксенон.",
+    "id": "chem_146"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каков порядковый номер элемента ксенон?",
+    "options": [
+      "53",
+      "54",
+      "55",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ксенон имеет порядковый номер 54 в таблице Менделеева.",
+    "id": "chem_147"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается цезий?",
+    "options": [
+      "Sb",
+      "Rb",
+      "Ga",
+      "Cs"
+    ],
+    "correctIndex": 3,
+    "explanation": "Цезий обозначается символом Cs.",
+    "id": "chem_148"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Cs?",
+    "options": [
+      "Сера",
+      "Вольфрам",
+      "Галлий",
+      "Цезий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Cs соответствует элементу Цезий.",
+    "id": "chem_149"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каков порядковый номер элемента цезий?",
+    "options": [
+      "54",
+      "55",
+      "56",
+      "57"
+    ],
+    "correctIndex": 1,
+    "explanation": "Цезий имеет порядковый номер 55 в таблице Менделеева.",
+    "id": "chem_150"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается барий?",
+    "options": [
+      "Pt",
+      "Co",
+      "Al",
+      "Ba"
+    ],
+    "correctIndex": 3,
+    "explanation": "Барий обозначается символом Ba.",
+    "id": "chem_151"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Ba?",
+    "options": [
+      "Азот",
+      "Серебро",
+      "Никель",
+      "Барий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Ba соответствует элементу Барий.",
+    "id": "chem_152"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каков порядковый номер элемента барий?",
+    "options": [
+      "55",
+      "56",
+      "57",
+      "58"
+    ],
+    "correctIndex": 1,
+    "explanation": "Барий имеет порядковый номер 56 в таблице Менделеева.",
+    "id": "chem_153"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается вольфрам?",
+    "options": [
+      "V",
+      "Ni",
+      "Co",
+      "W"
+    ],
+    "correctIndex": 3,
+    "explanation": "Вольфрам обозначается символом W.",
+    "id": "chem_154"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом W?",
+    "options": [
+      "Цинк",
+      "Уран",
+      "Сурьма",
+      "Вольфрам"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ W соответствует элементу Вольфрам.",
+    "id": "chem_155"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается платина?",
+    "options": [
+      "Be",
+      "Cd",
+      "Mo",
+      "Pt"
+    ],
+    "correctIndex": 3,
+    "explanation": "Платина обозначается символом Pt.",
+    "id": "chem_156"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Pt?",
+    "options": [
+      "Молибден",
+      "Азот",
+      "Бериллий",
+      "Платина"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Pt соответствует элементу Платина.",
+    "id": "chem_157"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается золото?",
+    "options": [
+      "Fe",
+      "Sb",
+      "Ti",
+      "Au"
+    ],
+    "correctIndex": 3,
+    "explanation": "Золото обозначается символом Au.",
+    "id": "chem_158"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Au?",
+    "options": [
+      "Вольфрам",
+      "Уран",
+      "Азот",
+      "Золото"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Au соответствует элементу Золото.",
+    "id": "chem_159"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается ртуть?",
+    "options": [
+      "S",
+      "Al",
+      "Br",
+      "Hg"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ртуть обозначается символом Hg.",
+    "id": "chem_160"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Hg?",
+    "options": [
+      "Медь",
+      "Фтор",
+      "Никель",
+      "Ртуть"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Hg соответствует элементу Ртуть.",
+    "id": "chem_161"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается свинец?",
+    "options": [
+      "Mg",
+      "Ar",
+      "Zn",
+      "Pb"
+    ],
+    "correctIndex": 3,
+    "explanation": "Свинец обозначается символом Pb.",
+    "id": "chem_162"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом Pb?",
+    "options": [
+      "Сера",
+      "Уран",
+      "Бор",
+      "Свинец"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ Pb соответствует элементу Свинец.",
+    "id": "chem_163"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Каким символом обозначается уран?",
+    "options": [
+      "Cu",
+      "W",
+      "Pb",
+      "U"
+    ],
+    "correctIndex": 3,
+    "explanation": "Уран обозначается символом U.",
+    "id": "chem_164"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой химический элемент обозначается символом U?",
+    "options": [
+      "Ртуть",
+      "Криптон",
+      "Азот",
+      "Уран"
+    ],
+    "correctIndex": 3,
+    "explanation": "Символ U соответствует элементу Уран.",
+    "id": "chem_165"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какова химическая формула метан?",
+    "options": [
+      "C₃H₈",
+      "NaHCO₃",
+      "CuSO₄",
+      "CH₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула метан — CH₄.",
+    "id": "chem_166"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какое вещество имеет формулу CH₄?",
+    "options": [
+      "Мел",
+      "Этан",
+      "Бутан",
+      "Метан"
+    ],
+    "correctIndex": 3,
+    "explanation": "CH₄ — это метан.",
+    "id": "chem_167"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула этан?",
+    "options": [
+      "NH₄NO₃",
+      "Na₂B₄O₇",
+      "C₆H₁₂O₆",
+      "C₂H₆"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула этан — C₂H₆.",
+    "id": "chem_168"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу C₂H₆?",
+    "options": [
+      "Метанол",
+      "Фосфорная кислота",
+      "Оксид железа (III)",
+      "Этан"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₆ — это этан.",
+    "id": "chem_169"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула пропан?",
+    "options": [
+      "Fe₂O₃",
+      "C₂H₅OH",
+      "Na₂B₄O₇",
+      "C₃H₈"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула пропан — C₃H₈.",
+    "id": "chem_170"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу C₃H₈?",
+    "options": [
+      "Угольная кислота",
+      "Поваренная соль",
+      "Этан",
+      "Пропан"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₃H₈ — это пропан.",
+    "id": "chem_171"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула бутан?",
+    "options": [
+      "CH₃OH",
+      "H₂CO₃",
+      "CH₄",
+      "C₄H₁₀"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула бутан — C₄H₁₀.",
+    "id": "chem_172"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу C₄H₁₀?",
+    "options": [
+      "Угольная кислота",
+      "Гидроксид натрия",
+      "Гипс",
+      "Бутан"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₄H₁₀ — это бутан.",
+    "id": "chem_173"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула этилен?",
+    "options": [
+      "CaSO₄·2H₂O",
+      "CaO",
+      "KOH",
+      "C₂H₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула этилен — C₂H₄.",
+    "id": "chem_174"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу C₂H₄?",
+    "options": [
+      "Фосфорная кислота",
+      "Фторид кальция",
+      "Силикат натрия",
+      "Этилен"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₄ — это этилен.",
+    "id": "chem_175"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула ацетилен?",
+    "options": [
+      "CaSO₄·2H₂O",
+      "CuSO₄",
+      "Na₂SO₄",
+      "C₂H₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула ацетилен — C₂H₂.",
+    "id": "chem_176"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу C₂H₂?",
+    "options": [
+      "Фторид кальция",
+      "Оксид железа (III)",
+      "Этилен",
+      "Ацетилен"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₂ — это ацетилен.",
+    "id": "chem_177"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула метанол?",
+    "options": [
+      "C₂H₅OH",
+      "KOH",
+      "C₂H₆",
+      "CH₃OH"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула метанол — CH₃OH.",
+    "id": "chem_178"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу CH₃OH?",
+    "options": [
+      "Нитрат серебра",
+      "Силикат натрия",
+      "Сульфат меди",
+      "Метанол"
+    ],
+    "correctIndex": 3,
+    "explanation": "CH₃OH — это метанол.",
+    "id": "chem_179"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула этанол?",
+    "options": [
+      "C₂H₆",
+      "Na₂SiO₃",
+      "HNO₃",
+      "C₂H₅OH"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула этанол — C₂H₅OH.",
+    "id": "chem_180"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу C₂H₅OH?",
+    "options": [
+      "Этан",
+      "Нитрат серебра",
+      "Оксид железа (III)",
+      "Этанол"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₂H₅OH — это этанол.",
+    "id": "chem_181"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула глюкоза?",
+    "options": [
+      "KCl",
+      "Na₂B₄O₇",
+      "C₂H₂",
+      "C₆H₁₂O₆"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула глюкоза — C₆H₁₂O₆.",
+    "id": "chem_182"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу C₆H₁₂O₆?",
+    "options": [
+      "Этан",
+      "Хлорид калия",
+      "Пропан",
+      "Глюкоза"
+    ],
+    "correctIndex": 3,
+    "explanation": "C₆H₁₂O₆ — это глюкоза.",
+    "id": "chem_183"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула гидроксид натрия?",
+    "options": [
+      "Na₂B₄O₇",
+      "C₂H₂",
+      "C₃H₈",
+      "NaOH"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула гидроксид натрия — NaOH.",
+    "id": "chem_184"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу NaOH?",
+    "options": [
+      "Пероксид водорода",
+      "Пропан",
+      "Сульфат натрия",
+      "Гидроксид натрия"
+    ],
+    "correctIndex": 3,
+    "explanation": "NaOH — это гидроксид натрия.",
+    "id": "chem_185"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула гидроксид калия?",
+    "options": [
+      "Na₂B₄O₇",
+      "C₂H₅OH",
+      "H₂CO₃",
+      "KOH"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула гидроксид калия — KOH.",
+    "id": "chem_186"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу KOH?",
+    "options": [
+      "Бутан",
+      "Поваренная соль",
+      "Нитрат серебра",
+      "Гидроксид калия"
+    ],
+    "correctIndex": 3,
+    "explanation": "KOH — это гидроксид калия.",
+    "id": "chem_187"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула азотная кислота?",
+    "options": [
+      "C₂H₅OH",
+      "AgNO₃",
+      "H₂O₂",
+      "HNO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула азотная кислота — HNO₃.",
+    "id": "chem_188"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу HNO₃?",
+    "options": [
+      "Этан",
+      "Пероксид водорода",
+      "Пропан",
+      "Азотная кислота"
+    ],
+    "correctIndex": 3,
+    "explanation": "HNO₃ — это азотная кислота.",
+    "id": "chem_189"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какова химическая формула соляная кислота?",
+    "options": [
+      "H₃PO₄",
+      "Na₂SO₄",
+      "AgNO₃",
+      "HCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула соляная кислота — HCl.",
+    "id": "chem_190"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какое вещество имеет формулу HCl?",
+    "options": [
+      "Нитрат серебра",
+      "Хлорид калия",
+      "Гидроксид калия",
+      "Соляная кислота"
+    ],
+    "correctIndex": 3,
+    "explanation": "HCl — это соляная кислота.",
+    "id": "chem_191"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула угольная кислота?",
+    "options": [
+      "C₆H₁₂O₆",
+      "CH₃OH",
+      "Na₂SO₄",
+      "H₂CO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула угольная кислота — H₂CO₃.",
+    "id": "chem_192"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу H₂CO₃?",
+    "options": [
+      "Фторид кальция",
+      "Гидроксид калия",
+      "Этанол",
+      "Угольная кислота"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₂CO₃ — это угольная кислота.",
+    "id": "chem_193"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула фосфорная кислота?",
+    "options": [
+      "C₆H₁₂O₆",
+      "HCl",
+      "C₂H₄",
+      "H₃PO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула фосфорная кислота — H₃PO₄.",
+    "id": "chem_194"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу H₃PO₄?",
+    "options": [
+      "Сульфат натрия",
+      "Гидрокарбонат натрия",
+      "Гидроксид натрия",
+      "Фосфорная кислота"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₃PO₄ — это фосфорная кислота.",
+    "id": "chem_195"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула оксид кальция?",
+    "options": [
+      "H₃PO₄",
+      "KOH",
+      "NH₄NO₃",
+      "CaO"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула оксид кальция — CaO.",
+    "id": "chem_196"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу CaO?",
+    "options": [
+      "Пропан",
+      "Метан",
+      "Фосфорная кислота",
+      "Оксид кальция"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaO — это оксид кальция.",
+    "id": "chem_197"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула оксид железа (iii)?",
+    "options": [
+      "H₂O₂",
+      "AgNO₃",
+      "C₄H₁₀",
+      "Fe₂O₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула оксид железа (iii) — Fe₂O₃.",
+    "id": "chem_198"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу Fe₂O₃?",
+    "options": [
+      "Пропан",
+      "Сульфат меди",
+      "Метанол",
+      "Оксид железа (III)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fe₂O₃ — это оксид железа (iii).",
+    "id": "chem_199"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула хлорид калия?",
+    "options": [
+      "Fe₂O₃",
+      "C₆H₁₂O₆",
+      "C₂H₄",
+      "KCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула хлорид калия — KCl.",
+    "id": "chem_200"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу KCl?",
+    "options": [
+      "Азотная кислота",
+      "Поваренная соль",
+      "Пропан",
+      "Хлорид калия"
+    ],
+    "correctIndex": 3,
+    "explanation": "KCl — это хлорид калия.",
+    "id": "chem_201"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула сульфат меди?",
+    "options": [
+      "NaCl",
+      "C₂H₅OH",
+      "HNO₃",
+      "CuSO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула сульфат меди — CuSO₄.",
+    "id": "chem_202"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу CuSO₄?",
+    "options": [
+      "Гидроксид натрия",
+      "Ацетилен",
+      "Фосфорная кислота",
+      "Сульфат меди"
+    ],
+    "correctIndex": 3,
+    "explanation": "CuSO₄ — это сульфат меди.",
+    "id": "chem_203"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула нитрат серебра?",
+    "options": [
+      "CaCO₃",
+      "KCl",
+      "CaF₂",
+      "AgNO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула нитрат серебра — AgNO₃.",
+    "id": "chem_204"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу AgNO₃?",
+    "options": [
+      "Гидроксид натрия",
+      "Пероксид водорода",
+      "Гипс",
+      "Нитрат серебра"
+    ],
+    "correctIndex": 3,
+    "explanation": "AgNO₃ — это нитрат серебра.",
+    "id": "chem_205"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула пероксид водорода?",
+    "options": [
+      "NaHCO₃",
+      "Fe₂O₃",
+      "CH₄",
+      "H₂O₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула пероксид водорода — H₂O₂.",
+    "id": "chem_206"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу H₂O₂?",
+    "options": [
+      "Сульфат натрия",
+      "Мел",
+      "Хлорид калия",
+      "Пероксид водорода"
+    ],
+    "correctIndex": 3,
+    "explanation": "H₂O₂ — это пероксид водорода.",
+    "id": "chem_207"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула гидрокарбонат натрия?",
+    "options": [
+      "NaOH",
+      "Na₂SO₄",
+      "C₄H₁₀",
+      "NaHCO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула гидрокарбонат натрия — NaHCO₃.",
+    "id": "chem_208"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу NaHCO₃?",
+    "options": [
+      "Поваренная соль",
+      "Этилен",
+      "Глюкоза",
+      "Гидрокарбонат натрия"
+    ],
+    "correctIndex": 3,
+    "explanation": "NaHCO₃ — это гидрокарбонат натрия.",
+    "id": "chem_209"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какова химическая формула сульфат натрия?",
+    "options": [
+      "C₄H₁₀",
+      "NaCl",
+      "Na₂SiO₃",
+      "Na₂SO₄"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула сульфат натрия — Na₂SO₄.",
+    "id": "chem_210"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какое вещество имеет формулу Na₂SO₄?",
+    "options": [
+      "Хлорид калия",
+      "Этилен",
+      "Глюкоза",
+      "Сульфат натрия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na₂SO₄ — это сульфат натрия.",
+    "id": "chem_211"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула фторид кальция?",
+    "options": [
+      "NaOH",
+      "AgNO₃",
+      "CH₃OH",
+      "CaF₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула фторид кальция — CaF₂.",
+    "id": "chem_212"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу CaF₂?",
+    "options": [
+      "Сульфат натрия",
+      "Гидроксид калия",
+      "Метанол",
+      "Фторид кальция"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaF₂ — это фторид кальция.",
+    "id": "chem_213"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула силикат натрия?",
+    "options": [
+      "NaHCO₃",
+      "H₂O₂",
+      "Na₂B₄O₇",
+      "Na₂SiO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула силикат натрия — Na₂SiO₃.",
+    "id": "chem_214"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу Na₂SiO₃?",
+    "options": [
+      "Глюкоза",
+      "Оксид железа (III)",
+      "Оксид кальция",
+      "Силикат натрия"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na₂SiO₃ — это силикат натрия.",
+    "id": "chem_215"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула аммиачная селитра?",
+    "options": [
+      "C₆H₁₂O₆",
+      "NaCl",
+      "Na₂B₄O₇",
+      "NH₄NO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула аммиачная селитра — NH₄NO₃.",
+    "id": "chem_216"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу NH₄NO₃?",
+    "options": [
+      "Этан",
+      "Пропан",
+      "Пероксид водорода",
+      "Аммиачная селитра"
+    ],
+    "correctIndex": 3,
+    "explanation": "NH₄NO₃ — это аммиачная селитра.",
+    "id": "chem_217"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула гипс?",
+    "options": [
+      "H₂CO₃",
+      "CaCO₃",
+      "C₆H₁₂O₆",
+      "CaSO₄·2H₂O"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула гипс — CaSO₄·2H₂O.",
+    "id": "chem_218"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу CaSO₄·2H₂O?",
+    "options": [
+      "Этан",
+      "Метан",
+      "Гидроксид калия",
+      "Гипс"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaSO₄·2H₂O — это гипс.",
+    "id": "chem_219"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какова химическая формула мел?",
+    "options": [
+      "Na₂SiO₃",
+      "C₂H₄",
+      "H₂O₂",
+      "CaCO₃"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула мел — CaCO₃.",
+    "id": "chem_220"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какое вещество имеет формулу CaCO₃?",
+    "options": [
+      "Глюкоза",
+      "Ацетилен",
+      "Фторид кальция",
+      "Мел"
+    ],
+    "correctIndex": 3,
+    "explanation": "CaCO₃ — это мел.",
+    "id": "chem_221"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какова химическая формула бура?",
+    "options": [
+      "H₃PO₄",
+      "KCl",
+      "Na₂SO₄",
+      "Na₂B₄O₇"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула бура — Na₂B₄O₇.",
+    "id": "chem_222"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какое вещество имеет формулу Na₂B₄O₇?",
+    "options": [
+      "Угольная кислота",
+      "Хлорид калия",
+      "Метан",
+      "Бура"
+    ],
+    "correctIndex": 3,
+    "explanation": "Na₂B₄O₇ — это бура.",
+    "id": "chem_223"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какова химическая формула поваренная соль?",
+    "options": [
+      "C₄H₁₀",
+      "C₃H₈",
+      "Na₂B₄O₇",
+      "NaCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "Формула поваренная соль — NaCl.",
+    "id": "chem_224"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какое вещество имеет формулу NaCl?",
+    "options": [
+      "Сульфат натрия",
+      "Бура",
+      "Этилен",
+      "Поваренная соль"
+    ],
+    "correctIndex": 3,
+    "explanation": "NaCl — это поваренная соль.",
+    "id": "chem_225"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 1?",
+    "options": [
+      "Гелий",
+      "Литий",
+      "Бериллий",
+      "Водород"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 1 — Водород.",
+    "id": "chem_226"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 2?",
+    "options": [
+      "Водород",
+      "Литий",
+      "Бериллий",
+      "Гелий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 2 — Гелий.",
+    "id": "chem_227"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 3?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Бериллий",
+      "Литий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 3 — Литий.",
+    "id": "chem_228"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 4?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Бериллий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 4 — Бериллий.",
+    "id": "chem_229"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 5?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Бор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 5 — Бор.",
+    "id": "chem_230"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 6?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Углерод"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 6 — Углерод.",
+    "id": "chem_231"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 7?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Азот"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 7 — Азот.",
+    "id": "chem_232"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 8?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Кислород"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 8 — Кислород.",
+    "id": "chem_233"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 9?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Фтор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 9 — Фтор.",
+    "id": "chem_234"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 10?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Неон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 10 — Неон.",
+    "id": "chem_235"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 11?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Натрий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 11 — Натрий.",
+    "id": "chem_236"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 12?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Магний"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 12 — Магний.",
+    "id": "chem_237"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 13?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Алюминий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 13 — Алюминий.",
+    "id": "chem_238"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 14?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Кремний"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 14 — Кремний.",
+    "id": "chem_239"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 15?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Фосфор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 15 — Фосфор.",
+    "id": "chem_240"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 16?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Сера"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 16 — Сера.",
+    "id": "chem_241"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 17?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Хлор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 17 — Хлор.",
+    "id": "chem_242"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 18?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Аргон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 18 — Аргон.",
+    "id": "chem_243"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 19?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Калий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 19 — Калий.",
+    "id": "chem_244"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент имеет порядковый номер 20?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Кальций"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 20 — Кальций.",
+    "id": "chem_245"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 21?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Скандий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 21 — Скандий.",
+    "id": "chem_246"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 22?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Титан"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 22 — Титан.",
+    "id": "chem_247"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 23?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Ванадий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 23 — Ванадий.",
+    "id": "chem_248"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 24?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Хром"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 24 — Хром.",
+    "id": "chem_249"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 25?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Марганец"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 25 — Марганец.",
+    "id": "chem_250"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 26?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Железо"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 26 — Железо.",
+    "id": "chem_251"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 27?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Кобальт"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 27 — Кобальт.",
+    "id": "chem_252"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 28?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Никель"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 28 — Никель.",
+    "id": "chem_253"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 29?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Медь"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 29 — Медь.",
+    "id": "chem_254"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 30?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Цинк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 30 — Цинк.",
+    "id": "chem_255"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 31?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Галлий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 31 — Галлий.",
+    "id": "chem_256"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 32?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Германий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 32 — Германий.",
+    "id": "chem_257"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 33?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Мышьяк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 33 — Мышьяк.",
+    "id": "chem_258"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 34?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Селен"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 34 — Селен.",
+    "id": "chem_259"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 35?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Бром"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 35 — Бром.",
+    "id": "chem_260"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 36?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Криптон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 36 — Криптон.",
+    "id": "chem_261"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 37?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Рубидий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 37 — Рубидий.",
+    "id": "chem_262"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 38?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Стронций"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 38 — Стронций.",
+    "id": "chem_263"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 39?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Иттрий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 39 — Иттрий.",
+    "id": "chem_264"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 40?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Цирконий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 40 — Цирконий.",
+    "id": "chem_265"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 41?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Ниобий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 41 — Ниобий.",
+    "id": "chem_266"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 42?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Молибден"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 42 — Молибден.",
+    "id": "chem_267"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 47?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Серебро"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 47 — Серебро.",
+    "id": "chem_268"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 48?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Кадмий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 48 — Кадмий.",
+    "id": "chem_269"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 49?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Индий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 49 — Индий.",
+    "id": "chem_270"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 50?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Олово"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 50 — Олово.",
+    "id": "chem_271"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 51?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Сурьма"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 51 — Сурьма.",
+    "id": "chem_272"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 53?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Йод"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 53 — Йод.",
+    "id": "chem_273"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 54?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Ксенон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 54 — Ксенон.",
+    "id": "chem_274"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 55?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Цезий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 55 — Цезий.",
+    "id": "chem_275"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 56?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Барий"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 56 — Барий.",
+    "id": "chem_276"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 74?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Вольфрам"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 74 — Вольфрам.",
+    "id": "chem_277"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 78?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Платина"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 78 — Платина.",
+    "id": "chem_278"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 79?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Золото"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 79 — Золото.",
+    "id": "chem_279"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 80?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Ртуть"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 80 — Ртуть.",
+    "id": "chem_280"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 82?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Свинец"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 82 — Свинец.",
+    "id": "chem_281"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент имеет порядковый номер 92?",
+    "options": [
+      "Водород",
+      "Гелий",
+      "Литий",
+      "Уран"
+    ],
+    "correctIndex": 3,
+    "explanation": "Номер 92 — Уран.",
+    "id": "chem_282"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой газ необходим для горения?",
+    "options": [
+      "Азот",
+      "Кислород",
+      "Гелий",
+      "Аргон"
+    ],
+    "correctIndex": 1,
+    "explanation": "Горение требует кислорода.",
+    "id": "chem_283"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой газ составляет большую часть атмосферы?",
+    "options": [
+      "Кислород",
+      "Азот",
+      "Углекислый газ",
+      "Водород"
+    ],
+    "correctIndex": 1,
+    "explanation": "Азот — около 78% атмосферы.",
+    "id": "chem_284"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется реакция соединения с кислородом?",
+    "options": [
+      "Гидролиз",
+      "Окисление",
+      "Дистилляция",
+      "Сублимация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Окисление — реакция с кислородом.",
+    "id": "chem_285"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой pH у нейтрального раствора?",
+    "options": [
+      "0",
+      "7",
+      "10",
+      "14"
+    ],
+    "correctIndex": 1,
+    "explanation": "Нейтральный pH равен 7.",
+    "id": "chem_286"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой pH у сильной кислоты (прибл.)?",
+    "options": [
+      "1–3",
+      "7",
+      "10–12",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сильные кислоты имеют низкий pH.",
+    "id": "chem_287"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой pH у щёлочи (прибл.)?",
+    "options": [
+      "1",
+      "5",
+      "7",
+      "11–13"
+    ],
+    "correctIndex": 3,
+    "explanation": "Щёлочи имеют pH выше 7.",
+    "id": "chem_288"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Что такое катализатор?",
+    "options": [
+      "Ускоряет реакцию, не расходуясь",
+      "Замедляет реакцию",
+      "Является продуктом",
+      "Поглощает тепло"
+    ],
+    "correctIndex": 0,
+    "explanation": "Катализатор ускоряет реакцию.",
+    "id": "chem_289"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется переход вещества из твёрдого в газ?",
+    "options": [
+      "Плавление",
+      "Кипение",
+      "Сублимация",
+      "Конденсация"
+    ],
+    "correctIndex": 2,
+    "explanation": "Сублимация — прямой переход твёрдое → газ.",
+    "id": "chem_290"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется переход газа в жидкость?",
+    "options": [
+      "Испарение",
+      "Конденсация",
+      "Сублимация",
+      "Диффузия"
+    ],
+    "correctIndex": 1,
+    "explanation": "Конденсация — газ → жидкость.",
+    "id": "chem_291"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент входит во все органические соединения?",
+    "options": [
+      "Азот",
+      "Углерод",
+      "Кислород",
+      "Сера"
+    ],
+    "correctIndex": 1,
+    "explanation": "Органическая химия изучает соединения углерода.",
+    "id": "chem_292"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется формула H₂O?",
+    "options": [
+      "Водород",
+      "Кислород",
+      "Вода",
+      "Перекись"
+    ],
+    "correctIndex": 2,
+    "explanation": "H₂O — вода.",
+    "id": "chem_293"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ выделяется при реакции кислоты с металлом (часто)?",
+    "options": [
+      "Азот",
+      "Водород",
+      "Гелий",
+      "Аргон"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кислота + металл → соль + водород.",
+    "id": "chem_294"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется соединение кислоты и основания?",
+    "options": [
+      "Соль",
+      "Оксид",
+      "Спирт",
+      "Эфир"
+    ],
+    "correctIndex": 0,
+    "explanation": "Нейтрализация даёт соль и воду.",
+    "id": "chem_295"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой металл жидкий при комнатной температуре?",
+    "options": [
+      "Железо",
+      "Ртуть",
+      "Медь",
+      "Алюминий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ртуть — единственный жидкий металл при 20°C.",
+    "id": "chem_296"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой газ используют в воздушных шарах (лёгкий)?",
+    "options": [
+      "Кислород",
+      "Азот",
+      "Гелий",
+      "Хлор"
+    ],
+    "correctIndex": 2,
+    "explanation": "Гелий легче воздуха.",
+    "id": "chem_297"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется процесс разделения смеси кипением?",
+    "options": [
+      "Фильтрация",
+      "Дистилляция",
+      "Электролиз",
+      "Кристаллизация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Дистилляция основана на разных температурах кипения.",
+    "id": "chem_298"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Au?",
+    "options": [
+      "Серебро",
+      "Золото",
+      "Алюминий",
+      "Медь"
+    ],
+    "correctIndex": 1,
+    "explanation": "Au — золото (лат. aurum).",
+    "id": "chem_299"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Ag?",
+    "options": [
+      "Золото",
+      "Серебро",
+      "Аргон",
+      "Алюминий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ag — серебро (лат. argentum).",
+    "id": "chem_300"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Fe?",
+    "options": [
+      "Фтор",
+      "Железо",
+      "Фосфор",
+      "Франций"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fe — железо (лат. ferrum).",
+    "id": "chem_301"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Cu?",
+    "options": [
+      "Кобальт",
+      "Медь",
+      "Калий",
+      "Криптон"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cu — медь (лат. cuprum).",
+    "id": "chem_302"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Pb?",
+    "options": [
+      "Платина",
+      "Свинец",
+      "Палладий",
+      "Полоний"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pb — свинец (лат. plumbum).",
+    "id": "chem_303"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Sn?",
+    "options": [
+      "Сера",
+      "Олово",
+      "Селен",
+      "Стронций"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sn — олово (лат. stannum).",
+    "id": "chem_304"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается K?",
+    "options": [
+      "Кальций",
+      "Калий",
+      "Криптон",
+      "Кобальт"
+    ],
+    "correctIndex": 1,
+    "explanation": "K — калий (лат. kalium).",
+    "id": "chem_305"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Na?",
+    "options": [
+      "Неон",
+      "Натрий",
+      "Азот",
+      "Никель"
+    ],
+    "correctIndex": 1,
+    "explanation": "Na — натрий (лат. natrium).",
+    "id": "chem_306"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент обозначается W?",
+    "options": [
+      "Вольфрам",
+      "Ванадий",
+      "Водород",
+      "Висмут"
+    ],
+    "correctIndex": 0,
+    "explanation": "W — вольфрам (лат. wolframium).",
+    "id": "chem_307"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент обозначается Hg?",
+    "options": [
+      "Гелий",
+      "Ртуть",
+      "Гафний",
+      "Гольмий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hg — ртуть (лат. hydrargyrum).",
+    "id": "chem_308"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Сколько валентных электронов у благородных газов (кроме He)?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "explanation": "У благородных газов (кроме He) 8 валентных электронов.",
+    "id": "chem_309"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип связи в молекуле NaCl?",
+    "options": [
+      "Ковалентная",
+      "Ионная",
+      "Металлическая",
+      "Водородная"
+    ],
+    "correctIndex": 1,
+    "explanation": "NaCl — типичная ионная связь.",
+    "id": "chem_310"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип связи в молекуле O₂?",
+    "options": [
+      "Ионная",
+      "Ковалентная",
+      "Металлическая",
+      "Ван-дер-Ваальса"
+    ],
+    "correctIndex": 1,
+    "explanation": "O₂ связана ковалентной связью.",
+    "id": "chem_311"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется минимальная частица элемента?",
+    "options": [
+      "Молекула",
+      "Атом",
+      "Ион",
+      "Радикал"
+    ],
+    "correctIndex": 1,
+    "explanation": "Атом — минимальная частица химического элемента.",
+    "id": "chem_312"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется заряженная частица?",
+    "options": [
+      "Атом",
+      "Молекула",
+      "Ион",
+      "Изотоп"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ион — атом или группа атомов с зарядом.",
+    "id": "chem_313"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Что такое изотоп?",
+    "options": [
+      "Атомы с разным числом нейтронов",
+      "Разные элементы",
+      "Молекулы воды",
+      "Ионы металла"
+    ],
+    "correctIndex": 0,
+    "explanation": "Изотопы — один элемент, разное число нейтронов.",
+    "id": "chem_314"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ — парниковый?",
+    "options": [
+      "Азот",
+      "Кислород",
+      "CO₂",
+      "Аргон"
+    ],
+    "correctIndex": 2,
+    "explanation": "Углекислый газ — парниковый газ.",
+    "id": "chem_315"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой металл используют в термометрах?",
+    "options": [
+      "Железо",
+      "Ртуть",
+      "Цинк",
+      "Магний"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ртуть расширяется равномерно при нагреве.",
+    "id": "chem_316"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется реакция разложения воды электричеством?",
+    "options": [
+      "Гидролиз",
+      "Электролиз",
+      "Гидратация",
+      "Дегидратация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Электролиз — разложение вещества током.",
+    "id": "chem_317"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой продукт горения углеводородов при достатке O₂?",
+    "options": [
+      "CO и H₂O",
+      "CO₂ и H₂O",
+      "Только CO₂",
+      "Только H₂O"
+    ],
+    "correctIndex": 1,
+    "explanation": "Полное горение: CO₂ + H₂O.",
+    "id": "chem_318"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой индикатор краснеет в кислой среде?",
+    "options": [
+      "Фенолфталеин",
+      "Лакмус",
+      "Метилоранж",
+      "Оба: лакмус и метилоранж"
+    ],
+    "correctIndex": 3,
+    "explanation": "Лакмус и метилоранж краснеют в кислоте.",
+    "id": "chem_319"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой индикатор синеет в щелочной среде?",
+    "options": [
+      "Лакмус",
+      "Фенолфталеин",
+      "Метилоранж",
+      "Йод"
+    ],
+    "correctIndex": 1,
+    "explanation": "Фенолфталеин бесцветен в кислоте, малиновый в щёлочи.",
+    "id": "chem_320"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется концентрированная серная кислота по формуле?",
+    "options": [
+      "H₂SO₄",
+      "HNO₃",
+      "HCl",
+      "H₃PO₄"
+    ],
+    "correctIndex": 0,
+    "explanation": "Серная кислота — H₂SO₄.",
+    "id": "chem_321"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ имеет запах тухлых яиц?",
+    "options": [
+      "Аммиак",
+      "Сероводород",
+      "Хлор",
+      "Метан"
+    ],
+    "correctIndex": 1,
+    "explanation": "H₂S пахнет тухлыми яйцами.",
+    "id": "chem_322"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ используют для дезинфекции воды?",
+    "options": [
+      "Азот",
+      "Хлор",
+      "Гелий",
+      "Метан"
+    ],
+    "correctIndex": 1,
+    "explanation": "Хлор обеззараживает воду.",
+    "id": "chem_323"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется спирт C₂H₅OH?",
+    "options": [
+      "Метанол",
+      "Этанол",
+      "Глицерин",
+      "Фенол"
+    ],
+    "correctIndex": 1,
+    "explanation": "Этанол — питьевой/технический спирт.",
+    "id": "chem_324"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой спирт ядовит (слепит)?",
+    "options": [
+      "Этанол",
+      "Метанол",
+      "Глицерин",
+      "Пропанол"
+    ],
+    "correctIndex": 1,
+    "explanation": "Метанол (CH₃OH) опасен для зрения.",
+    "id": "chem_325"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется сахар в винограде и фруктах?",
+    "options": [
+      "Сахароза",
+      "Глюкоза",
+      "Крахмал",
+      "Целлюлоза"
+    ],
+    "correctIndex": 1,
+    "explanation": "Глюкоза — простой сахар.",
+    "id": "chem_326"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой полимер известен как «органическое стекло»?",
+    "options": [
+      "Полиэтилен",
+      "Полистирол",
+      "Полиметилметакрилат",
+      "ПВХ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Плексиглас — полиметилметакрилат.",
+    "id": "chem_327"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой газ выделяют растения при фотосинтезе?",
+    "options": [
+      "CO₂",
+      "O₂",
+      "N₂",
+      "H₂"
+    ],
+    "correctIndex": 1,
+    "explanation": "Фотосинтез выделяет кислород.",
+    "id": "chem_328"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой газ поглощают растения при фотосинтезе?",
+    "options": [
+      "O₂",
+      "N₂",
+      "CO₂",
+      "H₂"
+    ],
+    "correctIndex": 2,
+    "explanation": "Растения используют CO₂.",
+    "id": "chem_329"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется процесс «ржавления» железа?",
+    "options": [
+      "Окисление",
+      "Восстановление",
+      "Гидратация",
+      "Полимеризация"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ржавчина — оксид железа.",
+    "id": "chem_330"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой металл покрывают цинком от коррозии?",
+    "options": [
+      "Золото",
+      "Железо",
+      "Медь",
+      "Серебро"
+    ],
+    "correctIndex": 1,
+    "explanation": "Цинкование защищает железо.",
+    "id": "chem_331"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется смесь металла с другими элементами?",
+    "options": [
+      "Соль",
+      "Сплав",
+      "Раствор",
+      "Суспензия"
+    ],
+    "correctIndex": 1,
+    "explanation": "Сплав — смесь металлов.",
+    "id": "chem_332"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Из чего состоит латунь (основа)?",
+    "options": [
+      "Железо и углерод",
+      "Медь и цинк",
+      "Алюминий и магний",
+      "Свинец и олово"
+    ],
+    "correctIndex": 1,
+    "explanation": "Латунь — сплав меди и цинка.",
+    "id": "chem_333"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Из чего состоит бронза (классически)?",
+    "options": [
+      "Медь и олово",
+      "Медь и цинк",
+      "Железо и никель",
+      "Алюминий и кремний"
+    ],
+    "correctIndex": 0,
+    "explanation": "Бронза — медь + олово.",
+    "id": "chem_334"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент необходим для костей и зубов?",
+    "options": [
+      "Натрий",
+      "Кальций",
+      "Калий",
+      "Магний"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кальций важен для костной ткани.",
+    "id": "chem_335"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент входит в гемоглобин?",
+    "options": [
+      "Магний",
+      "Железо",
+      "Цинк",
+      "Медь"
+    ],
+    "correctIndex": 1,
+    "explanation": "Железо связывает кислород в крови.",
+    "id": "chem_336"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ используют в неоновых вывесках (красный)?",
+    "options": [
+      "Аргон",
+      "Неон",
+      "Ксенон",
+      "Криптон"
+    ],
+    "correctIndex": 1,
+    "explanation": "Неон даёт красное свечение.",
+    "id": "chem_337"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Как называется число Аво gadро (прибл.)?",
+    "options": [
+      "6·10²³",
+      "3·10⁸",
+      "9,8",
+      "6,02·10²⁴"
+    ],
+    "correctIndex": 0,
+    "explanation": "6,02·10²³ частиц в одном моле.",
+    "id": "chem_338"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Как называется количество вещества в молях?",
+    "options": [
+      "Масса",
+      "Объём",
+      "Количество вещества",
+      "Плотность"
+    ],
+    "correctIndex": 2,
+    "explanation": "Моль — единица количества вещества.",
+    "id": "chem_339"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой закон: масса реагентов = масса продуктов?",
+    "options": [
+      "Закон сохранения массы",
+      "Закон Ома",
+      "Закон Бойля",
+      "Закон Гука"
+    ],
+    "correctIndex": 0,
+    "explanation": "Закон сохранения массы — Лавуазье.",
+    "id": "chem_340"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется реакция с выделением тепла?",
+    "options": [
+      "Эндотермическая",
+      "Экзотермическая",
+      "Реверсивная",
+      "Каталитическая"
+    ],
+    "correctIndex": 1,
+    "explanation": "Экзотермическая — с выделением тепла.",
+    "id": "chem_341"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется реакция с поглощением тепла?",
+    "options": [
+      "Эндотермическая",
+      "Экзотермическая",
+      "Гидролиз",
+      "Полимеризация"
+    ],
+    "correctIndex": 0,
+    "explanation": "Эндотермическая — поглощает тепло.",
+    "id": "chem_342"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент самый лёгкий?",
+    "options": [
+      "Гелий",
+      "Водород",
+      "Литий",
+      "Углерод"
+    ],
+    "correctIndex": 1,
+    "explanation": "Водород — лёгчайший элемент.",
+    "id": "chem_343"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой элемент самый тяжёлый среди стабильных?",
+    "options": [
+      "Уран",
+      "Свинец",
+      "Вольфрам",
+      "Ртуть"
+    ],
+    "correctIndex": 1,
+    "explanation": "Свинец — конец стабильных элементов.",
+    "id": "chem_344"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется таблица элементов?",
+    "options": [
+      "Таблица Дальтона",
+      "Таблица Менделеева",
+      "Таблица Ньютона",
+      "Таблица Бойля"
+    ],
+    "correctIndex": 1,
+    "explanation": "Периодическая таблица Менделеева.",
+    "id": "chem_345"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Сколько периодов в таблице Менделеева?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "Сейчас 7 периодов.",
+    "id": "chem_346"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ образуется при горении водорода?",
+    "options": [
+      "Азот",
+      "Вода (пар)",
+      "CO₂",
+      "Метан"
+    ],
+    "correctIndex": 1,
+    "explanation": "2H₂ + O₂ → 2H₂O.",
+    "id": "chem_347"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется кислота в желудке?",
+    "options": [
+      "Серная",
+      "Соляная",
+      "Уксусная",
+      "Лимонная"
+    ],
+    "correctIndex": 1,
+    "explanation": "Соляная кислота (HCl) в желудочном соке.",
+    "id": "chem_348"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой витамин содержит аскорбиновая кислота?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "explanation": "Витамин C — аскорбиновая кислота.",
+    "id": "chem_349"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется процесс образования осадка?",
+    "options": [
+      "Дистилляция",
+      "Осаждение",
+      "Сублимация",
+      "Эвапорация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Осаждение — выпадение осадка.",
+    "id": "chem_350"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой металл используют в алюминиевых банках?",
+    "options": [
+      "Железо",
+      "Алюминий",
+      "Олово",
+      "Цинк"
+    ],
+    "correctIndex": 1,
+    "explanation": "Банки из алюминия.",
+    "id": "chem_351"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ — основа природного газа?",
+    "options": [
+      "Этан",
+      "Метан",
+      "Пропан",
+      "Бутан"
+    ],
+    "correctIndex": 1,
+    "explanation": "Метан CH₄ — главный компонент.",
+    "id": "chem_352"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется соль поваренной соли по-научному?",
+    "options": [
+      "Хлорид натрия",
+      "Сульфат натрия",
+      "Нитрат натрия",
+      "Карбонат натрия"
+    ],
+    "correctIndex": 0,
+    "explanation": "NaCl — хлорид натрия.",
+    "id": "chem_353"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой продукт получают при электролизе воды на катоде?",
+    "options": [
+      "Кислород",
+      "Водород",
+      "Азот",
+      "Хлор"
+    ],
+    "correctIndex": 1,
+    "explanation": "На катоде выделяется водород.",
+    "id": "chem_354"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой продукт получают при электролизе воды на аноде?",
+    "options": [
+      "Водород",
+      "Кислород",
+      "Азот",
+      "CO₂"
+    ],
+    "correctIndex": 1,
+    "explanation": "На аноде — кислород.",
+    "id": "chem_355"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Как называется реакция с водой?",
+    "options": [
+      "Гидролиз",
+      "Гидратация",
+      "Дегидратация",
+      "Все перечисленные возможны"
+    ],
+    "correctIndex": 3,
+    "explanation": "С водой связаны гидролиз, гидратация и др.",
+    "id": "chem_356"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент в составе алмаза?",
+    "options": [
+      "Кремний",
+      "Углерод",
+      "Бор",
+      "Азот"
+    ],
+    "correctIndex": 1,
+    "explanation": "Алмаз — форма углерода.",
+    "id": "chem_357"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент в составе кварца?",
+    "options": [
+      "Углерод",
+      "Кремний",
+      "Алюминий",
+      "Железо"
+    ],
+    "correctIndex": 1,
+    "explanation": "SiO₂ — диоксид кремния.",
+    "id": "chem_358"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется кислота в уксусе?",
+    "options": [
+      "Молочная",
+      "Уксусная",
+      "Щавелевая",
+      "Винная"
+    ],
+    "correctIndex": 1,
+    "explanation": "Уксус — разбавленная уксусная кислота.",
+    "id": "chem_359"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой металл используют в монетах (часто с никелем)?",
+    "options": [
+      "Свинец",
+      "Медь",
+      "Ртуть",
+      "Калий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Многие монеты на основе меди.",
+    "id": "chem_360"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется процесс образования полимеров?",
+    "options": [
+      "Гидролиз",
+      "Полимеризация",
+      "Дистилляция",
+      "Кристаллизация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Полимеризация — соединение мономеров.",
+    "id": "chem_361"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой газ пахнет резко и используется в холодильниках (раньше)?",
+    "options": [
+      "Фреон",
+      "Аммиак",
+      "Метан",
+      "Гелий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Аммиак NH₃ — хладагент.",
+    "id": "chem_362"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент входит в состав всех кислот по определению?",
+    "options": [
+      "Кислород",
+      "Водород",
+      "Азот",
+      "Углерод"
+    ],
+    "correctIndex": 1,
+    "explanation": "Классически кислоты содержат H.",
+    "id": "chem_363"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется основание NaOH?",
+    "options": [
+      "Сода",
+      "Едкий натр",
+      "Мел",
+      "Селитра"
+    ],
+    "correctIndex": 1,
+    "explanation": "NaOH — едкий натр (каустическая сода).",
+    "id": "chem_364"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется NaHCO₃ в быту?",
+    "options": [
+      "Сода",
+      "Пищевая сода",
+      "Селитра",
+      "Соль"
+    ],
+    "correctIndex": 1,
+    "explanation": "Пищевая сода — гидрокарбонат натрия.",
+    "id": "chem_365"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой цвет пламени у меди в солях?",
+    "options": [
+      "Жёлтый",
+      "Зелёный",
+      "Красный",
+      "Синий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Медь даёт зеленоватое пламя.",
+    "id": "chem_366"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой цвет пламени у натрия?",
+    "options": [
+      "Зелёный",
+      "Жёлтый",
+      "Красный",
+      "Фиолетовый"
+    ],
+    "correctIndex": 1,
+    "explanation": "Натрий — характерный жёлтый цвет.",
+    "id": "chem_367"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой цвет пламени у калия?",
+    "options": [
+      "Жёлтый",
+      "Зелёный",
+      "Лиловый",
+      "Оранжевый"
+    ],
+    "correctIndex": 2,
+    "explanation": "Калий — лиловое пламя.",
+    "id": "chem_368"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой цвет пламени у кальция?",
+    "options": [
+      "Красный",
+      "Кирпично-красный",
+      "Синий",
+      "Белый"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кальций — кирпично-красный.",
+    "id": "chem_369"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется смесь, где видны все компоненты?",
+    "options": [
+      "Раствор",
+      "Суспензия",
+      "Эмульсия",
+      "Сплав"
+    ],
+    "correctIndex": 1,
+    "explanation": "Суспензия — несмешивающиеся частицы.",
+    "id": "chem_370"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется однородная смесь?",
+    "options": [
+      "Суспензия",
+      "Раствор",
+      "Осадок",
+      "Кристалл"
+    ],
+    "correctIndex": 1,
+    "explanation": "Раствор — однородная смесь.",
+    "id": "chem_371"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой растворитель называют «универсальным»?",
+    "options": [
+      "Масло",
+      "Вода",
+      "Спирт",
+      "Бензин"
+    ],
+    "correctIndex": 1,
+    "explanation": "Вода — важнейший растворитель.",
+    "id": "chem_372"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Как называется насыщенный раствор?",
+    "options": [
+      "С избытком растворённого вещества",
+      "Максимальная концентрация при данной T",
+      "Пустой раствор",
+      "Концентрированная кислота"
+    ],
+    "correctIndex": 1,
+    "explanation": "Насыщенный — больше не растворяется.",
+    "id": "chem_373"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой газ используют в огнетушителях (часто)?",
+    "options": [
+      "Кислород",
+      "CO₂",
+      "Метан",
+      "Водород"
+    ],
+    "correctIndex": 1,
+    "explanation": "CO₂ вытесняет кислород.",
+    "id": "chem_374"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Как называется реакция кислоты с основанием?",
+    "options": [
+      "Нейтрализация",
+      "Горение",
+      "Полимеризация",
+      "Ферментация"
+    ],
+    "correctIndex": 0,
+    "explanation": "Кислота + основание → соль + вода.",
+    "id": "chem_375"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент входит в состав белка?",
+    "options": [
+      "Только углерод",
+      "C, H, O, N",
+      "Только азот",
+      "Только кислород"
+    ],
+    "correctIndex": 1,
+    "explanation": "Белки содержат C, H, O, N и др.",
+    "id": "chem_376"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется процесс брожения сахара?",
+    "options": [
+      "Дистилляция",
+      "Ферментация",
+      "Электролиз",
+      "Сублимация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ферментация — брожение.",
+    "id": "chem_377"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой продукт брожения винограда?",
+    "options": [
+      "Пиво",
+      "Вино",
+      "Хлеб",
+      "Сыр"
+    ],
+    "correctIndex": 1,
+    "explanation": "Вино — результат брожения.",
+    "id": "chem_378"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой газ выделяется при брожении теста?",
+    "options": [
+      "Кислород",
+      "CO₂",
+      "Азот",
+      "Водород"
+    ],
+    "correctIndex": 1,
+    "explanation": "Дрожжи выделяют CO₂ — тесто поднимается.",
+    "id": "chem_379"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется химическая формула озона?",
+    "options": [
+      "O",
+      "O₂",
+      "O₃",
+      "O₄"
+    ],
+    "correctIndex": 2,
+    "explanation": "Озон — O₃.",
+    "id": "chem_380"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой слой атмосферы содержит озон?",
+    "options": [
+      "Тропосфера",
+      "Стратосфера",
+      "Мезосфера",
+      "Термосфера"
+    ],
+    "correctIndex": 1,
+    "explanation": "Озоновый слой в стратосфере.",
+    "id": "chem_381"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется реакция разложения на простые вещества?",
+    "options": [
+      "Синтез",
+      "Разложение",
+      "Замещение",
+      "Обмен"
+    ],
+    "correctIndex": 1,
+    "explanation": "Разложение — один реагент → несколько продуктов.",
+    "id": "chem_382"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется реакция соединения простых веществ?",
+    "options": [
+      "Синтез",
+      "Гидролиз",
+      "Дистилляция",
+      "Кристаллизация"
+    ],
+    "correctIndex": 0,
+    "explanation": "Синтез — образование сложного вещества.",
+    "id": "chem_383"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой металл активнее реагирует с кислотой?",
+    "options": [
+      "Золото",
+      "Натрий",
+      "Медь",
+      "Серебро"
+    ],
+    "correctIndex": 1,
+    "explanation": "Щелочные металлы очень активны.",
+    "id": "chem_384"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Какой металл не реагирует с разбавленной HCl?",
+    "options": [
+      "Цинк",
+      "Железо",
+      "Медь",
+      "Магний"
+    ],
+    "correctIndex": 2,
+    "explanation": "Медь не вытесняет водород из HCl.",
+    "id": "chem_385"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Как называется перенос электронов между реагентами?",
+    "options": [
+      "Окислительно-восстановительная",
+      "Кислотно-основная",
+      "Полимеризация",
+      "Гидратация"
+    ],
+    "correctIndex": 0,
+    "explanation": "ОВР — перенос электронов.",
+    "id": "chem_386"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент — основа кремниевой электроники?",
+    "options": [
+      "Углерод",
+      "Кремний",
+      "Германий",
+      "Медь"
+    ],
+    "correctIndex": 1,
+    "explanation": "Кремний — полупроводник.",
+    "id": "chem_387"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Как называется формула аммиака?",
+    "options": [
+      "NH₃",
+      "NO₂",
+      "N₂O",
+      "HNO₃"
+    ],
+    "correctIndex": 0,
+    "explanation": "Аммиак — NH₃.",
+    "id": "chem_388"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой запах у аммиака?",
+    "options": [
+      "Сладкий",
+      "Резкий щелочной",
+      "Тухлых яиц",
+      "Без запаха"
+    ],
+    "correctIndex": 1,
+    "explanation": "NH₃ — резкий запах.",
+    "id": "chem_389"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Как называется удобрение с азотом (пример)?",
+    "options": [
+      "Суперфосфат",
+      "Аммиачная селитра",
+      "Калийная соль",
+      "Известь"
+    ],
+    "correctIndex": 1,
+    "explanation": "NH₄NO₃ — азотное удобрение.",
+    "id": "chem_390"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Si?",
+    "options": [
+      "Сера",
+      "Кремний",
+      "Селен",
+      "Скандий"
+    ],
+    "correctIndex": 1,
+    "explanation": "Si — кремний.",
+    "id": "chem_391"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается S?",
+    "options": [
+      "Селен",
+      "Сера",
+      "Скандий",
+      "Серебро"
+    ],
+    "correctIndex": 1,
+    "explanation": "S — сера.",
+    "id": "chem_392"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается P?",
+    "options": [
+      "Платина",
+      "Фосфор",
+      "Полоний",
+      "Празеодим"
+    ],
+    "correctIndex": 1,
+    "explanation": "P — фосфор.",
+    "id": "chem_393"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Cl?",
+    "options": [
+      "Хром",
+      "Хлор",
+      "Кальций",
+      "Кобальт"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cl — хлор.",
+    "id": "chem_394"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Zn?",
+    "options": [
+      "Цирконий",
+      "Цинк",
+      "Золото",
+      "Ксенон"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zn — цинк.",
+    "id": "chem_395"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Al?",
+    "options": [
+      "Аргон",
+      "Алюминий",
+      "Актиний",
+      "Астат"
+    ],
+    "correctIndex": 1,
+    "explanation": "Al — алюминий.",
+    "id": "chem_396"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Mg?",
+    "options": [
+      "Марганец",
+      "Магний",
+      "Молибден",
+      "Медь"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mg — магний.",
+    "id": "chem_397"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Какой элемент обозначается Ca?",
+    "options": [
+      "Кальций",
+      "Калий",
+      "Кадмий",
+      "Кобальт"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ca — кальций.",
+    "id": "chem_398"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент обозначается Ti?",
+    "options": [
+      "Таллий",
+      "Титан",
+      "Торий",
+      "Теллур"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ti — титан.",
+    "id": "chem_399"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Какой элемент обозначается Cr?",
+    "options": [
+      "Хром",
+      "Хлор",
+      "Цезий",
+      "Криптон"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cr — хром.",
+    "id": "chem_400"
+  }
+]

@@ -1,0 +1,5594 @@
+[
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 14 м/с²?",
+    "options": [
+      "420",
+      "450",
+      "44",
+      "419"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 30·14 = 420 Н.",
+    "id": "physics_001"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 6 м/с²?",
+    "options": [
+      "12",
+      "11",
+      "8",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 2·6 = 12 Н.",
+    "id": "physics_002"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 2 м/с²?",
+    "options": [
+      "59",
+      "58",
+      "57",
+      "31"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 29·2 = 58 Н.",
+    "id": "physics_003"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Какой учёный связан с открытием/изучением периодическую таблицу?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Менделеев"
+    ],
+    "correctIndex": 3,
+    "explanation": "Менделеев внёс вклад в изучение периодическую таблицу.",
+    "id": "physics_004"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 14 м/с²?",
+    "options": [
+      "280",
+      "281",
+      "300",
+      "34"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 20·14 = 280 Н.",
+    "id": "physics_005"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Как называется отклонение света на границе сред?",
+    "options": [
+      "Дифракция",
+      "Преломление",
+      "Интерференция",
+      "Поляризация"
+    ],
+    "correctIndex": 1,
+    "explanation": "Это преломление света.",
+    "id": "physics_006"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 1 м/с²?",
+    "options": [
+      "44",
+      "21",
+      "23",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·1 = 22 Н.",
+    "id": "physics_007"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 6 м/с²?",
+    "options": [
+      "31",
+      "149",
+      "175",
+      "150"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 25·6 = 150 Н.",
+    "id": "physics_008"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 15 м/с²?",
+    "options": [
+      "390",
+      "416",
+      "41",
+      "389"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 26·15 = 390 Н.",
+    "id": "physics_009"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 4 м/с²?",
+    "options": [
+      "110",
+      "89",
+      "88",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 22·4 = 88 Н.",
+    "id": "physics_010"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 11 м/с²?",
+    "options": [
+      "198",
+      "216",
+      "197",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 18·11 = 198 Н.",
+    "id": "physics_011"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "В каких единицах СИ измеряется напряжение?",
+    "options": [
+      "ватт",
+      "ньютон",
+      "паскаль",
+      "вольт"
+    ],
+    "correctIndex": 3,
+    "explanation": "Напряжение измеряется в вольтах (СИ).",
+    "id": "physics_012"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 13 м/с²?",
+    "options": [
+      "336",
+      "312",
+      "37",
+      "313"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 24·13 = 312 Н.",
+    "id": "physics_013"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 13 м/с²?",
+    "options": [
+      "300",
+      "322",
+      "298",
+      "299"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 23·13 = 299 Н.",
+    "id": "physics_014"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 6 м/с²?",
+    "options": [
+      "34",
+      "196",
+      "168",
+      "169"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 28·6 = 168 Н.",
+    "id": "physics_015"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 10 м/с²?",
+    "options": [
+      "88",
+      "18",
+      "81",
+      "80"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 8·10 = 80 Н.",
+    "id": "physics_016"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 5 м/с²?",
+    "options": [
+      "136",
+      "162",
+      "135",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 27·5 = 135 Н.",
+    "id": "physics_017"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением падение тел и инерцию?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Галилей"
+    ],
+    "correctIndex": 3,
+    "explanation": "Галилей внёс вклад в изучение падение тел и инерцию.",
+    "id": "physics_018"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 11 м/с²?",
+    "options": [
+      "33",
+      "32",
+      "34",
+      "36"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·11 = 33 Н.",
+    "id": "physics_019"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равно g на Земле (прибл.)?",
+    "options": [
+      "1 м/с²",
+      "5 м/с²",
+      "9,8 м/с²",
+      "20 м/с²"
+    ],
+    "correctIndex": 2,
+    "explanation": "g ≈ 9,8 м/с².",
+    "id": "physics_020"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Скорость звука в воздухе (прибл.)?",
+    "options": [
+      "30 м/с",
+      "150 м/с",
+      "340 м/с",
+      "1000 м/с"
+    ],
+    "correctIndex": 2,
+    "explanation": "Около 340 м/с.",
+    "id": "physics_021"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 10 м/с²?",
+    "options": [
+      "41",
+      "14",
+      "44",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 4·10 = 40 Н.",
+    "id": "physics_022"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 1 м/с²?",
+    "options": [
+      "10",
+      "20",
+      "9",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 10·1 = 10 Н.",
+    "id": "physics_023"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "В каких единицах СИ измеряется массу?",
+    "options": [
+      "Ньютон",
+      "Джоуль",
+      "Ватт",
+      "килограмм"
+    ],
+    "correctIndex": 3,
+    "explanation": "Массу измеряется в килограммах (СИ).",
+    "id": "physics_024"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 9 м/с²?",
+    "options": [
+      "90",
+      "89",
+      "19",
+      "91"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 10·9 = 90 Н.",
+    "id": "physics_025"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 11 м/с²?",
+    "options": [
+      "300",
+      "274",
+      "276",
+      "275"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 25·11 = 275 Н.",
+    "id": "physics_026"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 8 м/с²?",
+    "options": [
+      "225",
+      "36",
+      "224",
+      "252"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 28·8 = 224 Н.",
+    "id": "physics_027"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 10 м/с²?",
+    "options": [
+      "259",
+      "260",
+      "261",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 26·10 = 260 Н.",
+    "id": "physics_028"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 2 м/с²?",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "6"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 2·2 = 4 Н.",
+    "id": "physics_029"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 1 м/с²?",
+    "options": [
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 1·1 = 1 Н.",
+    "id": "physics_030"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 7 м/с²?",
+    "options": [
+      "174",
+      "32",
+      "175",
+      "176"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 25·7 = 175 Н.",
+    "id": "physics_031"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 10 м/с²?",
+    "options": [
+      "132",
+      "22",
+      "121",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 12·10 = 120 Н.",
+    "id": "physics_032"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 15 м/с²?",
+    "options": [
+      "23",
+      "128",
+      "120",
+      "121"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 8·15 = 120 Н.",
+    "id": "physics_033"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 5 м/с²?",
+    "options": [
+      "29",
+      "11",
+      "36",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 6·5 = 30 Н.",
+    "id": "physics_034"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 7 м/с²?",
+    "options": [
+      "18",
+      "77",
+      "76",
+      "88"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 11·7 = 77 Н.",
+    "id": "physics_035"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 6 м/с²?",
+    "options": [
+      "30",
+      "144",
+      "145",
+      "168"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 24·6 = 144 Н.",
+    "id": "physics_036"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 2 м/с²?",
+    "options": [
+      "32",
+      "48",
+      "18",
+      "33"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 16·2 = 32 Н.",
+    "id": "physics_037"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 7 м/с²?",
+    "options": [
+      "203",
+      "232",
+      "204",
+      "202"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 29·7 = 203 Н.",
+    "id": "physics_038"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 1 м/с²?",
+    "options": [
+      "5",
+      "10",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 5·1 = 5 Н.",
+    "id": "physics_039"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 2 м/с²?",
+    "options": [
+      "53",
+      "54",
+      "81",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 27·2 = 54 Н.",
+    "id": "physics_040"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "В каких единицах СИ измеряется время?",
+    "options": [
+      "метр",
+      "ампер",
+      "моль",
+      "секунда"
+    ],
+    "correctIndex": 3,
+    "explanation": "Время измеряется в секундаах (СИ).",
+    "id": "physics_041"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 13 м/с²?",
+    "options": [
+      "182",
+      "27",
+      "181",
+      "196"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 14·13 = 182 Н.",
+    "id": "physics_042"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 3 м/с²?",
+    "options": [
+      "27",
+      "26",
+      "28",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 9·3 = 27 Н.",
+    "id": "physics_043"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Какой прибор измеряет силу тока?",
+    "options": [
+      "Вольтметр",
+      "Амперметр",
+      "Омметр",
+      "Барометр"
+    ],
+    "correctIndex": 1,
+    "explanation": "Амперметр измеряет ток.",
+    "id": "physics_044"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 6 м/с²?",
+    "options": [
+      "59",
+      "61",
+      "60",
+      "16"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 10·6 = 60 Н.",
+    "id": "physics_045"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "В каких единицах СИ измеряется световой поток?",
+    "options": [
+      "люкс",
+      "кандела",
+      "герц",
+      "люмен"
+    ],
+    "correctIndex": 3,
+    "explanation": "Световой поток измеряется в люменах (СИ).",
+    "id": "physics_046"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Какой учёный связан с открытием/изучением квантовую теорию?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Планк"
+    ],
+    "correctIndex": 3,
+    "explanation": "Планк внёс вклад в изучение квантовую теорию.",
+    "id": "physics_047"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 15 м/с²?",
+    "options": [
+      "19",
+      "60",
+      "64",
+      "59"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 4·15 = 60 Н.",
+    "id": "physics_048"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 8 м/с²?",
+    "options": [
+      "23",
+      "120",
+      "135",
+      "121"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 15·8 = 120 Н.",
+    "id": "physics_049"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 14 м/с²?",
+    "options": [
+      "435",
+      "406",
+      "43",
+      "405"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 29·14 = 406 Н.",
+    "id": "physics_050"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 4 м/с²?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 2·4 = 8 Н.",
+    "id": "physics_051"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 13 м/с²?",
+    "options": [
+      "29",
+      "208",
+      "224",
+      "209"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 16·13 = 208 Н.",
+    "id": "physics_052"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 14 м/с²?",
+    "options": [
+      "154",
+      "153",
+      "155",
+      "165"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 11·14 = 154 Н.",
+    "id": "physics_053"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "В каких единицах СИ измеряется силу?",
+    "options": [
+      "Джоуль",
+      "Ватт",
+      "Паскаль",
+      "Ньютон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Силу измеряется в Ньютонах (СИ).",
+    "id": "physics_054"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 15 м/с²?",
+    "options": [
+      "368",
+      "346",
+      "344",
+      "345"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 23·15 = 345 Н.",
+    "id": "physics_055"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 12 м/с²?",
+    "options": [
+      "145",
+      "156",
+      "24",
+      "144"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 12·12 = 144 Н.",
+    "id": "physics_056"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 11 м/с²?",
+    "options": [
+      "336",
+      "309",
+      "307",
+      "308"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 28·11 = 308 Н.",
+    "id": "physics_057"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 4 м/с²?",
+    "options": [
+      "113",
+      "112",
+      "32",
+      "140"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 28·4 = 112 Н.",
+    "id": "physics_058"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 1 м/с²?",
+    "options": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 2·1 = 2 Н.",
+    "id": "physics_059"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 1 м/с²?",
+    "options": [
+      "9",
+      "10",
+      "18",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 9·1 = 9 Н.",
+    "id": "physics_060"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 3 м/с²?",
+    "options": [
+      "58",
+      "76",
+      "57",
+      "56"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 19·3 = 57 Н.",
+    "id": "physics_061"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 4 м/с²?",
+    "options": [
+      "53",
+      "52",
+      "51",
+      "65"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 13·4 = 52 Н.",
+    "id": "physics_062"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 2 м/с²?",
+    "options": [
+      "52",
+      "51",
+      "53",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 26·2 = 52 Н.",
+    "id": "physics_063"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 10 м/с²?",
+    "options": [
+      "29",
+      "209",
+      "189",
+      "190"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 19·10 = 190 Н.",
+    "id": "physics_064"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "При какой температуре замерзает вода (°C)?",
+    "options": [
+      "-10",
+      "0",
+      "4",
+      "10"
+    ],
+    "correctIndex": 1,
+    "explanation": "0°C.",
+    "id": "physics_065"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 5 м/с²?",
+    "options": [
+      "9",
+      "20",
+      "24",
+      "19"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 4·5 = 20 Н.",
+    "id": "physics_066"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 3 м/с²?",
+    "options": [
+      "11",
+      "24",
+      "32",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 8·3 = 24 Н.",
+    "id": "physics_067"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 2 м/с²?",
+    "options": [
+      "9",
+      "13",
+      "21",
+      "14"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·2 = 14 Н.",
+    "id": "physics_068"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 12 м/с²?",
+    "options": [
+      "132",
+      "131",
+      "133",
+      "23"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 11·12 = 132 Н.",
+    "id": "physics_069"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 15 м/с²?",
+    "options": [
+      "176",
+      "164",
+      "165",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 11·15 = 165 Н.",
+    "id": "physics_070"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 12 м/с²?",
+    "options": [
+      "377",
+      "347",
+      "349",
+      "348"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 29·12 = 348 Н.",
+    "id": "physics_071"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 3 м/с²?",
+    "options": [
+      "9",
+      "8",
+      "12",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·3 = 9 Н.",
+    "id": "physics_072"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 13 м/с²?",
+    "options": [
+      "377",
+      "42",
+      "376",
+      "378"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 29·13 = 377 Н.",
+    "id": "physics_073"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 10 м/с²?",
+    "options": [
+      "131",
+      "129",
+      "130",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 13·10 = 130 Н.",
+    "id": "physics_074"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 10 м/с²?",
+    "options": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 1·10 = 10 Н.",
+    "id": "physics_075"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 11 м/с²?",
+    "options": [
+      "297",
+      "298",
+      "324",
+      "296"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 27·11 = 297 Н.",
+    "id": "physics_076"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 12 м/с²?",
+    "options": [
+      "155",
+      "157",
+      "156",
+      "169"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 13·12 = 156 Н.",
+    "id": "physics_077"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 7 м/с²?",
+    "options": [
+      "15",
+      "64",
+      "56",
+      "57"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 8·7 = 56 Н.",
+    "id": "physics_078"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 11 м/с²?",
+    "options": [
+      "121",
+      "120",
+      "132",
+      "122"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 11·11 = 121 Н.",
+    "id": "physics_079"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Какой учёный связан с открытием/изучением модель атома?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Бор"
+    ],
+    "correctIndex": 3,
+    "explanation": "Бор внёс вклад в изучение модель атома.",
+    "id": "physics_080"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 13 м/с²?",
+    "options": [
+      "39",
+      "42",
+      "16",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·13 = 39 Н.",
+    "id": "physics_081"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 15 м/с²?",
+    "options": [
+      "31",
+      "241",
+      "256",
+      "240"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 16·15 = 240 Н.",
+    "id": "physics_082"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 9 м/с²?",
+    "options": [
+      "153",
+      "170",
+      "152",
+      "154"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 17·9 = 153 Н.",
+    "id": "physics_083"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "В каких единицах СИ измеряется электрический ток?",
+    "options": [
+      "вольт",
+      "ом",
+      "ватт",
+      "ампер"
+    ],
+    "correctIndex": 3,
+    "explanation": "Электрический ток измеряется в амперах (СИ).",
+    "id": "physics_084"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 4 м/с²?",
+    "options": [
+      "100",
+      "29",
+      "99",
+      "125"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 25·4 = 100 Н.",
+    "id": "physics_085"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 4 м/с²?",
+    "options": [
+      "104",
+      "105",
+      "130",
+      "30"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 26·4 = 104 Н.",
+    "id": "physics_086"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 15 м/с²?",
+    "options": [
+      "160",
+      "25",
+      "149",
+      "150"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 10·15 = 150 Н.",
+    "id": "physics_087"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 13 м/с²?",
+    "options": [
+      "35",
+      "285",
+      "286",
+      "308"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 22·13 = 286 Н.",
+    "id": "physics_088"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 9 м/с²?",
+    "options": [
+      "198",
+      "220",
+      "31",
+      "197"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 22·9 = 198 Н.",
+    "id": "physics_089"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 3 м/с²?",
+    "options": [
+      "48",
+      "19",
+      "64",
+      "49"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 16·3 = 48 Н.",
+    "id": "physics_090"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 6 м/с²?",
+    "options": [
+      "29",
+      "35",
+      "30",
+      "11"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 5·6 = 30 Н.",
+    "id": "physics_091"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 14 м/с²?",
+    "options": [
+      "238",
+      "255",
+      "31",
+      "237"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 17·14 = 238 Н.",
+    "id": "physics_092"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 3 м/с²?",
+    "options": [
+      "43",
+      "42",
+      "41",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 14·3 = 42 Н.",
+    "id": "physics_093"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 3 м/с²?",
+    "options": [
+      "36",
+      "35",
+      "37",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 12·3 = 36 Н.",
+    "id": "physics_094"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 14 м/с²?",
+    "options": [
+      "336",
+      "38",
+      "360",
+      "337"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 24·14 = 336 Н.",
+    "id": "physics_095"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 1 м/с²?",
+    "options": [
+      "9",
+      "16",
+      "8",
+      "7"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 8·1 = 8 Н.",
+    "id": "physics_096"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 11 м/с²?",
+    "options": [
+      "24",
+      "143",
+      "156",
+      "144"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 13·11 = 143 Н.",
+    "id": "physics_097"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 7 м/с²?",
+    "options": [
+      "80",
+      "17",
+      "69",
+      "70"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 10·7 = 70 Н.",
+    "id": "physics_098"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 9 м/с²?",
+    "options": [
+      "216",
+      "240",
+      "33",
+      "217"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 24·9 = 216 Н.",
+    "id": "physics_099"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 11 м/с²?",
+    "options": [
+      "220",
+      "219",
+      "221",
+      "240"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 20·11 = 220 Н.",
+    "id": "physics_100"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 1 м/с²?",
+    "options": [
+      "42",
+      "20",
+      "22",
+      "21"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 21·1 = 21 Н.",
+    "id": "physics_101"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 6 м/с²?",
+    "options": [
+      "119",
+      "101",
+      "102",
+      "23"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 17·6 = 102 Н.",
+    "id": "physics_102"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 6 м/с²?",
+    "options": [
+      "35",
+      "36",
+      "12",
+      "42"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 6·6 = 36 Н.",
+    "id": "physics_103"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Что описывает третий закон Ньютона?",
+    "options": [
+      "F=ma",
+      "Инерцию",
+      "Действие = противодействие",
+      "Энергию"
+    ],
+    "correctIndex": 2,
+    "explanation": "Силы действия и противодействия равны.",
+    "id": "physics_104"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 2 м/с²?",
+    "options": [
+      "7",
+      "6",
+      "9",
+      "5"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 3·2 = 6 Н.",
+    "id": "physics_105"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 14 м/с²?",
+    "options": [
+      "330",
+      "308",
+      "307",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 22·14 = 308 Н.",
+    "id": "physics_106"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 10 м/с²?",
+    "options": [
+      "299",
+      "330",
+      "40",
+      "300"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 30·10 = 300 Н.",
+    "id": "physics_107"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 14 м/с²?",
+    "options": [
+      "40",
+      "364",
+      "365",
+      "363"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 26·14 = 364 Н.",
+    "id": "physics_108"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 5 м/с²?",
+    "options": [
+      "115",
+      "28",
+      "116",
+      "114"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 23·5 = 115 Н.",
+    "id": "physics_109"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 13 м/с²?",
+    "options": [
+      "25",
+      "156",
+      "168",
+      "155"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 12·13 = 156 Н.",
+    "id": "physics_110"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 8 м/с²?",
+    "options": [
+      "153",
+      "25",
+      "137",
+      "136"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 17·8 = 136 Н.",
+    "id": "physics_111"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 10 м/с²?",
+    "options": [
+      "241",
+      "240",
+      "34",
+      "264"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 24·10 = 240 Н.",
+    "id": "physics_112"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Какой прибор измеряет давление воздуха?",
+    "options": [
+      "Термометр",
+      "Барометр",
+      "Ареометр",
+      "Гигрометр"
+    ],
+    "correctIndex": 1,
+    "explanation": "Барометр.",
+    "id": "physics_113"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 10 м/с²?",
+    "options": [
+      "21",
+      "121",
+      "110",
+      "109"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 11·10 = 110 Н.",
+    "id": "physics_114"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 3 м/с²?",
+    "options": [
+      "4",
+      "3",
+      "2"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 1·3 = 3 Н.",
+    "id": "physics_115"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 5 м/с²?",
+    "options": [
+      "40",
+      "41",
+      "13",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 8·5 = 40 Н.",
+    "id": "physics_116"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 6 м/с²?",
+    "options": [
+      "137",
+      "139",
+      "161",
+      "138"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 23·6 = 138 Н.",
+    "id": "physics_117"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 6 м/с²?",
+    "options": [
+      "155",
+      "157",
+      "156",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 26·6 = 156 Н.",
+    "id": "physics_118"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 13 м/с²?",
+    "options": [
+      "129",
+      "130",
+      "140",
+      "131"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 10·13 = 130 Н.",
+    "id": "physics_119"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 1 м/с²?",
+    "options": [
+      "26",
+      "28",
+      "27",
+      "54"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 27·1 = 27 Н.",
+    "id": "physics_120"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 7 м/с²?",
+    "options": [
+      "152",
+      "26",
+      "132",
+      "133"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 19·7 = 133 Н.",
+    "id": "physics_121"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 4 м/с²?",
+    "options": [
+      "19",
+      "75",
+      "60",
+      "59"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 15·4 = 60 Н.",
+    "id": "physics_122"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 8 м/с²?",
+    "options": [
+      "36",
+      "12",
+      "33",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 4·8 = 32 Н.",
+    "id": "physics_123"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 12 м/с²?",
+    "options": [
+      "286",
+      "34",
+      "265",
+      "264"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·12 = 264 Н.",
+    "id": "physics_124"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 5 м/с²?",
+    "options": [
+      "45",
+      "46",
+      "54",
+      "44"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 9·5 = 45 Н.",
+    "id": "physics_125"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением электродинамику?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Ампер"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ампер внёс вклад в изучение электродинамику.",
+    "id": "physics_126"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 7 м/с²?",
+    "options": [
+      "208",
+      "33",
+      "182",
+      "181"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 26·7 = 182 Н.",
+    "id": "physics_127"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 8 м/с²?",
+    "options": [
+      "171",
+      "27",
+      "152",
+      "153"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 19·8 = 152 Н.",
+    "id": "physics_128"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 14 м/с²?",
+    "options": [
+      "18",
+      "57",
+      "56",
+      "60"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 4·14 = 56 Н.",
+    "id": "physics_129"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 7 м/с²?",
+    "options": [
+      "162",
+      "160",
+      "161",
+      "184"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 23·7 = 161 Н.",
+    "id": "physics_130"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 7 м/с²?",
+    "options": [
+      "136",
+      "120",
+      "119",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 17·7 = 119 Н.",
+    "id": "physics_131"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 8 м/с²?",
+    "options": [
+      "11",
+      "24",
+      "25",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 3·8 = 24 Н.",
+    "id": "physics_132"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 1 м/с²?",
+    "options": [
+      "46",
+      "22",
+      "23",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 23·1 = 23 Н.",
+    "id": "physics_133"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 13 м/с²?",
+    "options": [
+      "126",
+      "118",
+      "117",
+      "116"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 9·13 = 117 Н.",
+    "id": "physics_134"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением рентгеновские лучи?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Рентген"
+    ],
+    "correctIndex": 3,
+    "explanation": "Рентген внёс вклад в изучение рентгеновские лучи.",
+    "id": "physics_135"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 4 м/с²?",
+    "options": [
+      "50",
+      "41",
+      "14",
+      "40"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 10·4 = 40 Н.",
+    "id": "physics_136"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 14 м/с²?",
+    "options": [
+      "135",
+      "126",
+      "125",
+      "23"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 9·14 = 126 Н.",
+    "id": "physics_137"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 8 м/с²?",
+    "options": [
+      "26",
+      "145",
+      "144",
+      "162"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 18·8 = 144 Н.",
+    "id": "physics_138"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 5 м/с²?",
+    "options": [
+      "150",
+      "35",
+      "180",
+      "149"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 30·5 = 150 Н.",
+    "id": "physics_139"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 12 м/с²?",
+    "options": [
+      "121",
+      "130",
+      "22",
+      "120"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 10·12 = 120 Н.",
+    "id": "physics_140"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 10 м/с²?",
+    "options": [
+      "28",
+      "180",
+      "181",
+      "179"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 18·10 = 180 Н.",
+    "id": "physics_141"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Какой учёный связан с открытием/изучением радиоактивность?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Кюри"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кюри внёс вклад в изучение радиоактивность.",
+    "id": "physics_142"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 2 м/с²?",
+    "options": [
+      "6",
+      "12",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 4·2 = 8 Н.",
+    "id": "physics_143"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 2 м/с²?",
+    "options": [
+      "59",
+      "32",
+      "60",
+      "90"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 30·2 = 60 Н.",
+    "id": "physics_144"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 8 м/с²?",
+    "options": [
+      "160",
+      "161",
+      "180",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 20·8 = 160 Н.",
+    "id": "physics_145"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 6 м/с²?",
+    "options": [
+      "113",
+      "133",
+      "114",
+      "115"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 19·6 = 114 Н.",
+    "id": "physics_146"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 9 м/с²?",
+    "options": [
+      "36",
+      "35",
+      "13",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 4·9 = 36 Н.",
+    "id": "physics_147"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 12 м/с²?",
+    "options": [
+      "104",
+      "96",
+      "97",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 8·12 = 96 Н.",
+    "id": "physics_148"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением давление в жидкостях?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Паскаль"
+    ],
+    "correctIndex": 3,
+    "explanation": "Паскаль внёс вклад в изучение давление в жидкостях.",
+    "id": "physics_149"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 8 м/с²?",
+    "options": [
+      "64",
+      "65",
+      "16",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 8·8 = 64 Н.",
+    "id": "physics_150"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 12 м/с²?",
+    "options": [
+      "38",
+      "312",
+      "338",
+      "313"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 26·12 = 312 Н.",
+    "id": "physics_151"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "В каких единицах СИ измеряется мощность?",
+    "options": [
+      "ньютон",
+      "джоуль",
+      "ом",
+      "ватт"
+    ],
+    "correctIndex": 3,
+    "explanation": "Мощность измеряется в ваттах (СИ).",
+    "id": "physics_152"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 6 м/с²?",
+    "options": [
+      "96",
+      "112",
+      "22",
+      "97"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 16·6 = 96 Н.",
+    "id": "physics_153"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 1 м/с²?",
+    "options": [
+      "31",
+      "60",
+      "29",
+      "30"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 30·1 = 30 Н.",
+    "id": "physics_154"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 7 м/с²?",
+    "options": [
+      "120",
+      "106",
+      "104",
+      "105"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 15·7 = 105 Н.",
+    "id": "physics_155"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 4 м/с²?",
+    "options": [
+      "108",
+      "31",
+      "107",
+      "109"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 27·4 = 108 Н.",
+    "id": "physics_156"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Что такое лазер?",
+    "options": [
+      "Источник когерентного света",
+      "Прибор давления",
+      "Детектор радиации",
+      "Микроскоп"
+    ],
+    "correctIndex": 0,
+    "explanation": "Лазер излучает когерентный свет.",
+    "id": "physics_157"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 4 м/с²?",
+    "options": [
+      "20",
+      "19",
+      "21",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 5·4 = 20 Н.",
+    "id": "physics_158"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 6 м/с²?",
+    "options": [
+      "14",
+      "56",
+      "48",
+      "49"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 8·6 = 48 Н.",
+    "id": "physics_159"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 3 м/с²?",
+    "options": [
+      "87",
+      "32",
+      "88",
+      "116"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 29·3 = 87 Н.",
+    "id": "physics_160"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 13 м/с²?",
+    "options": [
+      "351",
+      "352",
+      "378",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 27·13 = 351 Н.",
+    "id": "physics_161"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 14 м/с²?",
+    "options": [
+      "90",
+      "83",
+      "20",
+      "84"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 6·14 = 84 Н.",
+    "id": "physics_162"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 7 м/с²?",
+    "options": [
+      "140",
+      "160",
+      "27",
+      "139"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 20·7 = 140 Н.",
+    "id": "physics_163"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 8 м/с²?",
+    "options": [
+      "104",
+      "21",
+      "117",
+      "105"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 13·8 = 104 Н.",
+    "id": "physics_164"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 1 м/с²?",
+    "options": [
+      "16",
+      "18",
+      "17",
+      "34"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 17·1 = 17 Н.",
+    "id": "physics_165"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 3 м/с²?",
+    "options": [
+      "81",
+      "80",
+      "108",
+      "82"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 27·3 = 81 Н.",
+    "id": "physics_166"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "В каких единицах СИ измеряется сопротивление?",
+    "options": [
+      "ампер",
+      "кулон",
+      "тесла",
+      "ом"
+    ],
+    "correctIndex": 3,
+    "explanation": "Сопротивление измеряется в омах (СИ).",
+    "id": "physics_167"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 13 м/с²?",
+    "options": [
+      "20",
+      "92",
+      "90",
+      "91"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·13 = 91 Н.",
+    "id": "physics_168"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 9 м/с²?",
+    "options": [
+      "172",
+      "170",
+      "28",
+      "171"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 19·9 = 171 Н.",
+    "id": "physics_169"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 1 м/с²?",
+    "options": [
+      "6",
+      "14",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 7·1 = 7 Н.",
+    "id": "physics_170"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 3 м/с²?",
+    "options": [
+      "16",
+      "11",
+      "13",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 4·3 = 12 Н.",
+    "id": "physics_171"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 8 м/с²?",
+    "options": [
+      "168",
+      "189",
+      "29",
+      "169"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 21·8 = 168 Н.",
+    "id": "physics_172"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 5 м/с²?",
+    "options": [
+      "96",
+      "114",
+      "95",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 19·5 = 95 Н.",
+    "id": "physics_173"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 3 м/с²?",
+    "options": [
+      "64",
+      "84",
+      "63",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 21·3 = 63 Н.",
+    "id": "physics_174"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 6 м/с²?",
+    "options": [
+      "18",
+      "21",
+      "17",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·6 = 18 Н.",
+    "id": "physics_175"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "В каких единицах СИ измеряется температуру?",
+    "options": [
+      "ньютон",
+      "люкс",
+      "герц",
+      "кельвин"
+    ],
+    "correctIndex": 3,
+    "explanation": "Температуру измеряется в кельвинах (СИ).",
+    "id": "physics_176"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 7 м/с²?",
+    "options": [
+      "34",
+      "189",
+      "216",
+      "188"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 27·7 = 189 Н.",
+    "id": "physics_177"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 14 м/с²?",
+    "options": [
+      "375",
+      "350",
+      "349",
+      "39"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 25·14 = 350 Н.",
+    "id": "physics_178"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 14 м/с²?",
+    "options": [
+      "285",
+      "265",
+      "267",
+      "266"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 19·14 = 266 Н.",
+    "id": "physics_179"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 2 м/с²?",
+    "options": [
+      "35",
+      "20",
+      "36",
+      "37"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 18·2 = 36 Н.",
+    "id": "physics_180"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 1 м/с²?",
+    "options": [
+      "29",
+      "56",
+      "28",
+      "27"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 28·1 = 28 Н.",
+    "id": "physics_181"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 2 м/с²?",
+    "options": [
+      "41",
+      "40",
+      "60",
+      "22"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 20·2 = 40 Н.",
+    "id": "physics_182"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 6 м/с²?",
+    "options": [
+      "72",
+      "84",
+      "73",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 12·6 = 72 Н.",
+    "id": "physics_183"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 12 м/с²?",
+    "options": [
+      "179",
+      "180",
+      "181",
+      "27"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 15·12 = 180 Н.",
+    "id": "physics_184"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 3 м/с²?",
+    "options": [
+      "21",
+      "10",
+      "20",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 7·3 = 21 Н.",
+    "id": "physics_185"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 3 м/с²?",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 2·3 = 6 Н.",
+    "id": "physics_186"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 15 м/с²?",
+    "options": [
+      "329",
+      "352",
+      "331",
+      "330"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·15 = 330 Н.",
+    "id": "physics_187"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 9 м/с²?",
+    "options": [
+      "99",
+      "98",
+      "20",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 11·9 = 99 Н.",
+    "id": "physics_188"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 1 м/с²?",
+    "options": [
+      "38",
+      "20",
+      "19",
+      "18"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 19·1 = 19 Н.",
+    "id": "physics_189"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 6 м/с²?",
+    "options": [
+      "91",
+      "89",
+      "21",
+      "90"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 15·6 = 90 Н.",
+    "id": "physics_190"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 9 м/с²?",
+    "options": [
+      "252",
+      "37",
+      "251",
+      "280"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 28·9 = 252 Н.",
+    "id": "physics_191"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 10 м/с²?",
+    "options": [
+      "20",
+      "21",
+      "12",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 2·10 = 20 Н.",
+    "id": "physics_192"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 13 м/с²?",
+    "options": [
+      "259",
+      "33",
+      "280",
+      "260"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 20·13 = 260 Н.",
+    "id": "physics_193"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 13 м/с²?",
+    "options": [
+      "65",
+      "18",
+      "64",
+      "66"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 5·13 = 65 Н.",
+    "id": "physics_194"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 3 м/с²?",
+    "options": [
+      "60",
+      "80",
+      "59",
+      "61"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 20·3 = 60 Н.",
+    "id": "physics_195"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 15 м/с²?",
+    "options": [
+      "480",
+      "450",
+      "451",
+      "449"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 30·15 = 450 Н.",
+    "id": "physics_196"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 13 м/с²?",
+    "options": [
+      "52",
+      "56",
+      "17",
+      "51"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 4·13 = 52 Н.",
+    "id": "physics_197"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 14 м/с²?",
+    "options": [
+      "19",
+      "70",
+      "75",
+      "69"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 5·14 = 70 Н.",
+    "id": "physics_198"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 4 м/с²?",
+    "options": [
+      "28",
+      "97",
+      "96",
+      "120"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 24·4 = 96 Н.",
+    "id": "physics_199"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 12 м/с²?",
+    "options": [
+      "24",
+      "25",
+      "14",
+      "26"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 2·12 = 24 Н.",
+    "id": "physics_200"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 4 м/с²?",
+    "options": [
+      "36",
+      "45",
+      "35",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 9·4 = 36 Н.",
+    "id": "physics_201"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Энергия поднятого тела?",
+    "options": [
+      "Кинетическая",
+      "Потенциальная",
+      "Тепловая",
+      "Химическая"
+    ],
+    "correctIndex": 1,
+    "explanation": "Потенциальная.",
+    "id": "physics_202"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "В каких единицах СИ измеряется энергию?",
+    "options": [
+      "ватт",
+      "ньютон",
+      "герц",
+      "джоуль"
+    ],
+    "correctIndex": 3,
+    "explanation": "Энергию измеряется в джоульах (СИ).",
+    "id": "physics_203"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 2 м/с²?",
+    "options": [
+      "30",
+      "29",
+      "45",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 15·2 = 30 Н.",
+    "id": "physics_204"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "В каких единицах СИ измеряется давление?",
+    "options": [
+      "ньютон",
+      "джоуль",
+      "ватт",
+      "паскаль"
+    ],
+    "correctIndex": 3,
+    "explanation": "Давление измеряется в паскальах (СИ).",
+    "id": "physics_205"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 10 м/с²?",
+    "options": [
+      "200",
+      "220",
+      "30",
+      "201"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 20·10 = 200 Н.",
+    "id": "physics_206"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 5 м/с²?",
+    "options": [
+      "33",
+      "168",
+      "139",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 28·5 = 140 Н.",
+    "id": "physics_207"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 12 м/с²?",
+    "options": [
+      "59",
+      "60",
+      "65",
+      "61"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 5·12 = 60 Н.",
+    "id": "physics_208"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 4 м/с²?",
+    "options": [
+      "72",
+      "90",
+      "73",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 18·4 = 72 Н.",
+    "id": "physics_209"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Какой учёный связан с открытием/изучением законы движения планет?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Кеплер"
+    ],
+    "correctIndex": 3,
+    "explanation": "Кеплер внёс вклад в изучение законы движения планет.",
+    "id": "physics_210"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Импульс тела равен?",
+    "options": [
+      "m·v",
+      "m·a",
+      "F·t",
+      "m·g"
+    ],
+    "correctIndex": 0,
+    "explanation": "p = m·v.",
+    "id": "physics_211"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 15 м/с²?",
+    "options": [
+      "136",
+      "24",
+      "135",
+      "144"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 9·15 = 135 Н.",
+    "id": "physics_212"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 3 м/с²?",
+    "options": [
+      "40",
+      "16",
+      "39",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 13·3 = 39 Н.",
+    "id": "physics_213"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 15 м/с²?",
+    "options": [
+      "432",
+      "404",
+      "405",
+      "42"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 27·15 = 405 Н.",
+    "id": "physics_214"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 12 м/с²?",
+    "options": [
+      "228",
+      "31",
+      "227",
+      "229"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 19·12 = 228 Н.",
+    "id": "physics_215"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 4 м/с²?",
+    "options": [
+      "27",
+      "91",
+      "92",
+      "115"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 23·4 = 92 Н.",
+    "id": "physics_216"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 10 м/с²?",
+    "options": [
+      "37",
+      "270",
+      "269",
+      "297"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 27·10 = 270 Н.",
+    "id": "physics_217"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 9 м/с²?",
+    "options": [
+      "200",
+      "179",
+      "29",
+      "180"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 20·9 = 180 Н.",
+    "id": "physics_218"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 6 м/с²?",
+    "options": [
+      "83",
+      "84",
+      "98",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 14·6 = 84 Н.",
+    "id": "physics_219"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Что такое плотность?",
+    "options": [
+      "m/V",
+      "F/S",
+      "A/t",
+      "Q/t"
+    ],
+    "correctIndex": 0,
+    "explanation": "ρ = m/V.",
+    "id": "physics_220"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 12 м/с²?",
+    "options": [
+      "29",
+      "221",
+      "204",
+      "203"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 17·12 = 204 Н.",
+    "id": "physics_221"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 8 м/с²?",
+    "options": [
+      "57",
+      "63",
+      "15",
+      "56"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·8 = 56 Н.",
+    "id": "physics_222"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 19 кг и ускорение 11 м/с²?",
+    "options": [
+      "208",
+      "228",
+      "210",
+      "209"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 19·11 = 209 Н.",
+    "id": "physics_223"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 11 м/с²?",
+    "options": [
+      "77",
+      "18",
+      "78",
+      "76"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 7·11 = 77 Н.",
+    "id": "physics_224"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 3 м/с²?",
+    "options": [
+      "33",
+      "32",
+      "44",
+      "34"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 11·3 = 33 Н.",
+    "id": "physics_225"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 5 м/с²?",
+    "options": [
+      "121",
+      "120",
+      "29",
+      "144"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 24·5 = 120 Н.",
+    "id": "physics_226"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 13 м/с²?",
+    "options": [
+      "325",
+      "350",
+      "38",
+      "324"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 25·13 = 325 Н.",
+    "id": "physics_227"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 5 м/с²?",
+    "options": [
+      "64",
+      "65",
+      "18",
+      "66"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 13·5 = 65 Н.",
+    "id": "physics_228"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 15 м/с²?",
+    "options": [
+      "361",
+      "384",
+      "39",
+      "360"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 24·15 = 360 Н.",
+    "id": "physics_229"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 11 м/с²?",
+    "options": [
+      "16",
+      "55",
+      "56",
+      "60"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 5·11 = 55 Н.",
+    "id": "physics_230"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 10 м/с²?",
+    "options": [
+      "29",
+      "30",
+      "33",
+      "13"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 3·10 = 30 Н.",
+    "id": "physics_231"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Что такое инерция?",
+    "options": [
+      "Скорость",
+      "Сохранение состояния движения",
+      "Тяжесть",
+      "Ускорение"
+    ],
+    "correctIndex": 1,
+    "explanation": "Инерция — свойство сохранять скорость без сил.",
+    "id": "physics_232"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 15 м/с²?",
+    "options": [
+      "210",
+      "224",
+      "211",
+      "209"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 14·15 = 210 Н.",
+    "id": "physics_233"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 8 м/с²?",
+    "options": [
+      "54",
+      "49",
+      "48",
+      "14"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 6·8 = 48 Н.",
+    "id": "physics_234"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 4 м/с²?",
+    "options": [
+      "13",
+      "11",
+      "7",
+      "12"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 3·4 = 12 Н.",
+    "id": "physics_235"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 1 м/с²?",
+    "options": [
+      "15",
+      "17",
+      "32",
+      "16"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 16·1 = 16 Н.",
+    "id": "physics_236"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 10 м/с²?",
+    "options": [
+      "60",
+      "59",
+      "16",
+      "66"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 6·10 = 60 Н.",
+    "id": "physics_237"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 11 м/с²?",
+    "options": [
+      "312",
+      "37",
+      "286",
+      "285"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 26·11 = 286 Н.",
+    "id": "physics_238"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 12 м/с²?",
+    "options": [
+      "312",
+      "288",
+      "36",
+      "289"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 24·12 = 288 Н.",
+    "id": "physics_239"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 9 м/с²?",
+    "options": [
+      "269",
+      "270",
+      "39",
+      "300"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 30·9 = 270 Н.",
+    "id": "physics_240"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 14 м/с²?",
+    "options": [
+      "28",
+      "195",
+      "210",
+      "196"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 14·14 = 196 Н.",
+    "id": "physics_241"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 6 м/с²?",
+    "options": [
+      "19",
+      "91",
+      "78",
+      "77"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 13·6 = 78 Н.",
+    "id": "physics_242"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 15 м/с²?",
+    "options": [
+      "45",
+      "48",
+      "44",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·15 = 45 Н.",
+    "id": "physics_243"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 2 м/с²?",
+    "options": [
+      "12",
+      "20",
+      "19",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 10·2 = 20 Н.",
+    "id": "physics_244"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 12 м/с²?",
+    "options": [
+      "273",
+      "253",
+      "252",
+      "251"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 21·12 = 252 Н.",
+    "id": "physics_245"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 11 м/с²?",
+    "options": [
+      "330",
+      "331",
+      "360",
+      "329"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 30·11 = 330 Н.",
+    "id": "physics_246"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 9 м/с²?",
+    "options": [
+      "9",
+      "10",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 1·9 = 9 Н.",
+    "id": "physics_247"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 10 м/с²?",
+    "options": [
+      "170",
+      "27",
+      "169",
+      "171"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 17·10 = 170 Н.",
+    "id": "physics_248"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 10 м/с²?",
+    "options": [
+      "291",
+      "39",
+      "290",
+      "289"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 29·10 = 290 Н.",
+    "id": "physics_249"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 8 м/с²?",
+    "options": [
+      "126",
+      "113",
+      "112",
+      "22"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 14·8 = 112 Н.",
+    "id": "physics_250"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой тип волн у звука в воздухе?",
+    "options": [
+      "Поперечные",
+      "Продольные",
+      "Стоячие",
+      "ЭМ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Звук — продольные волны.",
+    "id": "physics_251"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 8 м/с²?",
+    "options": [
+      "19",
+      "89",
+      "99",
+      "88"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 11·8 = 88 Н.",
+    "id": "physics_252"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "В каких единицах СИ измеряется длину?",
+    "options": [
+      "литр",
+      "секунда",
+      "кельвин",
+      "метр"
+    ],
+    "correctIndex": 3,
+    "explanation": "Длину измеряется в метрах (СИ).",
+    "id": "physics_253"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 4 м/с²?",
+    "options": [
+      "10",
+      "30",
+      "25",
+      "24"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 6·4 = 24 Н.",
+    "id": "physics_254"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 4 м/с²?",
+    "options": [
+      "68",
+      "67",
+      "21",
+      "85"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 17·4 = 68 Н.",
+    "id": "physics_255"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 2 м/с²?",
+    "options": [
+      "26",
+      "27",
+      "15",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 13·2 = 26 Н.",
+    "id": "physics_256"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 15 м/с²?",
+    "options": [
+      "194",
+      "208",
+      "195",
+      "196"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 13·15 = 195 Н.",
+    "id": "physics_257"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 11 м/с²?",
+    "options": [
+      "65",
+      "67",
+      "72",
+      "66"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 6·11 = 66 Н.",
+    "id": "physics_258"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 14 м/с²?",
+    "options": [
+      "322",
+      "321",
+      "323",
+      "345"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 23·14 = 322 Н.",
+    "id": "physics_259"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Что описывает первый закон Ньютона?",
+    "options": [
+      "F=ma",
+      "Инерцию",
+      "Действие-противодействие",
+      "Гравитацию"
+    ],
+    "correctIndex": 1,
+    "explanation": "Первый закон — об инерции.",
+    "id": "physics_260"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 9 кг и ускорение 2 м/с²?",
+    "options": [
+      "18",
+      "27",
+      "17",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 9·2 = 18 Н.",
+    "id": "physics_261"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 7 м/с²?",
+    "options": [
+      "27",
+      "11",
+      "28",
+      "32"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 4·7 = 28 Н.",
+    "id": "physics_262"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 8 м/с²?",
+    "options": [
+      "144",
+      "24",
+      "128",
+      "129"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 16·8 = 128 Н.",
+    "id": "physics_263"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 11 м/с²?",
+    "options": [
+      "132",
+      "133",
+      "144",
+      "131"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 12·11 = 132 Н.",
+    "id": "physics_264"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 5 м/с²?",
+    "options": [
+      "69",
+      "84",
+      "19",
+      "70"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 14·5 = 70 Н.",
+    "id": "physics_265"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 8 м/с²?",
+    "options": [
+      "81",
+      "80",
+      "90",
+      "18"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 10·8 = 80 Н.",
+    "id": "physics_266"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением электрическое напряжение?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Вольт"
+    ],
+    "correctIndex": 3,
+    "explanation": "Вольт внёс вклад в изучение электрическое напряжение.",
+    "id": "physics_267"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "В каких единицах СИ измеряется частоту?",
+    "options": [
+      "ньютон",
+      "люкс",
+      "кандела",
+      "герц"
+    ],
+    "correctIndex": 3,
+    "explanation": "Частоту измеряется в герцах (СИ).",
+    "id": "physics_268"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 14 м/с²?",
+    "options": [
+      "392",
+      "420",
+      "42",
+      "393"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 28·14 = 392 Н.",
+    "id": "physics_269"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 9 м/с²?",
+    "options": [
+      "62",
+      "64",
+      "70",
+      "63"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·9 = 63 Н.",
+    "id": "physics_270"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 1 м/с²?",
+    "options": [
+      "21",
+      "19",
+      "40",
+      "20"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 20·1 = 20 Н.",
+    "id": "physics_271"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 11 м/с²?",
+    "options": [
+      "252",
+      "276",
+      "34",
+      "253"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 23·11 = 253 Н.",
+    "id": "physics_272"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 14 м/с²?",
+    "options": [
+      "293",
+      "294",
+      "35",
+      "315"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 21·14 = 294 Н.",
+    "id": "physics_273"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 9 м/с²?",
+    "options": [
+      "243",
+      "244",
+      "270",
+      "242"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 27·9 = 243 Н.",
+    "id": "physics_274"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 10 м/с²?",
+    "options": [
+      "149",
+      "165",
+      "150",
+      "25"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 15·10 = 150 Н.",
+    "id": "physics_275"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 9 м/с²?",
+    "options": [
+      "12",
+      "27",
+      "26",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 3·9 = 27 Н.",
+    "id": "physics_276"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 3 м/с²?",
+    "options": [
+      "20",
+      "50",
+      "51",
+      "52"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 17·3 = 51 Н.",
+    "id": "physics_277"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 4 м/с²?",
+    "options": [
+      "12",
+      "33",
+      "40",
+      "32"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 8·4 = 32 Н.",
+    "id": "physics_278"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 6 м/с²?",
+    "options": [
+      "180",
+      "210",
+      "36",
+      "179"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 30·6 = 180 Н.",
+    "id": "physics_279"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 14 м/с²?",
+    "options": [
+      "379",
+      "378",
+      "405",
+      "377"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 27·14 = 378 Н.",
+    "id": "physics_280"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 6 м/с²?",
+    "options": [
+      "65",
+      "67",
+      "66",
+      "77"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 11·6 = 66 Н.",
+    "id": "physics_281"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 4 м/с²?",
+    "options": [
+      "115",
+      "117",
+      "145",
+      "116"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 29·4 = 116 Н.",
+    "id": "physics_282"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 5 м/с²?",
+    "options": [
+      "89",
+      "90",
+      "91",
+      "108"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 18·5 = 90 Н.",
+    "id": "physics_283"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Что описывает второй закон Ньютона?",
+    "options": [
+      "F=ma",
+      "Инерцию",
+      "Импульс",
+      "Энергию"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = ma.",
+    "id": "physics_284"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Какой учёный связан с открытием/изучением выталкивающую силу?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Архимед"
+    ],
+    "correctIndex": 3,
+    "explanation": "Архимед внёс вклад в изучение выталкивающую силу.",
+    "id": "physics_285"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 14 м/с²?",
+    "options": [
+      "14",
+      "13",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 1·14 = 14 Н.",
+    "id": "physics_286"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 8 м/с²?",
+    "options": [
+      "13",
+      "45",
+      "40",
+      "41"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 5·8 = 40 Н.",
+    "id": "physics_287"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 6 м/с²?",
+    "options": [
+      "154",
+      "131",
+      "28",
+      "132"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·6 = 132 Н.",
+    "id": "physics_288"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 3 м/с²?",
+    "options": [
+      "17",
+      "18",
+      "19",
+      "24"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 6·3 = 18 Н.",
+    "id": "physics_289"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 24 кг и ускорение 8 м/с²?",
+    "options": [
+      "192",
+      "216",
+      "193",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 24·8 = 192 Н.",
+    "id": "physics_290"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 5 м/с²?",
+    "options": [
+      "110",
+      "27",
+      "109",
+      "132"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 22·5 = 110 Н.",
+    "id": "physics_291"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 5 м/с²?",
+    "options": [
+      "24",
+      "25",
+      "10",
+      "26"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 5·5 = 25 Н.",
+    "id": "physics_292"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 13 м/с²?",
+    "options": [
+      "273",
+      "272",
+      "34",
+      "274"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 21·13 = 273 Н.",
+    "id": "physics_293"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением переменный ток?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Тесла"
+    ],
+    "correctIndex": 3,
+    "explanation": "Тесла внёс вклад в изучение переменный ток.",
+    "id": "physics_294"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 6 м/с²?",
+    "options": [
+      "163",
+      "162",
+      "189",
+      "161"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 27·6 = 162 Н.",
+    "id": "physics_295"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 10 м/с²?",
+    "options": [
+      "24",
+      "139",
+      "154",
+      "140"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 14·10 = 140 Н.",
+    "id": "physics_296"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 12 м/с²?",
+    "options": [
+      "336",
+      "337",
+      "364",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 28·12 = 336 Н.",
+    "id": "physics_297"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 11 м/с²?",
+    "options": [
+      "32",
+      "231",
+      "252",
+      "232"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 21·11 = 231 Н.",
+    "id": "physics_298"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 10 кг и ускорение 11 м/с²?",
+    "options": [
+      "120",
+      "110",
+      "109",
+      "21"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 10·11 = 110 Н.",
+    "id": "physics_299"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 2 м/с²?",
+    "options": [
+      "24",
+      "43",
+      "66",
+      "44"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·2 = 44 Н.",
+    "id": "physics_300"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 12 м/с²?",
+    "options": [
+      "299",
+      "325",
+      "37",
+      "300"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 25·12 = 300 Н.",
+    "id": "physics_301"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 2 м/с²?",
+    "options": [
+      "30",
+      "84",
+      "56",
+      "57"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 28·2 = 56 Н.",
+    "id": "physics_302"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 3 м/с²?",
+    "options": [
+      "90",
+      "89",
+      "120",
+      "91"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 30·3 = 90 Н.",
+    "id": "physics_303"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 11 м/с²?",
+    "options": [
+      "89",
+      "96",
+      "19",
+      "88"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 8·11 = 88 Н.",
+    "id": "physics_304"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 1 м/с²?",
+    "options": [
+      "3",
+      "8",
+      "5",
+      "4"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 4·1 = 4 Н.",
+    "id": "physics_305"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 14 м/с²?",
+    "options": [
+      "168",
+      "180",
+      "26",
+      "169"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 12·14 = 168 Н.",
+    "id": "physics_306"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 9 м/с²?",
+    "options": [
+      "162",
+      "161",
+      "163",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 18·9 = 162 Н.",
+    "id": "physics_307"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 4 м/с²?",
+    "options": [
+      "43",
+      "15",
+      "44",
+      "45"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 11·4 = 44 Н.",
+    "id": "physics_308"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 2 м/с²?",
+    "options": [
+      "25",
+      "24",
+      "14",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 12·2 = 24 Н.",
+    "id": "physics_309"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 3 м/с²?",
+    "options": [
+      "100",
+      "75",
+      "74",
+      "76"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 25·3 = 75 Н.",
+    "id": "physics_310"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Кто открыл закон всемирного тяготения?",
+    "options": [
+      "Галилей",
+      "Кеплер",
+      "Ньютон",
+      "Коперник"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ньютон.",
+    "id": "physics_311"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 7 м/с²?",
+    "options": [
+      "155",
+      "154",
+      "153",
+      "176"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 22·7 = 154 Н.",
+    "id": "physics_312"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 9 м/с²?",
+    "options": [
+      "108",
+      "21",
+      "120",
+      "107"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 12·9 = 108 Н.",
+    "id": "physics_313"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 4 м/с²?",
+    "options": [
+      "11",
+      "27",
+      "28",
+      "35"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 7·4 = 28 Н.",
+    "id": "physics_314"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 12 м/с²?",
+    "options": [
+      "360",
+      "390",
+      "42",
+      "361"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 30·12 = 360 Н.",
+    "id": "physics_315"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 7 м/с²?",
+    "options": [
+      "40",
+      "35",
+      "34",
+      "36"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 5·7 = 35 Н.",
+    "id": "physics_316"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 9 м/с²?",
+    "options": [
+      "117",
+      "118",
+      "130",
+      "116"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 13·9 = 117 Н.",
+    "id": "physics_317"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 6 м/с²?",
+    "options": [
+      "13",
+      "43",
+      "41",
+      "42"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·6 = 42 Н.",
+    "id": "physics_318"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 5 м/с²?",
+    "options": [
+      "124",
+      "126",
+      "125",
+      "150"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 25·5 = 125 Н.",
+    "id": "physics_319"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 11 м/с²?",
+    "options": [
+      "164",
+      "180",
+      "26",
+      "165"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 15·11 = 165 Н.",
+    "id": "physics_320"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 1 м/с²?",
+    "options": [
+      "14",
+      "13",
+      "28",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 14·1 = 14 Н.",
+    "id": "physics_321"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 4 м/с²?",
+    "options": [
+      "34",
+      "120",
+      "121",
+      "150"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 30·4 = 120 Н.",
+    "id": "physics_322"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 3 м/с²?",
+    "options": [
+      "53",
+      "54",
+      "21",
+      "72"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 18·3 = 54 Н.",
+    "id": "physics_323"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 5 м/с²?",
+    "options": [
+      "56",
+      "55",
+      "66",
+      "16"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 11·5 = 55 Н.",
+    "id": "physics_324"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 9 м/с²?",
+    "options": [
+      "145",
+      "144",
+      "160",
+      "25"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 16·9 = 144 Н.",
+    "id": "physics_325"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 4 м/с²?",
+    "options": [
+      "8",
+      "16",
+      "17",
+      "20"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 4·4 = 16 Н.",
+    "id": "physics_326"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 2 м/с²?",
+    "options": [
+      "12",
+      "18",
+      "8",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 6·2 = 12 Н.",
+    "id": "physics_327"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 12 м/с²?",
+    "options": [
+      "208",
+      "28",
+      "193",
+      "192"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 16·12 = 192 Н.",
+    "id": "physics_328"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Какой цвет имеет наибольшую длину волны?",
+    "options": [
+      "Фиолетовый",
+      "Зелёный",
+      "Красный",
+      "Синий"
+    ],
+    "correctIndex": 2,
+    "explanation": "Красный — наибольшая длина волны.",
+    "id": "physics_329"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Как называется частица света?",
+    "options": [
+      "Электрон",
+      "Протон",
+      "Фотон",
+      "Нейтрон"
+    ],
+    "correctIndex": 2,
+    "explanation": "Квант света — фотон.",
+    "id": "physics_330"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "В каких единицах СИ измеряется электрический заряд?",
+    "options": [
+      "ампер",
+      "вольт",
+      "фарад",
+      "кулон"
+    ],
+    "correctIndex": 3,
+    "explanation": "Электрический заряд измеряется в кулонах (СИ).",
+    "id": "physics_331"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Какой прибор измеряет напряжение?",
+    "options": [
+      "Амперметр",
+      "Вольтметр",
+      "Манометр",
+      "Спидометр"
+    ],
+    "correctIndex": 1,
+    "explanation": "Вольтметр измеряет напряжение.",
+    "id": "physics_332"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 5 м/с²?",
+    "options": [
+      "81",
+      "96",
+      "21",
+      "80"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 16·5 = 80 Н.",
+    "id": "physics_333"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 9 м/с²?",
+    "options": [
+      "72",
+      "17",
+      "80",
+      "73"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 8·9 = 72 Н.",
+    "id": "physics_334"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 1 м/с²?",
+    "options": [
+      "58",
+      "30",
+      "29",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 29·1 = 29 Н.",
+    "id": "physics_335"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 6 м/с²?",
+    "options": [
+      "24",
+      "108",
+      "107",
+      "109"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 18·6 = 108 Н.",
+    "id": "physics_336"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 14 м/с²?",
+    "options": [
+      "16",
+      "28",
+      "27",
+      "29"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 2·14 = 28 Н.",
+    "id": "physics_337"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 1 м/с²?",
+    "options": [
+      "24",
+      "50",
+      "25",
+      "26"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 25·1 = 25 Н.",
+    "id": "physics_338"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 14 м/с²?",
+    "options": [
+      "240",
+      "224",
+      "30",
+      "225"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 16·14 = 224 Н.",
+    "id": "physics_339"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 5 м/с²?",
+    "options": [
+      "84",
+      "86",
+      "102",
+      "85"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 17·5 = 85 Н.",
+    "id": "physics_340"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 13 м/с²?",
+    "options": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 2·13 = 26 Н.",
+    "id": "physics_341"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 8 м/с²?",
+    "options": [
+      "198",
+      "30",
+      "177",
+      "176"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·8 = 176 Н.",
+    "id": "physics_342"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 3 м/с²?",
+    "options": [
+      "70",
+      "68",
+      "26",
+      "69"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 23·3 = 69 Н.",
+    "id": "physics_343"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Какой учёный связан с открытием/изучением закон сопротивления?",
+    "options": [
+      "Эйнштейн",
+      "Ньютон",
+      "Максвелл",
+      "Ом"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ом внёс вклад в изучение закон сопротивления.",
+    "id": "physics_344"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 5 м/с²?",
+    "options": [
+      "20",
+      "74",
+      "75",
+      "76"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 15·5 = 75 Н.",
+    "id": "physics_345"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 1 м/с²?",
+    "options": [
+      "19",
+      "17",
+      "36",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 18·1 = 18 Н.",
+    "id": "physics_346"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 4 м/с²?",
+    "options": [
+      "105",
+      "84",
+      "85",
+      "83"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 21·4 = 84 Н.",
+    "id": "physics_347"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 7 м/с²?",
+    "options": [
+      "126",
+      "144",
+      "25",
+      "125"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 18·7 = 126 Н.",
+    "id": "physics_348"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 30 кг и ускорение 8 м/с²?",
+    "options": [
+      "241",
+      "270",
+      "38",
+      "240"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 30·8 = 240 Н.",
+    "id": "physics_349"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 7 м/с²?",
+    "options": [
+      "43",
+      "41",
+      "48",
+      "42"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 6·7 = 42 Н.",
+    "id": "physics_350"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 15 м/с²?",
+    "options": [
+      "314",
+      "316",
+      "315",
+      "336"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 21·15 = 315 Н.",
+    "id": "physics_351"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 12 м/с²?",
+    "options": [
+      "30",
+      "234",
+      "217",
+      "216"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 18·12 = 216 Н.",
+    "id": "physics_352"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 12 м/с²?",
+    "options": [
+      "36",
+      "15",
+      "35",
+      "37"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·12 = 36 Н.",
+    "id": "physics_353"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 5 кг и ускорение 10 м/с²?",
+    "options": [
+      "49",
+      "51",
+      "50",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 5·10 = 50 Н.",
+    "id": "physics_354"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Кто открыл электромагнитную индукцию?",
+    "options": [
+      "Тесла",
+      "Фарадей",
+      "Эдисон",
+      "Кюри"
+    ],
+    "correctIndex": 1,
+    "explanation": "Майкл Фарадей.",
+    "id": "physics_355"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 6 кг и ускорение 12 м/с²?",
+    "options": [
+      "18",
+      "78",
+      "73",
+      "72"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 6·12 = 72 Н.",
+    "id": "physics_356"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 2 м/с²?",
+    "options": [
+      "49",
+      "50",
+      "27",
+      "75"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 25·2 = 50 Н.",
+    "id": "physics_357"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 10 м/с²?",
+    "options": [
+      "250",
+      "249",
+      "275",
+      "251"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 25·10 = 250 Н.",
+    "id": "physics_358"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 4 кг и ускорение 12 м/с²?",
+    "options": [
+      "48",
+      "16",
+      "49",
+      "52"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 4·12 = 48 Н.",
+    "id": "physics_359"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 2 м/с²?",
+    "options": [
+      "16",
+      "17",
+      "24",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 8·2 = 16 Н.",
+    "id": "physics_360"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 9 м/с²?",
+    "options": [
+      "17",
+      "11",
+      "19",
+      "18"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 2·9 = 18 Н.",
+    "id": "physics_361"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 2 кг и ускорение 11 м/с²?",
+    "options": [
+      "13",
+      "24",
+      "21",
+      "22"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 2·11 = 22 Н.",
+    "id": "physics_362"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 7 м/с²?",
+    "options": [
+      "48",
+      "49",
+      "50",
+      "56"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 7·7 = 49 Н.",
+    "id": "physics_363"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 15 м/с²?",
+    "options": [
+      "419",
+      "420",
+      "43",
+      "448"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 28·15 = 420 Н.",
+    "id": "physics_364"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 27 кг и ускорение 8 м/с²?",
+    "options": [
+      "243",
+      "35",
+      "217",
+      "216"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 27·8 = 216 Н.",
+    "id": "physics_365"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 5 м/с²?",
+    "options": [
+      "6",
+      "5",
+      "4"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 1·5 = 5 Н.",
+    "id": "physics_366"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "При какой температуре кипит вода (°C)?",
+    "options": [
+      "0",
+      "50",
+      "100",
+      "200"
+    ],
+    "correctIndex": 2,
+    "explanation": "100°C при нормальном давлении.",
+    "id": "physics_367"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 4 м/с²?",
+    "options": [
+      "18",
+      "57",
+      "56",
+      "70"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 14·4 = 56 Н.",
+    "id": "physics_368"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 13 м/с²?",
+    "options": [
+      "144",
+      "24",
+      "143",
+      "154"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 11·13 = 143 Н.",
+    "id": "physics_369"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 23 кг и ускорение 9 м/с²?",
+    "options": [
+      "207",
+      "208",
+      "32",
+      "206"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 23·9 = 207 Н.",
+    "id": "physics_370"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 3 кг и ускорение 5 м/с²?",
+    "options": [
+      "15",
+      "16",
+      "18",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 3·5 = 15 Н.",
+    "id": "physics_371"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 17 кг и ускорение 2 м/с²?",
+    "options": [
+      "34",
+      "35",
+      "33",
+      "19"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 17·2 = 34 Н.",
+    "id": "physics_372"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 14 м/с²?",
+    "options": [
+      "32",
+      "253",
+      "251",
+      "252"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 18·14 = 252 Н.",
+    "id": "physics_373"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 8 м/с²?",
+    "options": [
+      "232",
+      "261",
+      "37",
+      "233"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 29·8 = 232 Н.",
+    "id": "physics_374"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 7 м/с²?",
+    "options": [
+      "8",
+      "7",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 1·7 = 7 Н.",
+    "id": "physics_375"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 8 кг и ускорение 13 м/с²?",
+    "options": [
+      "104",
+      "112",
+      "105",
+      "21"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 8·13 = 104 Н.",
+    "id": "physics_376"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 14 кг и ускорение 11 м/с²?",
+    "options": [
+      "168",
+      "154",
+      "153",
+      "155"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 14·11 = 154 Н.",
+    "id": "physics_377"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 20 кг и ускорение 5 м/с²?",
+    "options": [
+      "99",
+      "25",
+      "100",
+      "120"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 20·5 = 100 Н.",
+    "id": "physics_378"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 12 кг и ускорение 15 м/с²?",
+    "options": [
+      "180",
+      "192",
+      "27",
+      "179"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 12·15 = 180 Н.",
+    "id": "physics_379"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 13 м/с²?",
+    "options": [
+      "363",
+      "392",
+      "41",
+      "364"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 28·13 = 364 Н.",
+    "id": "physics_380"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 22 кг и ускорение 11 м/с²?",
+    "options": [
+      "243",
+      "241",
+      "264",
+      "242"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 22·11 = 242 Н.",
+    "id": "physics_381"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 18 кг и ускорение 15 м/с²?",
+    "options": [
+      "33",
+      "288",
+      "269",
+      "270"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 18·15 = 270 Н.",
+    "id": "physics_382"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 14 м/с²?",
+    "options": [
+      "21",
+      "99",
+      "97",
+      "98"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·14 = 98 Н.",
+    "id": "physics_383"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 29 кг и ускорение 11 м/с²?",
+    "options": [
+      "40",
+      "348",
+      "320",
+      "319"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 29·11 = 319 Н.",
+    "id": "physics_384"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 5 м/с²?",
+    "options": [
+      "156",
+      "131",
+      "129",
+      "130"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 26·5 = 130 Н.",
+    "id": "physics_385"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 16 кг и ускорение 11 м/с²?",
+    "options": [
+      "192",
+      "176",
+      "27",
+      "177"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 16·11 = 176 Н.",
+    "id": "physics_386"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 1 м/с²?",
+    "options": [
+      "11",
+      "12",
+      "10",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 11·1 = 11 Н.",
+    "id": "physics_387"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 11 кг и ускорение 2 м/с²?",
+    "options": [
+      "33",
+      "21",
+      "22",
+      "13"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 11·2 = 22 Н.",
+    "id": "physics_388"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 1 м/с²?",
+    "options": [
+      "16",
+      "30",
+      "14",
+      "15"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 15·1 = 15 Н.",
+    "id": "physics_389"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 7 м/с²?",
+    "options": [
+      "90",
+      "92",
+      "104",
+      "91"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 13·7 = 91 Н.",
+    "id": "physics_390"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 10 м/с²?",
+    "options": [
+      "31",
+      "209",
+      "210",
+      "211"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 21·10 = 210 Н.",
+    "id": "physics_391"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 21 кг и ускорение 9 м/с²?",
+    "options": [
+      "188",
+      "190",
+      "189",
+      "210"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 21·9 = 189 Н.",
+    "id": "physics_392"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 28 кг и ускорение 3 м/с²?",
+    "options": [
+      "85",
+      "84",
+      "112",
+      "83"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 28·3 = 84 Н.",
+    "id": "physics_393"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 7 кг и ускорение 10 м/с²?",
+    "options": [
+      "17",
+      "69",
+      "77",
+      "70"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 7·10 = 70 Н.",
+    "id": "physics_394"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 8 м/с²?",
+    "options": [
+      "33",
+      "200",
+      "201",
+      "225"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 25·8 = 200 Н.",
+    "id": "physics_395"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 25 кг и ускорение 15 м/с²?",
+    "options": [
+      "375",
+      "40",
+      "400",
+      "376"
+    ],
+    "correctIndex": 0,
+    "explanation": "F = m·a = 25·15 = 375 Н.",
+    "id": "physics_396"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 26 кг и ускорение 13 м/с²?",
+    "options": [
+      "339",
+      "337",
+      "338",
+      "364"
+    ],
+    "correctIndex": 2,
+    "explanation": "F = m·a = 26·13 = 338 Н.",
+    "id": "physics_397"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 1 кг и ускорение 8 м/с²?",
+    "options": [
+      "9",
+      "8",
+      "7"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 1·8 = 8 Н.",
+    "id": "physics_398"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 15 кг и ускорение 14 м/с²?",
+    "options": [
+      "29",
+      "210",
+      "209",
+      "211"
+    ],
+    "correctIndex": 1,
+    "explanation": "F = m·a = 15·14 = 210 Н.",
+    "id": "physics_399"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна сила, если масса 13 кг и ускорение 1 м/с²?",
+    "options": [
+      "12",
+      "26",
+      "14",
+      "13"
+    ],
+    "correctIndex": 3,
+    "explanation": "F = m·a = 13·1 = 13 Н.",
+    "id": "physics_400"
+  }
+]

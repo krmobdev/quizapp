@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(.\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 60)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Android\\\\Android Studio1\\\\jbr\\\\bin\\\\java.exe\" -version 2>&1)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr\\\\bin\\\\java.exe\" -version 2>&1)",
+      "PowerShell(\"===\")",
+      "Bash(rm -f shot_*.png ui_dump.xml)",
+      "Bash(ls *.png)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

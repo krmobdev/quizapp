@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="38"
+                android:centerY="28"
+                android:gradientRadius="88">
+                <item
+                    android:offset="0"
+                    android:color="@color/ic_launcher_bg_mid" />
+                <item
+                    android:offset="0.55"
+                    android:color="@color/ic_launcher_bg_start" />
+                <item
+                    android:offset="1"
+                    android:color="@color/ic_launcher_bg_end" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Soft mint glow behind the bulb -->
+    <path
+        android:fillColor="@color/ic_launcher_bg_glow"
+        android:pathData="M54,52m-30,0a30,34 0,1 1,60 0a30,34 0,1 1,-60 0" />
+    <!-- Subtle highlight arc -->
+    <path
+        android:fillColor="#18FFFFFF"
+        android:pathData="M18,8c28,6 52,4 72,-2c-8,18 -26,32 -48,36c-14,3 -28,1 -24,-34z" />
+</vector>
