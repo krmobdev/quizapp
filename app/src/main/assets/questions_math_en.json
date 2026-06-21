@@ -3,7 +3,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many degrees are in a full turn?",
-    "options": ["360", "180", "270", "90"],
+    "options": [
+      "360",
+      "180",
+      "270",
+      "90"
+    ],
     "correctIndex": 0,
     "explanation": "A full turn equals 360°.",
     "id": "math_001"
@@ -12,7 +17,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many centimetres are in one metre?",
-    "options": ["100", "10", "1000", "50"],
+    "options": [
+      "100",
+      "10",
+      "1000",
+      "50"
+    ],
     "correctIndex": 0,
     "explanation": "There are 100 centimetres in a metre.",
     "id": "math_002"
@@ -21,7 +31,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many millimetres are in one centimetre?",
-    "options": ["10", "100", "5", "1"],
+    "options": [
+      "10",
+      "100",
+      "5",
+      "1"
+    ],
     "correctIndex": 0,
     "explanation": "There are 10 millimetres in a centimetre.",
     "id": "math_003"
@@ -30,7 +45,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What do we call a number that is divisible by 2 with no remainder?",
-    "options": ["Even", "Odd", "Prime", "Fractional"],
+    "options": [
+      "Even",
+      "Odd",
+      "Prime",
+      "Fractional"
+    ],
     "correctIndex": 0,
     "explanation": "Numbers divisible by 2 are called even.",
     "id": "math_004"
@@ -39,7 +59,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many faces does a cube have?",
-    "options": ["6", "4", "8", "12"],
+    "options": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
     "correctIndex": 0,
     "explanation": "A cube has 6 faces.",
     "id": "math_005"
@@ -48,7 +73,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 7 × 8?",
-    "options": ["56", "54", "64", "48"],
+    "options": [
+      "56",
+      "54",
+      "64",
+      "48"
+    ],
     "correctIndex": 0,
     "explanation": "7 × 8 = 56.",
     "id": "math_006"
@@ -57,7 +87,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is the square root of 81?",
-    "options": ["9", "7", "8", "6"],
+    "options": [
+      "9",
+      "7",
+      "8",
+      "6"
+    ],
     "correctIndex": 0,
     "explanation": "√81 = 9, because 9 × 9 = 81.",
     "id": "math_007"
@@ -66,7 +101,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 100 − 37?",
-    "options": ["63", "73", "67", "57"],
+    "options": [
+      "63",
+      "73",
+      "67",
+      "57"
+    ],
     "correctIndex": 0,
     "explanation": "100 − 37 = 63.",
     "id": "math_008"
@@ -75,7 +115,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many minutes are in one hour?",
-    "options": ["60", "100", "30", "24"],
+    "options": [
+      "60",
+      "100",
+      "30",
+      "24"
+    ],
     "correctIndex": 0,
     "explanation": "There are 60 minutes in an hour.",
     "id": "math_009"
@@ -84,7 +129,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 12 × 12?",
-    "options": ["144", "124", "132", "154"],
+    "options": [
+      "144",
+      "124",
+      "132",
+      "154"
+    ],
     "correctIndex": 0,
     "explanation": "12 × 12 = 144.",
     "id": "math_010"
@@ -93,7 +143,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "Which number comes right after 99?",
-    "options": ["100", "98", "101", "990"],
+    "options": [
+      "100",
+      "98",
+      "101",
+      "990"
+    ],
     "correctIndex": 0,
     "explanation": "After 99 comes 100.",
     "id": "math_011"
@@ -102,7 +157,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many sides does a triangle have?",
-    "options": ["3", "4", "5", "6"],
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
     "correctIndex": 0,
     "explanation": "A triangle has three sides.",
     "id": "math_012"
@@ -111,7 +171,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is half of 50?",
-    "options": ["25", "20", "30", "15"],
+    "options": [
+      "25",
+      "20",
+      "30",
+      "15"
+    ],
     "correctIndex": 0,
     "explanation": "Half of 50 is 25.",
     "id": "math_013"
@@ -120,7 +185,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 9 + 6?",
-    "options": ["15", "14", "16", "13"],
+    "options": [
+      "15",
+      "14",
+      "16",
+      "13"
+    ],
     "correctIndex": 0,
     "explanation": "9 + 6 = 15.",
     "id": "math_014"
@@ -129,7 +199,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many corners does a square have?",
-    "options": ["4", "3", "5", "6"],
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
     "correctIndex": 0,
     "explanation": "A square has four corners.",
     "id": "math_015"
@@ -138,7 +213,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 1000 ÷ 10?",
-    "options": ["100", "10", "1000", "110"],
+    "options": [
+      "100",
+      "10",
+      "1000",
+      "110"
+    ],
     "correctIndex": 0,
     "explanation": "1000 ÷ 10 = 100.",
     "id": "math_016"
@@ -147,7 +227,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "Which of these numbers is even?",
-    "options": ["8", "7", "5", "3"],
+    "options": [
+      "8",
+      "7",
+      "5",
+      "3"
+    ],
     "correctIndex": 0,
     "explanation": "The even number in the list is 8.",
     "id": "math_017"
@@ -156,7 +241,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 6 × 7?",
-    "options": ["42", "48", "36", "49"],
+    "options": [
+      "42",
+      "48",
+      "36",
+      "49"
+    ],
     "correctIndex": 0,
     "explanation": "6 × 7 = 42.",
     "id": "math_018"
@@ -165,7 +255,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "What is 15 − 9?",
-    "options": ["6", "7", "5", "8"],
+    "options": [
+      "6",
+      "7",
+      "5",
+      "8"
+    ],
     "correctIndex": 0,
     "explanation": "15 − 9 = 6.",
     "id": "math_019"
@@ -174,7 +269,12 @@
     "category": "math",
     "difficulty": "EASY",
     "text": "How many days are in a week?",
-    "options": ["7", "5", "10", "14"],
+    "options": [
+      "7",
+      "5",
+      "10",
+      "14"
+    ],
     "correctIndex": 0,
     "explanation": "There are seven days in a week.",
     "id": "math_020"
@@ -183,7 +283,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the square root of 144?",
-    "options": ["12", "14", "11", "13"],
+    "options": [
+      "12",
+      "14",
+      "11",
+      "13"
+    ],
     "correctIndex": 0,
     "explanation": "√144 = 12.",
     "id": "math_021"
@@ -192,7 +297,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 25% of 200?",
-    "options": ["50", "25", "75", "100"],
+    "options": [
+      "50",
+      "25",
+      "75",
+      "100"
+    ],
     "correctIndex": 0,
     "explanation": "25% of 200 is 50.",
     "id": "math_022"
@@ -201,7 +311,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "How many edges does a cube have?",
-    "options": ["12", "8", "6", "10"],
+    "options": [
+      "12",
+      "8",
+      "6",
+      "10"
+    ],
     "correctIndex": 0,
     "explanation": "A cube has 12 edges.",
     "id": "math_023"
@@ -210,7 +325,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 3 cubed (3³)?",
-    "options": ["27", "9", "12", "81"],
+    "options": [
+      "27",
+      "9",
+      "12",
+      "81"
+    ],
     "correctIndex": 0,
     "explanation": "3³ = 3 × 3 × 3 = 27.",
     "id": "math_024"
@@ -219,7 +339,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the result of multiplication called?",
-    "options": ["Product", "Sum", "Difference", "Quotient"],
+    "options": [
+      "Product",
+      "Sum",
+      "Difference",
+      "Quotient"
+    ],
     "correctIndex": 0,
     "explanation": "The result of multiplication is called the product.",
     "id": "math_025"
@@ -228,7 +353,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 144 ÷ 12?",
-    "options": ["12", "14", "10", "11"],
+    "options": [
+      "12",
+      "14",
+      "10",
+      "11"
+    ],
     "correctIndex": 0,
     "explanation": "144 ÷ 12 = 12.",
     "id": "math_026"
@@ -237,7 +367,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "How many vertices does a cube have?",
-    "options": ["8", "6", "4", "12"],
+    "options": [
+      "8",
+      "6",
+      "4",
+      "12"
+    ],
     "correctIndex": 0,
     "explanation": "A cube has 8 vertices.",
     "id": "math_027"
@@ -246,7 +381,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the area of a rectangle with sides 4 and 5?",
-    "options": ["20", "9", "18", "40"],
+    "options": [
+      "20",
+      "9",
+      "18",
+      "40"
+    ],
     "correctIndex": 0,
     "explanation": "Area = 4 × 5 = 20.",
     "id": "math_028"
@@ -255,7 +395,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What do we call a number divisible only by 1 and itself?",
-    "options": ["Prime", "Even", "Composite", "Fractional"],
+    "options": [
+      "Prime",
+      "Even",
+      "Composite",
+      "Fractional"
+    ],
     "correctIndex": 0,
     "explanation": "Such a number is called prime.",
     "id": "math_029"
@@ -264,7 +409,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 2 to the tenth power (2¹⁰)?",
-    "options": ["1024", "512", "256", "2048"],
+    "options": [
+      "1024",
+      "512",
+      "256",
+      "2048"
+    ],
     "correctIndex": 0,
     "explanation": "2¹⁰ = 1024.",
     "id": "math_030"
@@ -273,7 +423,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What percentage is one half of a whole?",
-    "options": ["50%", "25%", "75%", "100%"],
+    "options": [
+      "50%",
+      "25%",
+      "75%",
+      "100%"
+    ],
     "correctIndex": 0,
     "explanation": "One half is 50%.",
     "id": "math_031"
@@ -282,7 +437,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the sum of the angles of any triangle?",
-    "options": ["180°", "90°", "360°", "270°"],
+    "options": [
+      "180°",
+      "90°",
+      "360°",
+      "270°"
+    ],
     "correctIndex": 0,
     "explanation": "The angles of a triangle add up to 180°.",
     "id": "math_032"
@@ -291,7 +451,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the result of division called?",
-    "options": ["Quotient", "Product", "Sum", "Difference"],
+    "options": [
+      "Quotient",
+      "Product",
+      "Sum",
+      "Difference"
+    ],
     "correctIndex": 0,
     "explanation": "The result of division is called the quotient.",
     "id": "math_033"
@@ -300,7 +465,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "Which fraction equals 0.5?",
-    "options": ["1/2", "1/4", "1/5", "2/5"],
+    "options": [
+      "1/2",
+      "1/4",
+      "1/5",
+      "2/5"
+    ],
     "correctIndex": 0,
     "explanation": "0.5 = 1/2.",
     "id": "math_034"
@@ -309,7 +479,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 8²?",
-    "options": ["64", "16", "32", "48"],
+    "options": [
+      "64",
+      "16",
+      "32",
+      "48"
+    ],
     "correctIndex": 0,
     "explanation": "8² = 8 × 8 = 64.",
     "id": "math_035"
@@ -318,7 +493,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the smallest prime number?",
-    "options": ["2", "1", "3", "0"],
+    "options": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
     "correctIndex": 0,
     "explanation": "The smallest prime number is 2.",
     "id": "math_036"
@@ -327,7 +507,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is the perimeter of a square with side 5?",
-    "options": ["20", "25", "10", "15"],
+    "options": [
+      "20",
+      "25",
+      "10",
+      "15"
+    ],
     "correctIndex": 0,
     "explanation": "Perimeter = 4 × 5 = 20.",
     "id": "math_037"
@@ -336,7 +521,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 7 × 9?",
-    "options": ["63", "56", "72", "64"],
+    "options": [
+      "63",
+      "56",
+      "72",
+      "64"
+    ],
     "correctIndex": 0,
     "explanation": "7 × 9 = 63.",
     "id": "math_038"
@@ -345,7 +535,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is a fraction with a numerator smaller than its denominator called?",
-    "options": ["A proper fraction", "An improper fraction", "A decimal fraction", "A mixed number"],
+    "options": [
+      "A proper fraction",
+      "An improper fraction",
+      "A decimal fraction",
+      "A mixed number"
+    ],
     "correctIndex": 0,
     "explanation": "If the numerator is smaller than the denominator, the fraction is proper.",
     "id": "math_039"
@@ -354,7 +549,12 @@
     "category": "math",
     "difficulty": "MEDIUM",
     "text": "What is 1/4 + 1/4?",
-    "options": ["1/2", "1/8", "1/6", "1/3"],
+    "options": [
+      "1/2",
+      "1/8",
+      "1/6",
+      "1/3"
+    ],
     "correctIndex": 0,
     "explanation": "1/4 + 1/4 = 2/4 = 1/2.",
     "id": "math_040"
@@ -363,7 +563,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the approximate value of π?",
-    "options": ["3.14", "2.72", "1.62", "3.33"],
+    "options": [
+      "3.14",
+      "2.72",
+      "1.62",
+      "3.33"
+    ],
     "correctIndex": 0,
     "explanation": "π ≈ 3.14159.",
     "id": "math_041"
@@ -372,7 +577,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the factorial of 5 (5!)?",
-    "options": ["120", "25", "60", "100"],
+    "options": [
+      "120",
+      "25",
+      "60",
+      "100"
+    ],
     "correctIndex": 0,
     "explanation": "5! = 1 × 2 × 3 × 4 × 5 = 120.",
     "id": "math_042"
@@ -381,7 +591,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is a line that touches a circle at exactly one point called?",
-    "options": ["Tangent", "Chord", "Secant", "Diameter"],
+    "options": [
+      "Tangent",
+      "Chord",
+      "Secant",
+      "Diameter"
+    ],
     "correctIndex": 0,
     "explanation": "A line touching a circle at one point is a tangent.",
     "id": "math_043"
@@ -390,7 +605,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the hypotenuse of a right triangle with legs 3 and 4?",
-    "options": ["5", "6", "7", "25"],
+    "options": [
+      "5",
+      "6",
+      "7",
+      "25"
+    ],
     "correctIndex": 0,
     "explanation": "By the Pythagorean theorem: √(3² + 4²) = √25 = 5.",
     "id": "math_044"
@@ -399,7 +619,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the approximate value of e (the base of the natural logarithm)?",
-    "options": ["2.72", "3.14", "1.41", "1.62"],
+    "options": [
+      "2.72",
+      "3.14",
+      "1.41",
+      "1.62"
+    ],
     "correctIndex": 0,
     "explanation": "e ≈ 2.71828.",
     "id": "math_045"
@@ -408,7 +633,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is log₁₀(1000)?",
-    "options": ["3", "10", "100", "2"],
+    "options": [
+      "3",
+      "10",
+      "100",
+      "2"
+    ],
     "correctIndex": 0,
     "explanation": "10³ = 1000, so log₁₀(1000) = 3.",
     "id": "math_046"
@@ -417,7 +647,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "How many diagonals does a square have?",
-    "options": ["2", "4", "1", "3"],
+    "options": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ],
     "correctIndex": 0,
     "explanation": "A square has two diagonals.",
     "id": "math_047"
@@ -426,7 +661,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the sum of the interior angles of a convex quadrilateral?",
-    "options": ["360°", "180°", "270°", "540°"],
+    "options": [
+      "360°",
+      "180°",
+      "270°",
+      "540°"
+    ],
     "correctIndex": 0,
     "explanation": "The angles of a quadrilateral add up to 360°.",
     "id": "math_048"
@@ -435,7 +675,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the theorem about a² + b² = c² in a right triangle called?",
-    "options": ["The Pythagorean theorem", "Thales' theorem", "Vieta's theorem", "Euclid's theorem"],
+    "options": [
+      "The Pythagorean theorem",
+      "Thales' theorem",
+      "Vieta's theorem",
+      "Euclid's theorem"
+    ],
     "correctIndex": 0,
     "explanation": "This is the Pythagorean theorem.",
     "id": "math_049"
@@ -444,7 +689,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is 15% of 300?",
-    "options": ["45", "30", "60", "50"],
+    "options": [
+      "45",
+      "30",
+      "60",
+      "50"
+    ],
     "correctIndex": 0,
     "explanation": "15% of 300 = 45.",
     "id": "math_050"
@@ -453,7 +703,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the square root of 256?",
-    "options": ["16", "14", "18", "12"],
+    "options": [
+      "16",
+      "14",
+      "18",
+      "12"
+    ],
     "correctIndex": 0,
     "explanation": "√256 = 16.",
     "id": "math_051"
@@ -462,7 +717,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is 6! ÷ 5!?",
-    "options": ["6", "30", "120", "1"],
+    "options": [
+      "6",
+      "30",
+      "120",
+      "1"
+    ],
     "correctIndex": 0,
     "explanation": "6! ÷ 5! = 720 ÷ 120 = 6.",
     "id": "math_052"
@@ -471,7 +731,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the formula for the area of a circle of radius r?",
-    "options": ["πr²", "2πr", "πd", "r²"],
+    "options": [
+      "πr²",
+      "2πr",
+      "πd",
+      "r²"
+    ],
     "correctIndex": 0,
     "explanation": "The area of a circle is πr².",
     "id": "math_053"
@@ -480,7 +745,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the sum of numbers divided by their count called?",
-    "options": ["The mean (average)", "The median", "The mode", "The variance"],
+    "options": [
+      "The mean (average)",
+      "The median",
+      "The mode",
+      "The variance"
+    ],
     "correctIndex": 0,
     "explanation": "This is the arithmetic mean (average).",
     "id": "math_054"
@@ -489,7 +759,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the value of the expression 2 + 2 × 2?",
-    "options": ["6", "8", "4", "16"],
+    "options": [
+      "6",
+      "8",
+      "4",
+      "16"
+    ],
     "correctIndex": 0,
     "explanation": "Multiplication first: 2 × 2 = 4, then 2 + 4 = 6.",
     "id": "math_055"
@@ -498,7 +773,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the factorial of zero (0!)?",
-    "options": ["1", "0", "Undefined", "Infinity"],
+    "options": [
+      "1",
+      "0",
+      "Undefined",
+      "Infinity"
+    ],
     "correctIndex": 0,
     "explanation": "By definition, 0! = 1.",
     "id": "math_056"
@@ -507,7 +787,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the approximate value of the golden ratio?",
-    "options": ["1.618", "3.14", "2.718", "1.414"],
+    "options": [
+      "1.618",
+      "3.14",
+      "2.718",
+      "1.414"
+    ],
     "correctIndex": 0,
     "explanation": "The golden ratio is about 1.618.",
     "id": "math_057"
@@ -516,7 +801,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is one radian approximately equal to in degrees?",
-    "options": ["57°", "90°", "180°", "360°"],
+    "options": [
+      "57°",
+      "90°",
+      "180°",
+      "360°"
+    ],
     "correctIndex": 0,
     "explanation": "One radian ≈ 57.3°.",
     "id": "math_058"
@@ -525,7 +815,12 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is a polygon with six sides called?",
-    "options": ["Hexagon", "Pentagon", "Octagon", "Quadrilateral"],
+    "options": [
+      "Hexagon",
+      "Pentagon",
+      "Octagon",
+      "Quadrilateral"
+    ],
     "correctIndex": 0,
     "explanation": "A six-sided polygon is a hexagon.",
     "id": "math_059"
@@ -534,9 +829,1008 @@
     "category": "math",
     "difficulty": "HARD",
     "text": "What is the greatest common divisor of 12 and 18?",
-    "options": ["6", "3", "2", "9"],
+    "options": [
+      "6",
+      "3",
+      "2",
+      "9"
+    ],
     "correctIndex": 0,
     "explanation": "The greatest common divisor of 12 and 18 is 6.",
     "id": "math_060"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "In the complex plane, multiplying a given function by i rotates it anti-clockwise by how many degrees?",
+    "options": [
+      "90",
+      "180",
+      "270",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 90.",
+    "id": "math_061"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "The notion of a \"set that contains all sets which do not contain themselves\" is a paradoxical idea attributed to which English philosopher?",
+    "options": [
+      "Bertrand Russel",
+      "Francis Bacon",
+      "John Locke",
+      "Alfred North Whitehead"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bertrand Russel.",
+    "id": "math_062"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What numbers are in the 5th row of Pascal's Triangle?",
+    "options": [
+      "1 4 6 4 1",
+      "1 3 3 1",
+      "1 5 10 10 5 1",
+      "1 6 15 20 15 6 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1 4 6 4 1.",
+    "id": "math_063"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "What is the only Millennium Prize Problem that has been solved so far?",
+    "options": [
+      "Poincaré conjecture",
+      "P vs. NP problem",
+      "Riemann Hypothesis",
+      "Fermat's conjecture"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Poincaré conjecture.",
+    "id": "math_064"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What Greek letter is used to signify summation?",
+    "options": [
+      "Sigma",
+      "Delta",
+      "Alpha",
+      "Omega"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sigma.",
+    "id": "math_065"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which of these did mathematician Leonhard Euler NOT develop?",
+    "options": [
+      "An improvement to the Fast Fourier Transform",
+      "A method of solving first-order differential equations",
+      "An identity linking the numbers e, pi and i",
+      "A formula linking vertices, edges and faces on a graph"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is An improvement to the Fast Fourier Transform.",
+    "id": "math_066"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "How many books are in Euclid's Elements of Geometry?",
+    "options": [
+      "13",
+      "8",
+      "10",
+      "17"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 13.",
+    "id": "math_067"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "At what temperature does temp in °C equal temp in °F?",
+    "options": [
+      "-40",
+      "+40",
+      "0",
+      "+100"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is -40.",
+    "id": "math_068"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "What is the plane curve proposed by Descartes to challenge Fermat's extremum-finding techniques called?",
+    "options": [
+      "Folium of Descartes",
+      "Elliptic Paraboloid of Descartes",
+      "Cartesian Coordinates",
+      "Descarte's Helicoid"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Folium of Descartes.",
+    "id": "math_069"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "In the hexadecimal system, what number comes after 9?",
+    "options": [
+      "The Letter A",
+      "10",
+      "The Number 0",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Letter A.",
+    "id": "math_070"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which mathematician refused the Fields Medal?",
+    "options": [
+      "Grigori Perelman",
+      "Andrew Wiles",
+      "Terence Tao",
+      "Edward Witten"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Grigori Perelman.",
+    "id": "math_071"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What prime number comes next after 19?",
+    "options": [
+      "23",
+      "25",
+      "21",
+      "27"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 23.",
+    "id": "math_072"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "How many sides does a heptagon have?",
+    "options": [
+      "7",
+      "5",
+      "4",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 7.",
+    "id": "math_073"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the correct order of operations for solving equations?",
+    "options": [
+      "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction",
+      "Addition, Multiplication, Division, Subtraction, Addition, Parentheses",
+      "Parentheses, Exponents, Addition, Substraction, Multiplication, Division",
+      "The order in which the operations are written."
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.",
+    "id": "math_074"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the equation for the area of a sphere?",
+    "options": [
+      "(4/3)πr^3",
+      "4πr^2",
+      "(1/3)πhr^2",
+      "πr^4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is (4/3)πr^3.",
+    "id": "math_075"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "In a normal distribution, 95% of the data lies within how many standard deviations of the mean?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2.",
+    "id": "math_076"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "How many degrees make a full circle?",
+    "options": [
+      "360",
+      "180",
+      "90",
+      "720"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 360.",
+    "id": "math_077"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "How many sides does a pentagon have?",
+    "options": [
+      "5",
+      "9",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 5.",
+    "id": "math_078"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the mathematician Euler's first name?",
+    "options": [
+      "Leonhard",
+      "Lionel",
+      "Andrin",
+      "Ajan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Leonhard.",
+    "id": "math_079"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What is the area of a circle with a diameter of 20 inches if π= 3.1415?",
+    "options": [
+      "314.15 Inches",
+      "380.1215 Inches",
+      "3141.5 Inches",
+      "1256.6 Inches"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 314.15 Inches.",
+    "id": "math_080"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What type of angle is greater than 90°?",
+    "options": [
+      "Obtuse",
+      "Acute",
+      "Right",
+      "Straight"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Obtuse.",
+    "id": "math_081"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What are the first 6 digits of the number \"Pi\"?",
+    "options": [
+      "3.14159",
+      "3.14169",
+      "3.12423",
+      "3.25812"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 3.14159.",
+    "id": "math_082"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following dice is not a platonic solid?",
+    "options": [
+      "10-sided die",
+      "12-sided die",
+      "20-sided die",
+      "8-sided die"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 10-sided die.",
+    "id": "math_083"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+    "options": [
+      "1.58 x 10^20",
+      "1.58 x 10^22",
+      "1.58 x  10^18",
+      "1.58 x 10^24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1.58 x 10^20.",
+    "id": "math_084"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which of these probability distributions is NOT discrete?",
+    "options": [
+      "Normal",
+      "Binomial",
+      "Poisson",
+      "Hyper-geometric"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Normal.",
+    "id": "math_085"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "How many sides does a trapezium have?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 4.",
+    "id": "math_086"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the symbol for Displacement?",
+    "options": [
+      "Δr",
+      "dr",
+      "Dp",
+      "r"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Δr.",
+    "id": "math_087"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is a polygon with eight sides called?",
+    "options": [
+      "Octagon",
+      "Hexagon",
+      "Nanagon",
+      "Heptagon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Octagon.",
+    "id": "math_088"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What is the first Mersenne prime exponent over 1000?",
+    "options": [
+      "1279",
+      "2203",
+      "1009",
+      "1069"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1279.",
+    "id": "math_089"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Who proved Fermat's Last Theorem?",
+    "options": [
+      "Andrew Wiles",
+      "Leonhard Euler",
+      "Carl Friedrich Gauss",
+      "Srinivasa Ramanujan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Andrew Wiles.",
+    "id": "math_090"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the name of a nine sided polygon?",
+    "options": [
+      "Nonagon",
+      "Hexagon",
+      "Octagon",
+      "Heptagon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nonagon.",
+    "id": "math_091"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "How many Millibars (mbar) to 1 Inch of Mercury (inHg)",
+    "options": [
+      "33.9",
+      "30.0",
+      "27.4",
+      "10.6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 33.9.",
+    "id": "math_092"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which of the following famous mathematicians died in a duel at the age of 20?",
+    "options": [
+      "Galois",
+      "Abel",
+      "Euler",
+      "Gauss"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Galois.",
+    "id": "math_093"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "What is the approximate value of mathematical constant e?",
+    "options": [
+      "2.72",
+      "3.14",
+      "1.62",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2.72.",
+    "id": "math_094"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "The metric prefix \"atto-\" makes a measurement how much smaller than the base unit?",
+    "options": [
+      "One Quintillionth",
+      "One Billionth",
+      "One Quadrillionth",
+      "One Septillionth"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is One Quintillionth.",
+    "id": "math_095"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What type of function is x²+2x+1?",
+    "options": [
+      "Quadratic",
+      "Rational",
+      "Linear",
+      "Exponential"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Quadratic.",
+    "id": "math_096"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Integration is the reverse of what mathematical operation?",
+    "options": [
+      "Derivation",
+      "Division",
+      "Standard Deviation",
+      "Multiplication"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Derivation.",
+    "id": "math_097"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "How many square faces does a cube have?",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6.",
+    "id": "math_098"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What's the square root of 49?",
+    "options": [
+      "7",
+      "4",
+      "12",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 7.",
+    "id": "math_099"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Which of the following is not one of the seven Millennium Prize Problems?",
+    "options": [
+      "Naviér conjecture",
+      "Birch and Swinnerton-Dyer Conjecture",
+      "Riemann hypothesis",
+      "Poincaré conjecture"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Naviér conjecture.",
+    "id": "math_100"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "How many sides does a Möbius strip have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1.",
+    "id": "math_101"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "The French mathematician Évariste Galois is primarily known for his work in which?",
+    "options": [
+      "Galois Theory",
+      "Galois' Continued Fractions",
+      "Galois' Method for PDE's ",
+      "Abelian Integration"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Galois Theory.",
+    "id": "math_102"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What is the derivative of sin(x)",
+    "options": [
+      "cos(x)",
+      "csc(x)",
+      "-cos(x)",
+      "-sin(x)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is cos(x).",
+    "id": "math_103"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "How many zeros are there in a googol?",
+    "options": [
+      "100",
+      "10",
+      "1,000",
+      "1,000,000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 100.",
+    "id": "math_104"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "To the nearest whole number, how many radians are in a whole circle?",
+    "options": [
+      "6",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6.",
+    "id": "math_105"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What comes after a Million, a Billion, and a Trillion?",
+    "options": [
+      "Quadrillion",
+      "Sextillion",
+      "Quintillion",
+      "Septillion"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Quadrillion.",
+    "id": "math_106"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "How many zeptometres are inside one femtometre?",
+    "options": [
+      "1,000,000",
+      "10",
+      "1,000,000,000",
+      "1000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1,000,000.",
+    "id": "math_107"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "What is the derivative of Acceleration with respect to time?",
+    "options": [
+      "Jerk",
+      "Shift",
+      "Bump",
+      "Slide"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jerk.",
+    "id": "math_108"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "The decimal number 31 in hexadecimal would be what?",
+    "options": [
+      "1F",
+      "3D",
+      "2E",
+      "1B"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1F.",
+    "id": "math_109"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What shape does sin(x) or cos(x) make on a graph?",
+    "options": [
+      "Waves",
+      "A Parabola",
+      "A Straight Line",
+      "Zig-Zags"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Waves.",
+    "id": "math_110"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What is the alphanumeric representation of the imaginary number?",
+    "options": [
+      "i",
+      "e",
+      "n",
+      "x"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is i.",
+    "id": "math_111"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "In Roman Numerals, what does XL equate to?",
+    "options": [
+      "40",
+      "60",
+      "15",
+      "90"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 40.",
+    "id": "math_112"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What is the Roman numeral for 500?",
+    "options": [
+      "D",
+      "L",
+      "C",
+      "X"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is D.",
+    "id": "math_113"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which greek mathematician ran through the streets of Syracuse naked while shouting \"Eureka\" after discovering the principle of displacement?",
+    "options": [
+      "Archimedes",
+      "Euclid",
+      "Homer",
+      "Eratosthenes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Archimedes.",
+    "id": "math_114"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "What is the smallest number that can be expressed as the sum of two positive cubes in two different ways?",
+    "options": [
+      "1729",
+      "91",
+      "561",
+      "4104"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1729.",
+    "id": "math_115"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Which two men are credited with independently discovering differential calculus? ",
+    "options": [
+      "Newton and Leibnitz",
+      "Plato and Aristotle",
+      "Asiimov and Rutherford",
+      "Dvorak and Smith"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Newton and Leibnitz.",
+    "id": "math_116"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "What is the fourth digit of π?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1.",
+    "id": "math_117"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which of the following mathematicians made major contributions to game theory?",
+    "options": [
+      "John Von Neumann",
+      "Carl Friedrich Gauss",
+      "Leonhard Euler",
+      "Stefan Banach"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is John Von Neumann.",
+    "id": "math_118"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the least number of sides a polygon can have?",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "7"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 3.",
+    "id": "math_119"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Which theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides?",
+    "options": [
+      "Pythagorean theorem",
+      "Thales's theorem",
+      "Law of cosines",
+      "Law of sines"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Pythagorean theorem formula is: a^2 + b^2 = c^2.",
+    "id": "math_120"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What are natural numbers called if they have exactly two divisors: one and themselves?",
+    "options": [
+      "Prime",
+      "Composite",
+      "Even",
+      "Fractional"
+    ],
+    "correctIndex": 0,
+    "explanation": "Numbers like 2, 3, 5, 7, 11 are prime.",
+    "id": "math_121"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "What is the approximate value of the mathematical constant Pi (ratio of a circle's circumference to its diameter)?",
+    "options": [
+      "3.14",
+      "2.71",
+      "1.61",
+      "1.41"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pi is an irrational number, and its approximate value is 3.14159...",
+    "id": "math_122"
+  },
+  {
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Which operation in calculus is the inverse of differentiation?",
+    "options": [
+      "Integration",
+      "Differentiation",
+      "Multiplication",
+      "Exponentiation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integration determines the antiderivative of a function.",
+    "id": "math_123"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "What is a sequence of numbers called where each number is the sum of the two preceding ones?",
+    "options": [
+      "Fibonacci numbers",
+      "Arithmetic progression",
+      "Geometric progression",
+      "Prime numbers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Fibonacci sequence starts with 0, 1, 1, 2, 3, 5, 8, 13...",
+    "id": "math_124"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which numerical property of a square matrix is zero if and only if the matrix is singular (not invertible)?",
+    "options": [
+      "Determinant",
+      "Trace",
+      "Rank",
+      "Transpose"
+    ],
+    "correctIndex": 0,
+    "explanation": "If the determinant of a matrix is zero, it does not have an inverse.",
+    "id": "math_125"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which continuous probability distribution is bell-shaped and fully defined by its mean and variance?",
+    "options": [
+      "Normal distribution",
+      "Binomial distribution",
+      "Uniform distribution",
+      "Poisson distribution"
+    ],
+    "correctIndex": 0,
+    "explanation": "The normal distribution is also widely referred to as the Gaussian distribution.",
+    "id": "math_126"
+  },
+  {
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Which 18th-century Swiss mathematician introduced f(x), e, i, and pi, and solved the Seven Bridges of Konigsberg problem?",
+    "options": [
+      "Leonhard Euler",
+      "Carl Friedrich Gauss",
+      "Rene Descartes",
+      "Isaac Newton"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leonhard Euler is one of the most prolific mathematicians in history.",
+    "id": "math_127"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which famous 17th-century mathematical theorem by Pierre de Fermat was finally proven by Andrew Wiles in 1994?",
+    "options": [
+      "Fermat's Last Theorem",
+      "Fermat's Little Theorem",
+      "Poincare conjecture",
+      "Riemann hypothesis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fermat's Last Theorem states that a^n + b^n = c^n has no non-zero integer solutions for n > 2.",
+    "id": "math_128"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which fundamental theorem connects the operations of integration and differentiation?",
+    "options": [
+      "Fundamental Theorem of Calculus",
+      "Rolle's theorem",
+      "Mean Value Theorem",
+      "Cauchy's theorem"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Fundamental Theorem of Calculus relates definite integration to antiderivatives.",
+    "id": "math_129"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which English mathematician is considered the father of theoretical computer science and cracked the Enigma cipher?",
+    "options": [
+      "Alan Turing",
+      "John von Neumann",
+      "Ada Lovelace",
+      "Charles Babbage"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alan Turing formalised the concepts of algorithm and computation with the Turing machine.",
+    "id": "math_130"
+  },
+  {
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Which theorem in probability theory describes the probability of an event based on prior knowledge of conditions?",
+    "options": [
+      "Bayes' theorem",
+      "Central Limit Theorem",
+      "Law of Large Numbers",
+      "Bernoulli's theorem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bayes' theorem formula P(A|B) = [P(B|A)*P(A)] / P(B) is fundamental to Bayesian statistics.",
+    "id": "math_131"
   }
 ]

@@ -10,7 +10,9 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -46,7 +48,6 @@ import com.rustam.quizapp.ui.theme.QuizappTheme
 @Composable
 fun ResultScreen(
     result: QuizResult?,
-    onRetryMistakes: () -> Unit,
     onHome: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -58,7 +59,6 @@ fun ResultScreen(
     }
     ResultContent(
         result = result,
-        onRetryMistakes = onRetryMistakes,
         onHome = onHome,
         modifier = modifier
     )
@@ -67,7 +67,6 @@ fun ResultScreen(
 @Composable
 private fun ResultContent(
     result: QuizResult,
-    onRetryMistakes: () -> Unit,
     onHome: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -90,7 +89,9 @@ private fun ResultContent(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(24.dp),
+                .statusBarsPadding()
+                .navigationBarsPadding()
+                .padding(horizontal = 24.dp, vertical = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(Modifier.height(8.dp))
@@ -198,16 +199,9 @@ private fun ResultContent(
 
             Spacer(Modifier.height(16.dp))
             AppActionButton(
-                text = stringResource(R.string.result_retry_mistakes),
-                onClick = onRetryMistakes,
-                enabled = result.mistakes.isNotEmpty(),
-                primary = true
-            )
-            Spacer(Modifier.height(AppDimens.ButtonSpacing))
-            AppActionButton(
                 text = stringResource(R.string.result_home),
                 onClick = onHome,
-                primary = false
+                primary = true
             )
         }
     }
@@ -332,7 +326,6 @@ private fun ResultWithMistakesPreview() {
                     )
                 )
             ),
-            onRetryMistakes = {},
             onHome = {}
         )
     }
@@ -344,7 +337,6 @@ private fun ResultDarkPreview() {
     QuizappTheme(darkTheme = true) {
         ResultContent(
             result = QuizResult(correct = 10, total = 10, mistakes = emptyList()),
-            onRetryMistakes = {},
             onHome = {}
         )
     }

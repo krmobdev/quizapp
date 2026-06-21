@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBars
@@ -128,6 +129,7 @@ private fun HomeContent(
     Scaffold(
         modifier = modifier.fillMaxSize(),
         containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0f),
+        contentWindowInsets = WindowInsets.statusBars,
         topBar = {
             if (selected != null) {
                 CenterAlignedTopAppBar(
@@ -486,6 +488,7 @@ private fun DifficultyPanel(
     Column(
         modifier = modifier
             .fillMaxSize()
+            .navigationBarsPadding()
             .padding(horizontal = 20.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {

@@ -3,7 +3,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which SI unit is force measured?",
-    "options": ["Newton", "Joule", "Watt", "Pascal"],
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
     "correctIndex": 0,
     "explanation": "Force is measured in newtons (N).",
     "id": "phys_001"
@@ -12,7 +17,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "Which force pulls objects toward the Earth?",
-    "options": ["Gravity", "Friction", "Magnetism", "Elasticity"],
+    "options": [
+      "Gravity",
+      "Friction",
+      "Magnetism",
+      "Elasticity"
+    ],
     "correctIndex": 0,
     "explanation": "Objects are pulled toward the Earth by gravity.",
     "id": "phys_002"
@@ -21,7 +31,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which unit is electric current measured?",
-    "options": ["Ampere", "Volt", "Ohm", "Watt"],
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
     "correctIndex": 0,
     "explanation": "Current is measured in amperes (A).",
     "id": "phys_003"
@@ -30,7 +45,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "About how fast does light travel in a vacuum?",
-    "options": ["300,000 km/s", "300 km/s", "3,000 km/s", "30,000 km/s"],
+    "options": [
+      "300,000 km/s",
+      "300 km/s",
+      "3,000 km/s",
+      "30,000 km/s"
+    ],
     "correctIndex": 0,
     "explanation": "Light travels at roughly 300,000 km/s in a vacuum.",
     "id": "phys_004"
@@ -39,7 +59,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "What does a thermometer measure?",
-    "options": ["Temperature", "Pressure", "Humidity", "Force"],
+    "options": [
+      "Temperature",
+      "Pressure",
+      "Humidity",
+      "Force"
+    ],
     "correctIndex": 0,
     "explanation": "A thermometer measures temperature.",
     "id": "phys_005"
@@ -48,7 +73,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which SI unit is energy measured?",
-    "options": ["Joule", "Newton", "Volt", "Hertz"],
+    "options": [
+      "Joule",
+      "Newton",
+      "Volt",
+      "Hertz"
+    ],
     "correctIndex": 0,
     "explanation": "Energy is measured in joules (J).",
     "id": "phys_006"
@@ -57,7 +87,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which state is water at −10 °C?",
-    "options": ["Solid (ice)", "Liquid", "Gas", "Plasma"],
+    "options": [
+      "Solid (ice)",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
     "correctIndex": 0,
     "explanation": "Below 0 °C water freezes into ice, a solid.",
     "id": "phys_007"
@@ -66,7 +101,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "Which instrument measures electric current?",
-    "options": ["Ammeter", "Voltmeter", "Thermometer", "Barometer"],
+    "options": [
+      "Ammeter",
+      "Voltmeter",
+      "Thermometer",
+      "Barometer"
+    ],
     "correctIndex": 0,
     "explanation": "Current is measured with an ammeter.",
     "id": "phys_008"
@@ -75,7 +115,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "Which travels faster — light or sound?",
-    "options": ["Light", "Sound", "They are equal", "It depends on colour"],
+    "options": [
+      "Light",
+      "Sound",
+      "They are equal",
+      "It depends on colour"
+    ],
     "correctIndex": 0,
     "explanation": "Light is far faster than sound, so we see lightning before we hear thunder.",
     "id": "phys_009"
@@ -84,7 +129,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which unit is power measured?",
-    "options": ["Watt", "Joule", "Newton", "Coulomb"],
+    "options": [
+      "Watt",
+      "Joule",
+      "Newton",
+      "Coulomb"
+    ],
     "correctIndex": 0,
     "explanation": "Power is measured in watts (W).",
     "id": "phys_010"
@@ -93,7 +143,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "Which pole of a magnet is attracted to the north pole of another magnet?",
-    "options": ["South", "North", "Either", "Neither"],
+    "options": [
+      "South",
+      "North",
+      "Either",
+      "Neither"
+    ],
     "correctIndex": 0,
     "explanation": "Opposite poles attract: the south pole is drawn to the north.",
     "id": "phys_011"
@@ -102,7 +157,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which unit is frequency measured?",
-    "options": ["Hertz", "Watt", "Ampere", "Pascal"],
+    "options": [
+      "Hertz",
+      "Watt",
+      "Ampere",
+      "Pascal"
+    ],
     "correctIndex": 0,
     "explanation": "Frequency is measured in hertz (Hz), cycles per second.",
     "id": "phys_012"
@@ -111,7 +171,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "A rainbow appears because sunlight is split into what?",
-    "options": ["A spectrum of colours", "Sounds", "Heat rays", "Electric charges"],
+    "options": [
+      "A spectrum of colours",
+      "Sounds",
+      "Heat rays",
+      "Electric charges"
+    ],
     "correctIndex": 0,
     "explanation": "Water droplets split white light into a spectrum of colours.",
     "id": "phys_013"
@@ -120,7 +185,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "Which instrument measures atmospheric pressure?",
-    "options": ["Barometer", "Thermometer", "Ammeter", "Speedometer"],
+    "options": [
+      "Barometer",
+      "Thermometer",
+      "Ammeter",
+      "Speedometer"
+    ],
     "correctIndex": 0,
     "explanation": "Atmospheric pressure is measured with a barometer.",
     "id": "phys_014"
@@ -129,7 +199,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which medium can sound NOT travel?",
-    "options": ["A vacuum", "Air", "Water", "Metal"],
+    "options": [
+      "A vacuum",
+      "Air",
+      "Water",
+      "Metal"
+    ],
     "correctIndex": 0,
     "explanation": "Sound needs a medium; it cannot travel through a vacuum.",
     "id": "phys_015"
@@ -138,7 +213,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "In which unit is electric voltage measured?",
-    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
     "correctIndex": 0,
     "explanation": "Voltage is measured in volts (V).",
     "id": "phys_016"
@@ -147,7 +227,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "What is the state of matter at very high temperatures, like on the Sun?",
-    "options": ["Plasma", "Ice", "Liquid", "Crystal"],
+    "options": [
+      "Plasma",
+      "Ice",
+      "Liquid",
+      "Crystal"
+    ],
     "correctIndex": 0,
     "explanation": "At very high temperatures matter becomes plasma.",
     "id": "phys_017"
@@ -156,7 +241,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "What happens to water at 100 °C at normal pressure?",
-    "options": ["It boils", "It freezes", "It stays the same", "It turns to ice"],
+    "options": [
+      "It boils",
+      "It freezes",
+      "It stays the same",
+      "It turns to ice"
+    ],
     "correctIndex": 0,
     "explanation": "At 100 °C and normal pressure water boils.",
     "id": "phys_018"
@@ -165,7 +255,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "What charge does an electron carry?",
-    "options": ["Negative", "Positive", "Neutral", "Variable"],
+    "options": [
+      "Negative",
+      "Positive",
+      "Neutral",
+      "Variable"
+    ],
     "correctIndex": 0,
     "explanation": "An electron carries a negative electric charge.",
     "id": "phys_019"
@@ -174,7 +269,12 @@
     "category": "physics",
     "difficulty": "EASY",
     "text": "Which force stops a sled from sliding on snow forever?",
-    "options": ["Friction", "Gravity", "Magnetism", "Buoyancy"],
+    "options": [
+      "Friction",
+      "Gravity",
+      "Magnetism",
+      "Buoyancy"
+    ],
     "correctIndex": 0,
     "explanation": "Motion across a surface is opposed by friction.",
     "id": "phys_020"
@@ -183,7 +283,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Who formulated the three laws of motion and the law of universal gravitation?",
-    "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
     "correctIndex": 0,
     "explanation": "These laws were formulated by Isaac Newton.",
     "id": "phys_021"
@@ -192,7 +297,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "In which unit is electrical resistance measured?",
-    "options": ["Ohm", "Volt", "Ampere", "Watt"],
+    "options": [
+      "Ohm",
+      "Volt",
+      "Ampere",
+      "Watt"
+    ],
     "correctIndex": 0,
     "explanation": "Resistance is measured in ohms (Ω).",
     "id": "phys_022"
@@ -201,7 +311,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Ohm's law relates voltage, current and which quantity?",
-    "options": ["Resistance", "Mass", "Temperature", "Frequency"],
+    "options": [
+      "Resistance",
+      "Mass",
+      "Temperature",
+      "Frequency"
+    ],
     "correctIndex": 0,
     "explanation": "By Ohm's law, current equals voltage divided by resistance.",
     "id": "phys_023"
@@ -210,7 +325,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What is inertia?",
-    "options": ["A body's tendency to keep its velocity without external forces", "Static friction", "Attraction to the Earth", "The acceleration of a body"],
+    "options": [
+      "A body's tendency to keep its velocity without external forces",
+      "Static friction",
+      "Attraction to the Earth",
+      "The acceleration of a body"
+    ],
     "correctIndex": 0,
     "explanation": "Inertia is the tendency of a body to stay at rest or in uniform motion.",
     "id": "phys_024"
@@ -219,7 +339,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Which quantity equals a body's mass multiplied by its velocity?",
-    "options": ["Momentum", "Energy", "Power", "Acceleration"],
+    "options": [
+      "Momentum",
+      "Energy",
+      "Power",
+      "Acceleration"
+    ],
     "correctIndex": 0,
     "explanation": "Momentum equals mass times velocity.",
     "id": "phys_025"
@@ -228,7 +353,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What is the approximate acceleration of free fall near the Earth's surface?",
-    "options": ["9.8 m/s²", "3 m/s²", "100 m/s²", "1 m/s²"],
+    "options": [
+      "9.8 m/s²",
+      "3 m/s²",
+      "100 m/s²",
+      "1 m/s²"
+    ],
     "correctIndex": 0,
     "explanation": "Gravity gives an acceleration of about 9.8 m/s² near Earth.",
     "id": "phys_026"
@@ -237,7 +367,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Who developed the theory of relativity?",
-    "options": ["Albert Einstein", "Isaac Newton", "Niels Bohr", "Max Planck"],
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Niels Bohr",
+      "Max Planck"
+    ],
     "correctIndex": 0,
     "explanation": "The theory of relativity was created by Albert Einstein.",
     "id": "phys_027"
@@ -246,7 +381,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What happens to light when it passes from air into water?",
-    "options": ["It refracts", "It disappears", "It speeds up", "It keeps its direction"],
+    "options": [
+      "It refracts",
+      "It disappears",
+      "It speeds up",
+      "It keeps its direction"
+    ],
     "correctIndex": 0,
     "explanation": "At the boundary of two media, light refracts and changes direction.",
     "id": "phys_028"
@@ -255,7 +395,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What is the transfer of heat through direct contact called?",
-    "options": ["Conduction", "Convection", "Radiation", "Evaporation"],
+    "options": [
+      "Conduction",
+      "Convection",
+      "Radiation",
+      "Evaporation"
+    ],
     "correctIndex": 0,
     "explanation": "Heat transfer through direct contact is conduction.",
     "id": "phys_029"
@@ -264,7 +409,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Which famous formula expresses the link between mass and energy?",
-    "options": ["E = mc²", "F = ma", "P = UI", "s = vt"],
+    "options": [
+      "E = mc²",
+      "F = ma",
+      "P = UI",
+      "s = vt"
+    ],
     "correctIndex": 0,
     "explanation": "The mass–energy relation is E = mc².",
     "id": "phys_030"
@@ -273,7 +423,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "In which unit is temperature measured on the absolute scale?",
-    "options": ["Kelvin", "Pascal", "Newton", "Joule"],
+    "options": [
+      "Kelvin",
+      "Pascal",
+      "Newton",
+      "Joule"
+    ],
     "correctIndex": 0,
     "explanation": "Absolute temperature is measured in kelvins (K).",
     "id": "phys_031"
@@ -282,7 +437,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Which radiation has a shorter wavelength than visible light?",
-    "options": ["Ultraviolet", "Infrared", "Radio waves", "Microwaves"],
+    "options": [
+      "Ultraviolet",
+      "Infrared",
+      "Radio waves",
+      "Microwaves"
+    ],
     "correctIndex": 0,
     "explanation": "Ultraviolet light has a shorter wavelength than visible light.",
     "id": "phys_032"
@@ -291,7 +451,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "By Archimedes' principle, the buoyant force equals the weight of what?",
-    "options": ["The displaced fluid", "The body itself", "The surrounding air", "The container"],
+    "options": [
+      "The displaced fluid",
+      "The body itself",
+      "The surrounding air",
+      "The container"
+    ],
     "correctIndex": 0,
     "explanation": "The buoyant force equals the weight of the fluid displaced by the body.",
     "id": "phys_033"
@@ -300,7 +465,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Which device converts mechanical energy into electrical energy?",
-    "options": ["Generator", "Electric motor", "Transformer", "Battery"],
+    "options": [
+      "Generator",
+      "Electric motor",
+      "Transformer",
+      "Battery"
+    ],
     "correctIndex": 0,
     "explanation": "A generator turns mechanical energy into electricity.",
     "id": "phys_034"
@@ -309,7 +479,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What does the frequency of an oscillation indicate?",
-    "options": ["The number of oscillations per second", "The distance between crests", "The speed of the wave", "The amplitude"],
+    "options": [
+      "The number of oscillations per second",
+      "The distance between crests",
+      "The speed of the wave",
+      "The amplitude"
+    ],
     "correctIndex": 0,
     "explanation": "Frequency is the number of complete oscillations per second.",
     "id": "phys_035"
@@ -318,7 +493,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "Which colour of visible light has the longest wavelength?",
-    "options": ["Red", "Violet", "Green", "Blue"],
+    "options": [
+      "Red",
+      "Violet",
+      "Green",
+      "Blue"
+    ],
     "correctIndex": 0,
     "explanation": "Red has the longest wavelength of the visible colours.",
     "id": "phys_036"
@@ -327,7 +507,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "In which unit is electric charge measured?",
-    "options": ["Coulomb", "Ampere", "Volt", "Farad"],
+    "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Farad"
+    ],
     "correctIndex": 0,
     "explanation": "Electric charge is measured in coulombs (C).",
     "id": "phys_037"
@@ -336,7 +521,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What does Newton's second law describe?",
-    "options": ["F = ma", "E = mc²", "P = UI", "Archimedes' principle"],
+    "options": [
+      "F = ma",
+      "E = mc²",
+      "P = UI",
+      "Archimedes' principle"
+    ],
     "correctIndex": 0,
     "explanation": "Newton's second law: force equals mass times acceleration.",
     "id": "phys_038"
@@ -345,7 +535,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "In which unit is pressure measured?",
-    "options": ["Pascal", "Newton", "Joule", "Watt"],
+    "options": [
+      "Pascal",
+      "Newton",
+      "Joule",
+      "Watt"
+    ],
     "correctIndex": 0,
     "explanation": "Pressure is measured in pascals (Pa).",
     "id": "phys_039"
@@ -354,7 +549,12 @@
     "category": "physics",
     "difficulty": "MEDIUM",
     "text": "What is power?",
-    "options": ["The work done per unit of time", "Force times distance", "A body's stored energy", "The rate of mass change"],
+    "options": [
+      "The work done per unit of time",
+      "Force times distance",
+      "A body's stored energy",
+      "The rate of mass change"
+    ],
     "correctIndex": 0,
     "explanation": "Power is the work performed per unit time.",
     "id": "phys_040"
@@ -363,7 +563,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "What is the speed of light in a vacuum, more precisely?",
-    "options": ["≈ 3 × 10⁸ m/s", "≈ 3 × 10⁶ m/s", "≈ 3 × 10¹⁰ m/s", "≈ 3 × 10⁵ m/s"],
+    "options": [
+      "≈ 3 × 10⁸ m/s",
+      "≈ 3 × 10⁶ m/s",
+      "≈ 3 × 10¹⁰ m/s",
+      "≈ 3 × 10⁵ m/s"
+    ],
     "correctIndex": 0,
     "explanation": "The speed of light is about 3 × 10⁸ m/s.",
     "id": "phys_041"
@@ -372,7 +577,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "What is the smallest portion of electromagnetic radiation energy called?",
-    "options": ["A quantum (photon)", "An electron", "A neutron", "An ion"],
+    "options": [
+      "A quantum (photon)",
+      "An electron",
+      "A neutron",
+      "An ion"
+    ],
     "correctIndex": 0,
     "explanation": "The smallest portion of radiation is a quantum, or photon.",
     "id": "phys_042"
@@ -381,7 +591,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which law states that energy is neither created nor destroyed, only transformed?",
-    "options": ["The law of conservation of energy", "Ohm's law", "Hooke's law", "Coulomb's law"],
+    "options": [
+      "The law of conservation of energy",
+      "Ohm's law",
+      "Hooke's law",
+      "Coulomb's law"
+    ],
     "correctIndex": 0,
     "explanation": "This is the law of conservation of energy.",
     "id": "phys_043"
@@ -390,7 +605,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Who first discovered that an electric current produces a magnetic field?",
-    "options": ["Hans Ørsted", "Isaac Newton", "Archimedes", "Robert Hooke"],
+    "options": [
+      "Hans Ørsted",
+      "Isaac Newton",
+      "Archimedes",
+      "Robert Hooke"
+    ],
     "correctIndex": 0,
     "explanation": "Hans Christian Ørsted discovered this link in 1820.",
     "id": "phys_044"
@@ -399,7 +619,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "What is the generation of current in a conductor by a changing magnetic field called?",
-    "options": ["Electromagnetic induction", "Electrolysis", "Resonance", "Diffraction"],
+    "options": [
+      "Electromagnetic induction",
+      "Electrolysis",
+      "Resonance",
+      "Diffraction"
+    ],
     "correctIndex": 0,
     "explanation": "This is electromagnetic induction, discovered by Faraday.",
     "id": "phys_045"
@@ -408,7 +633,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which particle carries the electromagnetic interaction?",
-    "options": ["Photon", "Electron", "Proton", "Neutrino"],
+    "options": [
+      "Photon",
+      "Electron",
+      "Proton",
+      "Neutrino"
+    ],
     "correctIndex": 0,
     "explanation": "The electromagnetic force is carried by photons.",
     "id": "phys_046"
@@ -417,7 +647,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "What is the temperature of absolute zero?",
-    "options": ["−273.15 °C", "0 °C", "−100 °C", "−40 °C"],
+    "options": [
+      "−273.15 °C",
+      "0 °C",
+      "−100 °C",
+      "−40 °C"
+    ],
     "correctIndex": 0,
     "explanation": "Absolute zero is −273.15 °C, or 0 K.",
     "id": "phys_047"
@@ -426,7 +661,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which effect explains the change in a wave's frequency as its source moves?",
-    "options": ["The Doppler effect", "The Hall effect", "The photoelectric effect", "The Compton effect"],
+    "options": [
+      "The Doppler effect",
+      "The Hall effect",
+      "The photoelectric effect",
+      "The Compton effect"
+    ],
     "correctIndex": 0,
     "explanation": "A frequency change due to a moving source is the Doppler effect.",
     "id": "phys_048"
@@ -435,7 +675,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "For discovering which phenomenon did Einstein receive the Nobel Prize?",
-    "options": ["The photoelectric effect", "The theory of relativity", "Brownian motion", "Gravitational waves"],
+    "options": [
+      "The photoelectric effect",
+      "The theory of relativity",
+      "Brownian motion",
+      "Gravitational waves"
+    ],
     "correctIndex": 0,
     "explanation": "Einstein won the 1921 Nobel Prize for explaining the photoelectric effect.",
     "id": "phys_049"
@@ -444,7 +689,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "In which unit is magnetic flux density measured?",
-    "options": ["Tesla", "Weber", "Henry", "Farad"],
+    "options": [
+      "Tesla",
+      "Weber",
+      "Henry",
+      "Farad"
+    ],
     "correctIndex": 0,
     "explanation": "Magnetic flux density is measured in teslas (T).",
     "id": "phys_050"
@@ -453,7 +703,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which type of nuclear reaction powers the Sun?",
-    "options": ["Thermonuclear fusion", "Nuclear fission", "Radioactive decay", "Ionization"],
+    "options": [
+      "Thermonuclear fusion",
+      "Nuclear fission",
+      "Radioactive decay",
+      "Ionization"
+    ],
     "correctIndex": 0,
     "explanation": "The Sun shines through the thermonuclear fusion of hydrogen into helium.",
     "id": "phys_051"
@@ -462,7 +717,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which particle in the nucleus has no electric charge?",
-    "options": ["Neutron", "Proton", "Electron", "Positron"],
+    "options": [
+      "Neutron",
+      "Proton",
+      "Electron",
+      "Positron"
+    ],
     "correctIndex": 0,
     "explanation": "The neutron is electrically neutral.",
     "id": "phys_052"
@@ -471,7 +731,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "What is the total resistance of two resistors connected in series?",
-    "options": ["The sum of their resistances", "Their product", "Their average", "Zero"],
+    "options": [
+      "The sum of their resistances",
+      "Their product",
+      "Their average",
+      "Zero"
+    ],
     "correctIndex": 0,
     "explanation": "In series, resistances simply add together.",
     "id": "phys_053"
@@ -480,7 +745,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "What is diffraction?",
-    "options": ["The bending of waves around obstacles", "Reflection from a mirror", "Refraction at a boundary", "Absorption of energy"],
+    "options": [
+      "The bending of waves around obstacles",
+      "Reflection from a mirror",
+      "Refraction at a boundary",
+      "Absorption of energy"
+    ],
     "correctIndex": 0,
     "explanation": "Diffraction is the bending of waves around obstacles and edges.",
     "id": "phys_054"
@@ -489,7 +759,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Who experimentally discovered the electron?",
-    "options": ["J. J. Thomson", "Ernest Rutherford", "Niels Bohr", "James Chadwick"],
+    "options": [
+      "J. J. Thomson",
+      "Ernest Rutherford",
+      "Niels Bohr",
+      "James Chadwick"
+    ],
     "correctIndex": 0,
     "explanation": "The electron was discovered by J. J. Thomson in 1897.",
     "id": "phys_055"
@@ -498,7 +773,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which model of the atom did Ernest Rutherford propose?",
-    "options": ["The planetary (nuclear) model", "The plum-pudding model", "The cubic model", "The wave model"],
+    "options": [
+      "The planetary (nuclear) model",
+      "The plum-pudding model",
+      "The cubic model",
+      "The wave model"
+    ],
     "correctIndex": 0,
     "explanation": "Rutherford proposed the planetary model with a dense central nucleus.",
     "id": "phys_056"
@@ -507,7 +787,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "In which unit is inductance measured?",
-    "options": ["Henry", "Farad", "Tesla", "Weber"],
+    "options": [
+      "Henry",
+      "Farad",
+      "Tesla",
+      "Weber"
+    ],
     "correctIndex": 0,
     "explanation": "Inductance is measured in henries (H).",
     "id": "phys_057"
@@ -516,7 +801,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which physical quantity is measured in farads?",
-    "options": ["Electric capacitance", "Resistance", "Charge", "Inductance"],
+    "options": [
+      "Electric capacitance",
+      "Resistance",
+      "Charge",
+      "Inductance"
+    ],
     "correctIndex": 0,
     "explanation": "The farad (F) is the unit of electric capacitance.",
     "id": "phys_058"
@@ -525,7 +815,12 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Who discovered the neutron?",
-    "options": ["James Chadwick", "J. J. Thomson", "Henri Becquerel", "Michael Faraday"],
+    "options": [
+      "James Chadwick",
+      "J. J. Thomson",
+      "Henri Becquerel",
+      "Michael Faraday"
+    ],
     "correctIndex": 0,
     "explanation": "The neutron was discovered by James Chadwick in 1932.",
     "id": "phys_059"
@@ -534,9 +829,784 @@
     "category": "physics",
     "difficulty": "HARD",
     "text": "Which unit of work and energy equals one newton acting over one metre?",
-    "options": ["Joule", "Watt", "Newton", "Pascal"],
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
     "correctIndex": 0,
     "explanation": "A joule is the work of a 1-newton force over 1 metre.",
     "id": "phys_060"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "When the Falcon Heavy was launched on it's test flight, what was the only part of the operation that failed?",
+    "options": [
+      "Center Core Landing",
+      "Side Booster Landing",
+      "Deployment of Starman",
+      "Ignition and Liftoff"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Center Core Landing.",
+    "id": "phys_061"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What is the standard SI unit for temperature?",
+    "options": [
+      "Kelvin",
+      "Fahrenheit",
+      "Celsius",
+      "Rankine"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Kelvin.",
+    "id": "phys_062"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Who developed the first successful polio vaccine in the 1950s?",
+    "options": [
+      "Jonas Salk",
+      "John F. Enders",
+      "Thomas Weller",
+      "Frederick Robbins"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jonas Salk.",
+    "id": "phys_063"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is the unit of electrical capacitance?",
+    "options": [
+      "Farad",
+      "Gauss",
+      "Henry",
+      "Watt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Farad.",
+    "id": "phys_064"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What does LASER stand for?",
+    "options": [
+      "Light amplification by stimulated emission of radiation",
+      "Lite analysing by stereo ecorazer",
+      "Light amplifier by standby energy of radio",
+      "Life antimatter by standing entry of range"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Light amplification by stimulated emission of radiation.",
+    "id": "phys_065"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "The medial meniscus forms which part of what joint in the human body?",
+    "options": [
+      "Knee",
+      "Elbow",
+      "Ankle",
+      "Shoulder"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Knee.",
+    "id": "phys_066"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?",
+    "options": [
+      "Dunning-Kruger effect",
+      "Meyers-Briggs effect",
+      "Müller-Lyer effect",
+      "Freud-Hall effect"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dunning-Kruger effect.",
+    "id": "phys_067"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Where in the human body is the Pineal Gland located?",
+    "options": [
+      "Brain",
+      "Groin",
+      "Chest",
+      "Throat"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Brain.",
+    "id": "phys_068"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "The 'Islets of Langerhans' is found in which human organ?",
+    "options": [
+      "Pancreas",
+      "Kidney",
+      "Liver",
+      "Brain"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pancreas.",
+    "id": "phys_069"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "How many legs is it biologically impossible for a centipede to have?",
+    "options": [
+      "100",
+      "26",
+      "50",
+      "74"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 100.",
+    "id": "phys_070"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which continent do sweet potatoes originally come from?",
+    "options": [
+      "South America",
+      "Asia",
+      "Africa",
+      "Europe"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is South America.",
+    "id": "phys_071"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "On the Beaufort Scale of wind force, what wind name is given to number 8?",
+    "options": [
+      "Gale",
+      "Storm",
+      "Hurricane",
+      "Breeze"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gale.",
+    "id": "phys_072"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Who discovered the Law of Gravity?",
+    "options": [
+      "Sir Isaac Newton",
+      "Galileo Galilei",
+      "Charles Darwin",
+      "Albert Einstein"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sir Isaac Newton.",
+    "id": "phys_073"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which of these is NOT a bone found in the human arm?",
+    "options": [
+      "Tibia",
+      "Humerus",
+      "Ulna",
+      "Radius"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Tibia.",
+    "id": "phys_074"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What is the speed of light in a vacuum?",
+    "options": [
+      "299,792,458 m/s",
+      "50,461 m/s",
+      "308,215,043 m/s",
+      "751,665,014,151 m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 299,792,458 m/s.",
+    "id": "phys_075"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "In physics, conservation of energy and conservation of momentum are both consequences of which of the following?",
+    "options": [
+      "Noether's Theorem",
+      "Bell's Theorem",
+      "Wick's Theorem",
+      "Carnot's Theorem"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Noether's Theorem.",
+    "id": "phys_076"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "What is the scientific name of the red fox?",
+    "options": [
+      "Vulpes Vulpes",
+      "Vulpes Redus",
+      "Red Fox",
+      "Vulpes Vulpie"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vulpes Vulpes.",
+    "id": "phys_077"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "How many types of quarks are there in the standard model of physics?",
+    "options": [
+      "6",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6.",
+    "id": "phys_078"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following is the male pollen-producing reproductive part of a flower?",
+    "options": [
+      "Stamen",
+      "Sepal",
+      "Pistil",
+      "Petal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Stamen.",
+    "id": "phys_079"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "How many laws of thermodynamics are there?",
+    "options": [
+      "Four",
+      "Three",
+      "Two",
+      "Five"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Four.",
+    "id": "phys_080"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which part of the body does glaucoma affect?",
+    "options": [
+      "Eyes",
+      "Throat",
+      "Stomach",
+      "Blood"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Eyes.",
+    "id": "phys_081"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What is the standard SI unit for mass?",
+    "options": [
+      "Kilogram",
+      "Tonne",
+      "Pound",
+      "Gram"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Kilogram.",
+    "id": "phys_082"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Down Syndrome is usually caused by an extra copy of which chromosome?",
+    "options": [
+      "21",
+      "23",
+      "15",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 21.",
+    "id": "phys_083"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "What physics principle relates the net electric flux out of a closed surface to the charge enclosed by that surface?",
+    "options": [
+      "Gauss's Law",
+      "Faraday's Law",
+      "Ampere's Law",
+      "Biot-Savart Law"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gauss's Law.",
+    "id": "phys_084"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Which of these bones is hardest to break?",
+    "options": [
+      "Femur",
+      "Cranium",
+      "Humerus",
+      "Tibia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Femur.",
+    "id": "phys_085"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What are human nails made of?",
+    "options": [
+      "Keratin",
+      "Bone",
+      "Chitin",
+      "Calcium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Keratin.",
+    "id": "phys_086"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Myopia is the scientific term for which condition?",
+    "options": [
+      "Shortsightedness",
+      "Farsightedness",
+      "Double Vision",
+      "Clouded Vision"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shortsightedness.",
+    "id": "phys_087"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
+    "options": [
+      "Acetone",
+      "Water",
+      "Mercury",
+      "Benzene"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Acetone.",
+    "id": "phys_088"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "What causes the sound of a heartbeat?",
+    "options": [
+      "Closure of the heart valves",
+      "Contraction of the heart chambers",
+      "Blood exiting the heart",
+      "Relaxation of the heart chambers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Closure of the heart valves.",
+    "id": "phys_089"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What animal takes part in Schrödinger's most famous thought experiment?",
+    "options": [
+      "Cat",
+      "Dog",
+      "Bat",
+      "Butterfly"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cat.",
+    "id": "phys_090"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is the Linnean name of the domestic apple tree?",
+    "options": [
+      "Malus pumila",
+      "Malus americana",
+      "Pomus domestica",
+      "Appelus delectica"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Malus pumila.",
+    "id": "phys_091"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Where did the dog breed \"Chihuahua\" originate?",
+    "options": [
+      "Mexico",
+      "France",
+      "Spain",
+      "Russia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mexico.",
+    "id": "phys_092"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which of these choices is not one of the phases of mitosis?",
+    "options": [
+      "Diplophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Diplophase.",
+    "id": "phys_093"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Who made the discovery of X-rays?",
+    "options": [
+      "Wilhelm Conrad Röntgen",
+      "Thomas Alva Edison",
+      "James Watt",
+      "Albert Einstein"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Wilhelm Conrad Röntgen.",
+    "id": "phys_094"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "In quantum physics, which of these theorised sub-atomic particles has yet to be observed?",
+    "options": [
+      "Graviton",
+      "Z boson",
+      "Tau neutrino",
+      "Gluon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Graviton.",
+    "id": "phys_095"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is the largest living organism currently known to man?",
+    "options": [
+      "Honey Fungus",
+      "Blue Whale",
+      "Redwood Tree",
+      "The Coral Reef"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Honey Fungus.",
+    "id": "phys_096"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "The Western Lowland Gorilla is scientifically know as?",
+    "options": [
+      "Gorilla Gorilla Gorilla",
+      "Gorilla Gorilla Diehli",
+      "Gorilla Beringei Graueri",
+      "Gorilla Beringei Beringei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gorilla Gorilla Gorilla.",
+    "id": "phys_097"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "The \"Tibia\" is found in which part of the body?",
+    "options": [
+      "Leg",
+      "Arm",
+      "Hand",
+      "Head"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Leg.",
+    "id": "phys_098"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "What is considered the rarest form of color blindness?",
+    "options": [
+      "Blue",
+      "Red",
+      "Green",
+      "Purple"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Blue.",
+    "id": "phys_099"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is the half-life of Uranium-235?",
+    "options": [
+      "703,800,000 years",
+      "4,300,400,000 years",
+      "1,260,900,000 years",
+      "Uranium-235 is a stable isotope"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 703,800,000 years.",
+    "id": "phys_100"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "How many chromosomes are in your body cells?",
+    "options": [
+      "23",
+      "21",
+      "22",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 23.",
+    "id": "phys_101"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "At what depth should you make a decompression stop, or safety stop, on a typical scuba dive?",
+    "options": [
+      "15 Feet / 5 Meters",
+      "25 Feet / 7.5 Meters",
+      "50 Feet / 15 Meters",
+      "75 Feet / 23 Meters"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 15 Feet / 5 Meters.",
+    "id": "phys_102"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which is not a type of neuron?",
+    "options": [
+      "Perceptual Neuron",
+      "Sensory Neuron",
+      "Motor Neuron",
+      "Interneuron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Perceptual Neuron.",
+    "id": "phys_103"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What is the approximate speed of light in a vacuum?",
+    "options": [
+      "300,000 km/s",
+      "300,000 m/s",
+      "150,000 km/s",
+      "1,000 km/h"
+    ],
+    "correctIndex": 0,
+    "explanation": "The speed of light in a vacuum is approximately 299,792 km/s.",
+    "id": "phys_104"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Which physicist formulated the classical law of universal gravitation, inspired by a falling apple?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Nikola Tesla"
+    ],
+    "correctIndex": 0,
+    "explanation": "Isaac Newton published the law of universal gravitation in 1687.",
+    "id": "phys_105"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "How do like poles of two magnets interact with each other?",
+    "options": [
+      "Repel each other",
+      "Attract each other",
+      "Do not interact",
+      "Twist"
+    ],
+    "correctIndex": 0,
+    "explanation": "Like poles repel each other, while opposite poles attract.",
+    "id": "phys_106"
+  },
+  {
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Which star is the center of our Solar System and holds the planets with its gravity?",
+    "options": [
+      "The Sun",
+      "Sirius",
+      "Polaris",
+      "Proxima Centauri"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Sun accounts for more than 99.8% of the total mass of the Solar System.",
+    "id": "phys_107"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which physical phenomenon did Einstein explain in 1905, for which he received the Nobel Prize?",
+    "options": [
+      "Photoelectric effect",
+      "Theory of relativity",
+      "Brownian motion",
+      "Superconductivity"
+    ],
+    "correctIndex": 0,
+    "explanation": "Einstein applied Planck's quantum hypothesis to explain the laws of the photoelectric effect.",
+    "id": "phys_108"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which equation describes the state of an ideal gas, linking pressure, volume, and temperature?",
+    "options": [
+      "Clapeyron-Mendeleev equation",
+      "Van der Waals equation",
+      "Bernoulli's equation",
+      "Hooke's Law"
+    ],
+    "correctIndex": 0,
+    "explanation": "The equation PV = nRT models the thermodynamic parameters of an ideal gas.",
+    "id": "phys_109"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which phenomenon describes the generation of EMF in a conductor when the magnetic flux through it changes?",
+    "options": [
+      "Electromagnetic induction",
+      "Electrolysis",
+      "Electrostatic attraction",
+      "Hall effect"
+    ],
+    "correctIndex": 0,
+    "explanation": "The law of electromagnetic induction was discovered by Michael Faraday in 1831.",
+    "id": "phys_110"
+  },
+  {
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is the temperature of absolute zero in Celsius?",
+    "options": [
+      "-273.15 °C",
+      "-100 °C",
+      "0 °C",
+      "-459.67 °C"
+    ],
+    "correctIndex": 0,
+    "explanation": "Absolute zero (0 K) corresponds to -273.15 °C.",
+    "id": "phys_111"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which wave equation describes the time evolution of a quantum state of a physical system?",
+    "options": [
+      "Schrodinger equation",
+      "Dirac equation",
+      "Maxwell equation",
+      "Einstein field equation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Schrodinger equation is the fundamental equation of non-relativistic quantum mechanics.",
+    "id": "phys_112"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which system of equations fully describes the classical electromagnetic field in vacuum and media?",
+    "options": [
+      "Maxwell's equations",
+      "Navier-Stokes equations",
+      "Kirchhoff's equations",
+      "Euler's equations"
+    ],
+    "correctIndex": 0,
+    "explanation": "James Clerk Maxwell unified the laws of electricity and magnetism into 4 fundamental equations.",
+    "id": "phys_113"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which hypothetical black hole radiation arises due to quantum effects near its event horizon?",
+    "options": [
+      "Hawking radiation",
+      "Cosmic microwave background",
+      "Cherenkov radiation",
+      "Synchrotron radiation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stephen Hawking theoretically described the evaporation of black holes due to particle pair creation.",
+    "id": "phys_114"
+  },
+  {
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which famous 1887 experiment disproved the hypothesis of the existence of the luminiferous ether?",
+    "options": [
+      "Michelson-Morley experiment",
+      "Young's double-slit experiment",
+      "Rutherford scattering experiment",
+      "Cavendish experiment"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Michelson-Morley experiment demonstrated that the speed of light is independent of Earth's motion.",
+    "id": "phys_115"
   }
 ]

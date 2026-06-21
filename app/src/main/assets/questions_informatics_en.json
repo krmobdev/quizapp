@@ -3,7 +3,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which device is the 'brain' of a computer?",
-    "options": ["The processor", "The monitor", "The keyboard", "The mouse"],
+    "options": [
+      "The processor",
+      "The monitor",
+      "The keyboard",
+      "The mouse"
+    ],
     "correctIndex": 0,
     "explanation": "Computations are carried out by the processor (CPU).",
     "id": "inf_001"
@@ -12,7 +17,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "How many bits are in one byte?",
-    "options": ["8", "4", "16", "2"],
+    "options": [
+      "8",
+      "4",
+      "16",
+      "2"
+    ],
     "correctIndex": 0,
     "explanation": "One byte consists of 8 bits.",
     "id": "inf_002"
@@ -21,7 +31,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which device is used to type text?",
-    "options": ["The keyboard", "The monitor", "The printer", "The speakers"],
+    "options": [
+      "The keyboard",
+      "The monitor",
+      "The printer",
+      "The speakers"
+    ],
     "correctIndex": 0,
     "explanation": "Text is entered using the keyboard.",
     "id": "inf_003"
@@ -30,7 +45,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What does a monitor display?",
-    "options": ["An image", "Sound", "Smell", "Temperature"],
+    "options": [
+      "An image",
+      "Sound",
+      "Smell",
+      "Temperature"
+    ],
     "correctIndex": 0,
     "explanation": "A monitor shows an image.",
     "id": "inf_004"
@@ -39,7 +59,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which company developed the Windows operating system?",
-    "options": ["Microsoft", "Apple", "Google", "IBM"],
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Google",
+      "IBM"
+    ],
     "correctIndex": 0,
     "explanation": "Windows was created by Microsoft.",
     "id": "inf_005"
@@ -48,7 +73,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What does 'www' stand for in a website address?",
-    "options": ["World Wide Web", "Wide World Web", "Web World Wide", "World Web Wide"],
+    "options": [
+      "World Wide Web",
+      "Wide World Web",
+      "Web World Wide",
+      "World Web Wide"
+    ],
     "correctIndex": 0,
     "explanation": "WWW stands for the World Wide Web.",
     "id": "inf_006"
@@ -57,7 +87,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which device prints documents on paper?",
-    "options": ["The printer", "The scanner", "The monitor", "The modem"],
+    "options": [
+      "The printer",
+      "The scanner",
+      "The monitor",
+      "The modem"
+    ],
     "correctIndex": 0,
     "explanation": "Documents are printed on paper by a printer.",
     "id": "inf_007"
@@ -66,7 +101,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What is the main program that controls a computer called?",
-    "options": ["The operating system", "The browser", "The antivirus", "The driver"],
+    "options": [
+      "The operating system",
+      "The browser",
+      "The antivirus",
+      "The driver"
+    ],
     "correctIndex": 0,
     "explanation": "A computer is controlled by its operating system.",
     "id": "inf_008"
@@ -75,7 +115,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which company makes the iPhone?",
-    "options": ["Apple", "Samsung", "Microsoft", "Nokia"],
+    "options": [
+      "Apple",
+      "Samsung",
+      "Microsoft",
+      "Nokia"
+    ],
     "correctIndex": 0,
     "explanation": "The iPhone is made by Apple.",
     "id": "inf_009"
@@ -84,7 +129,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Where is data stored after a computer is switched off?",
-    "options": ["On the hard drive", "In RAM", "In the processor", "In the monitor"],
+    "options": [
+      "On the hard drive",
+      "In RAM",
+      "In the processor",
+      "In the monitor"
+    ],
     "correctIndex": 0,
     "explanation": "Data is stored permanently on the hard drive (or SSD).",
     "id": "inf_010"
@@ -93,7 +143,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What is the program for viewing websites called?",
-    "options": ["A browser", "An antivirus", "An archiver", "A compiler"],
+    "options": [
+      "A browser",
+      "An antivirus",
+      "An archiver",
+      "A compiler"
+    ],
     "correctIndex": 0,
     "explanation": "Websites are opened in a browser.",
     "id": "inf_011"
@@ -102,7 +157,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which file extension usually belongs to an image?",
-    "options": [".jpg", ".mp3", ".txt", ".exe"],
+    "options": [
+      ".jpg",
+      ".mp3",
+      ".txt",
+      ".exe"
+    ],
     "correctIndex": 0,
     "explanation": "Images often have the extension .jpg.",
     "id": "inf_012"
@@ -111,7 +171,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What does a computer mouse do?",
-    "options": ["Controls the cursor on the screen", "Types text", "Scans documents", "Plays sound"],
+    "options": [
+      "Controls the cursor on the screen",
+      "Types text",
+      "Scans documents",
+      "Plays sound"
+    ],
     "correctIndex": 0,
     "explanation": "The mouse moves the cursor and lets you select objects.",
     "id": "inf_013"
@@ -120,7 +185,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What is the global network connecting computers called?",
-    "options": ["The Internet", "The printer", "The processor", "The driver"],
+    "options": [
+      "The Internet",
+      "The printer",
+      "The processor",
+      "The driver"
+    ],
     "correctIndex": 0,
     "explanation": "The global network is called the Internet.",
     "id": "inf_014"
@@ -129,7 +199,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which is the most popular search engine in the world?",
-    "options": ["Google", "Bing", "Yahoo", "DuckDuckGo"],
+    "options": [
+      "Google",
+      "Bing",
+      "Yahoo",
+      "DuckDuckGo"
+    ],
     "correctIndex": 0,
     "explanation": "The most popular search engine is Google.",
     "id": "inf_015"
@@ -138,7 +213,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What is antivirus software for?",
-    "options": ["Protecting against malware", "Printing documents", "Drawing pictures", "Playing music"],
+    "options": [
+      "Protecting against malware",
+      "Printing documents",
+      "Drawing pictures",
+      "Playing music"
+    ],
     "correctIndex": 0,
     "explanation": "Antivirus software protects a computer from malicious programs.",
     "id": "inf_016"
@@ -147,7 +227,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which key deletes the character to the left of the cursor?",
-    "options": ["Backspace", "Enter", "Shift", "Tab"],
+    "options": [
+      "Backspace",
+      "Enter",
+      "Shift",
+      "Tab"
+    ],
     "correctIndex": 0,
     "explanation": "The character to the left of the cursor is deleted by Backspace.",
     "id": "inf_017"
@@ -156,7 +241,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "Which device outputs sound?",
-    "options": ["Speakers", "Scanner", "Keyboard", "Webcam"],
+    "options": [
+      "Speakers",
+      "Scanner",
+      "Keyboard",
+      "Webcam"
+    ],
     "correctIndex": 0,
     "explanation": "Sound is played through speakers or headphones.",
     "id": "inf_018"
@@ -165,7 +255,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "How many distinct values can a single bit hold?",
-    "options": ["2", "8", "10", "16"],
+    "options": [
+      "2",
+      "8",
+      "10",
+      "16"
+    ],
     "correctIndex": 0,
     "explanation": "A bit holds two values: 0 or 1.",
     "id": "inf_019"
@@ -174,7 +269,12 @@
     "category": "informatics",
     "difficulty": "EASY",
     "text": "What is the secret string of characters used to log into an account called?",
-    "options": ["A password", "A login", "A cursor", "A driver"],
+    "options": [
+      "A password",
+      "A login",
+      "A cursor",
+      "A driver"
+    ],
     "correctIndex": 0,
     "explanation": "A password is used to protect account access.",
     "id": "inf_020"
@@ -183,7 +283,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "How many bytes are in one kilobyte?",
-    "options": ["1024", "1000", "8", "100"],
+    "options": [
+      "1024",
+      "1000",
+      "8",
+      "100"
+    ],
     "correctIndex": 0,
     "explanation": "There are 1024 bytes in a kilobyte.",
     "id": "inf_021"
@@ -192,7 +297,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is an algorithm?",
-    "options": ["A sequence of steps to solve a task", "A part of the processor", "A type of monitor", "A computer virus"],
+    "options": [
+      "A sequence of steps to solve a task",
+      "A part of the processor",
+      "A type of monitor",
+      "A computer virus"
+    ],
     "correctIndex": 0,
     "explanation": "An algorithm is a clear sequence of steps for solving a task.",
     "id": "inf_022"
@@ -201,7 +311,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "Which number system do computers work in?",
-    "options": ["Binary", "Decimal", "Octal", "Roman"],
+    "options": [
+      "Binary",
+      "Decimal",
+      "Octal",
+      "Roman"
+    ],
     "correctIndex": 0,
     "explanation": "Computers operate in the binary system (0 and 1).",
     "id": "inf_023"
@@ -210,7 +325,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is an error in a program called?",
-    "options": ["A bug", "A driver", "A bit", "A pixel"],
+    "options": [
+      "A bug",
+      "A driver",
+      "A bit",
+      "A pixel"
+    ],
     "correctIndex": 0,
     "explanation": "An error in a program is called a bug.",
     "id": "inf_024"
@@ -219,7 +339,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What does the abbreviation CPU stand for?",
-    "options": ["Central Processing Unit", "Hard drive", "Graphics card", "Random-access memory"],
+    "options": [
+      "Central Processing Unit",
+      "Hard drive",
+      "Graphics card",
+      "Random-access memory"
+    ],
     "correctIndex": 0,
     "explanation": "CPU stands for Central Processing Unit.",
     "id": "inf_025"
@@ -228,7 +353,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "Which of these is a programming language?",
-    "options": ["Python", "Photoshop", "Windows", "Chrome"],
+    "options": [
+      "Python",
+      "Photoshop",
+      "Windows",
+      "Chrome"
+    ],
     "correctIndex": 0,
     "explanation": "Python is a popular programming language.",
     "id": "inf_026"
@@ -237,7 +367,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is random-access memory (RAM) used for?",
-    "options": ["Temporarily storing data while working", "Permanently storing files", "Displaying images", "Printing documents"],
+    "options": [
+      "Temporarily storing data while working",
+      "Permanently storing files",
+      "Displaying images",
+      "Printing documents"
+    ],
     "correctIndex": 0,
     "explanation": "RAM temporarily holds the data of running programs.",
     "id": "inf_027"
@@ -246,7 +381,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is a program's icon on the screen called?",
-    "options": ["An icon", "A pixel", "A cursor", "A driver"],
+    "options": [
+      "An icon",
+      "A pixel",
+      "A cursor",
+      "A driver"
+    ],
     "correctIndex": 0,
     "explanation": "The graphical symbol of a program is called an icon.",
     "id": "inf_028"
@@ -255,7 +395,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is HTML?",
-    "options": ["A markup language for web pages", "A query language for databases", "An antivirus program", "A type of processor"],
+    "options": [
+      "A markup language for web pages",
+      "A query language for databases",
+      "An antivirus program",
+      "A type of processor"
+    ],
     "correctIndex": 0,
     "explanation": "HTML is a markup language that defines the structure of web pages.",
     "id": "inf_029"
@@ -264,7 +409,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is a digital image on a screen made of?",
-    "options": ["Pixels", "Sound waves", "Bytes of current", "Text symbols"],
+    "options": [
+      "Pixels",
+      "Sound waves",
+      "Bytes of current",
+      "Text symbols"
+    ],
     "correctIndex": 0,
     "explanation": "A digital image is made of dots called pixels.",
     "id": "inf_030"
@@ -273,7 +423,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What does a compiler do?",
-    "options": ["Translates source code into machine code", "Prints documents", "Protects against viruses", "Connects to the Internet"],
+    "options": [
+      "Translates source code into machine code",
+      "Prints documents",
+      "Protects against viruses",
+      "Connects to the Internet"
+    ],
     "correctIndex": 0,
     "explanation": "A compiler translates source code into machine code.",
     "id": "inf_031"
@@ -282,7 +437,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is the temporary storage for copied text called?",
-    "options": ["The clipboard", "The hard drive", "The recycle bin", "The registry"],
+    "options": [
+      "The clipboard",
+      "The hard drive",
+      "The recycle bin",
+      "The registry"
+    ],
     "correctIndex": 0,
     "explanation": "Copied data goes to the clipboard.",
     "id": "inf_032"
@@ -291,7 +451,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is cloud storage?",
-    "options": ["Storing data on remote servers over the Internet", "Storing on a hard drive", "Storing in the processor", "Storing in the monitor"],
+    "options": [
+      "Storing data on remote servers over the Internet",
+      "Storing on a hard drive",
+      "Storing in the processor",
+      "Storing in the monitor"
+    ],
     "correctIndex": 0,
     "explanation": "Cloud storage keeps data on remote servers.",
     "id": "inf_033"
@@ -300,7 +465,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "Which protocol is used for the secure transfer of web pages?",
-    "options": ["HTTPS", "HTTP", "FTP", "SMTP"],
+    "options": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
     "correctIndex": 0,
     "explanation": "A secure connection is provided by the HTTPS protocol.",
     "id": "inf_034"
@@ -309,7 +479,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "Which processor characteristic is measured in hertz?",
-    "options": ["Clock speed", "Memory size", "Screen size", "Internet speed"],
+    "options": [
+      "Clock speed",
+      "Memory size",
+      "Screen size",
+      "Internet speed"
+    ],
     "correctIndex": 0,
     "explanation": "A processor's clock speed is measured in hertz.",
     "id": "inf_035"
@@ -318,7 +493,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is malware that disguises itself as something useful called?",
-    "options": ["A Trojan", "A browser", "A driver", "A compiler"],
+    "options": [
+      "A Trojan",
+      "A browser",
+      "A driver",
+      "A compiler"
+    ],
     "correctIndex": 0,
     "explanation": "Such malware is called a Trojan (Trojan horse).",
     "id": "inf_036"
@@ -327,7 +507,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is a folder on a computer?",
-    "options": ["A container for storing files", "A type of processor", "A kind of monitor", "An antivirus"],
+    "options": [
+      "A container for storing files",
+      "A type of processor",
+      "A kind of monitor",
+      "An antivirus"
+    ],
     "correctIndex": 0,
     "explanation": "A folder (directory) groups and stores files.",
     "id": "inf_037"
@@ -336,7 +521,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "Which key confirms input or starts a new line?",
-    "options": ["Enter", "Esc", "Ctrl", "Alt"],
+    "options": [
+      "Enter",
+      "Esc",
+      "Ctrl",
+      "Alt"
+    ],
     "correctIndex": 0,
     "explanation": "Input is confirmed by the Enter key.",
     "id": "inf_038"
@@ -345,7 +535,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is a pixel?",
-    "options": ["The smallest point of an image", "A unit of RAM", "A programming language", "A computer virus"],
+    "options": [
+      "The smallest point of an image",
+      "A unit of RAM",
+      "A programming language",
+      "A computer virus"
+    ],
     "correctIndex": 0,
     "explanation": "A pixel is the smallest element of a digital image.",
     "id": "inf_039"
@@ -354,7 +549,12 @@
     "category": "informatics",
     "difficulty": "MEDIUM",
     "text": "What is the address of a page on the Internet called?",
-    "options": ["A URL", "A CPU", "RAM", "USB"],
+    "options": [
+      "A URL",
+      "A CPU",
+      "RAM",
+      "USB"
+    ],
     "correctIndex": 0,
     "explanation": "The address of a web resource is called a URL.",
     "id": "inf_040"
@@ -363,7 +563,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "How many kilobytes are in one megabyte?",
-    "options": ["1024", "1000", "8", "512"],
+    "options": [
+      "1024",
+      "1000",
+      "8",
+      "512"
+    ],
     "correctIndex": 0,
     "explanation": "There are 1024 kilobytes in a megabyte.",
     "id": "inf_041"
@@ -372,7 +577,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Who designed the computer architecture with a stored program?",
-    "options": ["John von Neumann", "Bill Gates", "Steve Jobs", "Mark Zuckerberg"],
+    "options": [
+      "John von Neumann",
+      "Bill Gates",
+      "Steve Jobs",
+      "Mark Zuckerberg"
+    ],
     "correctIndex": 0,
     "explanation": "The stored-program architecture was proposed by John von Neumann.",
     "id": "inf_042"
@@ -381,7 +591,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is the binary number 1010 in decimal?",
-    "options": ["10", "8", "12", "5"],
+    "options": [
+      "10",
+      "8",
+      "12",
+      "5"
+    ],
     "correctIndex": 0,
     "explanation": "1010₂ = 8 + 0 + 2 + 0 = 10.",
     "id": "inf_043"
@@ -390,7 +605,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Which language is used to query databases?",
-    "options": ["SQL", "HTML", "CSS", "HTTP"],
+    "options": [
+      "SQL",
+      "HTML",
+      "CSS",
+      "HTTP"
+    ],
     "correctIndex": 0,
     "explanation": "Databases are queried using the SQL language.",
     "id": "inf_044"
@@ -399,7 +619,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is an IP address?",
-    "options": ["A unique address of a device on a network", "A type of processor", "A programming language", "A computer virus"],
+    "options": [
+      "A unique address of a device on a network",
+      "A type of processor",
+      "A programming language",
+      "A computer virus"
+    ],
     "correctIndex": 0,
     "explanation": "An IP address identifies a device on a network.",
     "id": "inf_045"
@@ -408,7 +633,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Who invented the World Wide Web?",
-    "options": ["Tim Berners-Lee", "Bill Gates", "Steve Wozniak", "Linus Torvalds"],
+    "options": [
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Steve Wozniak",
+      "Linus Torvalds"
+    ],
     "correctIndex": 0,
     "explanation": "The World Wide Web was invented by Tim Berners-Lee in 1989.",
     "id": "inf_046"
@@ -417,7 +647,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Who created the Linux kernel?",
-    "options": ["Linus Torvalds", "Bill Gates", "Steve Jobs", "Mark Zuckerberg"],
+    "options": [
+      "Linus Torvalds",
+      "Bill Gates",
+      "Steve Jobs",
+      "Mark Zuckerberg"
+    ],
     "correctIndex": 0,
     "explanation": "The Linux kernel was created by Linus Torvalds in 1991.",
     "id": "inf_047"
@@ -426,7 +661,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is 'bubble sort'?",
-    "options": ["A method of ordering elements", "A type of virus", "A markup language", "An output device"],
+    "options": [
+      "A method of ordering elements",
+      "A type of virus",
+      "A markup language",
+      "An output device"
+    ],
     "correctIndex": 0,
     "explanation": "Bubble sort is a simple algorithm for ordering data.",
     "id": "inf_048"
@@ -435,7 +675,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "How many distinct values can be encoded with eight bits?",
-    "options": ["256", "8", "16", "1024"],
+    "options": [
+      "256",
+      "8",
+      "16",
+      "1024"
+    ],
     "correctIndex": 0,
     "explanation": "8 bits give 2⁸ = 256 combinations.",
     "id": "inf_049"
@@ -444,7 +689,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is cache memory?",
-    "options": ["Fast memory for frequently used data", "Permanent file storage", "An output device", "A computer virus"],
+    "options": [
+      "Fast memory for frequently used data",
+      "Permanent file storage",
+      "An output device",
+      "A computer virus"
+    ],
     "correctIndex": 0,
     "explanation": "Cache is fast memory that speeds up access to frequently used data.",
     "id": "inf_050"
@@ -453,7 +703,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Which company owns the Android operating system?",
-    "options": ["Google", "Apple", "Microsoft", "Samsung"],
+    "options": [
+      "Google",
+      "Apple",
+      "Microsoft",
+      "Samsung"
+    ],
     "correctIndex": 0,
     "explanation": "Android is developed by Google.",
     "id": "inf_051"
@@ -462,7 +717,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is the unit of information equal to 1024 gigabytes called?",
-    "options": ["Terabyte", "Megabyte", "Petabyte", "Kilobyte"],
+    "options": [
+      "Terabyte",
+      "Megabyte",
+      "Petabyte",
+      "Kilobyte"
+    ],
     "correctIndex": 0,
     "explanation": "1024 gigabytes make one terabyte.",
     "id": "inf_052"
@@ -471,7 +731,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What does 'open source' software mean?",
-    "options": ["Software whose source code is available to everyone", "Only paid software", "A type of computer virus", "A type of driver"],
+    "options": [
+      "Software whose source code is available to everyone",
+      "Only paid software",
+      "A type of computer virus",
+      "A type of driver"
+    ],
     "correctIndex": 0,
     "explanation": "Open-source software has source code that anyone can view and modify.",
     "id": "inf_053"
@@ -480,7 +745,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Which language is mainly used to style web pages?",
-    "options": ["CSS", "HTML", "SQL", "Python"],
+    "options": [
+      "CSS",
+      "HTML",
+      "SQL",
+      "Python"
+    ],
     "correctIndex": 0,
     "explanation": "The appearance of pages is handled by CSS.",
     "id": "inf_054"
@@ -489,7 +759,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is a process in an operating system?",
-    "options": ["A running program", "A folder of files", "An image file", "An output device"],
+    "options": [
+      "A running program",
+      "A folder of files",
+      "An image file",
+      "An output device"
+    ],
     "correctIndex": 0,
     "explanation": "A process is a program that is loaded and running.",
     "id": "inf_055"
@@ -498,7 +773,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is an attack that overwhelms a server with a flood of requests called?",
-    "options": ["DDoS", "Phishing", "Spam", "Cookies"],
+    "options": [
+      "DDoS",
+      "Phishing",
+      "Spam",
+      "Cookies"
+    ],
     "correctIndex": 0,
     "explanation": "Flooding a server with requests is a DDoS attack.",
     "id": "inf_056"
@@ -507,7 +787,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is the binary number 1111 in decimal?",
-    "options": ["15", "16", "14", "11"],
+    "options": [
+      "15",
+      "16",
+      "14",
+      "11"
+    ],
     "correctIndex": 0,
     "explanation": "1111₂ = 8 + 4 + 2 + 1 = 15.",
     "id": "inf_057"
@@ -516,7 +801,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is an API?",
-    "options": ["An interface for programs to interact", "A type of monitor", "A computer virus", "A markup language"],
+    "options": [
+      "An interface for programs to interact",
+      "A type of monitor",
+      "A computer virus",
+      "A markup language"
+    ],
     "correctIndex": 0,
     "explanation": "An API is a programming interface that lets applications interact.",
     "id": "inf_058"
@@ -525,7 +815,12 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "Which company originally developed the Java programming language?",
-    "options": ["Sun Microsystems", "Microsoft", "Apple", "Google"],
+    "options": [
+      "Sun Microsystems",
+      "Microsoft",
+      "Apple",
+      "Google"
+    ],
     "correctIndex": 0,
     "explanation": "Java was created at Sun Microsystems in 1995.",
     "id": "inf_059"
@@ -534,9 +829,1022 @@
     "category": "informatics",
     "difficulty": "HARD",
     "text": "What is a bit?",
-    "options": ["The smallest unit of information", "Eight bytes", "A point of an image", "A folder of files"],
+    "options": [
+      "The smallest unit of information",
+      "Eight bytes",
+      "A point of an image",
+      "A folder of files"
+    ],
     "correctIndex": 0,
     "explanation": "A bit is the smallest unit of information, holding 0 or 1.",
     "id": "inf_060"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "According to the International System of Units, how many bytes are in a kilobyte of RAM?",
+    "options": [
+      "1000",
+      "512",
+      "1024",
+      "500"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1000.",
+    "id": "info_061"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "How many Hz does the video standard PAL support?",
+    "options": [
+      "50",
+      "59",
+      "60",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 50.",
+    "id": "info_062"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "The name of technology company HP stands for what?",
+    "options": [
+      "Hewlett-Packard",
+      "Howard Packmann",
+      "Husker-Pollosk",
+      "Hellman-Pohl"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hewlett-Packard.",
+    "id": "info_063"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Originally used in PCM adapters, what frequency is the standard for sampling audio in the Compact Disc Digital Audio format?",
+    "options": [
+      "44.1 kHz",
+      "32.0 kHz",
+      "1.5 MHz",
+      "20.5 kHz"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 44.1 kHz.",
+    "id": "info_064"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "How many bytes are in a single Kibibyte?",
+    "options": [
+      "1024",
+      "2400",
+      "1000",
+      "1240"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1024.",
+    "id": "info_065"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "The teapot often seen in many 3D modeling applications is called what?",
+    "options": [
+      "Utah Teapot",
+      "Pixar Teapot",
+      "3D Teapot",
+      "Tennessee Teapot"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Utah Teapot.",
+    "id": "info_066"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does the term USB stand for?",
+    "options": [
+      "Universal Serial Bus",
+      "Universal Simtex Blot",
+      "Unified Signal Bus",
+      "Unityped Semtex Backer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Universal Serial Bus.",
+    "id": "info_067"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "When was the programming language \"C#\" released?",
+    "options": [
+      "2000",
+      "1998",
+      "1999",
+      "2001"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2000.",
+    "id": "info_068"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What was the first company to use the term \"Golden Master\"?",
+    "options": [
+      "Apple",
+      "IBM",
+      "Microsoft",
+      "Google"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Apple.",
+    "id": "info_069"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "When did the online streaming service \"Mixer\" launch?",
+    "options": [
+      "2016",
+      "2013",
+      "2009",
+      "2011"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2016.",
+    "id": "info_070"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Dutch computer scientist Mark Overmars is known for creating which game development engine?",
+    "options": [
+      "Game Maker",
+      "Stencyl",
+      "Construct",
+      "Torque 2D"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Game Maker.",
+    "id": "info_071"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What is the maximum value of a 32-bit signed binary integer?",
+    "options": [
+      "2,147,483,647",
+      "255",
+      "2048",
+      "9,223,372,036,854,775,807"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2,147,483,647.",
+    "id": "info_072"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What internet protocol was documented in RFC 1459?",
+    "options": [
+      "IRC",
+      "HTTP",
+      "HTTPS",
+      "FTP"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is IRC.",
+    "id": "info_073"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which coding language was the #1 programming language in terms of usage on GitHub in 2015?",
+    "options": [
+      "JavaScript",
+      "C#",
+      "Python",
+      "PHP"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is JavaScript.",
+    "id": "info_074"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What was the name of the first Bulgarian personal computer?",
+    "options": [
+      "IMKO-1",
+      "Pravetz 82",
+      "Pravetz 8D",
+      "IZOT 1030"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is IMKO-1.",
+    "id": "info_075"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In networking, what does OSPF stand for?",
+    "options": [
+      "Open Shortest Path First",
+      "Order State Part First",
+      "Order Sense Ping Find",
+      "Open Signal Path Finder"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Open Shortest Path First.",
+    "id": "info_076"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In computing, how many bits are in a nibble?",
+    "options": [
+      "4",
+      "16",
+      "32",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 4.",
+    "id": "info_077"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of these was the name of a bug found in April 2014 in the publicly available OpenSSL cryptography library?",
+    "options": [
+      "Heartbleed",
+      "Shellshock",
+      "Corrupted Blood",
+      "Shellscript"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Heartbleed.",
+    "id": "info_078"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What five letter word is the motto of the IBM Computer company?",
+    "options": [
+      "Think",
+      "Click",
+      "Logic",
+      "Pixel"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Think.",
+    "id": "info_079"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What is the commonly used keyboard shortcut for the 'Copy' function on Windows OS?",
+    "options": [
+      "Ctrl + C",
+      "Ctrl + X",
+      "Alt + C",
+      "Alt + X"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ctrl + C.",
+    "id": "info_080"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which internet company began life as an online bookstore called 'Cadabra'?",
+    "options": [
+      "Amazon",
+      "eBay",
+      "Overstock",
+      "Shopify"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Amazon.",
+    "id": "info_081"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What programming language was GitHub written in?",
+    "options": [
+      "Ruby",
+      "JavaScript",
+      "Python",
+      "Lua"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ruby.",
+    "id": "info_082"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What language does Node.js use?",
+    "options": [
+      "JavaScript",
+      "Java",
+      "Java Source",
+      "Joomla Source Code"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is JavaScript.",
+    "id": "info_083"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What port does HTTP run on?",
+    "options": [
+      "80",
+      "53",
+      "443",
+      "23"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 80.",
+    "id": "info_084"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "On which computer hardware device is the BIOS chip located?",
+    "options": [
+      "Motherboard",
+      "Hard Disk Drive",
+      "Central Processing Unit",
+      "Graphics Processing Unit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Motherboard.",
+    "id": "info_085"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which programming language was developed by Sun Microsystems in 1995?",
+    "options": [
+      "Java",
+      "Python",
+      "Solaris OS",
+      "C++"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Java.",
+    "id": "info_086"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does the Prt Sc button do?",
+    "options": [
+      "Captures what's on the screen and copies it to your clipboard",
+      "Nothing",
+      "Saves a .png file of what's on the screen in your screenshots folder in photos",
+      "Closes all windows"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Captures what's on the screen and copies it to your clipboard.",
+    "id": "info_087"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Unix Time is defined as the number of seconds that have elapsed since when?",
+    "options": [
+      "Midnight, January 1, 1970",
+      "Midnight, July 4, 1976",
+      "Midnight on the creator of Unix's birthday",
+      "Midnight, July 4, 1980"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Midnight, January 1, 1970.",
+    "id": "info_088"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The numbering system with a radix of 16 is more commonly referred to as ",
+    "options": [
+      "Hexidecimal",
+      "Binary",
+      "Duodecimal",
+      "Octal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hexidecimal.",
+    "id": "info_089"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does AD stand for in relation to Windows Operating Systems? ",
+    "options": [
+      "Active Directory",
+      "Alternative Drive",
+      "Automated Database",
+      "Active Department"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Active Directory.",
+    "id": "info_090"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does the DOS in Microsoft's first operating system \"MS-DOS\" stand for?",
+    "options": [
+      "Disk Operating System",
+      "Dumb Operating System",
+      "Driver Oriented System",
+      "Diskless Operating System"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Disk Operating System.",
+    "id": "info_091"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is known as \"the brain\" of the Computer?",
+    "options": [
+      "Central Processing Unit",
+      "Motherboard",
+      "Graphics Processing Unit",
+      "Keyboard"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Central Processing Unit.",
+    "id": "info_092"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the default theme that is installed with Windows XP?",
+    "options": [
+      "Luna",
+      "Neptune",
+      "Whistler",
+      "Bliss"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Luna.",
+    "id": "info_093"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
+    "options": [
+      "HD Graphics 500",
+      "HD Graphics 700 ",
+      "HD Graphics 600",
+      "HD Graphics 7000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is HD Graphics 500.",
+    "id": "info_094"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "How many kilobytes in one gigabyte (in decimal)?",
+    "options": [
+      "1000000",
+      "1024",
+      "1000",
+      "1048576"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1000000.",
+    "id": "info_095"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "While Apple was formed in California, in which western state was Microsoft founded?",
+    "options": [
+      "New Mexico",
+      "Washington",
+      "Colorado",
+      "Arizona"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is New Mexico.",
+    "id": "info_096"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does the 'S' in the RSA encryption algorithm stand for?",
+    "options": [
+      "Shamir",
+      "Secure",
+      "Schottky",
+      "Stable"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shamir.",
+    "id": "info_097"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Approximately how many Apple I personal computers were created?",
+    "options": [
+      "200",
+      "100",
+      "500",
+      "1000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 200.",
+    "id": "info_098"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of these Cherry MX mechanical keyboard switches is both tactile and clicky?",
+    "options": [
+      "Cherry MX Blue",
+      "Cherry MX Black",
+      "Cherry MX Red",
+      "Cherry MX Brown"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cherry MX Blue.",
+    "id": "info_099"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Who invented the \"Spanning Tree Protocol\"?",
+    "options": [
+      "Radia Perlman",
+      "Paul Vixie",
+      "Vint Cerf",
+      "Michael Roberts"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Radia Perlman.",
+    "id": "info_100"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The C programming language was created by this American computer scientist. ",
+    "options": [
+      "Dennis Ritchie",
+      "Tim Berners Lee",
+      "al-Khwārizmī",
+      "Willis Ware"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dennis Ritchie.",
+    "id": "info_101"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is largely considered the precursor to the USB format?",
+    "options": [
+      "PS/2",
+      "SVGA",
+      "PCIe",
+      "FireWire"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is PS/2.",
+    "id": "info_102"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the main CPU is the Sega Mega Drive / Sega Genesis?",
+    "options": [
+      "Motorola 68000",
+      "Zilog Z80",
+      "Yamaha YM2612",
+      "Intel 8088"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Motorola 68000.",
+    "id": "info_103"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of the following computer components can be built using only NAND gates?",
+    "options": [
+      "ALU",
+      "CPU",
+      "RAM",
+      "Register"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is ALU.",
+    "id": "info_104"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which programming language shares its name with an island in Indonesia?",
+    "options": [
+      "Java",
+      "Python",
+      "C",
+      "Jakarta"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Java.",
+    "id": "info_105"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The Electron computer was released in Britain during 1983 for the home computing market, by which company? ",
+    "options": [
+      "Acorn Computers",
+      "Sinclair Research",
+      "Amstrad PLC",
+      "Commodore Business Machines"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Acorn Computers.",
+    "id": "info_106"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Who is the founder of Palantir?",
+    "options": [
+      "Peter Thiel",
+      "Mark Zuckerberg",
+      "Marc Benioff",
+      "Jack Dorsey"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Peter Thiel.",
+    "id": "info_107"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Australia, Japan, and Southeast Asia are in which ITU Region?",
+    "options": [
+      "Region 3",
+      "Region 1",
+      "Region 2",
+      "Region 4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Region 3.",
+    "id": "info_108"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The Windows OS was delevoped by which company?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Nokia",
+      "IBM"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Microsoft.",
+    "id": "info_109"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of these is not a key value of Agile software development?",
+    "options": [
+      "Comprehensive documentation",
+      "Individuals and interactions",
+      "Customer collaboration",
+      "Responding to change"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Comprehensive documentation.",
+    "id": "info_110"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "How long is an IPv6 address?",
+    "options": [
+      "128 bits",
+      "32 bits",
+      "64 bits",
+      "128 bytes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 128 bits.",
+    "id": "info_111"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "How many cores does the Intel i7-6950X have?",
+    "options": [
+      "10",
+      "12",
+      "8",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 10.",
+    "id": "info_112"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In CSS, which of these values CANNOT be used with the \"position\" property?",
+    "options": [
+      "center",
+      "static",
+      "absolute",
+      "relative"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is center.",
+    "id": "info_113"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of the following is the oldest of these computers by release date?",
+    "options": [
+      "TRS-80",
+      "Commodore 64",
+      "ZX Spectrum",
+      "Apple 3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is TRS-80.",
+    "id": "info_114"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does the term MIME stand for, in regards to computing?",
+    "options": [
+      "Multipurpose Internet Mail Extensions",
+      "Mail Internet Mail Exchange",
+      "Multipurpose Interleave Mail Exchange",
+      "Mail Interleave Method Exchange"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Multipurpose Internet Mail Extensions.",
+    "id": "info_115"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Color model CMYK stands for?",
+    "options": [
+      "Cyan, Magenta, Yellow, and Black",
+      "Cream, Maroon, Yellow, and Black",
+      "Cyan, Magenta, Yellow, and Khaki",
+      "Cream, Maroon, Yellow, and Khaki"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cyan, Magenta, Yellow, and Black.",
+    "id": "info_116"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What was the first Android version specifically optimized for tablets?",
+    "options": [
+      "Honeycomb",
+      "Eclair",
+      "Froyo",
+      "Marshmellow"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Honeycomb.",
+    "id": "info_117"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Laserjet and inkjet printers are both examples of what type of printer?",
+    "options": [
+      "Non-impact printer",
+      "Impact printer",
+      "Daisywheel printer",
+      "Dot matrix printer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Non-impact printer.",
+    "id": "info_118"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which of these people was NOT a founder of Apple Inc?",
+    "options": [
+      "Jonathan Ive",
+      "Steve Jobs",
+      "Ronald Wayne",
+      "Steve Wozniak"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jonathan Ive.",
+    "id": "info_119"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+    "options": [
+      "Taiwan",
+      "United States",
+      "Germany",
+      "China (People's Republic of)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Taiwan.",
+    "id": "info_120"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which numeral system, using only 0 and 1, forms the basis of digital computer operations?",
+    "options": [
+      "Binary",
+      "Decimal",
+      "Hexadecimal",
+      "Octal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The binary system is easy to implement electronically with on/off states.",
+    "id": "info_121"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does the abbreviation RAM stand for in personal computer architecture?",
+    "options": [
+      "Random Access Memory",
+      "Read Active Memory",
+      "Read Only Memory",
+      "Run Application Module"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM is random-access memory used to store active runtime application data.",
+    "id": "info_122"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which Dutch programmer created the popular Python programming language in the late 1980s?",
+    "options": [
+      "Guido van Rossum",
+      "Dennis Ritchie",
+      "Bjarne Stroustrup",
+      "Linus Torvalds"
+    ],
+    "correctIndex": 0,
+    "explanation": "Guido van Rossum named the language after the comedy show 'Monty Python's Flying Circus'.",
+    "id": "info_123"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which declarative language is used to create, query, modify, and manage databases?",
+    "options": [
+      "SQL",
+      "HTML",
+      "C++",
+      "XML"
+    ],
+    "correctIndex": 0,
+    "explanation": "SQL (Structured Query Language) is the standard tool for managing relational databases.",
+    "id": "info_124"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which test, proposed in 1950, evaluates a machine's ability to exhibit intelligent behavior indistinguishable from a human?",
+    "options": [
+      "Turing test",
+      "Voight-Kampff test",
+      "Rorschach test",
+      "CAPTCHA"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alan Turing described this test in his paper 'Computing Machinery and Intelligence'.",
+    "id": "info_125"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which public-key cryptography algorithm, created in 1977, is named after its creators Rivest, Shamir, and Adleman?",
+    "options": [
+      "RSA",
+      "AES",
+      "DES",
+      "Blowfish"
+    ],
+    "correctIndex": 0,
+    "explanation": "RSA relies on the mathematical difficulty of factoring large integers.",
+    "id": "info_126"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the fast buffer memory built into a CPU that holds frequently requested RAM data?",
+    "options": [
+      "Cache",
+      "Register",
+      "Virtual memory",
+      "ROM"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPU cache is organized into levels (L1, L2, L3) and operates at CPU speeds.",
+    "id": "info_127"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the worst-case time complexity of the binary search algorithm in a sorted array?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Binary search halves the search space at each step, yielding logarithmic complexity.",
+    "id": "info_128"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which algorithm theory problem asks whether the class of problems solvable in polynomial time equals the class whose solutions can be verified in polynomial time?",
+    "options": [
+      "P versus NP problem",
+      "Halting problem",
+      "Automata equivalence problem",
+      "Traveling salesman problem"
+    ],
+    "correctIndex": 0,
+    "explanation": "The P vs NP problem is one of the Millennium Prize Problems selected by the Clay Mathematics Institute.",
+    "id": "info_129"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which legendary Polish cryptanalyst developed the 'cryptologic bomb' that laid the foundation for Turing's Enigma cracks?",
+    "options": [
+      "Marian Rejewski",
+      "Jerzy Rozycki",
+      "Henryk Zygalski",
+      "Jan Kowalewski"
+    ],
+    "correctIndex": 0,
+    "explanation": "Marian Rejewski mathematically reconstructed the wiring of the military Enigma in 1932.",
+    "id": "info_130"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which neural network training method is used to calculate the gradient of the loss function and adjust weights backward?",
+    "options": [
+      "Backpropagation",
+      "Gradient descent",
+      "Support vector machine",
+      "Random forest"
+    ],
+    "correctIndex": 0,
+    "explanation": "Backpropagation propagates the error from output to input to optimize weights.",
+    "id": "info_131"
+  },
+  {
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which abbreviation in database systems describes transaction requirements: Atomicity, Consistency, Isolation, Durability?",
+    "options": [
+      "ACID",
+      "BASE",
+      "CRUD",
+      "REST"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ACID properties guarantee data integrity and validity in the event of failures.",
+    "id": "info_132"
   }
 ]

@@ -3,7 +3,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of Russia?",
-    "options": ["Moscow", "Saint Petersburg", "Kazan", "Novosibirsk"],
+    "options": [
+      "Moscow",
+      "Saint Petersburg",
+      "Kazan",
+      "Novosibirsk"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Russia is Moscow.",
     "id": "geo_001"
@@ -12,7 +17,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of France?",
-    "options": ["Paris", "Lyon", "Marseille", "Nice"],
+    "options": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of France is Paris.",
     "id": "geo_002"
@@ -21,7 +31,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which is the largest ocean on Earth?",
-    "options": ["Pacific", "Atlantic", "Indian", "Arctic"],
+    "options": [
+      "Pacific",
+      "Atlantic",
+      "Indian",
+      "Arctic"
+    ],
     "correctIndex": 0,
     "explanation": "The largest ocean is the Pacific.",
     "id": "geo_003"
@@ -30,7 +45,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which river is considered the longest in the world?",
-    "options": ["The Nile", "The Volga", "The Danube", "The Thames"],
+    "options": [
+      "The Nile",
+      "The Volga",
+      "The Danube",
+      "The Thames"
+    ],
     "correctIndex": 0,
     "explanation": "By traditional measurements the Nile is regarded as the longest river.",
     "id": "geo_004"
@@ -39,7 +59,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "On which continent is the Sahara Desert?",
-    "options": ["Africa", "Asia", "Australia", "South America"],
+    "options": [
+      "Africa",
+      "Asia",
+      "Australia",
+      "South America"
+    ],
     "correctIndex": 0,
     "explanation": "The Sahara lies in North Africa.",
     "id": "geo_005"
@@ -48,7 +73,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "How many continents are there on Earth?",
-    "options": ["7", "5", "6", "4"],
+    "options": [
+      "7",
+      "5",
+      "6",
+      "4"
+    ],
     "correctIndex": 0,
     "explanation": "It is common to count seven continents.",
     "id": "geo_006"
@@ -57,7 +87,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of Italy?",
-    "options": ["Rome", "Milan", "Venice", "Naples"],
+    "options": [
+      "Rome",
+      "Milan",
+      "Venice",
+      "Naples"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Italy is Rome.",
     "id": "geo_007"
@@ -66,7 +101,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which is the largest country by area?",
-    "options": ["Russia", "Canada", "China", "USA"],
+    "options": [
+      "Russia",
+      "Canada",
+      "China",
+      "USA"
+    ],
     "correctIndex": 0,
     "explanation": "Russia is the largest country in the world by area.",
     "id": "geo_008"
@@ -75,7 +115,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which is the highest mountain in the world?",
-    "options": ["Mount Everest", "Mount Elbrus", "Mont Blanc", "Mount Kilimanjaro"],
+    "options": [
+      "Mount Everest",
+      "Mount Elbrus",
+      "Mont Blanc",
+      "Mount Kilimanjaro"
+    ],
     "correctIndex": 0,
     "explanation": "The highest peak is Mount Everest (8,849 m).",
     "id": "geo_009"
@@ -84,7 +129,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of Japan?",
-    "options": ["Tokyo", "Kyoto", "Osaka", "Seoul"],
+    "options": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Seoul"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Japan is Tokyo.",
     "id": "geo_010"
@@ -93,7 +143,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which is the coldest continent?",
-    "options": ["Antarctica", "Eurasia", "Africa", "Australia"],
+    "options": [
+      "Antarctica",
+      "Eurasia",
+      "Africa",
+      "Australia"
+    ],
     "correctIndex": 0,
     "explanation": "The coldest continent is Antarctica.",
     "id": "geo_011"
@@ -102,7 +157,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of Germany?",
-    "options": ["Berlin", "Munich", "Hamburg", "Bonn"],
+    "options": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Bonn"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Germany is Berlin.",
     "id": "geo_012"
@@ -111,7 +171,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which body of water is one of the saltiest in the world?",
-    "options": ["The Dead Sea", "The Black Sea", "The Baltic Sea", "The Sea of Azov"],
+    "options": [
+      "The Dead Sea",
+      "The Black Sea",
+      "The Baltic Sea",
+      "The Sea of Azov"
+    ],
     "correctIndex": 0,
     "explanation": "The Dead Sea is famous for its very high salinity.",
     "id": "geo_013"
@@ -120,7 +185,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "On which continent does most of Russia lie?",
-    "options": ["Eurasia", "Africa", "North America", "Australia"],
+    "options": [
+      "Eurasia",
+      "Africa",
+      "North America",
+      "Australia"
+    ],
     "correctIndex": 0,
     "explanation": "Russia is on the continent of Eurasia.",
     "id": "geo_014"
@@ -129,7 +199,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of the United Kingdom?",
-    "options": ["London", "Manchester", "Liverpool", "Edinburgh"],
+    "options": [
+      "London",
+      "Manchester",
+      "Liverpool",
+      "Edinburgh"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of the UK is London.",
     "id": "geo_015"
@@ -138,7 +213,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which ocean washes the east coast of the USA?",
-    "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+    "options": [
+      "Atlantic",
+      "Pacific",
+      "Indian",
+      "Arctic"
+    ],
     "correctIndex": 0,
     "explanation": "The east coast of the USA is on the Atlantic Ocean.",
     "id": "geo_016"
@@ -147,7 +227,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which is the deepest lake in the world?",
-    "options": ["Lake Baikal", "The Caspian Sea", "Lake Victoria", "Lake Tanganyika"],
+    "options": [
+      "Lake Baikal",
+      "The Caspian Sea",
+      "Lake Victoria",
+      "Lake Tanganyika"
+    ],
     "correctIndex": 0,
     "explanation": "The deepest lake is Lake Baikal (over 1,600 m).",
     "id": "geo_017"
@@ -156,7 +241,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of the United States?",
-    "options": ["Washington, D.C.", "New York", "Los Angeles", "Chicago"],
+    "options": [
+      "Washington, D.C.",
+      "New York",
+      "Los Angeles",
+      "Chicago"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of the USA is Washington, D.C.",
     "id": "geo_018"
@@ -165,7 +255,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "Which country is shaped like a boot on the map?",
-    "options": ["Italy", "Spain", "Greece", "Portugal"],
+    "options": [
+      "Italy",
+      "Spain",
+      "Greece",
+      "Portugal"
+    ],
     "correctIndex": 0,
     "explanation": "Italy's outline resembles a boot.",
     "id": "geo_019"
@@ -174,7 +269,12 @@
     "category": "geography",
     "difficulty": "EASY",
     "text": "What is the capital of China?",
-    "options": ["Beijing", "Shanghai", "Hong Kong", "Guangzhou"],
+    "options": [
+      "Beijing",
+      "Shanghai",
+      "Hong Kong",
+      "Guangzhou"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of China is Beijing.",
     "id": "geo_020"
@@ -183,7 +283,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Australia?",
-    "options": ["Canberra", "Sydney", "Melbourne", "Perth"],
+    "options": [
+      "Canberra",
+      "Sydney",
+      "Melbourne",
+      "Perth"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Australia is Canberra, not Sydney.",
     "id": "geo_021"
@@ -192,7 +297,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which is the longest river in Europe?",
-    "options": ["The Volga", "The Danube", "The Dnieper", "The Rhine"],
+    "options": [
+      "The Volga",
+      "The Danube",
+      "The Dnieper",
+      "The Rhine"
+    ],
     "correctIndex": 0,
     "explanation": "The longest river in Europe is the Volga.",
     "id": "geo_022"
@@ -201,7 +311,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which strait separates Europe and Africa near the town of Gibraltar?",
-    "options": ["The Strait of Gibraltar", "The Bosphorus", "The English Channel", "The Bering Strait"],
+    "options": [
+      "The Strait of Gibraltar",
+      "The Bosphorus",
+      "The English Channel",
+      "The Bering Strait"
+    ],
     "correctIndex": 0,
     "explanation": "Europe and Africa are separated here by the Strait of Gibraltar.",
     "id": "geo_023"
@@ -210,7 +325,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "On which continent is Egypt?",
-    "options": ["Africa", "Asia", "Europe", "South America"],
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
+    ],
     "correctIndex": 0,
     "explanation": "Most of Egypt lies in Africa.",
     "id": "geo_024"
@@ -219,7 +339,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Canada?",
-    "options": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
+    "options": [
+      "Ottawa",
+      "Toronto",
+      "Montreal",
+      "Vancouver"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Canada is Ottawa.",
     "id": "geo_025"
@@ -228,7 +353,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which is the largest hot desert in the world?",
-    "options": ["The Sahara", "The Gobi", "The Kalahari", "The Arabian Desert"],
+    "options": [
+      "The Sahara",
+      "The Gobi",
+      "The Kalahari",
+      "The Arabian Desert"
+    ],
     "correctIndex": 0,
     "explanation": "The largest hot desert is the Sahara.",
     "id": "geo_026"
@@ -237,7 +367,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which body of water is the largest lake on the planet by area?",
-    "options": ["The Caspian Sea", "Lake Baikal", "Lake Victoria", "The Aral Sea"],
+    "options": [
+      "The Caspian Sea",
+      "Lake Baikal",
+      "Lake Victoria",
+      "The Aral Sea"
+    ],
     "correctIndex": 0,
     "explanation": "The Caspian Sea is the largest lake on Earth by area.",
     "id": "geo_027"
@@ -246,7 +381,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Brazil?",
-    "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Salvador"],
+    "options": [
+      "Brasília",
+      "Rio de Janeiro",
+      "São Paulo",
+      "Salvador"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Brazil is the city of Brasília.",
     "id": "geo_028"
@@ -255,7 +395,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Through which country does most of the Amazon River flow?",
-    "options": ["Brazil", "Argentina", "Peru", "Colombia"],
+    "options": [
+      "Brazil",
+      "Argentina",
+      "Peru",
+      "Colombia"
+    ],
     "correctIndex": 0,
     "explanation": "Most of the Amazon basin lies within Brazil.",
     "id": "geo_029"
@@ -264,7 +409,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which mountains traditionally divide Europe and Asia?",
-    "options": ["The Ural Mountains", "The Alps", "The Caucasus", "The Carpathians"],
+    "options": [
+      "The Ural Mountains",
+      "The Alps",
+      "The Caucasus",
+      "The Carpathians"
+    ],
     "correctIndex": 0,
     "explanation": "The conventional boundary of Europe and Asia runs along the Ural Mountains.",
     "id": "geo_030"
@@ -273,7 +423,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Spain?",
-    "options": ["Madrid", "Barcelona", "Seville", "Valencia"],
+    "options": [
+      "Madrid",
+      "Barcelona",
+      "Seville",
+      "Valencia"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Spain is Madrid.",
     "id": "geo_031"
@@ -282,7 +437,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which canal connects the Mediterranean and the Red Sea?",
-    "options": ["The Suez Canal", "The Panama Canal", "The Kiel Canal", "The Corinth Canal"],
+    "options": [
+      "The Suez Canal",
+      "The Panama Canal",
+      "The Kiel Canal",
+      "The Corinth Canal"
+    ],
     "correctIndex": 0,
     "explanation": "The Mediterranean and the Red Sea are linked by the Suez Canal.",
     "id": "geo_032"
@@ -291,7 +451,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which is the largest island in the world?",
-    "options": ["Greenland", "Madagascar", "New Guinea", "Borneo"],
+    "options": [
+      "Greenland",
+      "Madagascar",
+      "New Guinea",
+      "Borneo"
+    ],
     "correctIndex": 0,
     "explanation": "The largest island on the planet is Greenland.",
     "id": "geo_033"
@@ -300,7 +465,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Egypt?",
-    "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+    "options": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Egypt is Cairo.",
     "id": "geo_034"
@@ -309,7 +479,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "On which continent is the Amazon rainforest?",
-    "options": ["South America", "Africa", "Asia", "Australia"],
+    "options": [
+      "South America",
+      "Africa",
+      "Asia",
+      "Australia"
+    ],
     "correctIndex": 0,
     "explanation": "The Amazon rainforest is in South America.",
     "id": "geo_035"
@@ -318,7 +493,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which island nation includes the islands of Honshu and Hokkaido?",
-    "options": ["Japan", "The Philippines", "Indonesia", "Malaysia"],
+    "options": [
+      "Japan",
+      "The Philippines",
+      "Indonesia",
+      "Malaysia"
+    ],
     "correctIndex": 0,
     "explanation": "Honshu and Hokkaido are the largest islands of Japan.",
     "id": "geo_036"
@@ -327,7 +507,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Turkey?",
-    "options": ["Ankara", "Istanbul", "Izmir", "Bursa"],
+    "options": [
+      "Ankara",
+      "Istanbul",
+      "Izmir",
+      "Bursa"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Turkey is Ankara, not Istanbul.",
     "id": "geo_037"
@@ -336,7 +521,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "Which is the smallest country in the world by area?",
-    "options": ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
+    "options": [
+      "Vatican City",
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+    ],
     "correctIndex": 0,
     "explanation": "The smallest country is Vatican City.",
     "id": "geo_038"
@@ -345,7 +535,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "On which peninsula does most of India lie?",
-    "options": ["The Indian subcontinent", "The Arabian Peninsula", "The Balkan Peninsula", "Scandinavia"],
+    "options": [
+      "The Indian subcontinent",
+      "The Arabian Peninsula",
+      "The Balkan Peninsula",
+      "Scandinavia"
+    ],
     "correctIndex": 0,
     "explanation": "India occupies most of the Indian subcontinent.",
     "id": "geo_039"
@@ -354,7 +549,12 @@
     "category": "geography",
     "difficulty": "MEDIUM",
     "text": "What is the capital of Greece?",
-    "options": ["Athens", "Sparta", "Thessaloniki", "Patras"],
+    "options": [
+      "Athens",
+      "Sparta",
+      "Thessaloniki",
+      "Patras"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Greece is Athens.",
     "id": "geo_040"
@@ -363,7 +563,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the capital of Argentina?",
-    "options": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
+    "options": [
+      "Buenos Aires",
+      "Córdoba",
+      "Rosario",
+      "Mendoza"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Argentina is Buenos Aires.",
     "id": "geo_041"
@@ -372,7 +577,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which is the highest waterfall in the world?",
-    "options": ["Angel Falls", "Niagara Falls", "Victoria Falls", "Iguazu Falls"],
+    "options": [
+      "Angel Falls",
+      "Niagara Falls",
+      "Victoria Falls",
+      "Iguazu Falls"
+    ],
     "correctIndex": 0,
     "explanation": "The highest waterfall is Angel Falls in Venezuela.",
     "id": "geo_042"
@@ -381,7 +591,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which country has the largest population in the world?",
-    "options": ["India", "China", "USA", "Indonesia"],
+    "options": [
+      "India",
+      "China",
+      "USA",
+      "Indonesia"
+    ],
     "correctIndex": 0,
     "explanation": "Since 2023 the most populous country has been India.",
     "id": "geo_043"
@@ -390,7 +605,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "How many time zones does Russia span?",
-    "options": ["11", "9", "7", "24"],
+    "options": [
+      "11",
+      "9",
+      "7",
+      "24"
+    ],
     "correctIndex": 0,
     "explanation": "Russia spans 11 time zones.",
     "id": "geo_044"
@@ -399,7 +619,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the capital of Norway?",
-    "options": ["Oslo", "Bergen", "Trondheim", "Stavanger"],
+    "options": [
+      "Oslo",
+      "Bergen",
+      "Trondheim",
+      "Stavanger"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Norway is Oslo.",
     "id": "geo_045"
@@ -408,7 +633,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Where is the deepest point of the world's oceans?",
-    "options": ["The Mariana Trench", "The Tonga Trench", "The Philippine Trench", "The Puerto Rico Trench"],
+    "options": [
+      "The Mariana Trench",
+      "The Tonga Trench",
+      "The Philippine Trench",
+      "The Puerto Rico Trench"
+    ],
     "correctIndex": 0,
     "explanation": "The deepest point is the Mariana Trench (about 11 km).",
     "id": "geo_046"
@@ -417,7 +647,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "On which river does the capital of Egypt stand?",
-    "options": ["The Nile", "The Tigris", "The Euphrates", "The Congo"],
+    "options": [
+      "The Nile",
+      "The Tigris",
+      "The Euphrates",
+      "The Congo"
+    ],
     "correctIndex": 0,
     "explanation": "Cairo stands on the River Nile.",
     "id": "geo_047"
@@ -426,7 +661,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the de facto capital of Switzerland?",
-    "options": ["Bern", "Zurich", "Geneva", "Basel"],
+    "options": [
+      "Bern",
+      "Zurich",
+      "Geneva",
+      "Basel"
+    ],
     "correctIndex": 0,
     "explanation": "The de facto capital of Switzerland is Bern.",
     "id": "geo_048"
@@ -435,7 +675,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which strait separates Russia from Alaska?",
-    "options": ["The Bering Strait", "The Strait of Gibraltar", "The Strait of Magellan", "The Drake Passage"],
+    "options": [
+      "The Bering Strait",
+      "The Strait of Gibraltar",
+      "The Strait of Magellan",
+      "The Drake Passage"
+    ],
     "correctIndex": 0,
     "explanation": "Russia and Alaska are separated by the Bering Strait.",
     "id": "geo_049"
@@ -444,7 +689,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which is the largest freshwater lake by surface area?",
-    "options": ["Lake Superior", "Lake Baikal", "Lake Victoria", "Lake Huron"],
+    "options": [
+      "Lake Superior",
+      "Lake Baikal",
+      "Lake Victoria",
+      "Lake Huron"
+    ],
     "correctIndex": 0,
     "explanation": "The largest freshwater lake by area is Lake Superior in North America.",
     "id": "geo_050"
@@ -453,7 +703,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the capital of India?",
-    "options": ["New Delhi", "Mumbai", "Kolkata", "Bangalore"],
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Bangalore"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of India is New Delhi.",
     "id": "geo_051"
@@ -462,7 +717,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which country occupies an entire continent of its own?",
-    "options": ["Australia", "India", "Brazil", "Canada"],
+    "options": [
+      "Australia",
+      "India",
+      "Brazil",
+      "Canada"
+    ],
     "correctIndex": 0,
     "explanation": "Australia is the only country that occupies a whole continent.",
     "id": "geo_052"
@@ -471,7 +731,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "On which continent are the Andes, the longest mountain range on land?",
-    "options": ["South America", "North America", "Asia", "Africa"],
+    "options": [
+      "South America",
+      "North America",
+      "Asia",
+      "Africa"
+    ],
     "correctIndex": 0,
     "explanation": "The Andes run along the western edge of South America.",
     "id": "geo_053"
@@ -480,7 +745,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the capital of Poland?",
-    "options": ["Warsaw", "Kraków", "Gdańsk", "Wrocław"],
+    "options": [
+      "Warsaw",
+      "Kraków",
+      "Gdańsk",
+      "Wrocław"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Poland is Warsaw.",
     "id": "geo_054"
@@ -489,7 +759,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which sea in the Atlantic has no land borders and is bounded by ocean currents?",
-    "options": ["The Sargasso Sea", "The Caribbean Sea", "The Baltic Sea", "The Aegean Sea"],
+    "options": [
+      "The Sargasso Sea",
+      "The Caribbean Sea",
+      "The Baltic Sea",
+      "The Aegean Sea"
+    ],
     "correctIndex": 0,
     "explanation": "The Sargasso Sea is bounded by ocean currents rather than land.",
     "id": "geo_055"
@@ -498,7 +773,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which is the highest mountain in Africa?",
-    "options": ["Mount Kilimanjaro", "Mount Kenya", "Mount Toubkal", "The Rwenzori"],
+    "options": [
+      "Mount Kilimanjaro",
+      "Mount Kenya",
+      "Mount Toubkal",
+      "The Rwenzori"
+    ],
     "correctIndex": 0,
     "explanation": "The highest peak in Africa is Mount Kilimanjaro.",
     "id": "geo_056"
@@ -507,7 +787,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the capital of Sweden?",
-    "options": ["Stockholm", "Gothenburg", "Malmö", "Uppsala"],
+    "options": [
+      "Stockholm",
+      "Gothenburg",
+      "Malmö",
+      "Uppsala"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Sweden is Stockholm.",
     "id": "geo_057"
@@ -516,7 +801,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which major city lies on two continents at once?",
-    "options": ["Istanbul", "Cairo", "Moscow", "Athens"],
+    "options": [
+      "Istanbul",
+      "Cairo",
+      "Moscow",
+      "Athens"
+    ],
     "correctIndex": 0,
     "explanation": "Istanbul lies in both Europe and Asia, split by the Bosphorus.",
     "id": "geo_058"
@@ -525,7 +815,12 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "Which is the smallest country in South America by area?",
-    "options": ["Suriname", "Uruguay", "Ecuador", "Guyana"],
+    "options": [
+      "Suriname",
+      "Uruguay",
+      "Ecuador",
+      "Guyana"
+    ],
     "correctIndex": 0,
     "explanation": "The smallest country in mainland South America is Suriname.",
     "id": "geo_059"
@@ -534,9 +829,1008 @@
     "category": "geography",
     "difficulty": "HARD",
     "text": "What is the official capital of the Netherlands?",
-    "options": ["Amsterdam", "The Hague", "Rotterdam", "Utrecht"],
+    "options": [
+      "Amsterdam",
+      "The Hague",
+      "Rotterdam",
+      "Utrecht"
+    ],
     "correctIndex": 0,
     "explanation": "The official capital of the Netherlands is Amsterdam (the government sits in The Hague).",
     "id": "geo_060"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the most populous Muslim-majority nation in 2010?",
+    "options": [
+      "Indonesia",
+      "Saudi Arabia",
+      "Iran",
+      "Sudan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Indonesia.",
+    "id": "geog_061"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the Polish city known to Germans as Danzig?",
+    "options": [
+      "Gdańsk",
+      "Warsaw",
+      "Zakopane",
+      "Poznań"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gdańsk.",
+    "id": "geog_062"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which area of Eastern Europe is famous for its association with vampires?",
+    "options": [
+      "Transylvania",
+      "Silesia",
+      "Macedonia",
+      "Slovakia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Transylvania.",
+    "id": "geog_063"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "The Hunua Ranges is located in...",
+    "options": [
+      "New Zealand",
+      "Nepal",
+      "China",
+      "Mexico"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is New Zealand.",
+    "id": "geog_064"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the 15th letter of the Greek alphabet?",
+    "options": [
+      "Omicron (Ο)",
+      "Sigma (Σ)",
+      "Pi (Π)",
+      "Nu (Ν)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Omicron (Ο).",
+    "id": "geog_065"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the capital city of Bermuda?",
+    "options": [
+      "Hamilton",
+      "Santo Dominigo",
+      "San Juan",
+      "Havana"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hamilton.",
+    "id": "geog_066"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "Into which basin does the Jordan River flow into?",
+    "options": [
+      "Dead Sea",
+      "Aral Sea",
+      "Caspian Sea",
+      "Salton Sea"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dead Sea.",
+    "id": "geog_067"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the capital of Burkina Faso?",
+    "options": [
+      "Ouagadougou",
+      "Yaoundé",
+      "Yamoussoukro",
+      "Abidjan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ouagadougou.",
+    "id": "geog_068"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What is the capital city of New Zealand?",
+    "options": [
+      "Wellington",
+      "Auckland",
+      "Christchurch",
+      "Melbourne"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Wellington.",
+    "id": "geog_069"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which of these African regions does *not* directly border the Democratic Republic of The Congo?",
+    "options": [
+      "Sudan",
+      "Central African Republic",
+      "Tanzania",
+      "Zambia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sudan.",
+    "id": "geog_070"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which is the only US state located entirely within the Appalachia region?",
+    "options": [
+      "West Virginia",
+      "Pennsylvania",
+      "Alabama",
+      "Kentucky"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is West Virginia.",
+    "id": "geog_071"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the capital of the American state of Arizona?",
+    "options": [
+      "Phoenix",
+      "Montgomery",
+      "Tallahassee",
+      "Raleigh"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Phoenix.",
+    "id": "geog_072"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which US state has the highest population?",
+    "options": [
+      "California",
+      "New York",
+      "Texas",
+      "Florida"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is California.",
+    "id": "geog_073"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Bridgetown is the capital of which island country in the Carribean?",
+    "options": [
+      "Barbados",
+      "Cuba",
+      "Jamaica‎",
+      "Dominica"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Barbados.",
+    "id": "geog_074"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "How many timezones does Russia have?",
+    "options": [
+      "11",
+      "6",
+      "24",
+      "16"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 11.",
+    "id": "geog_075"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which country features a maple leaf on its flag?",
+    "options": [
+      "Canada",
+      "Mexico",
+      "Brazil",
+      "India"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Canada.",
+    "id": "geog_076"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "The Principality of Sealand is an unrecognized micronation off the coast of what country?",
+    "options": [
+      "The United Kingdom",
+      "Japan",
+      "Austrailia",
+      "Argentina"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The United Kingdom.",
+    "id": "geog_077"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the name of one of the Neo-Aramaic languages spoken by the Jewish population from Northwestern Iraq?",
+    "options": [
+      "Lishana Deni",
+      "Hulaulá",
+      "Lishan Didan",
+      "Chaldean Neo-Aramaic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Lishana Deni.",
+    "id": "geog_078"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the administrative centre and largest settlement on the Norwegian archipelago of Svalbard?",
+    "options": [
+      "Longyearbyen",
+      "Sveagruva",
+      "Ny-Ålesund",
+      "Barentsburg"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Longyearbyen.",
+    "id": "geog_079"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the capital of Scotland?",
+    "options": [
+      "Edinburgh",
+      "Glasgow",
+      "Dundee",
+      "London"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Edinburgh.",
+    "id": "geog_080"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "The prefix Sino- (As in Sino-American) is used to refer to what nationality?",
+    "options": [
+      "Chinese",
+      "Japanese",
+      "Russian",
+      "Indian"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Chinese.",
+    "id": "geog_081"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "All of the following are classified as Finno-Ugric languages EXCEPT:",
+    "options": [
+      "Samoyedic",
+      "Hungarian",
+      "Finnish",
+      "Estonian"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Samoyedic.",
+    "id": "geog_082"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "How tall is One World Trade Center in New York City?",
+    "options": [
+      "1,776 ft",
+      "1,888 ft",
+      "1,225 ft",
+      "1,960 ft"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1,776 ft.",
+    "id": "geog_083"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What is the capital of the State of Washington, United States?",
+    "options": [
+      "Olympia",
+      "Washington D.C.",
+      "Seattle",
+      "Yukon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Olympia.",
+    "id": "geog_084"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "Santorini is an island belonging to what European Country?",
+    "options": [
+      "Greece",
+      "Italy",
+      "Spain",
+      "Turkey"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Greece.",
+    "id": "geog_085"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the name of the peninsula containing Spain and Portugal?",
+    "options": [
+      "Iberian Peninsula",
+      "European Peninsula",
+      "Peloponnesian Peninsula",
+      "Scandinavian Peninsula"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Iberian Peninsula.",
+    "id": "geog_086"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "The Space Needle is located in which city?",
+    "options": [
+      "Seattle",
+      "Los Angles",
+      "Toronto",
+      "Vancouver"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Seattle.",
+    "id": "geog_087"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which state of the United States is the smallest?",
+    "options": [
+      "Rhode Island ",
+      "Maine",
+      "Vermont",
+      "Massachusetts"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Rhode Island .",
+    "id": "geog_088"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the Finnish word for \"Finland\"?",
+    "options": [
+      "Suomi",
+      "Eesti",
+      "Magyarország",
+      "Sverige"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Suomi.",
+    "id": "geog_089"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "Which of the following Inuit languages was the FIRST to use a unique writing system not based on the Latin alphabet?",
+    "options": [
+      "Inuktitut",
+      "Inuinnaqtun",
+      "Greenlandic",
+      "Inupiat"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Inuktitut.",
+    "id": "geog_090"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which nation claims ownership of Antarctica?",
+    "options": [
+      "No one, but there are claims.",
+      "United States of America",
+      "United Nations",
+      "Australia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is No one, but there are claims..",
+    "id": "geog_091"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "In which country is located the municipality of Arteijo?",
+    "options": [
+      "Spain",
+      "Morocco",
+      "France",
+      "Belgium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Spain.",
+    "id": "geog_092"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "How many stations does the Central Line have on the London Underground?",
+    "options": [
+      "49",
+      "51",
+      "43",
+      "47"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 49.",
+    "id": "geog_093"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which country inside the United Kingdom does NOT appear on its flag, the Union Jack?",
+    "options": [
+      "Wales",
+      "Scotland",
+      "Ireland",
+      "Isle of Wight"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Wales.",
+    "id": "geog_094"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What is the capital of Peru?",
+    "options": [
+      "Lima",
+      "Santiago",
+      "Montevideo",
+      "Buenos Aires"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Lima.",
+    "id": "geog_095"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the name of New Zealand's indigenous people?",
+    "options": [
+      "Maori",
+      "Vikings",
+      "Polynesians",
+      "Samoans"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Maori.",
+    "id": "geog_096"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What is the capital of Seychelles?",
+    "options": [
+      "Victoria",
+      "Luanda",
+      "N'Djamena",
+      "Tripoli"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Victoria.",
+    "id": "geog_097"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "The mountainous Khyber Pass connects which of the two following countries?",
+    "options": [
+      "Afghanistan and Pakistan",
+      "India and Nepal",
+      "Pakistan and India",
+      "Tajikistan and Kyrgyzstan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Afghanistan and Pakistan.",
+    "id": "geog_098"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which city is the capital of the United States of America?",
+    "options": [
+      "Washington D.C",
+      "Seattle",
+      "Albany",
+      "Los Angeles"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Washington D.C.",
+    "id": "geog_099"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which two modern-day countries used to be known as the region of Rhodesia between the 1890s and 1980?",
+    "options": [
+      "Zambia & Zimbabwe",
+      "Togo & Benin",
+      "Lesotho & Swaziland",
+      "Rwanda & Burundi"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Zambia & Zimbabwe.",
+    "id": "geog_100"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "In what part of Wales will you find the village Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
+    "options": [
+      "Anglesey",
+      "Pembrokeshire",
+      "Wrexham",
+      "Bridgend"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Anglesey.",
+    "id": "geog_101"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "How many states are in Australia?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6.",
+    "id": "geog_102"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the official language of Costa Rica?",
+    "options": [
+      "Spanish",
+      "English",
+      "Portuguese",
+      "Creole"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Spanish.",
+    "id": "geog_103"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following is the longest river in Europe?",
+    "options": [
+      "Volga",
+      "Danube",
+      "Ural",
+      "Dnieper"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Volga.",
+    "id": "geog_104"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What's the first National Park designated in the United States?",
+    "options": [
+      "Yellowstone",
+      "Sequoia ",
+      "Yosemite",
+      "Rocky Mountain"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Yellowstone.",
+    "id": "geog_105"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What event led to Liechenstein adding a crown to its flag?",
+    "options": [
+      "The 1936 Olympics",
+      "Coronation of Prince Johann I Joseph in 1805",
+      "Charles VI's decree in 1719",
+      "Signing of the 1862 Constitution of Liechtenstein"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The 1936 Olympics.",
+    "id": "geog_106"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What mountain range lines the border between Spain and France?",
+    "options": [
+      "Pyrenees",
+      "Alps",
+      "Carpathians",
+      "Urals"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pyrenees.",
+    "id": "geog_107"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which of these country's capitals starts with the letter B?",
+    "options": [
+      "Lebanon",
+      "Jordan",
+      "Kuwait",
+      "Qatar"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Lebanon.",
+    "id": "geog_108"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which of the following languages does NOT use the Latin alphabet?",
+    "options": [
+      "Georgian",
+      "Turkish",
+      "Swahili",
+      "Vietnamese"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Georgian.",
+    "id": "geog_109"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "How many rivers are in Saudi Arabia?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 0.",
+    "id": "geog_110"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the largest city and commercial capital of Sri Lanka?",
+    "options": [
+      "Colombo",
+      "Moratuwa",
+      "Negombo",
+      "Kandy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Colombo.",
+    "id": "geog_111"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which European city is known as the \"City of Light\"?",
+    "options": [
+      "Paris",
+      "Rome",
+      "London",
+      "Madrid"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Paris.",
+    "id": "geog_112"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which Russian oblast forms a border with Poland?",
+    "options": [
+      "Kaliningrad",
+      "Samara",
+      "Nizhny Novgorod",
+      "Omsk"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Kaliningrad.",
+    "id": "geog_113"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "What is the capital of Slovakia?",
+    "options": [
+      "Bratislava",
+      "Sofia",
+      "Ljubljana",
+      "Sarajevo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bratislava.",
+    "id": "geog_114"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which city is the biggest in Canada?",
+    "options": [
+      "Toronto",
+      "Montreal",
+      "Vancouver",
+      "Ottawa"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Toronto.",
+    "id": "geog_115"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "What is the capital of the US State of New York?",
+    "options": [
+      "Albany",
+      "Buffalo",
+      "New York",
+      "Rochester"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Albany.",
+    "id": "geog_116"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What is the name of the Canadian national anthem?",
+    "options": [
+      "O Canada",
+      "O Red Maple",
+      "Leaf-Spangled Banner",
+      "March of the Puck Drop"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is O Canada.",
+    "id": "geog_117"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which is the smallest country in the world?",
+    "options": [
+      "Vatican City",
+      "Lesotho",
+      "Monaco City",
+      "Titania"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vatican City.",
+    "id": "geog_118"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What year is on the flag of the US state Wisconsin?",
+    "options": [
+      "1848",
+      "1634",
+      "1783",
+      "1901"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1848.",
+    "id": "geog_119"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which mountain peak is the highest point on Earth above sea level?",
+    "options": [
+      "Mount Everest",
+      "K2",
+      "Mount Kilimanjaro",
+      "Mount Elbrus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The height of Everest is 8,848 meters, located in the Himalayas on the Nepal-China border.",
+    "id": "geog_120"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which oceanic trench is the deepest known point in the Earth's oceans?",
+    "options": [
+      "Mariana Trench",
+      "Philippine Trench",
+      "Puerto Rico Trench",
+      "Sunda Trench"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Mariana Trench (Challenger Deep) reaches a depth of approximately 11,000 meters.",
+    "id": "geog_121"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "In which year did Christopher Columbus first land in the Bahamas, initiating the discovery of America?",
+    "options": [
+      "1492",
+      "1498",
+      "1502",
+      "1392"
+    ],
+    "correctIndex": 0,
+    "explanation": "Columbus's expedition reached the island of San Salvador on October 12, 1492.",
+    "id": "geog_122"
+  },
+  {
+    "category": "geography",
+    "difficulty": "EASY",
+    "text": "Which climate type is characteristic of regions located directly along the Earth's equator?",
+    "options": [
+      "Equatorial",
+      "Subtropical",
+      "Temperate",
+      "Desert"
+    ],
+    "correctIndex": 0,
+    "explanation": "An equatorial climate is marked by hot temperatures and heavy rainfall year-round.",
+    "id": "geog_123"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Relative to which meridian (Greenwich) is Coordinated Universal Time (UTC) calculated?",
+    "options": [
+      "Prime Meridian",
+      "180th Meridian",
+      "Equator",
+      "Paris Meridian"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Greenwich Meridian passes through the Royal Observatory in Greenwich, London.",
+    "id": "geog_124"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Through which desert, the largest hot desert in the world, does the Nile River flow?",
+    "options": [
+      "Sahara",
+      "Gobi",
+      "Kalahari",
+      "Atacama"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Nile River crosses the Sahara from south to north, emptying into the Mediterranean.",
+    "id": "geog_125"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which desert on Earth is the largest by area, including cold regions?",
+    "options": [
+      "Antarctic Desert",
+      "Sahara",
+      "Arabian Desert",
+      "Arctic Desert"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Antarctic polar desert exceeds the Sahara in area and is technically the driest.",
+    "id": "geog_126"
+  },
+  {
+    "category": "geography",
+    "difficulty": "MEDIUM",
+    "text": "Which explorer led the first expedition in history to circumnavigate the globe (1519-1522)?",
+    "options": [
+      "Ferdinand Magellan",
+      "Vasco da Gama",
+      "James Cook",
+      "Amerigo Vespucci"
+    ],
+    "correctIndex": 0,
+    "explanation": "Magellan died in the Philippines, but his ship completed the voyage under Juan Sebastian Elcano.",
+    "id": "geog_127"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What area distortion is characteristic of the classic cylindrical Mercator projection on world maps?",
+    "options": [
+      "Distortion increases toward the poles",
+      "Distortion increases toward the equator",
+      "Areas are shown without distortion",
+      "Only oceans are distorted"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Mercator projection preserves angles but severely distorts area sizes near the poles.",
+    "id": "geog_128"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "Along the borders of which lithospheric plates of the Pacific Ocean is the Ring of Fire located?",
+    "options": [
+      "Pacific plate and surrounding plates",
+      "African plate",
+      "Eurasian plate",
+      "South American plate"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Ring of Fire features high tectonic activity, hosting about 90% of Earth's earthquakes.",
+    "id": "geog_129"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "What climate phenomenon is characterized by abnormal warming of sea surface temperatures in the eastern Pacific?",
+    "options": [
+      "El Nino",
+      "La Nina",
+      "Monsoon",
+      "Gulf Stream"
+    ],
+    "correctIndex": 0,
+    "explanation": "El Nino weakens trade winds and drastically shifts weather patterns across the globe.",
+    "id": "geog_130"
+  },
+  {
+    "category": "geography",
+    "difficulty": "HARD",
+    "text": "Which 1494 treaty divided newly discovered lands outside Europe between Spain and Portugal along a meridian?",
+    "options": [
+      "Treaty of Tordesillas",
+      "Treaty of Zaragoza",
+      "Treaty of Utrecht",
+      "Peace of Westphalia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Treaty of Tordesillas set a boundary dividing spheres of influence in the Atlantic.",
+    "id": "geog_131"
   }
 ]

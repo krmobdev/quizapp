@@ -80,7 +80,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS
     private var questionCount: Int = QuestionRepository.QUIZ_SIZE
     private var timerJob: Job? = null
-    private var isRetryRun = false
     private var lastReward: QuizReward? = null
 
     private val _uiState = MutableStateFlow(QuizUiState())
@@ -93,20 +92,10 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun prepare(
         categoryId: String,
         difficulty: Difficulty?,
-        preset: List<Question>? = null,
         eventType: QuizEventType? = null,
         questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
         questionCount: Int = QuestionRepository.QUIZ_SIZE
     ) {
-        if (preset != null) {
-            isRetryRun = true
-            this.eventType = null
-            this.questionTimeSeconds = DEFAULT_QUESTION_TIME_SECONDS
-            this.questionCount = preset.size
-            startNew(categoryId, difficulty, preset)
-            return
-        }
-        isRetryRun = false
         this.eventType = eventType
         this.questionTimeSeconds = questionTimeSeconds
         this.questionCount = questionCount
@@ -125,7 +114,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     questionTimeSeconds = saved.questionTimeSeconds
                 )
             } else {
-                startNew(categoryId, difficulty, preset = null)
+                startNew(categoryId, difficulty)
             }
         }
     }
@@ -167,14 +156,13 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val saved = _uiState.value.resumePrompt ?: return
         viewModelScope.launch {
             progressRepository.clear()
-            startNew(saved.categoryId, saved.difficulty, preset = null)
+            startNew(saved.categoryId, saved.difficulty)
         }
     }
 
     private fun startNew(
         categoryId: String,
-        difficulty: Difficulty?,
-        preset: List<Question>?
+        difficulty: Difficulty?
     ) {
         this.categoryId = categoryId
         this.difficulty = difficulty
@@ -186,12 +174,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             val extraSeconds = profile.stats.extraTimeSeconds
             this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.questionTimeSeconds + extraSeconds).toInt()
 
-            val questions = preset ?: withContext(Dispatchers.IO) {
+            val recentIds = playerRepository.getRecentQuestions(categoryId).first()
+
+            val questions = withContext(Dispatchers.IO) {
                 repository.getQuestions(
                     categoryId = categoryId,
                     difficulty = difficulty,
                     language = quizLanguage,
-                    quizSize = questionCount
+                    quizSize = questionCount,
+                    excludeIds = recentIds
                 )
             }
             applySession(QuizSession(questions))
@@ -347,13 +338,17 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private suspend fun recordResult(session: QuizSession): QuizReward? {
         val category = categoryId ?: return null
         statsRepository.recordQuizResult(category, session.correctCount, session.total)
+        
+        val questionIds = session.questions.map { it.id }
+        playerRepository.saveRecentQuestions(category, questionIds)
+
         return playerRepository.grantQuizReward(
             categoryId = category,
             difficulty = difficulty,
             answers = session.answerRewards,
             total = session.total,
             eventType = eventType,
-            allowEventBonus = !isRetryRun
+            allowEventBonus = true
         )
     }
 

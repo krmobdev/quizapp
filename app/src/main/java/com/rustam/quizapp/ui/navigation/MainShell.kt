@@ -1,6 +1,7 @@
 package com.rustam.quizapp.ui.navigation
 
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.Home
@@ -104,9 +105,9 @@ fun MainShell(
                     onOverlayModeChange = { hideBottomBar = it },
                     modifier = Modifier.padding(innerPadding)
                 )
-                MainTab.Stats -> StatsScreen(modifier = Modifier.padding(innerPadding))
-                MainTab.Shop -> ShopScreen(modifier = Modifier.padding(innerPadding))
-                MainTab.Settings -> SettingsScreen(modifier = Modifier.padding(innerPadding))
+                MainTab.Stats -> StatsScreen(modifier = Modifier.padding(innerPadding).statusBarsPadding())
+                MainTab.Shop -> ShopScreen(modifier = Modifier.padding(innerPadding).statusBarsPadding())
+                MainTab.Settings -> SettingsScreen(modifier = Modifier.padding(innerPadding).statusBarsPadding())
             }
         }
     }

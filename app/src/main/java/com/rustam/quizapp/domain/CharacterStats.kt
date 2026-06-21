@@ -58,25 +58,36 @@ object CharacterLevelCalculator {
     /** Returns localized rank name (RU) based on the level. */
     fun getLevelRank(level: Int): String {
         return when {
-            level <= 2 -> "Новичок"
-            level <= 5 -> "Ученик"
-            level <= 9 -> "Искатель"
-            level <= 14 -> "Мудрец"
-            level <= 20 -> "Магистр"
-            level <= 30 -> "Архимаг"
+            level <= 4 -> "Новичок"
+            level <= 9 -> "Ученик"
+            level <= 14 -> "Адепт"
+            level <= 19 -> "Искатель"
+            level <= 24 -> "Специалист"
+            level <= 29 -> "Ученый"
+            level <= 34 -> "Мудрец"
+            level <= 39 -> "Магистр"
+            level <= 44 -> "Магистр разума"
+            level <= 49 -> "Просвещенный"
+            level <= 54 -> "Хранитель знаний"
+            level <= 59 -> "Вершитель судеб"
             else -> "Легенда"
         }
     }
 
-    /** Returns localized rank name (EN) based on the level. */
     fun getLevelRankEn(level: Int): String {
         return when {
-            level <= 2 -> "Novice"
-            level <= 5 -> "Apprentice"
-            level <= 9 -> "Seeker"
-            level <= 14 -> "Scholar"
-            level <= 20 -> "Sage"
-            level <= 30 -> "Archmage"
+            level <= 4 -> "Novice"
+            level <= 9 -> "Apprentice"
+            level <= 14 -> "Adept"
+            level <= 19 -> "Seeker"
+            level <= 24 -> "Expert"
+            level <= 29 -> "Scholar"
+            level <= 34 -> "Sage"
+            level <= 39 -> "Mage"
+            level <= 44 -> "Archmage"
+            level <= 49 -> "Enlightened"
+            level <= 54 -> "Loremaster"
+            level <= 59 -> "Grandmaster"
             else -> "Legend"
         }
     }

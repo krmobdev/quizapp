@@ -19,8 +19,10 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -80,18 +82,16 @@ fun QuizScreen(
     eventType: QuizEventType? = null,
     questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
     questionCount: Int = 10,
-    retryQuestions: List<Question>? = null,
     viewModel: QuizViewModel = viewModel()
 ) {
     BackHandler {
         viewModel.saveAndExit(onDone = onBack)
     }
 
-    LaunchedEffect(categoryId, difficulty, retryQuestions, eventType, questionTimeSeconds, questionCount) {
+    LaunchedEffect(categoryId, difficulty, eventType, questionTimeSeconds, questionCount) {
         viewModel.prepare(
             categoryId = categoryId,
             difficulty = difficulty,
-            preset = retryQuestions,
             eventType = eventType,
             questionTimeSeconds = questionTimeSeconds,
             questionCount = questionCount
@@ -157,7 +157,9 @@ private fun QuizContent(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(24.dp)
+                .statusBarsPadding()
+                .navigationBarsPadding()
+                .padding(horizontal = 24.dp, vertical = 16.dp)
         ) {
             when {
                 state.isLoading -> CircularProgressIndicator(Modifier.align(Alignment.Center))

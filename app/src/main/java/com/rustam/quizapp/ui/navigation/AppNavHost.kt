@@ -75,7 +75,6 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                 val event = Routes.parseEvent(entry.arguments?.getString("event"))
                 val timeLimit = entry.arguments?.getInt("timeLimit") ?: 10
                 val questionCount = entry.arguments?.getInt("questionCount") ?: 10
-                val retry = remember { shared.consumeRetryQuestions() }
 
                 QuizScreen(
                     categoryId = categoryId,
@@ -83,10 +82,9 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                     eventType = event,
                     questionTimeSeconds = timeLimit,
                     questionCount = questionCount,
-                    retryQuestions = retry,
                     onBack = { navController.popBackToHome() },
                     onFinished = { result ->
-                        shared.publishResult(result, categoryId, difficulty)
+                        shared.publishResult(result)
                         navController.navigate(Routes.RESULT) {
                             popUpTo(Routes.QUIZ) { inclusive = true }
                         }
@@ -98,15 +96,6 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                 val shared = entry.sharedViewModel<QuizFlowViewModel>(navController)
                 ResultScreen(
                     result = shared.result,
-                    onRetryMistakes = {
-                        val mistakes = shared.result?.mistakes.orEmpty()
-                        shared.setRetryQuestions(mistakes)
-                        navController.navigate(
-                            Routes.quiz(shared.categoryId.orEmpty(), shared.difficulty)
-                        ) {
-                            popUpTo(Routes.RESULT) { inclusive = true }
-                        }
-                    },
                     onHome = {
                         navController.navigate(Routes.MAIN) {
                             popUpTo(Routes.MAIN) { inclusive = true }

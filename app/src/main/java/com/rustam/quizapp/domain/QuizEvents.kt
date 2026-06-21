@@ -51,27 +51,27 @@ object QuizEvents {
         return saturday.toEpochDay() / 7
     }
 
-    fun categoryForDay(categories: List<Category>, day: LocalDate = LocalDate.now()): Category? {
+    fun categoryForDay(categories: List<Category>, completions: Int = 0, day: LocalDate = LocalDate.now()): Category? {
         if (categories.isEmpty()) return null
-        val seed = day.year * 366L + day.dayOfYear
+        val seed = day.year * 366L + day.dayOfYear + completions * 7
         return categories[(seed % categories.size).toInt()]
     }
 
-    fun categoryForWeek(categories: List<Category>, day: LocalDate = LocalDate.now()): Category? {
+    fun categoryForWeek(categories: List<Category>, completions: Int = 0, day: LocalDate = LocalDate.now()): Category? {
         if (categories.isEmpty()) return null
-        val seed = epochWeek(day) * 17 + 3
+        val seed = epochWeek(day) * 17 + completions * 13 + 3
         return categories[(seed % categories.size).toInt()]
     }
 
-    fun categoryForWeekend(categories: List<Category>, day: LocalDate = LocalDate.now()): Category? {
+    fun categoryForWeekend(categories: List<Category>, completions: Int = 0, day: LocalDate = LocalDate.now()): Category? {
         if (categories.isEmpty()) return null
-        val seed = epochWeekend(day) * 31 + 7
+        val seed = epochWeekend(day) * 31 + completions * 19 + 7
         return categories[(seed % categories.size).toInt()]
     }
 
-    fun categoryForMarathon(categories: List<Category>, day: LocalDate = LocalDate.now()): Category? {
+    fun categoryForMarathon(categories: List<Category>, completions: Int = 0, day: LocalDate = LocalDate.now()): Category? {
         if (categories.isEmpty()) return null
-        val seed = day.year * 53L + day.get(WeekFields.ISO.weekOfWeekBasedYear()) * 2 + 1
+        val seed = day.year * 53L + day.get(WeekFields.ISO.weekOfWeekBasedYear()) * 2 + completions * 23 + 1
         return categories[(seed % categories.size).toInt()]
     }
 
@@ -80,9 +80,9 @@ object QuizEvents {
         return dow == DayOfWeek.SATURDAY || dow == DayOfWeek.SUNDAY
     }
 
-    fun eventFor(type: QuizEventType, categories: List<Category>, day: LocalDate = LocalDate.now()): QuizEvent? {
+    fun eventFor(type: QuizEventType, categories: List<Category>, completions: Int = 0, day: LocalDate = LocalDate.now()): QuizEvent? {
         return when (type) {
-            QuizEventType.DAILY -> categoryForDay(categories, day)?.let { category ->
+            QuizEventType.DAILY -> categoryForDay(categories, completions, day)?.let { category ->
                 QuizEvent(
                     type = type,
                     category = category,
@@ -94,7 +94,7 @@ object QuizEvents {
                     maxCompletions = 1
                 )
             }
-            QuizEventType.WEEKLY -> categoryForWeek(categories, day)?.let { category ->
+            QuizEventType.WEEKLY -> categoryForWeek(categories, completions, day)?.let { category ->
                 QuizEvent(
                     type = type,
                     category = category,
@@ -108,7 +108,7 @@ object QuizEvents {
             }
             QuizEventType.WEEKEND_BLITZ -> {
                 if (!isWeekend(day)) return null
-                categoryForWeekend(categories, day)?.let { category ->
+                categoryForWeekend(categories, completions, day)?.let { category ->
                     QuizEvent(
                         type = type,
                         category = category,
@@ -121,7 +121,7 @@ object QuizEvents {
                     )
                 }
             }
-            QuizEventType.MARATHON -> categoryForMarathon(categories, day)?.let { category ->
+            QuizEventType.MARATHON -> categoryForMarathon(categories, completions, day)?.let { category ->
                 QuizEvent(
                     type = type,
                     category = category,
@@ -142,8 +142,8 @@ object QuizEvents {
         day: LocalDate = LocalDate.now()
     ): List<QuizEventProgress> {
         return QuizEventType.entries.mapNotNull { type ->
-            val event = eventFor(type, categories, day) ?: return@mapNotNull null
             val completions = progress.completionsFor(type, day)
+            val event = eventFor(type, categories, completions, day) ?: return@mapNotNull null
             val available = completions < event.maxCompletions
             QuizEventProgress(event = event, completions = completions, available = available)
         }

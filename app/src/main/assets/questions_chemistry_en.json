@@ -3,7 +3,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What is the chemical formula of water?",
-    "options": ["H₂O", "CO₂", "O₂", "NaCl"],
+    "options": [
+      "H₂O",
+      "CO₂",
+      "O₂",
+      "NaCl"
+    ],
     "correctIndex": 0,
     "explanation": "Water is made of two hydrogen atoms and one oxygen atom — H₂O.",
     "id": "chem_001"
@@ -12,7 +17,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which gas do humans need to breathe?",
-    "options": ["Oxygen", "Nitrogen", "Hydrogen", "Helium"],
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen",
+      "Helium"
+    ],
     "correctIndex": 0,
     "explanation": "When breathing, the body takes in oxygen.",
     "id": "chem_002"
@@ -21,7 +31,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which symbol stands for oxygen?",
-    "options": ["O", "K", "Ox", "Os"],
+    "options": [
+      "O",
+      "K",
+      "Ox",
+      "Os"
+    ],
     "correctIndex": 0,
     "explanation": "Oxygen is denoted by the letter O.",
     "id": "chem_003"
@@ -30,7 +45,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which metal is liquid at room temperature?",
-    "options": ["Mercury", "Iron", "Aluminium", "Copper"],
+    "options": [
+      "Mercury",
+      "Iron",
+      "Aluminium",
+      "Copper"
+    ],
     "correctIndex": 0,
     "explanation": "Mercury is the only metal that is liquid at ordinary conditions.",
     "id": "chem_004"
@@ -39,7 +59,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which gas do humans exhale in large amounts?",
-    "options": ["Carbon dioxide", "Oxygen", "Hydrogen", "Methane"],
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Hydrogen",
+      "Methane"
+    ],
     "correctIndex": 0,
     "explanation": "Breathing out releases carbon dioxide (CO₂).",
     "id": "chem_005"
@@ -48,7 +73,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which is the lightest chemical element?",
-    "options": ["Hydrogen", "Helium", "Lithium", "Oxygen"],
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Oxygen"
+    ],
     "correctIndex": 0,
     "explanation": "Hydrogen has the smallest atomic mass.",
     "id": "chem_006"
@@ -57,7 +87,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What is the symbol for gold?",
-    "options": ["Au", "Ag", "Gd", "Go"],
+    "options": [
+      "Au",
+      "Ag",
+      "Gd",
+      "Go"
+    ],
     "correctIndex": 0,
     "explanation": "Gold is denoted Au (from Latin Aurum).",
     "id": "chem_007"
@@ -66,7 +101,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What is ordinary table salt mostly made of?",
-    "options": ["Sodium chloride", "Copper sulfate", "Calcium carbonate", "Iron oxide"],
+    "options": [
+      "Sodium chloride",
+      "Copper sulfate",
+      "Calcium carbonate",
+      "Iron oxide"
+    ],
     "correctIndex": 0,
     "explanation": "Table salt is sodium chloride, NaCl.",
     "id": "chem_008"
@@ -75,7 +115,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which gas makes up most of the Earth's air?",
-    "options": ["Nitrogen", "Oxygen", "Carbon dioxide", "Argon"],
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
+    ],
     "correctIndex": 0,
     "explanation": "Air is about 78% nitrogen.",
     "id": "chem_009"
@@ -84,7 +129,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "How many hydrogen atoms are in a water molecule?",
-    "options": ["2", "1", "3", "4"],
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
     "correctIndex": 0,
     "explanation": "The formula H₂O has two hydrogen atoms.",
     "id": "chem_010"
@@ -93,7 +143,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which symbol stands for iron?",
-    "options": ["Fe", "Ir", "Fr", "In"],
+    "options": [
+      "Fe",
+      "Ir",
+      "Fr",
+      "In"
+    ],
     "correctIndex": 0,
     "explanation": "Iron is denoted Fe (from Latin Ferrum).",
     "id": "chem_011"
@@ -102,7 +157,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What kind of environment does a pH of 7 indicate?",
-    "options": ["Neutral", "Strongly acidic", "Strongly alkaline", "Gaseous"],
+    "options": [
+      "Neutral",
+      "Strongly acidic",
+      "Strongly alkaline",
+      "Gaseous"
+    ],
     "correctIndex": 0,
     "explanation": "A pH of 7 means a neutral solution, like pure water.",
     "id": "chem_012"
@@ -111,7 +171,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What do we call a substance made of only one kind of atom?",
-    "options": ["A chemical element", "A mixture", "A solution", "An alloy"],
+    "options": [
+      "A chemical element",
+      "A mixture",
+      "A solution",
+      "An alloy"
+    ],
     "correctIndex": 0,
     "explanation": "A substance of identical atoms is a chemical element.",
     "id": "chem_013"
@@ -120,7 +185,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which of these metals is attracted by a magnet?",
-    "options": ["Iron", "Gold", "Copper", "Aluminium"],
+    "options": [
+      "Iron",
+      "Gold",
+      "Copper",
+      "Aluminium"
+    ],
     "correctIndex": 0,
     "explanation": "Of these metals, iron is attracted by a magnet.",
     "id": "chem_014"
@@ -129,7 +199,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which light, non-flammable gas is used to fill balloons?",
-    "options": ["Helium", "Hydrogen", "Oxygen", "Nitrogen"],
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Oxygen",
+      "Nitrogen"
+    ],
     "correctIndex": 0,
     "explanation": "Helium is lighter than air and does not burn, so it fills balloons.",
     "id": "chem_015"
@@ -138,7 +213,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which symbol stands for carbon?",
-    "options": ["C", "Ca", "Co", "Cu"],
+    "options": [
+      "C",
+      "Ca",
+      "Co",
+      "Cu"
+    ],
     "correctIndex": 0,
     "explanation": "Carbon is denoted by the letter C.",
     "id": "chem_016"
@@ -147,7 +227,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What is the positively charged particle in an atom's nucleus called?",
-    "options": ["Proton", "Electron", "Neutron", "Ion"],
+    "options": [
+      "Proton",
+      "Electron",
+      "Neutron",
+      "Ion"
+    ],
     "correctIndex": 0,
     "explanation": "The proton is the positively charged particle in the nucleus.",
     "id": "chem_017"
@@ -156,7 +241,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "To which class of substances do sour compounds like those in lemon belong?",
-    "options": ["Acids", "Bases", "Salts", "Alcohols"],
+    "options": [
+      "Acids",
+      "Bases",
+      "Salts",
+      "Alcohols"
+    ],
     "correctIndex": 0,
     "explanation": "A sour taste is typical of acids (lemon contains citric acid).",
     "id": "chem_018"
@@ -165,7 +255,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "Which symbol stands for silver?",
-    "options": ["Ag", "Au", "Si", "Sr"],
+    "options": [
+      "Ag",
+      "Au",
+      "Si",
+      "Sr"
+    ],
     "correctIndex": 0,
     "explanation": "Silver is denoted Ag (from Latin Argentum).",
     "id": "chem_019"
@@ -174,7 +269,12 @@
     "category": "chemistry",
     "difficulty": "EASY",
     "text": "What happens to most substances when they are heated?",
-    "options": ["They expand", "They contract", "They stay the same", "They disappear"],
+    "options": [
+      "They expand",
+      "They contract",
+      "They stay the same",
+      "They disappear"
+    ],
     "correctIndex": 0,
     "explanation": "Most materials expand when heated.",
     "id": "chem_020"
@@ -183,7 +283,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "How many electrons does a neutral hydrogen atom have?",
-    "options": ["1", "2", "0", "3"],
+    "options": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ],
     "correctIndex": 0,
     "explanation": "Neutral hydrogen has one proton and one electron.",
     "id": "chem_021"
@@ -192,7 +297,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "Which element has atomic number 1?",
-    "options": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Oxygen",
+      "Carbon"
+    ],
     "correctIndex": 0,
     "explanation": "The first element of the periodic table is hydrogen.",
     "id": "chem_022"
@@ -201,7 +311,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What does the pH scale measure?",
-    "options": ["Acidity of a solution", "Temperature", "Density", "Conductivity"],
+    "options": [
+      "Acidity of a solution",
+      "Temperature",
+      "Density",
+      "Conductivity"
+    ],
     "correctIndex": 0,
     "explanation": "pH measures how acidic or alkaline a solution is.",
     "id": "chem_023"
@@ -210,7 +325,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "Which gas is usually released when an active metal reacts with an acid?",
-    "options": ["Hydrogen", "Oxygen", "Carbon dioxide", "Chlorine"],
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Chlorine"
+    ],
     "correctIndex": 0,
     "explanation": "Metals displace hydrogen from acids.",
     "id": "chem_024"
@@ -219,7 +339,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is a horizontal row in the periodic table called?",
-    "options": ["A period", "A group", "A block", "A family"],
+    "options": [
+      "A period",
+      "A group",
+      "A block",
+      "A family"
+    ],
     "correctIndex": 0,
     "explanation": "Horizontal rows in the periodic table are called periods.",
     "id": "chem_025"
@@ -228,7 +353,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "Who created the periodic table of the elements?",
-    "options": ["Dmitri Mendeleev", "Antoine Lavoisier", "John Dalton", "Robert Boyle"],
+    "options": [
+      "Dmitri Mendeleev",
+      "Antoine Lavoisier",
+      "John Dalton",
+      "Robert Boyle"
+    ],
     "correctIndex": 0,
     "explanation": "The periodic law was formulated by Dmitri Mendeleev in 1869.",
     "id": "chem_026"
@@ -237,7 +367,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is the chemical formula of carbon dioxide?",
-    "options": ["CO₂", "CO", "O₂", "C₂O"],
+    "options": [
+      "CO₂",
+      "CO",
+      "O₂",
+      "C₂O"
+    ],
     "correctIndex": 0,
     "explanation": "Carbon dioxide is CO₂.",
     "id": "chem_027"
@@ -246,7 +381,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is the change of a substance from liquid to gas called?",
-    "options": ["Evaporation", "Condensation", "Crystallization", "Melting"],
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Crystallization",
+      "Melting"
+    ],
     "correctIndex": 0,
     "explanation": "Turning a liquid into vapour is called evaporation.",
     "id": "chem_028"
@@ -255,7 +395,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is a particle of two or more bonded atoms called?",
-    "options": ["A molecule", "An ion", "An isotope", "A neutron"],
+    "options": [
+      "A molecule",
+      "An ion",
+      "An isotope",
+      "A neutron"
+    ],
     "correctIndex": 0,
     "explanation": "Bonded atoms form a molecule.",
     "id": "chem_029"
@@ -264,7 +409,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "Which metal sits at the centre of a chlorophyll molecule?",
-    "options": ["Magnesium", "Iron", "Calcium", "Potassium"],
+    "options": [
+      "Magnesium",
+      "Iron",
+      "Calcium",
+      "Potassium"
+    ],
     "correctIndex": 0,
     "explanation": "A magnesium atom lies at the centre of chlorophyll.",
     "id": "chem_030"
@@ -273,7 +423,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is the reaction of a substance with oxygen that releases heat and light called?",
-    "options": ["Combustion", "Electrolysis", "Neutralization", "Diffusion"],
+    "options": [
+      "Combustion",
+      "Electrolysis",
+      "Neutralization",
+      "Diffusion"
+    ],
     "correctIndex": 0,
     "explanation": "Rapid oxidation with heat and light is combustion.",
     "id": "chem_031"
@@ -282,7 +437,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is the chemical formula of methane?",
-    "options": ["CH₄", "C₂H₆", "CO₂", "CH₂"],
+    "options": [
+      "CH₄",
+      "C₂H₆",
+      "CO₂",
+      "CH₂"
+    ],
     "correctIndex": 0,
     "explanation": "Methane is the simplest hydrocarbon, CH₄.",
     "id": "chem_032"
@@ -291,7 +451,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is a negatively charged ion called?",
-    "options": ["Anion", "Cation", "Isotope", "Radical"],
+    "options": [
+      "Anion",
+      "Cation",
+      "Isotope",
+      "Radical"
+    ],
     "correctIndex": 0,
     "explanation": "A negatively charged ion is an anion.",
     "id": "chem_033"
@@ -300,7 +465,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What forms when an acid reacts with a base?",
-    "options": ["A salt and water", "Only gas", "A pure metal", "A new acid"],
+    "options": [
+      "A salt and water",
+      "Only gas",
+      "A pure metal",
+      "A new acid"
+    ],
     "correctIndex": 0,
     "explanation": "Neutralization produces a salt and water.",
     "id": "chem_034"
@@ -309,7 +479,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "Which metal is the most abundant in the Earth's crust?",
-    "options": ["Aluminium", "Iron", "Copper", "Gold"],
+    "options": [
+      "Aluminium",
+      "Iron",
+      "Copper",
+      "Gold"
+    ],
     "correctIndex": 0,
     "explanation": "The most abundant metal in the crust is aluminium.",
     "id": "chem_035"
@@ -318,7 +493,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What are isotopes?",
-    "options": ["Atoms of one element with different numbers of neutrons", "Different chemical elements", "Molecules of one substance", "Charged ions"],
+    "options": [
+      "Atoms of one element with different numbers of neutrons",
+      "Different chemical elements",
+      "Molecules of one substance",
+      "Charged ions"
+    ],
     "correctIndex": 0,
     "explanation": "Isotopes are atoms of the same element that differ in neutron count.",
     "id": "chem_036"
@@ -327,7 +507,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "Which gas supports combustion?",
-    "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Helium"],
+    "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Helium"
+    ],
     "correctIndex": 0,
     "explanation": "Burning requires oxygen.",
     "id": "chem_037"
@@ -336,7 +521,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is the chemical formula of ammonia?",
-    "options": ["NH₃", "NO₂", "N₂", "NH₄"],
+    "options": [
+      "NH₃",
+      "NO₂",
+      "N₂",
+      "NH₄"
+    ],
     "correctIndex": 0,
     "explanation": "Ammonia is NH₃.",
     "id": "chem_038"
@@ -345,7 +535,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What is the valence of oxygen in most compounds?",
-    "options": ["2", "1", "3", "4"],
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
     "correctIndex": 0,
     "explanation": "In most compounds oxygen is divalent.",
     "id": "chem_039"
@@ -354,7 +549,12 @@
     "category": "chemistry",
     "difficulty": "MEDIUM",
     "text": "What does an element's atomic number tell you?",
-    "options": ["The number of protons in the nucleus", "The number of neutrons", "The atomic mass", "The valence"],
+    "options": [
+      "The number of protons in the nucleus",
+      "The number of neutrons",
+      "The atomic mass",
+      "The valence"
+    ],
     "correctIndex": 0,
     "explanation": "The atomic number equals the number of protons.",
     "id": "chem_040"
@@ -363,7 +563,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the approximate value of Avogadro's number?",
-    "options": ["6.02 × 10²³", "3.14 × 10¹⁰", "9.8 × 10⁶", "1.6 × 10⁻¹⁹"],
+    "options": [
+      "6.02 × 10²³",
+      "3.14 × 10¹⁰",
+      "9.8 × 10⁶",
+      "1.6 × 10⁻¹⁹"
+    ],
     "correctIndex": 0,
     "explanation": "Avogadro's number is about 6.02 × 10²³ particles per mole.",
     "id": "chem_041"
@@ -372,7 +577,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which element has the symbol Na?",
-    "options": ["Sodium", "Nitrogen", "Nickel", "Neon"],
+    "options": [
+      "Sodium",
+      "Nitrogen",
+      "Nickel",
+      "Neon"
+    ],
     "correctIndex": 0,
     "explanation": "Na is sodium (from Latin Natrium).",
     "id": "chem_042"
@@ -381,7 +591,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the breakdown of a substance by an electric current called?",
-    "options": ["Electrolysis", "Hydrolysis", "Oxidation", "Polymerization"],
+    "options": [
+      "Electrolysis",
+      "Hydrolysis",
+      "Oxidation",
+      "Polymerization"
+    ],
     "correctIndex": 0,
     "explanation": "Decomposition by electric current is electrolysis.",
     "id": "chem_043"
@@ -390,7 +605,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the oxidation state of hydrogen in most compounds?",
-    "options": ["+1", "−1", "0", "+2"],
+    "options": [
+      "+1",
+      "−1",
+      "0",
+      "+2"
+    ],
     "correctIndex": 0,
     "explanation": "Hydrogen usually shows an oxidation state of +1.",
     "id": "chem_044"
@@ -399,7 +619,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which chemical element is the most electronegative?",
-    "options": ["Fluorine", "Oxygen", "Chlorine", "Nitrogen"],
+    "options": [
+      "Fluorine",
+      "Oxygen",
+      "Chlorine",
+      "Nitrogen"
+    ],
     "correctIndex": 0,
     "explanation": "Fluorine has the highest electronegativity.",
     "id": "chem_045"
@@ -408,7 +633,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is a catalyst?",
-    "options": ["A substance that speeds up a reaction without being consumed", "A starting reagent", "A final product", "A solvent"],
+    "options": [
+      "A substance that speeds up a reaction without being consumed",
+      "A starting reagent",
+      "A final product",
+      "A solvent"
+    ],
     "correctIndex": 0,
     "explanation": "A catalyst accelerates a reaction but is not used up.",
     "id": "chem_046"
@@ -417,7 +647,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the chemical formula of sulfuric acid?",
-    "options": ["H₂SO₄", "HCl", "HNO₃", "H₂CO₃"],
+    "options": [
+      "H₂SO₄",
+      "HCl",
+      "HNO₃",
+      "H₂CO₃"
+    ],
     "correctIndex": 0,
     "explanation": "Sulfuric acid is H₂SO₄.",
     "id": "chem_047"
@@ -426,7 +661,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which gas has a characteristic smell of rotten eggs?",
-    "options": ["Hydrogen sulfide", "Ammonia", "Methane", "Chlorine"],
+    "options": [
+      "Hydrogen sulfide",
+      "Ammonia",
+      "Methane",
+      "Chlorine"
+    ],
     "correctIndex": 0,
     "explanation": "The rotten-egg smell comes from hydrogen sulfide (H₂S).",
     "id": "chem_048"
@@ -435,7 +675,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "How many neutrons are in a carbon-12 nucleus?",
-    "options": ["6", "12", "0", "8"],
+    "options": [
+      "6",
+      "12",
+      "0",
+      "8"
+    ],
     "correctIndex": 0,
     "explanation": "Carbon-12 has six protons and six neutrons.",
     "id": "chem_049"
@@ -444,7 +689,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is a chemical bond formed by shared electron pairs called?",
-    "options": ["Covalent", "Ionic", "Metallic", "Hydrogen"],
+    "options": [
+      "Covalent",
+      "Ionic",
+      "Metallic",
+      "Hydrogen"
+    ],
     "correctIndex": 0,
     "explanation": "A bond through shared electron pairs is covalent.",
     "id": "chem_050"
@@ -453,7 +703,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which element has the symbol K?",
-    "options": ["Potassium", "Calcium", "Krypton", "Cobalt"],
+    "options": [
+      "Potassium",
+      "Calcium",
+      "Krypton",
+      "Cobalt"
+    ],
     "correctIndex": 0,
     "explanation": "K is potassium (from Latin Kalium).",
     "id": "chem_051"
@@ -462,7 +717,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is a mole?",
-    "options": ["An amount of substance containing Avogadro's number of particles", "A unit of mass", "A volume of gas", "A unit of charge"],
+    "options": [
+      "An amount of substance containing Avogadro's number of particles",
+      "A unit of mass",
+      "A volume of gas",
+      "A unit of charge"
+    ],
     "correctIndex": 0,
     "explanation": "A mole contains about 6.02 × 10²³ particles.",
     "id": "chem_052"
@@ -471,7 +731,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which acid is present in the human stomach?",
-    "options": ["Hydrochloric acid", "Sulfuric acid", "Acetic acid", "Citric acid"],
+    "options": [
+      "Hydrochloric acid",
+      "Sulfuric acid",
+      "Acetic acid",
+      "Citric acid"
+    ],
     "correctIndex": 0,
     "explanation": "Gastric juice contains hydrochloric acid (HCl).",
     "id": "chem_053"
@@ -480,7 +745,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the change of a substance directly from solid to gas called?",
-    "options": ["Sublimation", "Evaporation", "Melting", "Condensation"],
+    "options": [
+      "Sublimation",
+      "Evaporation",
+      "Melting",
+      "Condensation"
+    ],
     "correctIndex": 0,
     "explanation": "Going from solid to gas without melting is sublimation.",
     "id": "chem_054"
@@ -489,7 +759,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the chemical formula of ethyl alcohol?",
-    "options": ["C₂H₅OH", "CH₃OH", "CH₄", "C₂H₆"],
+    "options": [
+      "C₂H₅OH",
+      "CH₃OH",
+      "CH₄",
+      "C₂H₆"
+    ],
     "correctIndex": 0,
     "explanation": "Ethyl alcohol (ethanol) is C₂H₅OH.",
     "id": "chem_055"
@@ -498,7 +773,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which element is the basis of all organic chemistry?",
-    "options": ["Carbon", "Silicon", "Oxygen", "Nitrogen"],
+    "options": [
+      "Carbon",
+      "Silicon",
+      "Oxygen",
+      "Nitrogen"
+    ],
     "correctIndex": 0,
     "explanation": "Organic chemistry is the chemistry of carbon compounds.",
     "id": "chem_056"
@@ -507,7 +787,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is a positively charged ion called?",
-    "options": ["Cation", "Anion", "Radical", "Isotope"],
+    "options": [
+      "Cation",
+      "Anion",
+      "Radical",
+      "Isotope"
+    ],
     "correctIndex": 0,
     "explanation": "A positively charged ion is a cation.",
     "id": "chem_057"
@@ -516,7 +801,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which noble gas is used in glowing signs with a red light?",
-    "options": ["Neon", "Helium", "Argon", "Krypton"],
+    "options": [
+      "Neon",
+      "Helium",
+      "Argon",
+      "Krypton"
+    ],
     "correctIndex": 0,
     "explanation": "Neon gives the characteristic red-orange glow in discharge tubes.",
     "id": "chem_058"
@@ -525,7 +815,12 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the chemical formula of hydrochloric acid?",
-    "options": ["HCl", "H₂SO₄", "HNO₃", "NaOH"],
+    "options": [
+      "HCl",
+      "H₂SO₄",
+      "HNO₃",
+      "NaOH"
+    ],
     "correctIndex": 0,
     "explanation": "Hydrochloric acid is a solution of hydrogen chloride, HCl.",
     "id": "chem_059"
@@ -534,9 +829,1022 @@
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "What is the base with the formula NaOH called?",
-    "options": ["Sodium hydroxide", "Sodium chloride", "Sodium carbonate", "Sodium nitrate"],
+    "options": [
+      "Sodium hydroxide",
+      "Sodium chloride",
+      "Sodium carbonate",
+      "Sodium nitrate"
+    ],
     "correctIndex": 0,
     "explanation": "NaOH is sodium hydroxide (caustic soda).",
     "id": "chem_060"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of these animals belongs in class Chondrichthyes?",
+    "options": [
+      "Great white shark",
+      "Octopus",
+      "Killer whale",
+      "Catfish"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Great white shark.",
+    "id": "chem_061"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Burning which of these metals will produce a bright white flame?",
+    "options": [
+      "Magnesium",
+      "Copper",
+      "Lithium",
+      "Lead"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Magnesium.",
+    "id": "chem_062"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the molecular formula of Ozone?",
+    "options": [
+      "O3",
+      "C6H2O6",
+      "N2O",
+      "SO4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is O3.",
+    "id": "chem_063"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Dry ice is the solid form of what substance?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Ammonia",
+      "Oxygen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Carbon dioxide.",
+    "id": "chem_064"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of the element Strontium?",
+    "options": [
+      "38",
+      "73",
+      "47",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 38.",
+    "id": "chem_065"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following men does not have a chemical element named after him?",
+    "options": [
+      "Sir Isaac Newton",
+      "Albert Einstein",
+      "Niels Bohr",
+      "Enrico Fermi"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sir Isaac Newton.",
+    "id": "chem_066"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What part of the body produces insulin?",
+    "options": [
+      "Pancreas",
+      "Kidney",
+      "Liver",
+      "Stomach"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pancreas.",
+    "id": "chem_067"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "The word \"science\" stems from the word \"scire\" meaning what?",
+    "options": [
+      "To know",
+      "To measure",
+      "To live",
+      "To count"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is To know.",
+    "id": "chem_068"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What cell organelle is known as \"the powerhouse of the cell?\"",
+    "options": [
+      "Mitochondria",
+      "Nucleus",
+      "Golgi apparatus",
+      "Endoplasmic reticulum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mitochondria.",
+    "id": "chem_069"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the atomic number of Uranium ",
+    "options": [
+      "92",
+      "235",
+      "17",
+      "167"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 92.",
+    "id": "chem_070"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the primary addictive substance found in tobacco?",
+    "options": [
+      "Nicotine",
+      "Cathinone",
+      "Ephedrine",
+      "Glaucine"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nicotine.",
+    "id": "chem_071"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which scientific unit is named after an Italian nobleman?",
+    "options": [
+      "Volt",
+      "Pascal",
+      "Ohm",
+      "Hertz"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Volt.",
+    "id": "chem_072"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "How many objects are equivalent to one mole?",
+    "options": [
+      "6.022 x 10^23",
+      "6.002 x 10^22",
+      "6.022 x 10^22",
+      "6.002 x 10^23"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6.022 x 10^23.",
+    "id": "chem_073"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "The element involved in making human blood red is which of the following?",
+    "options": [
+      "Iron",
+      "Copper",
+      "Iridium",
+      "Cobalt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Iron.",
+    "id": "chem_074"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "The humerus, paired radius, and ulna come together to form what joint?",
+    "options": [
+      "Elbow",
+      "Knee",
+      "Sholder",
+      "Ankle"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Elbow.",
+    "id": "chem_075"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What does CPR, the emergency procedure to assist someone who has suffered cardiac arrest, stand for?",
+    "options": [
+      "Cardiopulmonary resuscitation",
+      "Chronic pain relief",
+      "Cancer pain release",
+      "Contraceptive prevalence rate"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cardiopulmonary resuscitation.",
+    "id": "chem_076"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of the following plastic is commonly used for window frames, gutters and drain pipes?",
+    "options": [
+      "Polyvinylchloride (PVC) ",
+      "Polyethylene (PE)",
+      "Polypropylene (PP)",
+      "Polystyrene (PS)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polyvinylchloride (PVC) .",
+    "id": "chem_077"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Who is the chemical element Curium named after?",
+    "options": [
+      "Marie & Pierre Curie",
+      "The Curiosity Rover",
+      "Curious George",
+      "Stephen Curry"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Marie & Pierre Curie.",
+    "id": "chem_078"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "How many baby/milk teeth does a human child have in total?",
+    "options": [
+      "20",
+      "10",
+      "15",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 20.",
+    "id": "chem_079"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the molecular formula of the active component of chili peppers(Capsaicin)?",
+    "options": [
+      "C18H27NO3",
+      "C21H23NO3",
+      "C6H4Cl2",
+      "C13H25NO4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is C18H27NO3.",
+    "id": "chem_080"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
+    "options": [
+      "Cretaceous-Paleogene",
+      "Triassic–Jurassic",
+      "Permian–Triassic",
+      "Ordovician–Silurian"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cretaceous-Paleogene.",
+    "id": "chem_081"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Coulrophobia is the irrational fear of what?",
+    "options": [
+      "Clowns",
+      "Cemeteries",
+      "Needles",
+      "Tunnels"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Clowns.",
+    "id": "chem_082"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What does DNA stand for?",
+    "options": [
+      "Deoxyribonucleic Acid",
+      "Deoxyribogenetic Acid",
+      "Deoxyribogenetic Atoms",
+      "Detoxic Acid"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Deoxyribonucleic Acid.",
+    "id": "chem_083"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "An organism described as \"heliotropic\" has a tendancy to move towards which of these things?",
+    "options": [
+      "Light",
+      "Water",
+      "Trees",
+      "Pollen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Light.",
+    "id": "chem_084"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which is the chemical name of H2O?",
+    "options": [
+      "Dihydrogen Monoxide",
+      "Ammonium chloride",
+      "Anhydrous Sodium Carbonate",
+      "Manganese dioxide"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dihydrogen Monoxide.",
+    "id": "chem_085"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "The medical term for the belly button is which of the following?",
+    "options": [
+      "Umbilicus",
+      "Nevus",
+      "Nares",
+      "Paxillus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Umbilicus.",
+    "id": "chem_086"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What produces the green colour of most plant leaves?",
+    "options": [
+      "Chlorophyll",
+      "Light refraction",
+      "Natural pigments",
+      "UV radiation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Chlorophyll.",
+    "id": "chem_087"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the standard atomic weight of a Plutonium nucleus?",
+    "options": [
+      "244",
+      "94",
+      "481",
+      "128"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 244.",
+    "id": "chem_088"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of the following elements is typically used in the doping of the semiconductor silicon?",
+    "options": [
+      "Boron",
+      "Oxygen",
+      "Carbon",
+      "Iron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Boron.",
+    "id": "chem_089"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What does the scientific name of the Cambrian-Period sea creature Anomalocaris mean?",
+    "options": [
+      "Abnormal Shrimp",
+      "Deformed Fish",
+      "Strange Crab",
+      "Anomalous Clam"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Abnormal Shrimp.",
+    "id": "chem_090"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the highest melting point?",
+    "options": [
+      "Carbon",
+      "Tungsten",
+      "Platinum",
+      "Osmium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Carbon.",
+    "id": "chem_091"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Botanically speaking, which of these fruits is NOT a berry?",
+    "options": [
+      "Strawberry",
+      "Blueberry",
+      "Banana",
+      "Concord Grape"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Strawberry.",
+    "id": "chem_092"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": " What is the chemical symbol for Helium?",
+    "options": [
+      "He",
+      "H",
+      "Hg",
+      "Hs"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is He.",
+    "id": "chem_093"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Deionized water is water with which of the following removed?",
+    "options": [
+      "Iron",
+      "Oxygen",
+      "Hydrogen",
+      "Uncharged atoms"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Iron.",
+    "id": "chem_094"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the mathematical formula of Ohm's law?",
+    "options": [
+      "V = I*R",
+      "I = V*R",
+      "R = V*I",
+      "V = I / R"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is V = I*R.",
+    "id": "chem_095"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Folic acid is the synthetic form of which vitamin?",
+    "options": [
+      "Vitamin B",
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vitamin B.",
+    "id": "chem_096"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "The medical condition osteoporosis affects which part of the body?",
+    "options": [
+      "Bones",
+      "Skin",
+      "Brain",
+      "Heart"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bones.",
+    "id": "chem_097"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What does the term \"isolation\" refer to in microbiology?",
+    "options": [
+      "The separation of a strain from a natural, mixed population of living microbes",
+      "A lack of nutrition in microenviroments",
+      "The nitrogen level in soil",
+      "Testing effects of certain microorganisms in an isolated enviroments, such as caves"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The separation of a strain from a natural, mixed population of living microbes.",
+    "id": "chem_098"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "How many bones are in the human body?",
+    "options": [
+      "206",
+      "203",
+      "209",
+      "200"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 206.",
+    "id": "chem_099"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
+    "options": [
+      "Shin Splints",
+      "Tennis Elbow",
+      "Carpal Tunnel",
+      "Housemaid's Knee"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shin Splints.",
+    "id": "chem_100"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of the following is a major muscle of the back?",
+    "options": [
+      "Trapezius",
+      "Trapezium",
+      "Trapezoid",
+      "Triquetrum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Trapezius.",
+    "id": "chem_101"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "How many protons are in an oxygen atom?",
+    "options": [
+      "Eight",
+      "Four",
+      "Two",
+      "Six"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Eight.",
+    "id": "chem_102"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "On the periodic table of elements, what is the symbol for Tin?",
+    "options": [
+      "Sn",
+      "Ti",
+      "Ni",
+      "Na"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sn.",
+    "id": "chem_103"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element has the atomic number of 7?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen",
+      "Neon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nitrogen.",
+    "id": "chem_104"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the common name of the chemical compound \"dihydrogen monoxide\"?",
+    "options": [
+      "Water",
+      "Methane",
+      "Ammonia ",
+      "Laughing Gas"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Water.",
+    "id": "chem_105"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What medication was once commonly used as rat poison?",
+    "options": [
+      "Coumadin",
+      "Aspirin",
+      "Eliquis",
+      "Tylenol"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Coumadin.",
+    "id": "chem_106"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "At what temperature does water boil?",
+    "options": [
+      "212°F",
+      "200°F",
+      "181°F",
+      "178°F"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 212°F.",
+    "id": "chem_107"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the most potent toxin known?",
+    "options": [
+      "Botulinum toxin",
+      "Ricin",
+      "Cyanide",
+      "Asbestos"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Botulinum toxin.",
+    "id": "chem_108"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which element has the chemical symbol 'Fe'?",
+    "options": [
+      "Iron",
+      "Gold",
+      "Silver",
+      "Tin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Iron.",
+    "id": "chem_109"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the standard SI unit for distance?",
+    "options": [
+      "Metre",
+      "Angstrom",
+      "Foot",
+      "Fathom"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Metre.",
+    "id": "chem_110"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of these chemical compounds is NOT found in gastric acid?",
+    "options": [
+      "Sulfuric acid",
+      "Hydrochloric acid",
+      "Potassium chloride",
+      "Sodium chloride"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sulfuric acid.",
+    "id": "chem_111"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which noble gas has the lowest atomic number?",
+    "options": [
+      "Helium",
+      "Neon",
+      "Argon",
+      "Krypton"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Helium.",
+    "id": "chem_112"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "All the following metal elements are liquids at or near room temperature EXCEPT:",
+    "options": [
+      "Beryllium",
+      "Gallium",
+      "Caesium",
+      "Mercury"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Beryllium.",
+    "id": "chem_113"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What stage of development do the majority of eukaryotic cells remain in for most of their life?",
+    "options": [
+      "Interphase",
+      "Prophase",
+      "Stasis",
+      "Telophase"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Interphase.",
+    "id": "chem_114"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the standard SI unit for luminous intensity?",
+    "options": [
+      "Candela",
+      "Lumen",
+      "Faraday",
+      "Coulomb"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Candela.",
+    "id": "chem_115"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Along with Oxygen, which element is primarily responsible for the sky appearing blue?",
+    "options": [
+      "Nitrogen",
+      "Helium",
+      "Carbon",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nitrogen.",
+    "id": "chem_116"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "This element, when overcome with extreme heat and pressure, creates diamonds.",
+    "options": [
+      "Carbon",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Carbon.",
+    "id": "chem_117"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the name for the auditory illusion of a note that seems to be rising infinitely?",
+    "options": [
+      "Shepard Tone",
+      "Glissandro Illusion",
+      "Fransen Effect",
+      "McGurck Effect"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shepard Tone.",
+    "id": "chem_118"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the atomic mass of Carbon?",
+    "options": [
+      "12",
+      "14",
+      "16",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 12.",
+    "id": "chem_119"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.",
+    "options": [
+      "low, all",
+      "low, some",
+      "high, all",
+      "high, some"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is low, all.",
+    "id": "chem_120"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which scientist discovered the periodic law of chemical elements?",
+    "options": [
+      "Dmitri Mendeleev",
+      "Antoine Lavoisier",
+      "John Dalton",
+      "Marie Curie"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dmitri Mendeleev formulated the periodic law in 1869.",
+    "id": "chem_121"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which gas is the main component of natural gas used in household stoves?",
+    "options": [
+      "Methane",
+      "Propane",
+      "Butane",
+      "Carbon dioxide"
+    ],
+    "correctIndex": 0,
+    "explanation": "Natural gas consists of more than 90% methane (CH4).",
+    "id": "chem_122"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which indicator is used to express the acidity or alkalinity of aqueous solutions?",
+    "options": [
+      "pH",
+      "pOH",
+      "Mass fraction",
+      "Molarity"
+    ],
+    "correctIndex": 0,
+    "explanation": "The pH value represents the concentration of hydrogen ions in a solution.",
+    "id": "chem_123"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which greenhouse gas is most commonly produced by burning fossil fuels and is studied in environmental chemistry?",
+    "options": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Helium"
+    ],
+    "correctIndex": 0,
+    "explanation": "Carbon dioxide (CO2) is released during combustion and is the main anthropogenic greenhouse gas.",
+    "id": "chem_124"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "In which device is the chemical energy of a redox reaction directly converted into electrical energy?",
+    "options": [
+      "Galvanic cell",
+      "Electrolyzer",
+      "Thermometer",
+      "Calorimeter"
+    ],
+    "correctIndex": 0,
+    "explanation": "A galvanic cell hosts a spontaneous redox reaction that generates electrical current.",
+    "id": "chem_125"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which thermodynamic function serves as a measure of chaos and disorder of a system's microstates?",
+    "options": [
+      "Entropy",
+      "Enthalpy",
+      "Internal energy",
+      "Gibbs free energy"
+    ],
+    "correctIndex": 0,
+    "explanation": "According to the second law of thermodynamics, the entropy of an isolated system tends to increase.",
+    "id": "chem_126"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is a solution containing the maximum possible amount of dissolved substance at a given temperature called?",
+    "options": [
+      "Saturated",
+      "Unsaturated",
+      "Supersaturated",
+      "Concentrated"
+    ],
+    "correctIndex": 0,
+    "explanation": "A saturated solution exists in equilibrium with the excess undissolved solute.",
+    "id": "chem_127"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which chemical compound is the active ingredient in modern oxygen bleaches?",
+    "options": [
+      "Sodium percarbonate",
+      "Sodium hypochlorite",
+      "Sodium hydroxide",
+      "Calcium carbonate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sodium percarbonate releases hydrogen peroxide and soda when dissolved in warm water.",
+    "id": "chem_128"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which equation relates the change in Gibbs free energy to enthalpy, entropy, and absolute temperature?",
+    "options": [
+      "ΔG = ΔH - TΔS",
+      "ΔG = ΔH + TΔS",
+      "ΔH = ΔU + PΔV",
+      "PV = nRT"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Gibbs-Helmholtz equation ΔG = ΔH - TΔS determines the spontaneity of a chemical process.",
+    "id": "chem_129"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What process occurs at the positively charged electrode (anode) during the electrolysis of an aqueous solution?",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Annihilation",
+      "Dissociation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Oxidation takes place at the anode, where ions or molecules release electrons.",
+    "id": "chem_130"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which law establishes a linear relationship between the solubility of a gas in a liquid and its partial pressure above the liquid?",
+    "options": [
+      "Henry's Law",
+      "Raoult's Law",
+      "Dalton's Law",
+      "Charles's Law"
+    ],
+    "correctIndex": 0,
+    "explanation": "Henry's Law states that C = k*P, where C is the concentration of gas and P is its partial pressure.",
+    "id": "chem_131"
+  },
+  {
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which female chemist discovered the radioactive elements polonium and radium and won two Nobel Prizes?",
+    "options": [
+      "Marie Sklodowska-Curie",
+      "Irene Joliot-Curie",
+      "Rosalind Franklin",
+      "Lise Meitner"
+    ],
+    "correctIndex": 0,
+    "explanation": "Marie Curie received Nobel Prizes in Physics (1903) and Chemistry (1911).",
+    "id": "chem_132"
   }
 ]

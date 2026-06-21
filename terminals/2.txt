@@ -3,7 +3,7 @@ pid: 5488
 cwd: "D:\AndroidStudioProjects\quizapp"
 command: "Get-ChildItem -Path \"C:\\Program Files\\Android\",\"D:\\Android\",\"C:\\Program Files\\Java\",\"D:\\AndroidStudio\" -Filter \"java.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 10 FullName"
 started_at: 2026-06-21T00:24:25.341Z
-running_for_ms: 2380002  
+running_for_ms: 15835014 
 ---
 
 FullName

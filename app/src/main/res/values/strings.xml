@@ -153,7 +153,7 @@
     <!-- Характеристики персонажа и уровни -->
     <string name="char_level">Уровень %1$d</string>
     <string name="char_xp_progress">Опыт: %1$d / %2$d XP</string>
-    <string name="char_free_xp">Свободный опыт: %1$d XP</string>
+    <string name="char_free_xp">Свободный опыт</string>
     <string name="char_stat_strength">Сила 💪</string>
     <string name="char_stat_strength_desc">Сила воли: +2%% к получаемому XP за правильные ответы (сейчас: +%1$d%% XP)</string>
     <string name="char_stat_intelligence">Интеллект 🧠</string>
@@ -162,7 +162,7 @@
     <string name="char_stat_agility_desc">Скорость реакции: +0.5 сек к таймеру вопроса (сейчас: +%1$.1f сек)</string>
     <string name="char_stat_luck">Удача 🍀</string>
     <string name="char_stat_luck_desc">Улыбка фортуны: шанс %1$d%% на Критический успех (x2 наград в конце игры)</string>
-    <string name="char_upgrade_cost">Купить за 50 XP</string>
+    <string name="char_upgrade_cost">+1 (%1$d XP)</string>
     <string name="char_critical_success">КРИТИЧЕСКИЙ УСПЕХ! Удача удваивает ваши награды! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d от Силы)</string>
     <string name="char_bonus_coins_detail"> (+%1$d от Интеллекта)</string>

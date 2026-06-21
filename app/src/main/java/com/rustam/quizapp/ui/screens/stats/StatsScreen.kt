@@ -394,6 +394,7 @@ private fun StatUpgradeCard(
     textColor: androidx.compose.ui.graphics.Color,
     onUpgrade: () -> Unit
 ) {
+    val cost = 100 + value * 25
     GlassCard(colors = colors) {
         Row(
             modifier = Modifier
@@ -442,7 +443,7 @@ private fun StatUpgradeCard(
             
             androidx.compose.material3.Button(
                 onClick = onUpgrade,
-                enabled = freeXp >= 50 && value < 20,
+                enabled = freeXp >= cost && value < 20,
                 colors = androidx.compose.material3.ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
                     contentColor = MaterialTheme.colorScheme.onPrimary,
@@ -453,7 +454,7 @@ private fun StatUpgradeCard(
                 shape = RoundedCornerShape(12.dp)
             ) {
                 Text(
-                    text = stringResource(R.string.char_upgrade_cost),
+                    text = stringResource(R.string.char_upgrade_cost, cost),
                     fontSize = 11.sp,
                     fontWeight = FontWeight.Bold
                 )

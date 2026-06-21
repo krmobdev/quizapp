@@ -3,7 +3,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which planet is closest to the Sun?",
-    "options": ["Mercury", "Venus", "Earth", "Mars"],
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
     "correctIndex": 0,
     "explanation": "The closest planet to the Sun is Mercury.",
     "id": "astr_001"
@@ -12,7 +17,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What is the star at the centre of our system called?",
-    "options": ["The Sun", "Sirius", "Polaris", "Alpha Centauri"],
+    "options": [
+      "The Sun",
+      "Sirius",
+      "Polaris",
+      "Alpha Centauri"
+    ],
     "correctIndex": 0,
     "explanation": "At the centre of the Solar System is the Sun.",
     "id": "astr_002"
@@ -21,7 +31,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which planet is called the 'Red Planet'?",
-    "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
     "correctIndex": 0,
     "explanation": "Iron oxides in its soil make Mars look reddish.",
     "id": "astr_003"
@@ -30,7 +45,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "How many planets are in the Solar System?",
-    "options": ["8", "9", "7", "10"],
+    "options": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
     "correctIndex": 0,
     "explanation": "There are eight planets in the Solar System.",
     "id": "astr_004"
@@ -39,7 +59,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What is the Earth's natural satellite called?",
-    "options": ["The Moon", "Phobos", "Titan", "Europa"],
+    "options": [
+      "The Moon",
+      "Phobos",
+      "Titan",
+      "Europa"
+    ],
     "correctIndex": 0,
     "explanation": "The Earth's natural satellite is the Moon.",
     "id": "astr_005"
@@ -48,7 +73,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which is the largest planet in the Solar System?",
-    "options": ["Jupiter", "Saturn", "Earth", "Neptune"],
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Neptune"
+    ],
     "correctIndex": 0,
     "explanation": "The largest planet is Jupiter.",
     "id": "astr_006"
@@ -57,7 +87,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What lights up the Earth during the day?",
-    "options": ["The Sun", "The Moon", "The stars", "Mars"],
+    "options": [
+      "The Sun",
+      "The Moon",
+      "The stars",
+      "Mars"
+    ],
     "correctIndex": 0,
     "explanation": "During the day the Earth is lit by the Sun.",
     "id": "astr_007"
@@ -66,7 +101,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What is our galaxy called?",
-    "options": ["The Milky Way", "Andromeda", "The Orion Nebula", "The Magellanic Cloud"],
+    "options": [
+      "The Milky Way",
+      "Andromeda",
+      "The Orion Nebula",
+      "The Magellanic Cloud"
+    ],
     "correctIndex": 0,
     "explanation": "Our galaxy is called the Milky Way.",
     "id": "astr_008"
@@ -75,7 +115,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What is a star?",
-    "options": ["A hot ball of gas", "A cold planet", "A satellite of a planet", "A piece of ice"],
+    "options": [
+      "A hot ball of gas",
+      "A cold planet",
+      "A satellite of a planet",
+      "A piece of ice"
+    ],
     "correctIndex": 0,
     "explanation": "A star is a huge, hot ball of gas.",
     "id": "astr_009"
@@ -84,7 +129,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which planet do we live on?",
-    "options": ["Earth", "Mars", "Venus", "Jupiter"],
+    "options": [
+      "Earth",
+      "Mars",
+      "Venus",
+      "Jupiter"
+    ],
     "correctIndex": 0,
     "explanation": "We live on the planet Earth.",
     "id": "astr_010"
@@ -93,7 +143,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which body shines at night by reflected light?",
-    "options": ["The Moon", "The Sun", "Sirius", "Polaris"],
+    "options": [
+      "The Moon",
+      "The Sun",
+      "Sirius",
+      "Polaris"
+    ],
     "correctIndex": 0,
     "explanation": "The Moon does not produce light itself but reflects sunlight.",
     "id": "astr_011"
@@ -102,7 +157,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which planet is famous for its bright rings?",
-    "options": ["Saturn", "Mars", "Mercury", "Venus"],
+    "options": [
+      "Saturn",
+      "Mars",
+      "Mercury",
+      "Venus"
+    ],
     "correctIndex": 0,
     "explanation": "The most prominent rings belong to Saturn.",
     "id": "astr_012"
@@ -111,7 +171,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which instrument is used to observe the stars?",
-    "options": ["A telescope", "A microscope", "A barometer", "A compass"],
+    "options": [
+      "A telescope",
+      "A microscope",
+      "A barometer",
+      "A compass"
+    ],
     "correctIndex": 0,
     "explanation": "Stars are observed through a telescope.",
     "id": "astr_013"
@@ -120,7 +185,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "How many stars are in our Solar System?",
-    "options": ["One", "Two", "Three", "None"],
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "None"
+    ],
     "correctIndex": 0,
     "explanation": "The Solar System has one star — the Sun.",
     "id": "astr_014"
@@ -129,7 +199,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What orbits the Earth?",
-    "options": ["The Moon", "The Sun", "Mars", "Jupiter"],
+    "options": [
+      "The Moon",
+      "The Sun",
+      "Mars",
+      "Jupiter"
+    ],
     "correctIndex": 0,
     "explanation": "The Earth's satellite, the Moon, orbits it.",
     "id": "astr_015"
@@ -138,7 +213,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What colour does the Sun appear from Earth during the day?",
-    "options": ["Yellow-white", "Green", "Blue", "Black"],
+    "options": [
+      "Yellow-white",
+      "Green",
+      "Blue",
+      "Black"
+    ],
     "correctIndex": 0,
     "explanation": "From the Earth's surface the Sun appears yellow-white.",
     "id": "astr_016"
@@ -147,7 +227,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What is a planet's path around the Sun called?",
-    "options": ["An orbit", "An axis", "An equator", "A meridian"],
+    "options": [
+      "An orbit",
+      "An axis",
+      "An equator",
+      "A meridian"
+    ],
     "correctIndex": 0,
     "explanation": "A planet's path around the Sun is called its orbit.",
     "id": "astr_017"
@@ -156,7 +241,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "What is a comet?",
-    "options": ["A body with a tail of gas and dust", "A large planet", "An entire galaxy", "A constellation"],
+    "options": [
+      "A body with a tail of gas and dust",
+      "A large planet",
+      "An entire galaxy",
+      "A constellation"
+    ],
     "correctIndex": 0,
     "explanation": "A comet is an icy body that forms a tail as it nears the Sun.",
     "id": "astr_018"
@@ -165,7 +255,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "How long does the Earth take to spin once on its axis?",
-    "options": ["About a day (24 hours)", "A year", "A month", "An hour"],
+    "options": [
+      "About a day (24 hours)",
+      "A year",
+      "A month",
+      "An hour"
+    ],
     "correctIndex": 0,
     "explanation": "The Earth spins on its axis in about 24 hours.",
     "id": "astr_019"
@@ -174,7 +269,12 @@
     "category": "astronomy",
     "difficulty": "EASY",
     "text": "Which planet is known as the 'Morning Star'?",
-    "options": ["Venus", "Mars", "Mercury", "Saturn"],
+    "options": [
+      "Venus",
+      "Mars",
+      "Mercury",
+      "Saturn"
+    ],
     "correctIndex": 0,
     "explanation": "Bright Venus is often called the Morning or Evening Star.",
     "id": "astr_020"
@@ -183,7 +283,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "How long does the Earth take to orbit the Sun?",
-    "options": ["About a year (365 days)", "A month", "A day", "100 days"],
+    "options": [
+      "About a year (365 days)",
+      "A month",
+      "A day",
+      "100 days"
+    ],
     "correctIndex": 0,
     "explanation": "The Earth orbits the Sun in about 365 days.",
     "id": "astr_021"
@@ -192,7 +297,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "Which is the hottest planet in the Solar System?",
-    "options": ["Venus", "Mercury", "Mars", "Jupiter"],
+    "options": [
+      "Venus",
+      "Mercury",
+      "Mars",
+      "Jupiter"
+    ],
     "correctIndex": 0,
     "explanation": "Thanks to its dense atmosphere and greenhouse effect, Venus is the hottest planet.",
     "id": "astr_022"
@@ -201,7 +311,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is the event when the Moon blocks the Sun called?",
-    "options": ["A solar eclipse", "A lunar eclipse", "A full moon", "A meteor shower"],
+    "options": [
+      "A solar eclipse",
+      "A lunar eclipse",
+      "A full moon",
+      "A meteor shower"
+    ],
     "correctIndex": 0,
     "explanation": "When the Moon hides the Sun, a solar eclipse occurs.",
     "id": "astr_023"
@@ -210,7 +325,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "Which star points toward the north?",
-    "options": ["Polaris", "Sirius", "Vega", "Betelgeuse"],
+    "options": [
+      "Polaris",
+      "Sirius",
+      "Vega",
+      "Betelgeuse"
+    ],
     "correctIndex": 0,
     "explanation": "Polaris lies almost directly above the North Pole.",
     "id": "astr_024"
@@ -219,7 +339,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is an asteroid?",
-    "options": ["A rocky body smaller than a planet", "A very hot star", "A spiral galaxy", "A satellite of Earth"],
+    "options": [
+      "A rocky body smaller than a planet",
+      "A very hot star",
+      "A spiral galaxy",
+      "A satellite of Earth"
+    ],
     "correctIndex": 0,
     "explanation": "Asteroids are small rocky bodies orbiting the Sun.",
     "id": "astr_025"
@@ -228,7 +353,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "Between which planets' orbits is the main asteroid belt?",
-    "options": ["Mars and Jupiter", "Earth and Mars", "Jupiter and Saturn", "Venus and Earth"],
+    "options": [
+      "Mars and Jupiter",
+      "Earth and Mars",
+      "Jupiter and Saturn",
+      "Venus and Earth"
+    ],
     "correctIndex": 0,
     "explanation": "The main asteroid belt lies between Mars and Jupiter.",
     "id": "astr_026"
@@ -237,7 +367,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What was the first artificial satellite of the Earth called?",
-    "options": ["Sputnik 1", "Apollo", "Vostok", "Hubble"],
+    "options": [
+      "Sputnik 1",
+      "Apollo",
+      "Vostok",
+      "Hubble"
+    ],
     "correctIndex": 0,
     "explanation": "The first artificial satellite, Sputnik 1, was launched by the USSR in 1957.",
     "id": "astr_027"
@@ -246,7 +381,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "Who was the first human in space?",
-    "options": ["Yuri Gagarin", "Neil Armstrong", "Alexei Leonov", "John Glenn"],
+    "options": [
+      "Yuri Gagarin",
+      "Neil Armstrong",
+      "Alexei Leonov",
+      "John Glenn"
+    ],
     "correctIndex": 0,
     "explanation": "The first human in space was Yuri Gagarin in 1961.",
     "id": "astr_028"
@@ -255,7 +395,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "On which planet is the Solar System's largest volcano, Olympus Mons?",
-    "options": ["Mars", "Venus", "Earth", "Mercury"],
+    "options": [
+      "Mars",
+      "Venus",
+      "Earth",
+      "Mercury"
+    ],
     "correctIndex": 0,
     "explanation": "The giant volcano Olympus Mons is on Mars.",
     "id": "astr_029"
@@ -264,7 +409,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is a light year?",
-    "options": ["The distance light travels in a year", "A star's orbital time", "The mass of a large star", "The speed of light"],
+    "options": [
+      "The distance light travels in a year",
+      "A star's orbital time",
+      "The mass of a large star",
+      "The speed of light"
+    ],
     "correctIndex": 0,
     "explanation": "A light year is the distance light travels in one year.",
     "id": "astr_030"
@@ -273,7 +423,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "How many natural satellites does the Earth have?",
-    "options": ["One", "Two", "None", "Four"],
+    "options": [
+      "One",
+      "Two",
+      "None",
+      "Four"
+    ],
     "correctIndex": 0,
     "explanation": "The Earth has one natural satellite — the Moon.",
     "id": "astr_031"
@@ -282,7 +437,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is the nearest star to us other than the Sun?",
-    "options": ["Proxima Centauri", "Sirius", "Vega", "Polaris"],
+    "options": [
+      "Proxima Centauri",
+      "Sirius",
+      "Vega",
+      "Polaris"
+    ],
     "correctIndex": 0,
     "explanation": "The nearest star to the Solar System is Proxima Centauri.",
     "id": "astr_032"
@@ -291,7 +451,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is at the centre of the Solar System?",
-    "options": ["The Sun", "The Earth", "The Moon", "Jupiter"],
+    "options": [
+      "The Sun",
+      "The Earth",
+      "The Moon",
+      "Jupiter"
+    ],
     "correctIndex": 0,
     "explanation": "At the centre is the Sun, with the planets orbiting it.",
     "id": "astr_033"
@@ -300,7 +465,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "Which gas makes up most of the Sun?",
-    "options": ["Hydrogen", "Oxygen", "Carbon dioxide", "Nitrogen"],
+    "options": [
+      "Hydrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
     "correctIndex": 0,
     "explanation": "The Sun is composed mainly of hydrogen.",
     "id": "astr_034"
@@ -309,7 +479,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "Which planet rotates 'on its side' due to a strong axial tilt?",
-    "options": ["Uranus", "Jupiter", "Venus", "Mars"],
+    "options": [
+      "Uranus",
+      "Jupiter",
+      "Venus",
+      "Mars"
+    ],
     "correctIndex": 0,
     "explanation": "Uranus's axis is tilted almost 98°, so it seems to roll on its side.",
     "id": "astr_035"
@@ -318,7 +493,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is a constellation?",
-    "options": ["A group of stars forming a recognizable pattern", "A single bright star", "A planet with rings", "A satellite of Earth"],
+    "options": [
+      "A group of stars forming a recognizable pattern",
+      "A single bright star",
+      "A planet with rings",
+      "A satellite of Earth"
+    ],
     "correctIndex": 0,
     "explanation": "A constellation is a region of sky with a recognizable star pattern.",
     "id": "astr_036"
@@ -327,7 +507,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "In which year did humans first land on the Moon?",
-    "options": ["1969", "1957", "1961", "1975"],
+    "options": [
+      "1969",
+      "1957",
+      "1961",
+      "1975"
+    ],
     "correctIndex": 0,
     "explanation": "The Moon landing took place in 1969.",
     "id": "astr_037"
@@ -336,7 +521,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is the famous space telescope launched in 1990 called?",
-    "options": ["Hubble", "Kepler", "James Webb", "Spitzer"],
+    "options": [
+      "Hubble",
+      "Kepler",
+      "James Webb",
+      "Spitzer"
+    ],
     "correctIndex": 0,
     "explanation": "The Hubble telescope has operated in orbit since 1990.",
     "id": "astr_038"
@@ -345,7 +535,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What mainly causes the tides on Earth?",
-    "options": ["The Moon's gravity", "Wind", "The Sun's rotation", "The Earth's magnetic field"],
+    "options": [
+      "The Moon's gravity",
+      "Wind",
+      "The Sun's rotation",
+      "The Earth's magnetic field"
+    ],
     "correctIndex": 0,
     "explanation": "Tides are caused mainly by the gravity of the Moon.",
     "id": "astr_039"
@@ -354,7 +549,12 @@
     "category": "astronomy",
     "difficulty": "MEDIUM",
     "text": "What is a galaxy?",
-    "options": ["A huge system of stars, gas and dust", "One large star", "A planet with rings", "A satellite of a planet"],
+    "options": [
+      "A huge system of stars, gas and dust",
+      "One large star",
+      "A planet with rings",
+      "A satellite of a planet"
+    ],
     "correctIndex": 0,
     "explanation": "A galaxy is a giant gravitationally bound system of stars and interstellar matter.",
     "id": "astr_040"
@@ -363,7 +563,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Which planet is farthest from the Sun?",
-    "options": ["Neptune", "Uranus", "Saturn", "Jupiter"],
+    "options": [
+      "Neptune",
+      "Uranus",
+      "Saturn",
+      "Jupiter"
+    ],
     "correctIndex": 0,
     "explanation": "The most distant planet of the Solar System is Neptune.",
     "id": "astr_041"
@@ -372,7 +577,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is the nearest large galaxy to the Milky Way?",
-    "options": ["The Andromeda Galaxy", "The Sombrero Galaxy", "The Whirlpool Galaxy", "The Triangulum Galaxy"],
+    "options": [
+      "The Andromeda Galaxy",
+      "The Sombrero Galaxy",
+      "The Whirlpool Galaxy",
+      "The Triangulum Galaxy"
+    ],
     "correctIndex": 0,
     "explanation": "The nearest large spiral galaxy is the Andromeda Galaxy.",
     "id": "astr_042"
@@ -381,7 +591,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is the explosion of a massive star at the end of its life called?",
-    "options": ["A supernova", "A comet", "An eclipse", "A prominence"],
+    "options": [
+      "A supernova",
+      "A comet",
+      "An eclipse",
+      "A prominence"
+    ],
     "correctIndex": 0,
     "explanation": "The colossal explosion of a star is called a supernova.",
     "id": "astr_043"
@@ -390,7 +605,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Who formulated the laws of planetary motion along elliptical orbits?",
-    "options": ["Johannes Kepler", "Galileo Galilei", "Isaac Newton", "Nicolaus Copernicus"],
+    "options": [
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Nicolaus Copernicus"
+    ],
     "correctIndex": 0,
     "explanation": "The laws of planetary motion were discovered by Johannes Kepler.",
     "id": "astr_044"
@@ -399,7 +619,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is a black hole?",
-    "options": ["A region whose gravity not even light can escape", "A very bright star", "A cold planet", "A large comet"],
+    "options": [
+      "A region whose gravity not even light can escape",
+      "A very bright star",
+      "A cold planet",
+      "A large comet"
+    ],
     "correctIndex": 0,
     "explanation": "A black hole has gravity so strong that not even light can escape it.",
     "id": "astr_045"
@@ -408,7 +633,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "About how old is our Sun?",
-    "options": ["About 4.6 billion years", "About 100 million years", "About 10 billion years", "About 1 million years"],
+    "options": [
+      "About 4.6 billion years",
+      "About 100 million years",
+      "About 10 billion years",
+      "About 1 million years"
+    ],
     "correctIndex": 0,
     "explanation": "The Sun's age is estimated at about 4.6 billion years.",
     "id": "astr_046"
@@ -417,7 +647,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is the largest moon in the Solar System?",
-    "options": ["Ganymede", "The Moon", "Titan", "Europa"],
+    "options": [
+      "Ganymede",
+      "The Moon",
+      "Titan",
+      "Europa"
+    ],
     "correctIndex": 0,
     "explanation": "The largest moon is Ganymede, a satellite of Jupiter.",
     "id": "astr_047"
@@ -426,7 +661,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What does the unit 'parsec' measure?",
-    "options": ["Distance", "Time", "Mass", "Temperature"],
+    "options": [
+      "Distance",
+      "Time",
+      "Mass",
+      "Temperature"
+    ],
     "correctIndex": 0,
     "explanation": "A parsec is a unit for measuring astronomical distances.",
     "id": "astr_048"
@@ -435,7 +675,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is the theory of the universe's origin from an extremely dense state called?",
-    "options": ["The Big Bang", "String theory", "Heliocentrism", "Relativity"],
+    "options": [
+      "The Big Bang",
+      "String theory",
+      "Heliocentrism",
+      "Relativity"
+    ],
     "correctIndex": 0,
     "explanation": "According to the Big Bang theory, the universe arose from an extremely dense state.",
     "id": "astr_049"
@@ -444,7 +689,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Which planet rotates on its axis in the opposite (retrograde) direction?",
-    "options": ["Venus", "Mars", "Jupiter", "Earth"],
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Earth"
+    ],
     "correctIndex": 0,
     "explanation": "Venus rotates in the direction opposite to most planets.",
     "id": "astr_050"
@@ -453,7 +703,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Who was the first person to set foot on the Moon?",
-    "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+    "options": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Michael Collins"
+    ],
     "correctIndex": 0,
     "explanation": "The first person on the Moon was Neil Armstrong on 20 July 1969.",
     "id": "astr_051"
@@ -462,7 +717,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is the cloud of icy bodies on the far edge of the Solar System called?",
-    "options": ["The Oort Cloud", "The asteroid belt", "The corona", "The magnetosphere"],
+    "options": [
+      "The Oort Cloud",
+      "The asteroid belt",
+      "The corona",
+      "The magnetosphere"
+    ],
     "correctIndex": 0,
     "explanation": "The source of long-period comets is thought to be the Oort Cloud.",
     "id": "astr_052"
@@ -471,7 +731,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What event occurs when the Earth's shadow falls on the Moon?",
-    "options": ["A lunar eclipse", "A solar eclipse", "A new moon", "A meteorite shower"],
+    "options": [
+      "A lunar eclipse",
+      "A solar eclipse",
+      "A new moon",
+      "A meteorite shower"
+    ],
     "correctIndex": 0,
     "explanation": "When the Earth blocks sunlight from the Moon, a lunar eclipse occurs.",
     "id": "astr_053"
@@ -480,7 +745,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What are Saturn's rings mostly made of?",
-    "options": ["Ice and rocky particles", "Hot gas", "Liquid lava", "Metal"],
+    "options": [
+      "Ice and rocky particles",
+      "Hot gas",
+      "Liquid lava",
+      "Metal"
+    ],
     "correctIndex": 0,
     "explanation": "Saturn's rings consist of countless particles of ice and rock.",
     "id": "astr_054"
@@ -489,7 +759,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "What is the unit equal to the average distance from the Earth to the Sun called?",
-    "options": ["The astronomical unit", "The light year", "The parsec", "The nautical mile"],
+    "options": [
+      "The astronomical unit",
+      "The light year",
+      "The parsec",
+      "The nautical mile"
+    ],
     "correctIndex": 0,
     "explanation": "The average Earth–Sun distance is defined as one astronomical unit.",
     "id": "astr_055"
@@ -498,7 +773,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Which astronomer proposed the heliocentric model of the world?",
-    "options": ["Nicolaus Copernicus", "Ptolemy", "Aristotle", "Tycho Brahe"],
+    "options": [
+      "Nicolaus Copernicus",
+      "Ptolemy",
+      "Aristotle",
+      "Tycho Brahe"
+    ],
     "correctIndex": 0,
     "explanation": "The heliocentric model with the Sun at the centre was proposed by Nicolaus Copernicus.",
     "id": "astr_056"
@@ -507,7 +787,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Which is the brightest star in the night sky?",
-    "options": ["Sirius", "Polaris", "Vega", "Betelgeuse"],
+    "options": [
+      "Sirius",
+      "Polaris",
+      "Vega",
+      "Betelgeuse"
+    ],
     "correctIndex": 0,
     "explanation": "The brightest star in the night sky is Sirius.",
     "id": "astr_057"
@@ -516,7 +801,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "How many moons does Mars have?",
-    "options": ["Two", "One", "Four", "None"],
+    "options": [
+      "Two",
+      "One",
+      "Four",
+      "None"
+    ],
     "correctIndex": 0,
     "explanation": "Mars has two moons — Phobos and Deimos.",
     "id": "astr_058"
@@ -525,7 +815,12 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "On which spacecraft did humans first reach the Moon's surface?",
-    "options": ["Apollo 11", "Vostok 1", "Soyuz 1", "Sputnik 1"],
+    "options": [
+      "Apollo 11",
+      "Vostok 1",
+      "Soyuz 1",
+      "Sputnik 1"
+    ],
     "correctIndex": 0,
     "explanation": "The first Moon landing was made by the Apollo 11 mission.",
     "id": "astr_059"
@@ -534,9 +829,1022 @@
     "category": "astronomy",
     "difficulty": "HARD",
     "text": "Which star does the Earth orbit?",
-    "options": ["The Sun", "Sirius", "Proxima Centauri", "Aldebaran"],
+    "options": [
+      "The Sun",
+      "Sirius",
+      "Proxima Centauri",
+      "Aldebaran"
+    ],
     "correctIndex": 0,
     "explanation": "The Earth orbits the Sun.",
     "id": "astr_060"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of the following is NOT a word used to describe an earthquake?",
+    "options": [
+      "Drop-slide",
+      "Foreshock",
+      "Strike-slip",
+      "Temblor"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Drop-slide.",
+    "id": "astr_061"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "The Sun consists of mostly which two elements?",
+    "options": [
+      "Hydrogen & Helium",
+      "Hydrogen & Nitrogen",
+      "Carbon & Nitrogen",
+      "Carbon & Helium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydrogen & Helium.",
+    "id": "astr_062"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is the unit of electrical inductance?",
+    "options": [
+      "Henry",
+      "Weber",
+      "Coulomb",
+      "Mho"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Henry.",
+    "id": "astr_063"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the thin, outermost layer of the Earth?",
+    "options": [
+      "Crust",
+      "Exosphere",
+      "Mantle",
+      "Outer Core"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Crust.",
+    "id": "astr_064"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of these is a stop codon in DNA?",
+    "options": [
+      "TAA",
+      "ACT",
+      "ACA",
+      "GTA"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is TAA.",
+    "id": "astr_065"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which gas forms about 78% of the Earth’s atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Argon",
+      "Carbon Dioxide"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nitrogen.",
+    "id": "astr_066"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following spacecraft never touched the moon?",
+    "options": [
+      "Mariner 4",
+      "Apollo 11",
+      "Luna 2",
+      "SMART-1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mariner 4.",
+    "id": "astr_067"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which psychological term refers to the stress of holding contrasting beliefs?",
+    "options": [
+      "Cognitive Dissonance",
+      "Flip-Flop Syndrome",
+      "Split-Brain",
+      "Blind Sight"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cognitive Dissonance.",
+    "id": "astr_068"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "How long is a light-year?",
+    "options": [
+      "9.461 Trillion Kilometres",
+      "1 AU",
+      "105.40 Earth-years",
+      "501.2 Million Miles"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 9.461 Trillion Kilometres.",
+    "id": "astr_069"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "If you planted the seeds of Quercus robur what would grow?",
+    "options": [
+      "Trees",
+      "Flowers",
+      "Vegtables",
+      "Grains"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Trees.",
+    "id": "astr_070"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "The asteroid belt is located between which two planets?",
+    "options": [
+      "Mars and Jupiter",
+      "Jupiter and Saturn",
+      "Mercury and Venus",
+      "Earth and Mars"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mars and Jupiter.",
+    "id": "astr_071"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "How many teeth does the average adult mouth have (except for wisdom teeth)?",
+    "options": [
+      "32",
+      "36",
+      "20",
+      "28"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 32.",
+    "id": "astr_072"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which of these two plates are best know for forming earthquakes and tsunami's? ",
+    "options": [
+      "Convergent Plate Boundaries/Oceanic Crust",
+      "Divergent Plate Boundaries/Convergent/Oceanic Crust",
+      "Transform Plate Boundaries/Divergent Plate Boundaries",
+      "Oceanic & Continental Crust/Transform Plate Boundaries"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Convergent Plate Boundaries/Oceanic Crust.",
+    "id": "astr_073"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What causes Lyme disease?",
+    "options": [
+      "A bacteria",
+      "A virus",
+      "A parasitic worm",
+      "An amoeba"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A bacteria.",
+    "id": "astr_074"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is the scientific name for the extinct hominin known as \"Lucy\"?",
+    "options": [
+      "Australopithecus Afarensis",
+      "Australopithecus Africanus",
+      "Australopithecus Architeuthis",
+      "Australopithecus Antaris"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Australopithecus Afarensis.",
+    "id": "astr_075"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is Hypernatremia?",
+    "options": [
+      "Increase in blood sodium",
+      "Decrease in blood potassium",
+      "Increase in blood glucose",
+      "Decrease in blood iron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Increase in blood sodium.",
+    "id": "astr_076"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which Apollo mission was the first one to land on the Moon?",
+    "options": [
+      "Apollo 11",
+      "Apollo 10",
+      "Apollo 9",
+      "Apollo 13"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Apollo 11.",
+    "id": "astr_077"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "A comet's gaseous envelope (which creates the tail) is called what?",
+    "options": [
+      "The coma",
+      "The wake",
+      "The backwash",
+      "The ablative"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The coma.",
+    "id": "astr_078"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the largest animal currently on Earth?",
+    "options": [
+      "Blue Whale",
+      "Orca",
+      "Colossal Squid",
+      "Giraffe"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Blue Whale.",
+    "id": "astr_079"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "On which mission did the Space Shuttle Columbia break up upon re-entry?",
+    "options": [
+      "STS-107",
+      "STS-51-L",
+      "STS-61-C",
+      "STS-109"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is STS-107.",
+    "id": "astr_080"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which is the longest bone in the human body? ",
+    "options": [
+      "Femur",
+      "Scapula",
+      "Fibula",
+      "Ulna"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Femur.",
+    "id": "astr_081"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "How many degrees Fahrenheit is 100 degrees Celsius? ",
+    "options": [
+      "212",
+      "326",
+      "100",
+      "451"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 212.",
+    "id": "astr_082"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which constellation contains the center of the Milky Way?",
+    "options": [
+      "Sagittarius",
+      "Scorpius",
+      "Ophiuchus",
+      "Capricornus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sagittarius.",
+    "id": "astr_083"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the standard SI unit for electric current?",
+    "options": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ampere.",
+    "id": "astr_084"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which NASA Space Shuttle broke apart during atmospheric re-entry on February 1, 2003? ",
+    "options": [
+      "Columbia",
+      "Challenger",
+      "Discovery",
+      "Endeavour"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Columbia.",
+    "id": "astr_085"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the \"powerhouse\" of the Eukaryotic animal cell?",
+    "options": [
+      "Mitochondria",
+      "Nucleus",
+      "Chloroplast",
+      "Endoplasmic Reticulum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mitochondria.",
+    "id": "astr_086"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "In Psychology, which need appears highest in the \"Maslow's hierarchy of needs\" pyramid?",
+    "options": [
+      "Esteem",
+      "Love",
+      "Safety",
+      "Physiological"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Esteem.",
+    "id": "astr_087"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the Supermassive Black Hole in the centre of the Milky Way?",
+    "options": [
+      "Sagittarius A*",
+      "Messier 87",
+      "Alpha Centauri",
+      "Andromeda"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sagittarius A*.",
+    "id": "astr_088"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "71% of the Earth's surface is made up of",
+    "options": [
+      "Water",
+      "Deserts",
+      "Continents",
+      "Forests"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Water.",
+    "id": "astr_089"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the powerhouse of the cell?",
+    "options": [
+      "Mitochondria",
+      "Ribosome",
+      "Redbull",
+      "Nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mitochondria.",
+    "id": "astr_090"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the official name of the star located closest to the North Celestial Pole?",
+    "options": [
+      "Polaris",
+      "Eridanus",
+      "Gamma Cephei",
+      "Iota Cephei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polaris.",
+    "id": "astr_091"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "The biggest distinction between a eukaryotic cell and a prokaryotic cell is:",
+    "options": [
+      "The presence or absence of a nucleus",
+      "The overall size",
+      "The presence or absence of certain organelles",
+      "The mode of reproduction"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The presence or absence of a nucleus.",
+    "id": "astr_092"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What are the smallest blood vessels in the human body?",
+    "options": [
+      "Capillaries",
+      "Arterioles",
+      "Veinules",
+      "Lymphatics"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Capillaries.",
+    "id": "astr_093"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the hottest planet in the Solar System?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Mercury",
+      "Jupiter"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Venus.",
+    "id": "astr_094"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Approximately how long is a year on Uranus?",
+    "options": [
+      "84 Earth years",
+      "47 Earth years",
+      "62 Earth years",
+      "109 Earth years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 84 Earth years.",
+    "id": "astr_095"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Muscle fiber is constructed of bundles small long organelles called what?",
+    "options": [
+      "Myofibrils",
+      "Epimysium",
+      "Myofiaments",
+      "Myocardium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Myofibrils.",
+    "id": "astr_096"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What polymer is used to make CDs, safety goggles and riot shields?",
+    "options": [
+      "Polycarbonate",
+      "Rubber",
+      "Nylon",
+      "Bakelite"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polycarbonate.",
+    "id": "astr_097"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What was the category of the 2005 hurricane, Hurricane Katrina, in the Saffir-Simpson hurricane wind scale?",
+    "options": [
+      "Category 5",
+      "Category 1",
+      "Category 4",
+      "Category 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Category 5.",
+    "id": "astr_098"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Autosomal-dominant Compelling Helio-Ophthalmic Outburst syndrome is the need to do what when seeing the Sun?",
+    "options": [
+      "Sneeze",
+      "Cough",
+      "Yawn",
+      "Hiccup"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sneeze.",
+    "id": "astr_099"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which desert is the only desert in the world where the \"Saguaro\" cactus grows indigenously?",
+    "options": [
+      "The Sonoran Desert",
+      "The Gobi Desert",
+      "The Yuma Desert",
+      "The Arabian Desert"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Sonoran Desert.",
+    "id": "astr_100"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Alzheimer's disease primarily affects which part of the human body?",
+    "options": [
+      "Brain",
+      "Lungs",
+      "Skin",
+      "Heart"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Brain.",
+    "id": "astr_101"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "How many moons does the Earth have?",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1.",
+    "id": "astr_102"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which type of rock is created by intense heat AND pressure?",
+    "options": [
+      "Metamorphic",
+      "Sedimentary",
+      "Igneous",
+      "Diamond"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Metamorphic.",
+    "id": "astr_103"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "How many planets are in our Solar System?",
+    "options": [
+      "Eight",
+      "Nine",
+      "Seven",
+      "Ten"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Eight.",
+    "id": "astr_104"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the standard SI unit for time?",
+    "options": [
+      "Second",
+      "Minute",
+      "Hour",
+      "Day"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Second.",
+    "id": "astr_105"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "How many moons does Pluto have?",
+    "options": [
+      "Five",
+      "Two",
+      "Three",
+      "One"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Five.",
+    "id": "astr_106"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of the following is the term for \"surgical complications resulting from surgical sponges left inside the patient's body?",
+    "options": [
+      "Gossypiboma",
+      "Gongoozler",
+      "Jentacular",
+      "Meupareunia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gossypiboma.",
+    "id": "astr_107"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which of these stars is the largest?",
+    "options": [
+      "UY Scuti",
+      "VY Canis Majoris",
+      "Betelgeuse",
+      "RW Cephei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is UY Scuti.",
+    "id": "astr_108"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which Landsat Satellite currently has had the longest operational life?",
+    "options": [
+      "Landsat 5",
+      "Landsat 8",
+      "Landsat 7",
+      "Landsat 6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Landsat 5.",
+    "id": "astr_109"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which one of these scientists conducted the Gold Foil Experiment which concluded that atoms are mostly made of empty space?",
+    "options": [
+      "Ernest Rutherford",
+      "Joseph John Thomson",
+      "Archimedes",
+      "Niels Henrik David Bohr"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ernest Rutherford.",
+    "id": "astr_110"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the colour of unoxidized blood?",
+    "options": [
+      "Red",
+      "Blue",
+      "Purple",
+      "Green"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Red.",
+    "id": "astr_111"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "The moons, Miranda, Ariel, Umbriel, Titania and Oberon orbit which planet?",
+    "options": [
+      "Uranus",
+      "Jupiter",
+      "Venus",
+      "Neptune"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Uranus.",
+    "id": "astr_112"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+    "options": [
+      "8 Minutes",
+      "6 Minutes",
+      "2 Minutes",
+      "12 Minutes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 8 Minutes.",
+    "id": "astr_113"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which moon is the only satellite in our solar system to possess a dense atmosphere?",
+    "options": [
+      "Titan",
+      "Europa",
+      "Miranda",
+      "Callisto"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Titan.",
+    "id": "astr_114"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which is the most abundant element in the universe?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Oxygen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydrogen.",
+    "id": "astr_115"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "How many officially recognized dwarf planets in the solar system are named after Polynesian deities?",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2.",
+    "id": "astr_116"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Where is the Gluteus Maximus muscle located?",
+    "options": [
+      "Butt",
+      "Arm",
+      "Head",
+      "Torso"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Butt.",
+    "id": "astr_117"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is an alternative name for multiple personality disorder?",
+    "options": [
+      "Dissociative identity disorder",
+      "Body integrity identity disorder",
+      "Identity crisis",
+      "Schizophrenia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dissociative identity disorder.",
+    "id": "astr_118"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What does the letter 'S' stand for in 'NASA'?",
+    "options": [
+      "Space",
+      "Science",
+      "Society",
+      "Star"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Space.",
+    "id": "astr_119"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the hottest planet in the solar system",
+    "options": [
+      "Venus",
+      "Jupiter",
+      "Mercury ",
+      "Mars"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Venus.",
+    "id": "astr_120"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which American astronaut was the first human to step onto the surface of the Moon in 1969?",
+    "options": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Alan Shepard"
+    ],
+    "correctIndex": 0,
+    "explanation": "Neil Armstrong commanded the Apollo 11 mission and spoke the famous 'one small step' line.",
+    "id": "astr_121"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which German astronomer discovered the laws governing the motion of planets in elliptical orbits?",
+    "options": [
+      "Johannes Kepler",
+      "Nicolaus Copernicus",
+      "Galileo Galilei",
+      "Giordano Bruno"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kepler's three laws formed the foundation of classical celestial mechanics.",
+    "id": "astr_122"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "To which morphological galaxy type does our home galaxy, the Milky Way, belong?",
+    "options": [
+      "Barred spiral",
+      "Elliptical",
+      "Lenticular",
+      "Irregular"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Milky Way features spiral arms and a distinct central bar structure.",
+    "id": "astr_123"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the approximate temperature of the Sun's surface (photosphere)?",
+    "options": [
+      "5,500 °C",
+      "15,000,000 °C",
+      "1,000 °C",
+      "-270 °C"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Sun's surface temperature is about 5,500 °C, while its core reaches 15 million °C.",
+    "id": "astr_124"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the boundary of a black hole called, beyond which the escape velocity exceeds the speed of light?",
+    "options": [
+      "Event horizon",
+      "Schwarzschild radius",
+      "Singularity",
+      "Ergosphere"
+    ],
+    "correctIndex": 0,
+    "explanation": "Any matter or radiation crossing the event horizon is trapped and cannot escape.",
+    "id": "astr_125"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What event occurs at the end of a high-mass star's life cycle, accompanied by a colossal explosion?",
+    "options": [
+      "Supernova explosion",
+      "White dwarf transition",
+      "Red giant transition",
+      "Gravitational collapse"
+    ],
+    "correctIndex": 0,
+    "explanation": "A supernova explosion disperses heavy chemical elements across interstellar space.",
+    "id": "astr_126"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which NASA spacecraft, launched in 1977, was the first human-made object to enter interstellar space?",
+    "options": [
+      "Voyager 1",
+      "Pioneer 10",
+      "New Horizons",
+      "Hubble"
+    ],
+    "correctIndex": 0,
+    "explanation": "Voyager 1 crossed the heliopause and entered the interstellar medium in 2012.",
+    "id": "astr_127"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which American astronomer discovered the expansion of the Universe, showing that galaxies are moving away?",
+    "options": [
+      "Edwin Hubble",
+      "Albert Einstein",
+      "Carl Sagan",
+      "Arno Penzias"
+    ],
+    "correctIndex": 0,
+    "explanation": "Edwin Hubble formulated the law of Universe expansion (Hubble's Law) in 1929.",
+    "id": "astr_128"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which electromagnetic radiation, filling the entire Universe, is the cooled echo of the Big Bang?",
+    "options": [
+      "Cosmic Microwave Background (CMB)",
+      "Gamma-ray burst",
+      "Pulsar radiation",
+      "X-ray background"
+    ],
+    "correctIndex": 0,
+    "explanation": "CMB radiation was discovered by Penzias and Wilson in 1964, confirming the Big Bang theory.",
+    "id": "astr_129"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which observatory (detector) first experimentally registered gravitational waves in 2015?",
+    "options": [
+      "LIGO",
+      "VIRGO",
+      "Hubble",
+      "BICEP2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The LIGO detector registered gravitational waves generated by the collision of two black holes.",
+    "id": "astr_130"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which famous equation estimates the number of active, communicative extraterrestrial civilizations in the Milky Way?",
+    "options": [
+      "Drake equation",
+      "Fermi paradox",
+      "Chandrasekhar limit",
+      "Hubble constant"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Drake equation (1961) multiplies a series of probabilities to estimate the count.",
+    "id": "astr_131"
+  },
+  {
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which mass limit (about 1.44 solar masses) separates the evolution of a white dwarf from collapse into a neutron star?",
+    "options": [
+      "Chandrasekhar limit",
+      "Tolman-Oppenheimer-Volkoff limit",
+      "Schwarzschild radius",
+      "Roche limit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Chandrasekhar limit determines the maximum mass supportable by electron degeneracy pressure.",
+    "id": "astr_132"
   }
 ]

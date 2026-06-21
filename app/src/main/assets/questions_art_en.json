@@ -3,7 +3,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who painted the 'Mona Lisa'?",
-    "options": ["Leonardo da Vinci", "Raphael", "Michelangelo", "Sandro Botticelli"],
+    "options": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Michelangelo",
+      "Sandro Botticelli"
+    ],
     "correctIndex": 0,
     "explanation": "The 'Mona Lisa' was painted by Leonardo da Vinci in the early 16th century.",
     "id": "art_001"
@@ -12,7 +17,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which artist painted 'The Starry Night'?",
-    "options": ["Vincent van Gogh", "Claude Monet", "Paul Cézanne", "Edvard Munch"],
+    "options": [
+      "Vincent van Gogh",
+      "Claude Monet",
+      "Paul Cézanne",
+      "Edvard Munch"
+    ],
     "correctIndex": 0,
     "explanation": "'The Starry Night' was painted by Vincent van Gogh in 1889.",
     "id": "art_002"
@@ -21,7 +31,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who painted the ceiling of the Sistine Chapel in the Vatican?",
-    "options": ["Michelangelo", "Leonardo da Vinci", "Titian", "Caravaggio"],
+    "options": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Titian",
+      "Caravaggio"
+    ],
     "correctIndex": 0,
     "explanation": "The Sistine Chapel ceiling was painted by Michelangelo from 1508 to 1512.",
     "id": "art_003"
@@ -30,7 +45,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who created the painting 'The Scream'?",
-    "options": ["Edvard Munch", "Salvador Dalí", "Pablo Picasso", "Gustav Klimt"],
+    "options": [
+      "Edvard Munch",
+      "Salvador Dalí",
+      "Pablo Picasso",
+      "Gustav Klimt"
+    ],
     "correctIndex": 0,
     "explanation": "'The Scream' is the best-known work of the Norwegian Edvard Munch.",
     "id": "art_004"
@@ -39,7 +59,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who painted 'Black Square'?",
-    "options": ["Kazimir Malevich", "Wassily Kandinsky", "Marc Chagall", "Piet Mondrian"],
+    "options": [
+      "Kazimir Malevich",
+      "Wassily Kandinsky",
+      "Marc Chagall",
+      "Piet Mondrian"
+    ],
     "correctIndex": 0,
     "explanation": "'Black Square' was painted by Kazimir Malevich in 1915.",
     "id": "art_005"
@@ -48,7 +73,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which artistic style made Salvador Dalí famous?",
-    "options": ["Surrealism", "Cubism", "Impressionism", "Baroque"],
+    "options": [
+      "Surrealism",
+      "Cubism",
+      "Impressionism",
+      "Baroque"
+    ],
     "correctIndex": 0,
     "explanation": "Salvador Dalí is one of the main figures of Surrealism.",
     "id": "art_006"
@@ -57,7 +87,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who painted 'Girl with a Pearl Earring'?",
-    "options": ["Johannes Vermeer", "Rembrandt", "Peter Paul Rubens", "Hieronymus Bosch"],
+    "options": [
+      "Johannes Vermeer",
+      "Rembrandt",
+      "Peter Paul Rubens",
+      "Hieronymus Bosch"
+    ],
     "correctIndex": 0,
     "explanation": "'Girl with a Pearl Earring' was painted by the Dutch artist Johannes Vermeer.",
     "id": "art_007"
@@ -66,7 +101,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which Russian artist painted 'Bogatyrs' (the 'Three Bogatyrs')?",
-    "options": ["Viktor Vasnetsov", "Ilya Repin", "Ivan Shishkin", "Isaac Levitan"],
+    "options": [
+      "Viktor Vasnetsov",
+      "Ilya Repin",
+      "Ivan Shishkin",
+      "Isaac Levitan"
+    ],
     "correctIndex": 0,
     "explanation": "'Bogatyrs' was painted by Viktor Vasnetsov.",
     "id": "art_008"
@@ -75,7 +115,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which country was the artist Pablo Picasso from?",
-    "options": ["Spain", "France", "Italy", "Netherlands"],
+    "options": [
+      "Spain",
+      "France",
+      "Italy",
+      "Netherlands"
+    ],
     "correctIndex": 0,
     "explanation": "Pablo Picasso was born in Spain, in the city of Málaga.",
     "id": "art_009"
@@ -84,7 +129,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which of these techniques is painting with water-based colours?",
-    "options": ["Watercolour", "Etching", "Mosaic", "Engraving"],
+    "options": [
+      "Watercolour",
+      "Etching",
+      "Mosaic",
+      "Engraving"
+    ],
     "correctIndex": 0,
     "explanation": "Watercolour is painting with pigments diluted in water.",
     "id": "art_010"
@@ -93,7 +143,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who painted 'Sunflowers'?",
-    "options": ["Vincent van Gogh", "Claude Monet", "Henri Matisse", "Paul Gauguin"],
+    "options": [
+      "Vincent van Gogh",
+      "Claude Monet",
+      "Henri Matisse",
+      "Paul Gauguin"
+    ],
     "correctIndex": 0,
     "explanation": "The 'Sunflowers' series was painted by Vincent van Gogh in Arles.",
     "id": "art_011"
@@ -102,7 +157,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which French artist is known for paintings of ballerinas?",
-    "options": ["Edgar Degas", "Auguste Renoir", "Camille Pissarro", "Édouard Manet"],
+    "options": [
+      "Edgar Degas",
+      "Auguste Renoir",
+      "Camille Pissarro",
+      "Édouard Manet"
+    ],
     "correctIndex": 0,
     "explanation": "Edgar Degas is famous for his images of ballerinas and theatre scenes.",
     "id": "art_012"
@@ -111,7 +171,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who painted the mural 'The Last Supper' in Milan?",
-    "options": ["Leonardo da Vinci", "Michelangelo", "Caravaggio", "Giotto"],
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Caravaggio",
+      "Giotto"
+    ],
     "correctIndex": 0,
     "explanation": "'The Last Supper' was painted by Leonardo da Vinci.",
     "id": "art_013"
@@ -120,7 +185,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "What colour do you get by mixing blue and yellow paint?",
-    "options": ["Green", "Orange", "Purple", "Brown"],
+    "options": [
+      "Green",
+      "Orange",
+      "Purple",
+      "Brown"
+    ],
     "correctIndex": 0,
     "explanation": "Mixing blue and yellow produces green.",
     "id": "art_014"
@@ -129,7 +199,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Who sculpted the famous marble statue 'David' in Florence?",
-    "options": ["Michelangelo", "Donatello", "Gian Lorenzo Bernini", "Auguste Rodin"],
+    "options": [
+      "Michelangelo",
+      "Donatello",
+      "Gian Lorenzo Bernini",
+      "Auguste Rodin"
+    ],
     "correctIndex": 0,
     "explanation": "The marble 'David' was created by Michelangelo between 1501 and 1504.",
     "id": "art_015"
@@ -138,7 +213,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which Russian artist painted 'Morning in a Pine Forest'?",
-    "options": ["Ivan Shishkin", "Arkhip Kuindzhi", "Vasily Surikov", "Valentin Serov"],
+    "options": [
+      "Ivan Shishkin",
+      "Arkhip Kuindzhi",
+      "Vasily Surikov",
+      "Valentin Serov"
+    ],
     "correctIndex": 0,
     "explanation": "'Morning in a Pine Forest' was painted by Ivan Shishkin (the bears were added by K. Savitsky).",
     "id": "art_016"
@@ -147,7 +227,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which three colours are considered the primary colours in painting?",
-    "options": ["Red, yellow, blue", "Green, orange, purple", "Black, white, grey", "Pink, cyan, lime"],
+    "options": [
+      "Red, yellow, blue",
+      "Green, orange, purple",
+      "Black, white, grey",
+      "Pink, cyan, lime"
+    ],
     "correctIndex": 0,
     "explanation": "The traditional primary colours are red, yellow and blue.",
     "id": "art_017"
@@ -156,7 +241,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "Which artistic movement does Claude Monet represent?",
-    "options": ["Impressionism", "Cubism", "Gothic art", "Pop art"],
+    "options": [
+      "Impressionism",
+      "Cubism",
+      "Gothic art",
+      "Pop art"
+    ],
     "correctIndex": 0,
     "explanation": "Claude Monet was a founder of Impressionism; the name came from his 'Impression, Sunrise'.",
     "id": "art_018"
@@ -165,7 +255,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "On what does an artist mix paints while working?",
-    "options": ["A palette", "An easel", "A frame", "A canvas"],
+    "options": [
+      "A palette",
+      "An easel",
+      "A frame",
+      "A canvas"
+    ],
     "correctIndex": 0,
     "explanation": "Paints are mixed on a palette.",
     "id": "art_019"
@@ -174,7 +269,12 @@
     "category": "art",
     "difficulty": "EASY",
     "text": "What is the genre of painting depicting inanimate objects such as fruit, dishes and flowers called?",
-    "options": ["Still life", "Landscape", "Portrait", "Marine"],
+    "options": [
+      "Still life",
+      "Landscape",
+      "Portrait",
+      "Marine"
+    ],
     "correctIndex": 0,
     "explanation": "Still life depicts inanimate objects.",
     "id": "art_020"
@@ -183,7 +283,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who painted 'The Last Day of Pompeii'?",
-    "options": ["Karl Bryullov", "Ilya Repin", "Ivan Aivazovsky", "Alexander Ivanov"],
+    "options": [
+      "Karl Bryullov",
+      "Ilya Repin",
+      "Ivan Aivazovsky",
+      "Alexander Ivanov"
+    ],
     "correctIndex": 0,
     "explanation": "'The Last Day of Pompeii' was painted by Karl Bryullov in the 1830s.",
     "id": "art_021"
@@ -192,7 +297,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which Russian artist was famous for seascapes, including 'The Ninth Wave'?",
-    "options": ["Ivan Aivazovsky", "Ivan Shishkin", "Isaac Levitan", "Vasily Polenov"],
+    "options": [
+      "Ivan Aivazovsky",
+      "Ivan Shishkin",
+      "Isaac Levitan",
+      "Vasily Polenov"
+    ],
     "correctIndex": 0,
     "explanation": "Ivan Aivazovsky was Russia's greatest marine painter, creator of 'The Ninth Wave'.",
     "id": "art_022"
@@ -201,7 +311,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who created the painting 'Barge Haulers on the Volga'?",
-    "options": ["Ilya Repin", "Vasily Surikov", "Vasily Perov", "Nikolai Ge"],
+    "options": [
+      "Ilya Repin",
+      "Vasily Surikov",
+      "Vasily Perov",
+      "Nikolai Ge"
+    ],
     "correctIndex": 0,
     "explanation": "'Barge Haulers on the Volga' was painted by Ilya Repin in the 1870s.",
     "id": "art_023"
@@ -210,7 +325,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which style, linked to Picasso and Braque, breaks objects into geometric forms?",
-    "options": ["Cubism", "Fauvism", "Dadaism", "Expressionism"],
+    "options": [
+      "Cubism",
+      "Fauvism",
+      "Dadaism",
+      "Expressionism"
+    ],
     "correctIndex": 0,
     "explanation": "Cubism was founded by Pablo Picasso and Georges Braque around 1907.",
     "id": "art_024"
@@ -219,7 +339,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who painted 'The Rooks Have Come Back'?",
-    "options": ["Alexei Savrasov", "Isaac Levitan", "Ivan Shishkin", "Fyodor Vasilyev"],
+    "options": [
+      "Alexei Savrasov",
+      "Isaac Levitan",
+      "Ivan Shishkin",
+      "Fyodor Vasilyev"
+    ],
     "correctIndex": 0,
     "explanation": "'The Rooks Have Come Back' was painted by Alexei Savrasov in 1871.",
     "id": "art_025"
@@ -228,7 +353,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who is the author of the painting 'Boyarynya Morozova'?",
-    "options": ["Vasily Surikov", "Ilya Repin", "Viktor Vasnetsov", "Valentin Serov"],
+    "options": [
+      "Vasily Surikov",
+      "Ilya Repin",
+      "Viktor Vasnetsov",
+      "Valentin Serov"
+    ],
     "correctIndex": 0,
     "explanation": "'Boyarynya Morozova' was painted by Vasily Surikov in the 1880s.",
     "id": "art_026"
@@ -237,7 +367,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which Dutch artist is known for fantastical scenes in 'The Garden of Earthly Delights'?",
-    "options": ["Hieronymus Bosch", "Pieter Bruegel the Elder", "Jan van Eyck", "Rembrandt"],
+    "options": [
+      "Hieronymus Bosch",
+      "Pieter Bruegel the Elder",
+      "Jan van Eyck",
+      "Rembrandt"
+    ],
     "correctIndex": 0,
     "explanation": "'The Garden of Earthly Delights' was painted by Hieronymus Bosch around 1500.",
     "id": "art_027"
@@ -246,7 +381,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "What is the technique of forming an image from small pieces of glass or stone called?",
-    "options": ["Mosaic", "Fresco", "Stained glass", "Engraving"],
+    "options": [
+      "Mosaic",
+      "Fresco",
+      "Stained glass",
+      "Engraving"
+    ],
     "correctIndex": 0,
     "explanation": "A mosaic is assembled from small coloured pieces of smalt, stone or glass.",
     "id": "art_028"
@@ -255,7 +395,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who painted 'Portrait of an Unknown Woman' ('The Unknown Lady')?",
-    "options": ["Ivan Kramskoi", "Ilya Repin", "Valentin Serov", "Vasily Polenov"],
+    "options": [
+      "Ivan Kramskoi",
+      "Ilya Repin",
+      "Valentin Serov",
+      "Vasily Polenov"
+    ],
     "correctIndex": 0,
     "explanation": "'The Unknown Lady' was painted by Ivan Kramskoi in 1883.",
     "id": "art_029"
@@ -264,7 +409,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which artist is regarded as a founder of abstract painting and author of the 'Compositions'?",
-    "options": ["Wassily Kandinsky", "Kazimir Malevich", "Marc Chagall", "Nathan Altman"],
+    "options": [
+      "Wassily Kandinsky",
+      "Kazimir Malevich",
+      "Marc Chagall",
+      "Nathan Altman"
+    ],
     "correctIndex": 0,
     "explanation": "Wassily Kandinsky was one of the founders of abstract art.",
     "id": "art_030"
@@ -273,7 +423,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which Italian Baroque master is known for sharp contrasts of light and shadow?",
-    "options": ["Caravaggio", "Sandro Botticelli", "Raphael", "Giotto"],
+    "options": [
+      "Caravaggio",
+      "Sandro Botticelli",
+      "Raphael",
+      "Giotto"
+    ],
     "correctIndex": 0,
     "explanation": "Caravaggio is famous for dramatic chiaroscuro lighting.",
     "id": "art_031"
@@ -282,7 +437,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who painted 'The Birth of Venus'?",
-    "options": ["Sandro Botticelli", "Titian", "Raphael", "Giorgione"],
+    "options": [
+      "Sandro Botticelli",
+      "Titian",
+      "Raphael",
+      "Giorgione"
+    ],
     "correctIndex": 0,
     "explanation": "'The Birth of Venus' was painted by Sandro Botticelli around 1485.",
     "id": "art_032"
@@ -291,7 +451,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which artist painted 'Girl with Peaches'?",
-    "options": ["Valentin Serov", "Ilya Repin", "Vasily Surikov", "Mikhail Vrubel"],
+    "options": [
+      "Valentin Serov",
+      "Ilya Repin",
+      "Vasily Surikov",
+      "Mikhail Vrubel"
+    ],
     "correctIndex": 0,
     "explanation": "'Girl with Peaches' was painted by Valentin Serov in 1887.",
     "id": "art_033"
@@ -300,7 +465,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which artist is known for flying lovers and scenes of his native Vitebsk?",
-    "options": ["Marc Chagall", "Kazimir Malevich", "Wassily Kandinsky", "Kuzma Petrov-Vodkin"],
+    "options": [
+      "Marc Chagall",
+      "Kazimir Malevich",
+      "Wassily Kandinsky",
+      "Kuzma Petrov-Vodkin"
+    ],
     "correctIndex": 0,
     "explanation": "Marc Chagall often painted flying lovers and his hometown of Vitebsk.",
     "id": "art_034"
@@ -309,7 +479,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "What is a fresco?",
-    "options": ["Painting on fresh wet plaster", "A charcoal drawing on paper", "A printed engraving on metal", "Coloured stained glass"],
+    "options": [
+      "Painting on fresh wet plaster",
+      "A charcoal drawing on paper",
+      "A printed engraving on metal",
+      "Coloured stained glass"
+    ],
     "correctIndex": 0,
     "explanation": "A fresco is painting with water-based colours on fresh, wet plaster.",
     "id": "art_035"
@@ -318,7 +493,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who painted 'Las Meninas'?",
-    "options": ["Diego Velázquez", "Francisco Goya", "El Greco", "Bartolomé Murillo"],
+    "options": [
+      "Diego Velázquez",
+      "Francisco Goya",
+      "El Greco",
+      "Bartolomé Murillo"
+    ],
     "correctIndex": 0,
     "explanation": "'Las Meninas' was painted by the Spaniard Diego Velázquez in 1656.",
     "id": "art_036"
@@ -327,7 +507,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "What was the group of 19th-century Russian artists who held travelling exhibitions called?",
-    "options": ["The Peredvizhniki (Wanderers)", "Mir Iskusstva", "Jack of Diamonds", "Blue Rose"],
+    "options": [
+      "The Peredvizhniki (Wanderers)",
+      "Mir Iskusstva",
+      "Jack of Diamonds",
+      "Blue Rose"
+    ],
     "correctIndex": 0,
     "explanation": "The Society for Travelling Art Exhibitions (Peredvizhniki) was formed in 1870.",
     "id": "art_037"
@@ -336,7 +521,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Who painted 'The Seated Demon'?",
-    "options": ["Mikhail Vrubel", "Viktor Vasnetsov", "Ilya Repin", "Valentin Serov"],
+    "options": [
+      "Mikhail Vrubel",
+      "Viktor Vasnetsov",
+      "Ilya Repin",
+      "Valentin Serov"
+    ],
     "correctIndex": 0,
     "explanation": "'The Seated Demon' was painted by Mikhail Vrubel in 1890.",
     "id": "art_038"
@@ -345,7 +535,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "Which French Post-Impressionist moved to Tahiti to paint?",
-    "options": ["Paul Gauguin", "Paul Cézanne", "Georges Seurat", "Henri Matisse"],
+    "options": [
+      "Paul Gauguin",
+      "Paul Cézanne",
+      "Georges Seurat",
+      "Henri Matisse"
+    ],
     "correctIndex": 0,
     "explanation": "Paul Gauguin spent his final years on the islands of Polynesia, including Tahiti.",
     "id": "art_039"
@@ -354,7 +549,12 @@
     "category": "art",
     "difficulty": "MEDIUM",
     "text": "What event does Pablo Picasso's 'Guernica' depict?",
-    "options": ["The bombing of a town in the Spanish Civil War", "World War I", "The French Revolution", "The eruption of Vesuvius"],
+    "options": [
+      "The bombing of a town in the Spanish Civil War",
+      "World War I",
+      "The French Revolution",
+      "The eruption of Vesuvius"
+    ],
     "correctIndex": 0,
     "explanation": "'Guernica' was a response to the bombing of the Basque town in 1937.",
     "id": "art_040"
@@ -363,7 +563,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted the series 'The Card Players'?",
-    "options": ["Paul Cézanne", "Edgar Degas", "Édouard Manet", "Camille Pissarro"],
+    "options": [
+      "Paul Cézanne",
+      "Edgar Degas",
+      "Édouard Manet",
+      "Camille Pissarro"
+    ],
     "correctIndex": 0,
     "explanation": "'The Card Players' was painted by Paul Cézanne in the 1890s.",
     "id": "art_041"
@@ -372,7 +577,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "In which technique was Hokusai's 'The Great Wave off Kanagawa' made?",
-    "options": ["Colour woodblock print (ukiyo-e)", "Oil painting", "Watercolour", "Ink on silk"],
+    "options": [
+      "Colour woodblock print (ukiyo-e)",
+      "Oil painting",
+      "Watercolour",
+      "Ink on silk"
+    ],
     "correctIndex": 0,
     "explanation": "'The Great Wave off Kanagawa' is a Japanese ukiyo-e woodblock print.",
     "id": "art_042"
@@ -381,7 +591,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who worked for almost twenty years on 'The Appearance of Christ Before the People'?",
-    "options": ["Alexander Ivanov", "Karl Bryullov", "Ilya Repin", "Nikolai Ge"],
+    "options": [
+      "Alexander Ivanov",
+      "Karl Bryullov",
+      "Ilya Repin",
+      "Nikolai Ge"
+    ],
     "correctIndex": 0,
     "explanation": "Alexander Ivanov painted this work over roughly twenty years.",
     "id": "art_043"
@@ -390,7 +605,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which early-20th-century style used pure, vivid colours and was led by Henri Matisse?",
-    "options": ["Fauvism", "Cubism", "Surrealism", "Futurism"],
+    "options": [
+      "Fauvism",
+      "Cubism",
+      "Surrealism",
+      "Futurism"
+    ],
     "correctIndex": 0,
     "explanation": "Fauvism, with its bright open colours, was led by Henri Matisse.",
     "id": "art_044"
@@ -399,7 +619,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who is the author of the sculpture 'The Thinker'?",
-    "options": ["Auguste Rodin", "Antonio Canova", "Michelangelo", "Benvenuto Cellini"],
+    "options": [
+      "Auguste Rodin",
+      "Antonio Canova",
+      "Michelangelo",
+      "Benvenuto Cellini"
+    ],
     "correctIndex": 0,
     "explanation": "'The Thinker' was created by the French sculptor Auguste Rodin.",
     "id": "art_045"
@@ -408,7 +633,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted 'The Night Watch'?",
-    "options": ["Rembrandt", "Johannes Vermeer", "Peter Paul Rubens", "Frans Hals"],
+    "options": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Peter Paul Rubens",
+      "Frans Hals"
+    ],
     "correctIndex": 0,
     "explanation": "'The Night Watch' was painted by Rembrandt in 1642.",
     "id": "art_046"
@@ -417,7 +647,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted 'A Sunday Afternoon on the Island of La Grande Jatte' in the Pointillist technique?",
-    "options": ["Georges Seurat", "Claude Monet", "Camille Pissarro", "Edgar Degas"],
+    "options": [
+      "Georges Seurat",
+      "Claude Monet",
+      "Camille Pissarro",
+      "Edgar Degas"
+    ],
     "correctIndex": 0,
     "explanation": "Georges Seurat painted it with separate dots of pure colour — Pointillism.",
     "id": "art_047"
@@ -426,7 +661,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted the Vatican Stanze, including the fresco 'The School of Athens'?",
-    "options": ["Raphael", "Michelangelo", "Leonardo da Vinci", "Pietro Perugino"],
+    "options": [
+      "Raphael",
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Pietro Perugino"
+    ],
     "correctIndex": 0,
     "explanation": "'The School of Athens' is a fresco by Raphael in the Stanza della Segnatura.",
     "id": "art_048"
@@ -435,7 +675,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which movement did Kazimir Malevich found with his 'Black Square'?",
-    "options": ["Suprematism", "Constructivism", "Rayonism", "Analytical art"],
+    "options": [
+      "Suprematism",
+      "Constructivism",
+      "Rayonism",
+      "Analytical art"
+    ],
     "correctIndex": 0,
     "explanation": "Malevich proclaimed Suprematism — art of pure geometric forms.",
     "id": "art_049"
@@ -444,7 +689,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted 'Bathing of a Red Horse'?",
-    "options": ["Kuzma Petrov-Vodkin", "Mikhail Vrubel", "Valentin Serov", "Boris Kustodiev"],
+    "options": [
+      "Kuzma Petrov-Vodkin",
+      "Mikhail Vrubel",
+      "Valentin Serov",
+      "Boris Kustodiev"
+    ],
     "correctIndex": 0,
     "explanation": "'Bathing of a Red Horse' was painted by Kuzma Petrov-Vodkin in 1912.",
     "id": "art_050"
@@ -453,7 +703,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which Spanish artist created the dark 'Black Paintings', including 'Saturn'?",
-    "options": ["Francisco Goya", "El Greco", "Diego Velázquez", "Bartolomé Murillo"],
+    "options": [
+      "Francisco Goya",
+      "El Greco",
+      "Diego Velázquez",
+      "Bartolomé Murillo"
+    ],
     "correctIndex": 0,
     "explanation": "The 'Black Paintings' were made by Francisco Goya on the walls of his house in his later years.",
     "id": "art_051"
@@ -462,7 +717,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted 'The Persistence of Memory' with its melting clocks?",
-    "options": ["Salvador Dalí", "René Magritte", "Max Ernst", "Joan Miró"],
+    "options": [
+      "Salvador Dalí",
+      "René Magritte",
+      "Max Ernst",
+      "Joan Miró"
+    ],
     "correctIndex": 0,
     "explanation": "'The Persistence of Memory' with its soft clocks was painted by Salvador Dalí in 1931.",
     "id": "art_052"
@@ -471,7 +731,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which Dutch master painted the 'Arnolfini Portrait'?",
-    "options": ["Jan van Eyck", "Hieronymus Bosch", "Pieter Bruegel the Elder", "Hans Memling"],
+    "options": [
+      "Jan van Eyck",
+      "Hieronymus Bosch",
+      "Pieter Bruegel the Elder",
+      "Hans Memling"
+    ],
     "correctIndex": 0,
     "explanation": "The 'Arnolfini Portrait' was painted by Jan van Eyck in 1434.",
     "id": "art_053"
@@ -480,7 +745,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted 'Ivan the Terrible and His Son Ivan'?",
-    "options": ["Ilya Repin", "Vasily Surikov", "Nikolai Ge", "Viktor Vasnetsov"],
+    "options": [
+      "Ilya Repin",
+      "Vasily Surikov",
+      "Nikolai Ge",
+      "Viktor Vasnetsov"
+    ],
     "correctIndex": 0,
     "explanation": "This painting was made by Ilya Repin in 1885.",
     "id": "art_054"
@@ -489,7 +759,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted 'Primavera' ('Spring')?",
-    "options": ["Sandro Botticelli", "Titian", "Giorgione", "Andrea Mantegna"],
+    "options": [
+      "Sandro Botticelli",
+      "Titian",
+      "Giorgione",
+      "Andrea Mantegna"
+    ],
     "correctIndex": 0,
     "explanation": "'Primavera' was painted by Sandro Botticelli around 1480.",
     "id": "art_055"
@@ -498,7 +773,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted the 'Water Lilies' series?",
-    "options": ["Claude Monet", "Edgar Degas", "Auguste Renoir", "Alfred Sisley"],
+    "options": [
+      "Claude Monet",
+      "Edgar Degas",
+      "Auguste Renoir",
+      "Alfred Sisley"
+    ],
     "correctIndex": 0,
     "explanation": "Claude Monet painted the 'Water Lilies' series in his garden at Giverny.",
     "id": "art_056"
@@ -507,7 +787,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which Russian artist was famed for light effects, as in 'Moonlit Night on the Dnieper'?",
-    "options": ["Arkhip Kuindzhi", "Ivan Aivazovsky", "Ivan Shishkin", "Fyodor Vasilyev"],
+    "options": [
+      "Arkhip Kuindzhi",
+      "Ivan Aivazovsky",
+      "Ivan Shishkin",
+      "Fyodor Vasilyev"
+    ],
     "correctIndex": 0,
     "explanation": "Arkhip Kuindzhi achieved an almost glowing effect in 'Moonlit Night on the Dnieper'.",
     "id": "art_057"
@@ -516,7 +801,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which 1910s movement glorified speed and the machine, its manifesto written by Marinetti?",
-    "options": ["Futurism", "Dadaism", "Surrealism", "Expressionism"],
+    "options": [
+      "Futurism",
+      "Dadaism",
+      "Surrealism",
+      "Expressionism"
+    ],
     "correctIndex": 0,
     "explanation": "Futurism, with its cult of speed and machines, was proclaimed by Filippo Marinetti in 1909.",
     "id": "art_058"
@@ -525,7 +815,12 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Who painted the famous icon 'The Trinity'?",
-    "options": ["Andrei Rublev", "Theophanes the Greek", "Dionisius", "Simon Ushakov"],
+    "options": [
+      "Andrei Rublev",
+      "Theophanes the Greek",
+      "Dionisius",
+      "Simon Ushakov"
+    ],
     "correctIndex": 0,
     "explanation": "The icon 'The Trinity' was painted by Andrei Rublev in the early 15th century.",
     "id": "art_059"
@@ -534,9 +829,756 @@
     "category": "art",
     "difficulty": "HARD",
     "text": "Which artist is known for abstract compositions of rectangles in the three primary colours?",
-    "options": ["Piet Mondrian", "Kazimir Malevich", "Wassily Kandinsky", "Jackson Pollock"],
+    "options": [
+      "Piet Mondrian",
+      "Kazimir Malevich",
+      "Wassily Kandinsky",
+      "Jackson Pollock"
+    ],
     "correctIndex": 0,
     "explanation": "Piet Mondrian built compositions of black lines and rectangles in red, yellow and blue.",
     "id": "art_060"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which Van Gogh painting depicts the view from his asylum in Saint-Rémy-de-Provence in southern France?",
+    "options": [
+      "The Starry Night",
+      "Wheatfields with Crows",
+      "The Sower with Setting Sun",
+      "The Church at Auvers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Starry Night.",
+    "id": "art_061"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who painted \"The Scream\"?",
+    "options": [
+      "Edvard Munch",
+      "Vincent Van Gogh",
+      "Picasso",
+      "Henri Matisse"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Edvard Munch.",
+    "id": "art_062"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What was the first successful and commercially viable photographic technique?",
+    "options": [
+      "The Daguerreotype",
+      "Collodion process",
+      "The Turin Shroud",
+      "Kodachrome film"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Daguerreotype.",
+    "id": "art_063"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What French sculptor designed the Statue of Liberty? ",
+    "options": [
+      "Frédéric Auguste Bartholdi",
+      "Jean-Léon Gérôme",
+      "Auguste Rodin",
+      "Henri Matisse"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Frédéric Auguste Bartholdi.",
+    "id": "art_064"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who sculpted the statue of David?",
+    "options": [
+      "Michelangelo",
+      "Gian Lorenzo Bernini",
+      "Auguste Rodin",
+      "Donatello"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Michelangelo.",
+    "id": "art_065"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who designed the Chupa Chups logo?",
+    "options": [
+      "Salvador Dali",
+      "Pablo Picasso",
+      "Andy Warhol",
+      "Vincent van Gogh"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Salvador Dali.",
+    "id": "art_066"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which Greek sculptor designed the Athena Parthenos statue inside the Parthenon?",
+    "options": [
+      "Phidias",
+      "Scopas",
+      "Hesiod",
+      "Praxiteles"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Phidias.",
+    "id": "art_067"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "When was Salvador Dali's painting, \"The Persistence of Memory,\" completed?",
+    "options": [
+      "1931",
+      "1932",
+      "1929",
+      "1934"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1931.",
+    "id": "art_068"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": " What color is produced by mixing black and white?",
+    "options": [
+      "Grey",
+      "Black",
+      "Brown",
+      "White"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Grey.",
+    "id": "art_069"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which of these is not an additional variation of the color purple?",
+    "options": [
+      "Kobicha",
+      "Byzantium",
+      "Pomp and Power",
+      "Palatinate"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Kobicha.",
+    "id": "art_070"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What nationality was the famous artist Pablo Picasso?",
+    "options": [
+      "Spanish",
+      "French",
+      "Italian",
+      "German"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Spanish.",
+    "id": "art_071"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is another name for La Gioconda / La Joconde?",
+    "options": [
+      "The Mona Lisa",
+      "The Girl with a Pearl Earring",
+      "The Starry Night",
+      "Sunflowers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Mona Lisa.",
+    "id": "art_072"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted the Mona Lisa?",
+    "options": [
+      "Leonardo da Vinci ",
+      "Pablo Picasso",
+      " Vincent van Gogh",
+      "Michelangelo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Leonardo da Vinci .",
+    "id": "art_073"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist painted “The Treachery of Images,” a painting of a pipe with the description \"this is not a pipe\"?",
+    "options": [
+      "Magritte",
+      "Matisse",
+      "Modigliani",
+      "Munch "
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Magritte.",
+    "id": "art_074"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What was the major distinction between the English and French Gothic styles of architecture?",
+    "options": [
+      "Fan vaulting",
+      "Pinnacles",
+      "Gargoyles",
+      "Hemispherical Domes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Fan vaulting.",
+    "id": "art_075"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "The painting \"Guernica\" by Pablo Picasso expressed emotions of dread in response to which war?",
+    "options": [
+      "Spanish Civil War",
+      "World War I",
+      "The Crimean War",
+      "Spanish-American War"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Spanish Civil War.",
+    "id": "art_076"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which of these paintings did Johannes Vermeer not paint?",
+    "options": [
+      "Bacchus",
+      "Girl with a Pearl Earring",
+      "The Milkmaid",
+      "The Lacemaker"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bacchus.",
+    "id": "art_077"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What were Marcel Duchamp's readymades?",
+    "options": [
+      "utilitarian objects elevated to the status of art",
+      "a series focused on color and light as opposed to line and shape",
+      "paintings with a barely visible outlined square",
+      "a group of identical steel boxes jutting from the wall "
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is utilitarian objects elevated to the status of art.",
+    "id": "art_078"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is a fundamental element of the Gothic style of architecture?",
+    "options": [
+      "pointed arch",
+      "coffered ceilings",
+      "façades surmounted by a pediment ",
+      "internal frescoes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is pointed arch.",
+    "id": "art_079"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist's style was to use small different colored dots to create a picture?",
+    "options": [
+      "Georges Seurat",
+      "Paul Cézanne",
+      "Vincent Van Gogh",
+      "Henri Rousseau"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Georges Seurat.",
+    "id": "art_080"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is the name of the Japanese art of folding paper into decorative shapes and figures?",
+    "options": [
+      "Origami",
+      "Sumi-e",
+      "Ukiyo-e",
+      "Haiku"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Origami.",
+    "id": "art_081"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted \"Swans Reflecting Elephants\", \"Sleep\", and \"The Persistence of Memory\"?",
+    "options": [
+      "Salvador Dali",
+      "Jackson Pollock",
+      "Vincent van Gogh",
+      "Edgar Degas"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Salvador Dali.",
+    "id": "art_082"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which one of these paintings is not by Caspar David Friedrich?",
+    "options": [
+      "The Black Sea",
+      "The Sea of Ice",
+      "Wanderer above the Sea of Fog",
+      "The Monk by the Sea"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Black Sea.",
+    "id": "art_083"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What nationality was the famous artist Van Gogh?",
+    "options": [
+      "Dutch",
+      "French",
+      "Russian",
+      "Polish"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dutch.",
+    "id": "art_084"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which one of these colors are not featured in Mondrian's Broadway Boogie-Woogie?",
+    "options": [
+      "Green",
+      "Blue",
+      "Yellow",
+      "Red"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Green.",
+    "id": "art_085"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted the Sistine Chapel?",
+    "options": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Raphael"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Michelangelo.",
+    "id": "art_086"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Painter Piet Mondrian (1872 - 1944) was a part of what movement?",
+    "options": [
+      "Neoplasticism",
+      "Precisionism",
+      "Cubism",
+      "Impressionism"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Neoplasticism.",
+    "id": "art_087"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What nationality was the surrealist painter Salvador Dali?",
+    "options": [
+      "Spanish",
+      "Italian",
+      "French",
+      "Portuguese"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Spanish.",
+    "id": "art_088"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted The Starry Night?",
+    "options": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Michelangelo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vincent van Gogh.",
+    "id": "art_089"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Albrecht Dürer's birthplace and place of death were in...",
+    "options": [
+      "Nürnberg",
+      "Augsburg",
+      "Bamberg",
+      "Berlin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nürnberg.",
+    "id": "art_090"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Who painted \"American Gothic\"?",
+    "options": [
+      "Grant Wood",
+      "Anita Malfatti",
+      "Pablo Picasso",
+      "Marc Chagall"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Grant Wood.",
+    "id": "art_091"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who painted the painting \"Nighthawks\"?",
+    "options": [
+      "Edward Hopper",
+      "Johannes Vermeer",
+      "Vincent van Gogh",
+      "Salvador Dali"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Edward Hopper.",
+    "id": "art_092"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What year was the Mona Lisa finished?",
+    "options": [
+      "1504",
+      "1487",
+      "1523",
+      "1511"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1504.",
+    "id": "art_093"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which artist is famous for cutting off his ear?",
+    "options": [
+      "Vincent van Gogh",
+      "Salvador Dali",
+      "Rembrandt",
+      "Michelangelo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vincent van Gogh.",
+    "id": "art_094"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In \"Last Supper\" by Leonardo Da Vinci, what two colors were the robes worn by Jesus?",
+    "options": [
+      "Red and Blue",
+      "Red and White",
+      "Red and Yellow",
+      "Red and Black"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Red and Blue.",
+    "id": "art_095"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which time signature is commonly known as “Cut Time?”",
+    "options": [
+      "2/2",
+      "4/4",
+      "6/8",
+      "3/4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2/2.",
+    "id": "art_096"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which artist’s studio was known as 'The Factory'?",
+    "options": [
+      "Andy Warhol",
+      "Roy Lichtenstein",
+      "David Hockney",
+      "Peter Blake"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Andy Warhol.",
+    "id": "art_097"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "How many paint and pastel versions of \"The Scream\" is Norwegian painter Edvard Munch believed to have produced?",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 4.",
+    "id": "art_098"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "The painting \"The Starry Night\" by Vincent van Gogh was part of which art movement?",
+    "options": [
+      "Post-Impressionism",
+      "Romanticism",
+      "Neoclassical",
+      "Impressionism"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Post-Impressionism.",
+    "id": "art_099"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which of these are the name of a famous marker brand?",
+    "options": [
+      "Copic",
+      "Dopix",
+      "Cofix",
+      "Marx"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Copic.",
+    "id": "art_100"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted \"The Starry Night\"?",
+    "options": [
+      "Vincent van Gogh",
+      "Edvard Munch",
+      "Pablo Picasso",
+      "Claude Monet"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vincent van Gogh.",
+    "id": "art_101"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which great Italian Renaissance artist painted the famous portrait of the Mona Lisa?",
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo Buonarroti",
+      "Raphael",
+      "Sandro Botticelli"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leonardo painted the portrait of Lisa Gherardini (La Gioconda) in the early 16th century.",
+    "id": "art_102"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted the famous masterpiece 'The Starry Night' (1889) while staying in a hospital in France?",
+    "options": [
+      "Vincent van Gogh",
+      "Claude Monet",
+      "Pablo Picasso",
+      "Paul Gauguin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Van Gogh painted 'The Starry Night' from memory, showing the view from his asylum room.",
+    "id": "art_103"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which French engineer designed the iconic iron lattice tower in Paris for the 1889 World's Fair?",
+    "options": [
+      "Gustave Eiffel",
+      "Charles Garnier",
+      "Le Corbusier",
+      "Jean Nouvel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gustave Eiffel directed the construction of the tower, which was originally planned as temporary.",
+    "id": "art_104"
+  },
+  {
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which three colors in color theory are called primary colors because they cannot be made by mixing other colors?",
+    "options": [
+      "Red, blue, yellow",
+      "Red, green, blue",
+      "Green, purple, orange",
+      "Black, white, gray"
+    ],
+    "correctIndex": 0,
+    "explanation": "In classical paint mixing theory, all other colors are derived from red, yellow, and blue.",
+    "id": "art_105"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In which country did the 'Impressionism' art movement originate during the late 19th century?",
+    "options": [
+      "France",
+      "Italy",
+      "Netherlands",
+      "Germany"
+    ],
+    "correctIndex": 0,
+    "explanation": "Impressionism began in France with exhibitions by Claude Monet, Edgar Degas, and Renoir.",
+    "id": "art_106"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who painted the monumental anti-war canvas 'Guernica' (1937) depicting the bombing of the Spanish city?",
+    "options": [
+      "Pablo Picasso",
+      "Salvador Dali",
+      "Henri Matisse",
+      "Joan Miro"
+    ],
+    "correctIndex": 0,
+    "explanation": "Picasso expressed the horror of war and human suffering using elements of cubism.",
+    "id": "art_107"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which classical architectural order characterizes the columns of the Parthenon in Athens?",
+    "options": [
+      "Doric",
+      "Ionic",
+      "Corinthian",
+      "Tuscan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Parthenon is the premier temple of the Doric order in classical Greek architecture.",
+    "id": "art_108"
+  },
+  {
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which Renaissance master sculpted the famous marble statue of David in Florence?",
+    "options": [
+      "Michelangelo Buonarroti",
+      "Donatello",
+      "Gian Lorenzo Bernini",
+      "Andrea del Verrocchio"
+    ],
+    "correctIndex": 0,
+    "explanation": "Michelangelo sculpted David from a single block of marble between the ages of 26 and 29.",
+    "id": "art_109"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Who painted the ceiling of the Sistine Chapel, featuring stories from Genesis including 'The Creation of Adam'?",
+    "options": [
+      "Michelangelo Buonarroti",
+      "Leonardo da Vinci",
+      "Raphael",
+      "Giotto di Bondone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Michelangelo painted the chapel ceiling from 1508 to 1512 on commission from Pope Julius II.",
+    "id": "art_110"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Who founded the famous German school of design and architecture Bauhaus in Weimar in 1919?",
+    "options": [
+      "Walter Gropius",
+      "Ludwig Mies van der Rohe",
+      "Le Corbusier",
+      "Peter Behrens"
+    ],
+    "correctIndex": 0,
+    "explanation": "Walter Gropius wanted to unite art, craft, and industrial technology.",
+    "id": "art_111"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which French painter developed the 'Pointillism' technique (applying dots of pure color onto canvas)?",
+    "options": [
+      "Georges Seurat",
+      "Paul Signac",
+      "Henri de Toulouse-Lautrec",
+      "Camille Pissarro"
+    ],
+    "correctIndex": 0,
+    "explanation": "Georges Seurat applied scientific color theories in his masterwork 'A Sunday Afternoon on the Island of La Grande Jatte'.",
+    "id": "art_112"
+  },
+  {
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which surrealist masterpiece by Salvador Dali (1931) features melting 'soft watches'?",
+    "options": [
+      "The Persistence of Memory",
+      "Dream Caused by the Flight of a Bee...",
+      "The Great Masturbator",
+      "Geopoliticus Child Watch"
+    ],
+    "correctIndex": 0,
+    "explanation": "The original Spanish title of this painting is 'La persistencia de la memoria'.",
+    "id": "art_113"
   }
 ]

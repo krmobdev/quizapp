@@ -3,7 +3,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "In which year did World War II begin?",
-    "options": ["1939", "1914", "1941", "1945"],
+    "options": [
+      "1939",
+      "1914",
+      "1941",
+      "1945"
+    ],
     "correctIndex": 0,
     "explanation": "World War II began on 1 September 1939 with Germany's invasion of Poland.",
     "id": "hist_001"
@@ -12,7 +17,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who was the first human in space?",
-    "options": ["Yuri Gagarin", "Neil Armstrong", "Gherman Titov", "Alexei Leonov"],
+    "options": [
+      "Yuri Gagarin",
+      "Neil Armstrong",
+      "Gherman Titov",
+      "Alexei Leonov"
+    ],
     "correctIndex": 0,
     "explanation": "Yuri Gagarin made the first crewed spaceflight on 12 April 1961.",
     "id": "hist_002"
@@ -21,7 +31,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "In which year did humans first land on the Moon?",
-    "options": ["1969", "1961", "1957", "1975"],
+    "options": [
+      "1969",
+      "1961",
+      "1957",
+      "1975"
+    ],
     "correctIndex": 0,
     "explanation": "The Apollo 11 crew landed on the Moon on 20 July 1969.",
     "id": "hist_003"
@@ -30,7 +45,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Which ancient civilization built the pyramids of Giza?",
-    "options": ["Ancient Egypt", "Ancient Greece", "Ancient Rome", "Persia"],
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Persia"
+    ],
     "correctIndex": 0,
     "explanation": "The Giza pyramids were built by the ancient Egyptians around 2500 BC.",
     "id": "hist_004"
@@ -39,7 +59,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who was the first President of the United States?",
-    "options": ["George Washington", "Abraham Lincoln", "Thomas Jefferson", "John Adams"],
+    "options": [
+      "George Washington",
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "John Adams"
+    ],
     "correctIndex": 0,
     "explanation": "George Washington became the first U.S. president in 1789.",
     "id": "hist_005"
@@ -48,7 +73,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "In which year did the Soviet Union dissolve?",
-    "options": ["1991", "1985", "1993", "1989"],
+    "options": [
+      "1991",
+      "1985",
+      "1993",
+      "1989"
+    ],
     "correctIndex": 0,
     "explanation": "The Soviet Union officially ceased to exist in December 1991.",
     "id": "hist_006"
@@ -57,7 +87,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who led Nazi Germany during World War II?",
-    "options": ["Adolf Hitler", "Benito Mussolini", "Francisco Franco", "Paul von Hindenburg"],
+    "options": [
+      "Adolf Hitler",
+      "Benito Mussolini",
+      "Francisco Franco",
+      "Paul von Hindenburg"
+    ],
     "correctIndex": 0,
     "explanation": "Adolf Hitler was the leader of Nazi Germany.",
     "id": "hist_007"
@@ -66,7 +101,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Which passenger liner sank in 1912 after hitting an iceberg?",
-    "options": ["Titanic", "Lusitania", "Britannic", "Olympic"],
+    "options": [
+      "Titanic",
+      "Lusitania",
+      "Britannic",
+      "Olympic"
+    ],
     "correctIndex": 0,
     "explanation": "The Titanic sank on the night of 15 April 1912 on its maiden voyage.",
     "id": "hist_008"
@@ -75,7 +115,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "In which city is the ancient Colosseum located?",
-    "options": ["Rome", "Athens", "Istanbul", "Alexandria"],
+    "options": [
+      "Rome",
+      "Athens",
+      "Istanbul",
+      "Alexandria"
+    ],
     "correctIndex": 0,
     "explanation": "The Colosseum is an amphitheatre in Rome, built in the 1st century AD.",
     "id": "hist_009"
@@ -84,7 +129,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who was the founder of Marxism and author of 'Das Kapital'?",
-    "options": ["Karl Marx", "Vladimir Lenin", "Friedrich Engels", "Georg Hegel"],
+    "options": [
+      "Karl Marx",
+      "Vladimir Lenin",
+      "Friedrich Engels",
+      "Georg Hegel"
+    ],
     "correctIndex": 0,
     "explanation": "Karl Marx wrote 'Das Kapital' and, with Engels, developed Marxism.",
     "id": "hist_010"
@@ -93,7 +143,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Which country did Queen Cleopatra rule?",
-    "options": ["Egypt", "Rome", "Greece", "Carthage"],
+    "options": [
+      "Egypt",
+      "Rome",
+      "Greece",
+      "Carthage"
+    ],
     "correctIndex": 0,
     "explanation": "Cleopatra VII was the last ruler of Hellenistic Egypt.",
     "id": "hist_011"
@@ -102,7 +157,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "In which year did World War I begin?",
-    "options": ["1914", "1918", "1905", "1939"],
+    "options": [
+      "1914",
+      "1918",
+      "1905",
+      "1939"
+    ],
     "correctIndex": 0,
     "explanation": "World War I began in 1914 and lasted until 1918.",
     "id": "hist_012"
@@ -111,7 +171,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who led the October Revolution of 1917 in Russia?",
-    "options": ["Vladimir Lenin", "Joseph Stalin", "Alexander Kerensky", "Nicholas II"],
+    "options": [
+      "Vladimir Lenin",
+      "Joseph Stalin",
+      "Alexander Kerensky",
+      "Nicholas II"
+    ],
     "correctIndex": 0,
     "explanation": "The Bolsheviks, led by Lenin, took power in the October Revolution of 1917.",
     "id": "hist_013"
@@ -120,7 +185,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "What was the capital of the Byzantine Empire called?",
-    "options": ["Constantinople", "Rome", "Athens", "Antioch"],
+    "options": [
+      "Constantinople",
+      "Rome",
+      "Athens",
+      "Antioch"
+    ],
     "correctIndex": 0,
     "explanation": "The capital of Byzantium was Constantinople.",
     "id": "hist_014"
@@ -129,7 +199,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who reached the Americas in 1492 by sailing west?",
-    "options": ["Christopher Columbus", "Ferdinand Magellan", "Vasco da Gama", "Amerigo Vespucci"],
+    "options": [
+      "Christopher Columbus",
+      "Ferdinand Magellan",
+      "Vasco da Gama",
+      "Amerigo Vespucci"
+    ],
     "correctIndex": 0,
     "explanation": "Christopher Columbus's expedition reached the Americas in 1492.",
     "id": "hist_015"
@@ -138,7 +213,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "On which continent did the civilization of Ancient Egypt arise?",
-    "options": ["Africa", "Asia", "Europe", "South America"],
+    "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
+    ],
     "correctIndex": 0,
     "explanation": "Ancient Egypt lay in north-eastern Africa along the Nile.",
     "id": "hist_016"
@@ -147,7 +227,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who became the first Emperor of the French in 1804?",
-    "options": ["Napoleon Bonaparte", "Louis XIV", "Charlemagne", "Charles de Gaulle"],
+    "options": [
+      "Napoleon Bonaparte",
+      "Louis XIV",
+      "Charlemagne",
+      "Charles de Gaulle"
+    ],
     "correctIndex": 0,
     "explanation": "Napoleon Bonaparte crowned himself Emperor of the French in 1804.",
     "id": "hist_017"
@@ -156,7 +241,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who was the first woman in space?",
-    "options": ["Valentina Tereshkova", "Svetlana Savitskaya", "Sally Ride", "Yelena Kondakova"],
+    "options": [
+      "Valentina Tereshkova",
+      "Svetlana Savitskaya",
+      "Sally Ride",
+      "Yelena Kondakova"
+    ],
     "correctIndex": 0,
     "explanation": "Valentina Tereshkova flew into space in 1963.",
     "id": "hist_018"
@@ -165,7 +255,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Which wall divided Germany's main city until 1989?",
-    "options": ["The Berlin Wall", "The Great Wall", "Hadrian's Wall", "The Western Wall"],
+    "options": [
+      "The Berlin Wall",
+      "The Great Wall",
+      "Hadrian's Wall",
+      "The Western Wall"
+    ],
     "correctIndex": 0,
     "explanation": "The Berlin Wall divided the city from 1961 to 1989.",
     "id": "hist_019"
@@ -174,7 +269,12 @@
     "category": "history",
     "difficulty": "EASY",
     "text": "Who was the last Russian emperor?",
-    "options": ["Nicholas II", "Alexander III", "Peter I", "Alexander II"],
+    "options": [
+      "Nicholas II",
+      "Alexander III",
+      "Peter I",
+      "Alexander II"
+    ],
     "correctIndex": 0,
     "explanation": "Nicholas II abdicated in 1917, the last Russian emperor.",
     "id": "hist_020"
@@ -183,7 +283,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "In which year was the Battle of Kulikovo?",
-    "options": ["1380", "1240", "1480", "1242"],
+    "options": [
+      "1380",
+      "1240",
+      "1480",
+      "1242"
+    ],
     "correctIndex": 0,
     "explanation": "The Battle of Kulikovo between Dmitry Donskoy and Mamai took place in 1380.",
     "id": "hist_021"
@@ -192,7 +297,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which prince converted Kievan Rus to Christianity in 988?",
-    "options": ["Vladimir the Great", "Yaroslav the Wise", "Oleg the Wise", "Svyatoslav I"],
+    "options": [
+      "Vladimir the Great",
+      "Yaroslav the Wise",
+      "Oleg the Wise",
+      "Svyatoslav I"
+    ],
     "correctIndex": 0,
     "explanation": "The Christianization of Rus took place under Prince Vladimir in 988.",
     "id": "hist_022"
@@ -201,7 +311,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which battle is regarded as the turning point on the Eastern Front of WWII?",
-    "options": ["The Battle of Stalingrad", "The Battle of Moscow", "The Berlin operation", "The Brusilov Offensive"],
+    "options": [
+      "The Battle of Stalingrad",
+      "The Battle of Moscow",
+      "The Berlin operation",
+      "The Brusilov Offensive"
+    ],
     "correctIndex": 0,
     "explanation": "The Battle of Stalingrad (1942–1943) was the turning point of the war in the East.",
     "id": "hist_023"
@@ -210,7 +325,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "In which year was the U.S. Declaration of Independence adopted?",
-    "options": ["1776", "1789", "1783", "1812"],
+    "options": [
+      "1776",
+      "1789",
+      "1783",
+      "1812"
+    ],
     "correctIndex": 0,
     "explanation": "The Declaration of Independence was adopted on 4 July 1776.",
     "id": "hist_024"
@@ -219,7 +339,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which revolution began in France in 1789?",
-    "options": ["The French Revolution", "The July Revolution", "The February Revolution", "The Paris Commune"],
+    "options": [
+      "The French Revolution",
+      "The July Revolution",
+      "The February Revolution",
+      "The Paris Commune"
+    ],
     "correctIndex": 0,
     "explanation": "The French Revolution began in 1789 with the storming of the Bastille.",
     "id": "hist_025"
@@ -228,7 +353,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Who was the first ruler to be crowned Tsar of Russia?",
-    "options": ["Ivan the Terrible", "Peter I", "Boris Godunov", "Ivan III"],
+    "options": [
+      "Ivan the Terrible",
+      "Peter I",
+      "Boris Godunov",
+      "Ivan III"
+    ],
     "correctIndex": 0,
     "explanation": "Ivan IV (the Terrible) was crowned Tsar in 1547, the first Russian tsar.",
     "id": "hist_026"
@@ -237,7 +367,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "In which year did the Western Roman Empire fall?",
-    "options": ["476", "410", "395", "330"],
+    "options": [
+      "476",
+      "410",
+      "395",
+      "330"
+    ],
     "correctIndex": 0,
     "explanation": "The Western Roman Empire fell in 476 when Romulus Augustulus was deposed.",
     "id": "hist_027"
@@ -246,7 +381,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which event marked the start of the German–Soviet war (the 'Great Patriotic War')?",
-    "options": ["Germany's invasion of the USSR on 22 June 1941", "The Molotov–Ribbentrop Pact", "The Siege of Leningrad", "The Battle of Berlin"],
+    "options": [
+      "Germany's invasion of the USSR on 22 June 1941",
+      "The Molotov–Ribbentrop Pact",
+      "The Siege of Leningrad",
+      "The Battle of Berlin"
+    ],
     "correctIndex": 0,
     "explanation": "It began on 22 June 1941 with Germany's invasion of the USSR.",
     "id": "hist_028"
@@ -255,7 +395,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Who was the British Prime Minister during World War II?",
-    "options": ["Winston Churchill", "Neville Chamberlain", "Clement Attlee", "Anthony Eden"],
+    "options": [
+      "Winston Churchill",
+      "Neville Chamberlain",
+      "Clement Attlee",
+      "Anthony Eden"
+    ],
     "correctIndex": 0,
     "explanation": "Winston Churchill led the British government from 1940 to 1945.",
     "id": "hist_029"
@@ -264,7 +409,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "What was Mikhail Gorbachev's policy of reform in the late 1980s called?",
-    "options": ["Perestroika", "The Thaw", "The NEP", "Collectivization"],
+    "options": [
+      "Perestroika",
+      "The Thaw",
+      "The NEP",
+      "Collectivization"
+    ],
     "correctIndex": 0,
     "explanation": "Perestroika was the reform programme launched by Gorbachev in 1985.",
     "id": "hist_030"
@@ -273,7 +423,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which dynasty ruled Russia from 1613 to 1917?",
-    "options": ["The Romanovs", "The Rurikids", "The Godunovs", "The Shuiskys"],
+    "options": [
+      "The Romanovs",
+      "The Rurikids",
+      "The Godunovs",
+      "The Shuiskys"
+    ],
     "correctIndex": 0,
     "explanation": "The Romanov dynasty ruled Russia for over 300 years, from 1613 to 1917.",
     "id": "hist_031"
@@ -282,7 +437,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "To which historical era does Leonardo da Vinci belong?",
-    "options": ["The Renaissance", "Antiquity", "The Early Middle Ages", "The Enlightenment"],
+    "options": [
+      "The Renaissance",
+      "Antiquity",
+      "The Early Middle Ages",
+      "The Enlightenment"
+    ],
     "correctIndex": 0,
     "explanation": "Leonardo da Vinci was one of the greatest masters of the Renaissance.",
     "id": "hist_032"
@@ -291,7 +451,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Who led the French invasion of Russia in 1812?",
-    "options": ["Napoleon Bonaparte", "Otto von Bismarck", "Charles XII", "Louis XVI"],
+    "options": [
+      "Napoleon Bonaparte",
+      "Otto von Bismarck",
+      "Charles XII",
+      "Louis XVI"
+    ],
     "correctIndex": 0,
     "explanation": "The Patriotic War of 1812 was fought against Napoleon's army.",
     "id": "hist_033"
@@ -300,7 +465,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which Roman city was destroyed by the eruption of Vesuvius in AD 79?",
-    "options": ["Pompeii", "Ostia", "Capua", "Ravenna"],
+    "options": [
+      "Pompeii",
+      "Ostia",
+      "Capua",
+      "Ravenna"
+    ],
     "correctIndex": 0,
     "explanation": "The AD 79 eruption of Vesuvius buried Pompeii and Herculaneum.",
     "id": "hist_034"
@@ -309,7 +479,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Who was the first President of Russia?",
-    "options": ["Boris Yeltsin", "Mikhail Gorbachev", "Vladimir Putin", "Dmitry Medvedev"],
+    "options": [
+      "Boris Yeltsin",
+      "Mikhail Gorbachev",
+      "Vladimir Putin",
+      "Dmitry Medvedev"
+    ],
     "correctIndex": 0,
     "explanation": "Boris Yeltsin was elected the first President of Russia in 1991.",
     "id": "hist_035"
@@ -318,7 +493,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "In which year did the American Civil War begin?",
-    "options": ["1861", "1776", "1812", "1865"],
+    "options": [
+      "1861",
+      "1776",
+      "1812",
+      "1865"
+    ],
     "correctIndex": 0,
     "explanation": "The American Civil War lasted from 1861 to 1865.",
     "id": "hist_036"
@@ -327,7 +507,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Who unified Germany in 1871 through a policy of 'blood and iron'?",
-    "options": ["Otto von Bismarck", "Wilhelm II", "Klemens von Metternich", "Helmuth von Moltke"],
+    "options": [
+      "Otto von Bismarck",
+      "Wilhelm II",
+      "Klemens von Metternich",
+      "Helmuth von Moltke"
+    ],
     "correctIndex": 0,
     "explanation": "Chancellor Otto von Bismarck united the German states into one empire in 1871.",
     "id": "hist_037"
@@ -336,7 +521,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which peace treaty formally ended World War I?",
-    "options": ["The Treaty of Versailles", "The Peace of Westphalia", "The Treaty of Tilsit", "The Treaty of Brest-Litovsk"],
+    "options": [
+      "The Treaty of Versailles",
+      "The Peace of Westphalia",
+      "The Treaty of Tilsit",
+      "The Treaty of Brest-Litovsk"
+    ],
     "correctIndex": 0,
     "explanation": "The Treaty of Versailles in 1919 concluded World War I.",
     "id": "hist_038"
@@ -345,7 +535,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Who commanded the assault on Berlin in 1945 as head of the 1st Belorussian Front?",
-    "options": ["Georgy Zhukov", "Konstantin Rokossovsky", "Ivan Konev", "Semyon Budyonny"],
+    "options": [
+      "Georgy Zhukov",
+      "Konstantin Rokossovsky",
+      "Ivan Konev",
+      "Semyon Budyonny"
+    ],
     "correctIndex": 0,
     "explanation": "The Berlin operation was led by Marshal Georgy Zhukov.",
     "id": "hist_039"
@@ -354,7 +549,12 @@
     "category": "history",
     "difficulty": "MEDIUM",
     "text": "Which ancient South American civilization built Machu Picchu?",
-    "options": ["The Inca", "The Maya", "The Aztecs", "The Olmecs"],
+    "options": [
+      "The Inca",
+      "The Maya",
+      "The Aztecs",
+      "The Olmecs"
+    ],
     "correctIndex": 0,
     "explanation": "Machu Picchu was built by the Inca Empire in the 15th century.",
     "id": "hist_040"
@@ -363,7 +563,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "In which year was the Battle of Poltava?",
-    "options": ["1709", "1721", "1700", "1714"],
+    "options": [
+      "1709",
+      "1721",
+      "1700",
+      "1714"
+    ],
     "correctIndex": 0,
     "explanation": "The Battle of Poltava, Peter I's defeat of the Swedes, took place in 1709.",
     "id": "hist_041"
@@ -372,7 +577,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which 1215 document limited the power of the English king?",
-    "options": ["Magna Carta", "The Bill of Rights", "The Habeas Corpus Act", "The Act of Supremacy"],
+    "options": [
+      "Magna Carta",
+      "The Bill of Rights",
+      "The Habeas Corpus Act",
+      "The Act of Supremacy"
+    ],
     "correctIndex": 0,
     "explanation": "Magna Carta was sealed by King John in 1215.",
     "id": "hist_042"
@@ -381,7 +591,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Who set out the heliocentric system of the world in a 1543 work?",
-    "options": ["Nicolaus Copernicus", "Galileo Galilei", "Johannes Kepler", "Tycho Brahe"],
+    "options": [
+      "Nicolaus Copernicus",
+      "Galileo Galilei",
+      "Johannes Kepler",
+      "Tycho Brahe"
+    ],
     "correctIndex": 0,
     "explanation": "Copernicus published his heliocentric model in 1543, the year of his death.",
     "id": "hist_043"
@@ -390,7 +605,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "In which year did the Decembrist revolt take place?",
-    "options": ["1825", "1812", "1861", "1905"],
+    "options": [
+      "1825",
+      "1812",
+      "1861",
+      "1905"
+    ],
     "correctIndex": 0,
     "explanation": "The Decembrist revolt on Senate Square occurred on 14 December 1825.",
     "id": "hist_044"
@@ -399,7 +619,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which battle of 1066 led to the Norman conquest of England?",
-    "options": ["The Battle of Hastings", "The Battle of Agincourt", "The Battle of Crécy", "The Battle of Bosworth"],
+    "options": [
+      "The Battle of Hastings",
+      "The Battle of Agincourt",
+      "The Battle of Crécy",
+      "The Battle of Bosworth"
+    ],
     "correctIndex": 0,
     "explanation": "At Hastings in 1066, William the Conqueror defeated the Anglo-Saxons.",
     "id": "hist_045"
@@ -408,7 +633,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Who was the last pharaoh of Hellenistic Egypt before Roman rule?",
-    "options": ["Cleopatra VII", "Tutankhamun", "Ramesses II", "Ptolemy I"],
+    "options": [
+      "Cleopatra VII",
+      "Tutankhamun",
+      "Ramesses II",
+      "Ptolemy I"
+    ],
     "correctIndex": 0,
     "explanation": "Cleopatra VII was the last ruler of the Ptolemaic dynasty.",
     "id": "hist_046"
@@ -417,7 +647,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "In which year was serfdom abolished in Russia?",
-    "options": ["1861", "1864", "1855", "1881"],
+    "options": [
+      "1861",
+      "1864",
+      "1855",
+      "1881"
+    ],
     "correctIndex": 0,
     "explanation": "Serfdom was abolished by Alexander II's manifesto in 1861.",
     "id": "hist_047"
@@ -426,7 +661,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "What is the period of mass executions in the French Revolution, linked to Robespierre, called?",
-    "options": ["The Reign of Terror", "Thermidor", "The Directory", "The Restoration"],
+    "options": [
+      "The Reign of Terror",
+      "Thermidor",
+      "The Directory",
+      "The Restoration"
+    ],
     "correctIndex": 0,
     "explanation": "The Reign of Terror of 1793–1794 was led by Maximilien Robespierre.",
     "id": "hist_048"
@@ -435,7 +675,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which battle of 480 BC made 300 Spartans famous?",
-    "options": ["The Battle of Thermopylae", "The Battle of Marathon", "The Battle of Salamis", "The Battle of Plataea"],
+    "options": [
+      "The Battle of Thermopylae",
+      "The Battle of Marathon",
+      "The Battle of Salamis",
+      "The Battle of Plataea"
+    ],
     "correctIndex": 0,
     "explanation": "At Thermopylae, King Leonidas and his Spartans held off the Persians in 480 BC.",
     "id": "hist_049"
@@ -444,7 +689,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Who started the Reformation by posting 95 theses in 1517?",
-    "options": ["Martin Luther", "John Calvin", "Henry VIII", "Erasmus of Rotterdam"],
+    "options": [
+      "Martin Luther",
+      "John Calvin",
+      "Henry VIII",
+      "Erasmus of Rotterdam"
+    ],
     "correctIndex": 0,
     "explanation": "Martin Luther posted his 95 theses in Wittenberg in 1517.",
     "id": "hist_050"
@@ -453,7 +703,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "In which year did Napoleon suffer his final defeat at Waterloo?",
-    "options": ["1815", "1812", "1805", "1821"],
+    "options": [
+      "1815",
+      "1812",
+      "1805",
+      "1821"
+    ],
     "correctIndex": 0,
     "explanation": "The Battle of Waterloo took place in 1815 and ended Napoleon's era.",
     "id": "hist_051"
@@ -462,7 +717,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which empire fell with the capture of Constantinople in 1453?",
-    "options": ["The Byzantine Empire", "The Ottoman Empire", "The Bulgarian Empire", "The Latin Empire"],
+    "options": [
+      "The Byzantine Empire",
+      "The Ottoman Empire",
+      "The Bulgarian Empire",
+      "The Latin Empire"
+    ],
     "correctIndex": 0,
     "explanation": "In 1453 the Ottomans took Constantinople, ending the Byzantine Empire.",
     "id": "hist_052"
@@ -471,7 +731,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Who was the first tsar of the Romanov dynasty?",
-    "options": ["Michael I", "Alexis I", "Peter I", "Feodor III"],
+    "options": [
+      "Michael I",
+      "Alexis I",
+      "Peter I",
+      "Feodor III"
+    ],
     "correctIndex": 0,
     "explanation": "Michael Romanov was elected tsar in 1613.",
     "id": "hist_053"
@@ -480,7 +745,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which 1648 peace ended the Thirty Years' War?",
-    "options": ["The Peace of Westphalia", "The Peace of Augsburg", "The Treaty of Utrecht", "The Treaty of Paris"],
+    "options": [
+      "The Peace of Westphalia",
+      "The Peace of Augsburg",
+      "The Treaty of Utrecht",
+      "The Treaty of Paris"
+    ],
     "correctIndex": 0,
     "explanation": "The Peace of Westphalia in 1648 ended the Thirty Years' War.",
     "id": "hist_054"
@@ -489,7 +759,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "In which year did the storming of the Bastille take place?",
-    "options": ["1789", "1799", "1804", "1776"],
+    "options": [
+      "1789",
+      "1799",
+      "1804",
+      "1776"
+    ],
     "correctIndex": 0,
     "explanation": "The Bastille fell on 14 July 1789, the symbolic start of the French Revolution.",
     "id": "hist_055"
@@ -498,7 +773,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which Mongol ruler founded the largest empire of the 13th century?",
-    "options": ["Genghis Khan", "Batu Khan", "Tamerlane", "Kublai Khan"],
+    "options": [
+      "Genghis Khan",
+      "Batu Khan",
+      "Tamerlane",
+      "Kublai Khan"
+    ],
     "correctIndex": 0,
     "explanation": "Genghis Khan united the Mongol tribes and built a vast empire in the early 13th century.",
     "id": "hist_056"
@@ -507,7 +787,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which Russian prince defeated the Swedes in the Battle of the Neva in 1240?",
-    "options": ["Alexander Nevsky", "Dmitry Donskoy", "Ivan Kalita", "Yuri Dolgorukiy"],
+    "options": [
+      "Alexander Nevsky",
+      "Dmitry Donskoy",
+      "Ivan Kalita",
+      "Yuri Dolgorukiy"
+    ],
     "correctIndex": 0,
     "explanation": "For his victory on the Neva in 1240, Prince Alexander earned the name Nevsky.",
     "id": "hist_057"
@@ -516,7 +801,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "In which year was the United Nations founded?",
-    "options": ["1945", "1919", "1949", "1955"],
+    "options": [
+      "1945",
+      "1919",
+      "1949",
+      "1955"
+    ],
     "correctIndex": 0,
     "explanation": "The UN was founded in 1945 after World War II.",
     "id": "hist_058"
@@ -525,7 +815,12 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Which general led the Carthaginians and crossed the Alps with elephants in the Second Punic War?",
-    "options": ["Hannibal", "Scipio", "Julius Caesar", "Pompey"],
+    "options": [
+      "Hannibal",
+      "Scipio",
+      "Julius Caesar",
+      "Pompey"
+    ],
     "correctIndex": 0,
     "explanation": "Hannibal Barca crossed the Alps and invaded Italy in 218 BC.",
     "id": "hist_059"
@@ -534,9 +829,1022 @@
     "category": "history",
     "difficulty": "HARD",
     "text": "Who discovered the sea route to India around Africa in 1498?",
-    "options": ["Vasco da Gama", "Ferdinand Magellan", "Christopher Columbus", "Francis Drake"],
+    "options": [
+      "Vasco da Gama",
+      "Ferdinand Magellan",
+      "Christopher Columbus",
+      "Francis Drake"
+    ],
     "correctIndex": 0,
     "explanation": "The Portuguese explorer Vasco da Gama reached India by sea around Africa in 1498.",
     "id": "hist_060"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What year was Canada founded in?",
+    "options": [
+      "1867",
+      "1798",
+      "1859",
+      "1668"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1867.",
+    "id": "hist_061"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What year did the Battle of Agincourt take place?",
+    "options": [
+      "1415",
+      "1463",
+      "1401",
+      "1422"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1415.",
+    "id": "hist_062"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What was the real name of the Albanian national leader Skanderbeg?",
+    "options": [
+      "Gjergj Kastrioti",
+      "Diturak Zhulati",
+      "Iskander Bejko",
+      "Mirash Krasniki"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gjergj Kastrioti.",
+    "id": "hist_063"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What battle was the longest in World War I, lasting approximately 303 days?",
+    "options": [
+      "Battle of Verdun ",
+      "Battle of Passchendaele",
+      "Battle of Amiens",
+      "Battle of Stalingrad"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Battle of Verdun .",
+    "id": "hist_064"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?",
+    "options": [
+      "Aragon",
+      "Galicia",
+      "León",
+      "Navarre"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Aragon.",
+    "id": "hist_065"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "In the year 1900, what were the most popular first names given to boy and girl babies born in the United States?",
+    "options": [
+      "John and Mary",
+      "Joseph and Catherine",
+      "William and Elizabeth",
+      "George and Anne"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is John and Mary.",
+    "id": "hist_066"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What year did World War I begin?",
+    "options": [
+      "1914",
+      "1905",
+      "1919",
+      "1925"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1914.",
+    "id": "hist_067"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What year did the Boxing Day earthquake & tsunami occur in the Indian Ocean?",
+    "options": [
+      "2004",
+      "2006",
+      "2008",
+      "2002"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2004.",
+    "id": "hist_068"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "When did the United States formally declare war on Japan, entering World War II?",
+    "options": [
+      "December 8, 1941",
+      "June 6, 1944",
+      "June 22, 1941",
+      "September 1, 1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is December 8, 1941.",
+    "id": "hist_069"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "On what street did the 1666 Great Fire of London start?",
+    "options": [
+      "Pudding Lane",
+      "Baker Street",
+      "Houses of Parliament",
+      "St Paul's Cathedral"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pudding Lane.",
+    "id": "hist_070"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which Irish village in County Mayo built a tourism industry on the back of an alleged appearance by the Virgin Mary in 1879?",
+    "options": [
+      "Knock",
+      "Ballycastle",
+      "Swinford",
+      "Turlough"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Knock.",
+    "id": "hist_071"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which country had an \"Orange Revolution\" between 2004 and 2005?",
+    "options": [
+      "Ukraine",
+      "Belarus",
+      "Latvia",
+      "Lithuania"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ukraine.",
+    "id": "hist_072"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What was the aim of the \"Umbrella Revolution\" in Hong Kong in 2014?",
+    "options": [
+      "Genuine universal suffrage",
+      "Gaining Independence",
+      "Go back under British Rule",
+      "Lower taxes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Genuine universal suffrage.",
+    "id": "hist_073"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which Las Vegas casino was originally constructed and operated by mobster Bugsy Siegel?",
+    "options": [
+      "The Flamingo",
+      "The MGM Grand",
+      "The Sands",
+      "The Sahara"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Flamingo.",
+    "id": "hist_074"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who was the first explorer to sail to North America?",
+    "options": [
+      "Leif Erikson",
+      "Christopher Columbus",
+      "Amerigo Vespucci",
+      "Ferdinand Magellan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Leif Erikson.",
+    "id": "hist_075"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Who was the last Roman emperor in the Year of Four Emperors (69 AD)?",
+    "options": [
+      "Vespasian",
+      "Vitellius",
+      "Otho",
+      "Galba"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vespasian.",
+    "id": "hist_076"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What is the historical name of Sri Lanka?",
+    "options": [
+      "Ceylon",
+      "Myanmar",
+      "Colombo",
+      "Badulla"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ceylon.",
+    "id": "hist_077"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Joseph Smith was the founder of what religion?",
+    "options": [
+      "Mormonism",
+      "Buddhism",
+      "Christianity",
+      "Hinduism"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mormonism.",
+    "id": "hist_078"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "On what day did Germany invade Poland?",
+    "options": [
+      "September 1, 1939",
+      "December 7, 1941",
+      "June 22, 1941",
+      "July 7, 1937"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is September 1, 1939.",
+    "id": "hist_079"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What number does the Roman numeral \"D\" stand for?",
+    "options": [
+      "500",
+      "100",
+      "1000",
+      "50"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 500.",
+    "id": "hist_080"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "These two countries held a commonwealth from the 16th to 18th century.",
+    "options": [
+      "Poland and Lithuania",
+      "Hutu and Rwanda",
+      "North Korea and South Korea",
+      "Bangladesh and Bhutan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Poland and Lithuania.",
+    "id": "hist_081"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "What was the first recorded object to ever reach space?",
+    "options": [
+      "Bumper-WAC",
+      "American Manhole Cover",
+      "Sputnik I ",
+      "Sputnik II"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bumper-WAC.",
+    "id": "hist_082"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "How many women joined the United States Armed Services during World War II?",
+    "options": [
+      "350,000",
+      "225,000",
+      "100,000",
+      "500,000"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 350,000.",
+    "id": "hist_083"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Pianist Frédéric Chopin was a composer of which musical era?",
+    "options": [
+      "Romantic",
+      "Classic",
+      "Baroque",
+      "Renaissance"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Romantic.",
+    "id": "hist_084"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "The Second Boer War in 1899 was fought where?",
+    "options": [
+      "South Africa",
+      "Argentina",
+      "Nepal",
+      "Bulgaria"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is South Africa.",
+    "id": "hist_085"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In what year was the M1911 pistol designed?",
+    "options": [
+      "1911",
+      "1907",
+      "1899",
+      "1917"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1911.",
+    "id": "hist_086"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
+    "options": [
+      "Chile",
+      "Peru",
+      "Brazil",
+      "Argentina"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Chile.",
+    "id": "hist_087"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What disease crippled President Franklin D. Roosevelt and led him to help the nation find a cure? ",
+    "options": [
+      "Polio",
+      "Cancer",
+      "Meningitis",
+      "HIV"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polio.",
+    "id": "hist_088"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In which year was Nelson Mandela released from prison",
+    "options": [
+      "1990",
+      "1994",
+      "1992",
+      "1980"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1990.",
+    "id": "hist_089"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "When did the French Revolution begin?",
+    "options": [
+      "1789",
+      "1823",
+      "1756",
+      "1799"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1789.",
+    "id": "hist_090"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "The Hagia Sophia was commissioned by which emperor of the Byzantine Empire?",
+    "options": [
+      "Justinian I",
+      "Constantine IV",
+      "Arcadius",
+      "Theodosius the Great"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Justinian I.",
+    "id": "hist_091"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which of these landmarks is not included in the original 'Seven Wonders of the Ancient World'?",
+    "options": [
+      "Great Wall of China",
+      "Great Pyramid of Giza",
+      "Colossus of Rhodes",
+      "Hanging Gardens of Babylon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Great Wall of China.",
+    "id": "hist_092"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Where and when was the first cardboard box made for industrial use?",
+    "options": [
+      "England, 1817",
+      "United States, 1817",
+      "England, 1917",
+      "United States, 1917"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is England, 1817.",
+    "id": "hist_093"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which Greek god was the god of the Sun?",
+    "options": [
+      "Helios",
+      "Zeus",
+      "Hades",
+      "Poseidon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Helios.",
+    "id": "hist_094"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "The catastrophic nuclear accident that occurred in Ukraine in 1986 occurred at which power plant?",
+    "options": [
+      "Chernobyl",
+      "Ignalina",
+      "Mayak",
+      "Kursk"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Chernobyl.",
+    "id": "hist_095"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In what year did the North American Video Game Crash occur?",
+    "options": [
+      "1983",
+      "1982",
+      "1993",
+      "1970"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1983.",
+    "id": "hist_096"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which of the following physicists did NOT work on the Manhattan project?",
+    "options": [
+      "Murray Gell-Mann",
+      "Richard Feynman",
+      "J. Robert Oppenheimer",
+      "John Von-Neumann"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Murray Gell-Mann.",
+    "id": "hist_097"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Who was the first president of Kenya?",
+    "options": [
+      "Jomo Kenyatta",
+      "Daniel Moi",
+      "Tom Mboya",
+      "Oginga Odinga"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jomo Kenyatta.",
+    "id": "hist_098"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "The Panama Canal was finished under the administration of which U.S. president?",
+    "options": [
+      "Woodrow Wilson",
+      "Franklin Delano Roosevelt",
+      "Herbert Hoover",
+      "Theodore Roosevelt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Woodrow Wilson.",
+    "id": "hist_099"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "How many times was Albert Einstein married in his lifetime?",
+    "options": [
+      "Twice",
+      "Five",
+      "Thrice",
+      "Once"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Twice.",
+    "id": "hist_100"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which infamous European traitor was known as \"the last person to enter Parliament with honest intentions\"?",
+    "options": [
+      "Guy Fawkes",
+      "Robert Catesby",
+      "Francis Tresham",
+      "Everard Digby"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Guy Fawkes.",
+    "id": "hist_101"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What was the name of the chemical that was dropped on Vietnam during the Vietnam war?",
+    "options": [
+      "Agent Orange",
+      "Phosgene",
+      "Mustard Gas",
+      "Hydrogen Cyanide"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Agent Orange.",
+    "id": "hist_102"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "One of the deadliest pandemics, the \"Spanish Flu\", killed off what percentage of the human world population at the time?",
+    "options": [
+      "3 to 6 percent",
+      "6 to 10 percent",
+      "1 to 3 percent",
+      "less than 1 percent"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 3 to 6 percent.",
+    "id": "hist_103"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "What is the oldest US state?",
+    "options": [
+      "Delaware",
+      "Rhode Island",
+      "Maine",
+      "Virginia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Delaware.",
+    "id": "hist_104"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "What was the official German currency until 2002?",
+    "options": [
+      "Mark",
+      "Frank",
+      "Pound sterling",
+      "Reichtoken"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mark.",
+    "id": "hist_105"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who invented the \"Flying Shuttle\" in 1738; one of the key developments in the industrialization of weaving?",
+    "options": [
+      "John Kay",
+      "James Hargreaves",
+      "Richard Arkwright",
+      "John Deere"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is John Kay.",
+    "id": "hist_106"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "The United States Army Air Corps became the United States Air Force on what date?",
+    "options": [
+      "September 18, 1947",
+      "December 14, 1946",
+      "October 27, 1945",
+      "November 08, 1944"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is September 18, 1947.",
+    "id": "hist_107"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Who is the creator of the soft drink, Dr. Pepper?",
+    "options": [
+      "Charles Alderton",
+      "James Wellington",
+      "Johnson Hinsin",
+      "Boris Heviltik"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Charles Alderton.",
+    "id": "hist_108"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "When did the Byzantine Empire collapse?",
+    "options": [
+      "1453",
+      "1299",
+      "1353",
+      "1498"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1453.",
+    "id": "hist_109"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "The \"Trail of Tears\" was a result of which United States President's Indian Removal Policy?",
+    "options": [
+      "Andrew Jackson",
+      "Harry S. Truman",
+      "Martin Van Buren",
+      "John Quincy Adams"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Andrew Jackson.",
+    "id": "hist_110"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Toussaint Louverture led a successful slave revolt in which country?",
+    "options": [
+      "Haiti",
+      "France",
+      "Cuba",
+      "United States"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Haiti.",
+    "id": "hist_111"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which of the following ancient peoples was NOT classified as Hellenic (Greek)?",
+    "options": [
+      "Illyrians",
+      "Dorians",
+      "Achaeans",
+      "Ionians"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Illyrians.",
+    "id": "hist_112"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
+    "options": [
+      "Nationalist Spain",
+      "Republican Spain",
+      "Popular Front",
+      "Papal State"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nationalist Spain.",
+    "id": "hist_113"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following battles is often considered as marking the beginning of the fall of the Western Roman Empire?",
+    "options": [
+      "Battle of Adrianople",
+      "Battle of Thessalonica",
+      "Battle of Pollentia",
+      "Battle of Constantinople"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Battle of Adrianople.",
+    "id": "hist_114"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": " What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947, and is still popularly used today?",
+    "options": [
+      "AK-47",
+      "RPK",
+      "M16",
+      "MG 42"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is AK-47.",
+    "id": "hist_115"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Who rode on horseback to warn the Minutemen that the British were coming during the U.S. Revolutionary War?",
+    "options": [
+      "Paul Revere",
+      "Thomas Paine",
+      "Henry Longfellow",
+      "Nathan Hale"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Paul Revere.",
+    "id": "hist_116"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "When did Norway get its constitution?",
+    "options": [
+      "1814",
+      "1932",
+      "1905",
+      "1854"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1814.",
+    "id": "hist_117"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "During the Wars of the Roses (1455 - 1487) which Englishman was dubbed \"the Kingmaker\"?",
+    "options": [
+      "Richard Neville",
+      "Richard III",
+      "Henry V",
+      "Thomas Warwick"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Richard Neville.",
+    "id": "hist_118"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which modern country is known as \"The Graveyard of Empires\"?",
+    "options": [
+      "Afghanistan",
+      "China",
+      "Iraq",
+      "Russia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Afghanistan.",
+    "id": "hist_119"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following years is commonly referred to as the \"Year Without a Summer\"?",
+    "options": [
+      "1816",
+      "1823",
+      "1813",
+      "1808"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1816.",
+    "id": "hist_120"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In which ancient country did Pharaoh Tutankhamun rule, whose tomb was discovered intact?",
+    "options": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Ancient Rome",
+      "Mesopotamia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tutankhamun's tomb was opened by Howard Carter in 1922 in the Valley of the Kings.",
+    "id": "hist_121"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which famous general and dictator of Ancient Rome was assassinated by conspirators led by Brutus in the Ides of March?",
+    "options": [
+      "Julius Caesar",
+      "Octavian Augustus",
+      "Nero",
+      "Spartacus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Julius Caesar was assassinated on March 15, 44 BC in the Senate.",
+    "id": "hist_122"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "Which great 15th-century invention by Johannes Gutenberg revolutionized the spread of knowledge?",
+    "options": [
+      "Printing press",
+      "Compass",
+      "Gunpowder",
+      "Telescope"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gutenberg invented movable metal type printing around 1440.",
+    "id": "hist_123"
+  },
+  {
+    "category": "history",
+    "difficulty": "EASY",
+    "text": "In which year did the storming of the Bastille occur, marking the start of the French Revolution?",
+    "options": [
+      "1789",
+      "1799",
+      "1804",
+      "1776"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Bastille was taken by French revolutionaries on July 14, 1789.",
+    "id": "hist_124"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which charter, signed by the English King John in 1215, limited the absolute power of the monarch?",
+    "options": [
+      "Magna Carta",
+      "Bill of Rights",
+      "Constitution",
+      "Peace of Westphalia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Magna Carta laid the foundations for English constitutional law and civil rights.",
+    "id": "hist_125"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which country is considered the birthplace of the Industrial Revolution, which started in the late 18th century?",
+    "options": [
+      "Great Britain",
+      "France",
+      "Germany",
+      "USA"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Industrial Revolution began in England due to steam engines and textile machinery.",
+    "id": "hist_126"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "In which famous 1815 battle did Napoleon Bonaparte suffer his final and crushing defeat?",
+    "options": [
+      "Battle of Waterloo",
+      "Battle of Austerlitz",
+      "Battle of Borodino",
+      "Battle of Leipzig"
+    ],
+    "correctIndex": 0,
+    "explanation": "The defeat at Waterloo led to Napoleon's final abdication and exile to St. Helena.",
+    "id": "hist_127"
+  },
+  {
+    "category": "history",
+    "difficulty": "MEDIUM",
+    "text": "Which peace treaty officially ended World War I in 1919?",
+    "options": [
+      "Treaty of Versailles",
+      "Treaty of Brest-Litovsk",
+      "Peace of Westphalia",
+      "Treaty of Paris"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Treaty of Versailles was signed on June 28, 1919 in the Hall of Mirrors of the Palace of Versailles.",
+    "id": "hist_128"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which ancient code of laws, carved on a basalt stele, was compiled by the King of Babylon around 1750 BC?",
+    "options": [
+      "Code of Hammurabi",
+      "Twelve Tables",
+      "Laws of Manu",
+      "Russkaya Pravda"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Code of Hammurabi contains 282 articles and utilizes the principle of talion ('an eye for an eye').",
+    "id": "hist_129"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which event in 1618 served as the direct trigger for the start of the devastating Thirty Years' War?",
+    "options": [
+      "Defenestration of Prague",
+      "St. Bartholomew's Day massacre",
+      "Storming of the Bastille",
+      "Calvinist revolt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Protestant nobles threw Catholic imperial representatives out of the windows of Prague Castle.",
+    "id": "hist_130"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which reform era in Japan (1868-1912) restored power to the Emperor and modernized the country?",
+    "options": [
+      "Meiji Restoration",
+      "Edo Period",
+      "Tokugawa Shogunate",
+      "Heian Period"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Meiji Restoration opened Japan to the world and converted it into an industrial empire.",
+    "id": "hist_131"
+  },
+  {
+    "category": "history",
+    "difficulty": "HARD",
+    "text": "Which stone slab, discovered in Egypt in 1799, allowed Jean-Francois Champollion to decipher Egyptian hieroglyphs?",
+    "options": [
+      "Rosetta Stone",
+      "Stele of Hammurabi",
+      "Palermo Stone",
+      "Mesha Stele"
+    ],
+    "correctIndex": 0,
+    "explanation": "The slab contains the same decree in three scripts: hieroglyphic, Demotic, and Ancient Greek.",
+    "id": "hist_132"
   }
 ]

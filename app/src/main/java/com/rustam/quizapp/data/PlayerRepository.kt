@@ -158,10 +158,10 @@ class PlayerRepository(
         day: LocalDate = LocalDate.now()
     ): QuizEvent? {
         val type = eventType ?: return null
-        val event = QuizEvents.eventFor(type, questionRepository.getCategories(), day) ?: return null
+        val completions = snapshot.completionsFor(type, day)
+        val event = QuizEvents.eventFor(type, questionRepository.getCategories(), completions, day) ?: return null
         if (event.category.id != categoryId) return null
         if (event.difficulty != difficulty) return null
-        val completions = snapshot.completionsFor(type, day)
         if (completions >= event.maxCompletions) return null
         return event
     }
@@ -224,22 +224,21 @@ class PlayerRepository(
     suspend fun upgradeStat(statName: String): Boolean {
         var upgraded = false
         dataStore.edit { prefs ->
-            val points = prefs[POINTS] ?: 0
-            if (points >= 50) {
-                val key = when (statName) {
-                    "strength" -> CHAR_STRENGTH
-                    "intelligence" -> CHAR_INTELLIGENCE
-                    "agility" -> CHAR_AGILITY
-                    "luck" -> CHAR_LUCK
-                    else -> null
-                }
-                if (key != null) {
-                    val currentVal = prefs[key] ?: 0
-                    if (currentVal < 20) {
-                        prefs[key] = currentVal + 1
-                        prefs[POINTS] = points - 50
-                        upgraded = true
-                    }
+            val key = when (statName) {
+                "strength" -> CHAR_STRENGTH
+                "intelligence" -> CHAR_INTELLIGENCE
+                "agility" -> CHAR_AGILITY
+                "luck" -> CHAR_LUCK
+                else -> null
+            }
+            if (key != null) {
+                val currentVal = prefs[key] ?: 0
+                val cost = 100 + currentVal * 25
+                val points = prefs[POINTS] ?: 0
+                if (currentVal < 20 && points >= cost) {
+                    prefs[key] = currentVal + 1
+                    prefs[POINTS] = points - cost
+                    upgraded = true
                 }
             }
         }
@@ -295,6 +294,23 @@ class PlayerRepository(
             marathonDay = prefs[MARATHON_DAY] ?: -1L,
             marathonCompletions = prefs[MARATHON_COMPLETIONS] ?: 0
         )
+
+    fun getRecentQuestions(categoryId: String): Flow<List<String>> = dataStore.data.map { prefs ->
+        val key = stringPreferencesKey("recent_questions_$categoryId")
+        val raw = prefs[key].orEmpty()
+        if (raw.isEmpty()) emptyList() else raw.split(",")
+    }
+
+    suspend fun saveRecentQuestions(categoryId: String, questionIds: List<String>) {
+        dataStore.edit { prefs ->
+            val key = stringPreferencesKey("recent_questions_$categoryId")
+            val raw = prefs[key].orEmpty()
+            val current = if (raw.isEmpty()) emptyList() else raw.split(",")
+            val orderedList = (current - questionIds.toSet()) + questionIds
+            val limited = orderedList.takeLast(200)
+            prefs[key] = limited.joinToString(",")
+        }
+    }
 
     private companion object {
         const val MAX_NAME_LENGTH = 24

@@ -153,7 +153,7 @@
     <!-- Character Stats and Levels -->
     <string name="char_level">Level %1$d</string>
     <string name="char_xp_progress">XP: %1$d / %2$d XP</string>
-    <string name="char_free_xp">Free XP: %1$d XP</string>
+    <string name="char_free_xp">Free XP</string>
     <string name="char_stat_strength">Strength 💪</string>
     <string name="char_stat_strength_desc">Willpower: +2%% XP gained for correct answers (current: +%1$d%% XP)</string>
     <string name="char_stat_intelligence">Intelligence 🧠</string>
@@ -162,7 +162,7 @@
     <string name="char_stat_agility_desc">Reflexes: +0.5 sec to question timer (current: +%1$.1f sec)</string>
     <string name="char_stat_luck">Luck 🍀</string>
     <string name="char_stat_luck_desc">Fortune: %1$d%% chance of Critical Success (x2 rewards at the end)</string>
-    <string name="char_upgrade_cost">Buy for 50 XP</string>
+    <string name="char_upgrade_cost">+1 (%1$d XP)</string>
     <string name="char_critical_success">CRITICAL SUCCESS! Fortune doubles your rewards! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d from Strength)</string>
     <string name="char_bonus_coins_detail"> (+%1$d from Intelligence)</string>

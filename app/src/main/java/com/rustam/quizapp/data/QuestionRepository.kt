@@ -46,22 +46,35 @@ class QuestionRepository(private val context: Context) {
     /**
      * Picks [quizSize] questions from a shuffled pool of up to [bankSize] items in
      * [categoryId], optionally filtered by [difficulty]. Answer options are shuffled
-     * per question.
+     * per question. Excludes questions in [excludeIds] to minimize repetition.
      */
     fun getQuestions(
         categoryId: String,
         difficulty: Difficulty?,
         language: AppLanguage = AppLanguage.RU,
         bankSize: Int = BANK_SIZE,
-        quizSize: Int = QUIZ_SIZE
-    ): List<Question> =
-        questionsFor(language, categoryId)
+        quizSize: Int = QUIZ_SIZE,
+        excludeIds: List<String> = emptyList()
+    ): List<Question> {
+        val allQuestions = questionsFor(language, categoryId)
             .filter { difficulty == null || it.difficulty == difficulty }
-            .shuffled()
+            
+        var currentExcludeList = excludeIds
+        var filteredQuestions = allQuestions.filter { it.id !in currentExcludeList }
+        
+        while (filteredQuestions.size < quizSize && currentExcludeList.isNotEmpty()) {
+            currentExcludeList = currentExcludeList.drop(1)
+            filteredQuestions = allQuestions.filter { it.id !in currentExcludeList }
+        }
+        
+        val pool = if (filteredQuestions.size >= quizSize) filteredQuestions else allQuestions
+        
+        return pool.shuffled()
             .take(bankSize)
             .shuffled()
             .take(quizSize)
             .map { it.withShuffledOptions() }
+    }
 
     companion object {
         const val BANK_SIZE = 400

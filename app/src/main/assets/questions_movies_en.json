@@ -3,7 +3,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which of these characters is a Jedi and the hero of the original 'Star Wars' trilogy?",
-    "options": ["Luke Skywalker", "Harry Potter", "Indiana Jones", "Neo"],
+    "options": [
+      "Luke Skywalker",
+      "Harry Potter",
+      "Indiana Jones",
+      "Neo"
+    ],
     "correctIndex": 0,
     "explanation": "Luke Skywalker is the central hero of the original 'Star Wars' trilogy.",
     "id": "mov_001"
@@ -12,7 +17,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which studio created the film 'Toy Story'?",
-    "options": ["Pixar", "DreamWorks", "Studio Ghibli", "Warner Bros."],
+    "options": [
+      "Pixar",
+      "DreamWorks",
+      "Studio Ghibli",
+      "Warner Bros."
+    ],
     "correctIndex": 0,
     "explanation": "'Toy Story' was the first feature film by Pixar.",
     "id": "mov_002"
@@ -21,7 +31,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "What is the name of the archaeologist with a hat and whip in the adventure film series?",
-    "options": ["Indiana Jones", "James Bond", "Lara Croft", "John Rambo"],
+    "options": [
+      "Indiana Jones",
+      "James Bond",
+      "Lara Croft",
+      "John Rambo"
+    ],
     "correctIndex": 0,
     "explanation": "Indiana Jones is the hero of the adventure films by Spielberg and Lucas.",
     "id": "mov_003"
@@ -30,7 +45,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Who played Jack in the film 'Titanic' (1997)?",
-    "options": ["Leonardo DiCaprio", "Brad Pitt", "Tom Cruise", "Johnny Depp"],
+    "options": [
+      "Leonardo DiCaprio",
+      "Brad Pitt",
+      "Tom Cruise",
+      "Johnny Depp"
+    ],
     "correctIndex": 0,
     "explanation": "Jack Dawson was played by Leonardo DiCaprio.",
     "id": "mov_004"
@@ -39,7 +59,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which classic comedy series features the bumbling spy chief Inspector Clouseau?",
-    "options": ["The Pink Panther", "Mission: Impossible", "James Bond", "Johnny English"],
+    "options": [
+      "The Pink Panther",
+      "Mission: Impossible",
+      "James Bond",
+      "Johnny English"
+    ],
     "correctIndex": 0,
     "explanation": "Inspector Clouseau is the hero of 'The Pink Panther' comedies.",
     "id": "mov_005"
@@ -48,7 +73,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Who is the main hero of the film series about a young wizard at Hogwarts?",
-    "options": ["Harry Potter", "Frodo Baggins", "Percy Jackson", "Gandalf"],
+    "options": [
+      "Harry Potter",
+      "Frodo Baggins",
+      "Percy Jackson",
+      "Gandalf"
+    ],
     "correctIndex": 0,
     "explanation": "Harry Potter studies at the school of magic, Hogwarts.",
     "id": "mov_006"
@@ -57,7 +87,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "What colour is the talking Donkey in the film 'Shrek'?",
-    "options": ["Grey", "Green", "Pink", "Blue"],
+    "options": [
+      "Grey",
+      "Green",
+      "Pink",
+      "Blue"
+    ],
     "correctIndex": 0,
     "explanation": "Donkey, Shrek's companion, is grey.",
     "id": "mov_007"
@@ -66,7 +101,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "What is the name of the famous spy known as 'agent 007'?",
-    "options": ["James Bond", "Jason Bourne", "Ethan Hunt", "Jack Ryan"],
+    "options": [
+      "James Bond",
+      "Jason Bourne",
+      "Ethan Hunt",
+      "Jack Ryan"
+    ],
     "correctIndex": 0,
     "explanation": "Agent 007 is James Bond.",
     "id": "mov_008"
@@ -75,7 +115,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which animated film tells the story of a lion cub named Simba?",
-    "options": ["The Lion King", "Madagascar", "Ice Age", "Cars"],
+    "options": [
+      "The Lion King",
+      "Madagascar",
+      "Ice Age",
+      "Cars"
+    ],
     "correctIndex": 0,
     "explanation": "Simba is the hero of 'The Lion King'.",
     "id": "mov_009"
@@ -84,7 +129,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "In which film does a liner hit an iceberg and sink?",
-    "options": ["Titanic", "Avatar", "Jaws", "Pirates of the Caribbean"],
+    "options": [
+      "Titanic",
+      "Avatar",
+      "Jaws",
+      "Pirates of the Caribbean"
+    ],
     "correctIndex": 0,
     "explanation": "The sinking of the liner is shown in 'Titanic'.",
     "id": "mov_010"
@@ -93,7 +143,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Who created and directed the original 'Star Wars' trilogy?",
-    "options": ["George Lucas", "Steven Spielberg", "James Cameron", "Peter Jackson"],
+    "options": [
+      "George Lucas",
+      "Steven Spielberg",
+      "James Cameron",
+      "Peter Jackson"
+    ],
     "correctIndex": 0,
     "explanation": "'Star Wars' was created and directed by George Lucas.",
     "id": "mov_011"
@@ -102,7 +157,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "What is the name of the billionaire superhero in an iron suit from the Marvel universe?",
-    "options": ["Iron Man", "Batman", "Superman", "Spider-Man"],
+    "options": [
+      "Iron Man",
+      "Batman",
+      "Superman",
+      "Spider-Man"
+    ],
     "correctIndex": 0,
     "explanation": "Tony Stark in his armour is Iron Man.",
     "id": "mov_012"
@@ -111,7 +171,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which Christmas film is famous for the line 'You'll shoot your eye out'?",
-    "options": ["A Christmas Story", "Home Alone", "Elf", "The Grinch"],
+    "options": [
+      "A Christmas Story",
+      "Home Alone",
+      "Elf",
+      "The Grinch"
+    ],
     "correctIndex": 0,
     "explanation": "That line is from 'A Christmas Story'.",
     "id": "mov_013"
@@ -120,7 +185,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "What is the name of the clownfish whose father searches for him in the Pixar film?",
-    "options": ["Nemo", "Dory", "Flounder", "SpongeBob"],
+    "options": [
+      "Nemo",
+      "Dory",
+      "Flounder",
+      "SpongeBob"
+    ],
     "correctIndex": 0,
     "explanation": "This is the film 'Finding Nemo'.",
     "id": "mov_014"
@@ -129,7 +199,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "In which film are dinosaurs recreated in an island theme park?",
-    "options": ["Jurassic Park", "King Kong", "Godzilla", "Avatar"],
+    "options": [
+      "Jurassic Park",
+      "King Kong",
+      "Godzilla",
+      "Avatar"
+    ],
     "correctIndex": 0,
     "explanation": "The dinosaur park is shown in 'Jurassic Park'.",
     "id": "mov_015"
@@ -138,7 +213,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Who played the boxer Rocky Balboa?",
-    "options": ["Sylvester Stallone", "Arnold Schwarzenegger", "Bruce Willis", "Jean-Claude Van Damme"],
+    "options": [
+      "Sylvester Stallone",
+      "Arnold Schwarzenegger",
+      "Bruce Willis",
+      "Jean-Claude Van Damme"
+    ],
     "correctIndex": 0,
     "explanation": "Rocky was played by Sylvester Stallone, who also wrote the script.",
     "id": "mov_016"
@@ -147,7 +227,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which Marvel superhero climbs walls and shoots webs?",
-    "options": ["Spider-Man", "Thor", "Hulk", "Falcon"],
+    "options": [
+      "Spider-Man",
+      "Thor",
+      "Hulk",
+      "Falcon"
+    ],
     "correctIndex": 0,
     "explanation": "Web-shooting and wall-crawling are Spider-Man's trademarks.",
     "id": "mov_017"
@@ -156,7 +241,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "What is the school of magic in the Harry Potter films called?",
-    "options": ["Hogwarts", "Durmstrang", "Beauxbatons", "Ilvermorny"],
+    "options": [
+      "Hogwarts",
+      "Durmstrang",
+      "Beauxbatons",
+      "Ilvermorny"
+    ],
     "correctIndex": 0,
     "explanation": "Harry Potter studies at Hogwarts.",
     "id": "mov_018"
@@ -165,7 +255,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which green Marvel giant grows stronger the angrier he gets?",
-    "options": ["The Hulk", "Groot", "Shrek", "Yoda"],
+    "options": [
+      "The Hulk",
+      "Groot",
+      "Shrek",
+      "Yoda"
+    ],
     "correctIndex": 0,
     "explanation": "The Hulk gains enormous strength when enraged.",
     "id": "mov_019"
@@ -174,7 +269,12 @@
     "category": "movies",
     "difficulty": "EASY",
     "text": "Which film features the line 'Why so serious?' spoken by the Joker?",
-    "options": ["The Dark Knight", "Joker", "Batman Begins", "Suicide Squad"],
+    "options": [
+      "The Dark Knight",
+      "Joker",
+      "Batman Begins",
+      "Suicide Squad"
+    ],
     "correctIndex": 0,
     "explanation": "That line is spoken by Heath Ledger's Joker in 'The Dark Knight'.",
     "id": "mov_020"
@@ -183,7 +283,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who directed the films 'Titanic' and 'Avatar'?",
-    "options": ["James Cameron", "Steven Spielberg", "Christopher Nolan", "Ridley Scott"],
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "Christopher Nolan",
+      "Ridley Scott"
+    ],
     "correctIndex": 0,
     "explanation": "Both films were directed by James Cameron.",
     "id": "mov_021"
@@ -192,7 +297,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Which Christopher Nolan film is about entering people's dreams?",
-    "options": ["Inception", "Interstellar", "Dunkirk", "The Prestige"],
+    "options": [
+      "Inception",
+      "Interstellar",
+      "Dunkirk",
+      "The Prestige"
+    ],
     "correctIndex": 0,
     "explanation": "Travelling through dreams is the subject of 'Inception'.",
     "id": "mov_022"
@@ -201,7 +311,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who played the Joker in the film 'The Dark Knight' (2008)?",
-    "options": ["Heath Ledger", "Joaquin Phoenix", "Jack Nicholson", "Jared Leto"],
+    "options": [
+      "Heath Ledger",
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Jared Leto"
+    ],
     "correctIndex": 0,
     "explanation": "Heath Ledger won a posthumous Oscar for the role of the Joker.",
     "id": "mov_023"
@@ -210,7 +325,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Which animated film features a snowman named Olaf?",
-    "options": ["Frozen", "Tangled", "Moana", "Encanto"],
+    "options": [
+      "Frozen",
+      "Tangled",
+      "Moana",
+      "Encanto"
+    ],
     "correctIndex": 0,
     "explanation": "Olaf is the friendly snowman in 'Frozen'.",
     "id": "mov_024"
@@ -219,7 +339,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who played Neo in the film 'The Matrix'?",
-    "options": ["Keanu Reeves", "Tom Cruise", "Will Smith", "Brad Pitt"],
+    "options": [
+      "Keanu Reeves",
+      "Tom Cruise",
+      "Will Smith",
+      "Brad Pitt"
+    ],
     "correctIndex": 0,
     "explanation": "Neo was played by Keanu Reeves.",
     "id": "mov_025"
@@ -228,7 +353,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who directed 'Pulp Fiction' and 'Kill Bill'?",
-    "options": ["Quentin Tarantino", "Martin Scorsese", "David Fincher", "Guy Ritchie"],
+    "options": [
+      "Quentin Tarantino",
+      "Martin Scorsese",
+      "David Fincher",
+      "Guy Ritchie"
+    ],
     "correctIndex": 0,
     "explanation": "Both films were directed by Quentin Tarantino.",
     "id": "mov_026"
@@ -237,7 +367,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "In which 2012 film did the Marvel team first unite against Loki?",
-    "options": ["The Avengers", "Iron Man", "Thor", "Captain America"],
+    "options": [
+      "The Avengers",
+      "Iron Man",
+      "Thor",
+      "Captain America"
+    ],
     "correctIndex": 0,
     "explanation": "The team first assembled in 'The Avengers' (2012).",
     "id": "mov_027"
@@ -246,7 +381,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who directed 'Jaws', 'Jurassic Park' and 'Schindler's List'?",
-    "options": ["Steven Spielberg", "George Lucas", "Francis Ford Coppola", "Ridley Scott"],
+    "options": [
+      "Steven Spielberg",
+      "George Lucas",
+      "Francis Ford Coppola",
+      "Ridley Scott"
+    ],
     "correctIndex": 0,
     "explanation": "All three films were directed by Steven Spielberg.",
     "id": "mov_028"
@@ -255,7 +395,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Which animation studio made 'Shrek' and 'Madagascar'?",
-    "options": ["DreamWorks", "Pixar", "Studio Ghibli", "Warner Bros."],
+    "options": [
+      "DreamWorks",
+      "Pixar",
+      "Studio Ghibli",
+      "Warner Bros."
+    ],
     "correctIndex": 0,
     "explanation": "'Shrek' and 'Madagascar' were made by DreamWorks Animation.",
     "id": "mov_029"
@@ -264,7 +409,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who played the title role in the film 'Forrest Gump'?",
-    "options": ["Tom Hanks", "Kevin Costner", "Robin Williams", "Gary Sinise"],
+    "options": [
+      "Tom Hanks",
+      "Kevin Costner",
+      "Robin Williams",
+      "Gary Sinise"
+    ],
     "correctIndex": 0,
     "explanation": "Forrest Gump was played by Tom Hanks.",
     "id": "mov_030"
@@ -273,7 +423,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Which Italian film won the Oscar for Best Foreign Language Film and is set in a concentration camp?",
-    "options": ["Life Is Beautiful", "Cinema Paradiso", "8½", "La Dolce Vita"],
+    "options": [
+      "Life Is Beautiful",
+      "Cinema Paradiso",
+      "8½",
+      "La Dolce Vita"
+    ],
     "correctIndex": 0,
     "explanation": "'Life Is Beautiful' by Roberto Benigni won the Oscar in 1999.",
     "id": "mov_031"
@@ -282,7 +437,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who directed 'Gladiator' and 'Alien'?",
-    "options": ["Ridley Scott", "James Cameron", "Christopher Nolan", "Michael Bay"],
+    "options": [
+      "Ridley Scott",
+      "James Cameron",
+      "Christopher Nolan",
+      "Michael Bay"
+    ],
     "correctIndex": 0,
     "explanation": "'Gladiator' and 'Alien' were directed by Ridley Scott.",
     "id": "mov_032"
@@ -291,7 +451,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "In which saga does Anakin Skywalker become Darth Vader?",
-    "options": ["Star Wars", "Star Trek", "Dune", "Alien"],
+    "options": [
+      "Star Wars",
+      "Star Trek",
+      "Dune",
+      "Alien"
+    ],
     "correctIndex": 0,
     "explanation": "Anakin's turn into Vader is shown in 'Star Wars'.",
     "id": "mov_033"
@@ -300,7 +465,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who played Captain Jack Sparrow in 'Pirates of the Caribbean'?",
-    "options": ["Johnny Depp", "Orlando Bloom", "Brad Pitt", "Antonio Banderas"],
+    "options": [
+      "Johnny Depp",
+      "Orlando Bloom",
+      "Brad Pitt",
+      "Antonio Banderas"
+    ],
     "correctIndex": 0,
     "explanation": "Jack Sparrow was played by Johnny Depp.",
     "id": "mov_034"
@@ -309,7 +479,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Which studio made the anime 'Spirited Away'?",
-    "options": ["Studio Ghibli", "Pixar", "Walt Disney", "Toei Animation"],
+    "options": [
+      "Studio Ghibli",
+      "Pixar",
+      "Walt Disney",
+      "Toei Animation"
+    ],
     "correctIndex": 0,
     "explanation": "'Spirited Away' was made by Studio Ghibli.",
     "id": "mov_035"
@@ -318,7 +493,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who directed the 'Lord of the Rings' trilogy?",
-    "options": ["Peter Jackson", "Guillermo del Toro", "James Cameron", "Sam Raimi"],
+    "options": [
+      "Peter Jackson",
+      "Guillermo del Toro",
+      "James Cameron",
+      "Sam Raimi"
+    ],
     "correctIndex": 0,
     "explanation": "The trilogy was directed by Peter Jackson.",
     "id": "mov_036"
@@ -327,7 +507,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who played Harry Potter in the film adaptations?",
-    "options": ["Daniel Radcliffe", "Rupert Grint", "Tom Felton", "Elijah Wood"],
+    "options": [
+      "Daniel Radcliffe",
+      "Rupert Grint",
+      "Tom Felton",
+      "Elijah Wood"
+    ],
     "correctIndex": 0,
     "explanation": "Harry Potter was played by Daniel Radcliffe.",
     "id": "mov_037"
@@ -336,7 +521,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "In which Disney film does Princess Elsa have ice powers?",
-    "options": ["Frozen", "Tangled", "Moana", "The Little Mermaid"],
+    "options": [
+      "Frozen",
+      "Tangled",
+      "Moana",
+      "The Little Mermaid"
+    ],
     "correctIndex": 0,
     "explanation": "Elsa is the heroine of 'Frozen'.",
     "id": "mov_038"
@@ -345,7 +535,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "Who directed the science-fiction films 'Stalker' and 'Solaris'?",
-    "options": ["Andrei Tarkovsky", "Sergei Eisenstein", "Nikita Mikhalkov", "Eldar Ryazanov"],
+    "options": [
+      "Andrei Tarkovsky",
+      "Sergei Eisenstein",
+      "Nikita Mikhalkov",
+      "Eldar Ryazanov"
+    ],
     "correctIndex": 0,
     "explanation": "'Stalker' and 'Solaris' were directed by Andrei Tarkovsky.",
     "id": "mov_039"
@@ -354,7 +549,12 @@
     "category": "movies",
     "difficulty": "MEDIUM",
     "text": "In which film does Tom Hanks's character survive on a desert island with a ball named 'Wilson'?",
-    "options": ["Cast Away", "The Terminal", "The Green Mile", "Saving Private Ryan"],
+    "options": [
+      "Cast Away",
+      "The Terminal",
+      "The Green Mile",
+      "Saving Private Ryan"
+    ],
     "correctIndex": 0,
     "explanation": "The Wilson ball story is from 'Cast Away'.",
     "id": "mov_040"
@@ -363,7 +563,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which Francis Ford Coppola film is about the Corleone crime family?",
-    "options": ["The Godfather", "Goodfellas", "Scarface", "Once Upon a Time in America"],
+    "options": [
+      "The Godfather",
+      "Goodfellas",
+      "Scarface",
+      "Once Upon a Time in America"
+    ],
     "correctIndex": 0,
     "explanation": "The Corleone family is at the centre of 'The Godfather'.",
     "id": "mov_041"
@@ -372,7 +577,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who played Vito Corleone in the first 'Godfather' film?",
-    "options": ["Marlon Brando", "Al Pacino", "Robert De Niro", "James Caan"],
+    "options": [
+      "Marlon Brando",
+      "Al Pacino",
+      "Robert De Niro",
+      "James Caan"
+    ],
     "correctIndex": 0,
     "explanation": "Don Vito Corleone was played by Marlon Brando.",
     "id": "mov_042"
@@ -381,7 +591,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which silent Eisenstein film is famous for the Odessa Steps sequence?",
-    "options": ["Battleship Potemkin", "Alexander Nevsky", "Ivan the Terrible", "October"],
+    "options": [
+      "Battleship Potemkin",
+      "Alexander Nevsky",
+      "Ivan the Terrible",
+      "October"
+    ],
     "correctIndex": 0,
     "explanation": "The Odessa Steps scene is from 'Battleship Potemkin'.",
     "id": "mov_043"
@@ -390,7 +605,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who directed 'Fight Club' and 'Se7en'?",
-    "options": ["David Fincher", "Christopher Nolan", "Danny Boyle", "Darren Aronofsky"],
+    "options": [
+      "David Fincher",
+      "Christopher Nolan",
+      "Danny Boyle",
+      "Darren Aronofsky"
+    ],
     "correctIndex": 0,
     "explanation": "Both films were directed by David Fincher.",
     "id": "mov_044"
@@ -399,7 +619,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which South Korean film won the Oscar for Best Picture in 2020?",
-    "options": ["Parasite", "1917", "Joker", "Ford v Ferrari"],
+    "options": [
+      "Parasite",
+      "1917",
+      "Joker",
+      "Ford v Ferrari"
+    ],
     "correctIndex": 0,
     "explanation": "'Parasite' became the first non-English film to win Best Picture.",
     "id": "mov_045"
@@ -408,7 +633,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who directed the film 'Parasite'?",
-    "options": ["Bong Joon-ho", "Park Chan-wook", "Kim Ki-duk", "Lee Chang-dong"],
+    "options": [
+      "Bong Joon-ho",
+      "Park Chan-wook",
+      "Kim Ki-duk",
+      "Lee Chang-dong"
+    ],
     "correctIndex": 0,
     "explanation": "'Parasite' was directed by Bong Joon-ho.",
     "id": "mov_046"
@@ -417,7 +647,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which actor played the Terminator in the franchise of the same name?",
-    "options": ["Arnold Schwarzenegger", "Sylvester Stallone", "Dolph Lundgren", "Bruce Willis"],
+    "options": [
+      "Arnold Schwarzenegger",
+      "Sylvester Stallone",
+      "Dolph Lundgren",
+      "Bruce Willis"
+    ],
     "correctIndex": 0,
     "explanation": "The Terminator was played by Arnold Schwarzenegger.",
     "id": "mov_047"
@@ -426,7 +661,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who directed 'Interstellar' and 'Dunkirk'?",
-    "options": ["Christopher Nolan", "Denis Villeneuve", "Alfonso Cuarón", "Ridley Scott"],
+    "options": [
+      "Christopher Nolan",
+      "Denis Villeneuve",
+      "Alfonso Cuarón",
+      "Ridley Scott"
+    ],
     "correctIndex": 0,
     "explanation": "Both films were directed by Christopher Nolan.",
     "id": "mov_048"
@@ -435,7 +675,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which Stanley Kubrick science-fiction film was released in 1968?",
-    "options": ["2001: A Space Odyssey", "The Shining", "Blade Runner", "Alien"],
+    "options": [
+      "2001: A Space Odyssey",
+      "The Shining",
+      "Blade Runner",
+      "Alien"
+    ],
     "correctIndex": 0,
     "explanation": "In 1968 Kubrick directed '2001: A Space Odyssey'.",
     "id": "mov_049"
@@ -444,7 +689,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who directed the anime film 'Your Name' (2016)?",
-    "options": ["Makoto Shinkai", "Hayao Miyazaki", "Mamoru Hosoda", "Isao Takahata"],
+    "options": [
+      "Makoto Shinkai",
+      "Hayao Miyazaki",
+      "Mamoru Hosoda",
+      "Isao Takahata"
+    ],
     "correctIndex": 0,
     "explanation": "'Your Name' was directed by Makoto Shinkai.",
     "id": "mov_050"
@@ -453,7 +703,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which Soviet director made the epic 'War and Peace' that won an Oscar?",
-    "options": ["Sergei Bondarchuk", "Andrei Tarkovsky", "Grigori Chukhrai", "Sergei Gerasimov"],
+    "options": [
+      "Sergei Bondarchuk",
+      "Andrei Tarkovsky",
+      "Grigori Chukhrai",
+      "Sergei Gerasimov"
+    ],
     "correctIndex": 0,
     "explanation": "'War and Peace' was directed by Sergei Bondarchuk and won the Oscar in 1969.",
     "id": "mov_051"
@@ -462,7 +717,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who played Travis Bickle in Martin Scorsese's 'Taxi Driver'?",
-    "options": ["Robert De Niro", "Al Pacino", "Jack Nicholson", "Dustin Hoffman"],
+    "options": [
+      "Robert De Niro",
+      "Al Pacino",
+      "Jack Nicholson",
+      "Dustin Hoffman"
+    ],
     "correctIndex": 0,
     "explanation": "Travis Bickle was played by Robert De Niro.",
     "id": "mov_052"
@@ -471,7 +731,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which 1982 Ridley Scott film became a cyberpunk classic?",
-    "options": ["Blade Runner", "Alien", "Tron", "The Lawnmower Man"],
+    "options": [
+      "Blade Runner",
+      "Alien",
+      "Tron",
+      "The Lawnmower Man"
+    ],
     "correctIndex": 0,
     "explanation": "The 1982 cyberpunk classic is 'Blade Runner'.",
     "id": "mov_053"
@@ -480,7 +745,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "In which year was the first 'Star Wars' film released?",
-    "options": ["1977", "1980", "1983", "1971"],
+    "options": [
+      "1977",
+      "1980",
+      "1983",
+      "1971"
+    ],
     "correctIndex": 0,
     "explanation": "The first 'Star Wars' film was released in 1977.",
     "id": "mov_054"
@@ -489,7 +759,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which Mexican director made 'The Shape of Water' and 'Pan's Labyrinth'?",
-    "options": ["Guillermo del Toro", "Alfonso Cuarón", "Alejandro González Iñárritu", "Robert Rodriguez"],
+    "options": [
+      "Guillermo del Toro",
+      "Alfonso Cuarón",
+      "Alejandro González Iñárritu",
+      "Robert Rodriguez"
+    ],
     "correctIndex": 0,
     "explanation": "Both films were directed by Guillermo del Toro.",
     "id": "mov_055"
@@ -498,7 +773,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which Alfred Hitchcock thriller is famous for its shower-murder scene?",
-    "options": ["Psycho", "The Birds", "Vertigo", "Rear Window"],
+    "options": [
+      "Psycho",
+      "The Birds",
+      "Vertigo",
+      "Rear Window"
+    ],
     "correctIndex": 0,
     "explanation": "The famous shower scene is from 'Psycho'.",
     "id": "mov_056"
@@ -507,7 +787,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which film features a sled named 'Rosebud' and the press tycoon Charles Foster Kane?",
-    "options": ["Citizen Kane", "The Godfather", "Casablanca", "Gone with the Wind"],
+    "options": [
+      "Citizen Kane",
+      "The Godfather",
+      "Casablanca",
+      "Gone with the Wind"
+    ],
     "correctIndex": 0,
     "explanation": "'Rosebud' and Kane are from Orson Welles's 'Citizen Kane'.",
     "id": "mov_057"
@@ -516,7 +801,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who directed the South Korean revenge thriller 'Oldboy' (2003)?",
-    "options": ["Park Chan-wook", "Bong Joon-ho", "Kim Ki-duk", "Na Hong-jin"],
+    "options": [
+      "Park Chan-wook",
+      "Bong Joon-ho",
+      "Kim Ki-duk",
+      "Na Hong-jin"
+    ],
     "correctIndex": 0,
     "explanation": "'Oldboy' was directed by Park Chan-wook.",
     "id": "mov_058"
@@ -525,7 +815,12 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Which 1994 film with Uma Thurman and John Travolta made Tarantino famous?",
-    "options": ["Pulp Fiction", "Reservoir Dogs", "Jackie Brown", "Death Proof"],
+    "options": [
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Jackie Brown",
+      "Death Proof"
+    ],
     "correctIndex": 0,
     "explanation": "It is 'Pulp Fiction', winner of the Palme d'Or.",
     "id": "mov_059"
@@ -534,9 +829,1022 @@
     "category": "movies",
     "difficulty": "HARD",
     "text": "Who directed the thriller 'The Silence of the Lambs' (1991)?",
-    "options": ["Jonathan Demme", "David Fincher", "Ridley Scott", "Brian De Palma"],
+    "options": [
+      "Jonathan Demme",
+      "David Fincher",
+      "Ridley Scott",
+      "Brian De Palma"
+    ],
     "correctIndex": 0,
     "explanation": "'The Silence of the Lambs' was directed by Jonathan Demme and won five major Oscars.",
     "id": "mov_060"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which of these movies is NOT considered to be part of the Marvel Cinematic Universe?",
+    "options": [
+      "Fantastic Four (2015)",
+      " Spider-Man: Homecoming (2017)",
+      "The Incredible Hulk (2008)",
+      "Captain Marvel (2019)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Fantastic Four (2015).",
+    "id": "movi_061"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which of the following is not the name of a \"Bond Girl\"? ",
+    "options": [
+      "Vanessa Kensington",
+      "Pam Bouvier",
+      "Mary Goodnight",
+      "Wai Lin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vanessa Kensington.",
+    "id": "movi_062"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which DC superhero was NOT included in the 2017 movie \"Justice League\"?",
+    "options": [
+      "Green Arrow",
+      "Batman",
+      "Cyborg",
+      "Wonder Woman"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Green Arrow.",
+    "id": "movi_063"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In \"Mean Girls\", who has breasts that tell when it's raining?",
+    "options": [
+      "Karen Smith",
+      "Gretchen Weiners",
+      "Janice Ian",
+      "Cady Heron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Karen Smith.",
+    "id": "movi_064"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which town is the setting for the Disney movie The Love Bug (1968)?",
+    "options": [
+      "San Francisco",
+      "Los Angeles",
+      "Sacramento",
+      "San Jose"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is San Francisco.",
+    "id": "movi_065"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which James Bond film had the theme song written and performed by English singer-songwriter Adele?",
+    "options": [
+      "Skyfall",
+      "Casino Royale",
+      "Quantum Solace",
+      "Spectre"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Skyfall.",
+    "id": "movi_066"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who played Batman in the 1997 film \"Batman and Robin\"?",
+    "options": [
+      "George Clooney",
+      "Michael Keaton",
+      "Val Kilmer",
+      "Christian Bale"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is George Clooney.",
+    "id": "movi_067"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In \"Jurassic World\", which company purchases InGen and creates Jurassic World?",
+    "options": [
+      "Masrani Global Corporation ",
+      "Biology Synthetics Technologies",
+      "International Genetics Incorporated",
+      "International Genetic Technologies"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Masrani Global Corporation .",
+    "id": "movi_068"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Brendan Fraser starred in the following movies, except which one?",
+    "options": [
+      "Titanic",
+      "Monkeybone",
+      "Encino Man",
+      "Mrs. Winterbourne"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Titanic.",
+    "id": "movi_069"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What is the name of the assassin in the first \"Hellboy\" movie?",
+    "options": [
+      "Karl Ruprecht Kroenen",
+      "Klaus Werner von Krupt",
+      "Grigori Efimovich Rasputin",
+      "Ilsa Haupstein"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Karl Ruprecht Kroenen.",
+    "id": "movi_070"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In what year was the first Indian movie submitted for an Oscar?",
+    "options": [
+      "1957",
+      "1962",
+      "1938",
+      "1954"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1957.",
+    "id": "movi_071"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Which movie did NOT feature the late actor John Candy?",
+    "options": [
+      "Ghostbusters",
+      "Little Shop Of Horrors",
+      "Home Alone",
+      "Planes Trains and Automobiles"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ghostbusters.",
+    "id": "movi_072"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the robot in the 1951 science fiction film classic 'The Day the Earth Stood Still'?",
+    "options": [
+      "Gort",
+      "Robby",
+      "Colossus",
+      "Box"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gort.",
+    "id": "movi_073"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What did the first moving picture depict?",
+    "options": [
+      "A galloping horse",
+      "A woman in a dress",
+      "A man walking",
+      "A crackling fire"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A galloping horse.",
+    "id": "movi_074"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which actor plays the character \"Tommy Jarvis\" in \"Friday the 13th: The Final Chapter\" (1984)?",
+    "options": [
+      "Corey Feldman",
+      "Macaulay Culkin",
+      "Mel Gibson",
+      "Mark Hamill"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Corey Feldman.",
+    "id": "movi_075"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In the movie “The Iron Giant,” this character is the protagonist.",
+    "options": [
+      "Hogarth Hughes",
+      "Kent Mansley",
+      "Dean McCoppin",
+      "Annie Hughes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hogarth Hughes.",
+    "id": "movi_076"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In the \"Jurassic Park\" universe, what was the first dinosaur cloned by InGen in 1986?",
+    "options": [
+      "Velociraptor",
+      "Triceratops",
+      "Troodon",
+      "Brachiosaurus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Velociraptor.",
+    "id": "movi_077"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "The 2016 Disney animated film 'Moana' is based on which culture?",
+    "options": [
+      "Polynesian",
+      "Native American",
+      "Japanese",
+      "Nordic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polynesian.",
+    "id": "movi_078"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What was the wifi password given to Stephen Strange in Doctor Strange?",
+    "options": [
+      "Shambala",
+      "Peace",
+      "Ancient",
+      "Chakra"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shambala.",
+    "id": "movi_079"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What was the name of the planet in \"Aliens\"?",
+    "options": [
+      "LV-426",
+      "Weyland Yutani Corporation Base",
+      "FR-838",
+      "DI-621"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is LV-426.",
+    "id": "movi_080"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which of these movies did Jeff Bridges not star in?",
+    "options": [
+      "The Hateful Eight",
+      "Tron: Legacy",
+      "The Giver",
+      "True Grit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Hateful Eight.",
+    "id": "movi_081"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In the 2012 film, \"The Lorax\", who is the antagonist?",
+    "options": [
+      "Aloysius O'Hare",
+      "Ted Wiggins",
+      "The Once-Ler",
+      "Grammy Norma"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Aloysius O'Hare.",
+    "id": "movi_082"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What mutated animals act as monsters in the movie 'Night of the Lepus'?",
+    "options": [
+      "Rabbits",
+      "Dogs",
+      "Rats",
+      "Bats"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Rabbits.",
+    "id": "movi_083"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "This movie contains the quote, \"Houston, we have a problem.\"",
+    "options": [
+      "Apollo 13",
+      "The Right Stuff",
+      "Capricorn One",
+      "Marooned"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Apollo 13.",
+    "id": "movi_084"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "What movie starring Bruce Willis contains the line \"I see dead people\"? ",
+    "options": [
+      "The Sixth Sense",
+      "The Fifth Element",
+      "Die Hard",
+      "Armageddon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Sixth Sense.",
+    "id": "movi_085"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "This movie contains the quote, \"I feel the need ... the need for speed!\"",
+    "options": [
+      "Top Gun",
+      "Days of Thunder",
+      "The Color of Money",
+      "Cocktail"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Top Gun.",
+    "id": "movi_086"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In the movie \"Cast Away\" the main protagonist's best friend while on the island is named",
+    "options": [
+      "Wilson",
+      "Carson",
+      "Jackson",
+      "Willy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Wilson.",
+    "id": "movi_087"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In which movie does Robin Williams' character have to disguise themselves into a woman?",
+    "options": [
+      "Mrs. Doubtfire",
+      "Old Dogs",
+      "Jumanji",
+      "Awakenings"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mrs. Doubtfire.",
+    "id": "movi_088"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the queen's pet in A Bug's Life?",
+    "options": [
+      "Aphie",
+      "Flik",
+      "Hopper",
+      "Dot"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Aphie.",
+    "id": "movi_089"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which one of these films are shot entirely in one-take?",
+    "options": [
+      "Russian Ark",
+      "Good Will Hunting",
+      "Birdman",
+      "Schindler's List"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Russian Ark.",
+    "id": "movi_090"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Mark Wahlberg played the titular character of which 2008 video-game adaptation?",
+    "options": [
+      "Max Payne",
+      "Alan Wake",
+      "Hitman",
+      "God Of War"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Max Payne.",
+    "id": "movi_091"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of James Dean's character in the 1955 movie \"Rebel Without a Cause\"?",
+    "options": [
+      "Jim Stark",
+      "Ned Stark",
+      "Jim Kane",
+      "Frank Stark"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jim Stark.",
+    "id": "movi_092"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following actors does not play a role in the movie \"The Usual Suspects?\"",
+    "options": [
+      "Steve Buscemi",
+      "Kevin Spacey",
+      "Benicio Del Toro",
+      "Gabriel Byrne"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Steve Buscemi.",
+    "id": "movi_093"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the first \"Star Wars\" film by release order?",
+    "options": [
+      "A New Hope",
+      "The Phantom Menace",
+      "The Force Awakens",
+      "Revenge of the Sith"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A New Hope.",
+    "id": "movi_094"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who voiced Metalbeard in \"The Lego Movie\"?",
+    "options": [
+      "Nick Offerman",
+      "Liam Neeson",
+      "Morgan Freeman",
+      "Will Arnet"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nick Offerman.",
+    "id": "movi_095"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In 2012, which movie won every category in the 32nd \"Golden Raspberry Awards\"?",
+    "options": [
+      "Jack and Jill",
+      "The Girl with the Dragon Tattoo",
+      "Thor",
+      "The King's Speech"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jack and Jill.",
+    "id": "movi_096"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Which 1994 film did Roger Ebert famously despise, saying \"I hated hated hated hated hated this movie\".",
+    "options": [
+      "North",
+      "3 Ninjas Kick Back",
+      "The Santa Clause",
+      "Richie Rich"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is North.",
+    "id": "movi_097"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the character Nicolas Cage plays in the movie \"National Treasure?\"",
+    "options": [
+      "Benjamin Franklin Gates",
+      "Thomas Jefferson Walker",
+      "George Washington Swanson",
+      "John Quincy Beckett"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Benjamin Franklin Gates.",
+    "id": "movi_098"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In the film \"Requiem for a Dream\", what drug does Jared Leto's character get addicted to?",
+    "options": [
+      "Heroin",
+      "Cocaine",
+      "Marijuana",
+      "Oxycodone"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Heroin.",
+    "id": "movi_099"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What was another suggested name for, the 1985 film, Back to the Future?",
+    "options": [
+      "Spaceman From Pluto",
+      "Hill Valley Time Travelers",
+      "The Time Travelers",
+      "The Lucky Man"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Spaceman From Pluto.",
+    "id": "movi_100"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "This movie contains the quote, \"What we've got here is a failure to communicate.\"",
+    "options": [
+      "Cool Hand Luke",
+      "Bonnie and Clyde",
+      "The Graduate",
+      "In the Heat of the Night"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cool Hand Luke.",
+    "id": "movi_101"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In the 2014 film \"Birdman\", what is the primary instrument in the score?",
+    "options": [
+      "Drums",
+      "Saxophone",
+      "Violin",
+      "Actual Live Birds Singing"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Drums.",
+    "id": "movi_102"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the dog that played Toto in the 1939 film \"The Wizard of Oz\"?",
+    "options": [
+      "Terry",
+      "Tommy",
+      "Teddy",
+      "Toto"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Terry.",
+    "id": "movi_103"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who plays the Nemesis in the Resident Evil movies?",
+    "options": [
+      "Matthew Taylor",
+      "Jason Dip",
+      "Eric Mabius",
+      "Jimmy Matts"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Matthew Taylor.",
+    "id": "movi_104"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which famous singer was portrayed by actor Kevin Spacey in the 2004 biographical film \"Beyond the Sea\"?",
+    "options": [
+      "Bobby Darin",
+      "Louis Armstrong",
+      "Frank Sinatra",
+      "Dean Martin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bobby Darin.",
+    "id": "movi_105"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In Youtuber Jerma985's 2014 film \"Rat Movie: Mystery of the Mayan Treasure,\" who is the man who tries to steal the Mayan Treasure?",
+    "options": [
+      "Dick Dastardly Richards",
+      "Gabe \"The Glue Man\" Degrossi",
+      "Bootleg Duck Dynasty Byeah Batman",
+      "Demon Lord Zeraxos"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dick Dastardly Richards.",
+    "id": "movi_106"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
+    "options": [
+      "Gopher",
+      "Tigger",
+      "Heffalumps",
+      "Rabbit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gopher.",
+    "id": "movi_107"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who is the director of the 1991 film \"Silence of the Lambs\"?",
+    "options": [
+      "Jonathan Demme",
+      "Stanley Kubrick",
+      "Frank Darabont",
+      "Michael Bay"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jonathan Demme.",
+    "id": "movi_108"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What were the Chilled Monkey Brains made from during Indiana Jones and the Temple of Doom?",
+    "options": [
+      "Custard and Raspberry Sauce",
+      "Strawberry Ice Cream",
+      "Cherry Yogurt",
+      "Raspberry Sorbet"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Custard and Raspberry Sauce.",
+    "id": "movi_109"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What is the name of the supercomputer located in the control room in \"Jurassic Park\" (1993)?",
+    "options": [
+      "Thinking Machines CM-5",
+      "Cray X-MP",
+      "Cray XK7",
+      "IBM Blue Gene/Q"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Thinking Machines CM-5.",
+    "id": "movi_110"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In the 2002 film \"Kung Pow! Enter the Fist\", Master Pain changes his name to what?",
+    "options": [
+      "Betty",
+      "Sally",
+      "Amy",
+      "Kitty"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Betty.",
+    "id": "movi_111"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "In what year does Jurassic World open in the \"Jurassic Park\" universe?",
+    "options": [
+      "2005",
+      "2007",
+      "2015",
+      "2020"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2005.",
+    "id": "movi_112"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What year did the James Cameron film \"Titanic\" come out in theaters?",
+    "options": [
+      "1997",
+      "1996",
+      "1998",
+      "1999"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1997.",
+    "id": "movi_113"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Bela Lugosi was a Hungarian-American actor best known for his starring role of what 1931 horror film?",
+    "options": [
+      "Count Dracula",
+      "Dr Frankenstein",
+      "Werewolf",
+      "The Creature from the Black Lagoon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Count Dracula.",
+    "id": "movi_114"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What was the first movie to ever use a Wilhelm Scream?",
+    "options": [
+      "Distant Drums",
+      "Treasure of the Sierra Madre",
+      "The Charge at Feather River",
+      "Indiana Jones"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Distant Drums.",
+    "id": "movi_115"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Who plays the character of Po in the Kung Fu Panda movies?",
+    "options": [
+      "Jack Black",
+      "Mirana Jonnes",
+      "McConahey Ramses",
+      "Jim Petersson"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jack Black.",
+    "id": "movi_116"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "In the Super Mario Bros. Movie (2023), who plays Toad?",
+    "options": [
+      "Keegan-Michael Key",
+      "Seth Rogan",
+      "Charlie Day",
+      "Jack Black"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Keegan-Michael Key.",
+    "id": "movi_117"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Before \"Jurassic Park III\" was finalized and the Spinosaurus was chosen, which dinosaur was going to be the star?",
+    "options": [
+      "Baryonyx",
+      "Tyrannosaurus Rex",
+      "Velociraptor",
+      "Suchomimus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Baryonyx.",
+    "id": "movi_118"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "When does \"Rogue One: A Star Wars Story\" take place chronologically in the series?",
+    "options": [
+      "Between Episode 3 and 4",
+      "After Episode 6",
+      "Before Episode 1",
+      "Between Episode 4 and 5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Between Episode 3 and 4.",
+    "id": "movi_119"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "What was Marilyn Monroe`s character's first name in the film \"Some Like It Hot\"?",
+    "options": [
+      "Sugar",
+      "Honey",
+      "Caramel",
+      "Candy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sugar.",
+    "id": "movi_120"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "What is the title of the first feature-length sound film in history, released in 1927?",
+    "options": [
+      "The Jazz Singer",
+      "City Lights",
+      "Metropolis",
+      "L'Arrivee d'un train"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Warner Bros. film 'The Jazz Singer' contained synchronized speech and singing.",
+    "id": "movi_121"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which legendary silent film comedy actor created the famous Little Tramp character?",
+    "options": [
+      "Charlie Chaplin",
+      "Buster Keaton",
+      "Harold Lloyd",
+      "Rudolph Valentino"
+    ],
+    "correctIndex": 0,
+    "explanation": "Charlie Chaplin first appeared as the Little Tramp character in 1914.",
+    "id": "movi_122"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which 1995 Pixar animated film was the first in history to be entirely created with 3D computer graphics?",
+    "options": [
+      "Toy Story",
+      "Shrek",
+      "Monsters, Inc.",
+      "Finding Nemo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Toy Story was a breakthrough in the field of 3D computer animation.",
+    "id": "movi_123"
+  },
+  {
+    "category": "movies",
+    "difficulty": "EASY",
+    "text": "Which British film director is known as the 'Master of Suspense' and directed 'Psycho' and 'The Birds'?",
+    "options": [
+      "Alfred Hitchcock",
+      "Stanley Kubrick",
+      "John Ford",
+      "Christopher Nolan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alfred Hitchcock pioneered the psychological thriller and suspense genres.",
+    "id": "movi_124"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Who directed and starred in the film 'Citizen Kane' (1941), widely considered a cinematic masterpiece?",
+    "options": [
+      "Orson Welles",
+      "John Huston",
+      "Frank Capra",
+      "Fritz Lang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Orson Welles was only 25 years old when he directed 'Citizen Kane'.",
+    "id": "movi_125"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which Japanese director made the cult historical films 'Rashomon' and 'Seven Samurai'?",
+    "options": [
+      "Akira Kurosawa",
+      "Yasujiro Ozu",
+      "Hayao Miyazaki",
+      "Kenji Mizoguchi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Akira Kurosawa strongly influenced global and Western cinema.",
+    "id": "movi_126"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "In which 1928 short animated film did Mickey Mouse first appear with synchronized sound?",
+    "options": [
+      "Steamboat Willie",
+      "Plane Crazy",
+      "Silly Symphonies",
+      "The Gallopin' Gaucho"
+    ],
+    "correctIndex": 0,
+    "explanation": "'Steamboat Willie' served as the official screen debut of Mickey Mouse.",
+    "id": "movi_127"
+  },
+  {
+    "category": "movies",
+    "difficulty": "MEDIUM",
+    "text": "Which sci-fi film by James Cameron (2009) revolutionized the use of motion capture technology?",
+    "options": [
+      "Avatar",
+      "Terminator 2",
+      "The Abyss",
+      "Interstellar"
+    ],
+    "correctIndex": 0,
+    "explanation": "'Avatar' utilized advanced camera systems and virtual rendering of actors.",
+    "id": "movi_128"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Which German expressionist director made the legendary dystopian film 'Metropolis' (1927)?",
+    "options": [
+      "Fritz Lang",
+      "F. W. Murnau",
+      "Robert Wiene",
+      "G. W. Pabst"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fritz Lang directed one of the greatest silent masterpieces of sci-fi.",
+    "id": "movi_129"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Which artistic movement in cinema of the late 1950s was represented by Francois Truffaut and Jean-Luc Godard?",
+    "options": [
+      "French New Wave",
+      "Italian Neorealism",
+      "German Expressionism",
+      "Dogme 95"
+    ],
+    "correctIndex": 0,
+    "explanation": "The French New Wave brought free-style shooting, handheld cameras, and jump cuts to cinema.",
+    "id": "movi_130"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "What is the name of the famous sound effect (scream) used in more than 400 films since 1951?",
+    "options": [
+      "Wilhelm scream",
+      "Tarzan yell",
+      "Banshee wail",
+      "Howie scream"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Wilhelm scream first appeared in the Warner Bros. western 'Distant Drums'.",
+    "id": "movi_131"
+  },
+  {
+    "category": "movies",
+    "difficulty": "HARD",
+    "text": "Which singer played the main character in 'The Jazz Singer' (1927) and performed the first vocal track in sound cinema?",
+    "options": [
+      "Al Jolson",
+      "Frank Sinatra",
+      "Bing Crosby",
+      "Louis Armstrong"
+    ],
+    "correctIndex": 0,
+    "explanation": "Al Jolson spoke the famous line: 'Wait a minute, wait a minute, you ain't heard nothin' yet!'.",
+    "id": "movi_132"
   }
 ]
