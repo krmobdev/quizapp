@@ -218,9 +218,13 @@ class PlayerRepository(
 
     suspend fun grantReward(reward: QuizReward) {
         dataStore.edit { prefs ->
-            prefs[POINTS] = (prefs[POINTS] ?: 0) + reward.points
+            // Read the old balances before mutating, so LIFETIME_POINTS' fallback to the
+            // current points doesn't pick up the just-incremented value and double-count.
+            val currentPoints = prefs[POINTS] ?: 0
+            val currentLifetime = prefs[LIFETIME_POINTS] ?: currentPoints
+            prefs[POINTS] = currentPoints + reward.points
             prefs[COINS] = (prefs[COINS] ?: 0) + reward.coins
-            prefs[LIFETIME_POINTS] = (prefs[LIFETIME_POINTS] ?: (prefs[POINTS] ?: 0)) + reward.points
+            prefs[LIFETIME_POINTS] = currentLifetime + reward.points
         }
     }
 
