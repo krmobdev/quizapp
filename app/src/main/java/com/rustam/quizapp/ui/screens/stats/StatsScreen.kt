@@ -1,14 +1,20 @@
 package com.rustam.quizapp.ui.screens.stats
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Surface
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Edit
 import androidx.compose.material3.AlertDialog
@@ -36,6 +42,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
+import com.rustam.quizapp.domain.QuizEventProgress
+import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.ScreenTitle
@@ -52,6 +60,7 @@ fun StatsScreen(
     StatsContent(
         state = state,
         onUpdateName = viewModel::updatePlayerName,
+        onUpgradeStat = viewModel::upgradeStat,
         modifier = modifier
     )
 }
@@ -60,11 +69,13 @@ fun StatsScreen(
 private fun StatsContent(
     state: PlayerUiState,
     onUpdateName: (String) -> Unit,
+    onUpgradeStat: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
     var showNameDialog by rememberSaveable { mutableStateOf(false) }
+    var selectedSubTab by rememberSaveable { mutableStateOf(0) }
 
     if (showNameDialog) {
         EditNameDialog(
@@ -95,6 +106,7 @@ private fun StatsContent(
                 },
                 avatarEmoji = state.avatarEmoji,
                 points = state.points,
+                lifetimePoints = state.lifetimePoints,
                 coins = state.coins,
                 colors = colors,
                 textColor = textColor,
@@ -102,37 +114,86 @@ private fun StatsContent(
             )
         }
         item {
-            DailyQuestCard(
-                categoryId = state.dailyQuestCategoryId,
-                categories = state.categories,
-                completed = state.dailyQuestCompleted,
-                colors = colors,
-                textColor = textColor
-            )
+            val isEnglish = stringResource(R.string.player_tab) == "Player"
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 4.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                SubTabButton(
+                    text = if (isEnglish) "Characteristics" else "Характеристики",
+                    selected = selectedSubTab == 0,
+                    onClick = { selectedSubTab = 0 },
+                    colors = colors,
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+                SubTabButton(
+                    text = if (isEnglish) "Game Stats" else "Статистика игр",
+                    selected = selectedSubTab == 1,
+                    onClick = { selectedSubTab = 1 },
+                    colors = colors,
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+            }
         }
-        item {
-            SummaryCard(
-                totalQuizzes = state.totalQuizzes,
-                averageAccuracyPercent = state.averageAccuracyPercent,
-                colors = colors,
-                textColor = textColor
-            )
-        }
-        item {
-            Text(
-                text = stringResource(R.string.player_stats_section),
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.SemiBold,
-                color = textColor,
-                modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
-            )
-        }
-        items(state.categories, key = { it.id }) { category ->
-            CategoryStatCard(
-                category = category,
-                colors = colors,
-                textColor = textColor
-            )
+
+        if (selectedSubTab == 0) {
+            item {
+                CharacterStatsSection(
+                    stats = state.stats,
+                    freeXp = state.points,
+                    textColor = textColor,
+                    colors = colors,
+                    onUpgrade = onUpgradeStat
+                )
+            }
+        } else {
+            if (state.events.isNotEmpty()) {
+                item {
+                    Text(
+                        text = stringResource(R.string.events_section_title),
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = textColor,
+                        modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
+                    )
+                }
+                items(state.events, key = { it.event.type.name }) { progress ->
+                    EventProgressCard(
+                        progress = progress,
+                        categories = state.categories,
+                        colors = colors,
+                        textColor = textColor
+                    )
+                }
+            }
+            item {
+                SummaryCard(
+                    totalQuizzes = state.totalQuizzes,
+                    averageAccuracyPercent = state.averageAccuracyPercent,
+                    colors = colors,
+                    textColor = textColor
+                )
+            }
+            item {
+                Text(
+                    text = stringResource(R.string.player_stats_section),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor,
+                    modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
+                )
+            }
+            items(state.categories, key = { it.id }) { category ->
+                CategoryStatCard(
+                    category = category,
+                    colors = colors,
+                    textColor = textColor
+                )
+            }
         }
     }
 }
@@ -142,17 +203,28 @@ private fun PlayerProfileCard(
     displayName: String,
     avatarEmoji: String,
     points: Int,
+    lifetimePoints: Int,
     coins: Int,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
     textColor: androidx.compose.ui.graphics.Color,
     onEditName: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val progress = remember(lifetimePoints) {
+        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelProgress(lifetimePoints)
+    }
+    val isEnglish = stringResource(R.string.player_tab) == "Player"
+    val rankName = if (isEnglish) {
+        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRankEn(progress.level)
+    } else {
+        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRank(progress.level)
+    }
+
     GlassCard(modifier = modifier, colors = colors) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(24.dp),
+                .padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             Row(
@@ -162,30 +234,78 @@ private fun PlayerProfileCard(
             ) {
                 Text(
                     text = avatarEmoji,
-                    fontSize = 34.sp
+                    fontSize = 42.sp,
+                    modifier = Modifier.padding(end = 4.dp)
                 )
-                Text(
-                    text = displayName,
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = textColor,
-                    modifier = Modifier.weight(1f)
-                )
-                IconButton(onClick = onEditName) {
-                    Icon(
-                        imageVector = Icons.Rounded.Edit,
-                        contentDescription = stringResource(R.string.player_edit_name),
-                        tint = textColor
+                Column(modifier = Modifier.weight(1f)) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        Text(
+                            text = displayName,
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = textColor
+                        )
+                        IconButton(
+                            onClick = onEditName,
+                            modifier = Modifier.size(24.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Rounded.Edit,
+                                contentDescription = stringResource(R.string.player_edit_name),
+                                tint = textColor.copy(alpha = 0.7f),
+                                modifier = Modifier.size(16.dp)
+                            )
+                        }
+                    }
+                    Text(
+                        text = "$rankName • " + stringResource(R.string.char_level, progress.level),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
                     )
                 }
             }
+
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(
+                        text = stringResource(R.string.char_xp_progress, lifetimePoints, com.rustam.quizapp.domain.CharacterLevelCalculator.xpRequiredForLevel(progress.level + 1)),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = textColor.copy(alpha = 0.8f)
+                    )
+                    Text(
+                        text = "${(progress.progressFraction * 100).toInt()}%",
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = textColor
+                    )
+                }
+                LinearProgressIndicator(
+                    progress = { progress.progressFraction },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(8.dp),
+                    strokeCap = StrokeCap.Round,
+                    trackColor = colors.progressTrack,
+                    color = MaterialTheme.colorScheme.primary
+                )
+            }
+
             Row(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 4.dp),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 SummaryMetric(
                     value = points.toString(),
-                    label = stringResource(R.string.player_points),
+                    label = stringResource(R.string.char_free_xp),
                     textColor = textColor
                 )
                 SummaryMetric(
@@ -199,15 +319,159 @@ private fun PlayerProfileCard(
 }
 
 @Composable
-private fun DailyQuestCard(
-    categoryId: String?,
+private fun CharacterStatsSection(
+    stats: com.rustam.quizapp.domain.CharacterStats,
+    freeXp: Int,
+    textColor: androidx.compose.ui.graphics.Color,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    onUpgrade: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val isEnglish = stringResource(R.string.player_tab) == "Player"
+    val sectionTitle = if (isEnglish) "Character Stats" else "Характеристики персонажа"
+    
+    Column(
+        modifier = modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        Text(
+            text = sectionTitle,
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.SemiBold,
+            color = textColor,
+            modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
+        )
+        
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_strength),
+            value = stats.strength,
+            description = stringResource(R.string.char_stat_strength_desc, stats.xpBonusPercent),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("strength") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_intelligence),
+            value = stats.intelligence,
+            description = stringResource(R.string.char_stat_intelligence_desc, stats.coinBonusPercent),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("intelligence") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_agility),
+            value = stats.agility,
+            description = stringResource(R.string.char_stat_agility_desc, stats.extraTimeSeconds),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("agility") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_luck),
+            value = stats.luck,
+            description = stringResource(R.string.char_stat_luck_desc, stats.doubleRewardChancePercent),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("luck") }
+        )
+    }
+}
+
+@Composable
+private fun StatUpgradeCard(
+    title: String,
+    value: Int,
+    description: String,
+    freeXp: Int,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    onUpgrade: () -> Unit
+) {
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Column(modifier = Modifier.weight(1f)) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = title,
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = textColor
+                    )
+                    Text(
+                        text = "$value / 20",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = textColor.copy(alpha = 0.8f)
+                    )
+                }
+                
+                LinearProgressIndicator(
+                    progress = { value / 20f },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 6.dp)
+                        .height(6.dp),
+                    strokeCap = StrokeCap.Round,
+                    trackColor = colors.progressTrack,
+                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
+                )
+
+                Text(
+                    text = description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.7f)
+                )
+            }
+            
+            androidx.compose.material3.Button(
+                onClick = onUpgrade,
+                enabled = freeXp >= 50 && value < 20,
+                colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.char_upgrade_cost),
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun EventProgressCard(
+    progress: QuizEventProgress,
     categories: List<CategoryStatsUi>,
-    completed: Boolean,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
     textColor: androidx.compose.ui.graphics.Color,
     modifier: Modifier = Modifier
 ) {
-    val questCategory = categoryId?.let { id -> categories.find { it.id == id } }
+    val event = progress.event
+    val questCategory = categories.find { it.id == event.category.id }
 
     GlassCard(modifier = modifier, colors = colors) {
         Column(
@@ -217,7 +481,7 @@ private fun DailyQuestCard(
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Text(
-                text = stringResource(R.string.daily_quest_title),
+                text = stringResource(eventTitleRes(event.type)),
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
                 color = textColor
@@ -225,7 +489,7 @@ private fun DailyQuestCard(
             if (questCategory != null) {
                 Text(
                     text = stringResource(
-                        R.string.daily_quest_topic,
+                        R.string.event_topic,
                         "${questCategory.emoji} ${stringResource(questCategory.titleRes)}"
                     ),
                     style = MaterialTheme.typography.bodyLarge,
@@ -233,19 +497,27 @@ private fun DailyQuestCard(
                 )
             }
             Text(
-                text = stringResource(R.string.daily_quest_bonus),
+                text = stringResource(eventBonusRes(event.type), event.coinMultiplier, event.bonusPoints),
                 style = MaterialTheme.typography.bodyMedium,
                 color = textColor
             )
             Text(
-                text = if (completed) {
-                    stringResource(R.string.daily_quest_completed)
+                text = if (progress.available) {
+                    if (event.maxCompletions > 1) {
+                        stringResource(
+                            R.string.event_progress,
+                            progress.completions,
+                            event.maxCompletions
+                        )
+                    } else {
+                        stringResource(R.string.event_start)
+                    }
                 } else {
-                    stringResource(R.string.daily_quest_start)
+                    stringResource(eventCompletedRes(event.type))
                 },
                 style = MaterialTheme.typography.bodyMedium,
-                fontWeight = if (completed) FontWeight.SemiBold else FontWeight.Normal,
-                color = if (completed) {
+                fontWeight = if (!progress.available) FontWeight.SemiBold else FontWeight.Normal,
+                color = if (!progress.available) {
                     MaterialTheme.colorScheme.primary
                 } else {
                     textColor
@@ -253,6 +525,27 @@ private fun DailyQuestCard(
             )
         }
     }
+}
+
+private fun eventTitleRes(type: QuizEventType): Int = when (type) {
+    QuizEventType.DAILY -> R.string.event_daily_title
+    QuizEventType.WEEKLY -> R.string.event_weekly_title
+    QuizEventType.WEEKEND_BLITZ -> R.string.event_weekend_blitz_title
+    QuizEventType.MARATHON -> R.string.event_marathon_title
+}
+
+private fun eventBonusRes(type: QuizEventType): Int = when (type) {
+    QuizEventType.DAILY -> R.string.event_bonus_daily
+    QuizEventType.WEEKLY -> R.string.event_bonus_weekly
+    QuizEventType.WEEKEND_BLITZ -> R.string.event_bonus_weekend_blitz
+    QuizEventType.MARATHON -> R.string.event_bonus_marathon
+}
+
+private fun eventCompletedRes(type: QuizEventType): Int = when (type) {
+    QuizEventType.DAILY -> R.string.event_completed_daily
+    QuizEventType.WEEKLY -> R.string.event_completed_weekly
+    QuizEventType.WEEKEND_BLITZ -> R.string.event_completed_weekend_blitz
+    QuizEventType.MARATHON -> R.string.event_completed_marathon
 }
 
 @Composable
@@ -438,6 +731,44 @@ private fun StatLine(
     }
 }
 
+@Composable
+private fun SubTabButton(
+    text: String,
+    selected: Boolean,
+    onClick: () -> Unit,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    modifier: Modifier = Modifier
+) {
+    val backgroundColor = if (selected) {
+        MaterialTheme.colorScheme.primary.copy(alpha = 0.22f)
+    } else {
+        colors.progressTrack.copy(alpha = 0.1f)
+    }
+    val borderColor = if (selected) {
+        MaterialTheme.colorScheme.primary.copy(alpha = 0.6f)
+    } else {
+        textColor.copy(alpha = 0.1f)
+    }
+    
+    Surface(
+        onClick = onClick,
+        color = backgroundColor,
+        shape = RoundedCornerShape(12.dp),
+        border = BorderStroke(1.dp, borderColor),
+        modifier = modifier
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
+            color = if (selected) MaterialTheme.colorScheme.primary else textColor.copy(alpha = 0.8f),
+            textAlign = TextAlign.Center,
+            modifier = Modifier.padding(vertical = 12.dp)
+        )
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 private fun StatsContentPreview() {
@@ -447,8 +778,6 @@ private fun StatsContentPreview() {
                 playerName = "Alex",
                 points = 1250,
                 coins = 84,
-                dailyQuestCategoryId = "chemistry",
-                dailyQuestCompleted = false,
                 totalQuizzes = 7,
                 averageAccuracyPercent = 74,
                 categories = listOf(
@@ -456,7 +785,8 @@ private fun StatsContentPreview() {
                     CategoryStatsUi("physics", R.string.category_physics, "⚛️", attempts = 0, accuracyPercent = 0, bestScorePercent = 0)
                 )
             ),
-            onUpdateName = {}
+            onUpdateName = {},
+            onUpgradeStat = {}
         )
     }
 }

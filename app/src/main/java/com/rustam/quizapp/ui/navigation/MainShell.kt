@@ -24,6 +24,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.ui.components.AppBackground
 import com.rustam.quizapp.ui.screens.home.HomeScreen
 import com.rustam.quizapp.ui.screens.settings.SettingsScreen
@@ -34,7 +35,13 @@ private enum class MainTab { Home, Stats, Shop, Settings }
 
 @Composable
 fun MainShell(
-    onStartQuiz: (categoryId: String, difficulty: Difficulty?) -> Unit,
+    onStartQuiz: (
+        categoryId: String,
+        difficulty: Difficulty?,
+        event: QuizEventType?,
+        questionTimeSeconds: Int,
+        questionCount: Int
+    ) -> Unit,
     modifier: Modifier = Modifier
 ) {
     var selectedTab by rememberSaveable { mutableStateOf(MainTab.Home) }

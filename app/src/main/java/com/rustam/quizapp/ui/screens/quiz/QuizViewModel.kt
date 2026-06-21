@@ -15,10 +15,10 @@ import com.rustam.quizapp.data.SavedQuizProgress
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.StatsRepository
+import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.domain.QuizSession
-import com.rustam.quizapp.ui.screens.quiz.QuizViewModel.Companion.QUESTION_TIME_SECONDS
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -29,6 +29,8 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
+const val DEFAULT_QUESTION_TIME_SECONDS = 10
 
 data class QuizUiState(
     val isLoading: Boolean = true,
@@ -41,7 +43,8 @@ data class QuizUiState(
     val isFinished: Boolean = false,
     val correctCount: Int = 0,
     val penaltyCount: Int = 0,
-    val timeLeftSeconds: Int = QUESTION_TIME_SECONDS,
+    val timeLeftSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
+    val questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
     val resumePrompt: SavedQuizProgress? = null
 ) {
     val isAnswered: Boolean get() = selectedAnswer != null || isTimeout
@@ -52,7 +55,8 @@ data class QuizUiState(
         get() = if (totalQuestions == 0) 0f else questionNumber.toFloat() / totalQuestions
 
     val timerProgress: Float
-        get() = timeLeftSeconds.toFloat() / QUESTION_TIME_SECONDS
+        get() = if (questionTimeSeconds == 0) 0f
+        else timeLeftSeconds.toFloat() / questionTimeSeconds
 }
 
 class QuizViewModel(application: Application) : AndroidViewModel(application) {
@@ -71,7 +75,10 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var session: QuizSession? = null
     private var categoryId: String? = null
     private var difficulty: Difficulty? = null
+    private var eventType: QuizEventType? = null
     private var quizLanguage: AppLanguage = AppLanguage.RU
+    private var questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS
+    private var questionCount: Int = QuestionRepository.QUIZ_SIZE
     private var timerJob: Job? = null
     private var isRetryRun = false
     private var lastReward: QuizReward? = null
@@ -80,31 +87,42 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
 
     /**
-     * Checks for a saved run matching [categoryId]/[difficulty]. Shows a resume prompt
+     * Checks for a saved run matching [categoryId]/[difficulty]/[eventType]. Shows a resume prompt
      * when found; otherwise starts a new quiz. [preset] (retry) always starts fresh.
      */
     fun prepare(
         categoryId: String,
         difficulty: Difficulty?,
-        preset: List<Question>? = null
+        preset: List<Question>? = null,
+        eventType: QuizEventType? = null,
+        questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
+        questionCount: Int = QuestionRepository.QUIZ_SIZE
     ) {
         if (preset != null) {
             isRetryRun = true
+            this.eventType = null
+            this.questionTimeSeconds = DEFAULT_QUESTION_TIME_SECONDS
+            this.questionCount = preset.size
             startNew(categoryId, difficulty, preset)
             return
         }
         isRetryRun = false
+        this.eventType = eventType
+        this.questionTimeSeconds = questionTimeSeconds
+        this.questionCount = questionCount
         viewModelScope.launch {
             val language = settingsRepository.appLanguage.first()
             val saved = progressRepository.savedProgress.first()
             if (saved != null &&
                 saved.categoryId == categoryId &&
                 saved.difficulty == difficulty &&
-                saved.language == language
+                saved.language == language &&
+                saved.eventType == eventType
             ) {
                 _uiState.value = QuizUiState(
                     isLoading = false,
-                    resumePrompt = saved
+                    resumePrompt = saved,
+                    questionTimeSeconds = saved.questionTimeSeconds
                 )
             } else {
                 startNew(categoryId, difficulty, preset = null)
@@ -116,13 +134,17 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val saved = _uiState.value.resumePrompt ?: return
         categoryId = saved.categoryId
         difficulty = saved.difficulty
+        eventType = saved.eventType
         quizLanguage = saved.language
+        questionTimeSeconds = saved.questionTimeSeconds
+        questionCount = saved.questions.size
         val restored = QuizSession(
             questions = saved.questions,
             startIndex = saved.currentIndex,
             initialCorrect = saved.correctCount,
             initialPenalties = saved.penaltyCount,
-            initialMistakes = saved.mistakes
+            initialMistakes = saved.mistakes,
+            initialAnswerRewards = saved.answerRewards
         )
         session = restored
         _uiState.value = QuizUiState(
@@ -135,7 +157,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             selectedAnswer = saved.selectedAnswer,
             showExplanation = saved.showExplanation,
             isTimeout = saved.isTimeout,
-            timeLeftSeconds = if (saved.showExplanation) 0 else QUESTION_TIME_SECONDS
+            questionTimeSeconds = questionTimeSeconds,
+            timeLeftSeconds = if (saved.showExplanation) 0 else questionTimeSeconds
         )
         if (!saved.showExplanation) startTimer()
     }
@@ -158,8 +181,18 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             progressRepository.clear()
             quizLanguage = settingsRepository.appLanguage.first()
+            
+            val profile = playerRepository.observeProfile().first()
+            val extraSeconds = profile.stats.extraTimeSeconds
+            this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.questionTimeSeconds + extraSeconds).toInt()
+
             val questions = preset ?: withContext(Dispatchers.IO) {
-                repository.getQuestions(categoryId, difficulty, quizLanguage)
+                repository.getQuestions(
+                    categoryId = categoryId,
+                    difficulty = difficulty,
+                    language = quizLanguage,
+                    quizSize = questionCount
+                )
             }
             applySession(QuizSession(questions))
         }
@@ -168,14 +201,19 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private fun applySession(newSession: QuizSession) {
         session = newSession
         if (newSession.questions.isEmpty()) {
-            _uiState.value = QuizUiState(isLoading = false, isFinished = true)
+            _uiState.value = QuizUiState(
+                isLoading = false,
+                isFinished = true,
+                questionTimeSeconds = questionTimeSeconds
+            )
         } else {
             _uiState.value = QuizUiState(
                 isLoading = false,
                 question = newSession.currentQuestion(),
                 questionNumber = newSession.currentIndex + 1,
                 totalQuestions = newSession.total,
-                timeLeftSeconds = QUESTION_TIME_SECONDS
+                questionTimeSeconds = questionTimeSeconds,
+                timeLeftSeconds = questionTimeSeconds
             )
             startTimer()
         }
@@ -184,8 +222,9 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun selectAnswer(index: Int) {
         val current = session ?: return
         if (_uiState.value.isAnswered) return
+        val elapsed = questionTimeSeconds - _uiState.value.timeLeftSeconds
         stopTimer()
-        val isCorrect = current.submitAnswer(index)
+        val isCorrect = current.submitAnswer(index, elapsed)
         soundManager.play(if (isCorrect) SoundType.CORRECT else SoundType.INCORRECT)
         _uiState.update {
             it.copy(
@@ -221,7 +260,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     isTimeout = false,
                     correctCount = current.correctCount,
                     penaltyCount = current.penaltyCount,
-                    timeLeftSeconds = QUESTION_TIME_SECONDS
+                    timeLeftSeconds = questionTimeSeconds
                 )
             }
             startTimer()
@@ -245,9 +284,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             correctCount = current.correctCount,
             penaltyCount = current.penaltyCount,
             mistakes = current.mistakes,
+            answerRewards = current.answerRewards,
             selectedAnswer = state.selectedAnswer,
             showExplanation = state.showExplanation,
-            isTimeout = state.isTimeout
+            isTimeout = state.isTimeout,
+            eventType = eventType,
+            questionTimeSeconds = questionTimeSeconds
         )
         stopTimer()
         viewModelScope.launch {
@@ -270,7 +312,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private fun startTimer() {
         stopTimer()
         timerJob = viewModelScope.launch {
-            for (seconds in QUESTION_TIME_SECONDS downTo 0) {
+            for (seconds in questionTimeSeconds downTo 0) {
                 _uiState.update { it.copy(timeLeftSeconds = seconds) }
                 if (seconds == 0) {
                     onTimeout()
@@ -289,7 +331,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private fun onTimeout() {
         val current = session ?: return
         if (_uiState.value.isAnswered) return
-        current.submitTimeout()
+        current.submitTimeout(questionTimeSeconds)
         soundManager.play(SoundType.INCORRECT)
         _uiState.update {
             it.copy(
@@ -305,12 +347,13 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private suspend fun recordResult(session: QuizSession): QuizReward? {
         val category = categoryId ?: return null
         statsRepository.recordQuizResult(category, session.correctCount, session.total)
-        val score = session.correctCount - session.penaltyCount
         return playerRepository.grantQuizReward(
             categoryId = category,
-            score = score,
+            difficulty = difficulty,
+            answers = session.answerRewards,
             total = session.total,
-            allowDailyBonus = !isRetryRun
+            eventType = eventType,
+            allowEventBonus = !isRetryRun
         )
     }
 
@@ -319,7 +362,4 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         soundManager.release()
     }
 
-    companion object {
-        const val QUESTION_TIME_SECONDS = 10
-    }
 }

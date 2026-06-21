@@ -1,28 +1,77 @@
 package com.rustam.quizapp.domain
 
+import kotlinx.serialization.Serializable
+
 /** Points and coins earned from a single quiz run. */
 data class QuizReward(
     val points: Int,
     val coins: Int,
-    val dailyQuestBonus: Boolean = false
+    val eventBonus: QuizEventType? = null,
+    val speedBonusPercent: Int = 0,
+    val isCriticalSuccess: Boolean = false,
+    val xpBonus: Int = 0,
+    val coinBonus: Int = 0
+) {
+    val hasEventBonus: Boolean get() = eventBonus != null
+}
+
+@Serializable
+data class AnswerReward(
+    val isCorrect: Boolean,
+    val elapsedSeconds: Int
 )
 
 object RewardCalculator {
-    private const val POINTS_PER_SCORE = 10
+    private const val POINTS_PER_CORRECT = 10
+    private const val COINS_PER_CORRECT = 2
     private const val PERFECT_BONUS_POINTS = 50
-    private const val DAILY_QUEST_BONUS_POINTS = 100
-    private const val COINS_PER_SCORE = 2
-    private const val DAILY_QUEST_COIN_MULTIPLIER = 3
+    private const val SPEED_LOSS_PER_SECOND = 0.1f
 
-    fun calculate(score: Int, total: Int, isDailyQuest: Boolean): QuizReward {
-        val perfectBonus = if (total > 0 && score == total) PERFECT_BONUS_POINTS else 0
-        val dailyPoints = if (isDailyQuest) DAILY_QUEST_BONUS_POINTS else 0
-        val baseCoins = score * COINS_PER_SCORE
-        val dailyCoins = if (isDailyQuest) score * COINS_PER_SCORE * DAILY_QUEST_COIN_MULTIPLIER else 0
+    fun speedMultiplier(elapsedSeconds: Int): Float =
+        (1f - SPEED_LOSS_PER_SECOND * elapsedSeconds).coerceAtLeast(0f)
+
+    fun calculate(
+        answers: List<AnswerReward>,
+        total: Int,
+        activeEvent: QuizEvent?
+    ): QuizReward {
+        var points = 0f
+        var coins = 0f
+        var speedWeightedCorrect = 0
+        val correctCount = answers.count { it.isCorrect }
+
+        answers.forEach { answer ->
+            if (!answer.isCorrect) return@forEach
+            val multiplier = speedMultiplier(answer.elapsedSeconds)
+            points += POINTS_PER_CORRECT * multiplier
+            coins += COINS_PER_CORRECT * multiplier
+            speedWeightedCorrect++
+        }
+
+        val perfectBonus = if (total > 0 && correctCount == total) PERFECT_BONUS_POINTS else 0
+        points += perfectBonus
+
+        var eventBonus: QuizEventType? = null
+        if (activeEvent != null) {
+            eventBonus = activeEvent.type
+            points += activeEvent.bonusPoints
+            val bonusCoins = correctCount * COINS_PER_CORRECT * (activeEvent.coinMultiplier - 1)
+            coins += bonusCoins
+        }
+
+        val baseMaxPoints = correctCount * POINTS_PER_CORRECT + perfectBonus +
+            (activeEvent?.bonusPoints ?: 0)
+        val speedBonusPercent = if (baseMaxPoints > 0) {
+            ((points / baseMaxPoints) * 100f).toInt().coerceIn(0, 100)
+        } else {
+            0
+        }
+
         return QuizReward(
-            points = score * POINTS_PER_SCORE + perfectBonus + dailyPoints,
-            coins = baseCoins + dailyCoins,
-            dailyQuestBonus = isDailyQuest
+            points = points.toInt(),
+            coins = coins.toInt(),
+            eventBonus = eventBonus,
+            speedBonusPercent = if (speedWeightedCorrect > 0) speedBonusPercent else 0
         )
     }
 }

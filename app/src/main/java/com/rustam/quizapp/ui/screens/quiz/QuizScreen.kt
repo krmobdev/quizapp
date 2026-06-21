@@ -56,6 +56,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
+import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.ui.components.AppActionButton
 import com.rustam.quizapp.ui.components.AppBackground
@@ -76,6 +77,9 @@ fun QuizScreen(
     onFinished: (QuizResult) -> Unit,
     onBack: () -> Unit,
     modifier: Modifier = Modifier,
+    eventType: QuizEventType? = null,
+    questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
+    questionCount: Int = 10,
     retryQuestions: List<Question>? = null,
     viewModel: QuizViewModel = viewModel()
 ) {
@@ -83,8 +87,15 @@ fun QuizScreen(
         viewModel.saveAndExit(onDone = onBack)
     }
 
-    LaunchedEffect(categoryId, difficulty, retryQuestions) {
-        viewModel.prepare(categoryId, difficulty, retryQuestions)
+    LaunchedEffect(categoryId, difficulty, retryQuestions, eventType, questionTimeSeconds, questionCount) {
+        viewModel.prepare(
+            categoryId = categoryId,
+            difficulty = difficulty,
+            preset = retryQuestions,
+            eventType = eventType,
+            questionTimeSeconds = questionTimeSeconds,
+            questionCount = questionCount
+        )
     }
     val state by viewModel.uiState.collectAsState()
 

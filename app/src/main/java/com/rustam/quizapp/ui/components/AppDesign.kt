@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -60,6 +61,7 @@ import com.rustam.quizapp.ui.theme.WrongRedDark
 
 object AppShapes {
     val Card = RoundedCornerShape(28.dp)
+    val Choice = RoundedCornerShape(20.dp)
     val Button = RoundedCornerShape(28.dp)
     val Badge = CircleShape
 }
@@ -117,7 +119,7 @@ fun SettingChoiceCard(
     val textColor = appTextColor()
     val containerColor by animateColorAsState(
         targetValue = if (selected) {
-            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.55f)
+            MaterialTheme.colorScheme.primary.copy(alpha = 0.12f)
         } else {
             colors.glassCard
         },
@@ -126,7 +128,7 @@ fun SettingChoiceCard(
     )
     val borderColor by animateColorAsState(
         targetValue = if (selected) {
-            MaterialTheme.colorScheme.primary.copy(alpha = 0.65f)
+            MaterialTheme.colorScheme.primary
         } else {
             colors.glassBorder
         },
@@ -134,35 +136,40 @@ fun SettingChoiceCard(
         label = "settingChoiceBorder"
     )
 
-    Card(
+    Surface(
         onClick = onClick,
         modifier = modifier
             .fillMaxWidth()
-            .height(AppDimens.SettingChoiceHeight),
-        shape = AppShapes.Card,
-        colors = CardDefaults.cardColors(containerColor = containerColor),
-        border = BorderStroke(width = if (selected) 2.dp else 1.dp, color = borderColor),
-        elevation = CardDefaults.cardElevation(defaultElevation = if (selected) 3.dp else 0.dp)
+            .height(AppDimens.SettingChoiceHeight)
+            .border(
+                width = if (selected) 2.dp else 1.dp,
+                color = borderColor,
+                shape = AppShapes.Choice
+            ),
+        shape = AppShapes.Choice,
+        color = containerColor,
+        shadowElevation = 0.dp,
+        tonalElevation = 0.dp
     ) {
         Row(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 22.dp),
+                .padding(horizontal = 20.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
                 text = label,
-                style = MaterialTheme.typography.titleLarge,
+                style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
                 color = textColor
             )
             if (selected) {
                 Icon(
-                    imageVector = Icons.Rounded.CheckCircle,
+                    imageVector = Icons.Rounded.Check,
                     contentDescription = null,
-                    tint = textColor,
-                    modifier = Modifier.size(26.dp)
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(22.dp)
                 )
             }
         }

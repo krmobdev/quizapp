@@ -9,18 +9,29 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -28,6 +39,7 @@ import com.rustam.quizapp.R
 import com.rustam.quizapp.data.AppLanguage
 import com.rustam.quizapp.data.ThemeMode
 import com.rustam.quizapp.ui.components.AppDimens
+import com.rustam.quizapp.ui.components.AppShapes
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.ScreenSubtitle
 import com.rustam.quizapp.ui.components.ScreenTitle
@@ -45,13 +57,19 @@ fun SettingsScreen(
     val soundEnabled by viewModel.soundEnabled.collectAsState()
     val themeMode by viewModel.themeMode.collectAsState()
     val appLanguage by viewModel.appLanguage.collectAsState()
+    val promoRedeemed by viewModel.promoRedeemed.collectAsState()
+    val promoMessageRes by viewModel.promoMessageRes.collectAsState()
     SettingsContent(
         soundEnabled = soundEnabled,
         themeMode = themeMode,
         appLanguage = appLanguage,
+        promoRedeemed = promoRedeemed,
+        promoMessageRes = promoMessageRes,
         onSoundEnabledChange = viewModel::setSoundEnabled,
         onThemeModeChange = viewModel::setThemeMode,
         onAppLanguageChange = viewModel::setAppLanguage,
+        onRedeemPromo = viewModel::redeemPromoCode,
+        onClearPromoMessage = viewModel::clearPromoMessage,
         modifier = modifier
     )
 }
@@ -61,9 +79,13 @@ private fun SettingsContent(
     soundEnabled: Boolean,
     themeMode: ThemeMode,
     appLanguage: AppLanguage,
+    promoRedeemed: Boolean,
+    promoMessageRes: Int?,
     onSoundEnabledChange: (Boolean) -> Unit,
     onThemeModeChange: (ThemeMode) -> Unit,
     onAppLanguageChange: (AppLanguage) -> Unit,
+    onRedeemPromo: (String) -> Unit,
+    onClearPromoMessage: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -115,7 +137,95 @@ private fun SettingsContent(
             }
         }
 
+        PromoCodeSection(
+            redeemed = promoRedeemed,
+            messageRes = promoMessageRes,
+            onRedeem = onRedeemPromo,
+            onClearMessage = onClearPromoMessage,
+            colors = colors,
+            textColor = textColor
+        )
+
         Spacer(Modifier.height(8.dp))
+    }
+}
+
+@Composable
+private fun PromoCodeSection(
+    redeemed: Boolean,
+    messageRes: Int?,
+    onRedeem: (String) -> Unit,
+    onClearMessage: () -> Unit,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    modifier: Modifier = Modifier
+) {
+    var code by rememberSaveable { mutableStateOf("") }
+
+    LaunchedEffect(messageRes) {
+        if (messageRes != null) {
+            kotlinx.coroutines.delay(4_000)
+            onClearMessage()
+        }
+    }
+
+    SettingsSection(
+        title = stringResource(R.string.settings_promo_title),
+        subtitle = stringResource(R.string.settings_promo_subtitle),
+        colors = colors,
+        modifier = modifier
+    ) {
+        if (redeemed) {
+            Text(
+                text = stringResource(R.string.settings_promo_redeemed),
+                style = MaterialTheme.typography.bodyLarge,
+                fontWeight = FontWeight.SemiBold,
+                color = MaterialTheme.colorScheme.primary
+            )
+        } else {
+            OutlinedTextField(
+                value = code,
+                onValueChange = { code = it.uppercase().take(12) },
+                modifier = Modifier.fillMaxWidth(),
+                label = { Text(stringResource(R.string.settings_promo_hint)) },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(
+                    capitalization = KeyboardCapitalization.Characters,
+                    imeAction = ImeAction.Done
+                ),
+                keyboardActions = KeyboardActions(
+                    onDone = {
+                        if (code.isNotBlank()) onRedeem(code)
+                    }
+                )
+            )
+            Button(
+                onClick = { onRedeem(code) },
+                enabled = code.isNotBlank(),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(48.dp),
+                shape = AppShapes.Button,
+                colors = ButtonDefaults.buttonColors(contentColor = textColor)
+            ) {
+                Text(
+                    text = stringResource(R.string.settings_promo_activate),
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.SemiBold
+                )
+            }
+        }
+        messageRes?.let { resId ->
+            Text(
+                text = stringResource(resId),
+                style = MaterialTheme.typography.bodyMedium,
+                color = if (resId == R.string.settings_promo_success) {
+                    MaterialTheme.colorScheme.primary
+                } else {
+                    MaterialTheme.colorScheme.error
+                }
+            )
+        }
     }
 }
 
@@ -202,9 +312,13 @@ private fun SettingsContentPreview() {
             soundEnabled = true,
             themeMode = ThemeMode.SYSTEM,
             appLanguage = AppLanguage.RU,
+            promoRedeemed = false,
+            promoMessageRes = null,
             onSoundEnabledChange = {},
             onThemeModeChange = {},
-            onAppLanguageChange = {}
+            onAppLanguageChange = {},
+            onRedeemPromo = {},
+            onClearPromoMessage = {}
         )
     }
 }

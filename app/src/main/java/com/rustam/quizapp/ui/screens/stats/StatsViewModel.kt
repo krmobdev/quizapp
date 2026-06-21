@@ -4,11 +4,17 @@ import android.app.Application
 import androidx.annotation.StringRes
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.rustam.quizapp.audio.SoundManager
+import com.rustam.quizapp.audio.SoundResources
+import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.AppStats
 import com.rustam.quizapp.data.PlayerProfile
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.QuestionRepository
+import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.StatsRepository
+import com.rustam.quizapp.domain.CharacterStats
+import com.rustam.quizapp.domain.QuizEventProgress
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -31,11 +37,12 @@ data class PlayerUiState(
     val avatarEmoji: String = "🙂",
     val points: Int = 0,
     val coins: Int = 0,
-    val dailyQuestCategoryId: String? = null,
-    val dailyQuestCompleted: Boolean = false,
+    val events: List<QuizEventProgress> = emptyList(),
     val totalQuizzes: Int = 0,
     val averageAccuracyPercent: Int? = null,
-    val categories: List<CategoryStatsUi> = emptyList()
+    val categories: List<CategoryStatsUi> = emptyList(),
+    val stats: CharacterStats = CharacterStats(),
+    val lifetimePoints: Int = 0
 )
 
 class StatsViewModel(application: Application) : AndroidViewModel(application) {
@@ -43,6 +50,12 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
     private val questionRepository = QuestionRepository(application)
     private val statsRepository = StatsRepository(application)
     private val playerRepository = PlayerRepository(application, questionRepository)
+    private val soundManager = SoundManager(
+        context = application,
+        sounds = SoundResources.load(application),
+        soundEnabled = SettingsRepository(application).soundEnabled,
+        scope = viewModelScope
+    )
 
     val uiState: StateFlow<PlayerUiState> = combine(
         statsRepository.observeStats(),
@@ -54,6 +67,19 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             playerRepository.setPlayerName(name)
         }
+    }
+
+    fun upgradeStat(statName: String) {
+        viewModelScope.launch {
+            val upgraded = playerRepository.upgradeStat(statName)
+            if (upgraded) {
+                soundManager.play(SoundType.CLICK)
+            }
+        }
+    }
+
+    override fun onCleared() {
+        soundManager.release()
     }
 
     private fun toUiState(stats: AppStats, profile: PlayerProfile): PlayerUiState {
@@ -81,11 +107,12 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             avatarEmoji = profile.avatarEmoji,
             points = profile.points,
             coins = profile.coins,
-            dailyQuestCategoryId = profile.dailyQuestCategoryId,
-            dailyQuestCompleted = profile.dailyQuestCompleted,
+            events = profile.eventProgress,
             totalQuizzes = stats.totalQuizzesCompleted,
             averageAccuracyPercent = averageAccuracy,
-            categories = categories
+            categories = categories,
+            stats = profile.stats,
+            lifetimePoints = profile.lifetimePoints
         )
     }
 }

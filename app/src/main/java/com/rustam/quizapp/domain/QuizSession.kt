@@ -11,7 +11,8 @@ class QuizSession(
     startIndex: Int = 0,
     initialCorrect: Int = 0,
     initialPenalties: Int = 0,
-    initialMistakes: List<Question> = emptyList()
+    initialMistakes: List<Question> = emptyList(),
+    initialAnswerRewards: List<AnswerReward> = emptyList()
 ) {
 
     var currentIndex: Int = startIndex
@@ -26,24 +27,35 @@ class QuizSession(
     private val _mistakes = initialMistakes.toMutableList()
     val mistakes: List<Question> get() = _mistakes
 
+    private val _answerRewards = initialAnswerRewards.toMutableList()
+    val answerRewards: List<AnswerReward> get() = _answerRewards
+
     val total: Int get() = questions.size
 
     val score: Int get() = correctCount - penaltyCount
 
     fun currentQuestion(): Question? = questions.getOrNull(currentIndex)
 
-    fun submitAnswer(selectedIndex: Int): Boolean {
+    fun submitAnswer(selectedIndex: Int, elapsedSeconds: Int): Boolean {
         val question = currentQuestion() ?: return false
         val isCorrect = selectedIndex == question.correctIndex
-        if (isCorrect) correctCount++ else _mistakes.add(question)
+        if (isCorrect) {
+            correctCount++
+        } else {
+            _mistakes.add(question)
+        }
+        _answerRewards.add(AnswerReward(isCorrect = isCorrect, elapsedSeconds = elapsedSeconds))
         return isCorrect
     }
 
     /** Time ran out — counts as a mistake and applies a −1 penalty. */
-    fun submitTimeout() {
+    fun submitTimeout(questionTimeSeconds: Int) {
         val question = currentQuestion() ?: return
         _mistakes.add(question)
         penaltyCount++
+        _answerRewards.add(
+            AnswerReward(isCorrect = false, elapsedSeconds = questionTimeSeconds)
+        )
     }
 
     fun nextQuestion() {

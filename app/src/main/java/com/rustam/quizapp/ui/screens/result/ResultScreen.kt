@@ -3,6 +3,7 @@ package com.rustam.quizapp.ui.screens.result
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -10,9 +11,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -27,7 +30,9 @@ import androidx.compose.ui.unit.dp
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
+import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizResult
+import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.ui.components.AppActionButton
 import com.rustam.quizapp.ui.components.AppBackground
 import com.rustam.quizapp.ui.components.AppDimens
@@ -109,25 +114,45 @@ private fun ResultContent(
 
             result.reward?.let { reward ->
                 Spacer(Modifier.height(12.dp))
+                
+                if (reward.isCriticalSuccess) {
+                    Surface(
+                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+                        shape = RoundedCornerShape(12.dp),
+                        border = BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)),
+                        modifier = Modifier.padding(horizontal = 16.dp)
+                    ) {
+                        Text(
+                            text = stringResource(R.string.char_critical_success),
+                            style = MaterialTheme.typography.bodyMedium,
+                            fontWeight = FontWeight.Bold,
+                            textAlign = TextAlign.Center,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.padding(12.dp)
+                        )
+                    }
+                    Spacer(Modifier.height(8.dp))
+                }
+
                 Text(
-                    text = if (reward.dailyQuestBonus) {
-                        stringResource(
-                            R.string.rewards_earned_daily,
-                            reward.points,
-                            reward.coins
-                        )
-                    } else {
-                        stringResource(
-                            R.string.rewards_earned,
-                            reward.points,
-                            reward.coins
-                        )
-                    },
+                    text = rewardText(reward),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold,
                     textAlign = TextAlign.Center,
                     color = MaterialTheme.colorScheme.primary
                 )
+                if (reward.speedBonusPercent > 0) {
+                    Spacer(Modifier.height(4.dp))
+                    Text(
+                        text = stringResource(
+                            R.string.rewards_speed_bonus,
+                            reward.speedBonusPercent
+                        ),
+                        style = MaterialTheme.typography.bodyMedium,
+                        textAlign = TextAlign.Center,
+                        color = textColor
+                    )
+                }
             }
 
             if (result.penalties > 0) {
@@ -243,6 +268,34 @@ private fun MissingResult(onHome: () -> Unit, modifier: Modifier = Modifier) {
             )
         }
     }
+}
+
+@Composable
+private fun rewardText(reward: QuizReward): String {
+    val xpBonusText = if (reward.xpBonus > 0) {
+        stringResource(R.string.char_bonus_xp_detail, reward.xpBonus)
+    } else ""
+    val coinBonusText = if (reward.coinBonus > 0) {
+        stringResource(R.string.char_bonus_coins_detail, reward.coinBonus)
+    } else ""
+
+    val isEnglish = stringResource(R.string.player_tab) == "Player"
+    val pointsLabel = if (isEnglish) "points" else "очков"
+    val coinsLabel = if (isEnglish) "coins" else "монет"
+    
+    val finalPointsText = "+${reward.points} $pointsLabel$xpBonusText"
+    val finalCoinsText = "+${reward.coins} $coinsLabel$coinBonusText"
+    val baseText = "$finalPointsText · $finalCoinsText"
+    
+    if (!reward.hasEventBonus) return baseText
+    val eventLabel = when (reward.eventBonus) {
+        QuizEventType.DAILY -> stringResource(R.string.event_daily_title)
+        QuizEventType.WEEKLY -> stringResource(R.string.event_weekly_title)
+        QuizEventType.WEEKEND_BLITZ -> stringResource(R.string.event_weekend_blitz_title)
+        QuizEventType.MARATHON -> stringResource(R.string.event_marathon_title)
+        null -> return baseText
+    }
+    return "$baseText · $eventLabel"
 }
 
 @Composable

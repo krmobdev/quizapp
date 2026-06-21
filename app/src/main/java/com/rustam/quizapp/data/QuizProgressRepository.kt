@@ -3,6 +3,8 @@ package com.rustam.quizapp.data
 import android.content.Context
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
+import com.rustam.quizapp.domain.AnswerReward
+import com.rustam.quizapp.domain.QuizEventType
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.serialization.Serializable
@@ -19,9 +21,12 @@ data class SavedQuizProgress(
     val correctCount: Int,
     val penaltyCount: Int,
     val mistakes: List<Question>,
+    val answerRewards: List<AnswerReward> = emptyList(),
     val selectedAnswer: Int? = null,
     val showExplanation: Boolean = false,
-    val isTimeout: Boolean = false
+    val isTimeout: Boolean = false,
+    val eventType: QuizEventType? = null,
+    val questionTimeSeconds: Int = 10
 )
 
 class QuizProgressRepository(context: Context) {

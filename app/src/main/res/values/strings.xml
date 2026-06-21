@@ -3,6 +3,7 @@
 
     <string name="back">Назад</string>
     <string name="home_title">AnimaQuiz</string>
+    <string name="home_categories_title">Темы квизов</string>
     <string name="difficulty_screen_title">Уровень сложности</string>
     <string name="stats">Статистика</string>
     <string name="player_tab">Игрок</string>
@@ -13,18 +14,34 @@
     <string name="player_name_hint">Ваше имя</string>
     <string name="save">Сохранить</string>
     <string name="cancel">Отмена</string>
-    <string name="daily_quest_title">Квест дня</string>
-    <string name="daily_quest_topic">Тема: %1$s</string>
-    <string name="daily_quest_bonus">Бонус: ×3 монет и +100 очков</string>
-    <string name="daily_quest_completed">Выполнен сегодня</string>
-    <string name="daily_quest_start">Начать квест</string>
+    <string name="events_section_title">События</string>
+    <string name="event_topic">Тема: %1$s</string>
+    <string name="event_start">Начать</string>
+    <string name="event_progress">Пройдено: %1$d из %2$d</string>
+    <string name="event_daily_title">Квест дня</string>
+    <string name="event_weekly_title">Недельный квест</string>
+    <string name="event_weekend_blitz_title">Блиц выходного дня</string>
+    <string name="event_marathon_title">Марафон</string>
+    <string name="event_bonus_daily">Бонус: ×%1$d монет и +%2$d очков</string>
+    <string name="event_bonus_weekly">Бонус: ×%1$d монет и +%2$d очков</string>
+    <string name="event_bonus_weekend_blitz">Бонус: ×%1$d монет и +%2$d очков</string>
+    <string name="event_bonus_marathon">Бонус: ×%1$d монет и +%2$d очков</string>
+    <string name="event_completed_daily">Выполнен сегодня</string>
+    <string name="event_completed_weekly">Лимит на эту неделю исчерпан</string>
+    <string name="event_completed_weekend_blitz">Лимит на выходные исчерпан</string>
+    <string name="event_completed_marathon">Лимит на сегодня исчерпан</string>
+    <string name="event_rules_daily">1 раз в день · сброс в полночь</string>
+    <string name="event_rules_weekly">До 10 раз в неделю · сброс в понедельник</string>
+    <string name="event_rules_weekend_blitz">Только в субботу и воскресенье · %1$d сек на ответ</string>
+    <string name="event_rules_marathon">%1$d сложных вопросов · до 3 раз в день</string>
     <string name="player_stats_section">Статистика по темам</string>
     <string name="rewards_earned">+%1$d очков · +%2$d монет</string>
-    <string name="rewards_earned_daily">+%1$d очков · +%2$d монет · бонус квеста!</string>
+    <string name="rewards_earned_event">+%1$d очков · +%2$d монет · %3$s</string>
+    <string name="rewards_speed_bonus">Скорость: %1$d%% от максимума</string>
     <string name="settings">Настройки</string>
 
     <string name="choose_level">Выберите уровень</string>
-    <string name="quiz_rules">10 вопросов · 10 секунд на ответ</string>
+    <string name="quiz_rules">10 вопросов · 10 секунд на ответ · быстрый ответ даёт больше наград</string>
     <string name="question_bank_size">400 вопросов в банке</string>
     <string name="start_quiz">Начать квиз</string>
 
@@ -55,6 +72,15 @@
     <string name="theme_system">Системная</string>
     <string name="theme_light">Светлая</string>
     <string name="theme_dark">Тёмная</string>
+
+    <string name="settings_promo_title">Промо-код</string>
+    <string name="settings_promo_subtitle">Активируйте код и получите монеты</string>
+    <string name="settings_promo_hint">Введите промо-код</string>
+    <string name="settings_promo_activate">Активировать</string>
+    <string name="settings_promo_success">Промо-код активирован! +3000 монет</string>
+    <string name="settings_promo_invalid">Неверный промо-код</string>
+    <string name="settings_promo_already">Промо-код уже был активирован</string>
+    <string name="settings_promo_redeemed">Промо-код активирован · +3000 монет</string>
 
     <string name="settings_language_title">Язык</string>
     <string name="settings_language_subtitle">Язык интерфейса</string>
@@ -123,4 +149,21 @@
         <item>Наука начинается с вопроса «почему?»</item>
         <item>Пятнадцать минут квиза лучше часа пустой скуки.</item>
     </string-array>
+
+    <!-- Характеристики персонажа и уровни -->
+    <string name="char_level">Уровень %1$d</string>
+    <string name="char_xp_progress">Опыт: %1$d / %2$d XP</string>
+    <string name="char_free_xp">Свободный опыт: %1$d XP</string>
+    <string name="char_stat_strength">Сила 💪</string>
+    <string name="char_stat_strength_desc">Сила воли: +2%% к получаемому XP за правильные ответы (сейчас: +%1$d%% XP)</string>
+    <string name="char_stat_intelligence">Интеллект 🧠</string>
+    <string name="char_stat_intelligence_desc">Острота ума: +2%% к получаемым монетам (сейчас: +%1$d%% монет)</string>
+    <string name="char_stat_agility">Ловкость ⚡</string>
+    <string name="char_stat_agility_desc">Скорость реакции: +0.5 сек к таймеру вопроса (сейчас: +%1$.1f сек)</string>
+    <string name="char_stat_luck">Удача 🍀</string>
+    <string name="char_stat_luck_desc">Улыбка фортуны: шанс %1$d%% на Критический успех (x2 наград в конце игры)</string>
+    <string name="char_upgrade_cost">Купить за 50 XP</string>
+    <string name="char_critical_success">КРИТИЧЕСКИЙ УСПЕХ! Удача удваивает ваши награды! 🌟</string>
+    <string name="char_bonus_xp_detail"> (+%1$d от Силы)</string>
+    <string name="char_bonus_coins_detail"> (+%1$d от Интеллекта)</string>
 </resources>

@@ -17,18 +17,20 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBars
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.rounded.CheckCircle
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -60,6 +62,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Category
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.domain.QuizEventProgress
+import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.ui.components.AppActionButton
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppShapes
@@ -73,7 +77,13 @@ import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
 fun HomeScreen(
-    onStartQuiz: (categoryId: String, difficulty: Difficulty?) -> Unit,
+    onStartQuiz: (
+        categoryId: String,
+        difficulty: Difficulty?,
+        event: QuizEventType?,
+        questionTimeSeconds: Int,
+        questionCount: Int
+    ) -> Unit,
     onOverlayModeChange: (Boolean) -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = viewModel()
@@ -87,9 +97,9 @@ fun HomeScreen(
         onCategoryClick = viewModel::selectCategory,
         onDifficultySelected = viewModel::selectDifficulty,
         onBack = viewModel::clearSelection,
-        onStartQuiz = { categoryId, difficulty ->
+        onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount ->
             viewModel.playClick()
-            onStartQuiz(categoryId, difficulty)
+            onStartQuiz(categoryId, difficulty, event, timeLimit, questionCount)
         },
         modifier = modifier
     )
@@ -102,7 +112,13 @@ private fun HomeContent(
     onCategoryClick: (Category) -> Unit,
     onDifficultySelected: (DifficultyFilter) -> Unit,
     onBack: () -> Unit,
-    onStartQuiz: (categoryId: String, difficulty: Difficulty?) -> Unit,
+    onStartQuiz: (
+        categoryId: String,
+        difficulty: Difficulty?,
+        event: QuizEventType?,
+        questionTimeSeconds: Int,
+        questionCount: Int
+    ) -> Unit,
     modifier: Modifier = Modifier
 ) {
     BackHandler(enabled = state.selectedCategory != null, onBack = onBack)
@@ -140,33 +156,96 @@ private fun HomeContent(
         }
     ) { innerPadding ->
         if (selected == null) {
-            Column(
+            HomeScrollContent(
+                events = state.events,
+                categories = state.categories,
+                onCategoryClick = onCategoryClick,
+                onStartEvent = { progress ->
+                    val event = progress.event
+                    onStartQuiz(
+                        event.category.id,
+                        event.difficulty,
+                        event.type,
+                        event.questionTimeSeconds,
+                        event.questionCount
+                    )
+                },
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(innerPadding)
-            ) {
-                HomeHeroHeader(modifier = Modifier.fillMaxWidth())
-                state.dailyQuest?.let { quest ->
-                    DailyQuestCard(
-                        quest = quest,
-                        onStartQuest = { onStartQuiz(quest.category.id, null) },
-                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 4.dp)
-                    )
-                }
-                CategoryGrid(
-                    categories = state.categories,
-                    onCategoryClick = onCategoryClick,
-                    modifier = Modifier.weight(1f)
-                )
-            }
+            )
         } else {
             DifficultyPanel(
                 category = selected,
                 selectedDifficulty = state.selectedDifficulty,
                 onDifficultySelected = onDifficultySelected,
-                onStart = { onStartQuiz(selected.id, state.selectedDifficulty.difficulty) },
+                onStart = {
+                    onStartQuiz(
+                        selected.id,
+                        state.selectedDifficulty.difficulty,
+                        null,
+                        10,
+                        10
+                    )
+                },
                 modifier = Modifier.padding(innerPadding)
             )
+        }
+    }
+}
+
+@Composable
+private fun HomeScrollContent(
+    events: List<QuizEventProgress>,
+    categories: List<Category>,
+    onCategoryClick: (Category) -> Unit,
+    onStartEvent: (QuizEventProgress) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    LazyColumn(
+        modifier = modifier,
+        contentPadding = PaddingValues(bottom = 16.dp)
+    ) {
+        item {
+            HomeHeroHeader(modifier = Modifier.fillMaxWidth())
+        }
+        if (events.isNotEmpty()) {
+            item {
+                EventsCarousel(
+                    events = events,
+                    onStartEvent = onStartEvent,
+                    modifier = Modifier.padding(top = 4.dp, bottom = 8.dp)
+                )
+            }
+        }
+        item {
+            Text(
+                text = stringResource(R.string.home_categories_title),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = appTextColor(),
+                modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)
+            )
+        }
+        items(categories.chunked(2), key = { row -> row.joinToString { it.id } }) { row ->
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp)
+                    .padding(bottom = 12.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                row.forEach { category ->
+                    CategoryCard(
+                        category = category,
+                        onClick = { onCategoryClick(category) },
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+                if (row.size == 1) {
+                    Spacer(Modifier.weight(1f))
+                }
+            }
         }
     }
 }
@@ -175,21 +254,19 @@ private fun HomeContent(
 private fun HomeHeroHeader(modifier: Modifier = Modifier) {
     val quote = rememberDailyQuote()
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
-    val lift = (topInset + 16.dp) * 0.3f
 
     Column(
         modifier = modifier
-            .offset(y = -lift)
             .padding(horizontal = 24.dp)
-            .padding(top = 0.dp, bottom = 12.dp),
+            .padding(top = topInset + 8.dp, bottom = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        verticalArrangement = Arrangement.spacedBy(6.dp)
     ) {
         Text(
             text = stringResource(R.string.home_title),
             style = MaterialTheme.typography.displaySmall,
             fontWeight = FontWeight.Bold,
-            fontSize = 36.sp,
+            fontSize = 32.sp,
             letterSpacing = (-0.5).sp,
             color = MaterialTheme.colorScheme.onSurface
         )
@@ -199,7 +276,7 @@ private fun HomeHeroHeader(modifier: Modifier = Modifier) {
                 style = MaterialTheme.typography.bodyMedium,
                 fontSize = 14.sp,
                 lineHeight = 20.sp,
-                color = MaterialTheme.colorScheme.onSurface,
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.85f),
                 textAlign = TextAlign.Center,
                 maxLines = 2,
                 modifier = Modifier.padding(horizontal = 4.dp)
@@ -209,52 +286,31 @@ private fun HomeHeroHeader(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun DailyQuestCard(
-    quest: DailyQuestUi,
-    onStartQuest: () -> Unit,
+private fun EventsCarousel(
+    events: List<QuizEventProgress>,
+    onStartEvent: (QuizEventProgress) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val colors = rememberAppThemeColors()
-    val textColor = appTextColor()
-
-    GlassCard(modifier = modifier, colors = colors) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(AppDimens.CardPaddingH, AppDimens.CardPaddingV),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
+    Column(
+        modifier = modifier,
+        verticalArrangement = Arrangement.spacedBy(10.dp)
+    ) {
+        Text(
+            text = stringResource(R.string.events_section_title),
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.SemiBold,
+            color = appTextColor(),
+            modifier = Modifier.padding(horizontal = 20.dp)
+        )
+        LazyRow(
+            contentPadding = PaddingValues(horizontal = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(
-                text = stringResource(R.string.daily_quest_title),
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.SemiBold,
-                color = textColor
-            )
-            Text(
-                text = stringResource(
-                    R.string.daily_quest_topic,
-                    "${quest.category.emoji} ${stringResource(quest.category.titleRes)}"
-                ),
-                style = MaterialTheme.typography.bodyLarge,
-                color = textColor
-            )
-            Text(
-                text = stringResource(R.string.daily_quest_bonus),
-                style = MaterialTheme.typography.bodyMedium,
-                color = textColor
-            )
-            if (quest.completed) {
-                Text(
-                    text = stringResource(R.string.daily_quest_completed),
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.primary
-                )
-            } else {
-                AppActionButton(
-                    text = stringResource(R.string.daily_quest_start),
-                    onClick = onStartQuest,
-                    primary = true
+            items(events, key = { it.event.type.name }) { progress ->
+                EventCard(
+                    progress = progress,
+                    onStart = { onStartEvent(progress) },
+                    modifier = Modifier.width(280.dp)
                 )
             }
         }
@@ -262,22 +318,116 @@ private fun DailyQuestCard(
 }
 
 @Composable
-private fun CategoryGrid(
-    categories: List<Category>,
-    onCategoryClick: (Category) -> Unit,
+private fun EventCard(
+    progress: QuizEventProgress,
+    onStart: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
-        modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(start = 20.dp, end = 20.dp, bottom = 12.dp),
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp)
-    ) {
-        items(categories, key = { it.id }) { category ->
-            CategoryCard(category = category, onClick = { onCategoryClick(category) })
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    val event = progress.event
+    val statusText = when {
+        !progress.available -> stringResource(eventCompletedRes(event.type))
+        event.maxCompletions > 1 -> stringResource(
+            R.string.event_progress,
+            progress.completions,
+            event.maxCompletions
+        )
+        else -> eventRulesText(event)
+    }
+
+    GlassCard(modifier = modifier, colors = colors) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp)
+        ) {
+            Text(
+                text = stringResource(eventTitleRes(event.type)),
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor,
+                maxLines = 1
+            )
+            Text(
+                text = "${event.category.emoji} ${stringResource(event.category.titleRes)}",
+                style = MaterialTheme.typography.bodyMedium,
+                color = textColor,
+                maxLines = 1
+            )
+            Text(
+                text = stringResource(eventBonusRes(event.type), event.coinMultiplier, event.bonusPoints),
+                style = MaterialTheme.typography.bodySmall,
+                color = textColor.copy(alpha = 0.85f),
+                maxLines = 1
+            )
+            if (statusText != null) {
+                Text(
+                    text = statusText,
+                    style = MaterialTheme.typography.bodySmall,
+                    fontWeight = if (!progress.available) FontWeight.SemiBold else FontWeight.Normal,
+                    color = if (!progress.available) {
+                        MaterialTheme.colorScheme.primary
+                    } else {
+                        textColor.copy(alpha = 0.75f)
+                    },
+                    maxLines = 2
+                )
+            }
+            if (progress.available) {
+                Button(
+                    onClick = onStart,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(44.dp),
+                    shape = AppShapes.Button,
+                    colors = ButtonDefaults.buttonColors(contentColor = appTextColor())
+                ) {
+                    Text(
+                        text = stringResource(R.string.event_start),
+                        style = MaterialTheme.typography.labelLarge,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                }
+            }
         }
     }
+}
+
+@Composable
+private fun eventRulesText(event: com.rustam.quizapp.domain.QuizEvent): String? = when (event.type) {
+    QuizEventType.DAILY -> stringResource(R.string.event_rules_daily)
+    QuizEventType.WEEKLY -> stringResource(R.string.event_rules_weekly)
+    QuizEventType.WEEKEND_BLITZ -> stringResource(
+        R.string.event_rules_weekend_blitz,
+        event.questionTimeSeconds
+    )
+    QuizEventType.MARATHON -> stringResource(
+        R.string.event_rules_marathon,
+        event.questionCount
+    )
+}
+
+private fun eventTitleRes(type: QuizEventType): Int = when (type) {
+    QuizEventType.DAILY -> R.string.event_daily_title
+    QuizEventType.WEEKLY -> R.string.event_weekly_title
+    QuizEventType.WEEKEND_BLITZ -> R.string.event_weekend_blitz_title
+    QuizEventType.MARATHON -> R.string.event_marathon_title
+}
+
+private fun eventBonusRes(type: QuizEventType): Int = when (type) {
+    QuizEventType.DAILY -> R.string.event_bonus_daily
+    QuizEventType.WEEKLY -> R.string.event_bonus_weekly
+    QuizEventType.WEEKEND_BLITZ -> R.string.event_bonus_weekend_blitz
+    QuizEventType.MARATHON -> R.string.event_bonus_marathon
+}
+
+private fun eventCompletedRes(type: QuizEventType): Int = when (type) {
+    QuizEventType.DAILY -> R.string.event_completed_daily
+    QuizEventType.WEEKLY -> R.string.event_completed_weekly
+    QuizEventType.WEEKEND_BLITZ -> R.string.event_completed_weekend_blitz
+    QuizEventType.MARATHON -> R.string.event_completed_marathon
 }
 
 @Composable
@@ -301,13 +451,13 @@ private fun CategoryCard(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(vertical = 24.dp, horizontal = 12.dp),
+                .padding(vertical = 20.dp, horizontal = 12.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(10.dp)
+            verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Box(
                 modifier = Modifier
-                    .size(56.dp)
+                    .size(48.dp)
                     .clip(CircleShape)
                     .background(iconCircleColor),
                 contentAlignment = Alignment.Center
@@ -534,7 +684,7 @@ private fun HomeContentCategoriesPreview() {
             onCategoryClick = {},
             onDifficultySelected = {},
             onBack = {},
-            onStartQuiz = { _, _ -> }
+            onStartQuiz = { _, _, _, _, _ -> }
         )
     }
 }
@@ -552,7 +702,7 @@ private fun HomeContentDifficultyDarkPreview() {
             onCategoryClick = {},
             onDifficultySelected = {},
             onBack = {},
-            onStartQuiz = { _, _ -> }
+            onStartQuiz = { _, _, _, _, _ -> }
         )
     }
 }

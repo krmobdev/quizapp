@@ -11,7 +11,7 @@ import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
-import com.rustam.quizapp.domain.DailyQuest
+import com.rustam.quizapp.domain.QuizEventProgress
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -27,16 +27,11 @@ enum class DifficultyFilter(val emoji: String, val difficulty: Difficulty?) {
     ANY("🎲", null)
 }
 
-data class DailyQuestUi(
-    val category: Category,
-    val completed: Boolean
-)
-
 data class HomeUiState(
     val categories: List<Category> = emptyList(),
     val selectedCategory: Category? = null,
     val selectedDifficulty: DifficultyFilter = DifficultyFilter.ANY,
-    val dailyQuest: DailyQuestUi? = null
+    val events: List<QuizEventProgress> = emptyList()
 )
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
@@ -58,17 +53,11 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         navigationState,
         playerRepository.observeProfile()
     ) { nav, profile ->
-        val questCategory = DailyQuest.categoryForDay(nav.categories)
         HomeUiState(
             categories = nav.categories,
             selectedCategory = nav.selectedCategory,
             selectedDifficulty = nav.selectedDifficulty,
-            dailyQuest = questCategory?.let { category ->
-                DailyQuestUi(
-                    category = category,
-                    completed = profile.dailyQuestCompleted
-                )
-            }
+            events = profile.eventProgress
         )
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), HomeUiState())
 
