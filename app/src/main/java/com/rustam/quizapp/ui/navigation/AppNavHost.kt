@@ -14,6 +14,7 @@ import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.data.MISTAKES_CATEGORY_ID
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.ui.screens.quiz.QuizScreen
 import com.rustam.quizapp.ui.screens.result.ResultScreen
@@ -22,7 +23,7 @@ import com.rustam.quizapp.ui.screens.result.ResultScreen
 object Routes {
     const val GRAPH = "quiz_flow"
     const val MAIN = "main"
-    const val QUIZ = "quiz/{categoryId}/{difficulty}/{event}/{timeLimit}/{questionCount}"
+    const val QUIZ = "quiz/{categoryId}/{difficulty}/{event}/{timeLimit}/{questionCount}/{adaptive}"
     const val RESULT = "result"
 
     private const val ANY = "ANY"
@@ -33,9 +34,10 @@ object Routes {
         difficulty: Difficulty?,
         event: QuizEventType? = null,
         questionTimeSeconds: Int = 10,
-        questionCount: Int = 10
+        questionCount: Int = 10,
+        adaptive: Boolean = false
     ): String =
-        "quiz/$categoryId/${difficulty?.name ?: ANY}/${event?.name ?: NONE}/$questionTimeSeconds/$questionCount"
+        "quiz/$categoryId/${difficulty?.name ?: ANY}/${event?.name ?: NONE}/$questionTimeSeconds/$questionCount/$adaptive"
 
     fun parseDifficulty(token: String?): Difficulty? =
         if (token == null || token == ANY) null else Difficulty.valueOf(token)
@@ -51,9 +53,9 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
 
             composable(Routes.MAIN) {
                 MainShell(
-                    onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount ->
+                    onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount, adaptive ->
                         navController.navigate(
-                            Routes.quiz(categoryId, difficulty, event, timeLimit, questionCount)
+                            Routes.quiz(categoryId, difficulty, event, timeLimit, questionCount, adaptive)
                         )
                     }
                 )
@@ -66,7 +68,8 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                     navArgument("difficulty") { type = NavType.StringType },
                     navArgument("event") { type = NavType.StringType },
                     navArgument("timeLimit") { type = NavType.IntType },
-                    navArgument("questionCount") { type = NavType.IntType }
+                    navArgument("questionCount") { type = NavType.IntType },
+                    navArgument("adaptive") { type = NavType.BoolType }
                 )
             ) { entry ->
                 val shared = entry.sharedViewModel<QuizFlowViewModel>(navController)
@@ -75,6 +78,7 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                 val event = Routes.parseEvent(entry.arguments?.getString("event"))
                 val timeLimit = entry.arguments?.getInt("timeLimit") ?: 10
                 val questionCount = entry.arguments?.getInt("questionCount") ?: 10
+                val adaptive = entry.arguments?.getBoolean("adaptive") ?: false
 
                 QuizScreen(
                     categoryId = categoryId,
@@ -82,6 +86,7 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                     eventType = event,
                     questionTimeSeconds = timeLimit,
                     questionCount = questionCount,
+                    adaptive = adaptive,
                     onBack = { navController.popBackToHome() },
                     onFinished = { result ->
                         shared.publishResult(result)
@@ -99,6 +104,18 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                     onHome = {
                         navController.navigate(Routes.MAIN) {
                             popUpTo(Routes.MAIN) { inclusive = true }
+                        }
+                    },
+                    onRetryMistakes = {
+                        navController.navigate(
+                            Routes.quiz(
+                                categoryId = MISTAKES_CATEGORY_ID,
+                                difficulty = null,
+                                questionTimeSeconds = 20,
+                                questionCount = 10
+                            )
+                        ) {
+                            popUpTo(Routes.MAIN) { inclusive = false }
                         }
                     }
                 )

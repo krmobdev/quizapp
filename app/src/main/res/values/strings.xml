@@ -77,10 +77,10 @@
     <string name="settings_promo_subtitle">Активируйте код и получите монеты</string>
     <string name="settings_promo_hint">Введите промо-код</string>
     <string name="settings_promo_activate">Активировать</string>
-    <string name="settings_promo_success">Промо-код активирован! +3000 монет</string>
+    <string name="settings_promo_success">Промо-код активирован! +30000 монет</string>
     <string name="settings_promo_invalid">Неверный промо-код</string>
     <string name="settings_promo_already">Промо-код уже был активирован</string>
-    <string name="settings_promo_redeemed">Промо-код активирован · +3000 монет</string>
+    <string name="settings_promo_redeemed">Промо-код активирован · +30000 монет</string>
 
     <string name="settings_language_title">Язык</string>
     <string name="settings_language_subtitle">Язык интерфейса</string>
@@ -128,6 +128,33 @@
     <string name="shop_themes">Цветовые темы</string>
     <string name="shop_equip">Выбрать</string>
     <string name="shop_equipped">Выбрано</string>
+    <string name="shop_tab_store">Магазин</string>
+    <string name="shop_boosters">Бустеры опыта</string>
+    <string name="shop_booster_small">Малый бустер</string>
+    <string name="shop_booster_medium">Средний бустер</string>
+    <string name="shop_booster_large">Большой бустер</string>
+    <string name="shop_booster_desc">+%1$d опыта при активации</string>
+    <string name="shop_owned_count">В рюкзаке: %1$d</string>
+    <string name="inventory_title">Рюкзак</string>
+    <string name="inventory_empty">Рюкзак пуст. Загляните в магазин за бустерами!</string>
+    <string name="inventory_activate">Активировать</string>
+    <string name="inventory_count">Количество: %1$d</string>
+    <string name="inventory_booster_reward">+%1$d опыта</string>
+    <string name="inventory_activated_snackbar">🎓 +%1$d опыта получено!</string>
+    <string name="inventory_confirm_title">Активировать бустер?</string>
+    <string name="inventory_confirm_text">«%1$s» даст +%2$d опыта. Использовать сейчас?</string>
+    <string name="inventory_streak_freeze_auto">Сработает автоматически при пропуске дня</string>
+    <string name="inventory_powerup_auto">Используется во время викторины</string>
+    <string name="shop_powerups_section">Усиления в игре</string>
+    <string name="powerup_fifty_title">50/50 ✂️</string>
+    <string name="powerup_fifty_desc">Убирает два неверных варианта</string>
+    <string name="powerup_time_title">+5 секунд ⏱️</string>
+    <string name="powerup_time_desc">Добавляет время на текущий вопрос</string>
+    <string name="powerup_skip_title">Пропуск ⏭️</string>
+    <string name="powerup_skip_desc">Пропускает вопрос без штрафа</string>
+    <string name="shop_streak_freeze_section">Защита серии</string>
+    <string name="shop_streak_freeze_title">Заморозка серии 🧊</string>
+    <string name="shop_streak_freeze_desc">Сохраняет дневную серию, если вы пропустили день</string>
     <string name="theme_accent_mint">Мятная</string>
     <string name="theme_accent_ocean">Океан</string>
     <string name="theme_accent_grape">Виноград</string>
@@ -157,6 +184,8 @@
     <string name="char_level">Уровень %1$d</string>
     <string name="char_xp_progress">Опыт: %1$d / %2$d XP</string>
     <string name="char_free_xp">Свободный опыт</string>
+    <string name="char_free_xp_balance">🎓 %1$d</string>
+    <string name="char_level_reward_bonus">Награды ×%1$.2f за уровень</string>
     <string name="char_stat_strength">Сила 💪</string>
     <string name="char_stat_strength_desc">Сила воли: +2%% к получаемому XP за правильные ответы (сейчас: +%1$d%% XP)</string>
     <string name="char_stat_intelligence">Интеллект 🧠</string>
@@ -184,7 +213,23 @@
     <string name="rewards_points_label">очков</string>
     <string name="rewards_coins_label">монет</string>
 
+    <!-- Разбивка награды -->
+    <string name="reward_breakdown_title">Как начислено</string>
+    <string name="reward_breakdown_base">База</string>
+    <string name="reward_breakdown_level">Уровень ×%1$.2f</string>
+    <string name="reward_breakdown_stats">Бонус характеристик</string>
+    <string name="reward_breakdown_crit">Крит ×%1$.1f</string>
+    <string name="reward_breakdown_total">Итого</string>
+    <string name="reward_breakdown_value">+%1$d оч · +%2$d мон</string>
+
+    <!-- Повышение уровня -->
+    <string name="result_levelup_title">🎉 Новый уровень!</string>
+    <string name="result_levelup_detail">Уровень %1$d • %2$s • награды ×%3$.2f</string>
+
     <!-- Серия дней (streak) -->
+    <string name="daily_reward_title">Ежедневная награда</string>
+    <string name="daily_reward_subtitle">День %1$d · +%2$d монет</string>
+    <string name="daily_reward_claim">Забрать</string>
     <string name="home_streak_chip">🔥 %1$d дней подряд</string>
     <string name="stats_streak">Серия</string>
     <string name="stats_streak_value">🔥 %1$d</string>
@@ -224,4 +269,29 @@
     <string name="ach_all_categories_desc">Сыграй во всех темах</string>
     <string name="ach_level10_title">Мудрец</string>
     <string name="ach_level10_desc">Достигни 10 уровня</string>
+    <string name="ach_hundred_quizzes_title">Легенда квизов</string>
+    <string name="ach_hundred_quizzes_desc">Пройди 100 квизов</string>
+    <string name="ach_streak14_title">Две недели огня</string>
+    <string name="ach_streak14_desc">Серия 14 дней подряд</string>
+    <string name="ach_streak100_title">Бессмертная серия</string>
+    <string name="ach_streak100_desc">Серия 100 дней подряд</string>
+
+    <!-- Работа над ошибками -->
+    <string name="mistakes_card_title">Работа над ошибками</string>
+    <string name="mistakes_card_subtitle">Вопросов для повторения: %1$d</string>
+    <string name="mistakes_card_button">Повторить</string>
+    <string name="mistakes_category_title">Работа над ошибками</string>
+    <string name="mistakes_empty">Ошибок для повторения нет — отличная работа!</string>
+
+    <!-- Адаптивная сложность -->
+    <string name="difficulty_adaptive_label">Адаптивный</string>
+    <string name="difficulty_adaptive_subtitle">Подстраивается под вашу точность</string>
+
+    <!-- Поделиться результатом -->
+    <string name="result_share">Поделиться</string>
+    <string name="share_chooser_title">Поделиться результатом</string>
+    <string name="share_result_text">Я набрал %1$d из %2$d в AnimaQuiz! 🎓 Уровень %3$d — %4$s. Сможешь лучше?</string>
+
+    <!-- Витрина достижений -->
+    <string name="achievements_completion">Открыто %1$d%%</string>
 </resources>

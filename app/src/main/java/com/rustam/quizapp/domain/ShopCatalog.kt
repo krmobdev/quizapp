@@ -18,6 +18,34 @@ data class ThemeItem(
 )
 
 /**
+ * A consumable booster bought with coins and stored in the player's backpack.
+ * Activating one from the inventory grants [rewardPoints] free XP.
+ */
+data class BoosterItem(
+    val id: String,
+    val emoji: String,
+    @param:StringRes val labelRes: Int,
+    val priceCoins: Int,
+    val rewardPoints: Int
+)
+
+/** The effect a [PowerUpItem] applies when used during a quiz. */
+enum class PowerUpType { FIFTY_FIFTY, ADD_TIME, SKIP }
+
+/**
+ * A consumable used during a quiz (e.g. 50/50, extra time, skip). Bought with coins and
+ * stored in the backpack like a booster, but consumed mid-question instead of granting XP.
+ */
+data class PowerUpItem(
+    val id: String,
+    val type: PowerUpType,
+    val emoji: String,
+    @param:StringRes val labelRes: Int,
+    @param:StringRes val descRes: Int,
+    val priceCoins: Int
+)
+
+/**
  * Static catalogue of cosmetic items sold for coins. Prices are tuned so that
  * items take several quizzes to afford, giving coins a purpose.
  *
@@ -61,6 +89,31 @@ object ShopCatalog {
         ThemeItem("theme_gold", R.string.theme_accent_gold, 450),
         ThemeItem("theme_midnight", R.string.theme_accent_midnight, 500)
     )
+
+    /**
+     * Consumable XP boosters. The base booster grants 1000 free XP for 500 coins;
+     * the larger tiers give better value to reward saving up.
+     */
+    val boosters: List<BoosterItem> = listOf(
+        BoosterItem("booster_xp_small", "📘", R.string.shop_booster_small, 500, 1000),
+        BoosterItem("booster_xp_medium", "📗", R.string.shop_booster_medium, 1200, 2500),
+        BoosterItem("booster_xp_large", "📕", R.string.shop_booster_large, 2200, 5000)
+    )
+
+    fun booster(id: String): BoosterItem? = boosters.find { it.id == id }
+
+    /** In-quiz power-ups, used mid-question. Cheap because they are spent every quiz. */
+    val powerUps: List<PowerUpItem> = listOf(
+        PowerUpItem("pu_fifty", PowerUpType.FIFTY_FIFTY, "✂️", R.string.powerup_fifty_title, R.string.powerup_fifty_desc, 120),
+        PowerUpItem("pu_time", PowerUpType.ADD_TIME, "⏱️", R.string.powerup_time_title, R.string.powerup_time_desc, 80),
+        PowerUpItem("pu_skip", PowerUpType.SKIP, "⏭️", R.string.powerup_skip_title, R.string.powerup_skip_desc, 100)
+    )
+
+    fun powerUp(id: String): PowerUpItem? = powerUps.find { it.id == id }
+
+    /** Streak Freeze: a consumable that auto-protects the daily streak when a day is missed. */
+    const val STREAK_FREEZE_EMOJI = "🧊"
+    const val STREAK_FREEZE_PRICE = 300
 
     /** Items that every player owns from the start (the free defaults). */
     val freeItemIds: Set<String> =

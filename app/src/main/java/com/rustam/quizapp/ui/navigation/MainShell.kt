@@ -41,7 +41,8 @@ fun MainShell(
         difficulty: Difficulty?,
         event: QuizEventType?,
         questionTimeSeconds: Int,
-        questionCount: Int
+        questionCount: Int,
+        adaptive: Boolean
     ) -> Unit,
     modifier: Modifier = Modifier
 ) {

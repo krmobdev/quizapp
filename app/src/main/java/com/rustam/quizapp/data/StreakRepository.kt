@@ -37,12 +37,30 @@ class StreakRepository(context: Context) {
         val today = LocalDate.now().toEpochDay()
         val last = prefs[LAST_PLAYED_DAY] ?: -1L
         val stored = prefs[CURRENT_STREAK] ?: 0
-        val current = if (last == today || last == today - 1) stored else 0
+        val freezes = prefs[FREEZE_COUNT] ?: 0
+        val missedDays = today - last - 1
+        // The streak survives a gap if the player owns enough Streak Freezes to cover
+        // every missed day; the freezes are actually consumed on the next [recordPlayed].
+        val current = when {
+            last == today || last == today - 1 -> stored
+            missedDays in 1..freezes -> stored
+            else -> 0
+        }
         StreakState(
             current = current,
             best = prefs[BEST_STREAK] ?: 0,
             playedToday = last == today
         )
+    }
+
+    /** Number of Streak Freezes the player currently owns. */
+    fun observeFreezeCount(): Flow<Int> = dataStore.data.map { prefs ->
+        prefs[FREEZE_COUNT] ?: 0
+    }
+
+    /** Adds one Streak Freeze to the player's stock (called after a successful purchase). */
+    suspend fun addFreeze() {
+        dataStore.edit { prefs -> prefs[FREEZE_COUNT] = (prefs[FREEZE_COUNT] ?: 0) + 1 }
     }
 
     suspend fun hasPlayedToday(): Boolean {
@@ -57,10 +75,17 @@ class StreakRepository(context: Context) {
         dataStore.edit { prefs ->
             val last = prefs[LAST_PLAYED_DAY] ?: -1L
             val stored = prefs[CURRENT_STREAK] ?: 0
-            val newCurrent = when (last) {
-                today -> stored.coerceAtLeast(1) // already counted today
-                today - 1 -> stored + 1          // consecutive day
-                else -> 1                         // streak (re)starts
+            val freezes = prefs[FREEZE_COUNT] ?: 0
+            val missedDays = today - last - 1
+            val newCurrent = when {
+                last == today -> stored.coerceAtLeast(1) // already counted today
+                last == today - 1 -> stored + 1          // consecutive day
+                last >= 0 && missedDays in 1..freezes -> {
+                    // Spend one freeze per missed day to bridge the gap and keep the streak.
+                    prefs[FREEZE_COUNT] = freezes - missedDays.toInt()
+                    stored + 1
+                }
+                else -> 1                                 // streak (re)starts
             }
             val newBest = maxOf(prefs[BEST_STREAK] ?: 0, newCurrent)
             prefs[LAST_PLAYED_DAY] = today
@@ -75,5 +100,6 @@ class StreakRepository(context: Context) {
         val LAST_PLAYED_DAY = longPreferencesKey("last_played_day")
         val CURRENT_STREAK = intPreferencesKey("current_streak")
         val BEST_STREAK = intPreferencesKey("best_streak")
+        val FREEZE_COUNT = intPreferencesKey("streak_freeze_count")
     }
 }

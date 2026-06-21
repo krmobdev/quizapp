@@ -9,10 +9,25 @@ data class QuizReward(
     val eventBonus: QuizEventType? = null,
     val speedBonusPercent: Int = 0,
     val isCriticalSuccess: Boolean = false,
+    /** Multiplier applied on a Critical Success (1.0 when none). */
+    val critMultiplier: Float = 1f,
     val xpBonus: Int = 0,
-    val coinBonus: Int = 0
+    val coinBonus: Int = 0,
+    /** Raw base reward (before level scaling and stat bonuses), for the result breakdown. */
+    val basePoints: Int = 0,
+    val baseCoins: Int = 0,
+    /** Level reward multiplier applied to the base points (1.0 = no bonus). */
+    val levelMultiplier: Float = 1f,
+    /** Level reward multiplier applied to the base coins (grows faster past level 20). */
+    val coinLevelMultiplier: Float = 1f,
+    /** Player level before and after this reward was granted (for level-up detection). */
+    val previousLevel: Int = 1,
+    val newLevel: Int = 1
 ) {
     val hasEventBonus: Boolean get() = eventBonus != null
+
+    /** Whether this reward pushed the player to a new level. */
+    val leveledUp: Boolean get() = newLevel > previousLevel
 }
 
 @Serializable

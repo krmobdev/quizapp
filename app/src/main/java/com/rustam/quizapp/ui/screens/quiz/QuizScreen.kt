@@ -45,6 +45,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
@@ -82,19 +83,21 @@ fun QuizScreen(
     eventType: QuizEventType? = null,
     questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
     questionCount: Int = 10,
+    adaptive: Boolean = false,
     viewModel: QuizViewModel = viewModel()
 ) {
     BackHandler {
         viewModel.saveAndExit(onDone = onBack)
     }
 
-    LaunchedEffect(categoryId, difficulty, eventType, questionTimeSeconds, questionCount) {
+    LaunchedEffect(categoryId, difficulty, eventType, questionTimeSeconds, questionCount, adaptive) {
         viewModel.prepare(
             categoryId = categoryId,
             difficulty = difficulty,
             eventType = eventType,
             questionTimeSeconds = questionTimeSeconds,
-            questionCount = questionCount
+            questionCount = questionCount,
+            adaptive = adaptive
         )
     }
     val state by viewModel.uiState.collectAsState()
@@ -117,6 +120,9 @@ fun QuizScreen(
             state = state,
             onAnswerSelected = viewModel::selectAnswer,
             onNext = viewModel::next,
+            onFiftyFifty = viewModel::useFiftyFifty,
+            onAddTime = viewModel::useAddTime,
+            onSkip = viewModel::useSkip,
             modifier = modifier
         )
     }
@@ -149,6 +155,9 @@ private fun QuizContent(
     state: QuizUiState,
     onAnswerSelected: (Int) -> Unit,
     onNext: () -> Unit,
+    onFiftyFifty: () -> Unit,
+    onAddTime: () -> Unit,
+    onSkip: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -167,7 +176,10 @@ private fun QuizContent(
                     state = state,
                     colors = colors,
                     onAnswerSelected = onAnswerSelected,
-                    onNext = onNext
+                    onNext = onNext,
+                    onFiftyFifty = onFiftyFifty,
+                    onAddTime = onAddTime,
+                    onSkip = onSkip
                 )
             }
         }
@@ -179,7 +191,10 @@ private fun QuestionLayout(
     state: QuizUiState,
     colors: AppThemeColors,
     onAnswerSelected: (Int) -> Unit,
-    onNext: () -> Unit
+    onNext: () -> Unit,
+    onFiftyFifty: () -> Unit,
+    onAddTime: () -> Unit,
+    onSkip: () -> Unit
 ) {
     val haptics = LocalHapticFeedback.current
     val animatedProgress by animateFloatAsState(
@@ -264,6 +279,14 @@ private fun QuestionLayout(
                     color = if (state.timeLeftSeconds <= 3) colors.wrong else MaterialTheme.colorScheme.onSurface
                 )
             }
+            Spacer(Modifier.height(12.dp))
+            PowerUpBar(
+                state = state,
+                colors = colors,
+                onFiftyFifty = onFiftyFifty,
+                onAddTime = onAddTime,
+                onSkip = onSkip
+            )
             Spacer(Modifier.height(16.dp))
         } else if (state.isTimeout) {
             Text(
@@ -308,12 +331,14 @@ private fun QuestionLayout(
                 Spacer(Modifier.height(20.dp))
 
                 question.options.forEachIndexed { index, option ->
+                    val eliminated = index in pageState.hiddenOptions
                     AnswerButton(
                         label = OptionLabels.getOrElse(index) { "?" },
                         text = option,
                         answerState = answerStateFor(index, pageState, question),
                         colors = colors,
-                        enabled = !pageState.isAnswered,
+                        enabled = !pageState.isAnswered && !eliminated,
+                        eliminated = eliminated,
                         onClick = {
                             haptics.performHapticFeedback(
                                 if (index == question.correctIndex) HapticFeedbackType.Confirm
@@ -346,6 +371,74 @@ private fun QuestionLayout(
     }
 }
 
+@Composable
+private fun PowerUpBar(
+    state: QuizUiState,
+    colors: AppThemeColors,
+    onFiftyFifty: () -> Unit,
+    onAddTime: () -> Unit,
+    onSkip: () -> Unit
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(10.dp)
+    ) {
+        com.rustam.quizapp.domain.ShopCatalog.powerUps.forEach { powerUp ->
+            val count = state.powerUpCounts[powerUp.id] ?: 0
+            val usable = when (powerUp.type) {
+                com.rustam.quizapp.domain.PowerUpType.FIFTY_FIFTY -> count > 0 && state.hiddenOptions.isEmpty()
+                else -> count > 0
+            }
+            PowerUpButton(
+                emoji = powerUp.emoji,
+                count = count,
+                enabled = usable,
+                colors = colors,
+                onClick = when (powerUp.type) {
+                    com.rustam.quizapp.domain.PowerUpType.FIFTY_FIFTY -> onFiftyFifty
+                    com.rustam.quizapp.domain.PowerUpType.ADD_TIME -> onAddTime
+                    com.rustam.quizapp.domain.PowerUpType.SKIP -> onSkip
+                },
+                modifier = Modifier.weight(1f)
+            )
+        }
+    }
+}
+
+@Composable
+private fun PowerUpButton(
+    emoji: String,
+    count: Int,
+    enabled: Boolean,
+    colors: AppThemeColors,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Surface(
+        onClick = onClick,
+        enabled = enabled,
+        shape = AppShapes.Card,
+        color = colors.answerCard,
+        modifier = modifier
+            .alpha(if (enabled) 1f else 0.4f)
+            .border(1.dp, colors.answerBorder, AppShapes.Card)
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 8.dp),
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(text = emoji, style = MaterialTheme.typography.titleMedium)
+            Text(
+                text = "×$count",
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.Bold,
+                color = appTextColor()
+            )
+        }
+    }
+}
+
 private enum class AnswerVisual { NEUTRAL, CORRECT, WRONG }
 
 private fun answerStateFor(index: Int, state: QuizUiState, question: Question): AnswerVisual = when {
@@ -364,6 +457,7 @@ private fun AnswerButton(
     answerState: AnswerVisual,
     colors: AppThemeColors,
     enabled: Boolean,
+    eliminated: Boolean = false,
     onClick: () -> Unit
 ) {
     val container by animateColorAsState(
@@ -401,6 +495,7 @@ private fun AnswerButton(
         contentColor = content,
         modifier = Modifier
             .fillMaxWidth()
+            .alpha(if (eliminated) 0.35f else 1f)
             .border(1.dp, borderColor, AppShapes.Card)
     ) {
         Row(
@@ -481,7 +576,10 @@ private fun QuizContentUnansweredPreview() {
                 timeLeftSeconds = 7
             ),
             onAnswerSelected = {},
-            onNext = {}
+            onNext = {},
+            onFiftyFifty = {},
+            onAddTime = {},
+            onSkip = {}
         )
     }
 }
@@ -508,7 +606,10 @@ private fun QuizContentDarkPreview() {
                 penaltyCount = 1
             ),
             onAnswerSelected = {},
-            onNext = {}
+            onNext = {},
+            onFiftyFifty = {},
+            onAddTime = {},
+            onSkip = {}
         )
     }
 }

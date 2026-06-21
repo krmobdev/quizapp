@@ -50,6 +50,7 @@ import com.rustam.quizapp.ui.theme.QuizappTheme
 fun ResultScreen(
     result: QuizResult?,
     onHome: () -> Unit,
+    onRetryMistakes: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     BackHandler(onBack = onHome)
@@ -61,6 +62,7 @@ fun ResultScreen(
     ResultContent(
         result = result,
         onHome = onHome,
+        onRetryMistakes = onRetryMistakes,
         modifier = modifier
     )
 }
@@ -69,6 +71,7 @@ fun ResultScreen(
 private fun ResultContent(
     result: QuizResult,
     onHome: () -> Unit,
+    onRetryMistakes: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -155,6 +158,14 @@ private fun ResultContent(
                         color = textColor
                     )
                 }
+
+                Spacer(Modifier.height(12.dp))
+                RewardBreakdownCard(reward = reward, colors = colors, textColor = textColor)
+
+                if (reward.leveledUp) {
+                    Spacer(Modifier.height(12.dp))
+                    LevelUpBanner(reward = reward, textColor = textColor)
+                }
             }
 
             if (result.penalties > 0) {
@@ -205,6 +216,14 @@ private fun ResultContent(
             }
 
             Spacer(Modifier.height(16.dp))
+            if (result.mistakes.isNotEmpty()) {
+                AppActionButton(
+                    text = stringResource(R.string.result_retry_mistakes),
+                    onClick = onRetryMistakes,
+                    primary = false
+                )
+                Spacer(Modifier.height(12.dp))
+            }
             AppActionButton(
                 text = stringResource(R.string.result_home),
                 onClick = onHome,
@@ -319,6 +338,132 @@ private fun MissingResult(onHome: () -> Unit, modifier: Modifier = Modifier) {
                 text = stringResource(R.string.result_home),
                 onClick = onHome,
                 primary = true
+            )
+        }
+    }
+}
+
+@Composable
+private fun RewardBreakdownCard(
+    reward: QuizReward,
+    colors: AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color
+) {
+    val scaledPoints = (reward.basePoints * reward.levelMultiplier).toInt()
+    val scaledCoins = (reward.baseCoins * reward.coinLevelMultiplier).toInt()
+
+    GlassCard(colors = colors, modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 18.dp, vertical = 14.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp)
+        ) {
+            Text(
+                text = stringResource(R.string.reward_breakdown_title),
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.Bold,
+                color = textColor
+            )
+            BreakdownRow(
+                label = stringResource(R.string.reward_breakdown_base),
+                value = stringResource(R.string.reward_breakdown_value, reward.basePoints, reward.baseCoins),
+                textColor = textColor
+            )
+            if (reward.levelMultiplier > 1f) {
+                BreakdownRow(
+                    label = stringResource(R.string.reward_breakdown_level, reward.levelMultiplier),
+                    value = stringResource(R.string.reward_breakdown_value, scaledPoints, scaledCoins),
+                    textColor = textColor
+                )
+            }
+            if (reward.xpBonus > 0 || reward.coinBonus > 0) {
+                BreakdownRow(
+                    label = stringResource(R.string.reward_breakdown_stats),
+                    value = stringResource(R.string.reward_breakdown_value, reward.xpBonus, reward.coinBonus),
+                    textColor = textColor
+                )
+            }
+            if (reward.isCriticalSuccess) {
+                BreakdownRow(
+                    label = stringResource(R.string.reward_breakdown_crit, reward.critMultiplier),
+                    value = stringResource(R.string.reward_breakdown_value, reward.points, reward.coins),
+                    textColor = MaterialTheme.colorScheme.primary
+                )
+            }
+            BreakdownRow(
+                label = stringResource(R.string.reward_breakdown_total),
+                value = stringResource(R.string.reward_breakdown_value, reward.points, reward.coins),
+                textColor = MaterialTheme.colorScheme.primary,
+                emphasised = true
+            )
+        }
+    }
+}
+
+@Composable
+private fun BreakdownRow(
+    label: String,
+    value: String,
+    textColor: androidx.compose.ui.graphics.Color,
+    emphasised: Boolean = false
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(
+            text = label,
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = if (emphasised) FontWeight.Bold else FontWeight.Normal,
+            color = textColor.copy(alpha = if (emphasised) 1f else 0.85f)
+        )
+        Text(
+            text = value,
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = if (emphasised) FontWeight.Bold else FontWeight.SemiBold,
+            color = textColor
+        )
+    }
+}
+
+@Composable
+private fun LevelUpBanner(
+    reward: QuizReward,
+    textColor: androidx.compose.ui.graphics.Color
+) {
+    val locale = androidx.compose.ui.platform.LocalConfiguration.current.locales[0]
+    val rankName = if (locale.language == "en") {
+        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRankEn(reward.newLevel)
+    } else {
+        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRank(reward.newLevel)
+    }
+    val multiplier = com.rustam.quizapp.domain.CharacterLevelCalculator.rewardMultiplier(reward.newLevel)
+
+    Surface(
+        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+        shape = RoundedCornerShape(16.dp),
+        border = BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)),
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = stringResource(R.string.result_levelup_title),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary,
+                textAlign = TextAlign.Center
+            )
+            Text(
+                text = stringResource(R.string.result_levelup_detail, reward.newLevel, rankName, multiplier),
+                style = MaterialTheme.typography.bodyMedium,
+                color = textColor,
+                textAlign = TextAlign.Center
             )
         }
     }

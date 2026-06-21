@@ -54,6 +54,31 @@ object CharacterLevelCalculator {
         return 50 * level * (level - 1)
     }
 
+    /** Extra reward multiplier gained per player level above 1 (0.10 = +10% per level). */
+    const val REWARD_BONUS_PER_LEVEL = 0.10f
+
+    /** Level beyond which coins start scaling faster than XP. */
+    const val HIGH_LEVEL_THRESHOLD = 20
+
+    /** Extra coin multiplier gained per player level above [HIGH_LEVEL_THRESHOLD]. */
+    const val HIGH_LEVEL_COIN_BONUS_PER_LEVEL = 0.15f
+
+    /**
+     * Reward multiplier applied to quiz rewards based on the player's level.
+     * Higher level → higher rewards. Level 1 = x1.0, level 10 = x1.9, etc.
+     */
+    fun rewardMultiplier(level: Int): Float =
+        1f + (level - 1).coerceAtLeast(0) * REWARD_BONUS_PER_LEVEL
+
+    /**
+     * Coin reward multiplier. Matches [rewardMultiplier] up to [HIGH_LEVEL_THRESHOLD], then
+     * grows faster so high-level players earn noticeably more coins.
+     * E.g. level 20 = x2.9, level 30 = x5.4, level 40 = x7.9.
+     */
+    fun coinRewardMultiplier(level: Int): Float =
+        rewardMultiplier(level) +
+            (level - HIGH_LEVEL_THRESHOLD).coerceAtLeast(0) * HIGH_LEVEL_COIN_BONUS_PER_LEVEL
+
     /** Returns details about current level progression for progress bars. */
     fun getLevelProgress(lifetimePoints: Int): LevelProgress {
         val currentLevel = calculateLevel(lifetimePoints)

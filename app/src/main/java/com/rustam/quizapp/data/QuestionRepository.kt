@@ -77,6 +77,46 @@ class QuestionRepository(private val context: Context) {
             .map { it.withShuffledOptions() }
     }
 
+    /**
+     * Builds a quiz whose difficulty mix is given by [counts] (difficulty -> number of
+     * questions). Used by the adaptive mode. Buckets that run dry are topped up from the
+     * remaining pool so the quiz always reaches the requested total when the bank allows.
+     */
+    fun getAdaptiveQuestions(
+        categoryId: String,
+        counts: Map<Difficulty, Int>,
+        language: AppLanguage = AppLanguage.RU,
+        excludeIds: List<String> = emptyList()
+    ): List<Question> {
+        val all = questionsFor(language, categoryId)
+        val excluded = excludeIds.toSet()
+        val chosen = LinkedHashMap<String, Question>()
+
+        counts.forEach { (difficulty, want) ->
+            all.filter { it.difficulty == difficulty && it.id !in excluded && it.id !in chosen }
+                .shuffled()
+                .take(want)
+                .forEach { chosen[it.id] = it }
+        }
+
+        val target = counts.values.sum()
+        if (chosen.size < target) {
+            all.filter { it.id !in chosen && it.id !in excluded }
+                .shuffled()
+                .take(target - chosen.size)
+                .forEach { chosen[it.id] = it }
+        }
+        // Last resort: reuse recently-seen questions rather than return an undersized quiz.
+        if (chosen.size < target) {
+            all.filter { it.id !in chosen }
+                .shuffled()
+                .take(target - chosen.size)
+                .forEach { chosen[it.id] = it }
+        }
+
+        return chosen.values.shuffled().map { it.withShuffledOptions() }
+    }
+
     companion object {
         const val BANK_SIZE = 400
         const val QUIZ_SIZE = 10

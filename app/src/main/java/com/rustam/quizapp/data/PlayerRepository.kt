@@ -11,6 +11,7 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.rustam.quizapp.domain.AnswerReward
+import com.rustam.quizapp.domain.CharacterLevelCalculator
 import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.EventProgressSnapshot
 import com.rustam.quizapp.domain.QuizEvent
@@ -101,6 +102,83 @@ class PlayerRepository(
         return purchased
     }
 
+    /** Booster id -> how many of that booster the player currently holds. */
+    fun observeInventory(): Flow<Map<String, Int>> = dataStore.data.map { prefs ->
+        ShopCatalog.boosters.associate { booster ->
+            booster.id to (prefs[inventoryKey(booster.id)] ?: 0)
+        }
+    }
+
+    /**
+     * Buys one [boosterId] for [price] coins if affordable, adding it to the backpack.
+     * Boosters are consumables, so each purchase increments a stored count rather than
+     * marking the item permanently owned. Returns `true` on success.
+     */
+    suspend fun purchaseBooster(boosterId: String, price: Int): Boolean {
+        var purchased = false
+        dataStore.edit { prefs ->
+            val coins = prefs[COINS] ?: 0
+            if (coins >= price) {
+                val key = inventoryKey(boosterId)
+                prefs[COINS] = coins - price
+                prefs[key] = (prefs[key] ?: 0) + 1
+                purchased = true
+            }
+        }
+        return purchased
+    }
+
+    /**
+     * Consumes one [boosterId] from the backpack and grants its XP. The reward is added
+     * to both the spendable free XP ([POINTS]) and the lifetime XP ([LIFETIME_POINTS]),
+     * so the player's level/rank grows just like with earned quiz rewards.
+     * Returns `true` if a booster was available and activated.
+     */
+    suspend fun activateBooster(boosterId: String): Boolean {
+        val booster = ShopCatalog.booster(boosterId) ?: return false
+        var activated = false
+        dataStore.edit { prefs ->
+            val key = inventoryKey(boosterId)
+            val count = prefs[key] ?: 0
+            if (count > 0) {
+                val currentPoints = prefs[POINTS] ?: 0
+                val currentLifetime = prefs[LIFETIME_POINTS] ?: currentPoints
+                prefs[key] = count - 1
+                prefs[POINTS] = currentPoints + booster.rewardPoints
+                prefs[LIFETIME_POINTS] = currentLifetime + booster.rewardPoints
+                activated = true
+            }
+        }
+        return activated
+    }
+
+    /** Power-up id -> how many of that power-up the player currently holds. */
+    fun observePowerUps(): Flow<Map<String, Int>> = dataStore.data.map { prefs ->
+        ShopCatalog.powerUps.associate { powerUp ->
+            powerUp.id to (prefs[inventoryKey(powerUp.id)] ?: 0)
+        }
+    }
+
+    /** Buys one power-up for [price] coins if affordable. Returns `true` on success. */
+    suspend fun purchasePowerUp(powerUpId: String, price: Int): Boolean =
+        purchaseBooster(powerUpId, price)
+
+    /** Consumes one [powerUpId] from the backpack. Returns `true` if one was available. */
+    suspend fun consumePowerUp(powerUpId: String): Boolean {
+        var consumed = false
+        dataStore.edit { prefs ->
+            val key = inventoryKey(powerUpId)
+            val count = prefs[key] ?: 0
+            if (count > 0) {
+                prefs[key] = count - 1
+                consumed = true
+            }
+        }
+        return consumed
+    }
+
+    private fun inventoryKey(boosterId: String) = intPreferencesKey("inv_$boosterId")
+
     suspend fun equipAvatar(avatarId: String) {
         dataStore.edit { prefs -> prefs[EQUIPPED_AVATAR] = avatarId }
     }
@@ -119,6 +197,23 @@ class PlayerRepository(
     suspend fun addCoins(amount: Int) {
         if (amount <= 0) return
         dataStore.edit { prefs -> prefs[COINS] = (prefs[COINS] ?: 0) + amount }
+    }
+
+    /**
+     * Atomically deducts [amount] coins if the player can afford it. Returns `true` on success.
+     * Used for purchases whose item lives outside this store (e.g. the Streak Freeze).
+     */
+    suspend fun spendCoins(amount: Int): Boolean {
+        if (amount <= 0) return false
+        var spent = false
+        dataStore.edit { prefs ->
+            val coins = prefs[COINS] ?: 0
+            if (coins >= amount) {
+                prefs[COINS] = coins - amount
+                spent = true
+            }
+        }
+        return spent
     }
 
     suspend fun grantReward(reward: QuizReward) {
@@ -183,16 +278,27 @@ class PlayerRepository(
         }
         val baseReward = RewardCalculator.calculate(answers, total, activeEvent)
 
-        // Read current stats from preferences
-        val stats = readStats(dataStore.data.first())
+        // Read current stats and lifetime XP from preferences.
+        val prefs = dataStore.data.first()
+        val stats = readStats(prefs)
+
+        // Level scaling: the higher the player's level, the higher the base reward
+        // (+10% per level above 1). Level is derived from lifetime XP.
+        val lifetime = prefs[LIFETIME_POINTS] ?: (prefs[POINTS] ?: 0)
+        val level = CharacterLevelCalculator.calculateLevel(lifetime)
+        val levelMultiplier = CharacterLevelCalculator.rewardMultiplier(level)
+        // Coins scale faster than XP past level 20 to reward high-level players.
+        val coinLevelMultiplier = CharacterLevelCalculator.coinRewardMultiplier(level)
+        val scaledBasePoints = (baseReward.points * levelMultiplier).toInt()
+        val scaledBaseCoins = (baseReward.coins * coinLevelMultiplier).toInt()
 
         // Calculate bonuses: percentage bonuses (Strength/Intelligence) plus
-        // flat bonuses (Wisdom/Endurance).
-        val xpBonus = (baseReward.points * (stats.xpBonusPercent / 100f)).toInt() + stats.flatXpBonus
-        val coinBonus = (baseReward.coins * (stats.coinBonusPercent / 100f)).toInt() + stats.flatCoinBonus
+        // flat bonuses (Wisdom/Endurance), applied on top of the level-scaled base.
+        val xpBonus = (scaledBasePoints * (stats.xpBonusPercent / 100f)).toInt() + stats.flatXpBonus
+        val coinBonus = (scaledBaseCoins * (stats.coinBonusPercent / 100f)).toInt() + stats.flatCoinBonus
 
-        var pointsEarned = baseReward.points + xpBonus
-        var coinsEarned = baseReward.coins + coinBonus
+        var pointsEarned = scaledBasePoints + xpBonus
+        var coinsEarned = scaledBaseCoins + coinBonus
 
         // Luck (+ Charisma) roll for double rewards (Critical Success).
         // Focus sharpens the multiplier applied when it triggers.
@@ -206,14 +312,24 @@ class PlayerRepository(
             coinsEarned = (coinsEarned * stats.critMultiplier).toInt()
         }
         
+        // Detect level-up: compare the level before and after this reward is added.
+        val newLevel = CharacterLevelCalculator.calculateLevel(lifetime + pointsEarned)
+
         val finalReward = baseReward.copy(
             points = pointsEarned,
             coins = coinsEarned,
             isCriticalSuccess = isCriticalSuccess,
+            critMultiplier = if (isCriticalSuccess) stats.critMultiplier else 1f,
             xpBonus = xpBonus,
-            coinBonus = coinBonus
+            coinBonus = coinBonus,
+            basePoints = baseReward.points,
+            baseCoins = baseReward.coins,
+            levelMultiplier = levelMultiplier,
+            coinLevelMultiplier = coinLevelMultiplier,
+            previousLevel = level,
+            newLevel = newLevel
         )
-        
+
         grantReward(finalReward)
         if (activeEvent != null) markEventCompleted(activeEvent.type)
         return finalReward
@@ -328,7 +444,7 @@ class PlayerRepository(
     private companion object {
         const val MAX_NAME_LENGTH = 24
         const val PROMO_CODE = "AAAAAA"
-        const val PROMO_REWARD_COINS = 3000
+        const val PROMO_REWARD_COINS = 30000
         val PLAYER_NAME = stringPreferencesKey("player_name")
         val POINTS = intPreferencesKey("points")
         val COINS = intPreferencesKey("coins")

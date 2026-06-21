@@ -13,6 +13,7 @@ val DifficultyFilter.labelRes: Int
         DifficultyFilter.MEDIUM -> R.string.difficulty_medium_label
         DifficultyFilter.HARD -> R.string.difficulty_hard_label
         DifficultyFilter.ANY -> R.string.difficulty_any_label
+        DifficultyFilter.ADAPTIVE -> R.string.difficulty_adaptive_label
     }
 
 @get:StringRes
@@ -22,6 +23,7 @@ val DifficultyFilter.subtitleRes: Int
         DifficultyFilter.MEDIUM -> R.string.difficulty_medium_subtitle
         DifficultyFilter.HARD -> R.string.difficulty_hard_subtitle
         DifficultyFilter.ANY -> R.string.difficulty_any_subtitle
+        DifficultyFilter.ADAPTIVE -> R.string.difficulty_adaptive_subtitle
     }
 
 @get:StringRes

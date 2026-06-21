@@ -8,6 +8,8 @@ import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.AppLanguage
 import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.data.MISTAKES_CATEGORY_ID
+import com.rustam.quizapp.data.MistakesRepository
 import com.rustam.quizapp.data.Question
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.QuizProgressRepository
@@ -19,10 +21,13 @@ import com.rustam.quizapp.data.StreakRepository
 import com.rustam.quizapp.data.AchievementsRepository
 import com.rustam.quizapp.domain.Achievement
 import com.rustam.quizapp.domain.AchievementEvaluator
+import com.rustam.quizapp.domain.AdaptiveDifficulty
+import com.rustam.quizapp.domain.PowerUpType
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.domain.QuizSession
+import com.rustam.quizapp.domain.ShopCatalog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -31,6 +36,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
@@ -49,7 +55,11 @@ data class QuizUiState(
     val penaltyCount: Int = 0,
     val timeLeftSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
     val questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
-    val resumePrompt: SavedQuizProgress? = null
+    val resumePrompt: SavedQuizProgress? = null,
+    /** Power-up id -> owned count, for the in-quiz power-up bar. */
+    val powerUpCounts: Map<String, Int> = emptyMap(),
+    /** Option indices removed by the 50/50 power-up on the current question. */
+    val hiddenOptions: Set<Int> = emptySet()
 ) {
     val isAnswered: Boolean get() = selectedAnswer != null || isTimeout
 
@@ -78,6 +88,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         questionRepository = repository
     )
     private val progressRepository = QuizProgressRepository(application)
+    private val mistakesRepository = MistakesRepository(application)
     private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
         context = application,
@@ -92,12 +103,27 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var quizLanguage: AppLanguage = AppLanguage.RU
     private var questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS
     private var questionCount: Int = QuestionRepository.QUIZ_SIZE
+    private var adaptive: Boolean = false
+    private var isMistakesMode: Boolean = false
     private var timerJob: Job? = null
     private var lastReward: QuizReward? = null
     private var lastNewAchievements: List<Achievement> = emptyList()
 
     private val _uiState = MutableStateFlow(QuizUiState())
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
+
+    init {
+        // Keep the in-quiz power-up counts in sync with the player's inventory.
+        viewModelScope.launch {
+            playerRepository.observePowerUps().collect { counts ->
+                _uiState.update { it.copy(powerUpCounts = counts) }
+            }
+        }
+    }
+
+    private companion object {
+        const val ADD_TIME_SECONDS = 5
+    }
 
     /**
      * Checks for a saved run matching [categoryId]/[difficulty]/[eventType]. Shows a resume prompt
@@ -108,11 +134,19 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         difficulty: Difficulty?,
         eventType: QuizEventType? = null,
         questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS,
-        questionCount: Int = QuestionRepository.QUIZ_SIZE
+        questionCount: Int = QuestionRepository.QUIZ_SIZE,
+        adaptive: Boolean = false
     ) {
         this.eventType = eventType
         this.questionTimeSeconds = questionTimeSeconds
         this.questionCount = questionCount
+        this.adaptive = adaptive
+        this.isMistakesMode = categoryId == MISTAKES_CATEGORY_ID
+        // Mistakes practice always starts fresh — there is nothing to resume.
+        if (isMistakesMode) {
+            startNew(categoryId, difficulty)
+            return
+        }
         viewModelScope.launch {
             val language = settingsRepository.appLanguage.first()
             val saved = progressRepository.savedProgress.first()
@@ -188,16 +222,33 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             val extraSeconds = profile.stats.extraTimeSeconds
             this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.questionTimeSeconds + extraSeconds).toInt()
 
-            val recentIds = playerRepository.getRecentQuestions(categoryId).first()
+            val recentIds =
+                if (isMistakesMode) emptyList() else playerRepository.getRecentQuestions(categoryId).first()
+            val accuracy = if (adaptive && !isMistakesMode) categoryAccuracy(categoryId) else null
+            val mistakePool = if (isMistakesMode) mistakesRepository.mistakes.first() else emptyList()
 
             val questions = withContext(Dispatchers.IO) {
-                repository.getQuestions(
-                    categoryId = categoryId,
-                    difficulty = difficulty,
-                    language = quizLanguage,
-                    quizSize = questionCount,
-                    excludeIds = recentIds
-                )
+                when {
+                    isMistakesMode -> mistakePool
+                        .shuffled()
+                        .take(questionCount.coerceAtMost(mistakePool.size))
+                        .map { it.shuffledOptions() }
+
+                    adaptive -> repository.getAdaptiveQuestions(
+                        categoryId = categoryId,
+                        counts = AdaptiveDifficulty.mix(accuracy, questionCount),
+                        language = quizLanguage,
+                        excludeIds = recentIds
+                    )
+
+                    else -> repository.getQuestions(
+                        categoryId = categoryId,
+                        difficulty = difficulty,
+                        language = quizLanguage,
+                        quizSize = questionCount,
+                        excludeIds = recentIds
+                    )
+                }
             }
             applySession(QuizSession(questions))
         }
@@ -265,12 +316,57 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     isTimeout = false,
                     correctCount = current.correctCount,
                     penaltyCount = current.penaltyCount,
-                    timeLeftSeconds = questionTimeSeconds
+                    timeLeftSeconds = questionTimeSeconds,
+                    hiddenOptions = emptySet()
                 )
             }
             startTimer()
         }
     }
+
+    /** 50/50: spend one power-up to hide two wrong options on the current question. */
+    fun useFiftyFifty() {
+        val state = _uiState.value
+        val question = session?.currentQuestion() ?: return
+        if (state.isAnswered || state.hiddenOptions.isNotEmpty()) return
+        val id = powerUpId(PowerUpType.FIFTY_FIFTY) ?: return
+        viewModelScope.launch {
+            if (playerRepository.consumePowerUp(id)) {
+                val wrong = question.options.indices.filter { it != question.correctIndex }
+                val toHide = wrong.shuffled().take(2).toSet()
+                _uiState.update { it.copy(hiddenOptions = toHide) }
+                soundManager.play(SoundType.CLICK)
+            }
+        }
+    }
+
+    /** +Time: spend one power-up to add seconds to the current question timer. */
+    fun useAddTime() {
+        if (_uiState.value.isAnswered) return
+        val id = powerUpId(PowerUpType.ADD_TIME) ?: return
+        viewModelScope.launch {
+            if (playerRepository.consumePowerUp(id)) {
+                _uiState.update { it.copy(timeLeftSeconds = it.timeLeftSeconds + ADD_TIME_SECONDS) }
+                soundManager.play(SoundType.CLICK)
+            }
+        }
+    }
+
+    /** Skip: spend one power-up to move to the next question with no penalty (and no points). */
+    fun useSkip() {
+        if (_uiState.value.isAnswered) return
+        if (session == null) return
+        val id = powerUpId(PowerUpType.SKIP) ?: return
+        viewModelScope.launch {
+            if (playerRepository.consumePowerUp(id)) {
+                soundManager.play(SoundType.CLICK)
+                next()
+            }
+        }
+    }
+
+    private fun powerUpId(type: PowerUpType): String? =
+        ShopCatalog.powerUps.find { it.type == type }?.id
 
     /** Persists the current run and invokes [onDone] when written. */
     fun saveAndExit(onDone: () -> Unit) {
@@ -317,14 +413,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun startTimer() {
         stopTimer()
+        // Drives off the live timeLeftSeconds in state so the +time power-up can extend it.
         timerJob = viewModelScope.launch {
-            for (seconds in questionTimeSeconds downTo 0) {
-                _uiState.update { it.copy(timeLeftSeconds = seconds) }
-                if (seconds == 0) {
+            while (isActive) {
+                if (_uiState.value.timeLeftSeconds <= 0) {
                     onTimeout()
                     break
                 }
                 delay(1_000)
+                _uiState.update { it.copy(timeLeftSeconds = (it.timeLeftSeconds - 1).coerceAtLeast(0)) }
             }
         }
     }
@@ -352,10 +449,18 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     private suspend fun recordResult(session: QuizSession): QuizReward? {
         val category = categoryId ?: return null
-        statsRepository.recordQuizResult(category, session.correctCount, session.total)
-        
-        val questionIds = session.questions.map { it.id }
-        playerRepository.saveRecentQuestions(category, questionIds)
+
+        if (isMistakesMode) {
+            // Practice run: drop the questions answered correctly from the mistakes pool.
+            val wrongIds = session.mistakes.map { it.id }.toSet()
+            val solvedIds = session.questions.map { it.id }.filter { it !in wrongIds }
+            mistakesRepository.removeSolved(solvedIds)
+        } else {
+            statsRepository.recordQuizResult(category, session.correctCount, session.total)
+            playerRepository.saveRecentQuestions(category, session.questions.map { it.id })
+            // Remember the questions answered wrong so they can be practised later.
+            mistakesRepository.addMistakes(session.mistakes)
+        }
 
         val reward = playerRepository.grantQuizReward(
             categoryId = category,
@@ -363,7 +468,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             answers = session.answerRewards,
             total = session.total,
             eventType = eventType,
-            allowEventBonus = true
+            allowEventBonus = !isMistakesMode
         )
 
         // Update the day streak first so streak-based achievements see the fresh value,
@@ -372,6 +477,23 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         lastNewAchievements = achievementEvaluator.evaluate()
 
         return reward
+    }
+
+    /** Lifetime accuracy (0..100) in [categoryId], or null when the category has no history yet. */
+    private suspend fun categoryAccuracy(categoryId: String): Int? {
+        val stats = statsRepository.observeStats().first()
+        val category = stats.categories.find { it.categoryId == categoryId } ?: return null
+        return if (category.questionsAnswered > 0) {
+            category.correctAnswers * 100 / category.questionsAnswered
+        } else null
+    }
+
+    private fun Question.shuffledOptions(): Question {
+        val order = options.indices.shuffled()
+        return copy(
+            options = order.map { options[it] },
+            correctIndex = order.indexOf(correctIndex)
+        )
     }
 
     override fun onCleared() {

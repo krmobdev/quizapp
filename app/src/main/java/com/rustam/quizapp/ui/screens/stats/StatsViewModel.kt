@@ -43,8 +43,13 @@ data class AchievementUi(
     @param:StringRes val titleRes: Int,
     @param:StringRes val descRes: Int,
     val rewardCoins: Int,
-    val unlocked: Boolean
-)
+    val unlocked: Boolean,
+    val current: Int = 0,
+    val target: Int = 1
+) {
+    val progressFraction: Float
+        get() = if (target > 0) (current.toFloat() / target).coerceIn(0f, 1f) else 0f
+}
 
 data class PlayerUiState(
     val playerName: String = "",
@@ -138,14 +143,32 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         val totalAnswered = stats.categories.sumOf { it.questionsAnswered }
         val averageAccuracy = if (totalAnswered > 0) totalCorrect * 100 / totalAnswered else null
 
+        val metrics = com.rustam.quizapp.domain.AchievementMetrics(
+            totalQuizzes = stats.totalQuizzesCompleted,
+            totalCorrect = totalCorrect,
+            bestStreak = streak.best,
+            level = com.rustam.quizapp.domain.CharacterLevelCalculator.calculateLevel(profile.lifetimePoints),
+            hasMaxedStat = listOf(
+                profile.stats.strength, profile.stats.intelligence, profile.stats.agility,
+                profile.stats.luck, profile.stats.wisdom, profile.stats.endurance,
+                profile.stats.focus, profile.stats.charisma
+            ).any { it >= 20 },
+            hasPerfectQuiz = stats.categories.any { it.bestScorePercent >= 100 },
+            categoriesPlayed = stats.categories.count { it.quizzesCompleted > 0 },
+            totalCategories = questionRepository.getCategories().size
+        )
+
         val achievements = Achievements.all.map { achievement ->
+            val (current, target) = achievement.progressOf(metrics)
             AchievementUi(
                 id = achievement.id,
                 emoji = achievement.emoji,
                 titleRes = achievement.titleRes,
                 descRes = achievement.descRes,
                 rewardCoins = achievement.rewardCoins,
-                unlocked = achievement.id in unlocked
+                unlocked = achievement.id in unlocked,
+                current = current.coerceAtMost(target),
+                target = target
             )
         }
 

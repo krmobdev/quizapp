@@ -83,7 +83,8 @@ fun HomeScreen(
         difficulty: Difficulty?,
         event: QuizEventType?,
         questionTimeSeconds: Int,
-        questionCount: Int
+        questionCount: Int,
+        adaptive: Boolean
     ) -> Unit,
     onOverlayModeChange: (Boolean) -> Unit = {},
     modifier: Modifier = Modifier,
@@ -98,9 +99,10 @@ fun HomeScreen(
         onCategoryClick = viewModel::selectCategory,
         onDifficultySelected = viewModel::selectDifficulty,
         onBack = viewModel::clearSelection,
-        onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount ->
+        onClaimDaily = viewModel::claimDailyReward,
+        onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount, adaptive ->
             viewModel.playClick()
-            onStartQuiz(categoryId, difficulty, event, timeLimit, questionCount)
+            onStartQuiz(categoryId, difficulty, event, timeLimit, questionCount, adaptive)
         },
         modifier = modifier
     )
@@ -113,12 +115,14 @@ private fun HomeContent(
     onCategoryClick: (Category) -> Unit,
     onDifficultySelected: (DifficultyFilter) -> Unit,
     onBack: () -> Unit,
+    onClaimDaily: () -> Unit,
     onStartQuiz: (
         categoryId: String,
         difficulty: Difficulty?,
         event: QuizEventType?,
         questionTimeSeconds: Int,
-        questionCount: Int
+        questionCount: Int,
+        adaptive: Boolean
     ) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -162,7 +166,20 @@ private fun HomeContent(
                 events = state.events,
                 categories = state.categories,
                 streak = state.streak,
+                dailyReward = state.dailyReward,
+                mistakesCount = state.mistakesCount,
+                onClaimDaily = onClaimDaily,
                 onCategoryClick = onCategoryClick,
+                onStartMistakes = {
+                    onStartQuiz(
+                        com.rustam.quizapp.data.MISTAKES_CATEGORY_ID,
+                        null,
+                        null,
+                        20,
+                        10,
+                        false
+                    )
+                },
                 onStartEvent = { progress ->
                     val event = progress.event
                     onStartQuiz(
@@ -170,7 +187,8 @@ private fun HomeContent(
                         event.difficulty,
                         event.type,
                         event.questionTimeSeconds,
-                        event.questionCount
+                        event.questionCount,
+                        false
                     )
                 },
                 modifier = Modifier
@@ -188,7 +206,8 @@ private fun HomeContent(
                         state.selectedDifficulty.difficulty,
                         null,
                         10,
-                        10
+                        10,
+                        state.selectedDifficulty.isAdaptive
                     )
                 },
                 modifier = Modifier.padding(innerPadding)
@@ -202,7 +221,11 @@ private fun HomeScrollContent(
     events: List<QuizEventProgress>,
     categories: List<Category>,
     streak: Int,
+    dailyReward: com.rustam.quizapp.data.DailyRewardState,
+    mistakesCount: Int,
+    onClaimDaily: () -> Unit,
     onCategoryClick: (Category) -> Unit,
+    onStartMistakes: () -> Unit,
     onStartEvent: (QuizEventProgress) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -212,6 +235,28 @@ private fun HomeScrollContent(
     ) {
         item {
             HomeHeroHeader(streak = streak, modifier = Modifier.fillMaxWidth())
+        }
+        if (dailyReward.canClaim) {
+            item {
+                DailyRewardCard(
+                    reward = dailyReward,
+                    onClaim = onClaimDaily,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp, vertical = 4.dp)
+                )
+            }
+        }
+        if (mistakesCount > 0) {
+            item {
+                MistakesCard(
+                    count = mistakesCount,
+                    onStart = onStartMistakes,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp, vertical = 4.dp)
+                )
+            }
         }
         if (events.isNotEmpty()) {
             item {
@@ -249,6 +294,100 @@ private fun HomeScrollContent(
                 if (row.size == 1) {
                     Spacer(Modifier.weight(1f))
                 }
+            }
+        }
+    }
+}
+
+@Composable
+private fun DailyRewardCard(
+    reward: com.rustam.quizapp.data.DailyRewardState,
+    onClaim: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    GlassCard(modifier = modifier, colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = "🎁", fontSize = 34.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.daily_reward_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(R.string.daily_reward_subtitle, reward.dayIndex, reward.rewardCoins),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.75f)
+                )
+            }
+            Button(
+                onClick = onClaim,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.9f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary
+                ),
+                shape = AppShapes.Button
+            ) {
+                Text(
+                    text = stringResource(R.string.daily_reward_claim),
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun MistakesCard(
+    count: Int,
+    onStart: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    GlassCard(modifier = modifier, colors = colors, onClick = onStart) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = "🩹", fontSize = 34.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.mistakes_card_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(R.string.mistakes_card_subtitle, count),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.75f)
+                )
+            }
+            Button(
+                onClick = onStart,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.9f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary
+                ),
+                shape = AppShapes.Button
+            ) {
+                Text(
+                    text = stringResource(R.string.mistakes_card_button),
+                    fontWeight = FontWeight.Bold
+                )
             }
         }
     }
@@ -709,7 +848,8 @@ private fun HomeContentCategoriesPreview() {
             onCategoryClick = {},
             onDifficultySelected = {},
             onBack = {},
-            onStartQuiz = { _, _, _, _, _ -> }
+            onClaimDaily = {},
+            onStartQuiz = { _, _, _, _, _, _ -> }
         )
     }
 }
@@ -727,7 +867,8 @@ private fun HomeContentDifficultyDarkPreview() {
             onCategoryClick = {},
             onDifficultySelected = {},
             onBack = {},
-            onStartQuiz = { _, _, _, _, _ -> }
+            onClaimDaily = {},
+            onStartQuiz = { _, _, _, _, _, _ -> }
         )
     }
 }

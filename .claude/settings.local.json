@@ -20,7 +20,15 @@
       "PowerShell(Test-Path *)",
       "PowerShell($roots = @\\(\"C:\\\\Program Files\\\\Java\",\"C:\\\\Program Files\\\\Eclipse Adoptium\",\"C:\\\\Program Files\\\\Microsoft\",\"$env:LOCALAPPDATA\\\\Programs\",\"C:\\\\Program Files\\\\Android\"\\); foreach \\($r in $roots\\) { if \\(Test-Path $r\\) { Get-ChildItem -Path $r -Recurse -Filter \"jvm.cfg\" -ErrorAction SilentlyContinue | ForEach-Object { Write-Output $_.FullName } } } ; Write-Output \"--- gradle.properties ---\"; if \\(Test-Path \".\\\\gradle.properties\"\\) { Get-Content .\\\\gradle.properties })",
       "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 70)",
-      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 40)"
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 40)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 30)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 12)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 20)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 14)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 25)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 60)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }

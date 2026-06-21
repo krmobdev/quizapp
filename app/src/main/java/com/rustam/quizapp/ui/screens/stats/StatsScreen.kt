@@ -292,6 +292,14 @@ private fun PlayerProfileCard(
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
                     )
+                    Text(
+                        text = stringResource(
+                            R.string.char_level_reward_bonus,
+                            com.rustam.quizapp.domain.CharacterLevelCalculator.rewardMultiplier(progress.level)
+                        ),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = textColor.copy(alpha = 0.7f)
+                    )
                 }
             }
 
@@ -361,14 +369,27 @@ private fun CharacterStatsSection(
         modifier = modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        Text(
-            text = sectionTitle,
-            style = MaterialTheme.typography.titleMedium,
-            fontWeight = FontWeight.SemiBold,
-            color = textColor,
-            modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
-        )
-        
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 4.dp, bottom = 2.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Text(
+                text = sectionTitle,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor
+            )
+            Text(
+                text = stringResource(R.string.char_free_xp_balance, freeXp),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary
+            )
+        }
+
         StatUpgradeCard(
             title = stringResource(R.string.char_stat_strength),
             value = stats.strength,
@@ -729,6 +750,24 @@ private fun AchievementCard(
                     style = MaterialTheme.typography.bodySmall,
                     color = textColor.copy(alpha = contentAlpha * 0.8f)
                 )
+                if (!achievement.unlocked && achievement.target > 1) {
+                    LinearProgressIndicator(
+                        progress = { achievement.progressFraction },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 6.dp)
+                            .height(5.dp),
+                        strokeCap = StrokeCap.Round,
+                        trackColor = colors.progressTrack,
+                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.7f)
+                    )
+                    Text(
+                        text = "${achievement.current} / ${achievement.target}",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = textColor.copy(alpha = 0.6f),
+                        modifier = Modifier.padding(top = 2.dp)
+                    )
+                }
             }
             if (achievement.unlocked) {
                 Icon(
