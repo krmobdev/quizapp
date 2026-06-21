@@ -1,12 +1,8 @@
 package com.rustam.quizapp.data
 
 import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.intPreferencesKey
-import androidx.datastore.preferences.core.longPreferencesKey
-import androidx.datastore.preferences.preferencesDataStore
+import com.rustam.quizapp.data.db.AppDatabase
+import com.rustam.quizapp.data.db.DailyRewardEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.time.LocalDate
@@ -20,20 +16,19 @@ data class DailyRewardState(
     val rewardCoins: Int = 0
 )
 
-private val Context.dailyRewardDataStore: DataStore<Preferences> by preferencesDataStore(name = "quiz_daily_reward")
-
 /**
  * Tracks the daily login reward. The reward grows with the login streak over a fixed cycle
  * and resets if a day is missed. Claiming is allowed once per calendar day.
  */
 class DailyRewardRepository(context: Context) {
 
-    private val dataStore = context.applicationContext.dailyRewardDataStore
+    private val dao = AppDatabase.getInstance(context).dailyRewardDao()
 
-    fun observeReward(): Flow<DailyRewardState> = dataStore.data.map { prefs ->
+    fun observeReward(): Flow<DailyRewardState> = dao.observe().map { entity ->
+        val reward = entity ?: DailyRewardEntity()
         val today = LocalDate.now().toEpochDay()
-        val last = prefs[LAST_CLAIM_DAY] ?: -1L
-        val streak = prefs[CLAIM_STREAK] ?: 0
+        val last = reward.lastClaimDay
+        val streak = reward.claimStreak
         val canClaim = last != today
         val nextIndex = when {
             last == today -> streak                    // already claimed today
@@ -54,17 +49,11 @@ class DailyRewardRepository(context: Context) {
      */
     suspend fun claim(): Int {
         val today = LocalDate.now().toEpochDay()
-        var reward = 0
-        dataStore.edit { prefs ->
-            val last = prefs[LAST_CLAIM_DAY] ?: -1L
-            if (last == today) return@edit
-            val streak = prefs[CLAIM_STREAK] ?: 0
-            val newIndex = if (last == today - 1) streak + 1 else 1
-            prefs[LAST_CLAIM_DAY] = today
-            prefs[CLAIM_STREAK] = newIndex
-            reward = rewardForDay(newIndex)
-        }
-        return reward
+        val reward = dao.get() ?: DailyRewardEntity()
+        if (reward.lastClaimDay == today) return 0
+        val newIndex = if (reward.lastClaimDay == today - 1) reward.claimStreak + 1 else 1
+        dao.upsert(reward.copy(lastClaimDay = today, claimStreak = newIndex))
+        return rewardForDay(newIndex)
     }
 
     companion object {
@@ -75,8 +64,5 @@ class DailyRewardRepository(context: Context) {
             if (dayIndex <= 0) return REWARD_CYCLE.first()
             return REWARD_CYCLE[(dayIndex - 1) % REWARD_CYCLE.size]
         }
-
-        private val LAST_CLAIM_DAY = longPreferencesKey("daily_last_claim_day")
-        private val CLAIM_STREAK = intPreferencesKey("daily_claim_streak")
     }
 }

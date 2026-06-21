@@ -1,10 +1,13 @@
 package com.rustam.quizapp.ui.screens.settings
 
 import android.app.Application
+import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import com.rustam.quizapp.R
 import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.data.AppLanguage
+import com.rustam.quizapp.data.BackupRepository
+import com.rustam.quizapp.data.ImportResult
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.PromoRedeemResult
 import com.rustam.quizapp.data.QuestionRepository
@@ -25,6 +28,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     private val settingsRepository = SettingsRepository(application)
     private val progressRepository = QuizProgressRepository(application)
     private val playerRepository = PlayerRepository(application, QuestionRepository(application))
+    private val backupRepository = BackupRepository(application)
 
     /** Mirrors the persisted `sound_enabled` flag (default `true`) for the UI switch. */
     val soundEnabled: StateFlow<Boolean> = settingsRepository.soundEnabled
@@ -46,6 +50,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     private val _promoMessageRes = MutableStateFlow<Int?>(null)
     val promoMessageRes: StateFlow<Int?> = _promoMessageRes.asStateFlow()
+
+    /** Result message for the last export/import/reset action (string res id), or null. */
+    private val _backupMessageRes = MutableStateFlow<Int?>(null)
+    val backupMessageRes: StateFlow<Int?> = _backupMessageRes.asStateFlow()
 
     fun setSoundEnabled(enabled: Boolean) {
         viewModelScope.launch { settingsRepository.setSoundEnabled(enabled) }
@@ -74,5 +82,34 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun clearPromoMessage() {
         _promoMessageRes.value = null
+    }
+
+    fun exportProgress(target: Uri) {
+        viewModelScope.launch {
+            val ok = runCatching { backupRepository.export(target) }.isSuccess
+            _backupMessageRes.value =
+                if (ok) R.string.settings_backup_export_success else R.string.settings_backup_export_error
+        }
+    }
+
+    fun importProgress(source: Uri) {
+        viewModelScope.launch {
+            _backupMessageRes.value = when (backupRepository.import(source)) {
+                ImportResult.SUCCESS -> R.string.settings_backup_import_success
+                ImportResult.UNSUPPORTED_VERSION -> R.string.settings_backup_import_version
+                ImportResult.INVALID_FILE -> R.string.settings_backup_import_error
+            }
+        }
+    }
+
+    fun resetProgress() {
+        viewModelScope.launch {
+            backupRepository.resetProgress()
+            _backupMessageRes.value = R.string.settings_backup_reset_success
+        }
+    }
+
+    fun clearBackupMessage() {
+        _backupMessageRes.value = null
     }
 }

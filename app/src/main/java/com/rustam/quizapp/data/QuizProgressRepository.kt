@@ -1,8 +1,9 @@
 package com.rustam.quizapp.data
 
 import android.content.Context
-import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.room.withTransaction
+import com.rustam.quizapp.data.db.AppDatabase
+import com.rustam.quizapp.data.db.AppStateEntity
 import com.rustam.quizapp.domain.AnswerReward
 import com.rustam.quizapp.domain.QuizEventType
 import kotlinx.coroutines.flow.Flow
@@ -31,26 +32,28 @@ data class SavedQuizProgress(
 
 class QuizProgressRepository(context: Context) {
 
-    private val dataStore = context.applicationContext.statsDataStore
+    private val db = AppDatabase.getInstance(context)
+    private val dao = db.appStateDao()
     private val json = Json { ignoreUnknownKeys = true }
 
-    val savedProgress: Flow<SavedQuizProgress?> = dataStore.data.map { prefs ->
-        prefs[SAVED_QUIZ_JSON]?.let { raw ->
+    val savedProgress: Flow<SavedQuizProgress?> = dao.observe().map { state ->
+        state?.savedQuizJson?.let { raw ->
             runCatching { json.decodeFromString<SavedQuizProgress>(raw) }.getOrNull()
         }
     }
 
     suspend fun save(progress: SavedQuizProgress) {
-        dataStore.edit { prefs ->
-            prefs[SAVED_QUIZ_JSON] = json.encodeToString(progress)
+        val raw = json.encodeToString(progress)
+        db.withTransaction {
+            val current = dao.get() ?: AppStateEntity()
+            dao.upsert(current.copy(savedQuizJson = raw))
         }
     }
 
     suspend fun clear() {
-        dataStore.edit { prefs -> prefs.remove(SAVED_QUIZ_JSON) }
-    }
-
-    private companion object {
-        val SAVED_QUIZ_JSON = stringPreferencesKey("saved_quiz_json")
+        db.withTransaction {
+            val current = dao.get() ?: return@withTransaction
+            dao.upsert(current.copy(savedQuizJson = null))
+        }
     }
 }

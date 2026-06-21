@@ -1,8 +1,9 @@
 package com.rustam.quizapp.data
 
 import android.content.Context
-import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.room.withTransaction
+import com.rustam.quizapp.data.db.AppDatabase
+import com.rustam.quizapp.data.db.AppStateEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.serialization.json.Json
@@ -21,13 +22,12 @@ const val MISTAKES_CATEGORY_ID = "__mistakes__"
  */
 class MistakesRepository(context: Context) {
 
-    private val dataStore = context.applicationContext.statsDataStore
+    private val db = AppDatabase.getInstance(context)
+    private val dao = db.appStateDao()
     private val json = Json { ignoreUnknownKeys = true }
 
-    val mistakes: Flow<List<Question>> = dataStore.data.map { prefs ->
-        prefs[MISTAKES_JSON]?.let { raw ->
-            runCatching { json.decodeFromString<List<Question>>(raw) }.getOrNull()
-        } ?: emptyList()
+    val mistakes: Flow<List<Question>> = dao.observe().map { state ->
+        decode(state?.mistakesJson)
     }
 
     val count: Flow<Int> = mistakes.map { it.size }
@@ -35,27 +35,28 @@ class MistakesRepository(context: Context) {
     /** Adds [questions] to the front of the pool, replacing any existing entries with the same id. */
     suspend fun addMistakes(questions: List<Question>) {
         if (questions.isEmpty()) return
-        dataStore.edit { prefs ->
-            val current = decode(prefs[MISTAKES_JSON])
+        db.withTransaction {
+            val current = decode(dao.get()?.mistakesJson)
             val newIds = questions.map { it.id }.toSet()
             val merged = (questions + current.filter { it.id !in newIds }).take(MAX_MISTAKES)
-            prefs[MISTAKES_JSON] = json.encodeToString(merged)
+            writeMistakes(merged)
         }
     }
 
     /** Removes the questions with the given [ids] from the pool (e.g. solved during practice). */
     suspend fun removeSolved(ids: Collection<String>) {
         if (ids.isEmpty()) return
-        dataStore.edit { prefs ->
-            val current = decode(prefs[MISTAKES_JSON])
-            if (current.isEmpty()) return@edit
-            val remaining = current.filter { it.id !in ids }
-            if (remaining.isEmpty()) {
-                prefs.remove(MISTAKES_JSON)
-            } else {
-                prefs[MISTAKES_JSON] = json.encodeToString(remaining)
-            }
+        db.withTransaction {
+            val current = decode(dao.get()?.mistakesJson)
+            if (current.isEmpty()) return@withTransaction
+            writeMistakes(current.filter { it.id !in ids })
         }
+    }
+
+    private suspend fun writeMistakes(questions: List<Question>) {
+        val state = dao.get() ?: AppStateEntity()
+        val raw = if (questions.isEmpty()) null else json.encodeToString(questions)
+        dao.upsert(state.copy(mistakesJson = raw))
     }
 
     private fun decode(raw: String?): List<Question> =
@@ -63,6 +64,5 @@ class MistakesRepository(context: Context) {
 
     private companion object {
         const val MAX_MISTAKES = 60
-        val MISTAKES_JSON = stringPreferencesKey("mistakes_json")
     }
 }

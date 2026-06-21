@@ -1,15 +1,12 @@
 package com.rustam.quizapp.data
 
 import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.booleanPreferencesKey
-import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.intPreferencesKey
-import androidx.datastore.preferences.core.longPreferencesKey
-import androidx.datastore.preferences.core.stringPreferencesKey
-import androidx.datastore.preferences.core.stringSetPreferencesKey
-import androidx.datastore.preferences.preferencesDataStore
+import androidx.room.withTransaction
+import com.rustam.quizapp.data.db.AppDatabase
+import com.rustam.quizapp.data.db.InventoryEntity
+import com.rustam.quizapp.data.db.OwnedItemEntity
+import com.rustam.quizapp.data.db.PlayerEntity
+import com.rustam.quizapp.data.db.RecentQuestionsEntity
 import com.rustam.quizapp.domain.AnswerReward
 import com.rustam.quizapp.domain.CharacterLevelCalculator
 import com.rustam.quizapp.domain.CharacterStats
@@ -22,7 +19,7 @@ import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.RewardCalculator
 import com.rustam.quizapp.domain.ShopCatalog
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import java.time.LocalDate
 
@@ -44,58 +41,56 @@ data class ShopState(
     val equippedThemeId: String
 )
 
-private val Context.playerDataStore: DataStore<Preferences> by preferencesDataStore(name = "quiz_player")
-
 class PlayerRepository(
-    private val context: Context,
+    context: Context,
     private val questionRepository: QuestionRepository
 ) {
-    private val dataStore = context.applicationContext.playerDataStore
+    private val db = AppDatabase.getInstance(context)
+    private val dao = db.playerDao()
 
-    fun observeProfile(): Flow<PlayerProfile> = dataStore.data.map { prefs ->
-        val snapshot = readEventProgress(prefs)
+    fun observeProfile(): Flow<PlayerProfile> = dao.observePlayer().map { entity ->
+        val player = entity ?: PlayerEntity()
         val categories = questionRepository.getCategories()
-        val currentPoints = prefs[POINTS] ?: 0
-        val lifetime = prefs[LIFETIME_POINTS] ?: currentPoints
         PlayerProfile(
-            name = prefs[PLAYER_NAME].orEmpty(),
-            points = currentPoints,
-            coins = prefs[COINS] ?: 0,
-            avatarEmoji = ShopCatalog.avatarEmoji(prefs[EQUIPPED_AVATAR] ?: ShopCatalog.DEFAULT_AVATAR_ID),
-            eventProgress = QuizEvents.activeEvents(categories, snapshot),
-            stats = readStats(prefs),
-            lifetimePoints = lifetime
+            name = player.name,
+            points = player.points,
+            coins = player.coins,
+            avatarEmoji = ShopCatalog.avatarEmoji(player.avatarId ?: ShopCatalog.DEFAULT_AVATAR_ID),
+            eventProgress = QuizEvents.activeEvents(categories, eventSnapshot(player)),
+            stats = player.toStats(),
+            lifetimePoints = player.lifetimePoints
         )
     }
 
     /** Coins and owned/equipped cosmetics, used by the shop screen. */
-    fun observeShop(): Flow<ShopState> = dataStore.data.map { prefs ->
-        ShopState(
-            coins = prefs[COINS] ?: 0,
-            ownedItemIds = (prefs[OWNED_ITEMS] ?: emptySet()) + ShopCatalog.freeItemIds,
-            equippedAvatarId = prefs[EQUIPPED_AVATAR] ?: ShopCatalog.DEFAULT_AVATAR_ID,
-            equippedThemeId = prefs[EQUIPPED_THEME] ?: ShopCatalog.DEFAULT_THEME_ID
-        )
-    }
+    fun observeShop(): Flow<ShopState> =
+        combine(dao.observePlayer(), dao.observeOwnedIds()) { entity, owned ->
+            val player = entity ?: PlayerEntity()
+            ShopState(
+                coins = player.coins,
+                ownedItemIds = owned.toSet() + ShopCatalog.freeItemIds,
+                equippedAvatarId = player.avatarId ?: ShopCatalog.DEFAULT_AVATAR_ID,
+                equippedThemeId = player.themeId ?: ShopCatalog.DEFAULT_THEME_ID
+            )
+        }
 
     /** The accent theme id applied app-wide. Defaults to the free theme. */
-    val equippedThemeId: Flow<String> = dataStore.data.map { prefs ->
-        prefs[EQUIPPED_THEME] ?: ShopCatalog.DEFAULT_THEME_ID
-    }
+    val equippedThemeId: Flow<String> =
+        dao.observePlayer().map { it?.themeId ?: ShopCatalog.DEFAULT_THEME_ID }
 
     /**
      * Buys [itemId] for [price] coins if affordable and not already owned.
-     * Returns `true` on a successful purchase. The read-and-write happens inside a
-     * single [edit] block so the balance check and deduction are atomic.
+     * Returns `true` on a successful purchase. The check and deduction happen in a single
+     * transaction so the balance check and write are atomic.
      */
     suspend fun purchase(itemId: String, price: Int): Boolean {
         var purchased = false
-        dataStore.edit { prefs ->
-            val owned = (prefs[OWNED_ITEMS] ?: emptySet()) + ShopCatalog.freeItemIds
-            val coins = prefs[COINS] ?: 0
-            if (itemId !in owned && coins >= price) {
-                prefs[COINS] = coins - price
-                prefs[OWNED_ITEMS] = (prefs[OWNED_ITEMS] ?: emptySet()) + itemId
+        db.withTransaction {
+            val owned = dao.getOwnedIds().toSet() + ShopCatalog.freeItemIds
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (itemId !in owned && player.coins >= price) {
+                dao.upsertPlayer(player.copy(coins = player.coins - price))
+                dao.addOwned(OwnedItemEntity(itemId))
                 purchased = true
             }
         }
@@ -103,25 +98,23 @@ class PlayerRepository(
     }
 
     /** Booster id -> how many of that booster the player currently holds. */
-    fun observeInventory(): Flow<Map<String, Int>> = dataStore.data.map { prefs ->
-        ShopCatalog.boosters.associate { booster ->
-            booster.id to (prefs[inventoryKey(booster.id)] ?: 0)
-        }
+    fun observeInventory(): Flow<Map<String, Int>> = dao.observeInventory().map { rows ->
+        val counts = rows.associate { it.itemId to it.count }
+        ShopCatalog.boosters.associate { it.id to (counts[it.id] ?: 0) }
     }
 
     /**
      * Buys one [boosterId] for [price] coins if affordable, adding it to the backpack.
-     * Boosters are consumables, so each purchase increments a stored count rather than
-     * marking the item permanently owned. Returns `true` on success.
+     * Boosters are consumables, so each purchase increments a stored count. Returns `true` on success.
      */
     suspend fun purchaseBooster(boosterId: String, price: Int): Boolean {
         var purchased = false
-        dataStore.edit { prefs ->
-            val coins = prefs[COINS] ?: 0
-            if (coins >= price) {
-                val key = inventoryKey(boosterId)
-                prefs[COINS] = coins - price
-                prefs[key] = (prefs[key] ?: 0) + 1
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.coins >= price) {
+                dao.upsertPlayer(player.copy(coins = player.coins - price))
+                val count = dao.getInventoryCount(boosterId) ?: 0
+                dao.upsertInventory(InventoryEntity(boosterId, count + 1))
                 purchased = true
             }
         }
@@ -130,22 +123,23 @@ class PlayerRepository(
 
     /**
      * Consumes one [boosterId] from the backpack and grants its XP. The reward is added
-     * to both the spendable free XP ([POINTS]) and the lifetime XP ([LIFETIME_POINTS]),
-     * so the player's level/rank grows just like with earned quiz rewards.
-     * Returns `true` if a booster was available and activated.
+     * to both the spendable XP (points) and the lifetime XP, so the player's level/rank
+     * grows just like with earned quiz rewards. Returns `true` if a booster was activated.
      */
     suspend fun activateBooster(boosterId: String): Boolean {
         val booster = ShopCatalog.booster(boosterId) ?: return false
         var activated = false
-        dataStore.edit { prefs ->
-            val key = inventoryKey(boosterId)
-            val count = prefs[key] ?: 0
+        db.withTransaction {
+            val count = dao.getInventoryCount(boosterId) ?: 0
             if (count > 0) {
-                val currentPoints = prefs[POINTS] ?: 0
-                val currentLifetime = prefs[LIFETIME_POINTS] ?: currentPoints
-                prefs[key] = count - 1
-                prefs[POINTS] = currentPoints + booster.rewardPoints
-                prefs[LIFETIME_POINTS] = currentLifetime + booster.rewardPoints
+                dao.upsertInventory(InventoryEntity(boosterId, count - 1))
+                val player = dao.getPlayer() ?: PlayerEntity()
+                dao.upsertPlayer(
+                    player.copy(
+                        points = player.points + booster.rewardPoints,
+                        lifetimePoints = player.lifetimePoints + booster.rewardPoints
+                    )
+                )
                 activated = true
             }
         }
@@ -153,10 +147,9 @@ class PlayerRepository(
     }
 
     /** Power-up id -> how many of that power-up the player currently holds. */
-    fun observePowerUps(): Flow<Map<String, Int>> = dataStore.data.map { prefs ->
-        ShopCatalog.powerUps.associate { powerUp ->
-            powerUp.id to (prefs[inventoryKey(powerUp.id)] ?: 0)
-        }
+    fun observePowerUps(): Flow<Map<String, Int>> = dao.observeInventory().map { rows ->
+        val counts = rows.associate { it.itemId to it.count }
+        ShopCatalog.powerUps.associate { it.id to (counts[it.id] ?: 0) }
     }
 
     /** Buys one power-up for [price] coins if affordable. Returns `true` on success. */
@@ -166,37 +159,30 @@ class PlayerRepository(
     /** Consumes one [powerUpId] from the backpack. Returns `true` if one was available. */
     suspend fun consumePowerUp(powerUpId: String): Boolean {
         var consumed = false
-        dataStore.edit { prefs ->
-            val key = inventoryKey(powerUpId)
-            val count = prefs[key] ?: 0
+        db.withTransaction {
+            val count = dao.getInventoryCount(powerUpId) ?: 0
             if (count > 0) {
-                prefs[key] = count - 1
+                dao.upsertInventory(InventoryEntity(powerUpId, count - 1))
                 consumed = true
             }
         }
         return consumed
     }
 
-    private fun inventoryKey(boosterId: String) = intPreferencesKey("inv_$boosterId")
+    suspend fun equipAvatar(avatarId: String) = updatePlayer { it.copy(avatarId = avatarId) }
 
-    suspend fun equipAvatar(avatarId: String) {
-        dataStore.edit { prefs -> prefs[EQUIPPED_AVATAR] = avatarId }
-    }
-
-    suspend fun equipTheme(themeId: String) {
-        dataStore.edit { prefs -> prefs[EQUIPPED_THEME] = themeId }
-    }
+    suspend fun equipTheme(themeId: String) = updatePlayer { it.copy(themeId = themeId) }
 
     suspend fun setPlayerName(name: String) {
         val trimmed = name.trim().take(MAX_NAME_LENGTH)
         if (trimmed.isEmpty()) return
-        dataStore.edit { prefs -> prefs[PLAYER_NAME] = trimmed }
+        updatePlayer { it.copy(name = trimmed) }
     }
 
-    /** Adds coins without touching points/XP (used for achievement rewards). */
+    /** Adds coins without touching points/XP (used for achievement and daily rewards). */
     suspend fun addCoins(amount: Int) {
         if (amount <= 0) return
-        dataStore.edit { prefs -> prefs[COINS] = (prefs[COINS] ?: 0) + amount }
+        updatePlayer { it.copy(coins = it.coins + amount) }
     }
 
     /**
@@ -206,10 +192,10 @@ class PlayerRepository(
     suspend fun spendCoins(amount: Int): Boolean {
         if (amount <= 0) return false
         var spent = false
-        dataStore.edit { prefs ->
-            val coins = prefs[COINS] ?: 0
-            if (coins >= amount) {
-                prefs[COINS] = coins - amount
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.coins >= amount) {
+                dao.upsertPlayer(player.copy(coins = player.coins - amount))
                 spent = true
             }
         }
@@ -217,38 +203,35 @@ class PlayerRepository(
     }
 
     suspend fun grantReward(reward: QuizReward) {
-        dataStore.edit { prefs ->
-            // Read the old balances before mutating, so LIFETIME_POINTS' fallback to the
-            // current points doesn't pick up the just-incremented value and double-count.
-            val currentPoints = prefs[POINTS] ?: 0
-            val currentLifetime = prefs[LIFETIME_POINTS] ?: currentPoints
-            prefs[POINTS] = currentPoints + reward.points
-            prefs[COINS] = (prefs[COINS] ?: 0) + reward.coins
-            prefs[LIFETIME_POINTS] = currentLifetime + reward.points
+        updatePlayer {
+            it.copy(
+                points = it.points + reward.points,
+                coins = it.coins + reward.coins,
+                lifetimePoints = it.lifetimePoints + reward.points
+            )
         }
     }
 
-    val promoRedeemed: Flow<Boolean> = dataStore.data.map { prefs ->
-        prefs[PROMO_REDEEMED] ?: false
-    }
+    val promoRedeemed: Flow<Boolean> = dao.observePlayer().map { it?.promoRedeemed ?: false }
 
     suspend fun redeemPromoCode(code: String): PromoRedeemResult {
         val normalized = code.trim().uppercase()
         if (normalized != PROMO_CODE) return PromoRedeemResult.INVALID_CODE
-
-        val alreadyRedeemed = dataStore.data.first()[PROMO_REDEEMED] ?: false
-        if (alreadyRedeemed) return PromoRedeemResult.ALREADY_REDEEMED
-
-        dataStore.edit { prefs ->
-            prefs[PROMO_REDEEMED] = true
-            prefs[COINS] = (prefs[COINS] ?: 0) + PROMO_REWARD_COINS
+        var result = PromoRedeemResult.ALREADY_REDEEMED
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (!player.promoRedeemed) {
+                dao.upsertPlayer(
+                    player.copy(promoRedeemed = true, coins = player.coins + PROMO_REWARD_COINS)
+                )
+                result = PromoRedeemResult.SUCCESS
+            }
         }
-        return PromoRedeemResult.SUCCESS
+        return result
     }
 
-    suspend fun eventProgressSnapshot(): EventProgressSnapshot {
-        return readEventProgress(dataStore.data.first())
-    }
+    suspend fun eventProgressSnapshot(): EventProgressSnapshot =
+        eventSnapshot(dao.getPlayer() ?: PlayerEntity())
 
     fun resolveActiveEvent(
         eventType: QuizEventType?,
@@ -282,13 +265,12 @@ class PlayerRepository(
         }
         val baseReward = RewardCalculator.calculate(answers, total, activeEvent)
 
-        // Read current stats and lifetime XP from preferences.
-        val prefs = dataStore.data.first()
-        val stats = readStats(prefs)
+        val player = dao.getPlayer() ?: PlayerEntity()
+        val stats = player.toStats()
 
         // Level scaling: the higher the player's level, the higher the base reward
         // (+10% per level above 1). Level is derived from lifetime XP.
-        val lifetime = prefs[LIFETIME_POINTS] ?: (prefs[POINTS] ?: 0)
+        val lifetime = player.lifetimePoints
         val level = CharacterLevelCalculator.calculateLevel(lifetime)
         val levelMultiplier = CharacterLevelCalculator.rewardMultiplier(level)
         // Coins scale faster than XP past level 20 to reward high-level players.
@@ -296,27 +278,22 @@ class PlayerRepository(
         val scaledBasePoints = (baseReward.points * levelMultiplier).toInt()
         val scaledBaseCoins = (baseReward.coins * coinLevelMultiplier).toInt()
 
-        // Calculate bonuses: percentage bonuses (Strength/Intelligence) plus
-        // flat bonuses (Wisdom/Endurance), applied on top of the level-scaled base.
+        // Percentage bonuses (Strength/Intelligence) plus flat bonuses (Wisdom/Endurance).
         val xpBonus = (scaledBasePoints * (stats.xpBonusPercent / 100f)).toInt() + stats.flatXpBonus
         val coinBonus = (scaledBaseCoins * (stats.coinBonusPercent / 100f)).toInt() + stats.flatCoinBonus
 
         var pointsEarned = scaledBasePoints + xpBonus
         var coinsEarned = scaledBaseCoins + coinBonus
 
-        // Luck (+ Charisma) roll for double rewards (Critical Success).
-        // Focus sharpens the multiplier applied when it triggers.
+        // Luck (+ Charisma) roll for double rewards (Critical Success). Focus sharpens it.
         val doubleChance = stats.doubleRewardChancePercent + stats.critChanceBonusPercent
-        val isCriticalSuccess = if (doubleChance > 0) {
-            (1..100).random() <= doubleChance
-        } else false
+        val isCriticalSuccess = if (doubleChance > 0) (1..100).random() <= doubleChance else false
 
         if (isCriticalSuccess) {
             pointsEarned = (pointsEarned * stats.critMultiplier).toInt()
             coinsEarned = (coinsEarned * stats.critMultiplier).toInt()
         }
-        
-        // Detect level-up: compare the level before and after this reward is added.
+
         val newLevel = CharacterLevelCalculator.calculateLevel(lifetime + pointsEarned)
 
         val finalReward = baseReward.copy(
@@ -341,27 +318,18 @@ class PlayerRepository(
 
     suspend fun upgradeStat(statName: String): Boolean {
         var upgraded = false
-        dataStore.edit { prefs ->
-            val key = when (statName) {
-                "strength" -> CHAR_STRENGTH
-                "intelligence" -> CHAR_INTELLIGENCE
-                "agility" -> CHAR_AGILITY
-                "luck" -> CHAR_LUCK
-                "wisdom" -> CHAR_WISDOM
-                "endurance" -> CHAR_ENDURANCE
-                "focus" -> CHAR_FOCUS
-                "charisma" -> CHAR_CHARISMA
-                else -> null
-            }
-            if (key != null) {
-                val currentVal = prefs[key] ?: 0
-                val cost = 100 + currentVal * 25
-                val points = prefs[POINTS] ?: 0
-                if (currentVal < 20 && points >= cost) {
-                    prefs[key] = currentVal + 1
-                    prefs[POINTS] = points - cost
-                    upgraded = true
-                }
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            val currentVal = statValue(player, statName) ?: return@withTransaction
+            val cost = 100 + currentVal * 25
+            if (currentVal < MAX_STAT && player.points >= cost) {
+                val updated = applyStat(
+                    player.copy(points = player.points - cost),
+                    statName,
+                    currentVal + 1
+                )
+                dao.upsertPlayer(updated)
+                upgraded = true
             }
         }
         return upgraded
@@ -369,110 +337,110 @@ class PlayerRepository(
 
     private suspend fun markEventCompleted(type: QuizEventType) {
         val day = LocalDate.now()
-        dataStore.edit { prefs ->
+        updatePlayer { player ->
             when (type) {
-                QuizEventType.DAILY -> prefs[DAILY_COMPLETED_DAY] = QuizEvents.epochDay(day)
+                QuizEventType.DAILY -> player.copy(dailyCompletedDay = QuizEvents.epochDay(day))
                 QuizEventType.WEEKLY -> {
                     val week = QuizEvents.epochWeek(day)
-                    val currentWeek = prefs[WEEKLY_EPOCH] ?: -1L
-                    prefs[WEEKLY_EPOCH] = week
-                    prefs[WEEKLY_COMPLETIONS] = if (currentWeek == week) {
-                        (prefs[WEEKLY_COMPLETIONS] ?: 0) + 1
-                    } else {
-                        1
-                    }
+                    player.copy(
+                        weeklyEpoch = week,
+                        weeklyCompletions = if (player.weeklyEpoch == week) player.weeklyCompletions + 1 else 1
+                    )
                 }
                 QuizEventType.WEEKEND_BLITZ -> {
                     val weekend = QuizEvents.epochWeekend(day)
-                    val currentWeekend = prefs[WEEKEND_EPOCH] ?: -1L
-                    prefs[WEEKEND_EPOCH] = weekend
-                    prefs[WEEKEND_COMPLETIONS] = if (currentWeekend == weekend) {
-                        (prefs[WEEKEND_COMPLETIONS] ?: 0) + 1
-                    } else {
-                        1
-                    }
+                    player.copy(
+                        weekendEpoch = weekend,
+                        weekendCompletions = if (player.weekendEpoch == weekend) player.weekendCompletions + 1 else 1
+                    )
                 }
                 QuizEventType.MARATHON -> {
                     val epochDay = QuizEvents.epochDay(day)
-                    val currentDay = prefs[MARATHON_DAY] ?: -1L
-                    prefs[MARATHON_DAY] = epochDay
-                    prefs[MARATHON_COMPLETIONS] = if (currentDay == epochDay) {
-                        (prefs[MARATHON_COMPLETIONS] ?: 0) + 1
-                    } else {
-                        1
-                    }
+                    player.copy(
+                        marathonDay = epochDay,
+                        marathonCompletions = if (player.marathonDay == epochDay) player.marathonCompletions + 1 else 1
+                    )
                 }
             }
         }
     }
 
-    private fun readStats(prefs: Preferences): CharacterStats = CharacterStats(
-        strength = prefs[CHAR_STRENGTH] ?: 0,
-        intelligence = prefs[CHAR_INTELLIGENCE] ?: 0,
-        agility = prefs[CHAR_AGILITY] ?: 0,
-        luck = prefs[CHAR_LUCK] ?: 0,
-        wisdom = prefs[CHAR_WISDOM] ?: 0,
-        endurance = prefs[CHAR_ENDURANCE] ?: 0,
-        focus = prefs[CHAR_FOCUS] ?: 0,
-        charisma = prefs[CHAR_CHARISMA] ?: 0
-    )
-
-    private fun readEventProgress(prefs: Preferences): EventProgressSnapshot =
-        EventProgressSnapshot(
-            dailyCompletedDay = prefs[DAILY_COMPLETED_DAY] ?: -1L,
-            weeklyEpoch = prefs[WEEKLY_EPOCH] ?: -1L,
-            weeklyCompletions = prefs[WEEKLY_COMPLETIONS] ?: 0,
-            weekendEpoch = prefs[WEEKEND_EPOCH] ?: -1L,
-            weekendCompletions = prefs[WEEKEND_COMPLETIONS] ?: 0,
-            marathonDay = prefs[MARATHON_DAY] ?: -1L,
-            marathonCompletions = prefs[MARATHON_COMPLETIONS] ?: 0
-        )
-
-    fun getRecentQuestions(categoryId: String): Flow<List<String>> = dataStore.data.map { prefs ->
-        val key = stringPreferencesKey("recent_questions_$categoryId")
-        val raw = prefs[key].orEmpty()
-        if (raw.isEmpty()) emptyList() else raw.split(",")
-    }
+    fun getRecentQuestions(categoryId: String): Flow<List<String>> =
+        dao.observeRecent(categoryId).map { it.toIds() }
 
     suspend fun saveRecentQuestions(categoryId: String, questionIds: List<String>) {
-        dataStore.edit { prefs ->
-            val key = stringPreferencesKey("recent_questions_$categoryId")
-            val raw = prefs[key].orEmpty()
-            val current = if (raw.isEmpty()) emptyList() else raw.split(",")
-            val orderedList = (current - questionIds.toSet()) + questionIds
-            val limited = orderedList.takeLast(200)
-            prefs[key] = limited.joinToString(",")
+        db.withTransaction {
+            val current = dao.getRecent(categoryId).toIds()
+            val ordered = (current - questionIds.toSet()) + questionIds
+            dao.upsertRecent(
+                RecentQuestionsEntity(categoryId, ordered.takeLast(MAX_RECENT).joinToString(","))
+            )
         }
+    }
+
+    private suspend inline fun updatePlayer(crossinline transform: (PlayerEntity) -> PlayerEntity) {
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            dao.upsertPlayer(transform(player))
+        }
+    }
+
+    private fun RecentQuestionsEntity?.toIds(): List<String> {
+        val raw = this?.idsCsv.orEmpty()
+        return if (raw.isEmpty()) emptyList() else raw.split(",")
+    }
+
+    private fun PlayerEntity.toStats(): CharacterStats = CharacterStats(
+        strength = strength,
+        intelligence = intelligence,
+        agility = agility,
+        luck = luck,
+        wisdom = wisdom,
+        endurance = endurance,
+        focus = focus,
+        charisma = charisma
+    )
+
+    private fun eventSnapshot(player: PlayerEntity): EventProgressSnapshot = EventProgressSnapshot(
+        dailyCompletedDay = player.dailyCompletedDay,
+        weeklyEpoch = player.weeklyEpoch,
+        weeklyCompletions = player.weeklyCompletions,
+        weekendEpoch = player.weekendEpoch,
+        weekendCompletions = player.weekendCompletions,
+        marathonDay = player.marathonDay,
+        marathonCompletions = player.marathonCompletions
+    )
+
+    private fun statValue(player: PlayerEntity, statName: String): Int? = when (statName) {
+        "strength" -> player.strength
+        "intelligence" -> player.intelligence
+        "agility" -> player.agility
+        "luck" -> player.luck
+        "wisdom" -> player.wisdom
+        "endurance" -> player.endurance
+        "focus" -> player.focus
+        "charisma" -> player.charisma
+        else -> null
+    }
+
+    private fun applyStat(player: PlayerEntity, statName: String, value: Int): PlayerEntity = when (statName) {
+        "strength" -> player.copy(strength = value)
+        "intelligence" -> player.copy(intelligence = value)
+        "agility" -> player.copy(agility = value)
+        "luck" -> player.copy(luck = value)
+        "wisdom" -> player.copy(wisdom = value)
+        "endurance" -> player.copy(endurance = value)
+        "focus" -> player.copy(focus = value)
+        "charisma" -> player.copy(charisma = value)
+        else -> player
     }
 
     private companion object {
         const val MAX_NAME_LENGTH = 24
+        const val MAX_STAT = 20
+        const val MAX_RECENT = 200
         const val PROMO_CODE = "AAAAAA"
         const val PROMO_REWARD_COINS = 30000
-        val PLAYER_NAME = stringPreferencesKey("player_name")
-        val POINTS = intPreferencesKey("points")
-        val COINS = intPreferencesKey("coins")
-        val DAILY_COMPLETED_DAY = longPreferencesKey("daily_completed_day")
-        val WEEKLY_EPOCH = longPreferencesKey("weekly_epoch")
-        val WEEKLY_COMPLETIONS = intPreferencesKey("weekly_completions")
-        val WEEKEND_EPOCH = longPreferencesKey("weekend_epoch")
-        val WEEKEND_COMPLETIONS = intPreferencesKey("weekend_completions")
-        val MARATHON_DAY = longPreferencesKey("marathon_day")
-        val MARATHON_COMPLETIONS = intPreferencesKey("marathon_completions")
-        val OWNED_ITEMS = stringSetPreferencesKey("owned_items")
-        val EQUIPPED_AVATAR = stringPreferencesKey("equipped_avatar")
-        val EQUIPPED_THEME = stringPreferencesKey("equipped_theme")
-        val PROMO_REDEEMED = booleanPreferencesKey("promo_redeemed")
-
-        val CHAR_STRENGTH = intPreferencesKey("char_strength")
-        val CHAR_INTELLIGENCE = intPreferencesKey("char_intelligence")
-        val CHAR_AGILITY = intPreferencesKey("char_agility")
-        val CHAR_LUCK = intPreferencesKey("char_luck")
-        val CHAR_WISDOM = intPreferencesKey("char_wisdom")
-        val CHAR_ENDURANCE = intPreferencesKey("char_endurance")
-        val CHAR_FOCUS = intPreferencesKey("char_focus")
-        val CHAR_CHARISMA = intPreferencesKey("char_charisma")
-        val LIFETIME_POINTS = intPreferencesKey("lifetime_points")
     }
 }
 

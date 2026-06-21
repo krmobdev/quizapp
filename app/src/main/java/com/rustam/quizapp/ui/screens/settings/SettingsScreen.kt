@@ -9,21 +9,27 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -59,17 +65,31 @@ fun SettingsScreen(
     val appLanguage by viewModel.appLanguage.collectAsState()
     val promoRedeemed by viewModel.promoRedeemed.collectAsState()
     val promoMessageRes by viewModel.promoMessageRes.collectAsState()
+    val backupMessageRes by viewModel.backupMessageRes.collectAsState()
+
+    val exportLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.CreateDocument("application/json")
+    ) { uri -> uri?.let(viewModel::exportProgress) }
+    val importLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.OpenDocument()
+    ) { uri -> uri?.let(viewModel::importProgress) }
+
     SettingsContent(
         soundEnabled = soundEnabled,
         themeMode = themeMode,
         appLanguage = appLanguage,
         promoRedeemed = promoRedeemed,
         promoMessageRes = promoMessageRes,
+        backupMessageRes = backupMessageRes,
         onSoundEnabledChange = viewModel::setSoundEnabled,
         onThemeModeChange = viewModel::setThemeMode,
         onAppLanguageChange = viewModel::setAppLanguage,
         onRedeemPromo = viewModel::redeemPromoCode,
         onClearPromoMessage = viewModel::clearPromoMessage,
+        onExport = { exportLauncher.launch("quizapp_backup.json") },
+        onImport = { importLauncher.launch(arrayOf("application/json")) },
+        onReset = viewModel::resetProgress,
+        onClearBackupMessage = viewModel::clearBackupMessage,
         modifier = modifier
     )
 }
@@ -81,11 +101,16 @@ private fun SettingsContent(
     appLanguage: AppLanguage,
     promoRedeemed: Boolean,
     promoMessageRes: Int?,
+    backupMessageRes: Int?,
     onSoundEnabledChange: (Boolean) -> Unit,
     onThemeModeChange: (ThemeMode) -> Unit,
     onAppLanguageChange: (AppLanguage) -> Unit,
     onRedeemPromo: (String) -> Unit,
     onClearPromoMessage: () -> Unit,
+    onExport: () -> Unit,
+    onImport: () -> Unit,
+    onReset: () -> Unit,
+    onClearBackupMessage: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -146,8 +171,138 @@ private fun SettingsContent(
             textColor = textColor
         )
 
+        DataSection(
+            messageRes = backupMessageRes,
+            onExport = onExport,
+            onImport = onImport,
+            onReset = onReset,
+            onClearMessage = onClearBackupMessage,
+            colors = colors,
+            textColor = textColor
+        )
+
         Spacer(Modifier.height(8.dp))
     }
+}
+
+@Composable
+private fun DataSection(
+    messageRes: Int?,
+    onExport: () -> Unit,
+    onImport: () -> Unit,
+    onReset: () -> Unit,
+    onClearMessage: () -> Unit,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    modifier: Modifier = Modifier
+) {
+    var showImportConfirm by remember { mutableStateOf(false) }
+    var showResetConfirm by remember { mutableStateOf(false) }
+
+    LaunchedEffect(messageRes) {
+        if (messageRes != null) {
+            kotlinx.coroutines.delay(4_000)
+            onClearMessage()
+        }
+    }
+
+    SettingsSection(
+        title = stringResource(R.string.settings_data_title),
+        subtitle = stringResource(R.string.settings_data_subtitle),
+        colors = colors,
+        modifier = modifier
+    ) {
+        Button(
+            onClick = onExport,
+            modifier = Modifier.fillMaxWidth().height(48.dp),
+            shape = AppShapes.Button,
+            colors = ButtonDefaults.buttonColors(contentColor = textColor)
+        ) {
+            Text(
+                text = stringResource(R.string.settings_data_export),
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.SemiBold
+            )
+        }
+        OutlinedButton(
+            onClick = { showImportConfirm = true },
+            modifier = Modifier.fillMaxWidth().height(48.dp),
+            shape = AppShapes.Button
+        ) {
+            Text(
+                text = stringResource(R.string.settings_data_import),
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor
+            )
+        }
+        OutlinedButton(
+            onClick = { showResetConfirm = true },
+            modifier = Modifier.fillMaxWidth().height(48.dp),
+            shape = AppShapes.Button
+        ) {
+            Text(
+                text = stringResource(R.string.settings_data_reset),
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.SemiBold,
+                color = MaterialTheme.colorScheme.error
+            )
+        }
+        messageRes?.let { resId ->
+            Text(
+                text = stringResource(resId),
+                style = MaterialTheme.typography.bodyMedium,
+                color = if (resId == R.string.settings_backup_export_success ||
+                    resId == R.string.settings_backup_import_success ||
+                    resId == R.string.settings_backup_reset_success
+                ) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error
+            )
+        }
+    }
+
+    if (showImportConfirm) {
+        ConfirmDialog(
+            title = stringResource(R.string.settings_data_import_confirm_title),
+            message = stringResource(R.string.settings_data_import_confirm_message),
+            confirmLabel = stringResource(R.string.settings_data_import),
+            onConfirm = {
+                showImportConfirm = false
+                onImport()
+            },
+            onDismiss = { showImportConfirm = false }
+        )
+    }
+    if (showResetConfirm) {
+        ConfirmDialog(
+            title = stringResource(R.string.settings_data_reset_confirm_title),
+            message = stringResource(R.string.settings_data_reset_confirm_message),
+            confirmLabel = stringResource(R.string.settings_data_reset),
+            onConfirm = {
+                showResetConfirm = false
+                onReset()
+            },
+            onDismiss = { showResetConfirm = false }
+        )
+    }
+}
+
+@Composable
+private fun ConfirmDialog(
+    title: String,
+    message: String,
+    confirmLabel: String,
+    onConfirm: () -> Unit,
+    onDismiss: () -> Unit
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(title) },
+        text = { Text(message) },
+        confirmButton = { TextButton(onClick = onConfirm) { Text(confirmLabel) } },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) }
+        }
+    )
 }
 
 @Composable
@@ -314,11 +469,16 @@ private fun SettingsContentPreview() {
             appLanguage = AppLanguage.RU,
             promoRedeemed = false,
             promoMessageRes = null,
+            backupMessageRes = null,
             onSoundEnabledChange = {},
             onThemeModeChange = {},
             onAppLanguageChange = {},
             onRedeemPromo = {},
-            onClearPromoMessage = {}
+            onClearPromoMessage = {},
+            onExport = {},
+            onImport = {},
+            onReset = {},
+            onClearBackupMessage = {}
         )
     }
 }

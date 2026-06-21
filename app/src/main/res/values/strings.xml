@@ -82,6 +82,23 @@
     <string name="settings_promo_already">Промо-код уже был активирован</string>
     <string name="settings_promo_redeemed">Промо-код активирован · +30000 монет</string>
 
+    <!-- Управление данными: экспорт / импорт / сброс прогресса -->
+    <string name="settings_data_title">Данные</string>
+    <string name="settings_data_subtitle">Сохраните прогресс в файл, восстановите из файла или сбросьте</string>
+    <string name="settings_data_export">Экспортировать прогресс</string>
+    <string name="settings_data_import">Импортировать прогресс</string>
+    <string name="settings_data_reset">Сбросить прогресс</string>
+    <string name="settings_data_import_confirm_title">Импортировать прогресс?</string>
+    <string name="settings_data_import_confirm_message">Текущий прогресс будет заменён данными из файла. Это действие нельзя отменить.</string>
+    <string name="settings_data_reset_confirm_title">Сбросить прогресс?</string>
+    <string name="settings_data_reset_confirm_message">Весь прогресс будет удалён без возможности восстановления. Настройки сохранятся.</string>
+    <string name="settings_backup_export_success">Прогресс сохранён в файл</string>
+    <string name="settings_backup_export_error">Не удалось сохранить файл</string>
+    <string name="settings_backup_import_success">Прогресс восстановлен</string>
+    <string name="settings_backup_import_error">Не удалось прочитать файл резервной копии</string>
+    <string name="settings_backup_import_version">Файл создан более новой версией приложения</string>
+    <string name="settings_backup_reset_success">Прогресс сброшен</string>
+
     <string name="settings_language_title">Язык</string>
     <string name="settings_language_subtitle">Язык интерфейса</string>
     <string name="language_russian">Русский</string>

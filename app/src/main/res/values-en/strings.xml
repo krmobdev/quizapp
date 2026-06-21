@@ -82,6 +82,23 @@
     <string name="settings_promo_already">Promo code already redeemed</string>
     <string name="settings_promo_redeemed">Promo code redeemed · +30000 coins</string>
 
+    <!-- Data management: export / import / reset progress -->
+    <string name="settings_data_title">Data</string>
+    <string name="settings_data_subtitle">Save your progress to a file, restore it, or reset</string>
+    <string name="settings_data_export">Export progress</string>
+    <string name="settings_data_import">Import progress</string>
+    <string name="settings_data_reset">Reset progress</string>
+    <string name="settings_data_import_confirm_title">Import progress?</string>
+    <string name="settings_data_import_confirm_message">Your current progress will be replaced with the data from the file. This cannot be undone.</string>
+    <string name="settings_data_reset_confirm_title">Reset progress?</string>
+    <string name="settings_data_reset_confirm_message">All progress will be permanently deleted. Your settings will be kept.</string>
+    <string name="settings_backup_export_success">Progress saved to file</string>
+    <string name="settings_backup_export_error">Could not save the file</string>
+    <string name="settings_backup_import_success">Progress restored</string>
+    <string name="settings_backup_import_error">Could not read the backup file</string>
+    <string name="settings_backup_import_version">File was created by a newer app version</string>
+    <string name="settings_backup_reset_success">Progress reset</string>
+
     <string name="settings_language_title">Language</string>
     <string name="settings_language_subtitle">Interface language</string>
     <string name="language_russian">Русский</string>
