@@ -4,9 +4,11 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.LocalActivityResultRegistryOwner
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.core.content.ContextCompat
@@ -32,12 +34,18 @@ class MainActivity : ComponentActivity() {
             val themeMode by settingsViewModel.themeMode.collectAsState()
             val appLanguage by settingsViewModel.appLanguage.collectAsState()
             val accentTheme by settingsViewModel.accentTheme.collectAsState()
-            LocalizedApp(language = appLanguage) {
-                QuizappTheme(
-                    darkTheme = shouldUseDarkTheme(themeMode),
-                    accent = accentTheme
-                ) {
-                    AppNavHost()
+            // LocalizedApp overrides LocalContext with a configuration context whose base
+            // does not chain back to this Activity, which breaks the context-based lookup of
+            // the ActivityResultRegistryOwner used by rememberLauncherForActivityResult.
+            // Provide the owner explicitly so SAF launchers (settings backup) work.
+            CompositionLocalProvider(LocalActivityResultRegistryOwner provides this) {
+                LocalizedApp(language = appLanguage) {
+                    QuizappTheme(
+                        darkTheme = shouldUseDarkTheme(themeMode),
+                        accent = accentTheme
+                    ) {
+                        AppNavHost()
+                    }
                 }
             }
         }
