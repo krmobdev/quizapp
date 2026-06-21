@@ -134,6 +134,9 @@
     <string name="theme_accent_sunset">Sunset</string>
     <string name="theme_accent_rose">Rose</string>
     <string name="theme_accent_gold">Gold</string>
+    <string name="theme_accent_forest">Forest</string>
+    <string name="theme_accent_crimson">Crimson</string>
+    <string name="theme_accent_midnight">Midnight</string>
 
     <string-array name="daily_quotes">
         <item>Knowledge is power — practice is the key to mastery.</item>
@@ -162,6 +165,14 @@
     <string name="char_stat_agility_desc">Reflexes: +0.5 sec to question timer (current: +%1$.1f sec)</string>
     <string name="char_stat_luck">Luck 🍀</string>
     <string name="char_stat_luck_desc">Fortune: %1$d%% chance of Critical Success (x2 rewards at the end)</string>
+    <string name="char_stat_wisdom">Wisdom 📖</string>
+    <string name="char_stat_wisdom_desc">Knowledge is power: +3 XP for every finished quiz (current: +%1$d XP)</string>
+    <string name="char_stat_endurance">Endurance 🛡️</string>
+    <string name="char_stat_endurance_desc">Stamina: +1 Coin for every finished quiz (current: +%1$d Coins)</string>
+    <string name="char_stat_focus">Focus 🎯</string>
+    <string name="char_stat_focus_desc">Concentration: empowers Critical Success (current: x%1$.1f rewards)</string>
+    <string name="char_stat_charisma">Charisma 💫</string>
+    <string name="char_stat_charisma_desc">Charm: +1%% Critical Success chance (current: +%1$d%%)</string>
     <string name="char_upgrade_cost">+1 (%1$d XP)</string>
     <string name="char_critical_success">CRITICAL SUCCESS! Fortune doubles your rewards! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d from Strength)</string>
@@ -172,4 +183,45 @@
     <string name="stats_character_stats_title">Character Stats</string>
     <string name="rewards_points_label">points</string>
     <string name="rewards_coins_label">coins</string>
+
+    <!-- Day streak -->
+    <string name="home_streak_chip">🔥 %1$d-day streak</string>
+    <string name="stats_streak">Streak</string>
+    <string name="stats_streak_value">🔥 %1$d</string>
+
+    <!-- Reminders -->
+    <string name="reminder_channel_name">Streak reminders</string>
+    <string name="reminder_channel_desc">Daily nudge so you don\'t lose your streak</string>
+    <string name="reminder_title">Don\'t lose your streak! 🔥</string>
+    <string name="reminder_text">Finish at least one quiz today to keep learning.</string>
+    <string name="reminder_streak_text">Your streak: %1$d days. Play a quiz today so it doesn\'t break!</string>
+
+    <!-- Achievements -->
+    <string name="achievements_section_title">Achievements · %1$d / %2$d</string>
+    <string name="achievement_reward">+%1$d 🪙</string>
+    <string name="result_new_achievements">New achievements!</string>
+    <string name="ach_first_quiz_title">First Step</string>
+    <string name="ach_first_quiz_desc">Finish your first quiz</string>
+    <string name="ach_ten_quizzes_title">Quizzer</string>
+    <string name="ach_ten_quizzes_desc">Complete 10 quizzes</string>
+    <string name="ach_fifty_quizzes_title">Veteran</string>
+    <string name="ach_fifty_quizzes_desc">Complete 50 quizzes</string>
+    <string name="ach_perfect_title">Flawless</string>
+    <string name="ach_perfect_desc">Finish a quiz with no mistakes</string>
+    <string name="ach_hundred_correct_title">Century</string>
+    <string name="ach_hundred_correct_desc">Answer 100 questions correctly</string>
+    <string name="ach_five_hundred_correct_title">Scholar</string>
+    <string name="ach_five_hundred_correct_desc">Answer 500 questions correctly</string>
+    <string name="ach_streak3_title">In the Groove</string>
+    <string name="ach_streak3_desc">A 3-day streak</string>
+    <string name="ach_streak7_title">Week of Power</string>
+    <string name="ach_streak7_desc">A 7-day streak</string>
+    <string name="ach_streak30_title">Unstoppable</string>
+    <string name="ach_streak30_desc">A 30-day streak</string>
+    <string name="ach_maxed_stat_title">Maxed Out</string>
+    <string name="ach_maxed_stat_desc">Upgrade a characteristic to 20</string>
+    <string name="ach_all_categories_title">All-Rounder</string>
+    <string name="ach_all_categories_desc">Play every topic</string>
+    <string name="ach_level10_title">Sage</string>
+    <string name="ach_level10_desc">Reach level 10</string>
 </resources>

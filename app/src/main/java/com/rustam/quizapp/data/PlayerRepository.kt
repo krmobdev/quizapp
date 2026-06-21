@@ -62,12 +62,7 @@ class PlayerRepository(
             coins = prefs[COINS] ?: 0,
             avatarEmoji = ShopCatalog.avatarEmoji(prefs[EQUIPPED_AVATAR] ?: ShopCatalog.DEFAULT_AVATAR_ID),
             eventProgress = QuizEvents.activeEvents(categories, snapshot),
-            stats = CharacterStats(
-                strength = prefs[CHAR_STRENGTH] ?: 0,
-                intelligence = prefs[CHAR_INTELLIGENCE] ?: 0,
-                agility = prefs[CHAR_AGILITY] ?: 0,
-                luck = prefs[CHAR_LUCK] ?: 0
-            ),
+            stats = readStats(prefs),
             lifetimePoints = lifetime
         )
     }
@@ -118,6 +113,12 @@ class PlayerRepository(
         val trimmed = name.trim().take(MAX_NAME_LENGTH)
         if (trimmed.isEmpty()) return
         dataStore.edit { prefs -> prefs[PLAYER_NAME] = trimmed }
+    }
+
+    /** Adds coins without touching points/XP (used for achievement rewards). */
+    suspend fun addCoins(amount: Int) {
+        if (amount <= 0) return
+        dataStore.edit { prefs -> prefs[COINS] = (prefs[COINS] ?: 0) + amount }
     }
 
     suspend fun grantReward(reward: QuizReward) {
@@ -181,37 +182,28 @@ class PlayerRepository(
             null
         }
         val baseReward = RewardCalculator.calculate(answers, total, activeEvent)
-        
+
         // Read current stats from preferences
-        val prefs = dataStore.data.first()
-        val strength = prefs[CHAR_STRENGTH] ?: 0
-        val intelligence = prefs[CHAR_INTELLIGENCE] ?: 0
-        val agility = prefs[CHAR_AGILITY] ?: 0
-        val luck = prefs[CHAR_LUCK] ?: 0
-        
-        val stats = CharacterStats(
-            strength = strength,
-            intelligence = intelligence,
-            agility = agility,
-            luck = luck
-        )
-        
-        // Calculate bonuses
-        val xpBonus = (baseReward.points * (stats.xpBonusPercent / 100f)).toInt()
-        val coinBonus = (baseReward.coins * (stats.coinBonusPercent / 100f)).toInt()
-        
+        val stats = readStats(dataStore.data.first())
+
+        // Calculate bonuses: percentage bonuses (Strength/Intelligence) plus
+        // flat bonuses (Wisdom/Endurance).
+        val xpBonus = (baseReward.points * (stats.xpBonusPercent / 100f)).toInt() + stats.flatXpBonus
+        val coinBonus = (baseReward.coins * (stats.coinBonusPercent / 100f)).toInt() + stats.flatCoinBonus
+
         var pointsEarned = baseReward.points + xpBonus
         var coinsEarned = baseReward.coins + coinBonus
-        
-        // Luck roll for double rewards (Critical Success)
-        val doubleChance = stats.doubleRewardChancePercent
+
+        // Luck (+ Charisma) roll for double rewards (Critical Success).
+        // Focus sharpens the multiplier applied when it triggers.
+        val doubleChance = stats.doubleRewardChancePercent + stats.critChanceBonusPercent
         val isCriticalSuccess = if (doubleChance > 0) {
             (1..100).random() <= doubleChance
         } else false
-        
+
         if (isCriticalSuccess) {
-            pointsEarned *= 2
-            coinsEarned *= 2
+            pointsEarned = (pointsEarned * stats.critMultiplier).toInt()
+            coinsEarned = (coinsEarned * stats.critMultiplier).toInt()
         }
         
         val finalReward = baseReward.copy(
@@ -235,6 +227,10 @@ class PlayerRepository(
                 "intelligence" -> CHAR_INTELLIGENCE
                 "agility" -> CHAR_AGILITY
                 "luck" -> CHAR_LUCK
+                "wisdom" -> CHAR_WISDOM
+                "endurance" -> CHAR_ENDURANCE
+                "focus" -> CHAR_FOCUS
+                "charisma" -> CHAR_CHARISMA
                 else -> null
             }
             if (key != null) {
@@ -290,6 +286,17 @@ class PlayerRepository(
         }
     }
 
+    private fun readStats(prefs: Preferences): CharacterStats = CharacterStats(
+        strength = prefs[CHAR_STRENGTH] ?: 0,
+        intelligence = prefs[CHAR_INTELLIGENCE] ?: 0,
+        agility = prefs[CHAR_AGILITY] ?: 0,
+        luck = prefs[CHAR_LUCK] ?: 0,
+        wisdom = prefs[CHAR_WISDOM] ?: 0,
+        endurance = prefs[CHAR_ENDURANCE] ?: 0,
+        focus = prefs[CHAR_FOCUS] ?: 0,
+        charisma = prefs[CHAR_CHARISMA] ?: 0
+    )
+
     private fun readEventProgress(prefs: Preferences): EventProgressSnapshot =
         EventProgressSnapshot(
             dailyCompletedDay = prefs[DAILY_COMPLETED_DAY] ?: -1L,
@@ -341,6 +348,10 @@ class PlayerRepository(
         val CHAR_INTELLIGENCE = intPreferencesKey("char_intelligence")
         val CHAR_AGILITY = intPreferencesKey("char_agility")
         val CHAR_LUCK = intPreferencesKey("char_luck")
+        val CHAR_WISDOM = intPreferencesKey("char_wisdom")
+        val CHAR_ENDURANCE = intPreferencesKey("char_endurance")
+        val CHAR_FOCUS = intPreferencesKey("char_focus")
+        val CHAR_CHARISMA = intPreferencesKey("char_charisma")
         val LIFETIME_POINTS = intPreferencesKey("lifetime_points")
     }
 }

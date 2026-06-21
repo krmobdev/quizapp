@@ -161,6 +161,7 @@ private fun HomeContent(
             HomeScrollContent(
                 events = state.events,
                 categories = state.categories,
+                streak = state.streak,
                 onCategoryClick = onCategoryClick,
                 onStartEvent = { progress ->
                     val event = progress.event
@@ -200,6 +201,7 @@ private fun HomeContent(
 private fun HomeScrollContent(
     events: List<QuizEventProgress>,
     categories: List<Category>,
+    streak: Int,
     onCategoryClick: (Category) -> Unit,
     onStartEvent: (QuizEventProgress) -> Unit,
     modifier: Modifier = Modifier
@@ -209,7 +211,7 @@ private fun HomeScrollContent(
         contentPadding = PaddingValues(bottom = 16.dp)
     ) {
         item {
-            HomeHeroHeader(modifier = Modifier.fillMaxWidth())
+            HomeHeroHeader(streak = streak, modifier = Modifier.fillMaxWidth())
         }
         if (events.isNotEmpty()) {
             item {
@@ -253,7 +255,7 @@ private fun HomeScrollContent(
 }
 
 @Composable
-private fun HomeHeroHeader(modifier: Modifier = Modifier) {
+private fun HomeHeroHeader(streak: Int, modifier: Modifier = Modifier) {
     val quote = rememberDailyQuote()
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
 
@@ -272,6 +274,9 @@ private fun HomeHeroHeader(modifier: Modifier = Modifier) {
             letterSpacing = (-0.5).sp,
             color = MaterialTheme.colorScheme.onSurface
         )
+        if (streak > 0) {
+            StreakChip(streak = streak)
+        }
         if (quote.isNotBlank()) {
             Text(
                 text = quote,
@@ -284,6 +289,23 @@ private fun HomeHeroHeader(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(horizontal = 4.dp)
             )
         }
+    }
+}
+
+@Composable
+private fun StreakChip(streak: Int, modifier: Modifier = Modifier) {
+    Surface(
+        shape = AppShapes.Badge,
+        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.85f),
+        modifier = modifier
+    ) {
+        Text(
+            text = stringResource(R.string.home_streak_chip, streak),
+            style = MaterialTheme.typography.labelLarge,
+            fontWeight = FontWeight.SemiBold,
+            color = appTextColor(),
+            modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp)
+        )
     }
 }
 

@@ -13,7 +13,14 @@
       "PowerShell(.\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 60)",
       "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr\"; .\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 70)",
       "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio1\\\\jbr\"; & \"$env:JAVA_HOME\\\\bin\\\\java.exe\" -version 2>&1)",
-      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio1\\\\jbr\"; .\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 80)"
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio1\\\\jbr\"; .\\\\gradlew.bat assembleDebug --console=plain 2>&1 | Select-Object -Last 80)",
+      "mcp__ide__getDiagnostics",
+      "PowerShell($paths = @\\(\"$env:LOCALAPPDATA\\\\Programs\\\\Android Studio\\\\jbr\",\"C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr\",\"$env:ProgramFiles\\\\Android\\\\Android Studio\\\\jbr\",\"$env:LOCALAPPDATA\\\\Android\\\\Sdk\"\\) ; foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output \"FOUND: $p\" } } ; if \\($env:JAVA_HOME\\) { Write-Output \"JAVA_HOME=$env:JAVA_HOME\" } else { Write-Output \"JAVA_HOME unset\" })",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\Android Studio\\\\jbr\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 70)",
+      "PowerShell(Test-Path *)",
+      "PowerShell($roots = @\\(\"C:\\\\Program Files\\\\Java\",\"C:\\\\Program Files\\\\Eclipse Adoptium\",\"C:\\\\Program Files\\\\Microsoft\",\"$env:LOCALAPPDATA\\\\Programs\",\"C:\\\\Program Files\\\\Android\"\\); foreach \\($r in $roots\\) { if \\(Test-Path $r\\) { Get-ChildItem -Path $r -Recurse -Filter \"jvm.cfg\" -ErrorAction SilentlyContinue | ForEach-Object { Write-Output $_.FullName } } } ; Write-Output \"--- gradle.properties ---\"; if \\(Test-Path \".\\\\gradle.properties\"\\) { Get-Content .\\\\gradle.properties })",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 70)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 40)"
     ]
   }
 }

@@ -7,12 +7,17 @@ import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.audio.SoundManager
 import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
+import com.rustam.quizapp.data.AchievementsRepository
 import com.rustam.quizapp.data.AppStats
 import com.rustam.quizapp.data.PlayerProfile
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.StatsRepository
+import com.rustam.quizapp.data.StreakRepository
+import com.rustam.quizapp.data.StreakState
+import com.rustam.quizapp.domain.AchievementEvaluator
+import com.rustam.quizapp.domain.Achievements
 import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.QuizEventProgress
 import kotlinx.coroutines.flow.SharingStarted
@@ -32,6 +37,15 @@ data class CategoryStatsUi(
     val hasData: Boolean get() = attempts > 0
 }
 
+data class AchievementUi(
+    val id: String,
+    val emoji: String,
+    @param:StringRes val titleRes: Int,
+    @param:StringRes val descRes: Int,
+    val rewardCoins: Int,
+    val unlocked: Boolean
+)
+
 data class PlayerUiState(
     val playerName: String = "",
     val avatarEmoji: String = "🙂",
@@ -42,7 +56,10 @@ data class PlayerUiState(
     val averageAccuracyPercent: Int? = null,
     val categories: List<CategoryStatsUi> = emptyList(),
     val stats: CharacterStats = CharacterStats(),
-    val lifetimePoints: Int = 0
+    val lifetimePoints: Int = 0,
+    val streakCurrent: Int = 0,
+    val streakBest: Int = 0,
+    val achievements: List<AchievementUi> = emptyList()
 )
 
 class StatsViewModel(application: Application) : AndroidViewModel(application) {
@@ -50,6 +67,15 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
     private val questionRepository = QuestionRepository(application)
     private val statsRepository = StatsRepository(application)
     private val playerRepository = PlayerRepository(application, questionRepository)
+    private val streakRepository = StreakRepository(application)
+    private val achievementsRepository = AchievementsRepository(application)
+    private val achievementEvaluator = AchievementEvaluator(
+        statsRepository = statsRepository,
+        streakRepository = streakRepository,
+        playerRepository = playerRepository,
+        achievementsRepository = achievementsRepository,
+        questionRepository = questionRepository
+    )
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
@@ -59,9 +85,12 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
 
     val uiState: StateFlow<PlayerUiState> = combine(
         statsRepository.observeStats(),
-        playerRepository.observeProfile()
-    ) { stats, profile -> toUiState(stats, profile) }
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), PlayerUiState())
+        playerRepository.observeProfile(),
+        streakRepository.observeStreak(),
+        achievementsRepository.observeUnlocked()
+    ) { stats, profile, streak, unlocked ->
+        toUiState(stats, profile, streak, unlocked)
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), PlayerUiState())
 
     fun updatePlayerName(name: String) {
         viewModelScope.launch {
@@ -74,6 +103,8 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             val upgraded = playerRepository.upgradeStat(statName)
             if (upgraded) {
                 soundManager.play(SoundType.CLICK)
+                // Maxing a characteristic can unlock an achievement.
+                achievementEvaluator.evaluate()
             }
         }
     }
@@ -82,7 +113,12 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         soundManager.release()
     }
 
-    private fun toUiState(stats: AppStats, profile: PlayerProfile): PlayerUiState {
+    private fun toUiState(
+        stats: AppStats,
+        profile: PlayerProfile,
+        streak: StreakState,
+        unlocked: Set<String>
+    ): PlayerUiState {
         val statsById = stats.categories.associateBy { it.categoryId }
         val categories = questionRepository.getCategories().map { category ->
             val saved = statsById[category.id]
@@ -102,6 +138,17 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         val totalAnswered = stats.categories.sumOf { it.questionsAnswered }
         val averageAccuracy = if (totalAnswered > 0) totalCorrect * 100 / totalAnswered else null
 
+        val achievements = Achievements.all.map { achievement ->
+            AchievementUi(
+                id = achievement.id,
+                emoji = achievement.emoji,
+                titleRes = achievement.titleRes,
+                descRes = achievement.descRes,
+                rewardCoins = achievement.rewardCoins,
+                unlocked = achievement.id in unlocked
+            )
+        }
+
         return PlayerUiState(
             playerName = profile.name,
             avatarEmoji = profile.avatarEmoji,
@@ -112,7 +159,10 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             averageAccuracyPercent = averageAccuracy,
             categories = categories,
             stats = profile.stats,
-            lifetimePoints = profile.lifetimePoints
+            lifetimePoints = profile.lifetimePoints,
+            streakCurrent = streak.current,
+            streakBest = streak.best,
+            achievements = achievements
         )
     }
 }

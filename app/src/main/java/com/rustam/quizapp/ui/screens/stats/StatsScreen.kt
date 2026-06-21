@@ -16,6 +16,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Surface
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.Edit
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Icon
@@ -34,9 +35,11 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -173,9 +176,33 @@ private fun StatsContent(
                 SummaryCard(
                     totalQuizzes = state.totalQuizzes,
                     averageAccuracyPercent = state.averageAccuracyPercent,
+                    streakCurrent = state.streakCurrent,
                     colors = colors,
                     textColor = textColor
                 )
+            }
+            if (state.achievements.isNotEmpty()) {
+                item {
+                    val unlockedCount = state.achievements.count { it.unlocked }
+                    Text(
+                        text = stringResource(
+                            R.string.achievements_section_title,
+                            unlockedCount,
+                            state.achievements.size
+                        ),
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = textColor,
+                        modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
+                    )
+                }
+                items(state.achievements, key = { it.id }) { achievement ->
+                    AchievementCard(
+                        achievement = achievement,
+                        colors = colors,
+                        textColor = textColor
+                    )
+                }
             }
             item {
                 Text(
@@ -300,17 +327,19 @@ private fun PlayerProfileCard(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = 4.dp),
-                horizontalArrangement = Arrangement.SpaceEvenly
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 SummaryMetric(
                     value = points.toString(),
                     label = stringResource(R.string.char_free_xp),
-                    textColor = textColor
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
                 )
                 SummaryMetric(
                     value = coins.toString(),
                     label = stringResource(R.string.player_coins),
-                    textColor = textColor
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
                 )
             }
         }
@@ -378,6 +407,46 @@ private fun CharacterStatsSection(
             colors = colors,
             textColor = textColor,
             onUpgrade = { onUpgrade("luck") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_wisdom),
+            value = stats.wisdom,
+            description = stringResource(R.string.char_stat_wisdom_desc, stats.flatXpBonus),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("wisdom") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_endurance),
+            value = stats.endurance,
+            description = stringResource(R.string.char_stat_endurance_desc, stats.flatCoinBonus),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("endurance") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_focus),
+            value = stats.focus,
+            description = stringResource(R.string.char_stat_focus_desc, stats.critMultiplier),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("focus") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_charisma),
+            value = stats.charisma,
+            description = stringResource(R.string.char_stat_charisma_desc, stats.critChanceBonusPercent),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("charisma") }
         )
     }
 }
@@ -589,6 +658,7 @@ private fun EditNameDialog(
 private fun SummaryCard(
     totalQuizzes: Int,
     averageAccuracyPercent: Int?,
+    streakCurrent: Int,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
     textColor: androidx.compose.ui.graphics.Color,
     modifier: Modifier = Modifier
@@ -597,20 +667,84 @@ private fun SummaryCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(24.dp),
-            horizontalArrangement = Arrangement.SpaceEvenly
+                .padding(horizontal = 16.dp, vertical = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             SummaryMetric(
                 value = totalQuizzes.toString(),
                 label = stringResource(R.string.stats_quizzes_completed),
-                textColor = textColor
+                textColor = textColor,
+                modifier = Modifier.weight(1f)
             )
             SummaryMetric(
                 value = averageAccuracyPercent?.let { "$it%" }
                     ?: stringResource(R.string.em_dash),
                 label = stringResource(R.string.stats_avg_accuracy),
-                textColor = textColor
+                textColor = textColor,
+                modifier = Modifier.weight(1f)
             )
+            SummaryMetric(
+                value = stringResource(R.string.stats_streak_value, streakCurrent),
+                label = stringResource(R.string.stats_streak),
+                textColor = textColor,
+                modifier = Modifier.weight(1f)
+            )
+        }
+    }
+}
+
+@Composable
+private fun AchievementCard(
+    achievement: AchievementUi,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    modifier: Modifier = Modifier
+) {
+    val contentAlpha = if (achievement.unlocked) 1f else 0.45f
+    GlassCard(modifier = modifier, colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(AppDimens.CardPaddingH, AppDimens.CardPaddingV),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(
+                text = achievement.emoji,
+                fontSize = 30.sp,
+                modifier = Modifier.alpha(contentAlpha)
+            )
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                Text(
+                    text = stringResource(achievement.titleRes),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor.copy(alpha = contentAlpha)
+                )
+                Text(
+                    text = stringResource(achievement.descRes),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = contentAlpha * 0.8f)
+                )
+            }
+            if (achievement.unlocked) {
+                Icon(
+                    imageVector = Icons.Rounded.CheckCircle,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(22.dp)
+                )
+            } else {
+                Text(
+                    text = stringResource(R.string.achievement_reward, achievement.rewardCoins),
+                    style = MaterialTheme.typography.labelMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor.copy(alpha = 0.6f)
+                )
+            }
         }
     }
 }
@@ -629,15 +763,22 @@ private fun SummaryMetric(
     ) {
         Text(
             text = value,
-            style = MaterialTheme.typography.headlineMedium,
+            style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold,
-            color = textColor
+            color = textColor,
+            textAlign = TextAlign.Center,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
         )
         Text(
             text = label,
-            style = MaterialTheme.typography.bodyMedium,
-            color = textColor,
-            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+            style = MaterialTheme.typography.labelSmall,
+            color = textColor.copy(alpha = 0.85f),
+            textAlign = TextAlign.Center,
+            maxLines = 2,
+            lineHeight = 14.sp,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier.fillMaxWidth()
         )
     }
 }

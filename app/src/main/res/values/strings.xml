@@ -134,6 +134,9 @@
     <string name="theme_accent_sunset">Закат</string>
     <string name="theme_accent_rose">Роза</string>
     <string name="theme_accent_gold">Золото</string>
+    <string name="theme_accent_forest">Лес</string>
+    <string name="theme_accent_crimson">Багровая</string>
+    <string name="theme_accent_midnight">Полночь</string>
 
     <string-array name="daily_quotes">
         <item>Знание — сила, а практика — ключ к мастерству.</item>
@@ -162,6 +165,14 @@
     <string name="char_stat_agility_desc">Скорость реакции: +0.5 сек к таймеру вопроса (сейчас: +%1$.1f сек)</string>
     <string name="char_stat_luck">Удача 🍀</string>
     <string name="char_stat_luck_desc">Улыбка фортуны: шанс %1$d%% на Критический успех (x2 наград в конце игры)</string>
+    <string name="char_stat_wisdom">Мудрость 📖</string>
+    <string name="char_stat_wisdom_desc">Сила знаний: +3 XP за каждую завершённую викторину (сейчас: +%1$d XP)</string>
+    <string name="char_stat_endurance">Выносливость 🛡️</string>
+    <string name="char_stat_endurance_desc">Стойкость: +1 монета за каждую завершённую викторину (сейчас: +%1$d монет)</string>
+    <string name="char_stat_focus">Концентрация 🎯</string>
+    <string name="char_stat_focus_desc">Сосредоточенность: усиливает Критический успех (сейчас: x%1$.1f к наградам)</string>
+    <string name="char_stat_charisma">Харизма 💫</string>
+    <string name="char_stat_charisma_desc">Обаяние: +1%% к шансу Критического успеха (сейчас: +%1$d%%)</string>
     <string name="char_upgrade_cost">+1 (%1$d XP)</string>
     <string name="char_critical_success">КРИТИЧЕСКИЙ УСПЕХ! Удача удваивает ваши награды! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d от Силы)</string>
@@ -172,4 +183,45 @@
     <string name="stats_character_stats_title">Характеристики персонажа</string>
     <string name="rewards_points_label">очков</string>
     <string name="rewards_coins_label">монет</string>
+
+    <!-- Серия дней (streak) -->
+    <string name="home_streak_chip">🔥 %1$d дней подряд</string>
+    <string name="stats_streak">Серия</string>
+    <string name="stats_streak_value">🔥 %1$d</string>
+
+    <!-- Напоминания -->
+    <string name="reminder_channel_name">Напоминания о серии</string>
+    <string name="reminder_channel_desc">Ежедневное напоминание, чтобы не терять серию</string>
+    <string name="reminder_title">Не теряй серию! 🔥</string>
+    <string name="reminder_text">Пройди хотя бы один квиз сегодня, чтобы продолжить обучение.</string>
+    <string name="reminder_streak_text">Твоя серия: %1$d дней. Пройди квиз сегодня, чтобы её не прервать!</string>
+
+    <!-- Достижения -->
+    <string name="achievements_section_title">Достижения · %1$d / %2$d</string>
+    <string name="achievement_reward">+%1$d 🪙</string>
+    <string name="result_new_achievements">Новые достижения!</string>
+    <string name="ach_first_quiz_title">Первый шаг</string>
+    <string name="ach_first_quiz_desc">Заверши свой первый квиз</string>
+    <string name="ach_ten_quizzes_title">Знаток</string>
+    <string name="ach_ten_quizzes_desc">Пройди 10 квизов</string>
+    <string name="ach_fifty_quizzes_title">Ветеран</string>
+    <string name="ach_fifty_quizzes_desc">Пройди 50 квизов</string>
+    <string name="ach_perfect_title">Безупречно</string>
+    <string name="ach_perfect_desc">Пройди квиз без единой ошибки</string>
+    <string name="ach_hundred_correct_title">Сотня</string>
+    <string name="ach_hundred_correct_desc">Дай 100 правильных ответов</string>
+    <string name="ach_five_hundred_correct_title">Эрудит</string>
+    <string name="ach_five_hundred_correct_desc">Дай 500 правильных ответов</string>
+    <string name="ach_streak3_title">В ритме</string>
+    <string name="ach_streak3_desc">Серия 3 дня подряд</string>
+    <string name="ach_streak7_title">Неделя силы</string>
+    <string name="ach_streak7_desc">Серия 7 дней подряд</string>
+    <string name="ach_streak30_title">Несокрушимый</string>
+    <string name="ach_streak30_desc">Серия 30 дней подряд</string>
+    <string name="ach_maxed_stat_title">Максимум</string>
+    <string name="ach_maxed_stat_desc">Прокачай характеристику до 20</string>
+    <string name="ach_all_categories_title">Универсал</string>
+    <string name="ach_all_categories_desc">Сыграй во всех темах</string>
+    <string name="ach_level10_title">Мудрец</string>
+    <string name="ach_level10_desc">Достигни 10 уровня</string>
 </resources>

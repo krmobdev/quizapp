@@ -11,6 +11,7 @@ import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
+import com.rustam.quizapp.data.StreakRepository
 import com.rustam.quizapp.domain.QuizEventProgress
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -31,13 +32,15 @@ data class HomeUiState(
     val categories: List<Category> = emptyList(),
     val selectedCategory: Category? = null,
     val selectedDifficulty: DifficultyFilter = DifficultyFilter.ANY,
-    val events: List<QuizEventProgress> = emptyList()
+    val events: List<QuizEventProgress> = emptyList(),
+    val streak: Int = 0
 )
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = QuestionRepository(application)
     private val playerRepository = PlayerRepository(application, repository)
+    private val streakRepository = StreakRepository(application)
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
@@ -51,13 +54,15 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     val uiState: StateFlow<HomeUiState> = combine(
         navigationState,
-        playerRepository.observeProfile()
-    ) { nav, profile ->
+        playerRepository.observeProfile(),
+        streakRepository.observeStreak()
+    ) { nav, profile, streak ->
         HomeUiState(
             categories = nav.categories,
             selectedCategory = nav.selectedCategory,
             selectedDifficulty = nav.selectedDifficulty,
-            events = profile.eventProgress
+            events = profile.eventProgress,
+            streak = streak.current
         )
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), HomeUiState())
 

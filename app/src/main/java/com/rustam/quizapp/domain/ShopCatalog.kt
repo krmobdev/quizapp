@@ -37,18 +37,29 @@ object ShopCatalog {
         AvatarItem("avatar_robot", "🤖", 250),
         AvatarItem("avatar_brain", "🧠", 300),
         AvatarItem("avatar_rocket", "🚀", 300),
+        AvatarItem("avatar_penguin", "🐧", 200),
+        AvatarItem("avatar_ghost", "👻", 250),
+        AvatarItem("avatar_octopus", "🐙", 250),
+        AvatarItem("avatar_lion", "🦁", 350),
         AvatarItem("avatar_unicorn", "🦄", 400),
+        AvatarItem("avatar_ninja", "🥷", 400),
+        AvatarItem("avatar_wizard", "🧙", 450),
         AvatarItem("avatar_crown", "👑", 450),
-        AvatarItem("avatar_dragon", "🐉", 600)
+        AvatarItem("avatar_devil", "😈", 500),
+        AvatarItem("avatar_dragon", "🐉", 600),
+        AvatarItem("avatar_phoenix", "🔥", 750)
     )
 
     val themes: List<ThemeItem> = listOf(
         ThemeItem(DEFAULT_THEME_ID, R.string.theme_accent_mint, 0),
         ThemeItem("theme_ocean", R.string.theme_accent_ocean, 200),
         ThemeItem("theme_grape", R.string.theme_accent_grape, 250),
+        ThemeItem("theme_forest", R.string.theme_accent_forest, 300),
         ThemeItem("theme_sunset", R.string.theme_accent_sunset, 300),
         ThemeItem("theme_rose", R.string.theme_accent_rose, 350),
-        ThemeItem("theme_gold", R.string.theme_accent_gold, 450)
+        ThemeItem("theme_crimson", R.string.theme_accent_crimson, 400),
+        ThemeItem("theme_gold", R.string.theme_accent_gold, 450),
+        ThemeItem("theme_midnight", R.string.theme_accent_midnight, 500)
     )
 
     /** Items that every player owns from the start (the free defaults). */

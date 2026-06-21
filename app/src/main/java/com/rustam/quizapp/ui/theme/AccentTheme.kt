@@ -69,6 +69,30 @@ enum class AccentTheme(
         containerLight = Color(0xFFFFDEA6), tertiaryLight = Color(0xFF50643F),
         primaryDark = Color(0xFFF5BD48), onPrimaryDark = Color(0xFF422C00),
         containerDark = Color(0xFF5F4100), tertiaryDark = Color(0xFFB5CC9C)
+    ),
+    FOREST(
+        id = "theme_forest",
+        swatch = Color(0xFF3F9D4F),
+        primaryLight = Color(0xFF2A6B30), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFABF5A6), tertiaryLight = Color(0xFF3A6470),
+        primaryDark = Color(0xFF8FD98C), onPrimaryDark = Color(0xFF00390A),
+        containerDark = Color(0xFF105218), tertiaryDark = Color(0xFFA2CEDC)
+    ),
+    CRIMSON(
+        id = "theme_crimson",
+        swatch = Color(0xFFD33A3A),
+        primaryLight = Color(0xFFB3261E), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFFFDAD5), tertiaryLight = Color(0xFF775656),
+        primaryDark = Color(0xFFFFB4AB), onPrimaryDark = Color(0xFF690004),
+        containerDark = Color(0xFF93000A), tertiaryDark = Color(0xFFE7BDB7)
+    ),
+    MIDNIGHT(
+        id = "theme_midnight",
+        swatch = Color(0xFF4954C7),
+        primaryLight = Color(0xFF3A45B0), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFDFE0FF), tertiaryLight = Color(0xFF585992),
+        primaryDark = Color(0xFFBCC2FF), onPrimaryDark = Color(0xFF09155E),
+        containerDark = Color(0xFF222C82), tertiaryDark = Color(0xFFC4C4F8)
     );
 
     companion object {

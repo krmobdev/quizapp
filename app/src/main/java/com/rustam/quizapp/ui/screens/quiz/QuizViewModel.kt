@@ -15,6 +15,10 @@ import com.rustam.quizapp.data.SavedQuizProgress
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.StatsRepository
+import com.rustam.quizapp.data.StreakRepository
+import com.rustam.quizapp.data.AchievementsRepository
+import com.rustam.quizapp.domain.Achievement
+import com.rustam.quizapp.domain.AchievementEvaluator
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.QuizResult
@@ -64,6 +68,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = QuestionRepository(application)
     private val statsRepository = StatsRepository(application)
     private val playerRepository = PlayerRepository(application, repository)
+    private val streakRepository = StreakRepository(application)
+    private val achievementsRepository = AchievementsRepository(application)
+    private val achievementEvaluator = AchievementEvaluator(
+        statsRepository = statsRepository,
+        streakRepository = streakRepository,
+        playerRepository = playerRepository,
+        achievementsRepository = achievementsRepository,
+        questionRepository = repository
+    )
     private val progressRepository = QuizProgressRepository(application)
     private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
@@ -81,6 +94,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var questionCount: Int = QuestionRepository.QUIZ_SIZE
     private var timerJob: Job? = null
     private var lastReward: QuizReward? = null
+    private var lastNewAchievements: List<Achievement> = emptyList()
 
     private val _uiState = MutableStateFlow(QuizUiState())
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
@@ -296,7 +310,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             total = _uiState.value.totalQuestions,
             penalties = _uiState.value.penaltyCount,
             mistakes = current?.mistakes ?: emptyList(),
-            reward = lastReward
+            reward = lastReward,
+            newAchievements = lastNewAchievements
         )
     }
 
@@ -342,7 +357,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val questionIds = session.questions.map { it.id }
         playerRepository.saveRecentQuestions(category, questionIds)
 
-        return playerRepository.grantQuizReward(
+        val reward = playerRepository.grantQuizReward(
             categoryId = category,
             difficulty = difficulty,
             answers = session.answerRewards,
@@ -350,6 +365,13 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             eventType = eventType,
             allowEventBonus = true
         )
+
+        // Update the day streak first so streak-based achievements see the fresh value,
+        // then unlock any newly earned achievements (which may grant bonus coins).
+        streakRepository.recordPlayed()
+        lastNewAchievements = achievementEvaluator.evaluate()
+
+        return reward
     }
 
     override fun onCleared() {

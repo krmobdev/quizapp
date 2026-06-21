@@ -8,7 +8,8 @@ data class QuizResult(
     val total: Int,
     val penalties: Int = 0,
     val mistakes: List<Question>,
-    val reward: QuizReward? = null
+    val reward: QuizReward? = null,
+    val newAchievements: List<Achievement> = emptyList()
 ) {
     /** Final score: correct answers minus timeout penalties. */
     val score: Int get() = correct - penalties

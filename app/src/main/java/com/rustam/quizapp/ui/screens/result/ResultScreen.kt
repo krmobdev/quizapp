@@ -6,6 +6,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -164,6 +165,12 @@ private fun ResultContent(
                     color = textColor
                 )
             }
+
+            if (result.newAchievements.isNotEmpty()) {
+                Spacer(Modifier.height(16.dp))
+                NewAchievementsBanner(result.newAchievements, textColor)
+            }
+
             Spacer(Modifier.height(20.dp))
 
             if (result.mistakes.isNotEmpty()) {
@@ -208,6 +215,52 @@ private fun ResultContent(
 }
 
 @Composable
+private fun NewAchievementsBanner(
+    achievements: List<com.rustam.quizapp.domain.Achievement>,
+    textColor: androidx.compose.ui.graphics.Color
+) {
+    Surface(
+        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.12f),
+        shape = RoundedCornerShape(16.dp),
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.4f)),
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            Text(
+                text = stringResource(R.string.result_new_achievements),
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary
+            )
+            achievements.forEach { achievement ->
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(text = achievement.emoji, style = MaterialTheme.typography.titleLarge)
+                    Text(
+                        text = stringResource(achievement.titleRes),
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontWeight = FontWeight.SemiBold,
+                        color = textColor,
+                        modifier = Modifier.weight(1f)
+                    )
+                    Text(
+                        text = stringResource(R.string.achievement_reward, achievement.rewardCoins),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
 private fun MistakeItem(
     question: Question,
     colors: AppThemeColors
@@ -235,6 +288,13 @@ private fun MistakeItem(
                 color = MaterialTheme.colorScheme.onSurface,
                 fontWeight = FontWeight.SemiBold
             )
+            question.explanation?.let { explanation ->
+                Text(
+                    text = explanation,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = appTextColor().copy(alpha = 0.8f)
+                )
+            }
         }
     }
 }

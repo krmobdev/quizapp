@@ -7,13 +7,29 @@ data class CharacterStats(
     val strength: Int = 0,
     val intelligence: Int = 0,
     val agility: Int = 0,
-    val luck: Int = 0
+    val luck: Int = 0,
+    val wisdom: Int = 0,
+    val endurance: Int = 0,
+    val focus: Int = 0,
+    val charisma: Int = 0
 ) {
     // Current active bonus multipliers and absolute values
     val xpBonusPercent: Int get() = strength * 2
     val coinBonusPercent: Int get() = intelligence * 2
     val extraTimeSeconds: Float get() = agility * 0.5f
     val doubleRewardChancePercent: Int get() = luck * 2
+
+    /** Wisdom: flat XP added to every finished quiz. */
+    val flatXpBonus: Int get() = wisdom * 3
+
+    /** Endurance: flat coins added to every finished quiz. */
+    val flatCoinBonus: Int get() = endurance
+
+    /** Charisma: extra Critical Success chance, stacking on top of [doubleRewardChancePercent]. */
+    val critChanceBonusPercent: Int get() = charisma
+
+    /** Focus: reward multiplier applied on a Critical Success (base x2, sharpened by Focus). */
+    val critMultiplier: Float get() = 2f + focus * 0.1f
 }
 
 /**
