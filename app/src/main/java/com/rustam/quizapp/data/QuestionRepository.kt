@@ -14,20 +14,21 @@ class QuestionRepository(private val context: Context) {
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    /** Parsed questions per language and category, loaded on first access. */
-    private val questionsByLanguageAndCategory: MutableMap<String, List<Question>> = mutableMapOf()
-
     private fun cacheKey(language: AppLanguage, categoryId: String): String =
         "${language.name}:$categoryId"
 
-    private fun questionsFor(language: AppLanguage, categoryId: String): List<Question> =
-        questionsByLanguageAndCategory.getOrPut(cacheKey(language, categoryId)) {
-            val suffix = if (language == AppLanguage.EN) "_en" else ""
-            val fileName = "questions_${categoryId}$suffix.json"
-            context.assets.open(fileName).bufferedReader().use { reader ->
-                json.decodeFromString<List<Question>>(reader.readText())
+    private fun questionsFor(language: AppLanguage, categoryId: String): List<Question> {
+        val key = cacheKey(language, categoryId)
+        synchronized(questionsCache) {
+            return questionsCache.getOrPut(key) {
+                val suffix = if (language == AppLanguage.EN) "_en" else ""
+                val fileName = "questions_${categoryId}$suffix.json"
+                context.assets.open(fileName).bufferedReader().use { reader ->
+                    json.decodeFromString<List<Question>>(reader.readText())
+                }
             }
         }
+    }
 
     /** Categories shown on the home screen. Hardcoded for now. */
     fun getCategories(): List<Category> = listOf(
@@ -79,6 +80,8 @@ class QuestionRepository(private val context: Context) {
     companion object {
         const val BANK_SIZE = 400
         const val QUIZ_SIZE = 10
+
+        private val questionsCache = java.util.concurrent.ConcurrentHashMap<String, List<Question>>()
     }
 
     private fun Question.withShuffledOptions(): Question {

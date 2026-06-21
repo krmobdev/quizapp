@@ -114,7 +114,6 @@ private fun StatsContent(
             )
         }
         item {
-            val isEnglish = stringResource(R.string.player_tab) == "Player"
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -122,7 +121,7 @@ private fun StatsContent(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 SubTabButton(
-                    text = if (isEnglish) "Characteristics" else "Характеристики",
+                    text = stringResource(R.string.stats_characteristics_tab),
                     selected = selectedSubTab == 0,
                     onClick = { selectedSubTab = 0 },
                     colors = colors,
@@ -130,7 +129,7 @@ private fun StatsContent(
                     modifier = Modifier.weight(1f)
                 )
                 SubTabButton(
-                    text = if (isEnglish) "Game Stats" else "Статистика игр",
+                    text = stringResource(R.string.stats_game_stats_tab),
                     selected = selectedSubTab == 1,
                     onClick = { selectedSubTab = 1 },
                     colors = colors,
@@ -213,8 +212,8 @@ private fun PlayerProfileCard(
     val progress = remember(lifetimePoints) {
         com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelProgress(lifetimePoints)
     }
-    val isEnglish = stringResource(R.string.player_tab) == "Player"
-    val rankName = if (isEnglish) {
+    val locale = androidx.compose.ui.platform.LocalConfiguration.current.locales[0]
+    val rankName = if (locale.language == "en") {
         com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRankEn(progress.level)
     } else {
         com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRank(progress.level)
@@ -327,8 +326,7 @@ private fun CharacterStatsSection(
     onUpgrade: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val isEnglish = stringResource(R.string.player_tab) == "Player"
-    val sectionTitle = if (isEnglish) "Character Stats" else "Характеристики персонажа"
+    val sectionTitle = stringResource(R.string.stats_character_stats_title)
     
     Column(
         modifier = modifier.fillMaxWidth(),

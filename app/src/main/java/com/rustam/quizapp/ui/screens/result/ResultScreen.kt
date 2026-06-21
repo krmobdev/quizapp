@@ -273,9 +273,8 @@ private fun rewardText(reward: QuizReward): String {
         stringResource(R.string.char_bonus_coins_detail, reward.coinBonus)
     } else ""
 
-    val isEnglish = stringResource(R.string.player_tab) == "Player"
-    val pointsLabel = if (isEnglish) "points" else "очков"
-    val coinsLabel = if (isEnglish) "coins" else "монет"
+    val pointsLabel = stringResource(R.string.rewards_points_label)
+    val coinsLabel = stringResource(R.string.rewards_coins_label)
     
     val finalPointsText = "+${reward.points} $pointsLabel$xpBonusText"
     val finalCoinsText = "+${reward.coins} $coinsLabel$coinBonusText"

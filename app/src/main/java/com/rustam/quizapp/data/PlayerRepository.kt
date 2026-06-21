@@ -186,9 +186,15 @@ class PlayerRepository(
         val prefs = dataStore.data.first()
         val strength = prefs[CHAR_STRENGTH] ?: 0
         val intelligence = prefs[CHAR_INTELLIGENCE] ?: 0
+        val agility = prefs[CHAR_AGILITY] ?: 0
         val luck = prefs[CHAR_LUCK] ?: 0
         
-        val stats = CharacterStats(strength = strength, intelligence = intelligence, luck = luck)
+        val stats = CharacterStats(
+            strength = strength,
+            intelligence = intelligence,
+            agility = agility,
+            luck = luck
+        )
         
         // Calculate bonuses
         val xpBonus = (baseReward.points * (stats.xpBonusPercent / 100f)).toInt()

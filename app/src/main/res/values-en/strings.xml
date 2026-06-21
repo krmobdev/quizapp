@@ -166,4 +166,10 @@
     <string name="char_critical_success">CRITICAL SUCCESS! Fortune doubles your rewards! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d from Strength)</string>
     <string name="char_bonus_coins_detail"> (+%1$d from Intelligence)</string>
+
+    <string name="stats_characteristics_tab">Characteristics</string>
+    <string name="stats_game_stats_tab">Game Stats</string>
+    <string name="stats_character_stats_title">Character Stats</string>
+    <string name="rewards_points_label">points</string>
+    <string name="rewards_coins_label">coins</string>
 </resources>

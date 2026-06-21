@@ -166,4 +166,10 @@
     <string name="char_critical_success">КРИТИЧЕСКИЙ УСПЕХ! Удача удваивает ваши награды! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d от Силы)</string>
     <string name="char_bonus_coins_detail"> (+%1$d от Интеллекта)</string>
+
+    <string name="stats_characteristics_tab">Характеристики</string>
+    <string name="stats_game_stats_tab">Статистика игр</string>
+    <string name="stats_character_stats_title">Характеристики персонажа</string>
+    <string name="rewards_points_label">очков</string>
+    <string name="rewards_coins_label">монет</string>
 </resources>
