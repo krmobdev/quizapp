@@ -25,6 +25,8 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -650,36 +652,42 @@ private fun DifficultyPanel(
         modifier = modifier
             .fillMaxSize()
             .navigationBarsPadding()
-            .padding(horizontal = 20.dp),
-        verticalArrangement = Arrangement.spacedBy(20.dp)
+            .padding(horizontal = 20.dp)
     ) {
-        CategoryHeroCard(category = category)
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.spacedBy(20.dp)
+        ) {
+            CategoryHeroCard(category = category)
 
-        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Text(
-                text = stringResource(R.string.choose_level),
-                style = MaterialTheme.typography.headlineSmall,
-                fontWeight = FontWeight.SemiBold,
-                color = appTextColor()
-            )
-            Text(
-                text = stringResource(R.string.quiz_rules),
-                style = MaterialTheme.typography.bodyMedium,
-                color = appTextColor()
-            )
-        }
-
-        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            DifficultyFilter.entries.forEach { filter ->
-                DifficultyOptionCard(
-                    filter = filter,
-                    selected = filter == selectedDifficulty,
-                    onClick = { onDifficultySelected(filter) }
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(
+                    text = stringResource(R.string.choose_level),
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.SemiBold,
+                    color = appTextColor()
                 )
+                Text(
+                    text = stringResource(R.string.quiz_rules),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = appTextColor()
+                )
+            }
+
+            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                DifficultyFilter.entries.forEach { filter ->
+                    DifficultyOptionCard(
+                        filter = filter,
+                        selected = filter == selectedDifficulty,
+                        onClick = { onDifficultySelected(filter) }
+                    )
+                }
             }
         }
 
-        Spacer(Modifier.weight(1f))
+        Spacer(Modifier.height(12.dp))
 
         AppActionButton(
             text = stringResource(R.string.start_quiz),

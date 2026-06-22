@@ -95,124 +95,130 @@ private fun ResultContent(
                 .fillMaxSize()
                 .statusBarsPadding()
                 .navigationBarsPadding()
-                .padding(horizontal = 24.dp, vertical = 16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .padding(horizontal = 24.dp, vertical = 16.dp)
         ) {
-            Spacer(Modifier.height(8.dp))
-            Text(
-                text = emoji,
-                style = MaterialTheme.typography.displaySmall,
-                modifier = Modifier.alpha(headlineAlpha)
-            )
-            Spacer(Modifier.height(8.dp))
-            Text(
-                text = headlineFor(result.score, result.total),
-                style = MaterialTheme.typography.headlineMedium,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center,
-                color = textColor,
-                modifier = Modifier.alpha(headlineAlpha)
-            )
-            Spacer(Modifier.height(20.dp))
-
-            ScoreRing(score = result.score, total = result.total)
-
-            result.reward?.let { reward ->
-                Spacer(Modifier.height(12.dp))
-                
-                if (reward.isCriticalSuccess) {
-                    Surface(
-                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
-                        shape = RoundedCornerShape(12.dp),
-                        border = BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)),
-                        modifier = Modifier.padding(horizontal = 16.dp)
-                    ) {
+            LazyColumn(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                item {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Spacer(Modifier.height(8.dp))
                         Text(
-                            text = stringResource(R.string.char_critical_success),
-                            style = MaterialTheme.typography.bodyMedium,
+                            text = emoji,
+                            style = MaterialTheme.typography.displaySmall,
+                            modifier = Modifier.alpha(headlineAlpha)
+                        )
+                        Spacer(Modifier.height(8.dp))
+                        Text(
+                            text = headlineFor(result.score, result.total),
+                            style = MaterialTheme.typography.headlineMedium,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
-                            color = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.padding(12.dp)
+                            color = textColor,
+                            modifier = Modifier.alpha(headlineAlpha)
+                        )
+                        Spacer(Modifier.height(20.dp))
+
+                        ScoreRing(score = result.score, total = result.total)
+
+                        result.reward?.let { reward ->
+                            Spacer(Modifier.height(12.dp))
+
+                            if (reward.isCriticalSuccess) {
+                                Surface(
+                                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+                                    shape = RoundedCornerShape(12.dp),
+                                    border = BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)),
+                                    modifier = Modifier.padding(horizontal = 16.dp)
+                                ) {
+                                    Text(
+                                        text = stringResource(R.string.char_critical_success),
+                                        style = MaterialTheme.typography.bodyMedium,
+                                        fontWeight = FontWeight.Bold,
+                                        textAlign = TextAlign.Center,
+                                        color = MaterialTheme.colorScheme.primary,
+                                        modifier = Modifier.padding(12.dp)
+                                    )
+                                }
+                                Spacer(Modifier.height(8.dp))
+                            }
+
+                            Text(
+                                text = rewardText(reward),
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.SemiBold,
+                                textAlign = TextAlign.Center,
+                                color = MaterialTheme.colorScheme.primary
+                            )
+                            if (reward.speedBonusPercent > 0) {
+                                Spacer(Modifier.height(4.dp))
+                                Text(
+                                    text = stringResource(
+                                        R.string.rewards_speed_bonus,
+                                        reward.speedBonusPercent
+                                    ),
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    textAlign = TextAlign.Center,
+                                    color = textColor
+                                )
+                            }
+
+                            Spacer(Modifier.height(12.dp))
+                            RewardBreakdownCard(reward = reward, colors = colors, textColor = textColor)
+
+                            if (reward.leveledUp) {
+                                Spacer(Modifier.height(12.dp))
+                                LevelUpBanner(reward = reward, textColor = textColor)
+                            }
+                        }
+
+                        if (result.penalties > 0) {
+                            Spacer(Modifier.height(8.dp))
+                            Text(
+                                text = stringResource(R.string.result_penalties, result.correct, result.penalties),
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = textColor
+                            )
+                        }
+
+                        if (result.newAchievements.isNotEmpty()) {
+                            Spacer(Modifier.height(16.dp))
+                            NewAchievementsBanner(result.newAchievements, textColor)
+                        }
+
+                        Spacer(Modifier.height(20.dp))
+                    }
+                }
+
+                if (result.mistakes.isNotEmpty()) {
+                    item {
+                        Text(
+                            text = stringResource(R.string.result_mistakes),
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.SemiBold,
+                            color = textColor,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(bottom = 8.dp)
                         )
                     }
-                    Spacer(Modifier.height(8.dp))
-                }
-
-                Text(
-                    text = rewardText(reward),
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    textAlign = TextAlign.Center,
-                    color = MaterialTheme.colorScheme.primary
-                )
-                if (reward.speedBonusPercent > 0) {
-                    Spacer(Modifier.height(4.dp))
-                    Text(
-                        text = stringResource(
-                            R.string.rewards_speed_bonus,
-                            reward.speedBonusPercent
-                        ),
-                        style = MaterialTheme.typography.bodyMedium,
-                        textAlign = TextAlign.Center,
-                        color = textColor
-                    )
-                }
-
-                Spacer(Modifier.height(12.dp))
-                RewardBreakdownCard(reward = reward, colors = colors, textColor = textColor)
-
-                if (reward.leveledUp) {
-                    Spacer(Modifier.height(12.dp))
-                    LevelUpBanner(reward = reward, textColor = textColor)
-                }
-            }
-
-            if (result.penalties > 0) {
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    text = stringResource(R.string.result_penalties, result.correct, result.penalties),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = textColor
-                )
-            }
-
-            if (result.newAchievements.isNotEmpty()) {
-                Spacer(Modifier.height(16.dp))
-                NewAchievementsBanner(result.newAchievements, textColor)
-            }
-
-            Spacer(Modifier.height(20.dp))
-
-            if (result.mistakes.isNotEmpty()) {
-                Text(
-                    text = stringResource(R.string.result_mistakes),
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = textColor,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(bottom = 8.dp)
-                )
-                LazyColumn(
-                    modifier = Modifier
-                        .weight(1f)
-                        .fillMaxWidth(),
-                    verticalArrangement = Arrangement.spacedBy(AppDimens.CardSpacing)
-                ) {
                     items(result.mistakes, key = { it.id }) { question ->
                         MistakeItem(question, colors)
+                        Spacer(Modifier.height(AppDimens.CardSpacing))
+                    }
+                } else {
+                    item {
+                        Text(
+                            text = stringResource(R.string.result_perfect),
+                            style = MaterialTheme.typography.bodyLarge,
+                            textAlign = TextAlign.Center,
+                            color = textColor
+                        )
                     }
                 }
-            } else {
-                Spacer(Modifier.weight(1f))
-                Text(
-                    text = stringResource(R.string.result_perfect),
-                    style = MaterialTheme.typography.bodyLarge,
-                    textAlign = TextAlign.Center,
-                    color = textColor
-                )
-                Spacer(Modifier.weight(1f))
             }
 
             Spacer(Modifier.height(16.dp))
