@@ -152,10 +152,10 @@ object ShopCatalog {
      * the larger tiers give better value to reward saving up.
      */
     val boosters: List<BoosterItem> = listOf(
-        BoosterItem("booster_xp_small", "📘", R.string.shop_booster_small, 500, 1000),
-        BoosterItem("booster_xp_medium", "📗", R.string.shop_booster_medium, 1200, 2500),
-        BoosterItem("booster_xp_large", "📕", R.string.shop_booster_large, 2200, 5000),
-        BoosterItem("booster_xp_huge", "📚", R.string.shop_booster_huge, 4000, 11000)
+        BoosterItem("booster_xp_small", "📘", R.string.shop_booster_small, 600, 900),
+        BoosterItem("booster_xp_medium", "📗", R.string.shop_booster_medium, 1400, 2200),
+        BoosterItem("booster_xp_large", "📕", R.string.shop_booster_large, 2600, 4500),
+        BoosterItem("booster_xp_huge", "📚", R.string.shop_booster_huge, 4800, 9500)
     )
 
     fun booster(id: String): BoosterItem? = boosters.find { it.id == id }
@@ -176,7 +176,7 @@ object ShopCatalog {
         TitleItem("title_legend", "🌟", R.string.title_legend, 4200),
         TitleItem("title_firemind", "🔥", R.string.title_firemind, 5500),
         TitleItem("title_cosmic", "🌌", R.string.title_cosmic, 7500),
-        TitleItem("title_immortal", "💎", R.string.title_immortal, 10000)
+        TitleItem("title_immortal", "💎", R.string.title_immortal, 12000)
     )
 
     fun title(id: String?): TitleItem? = id?.let { tid -> titles.find { it.id == tid } }

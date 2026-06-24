@@ -14,7 +14,7 @@ import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.rustam.quizapp.data.Difficulty
-import com.rustam.quizapp.data.MISTAKES_CATEGORY_ID
+
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.ui.screens.quiz.QuizScreen
 import com.rustam.quizapp.ui.screens.result.ResultScreen
@@ -104,18 +104,6 @@ fun AppNavHost(navController: NavHostController = rememberNavController()) {
                     onHome = {
                         navController.navigate(Routes.MAIN) {
                             popUpTo(Routes.MAIN) { inclusive = true }
-                        }
-                    },
-                    onRetryMistakes = {
-                        navController.navigate(
-                            Routes.quiz(
-                                categoryId = MISTAKES_CATEGORY_ID,
-                                difficulty = null,
-                                questionTimeSeconds = 20,
-                                questionCount = 10
-                            )
-                        ) {
-                            popUpTo(Routes.MAIN) { inclusive = false }
                         }
                     }
                 )

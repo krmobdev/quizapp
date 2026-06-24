@@ -9,8 +9,6 @@ import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.AppLanguage
 import com.rustam.quizapp.data.DailyQuestRepository
 import com.rustam.quizapp.data.Difficulty
-import com.rustam.quizapp.data.MISTAKES_CATEGORY_ID
-import com.rustam.quizapp.data.MistakesRepository
 import com.rustam.quizapp.data.Question
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.QuizProgressRepository
@@ -89,7 +87,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         questionRepository = repository
     )
     private val progressRepository = QuizProgressRepository(application)
-    private val mistakesRepository = MistakesRepository(application)
     private val dailyQuestRepository = DailyQuestRepository(application)
     private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
@@ -107,7 +104,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var baseQuestionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS
     private var questionCount: Int = QuestionRepository.QUIZ_SIZE
     private var adaptive: Boolean = false
-    private var isMistakesMode: Boolean = false
     // Guards against re-preparing the quiz on every fresh composition (e.g. screen rotation):
     // the ViewModel survives configuration changes, so the in-progress run and its ticking timer
     // must be preserved instead of being rebuilt by a second prepare() call.
@@ -165,12 +161,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         this.baseQuestionTimeSeconds = questionTimeSeconds
         this.questionCount = questionCount
         this.adaptive = adaptive
-        this.isMistakesMode = categoryId == MISTAKES_CATEGORY_ID
-        // Mistakes practice always starts fresh — there is nothing to resume.
-        if (isMistakesMode) {
-            startNew(categoryId, difficulty)
-            return
-        }
         viewModelScope.launch {
             val language = settingsRepository.appLanguage.first()
             val saved = progressRepository.savedProgress.first()
@@ -248,18 +238,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             val extraSeconds = profile.stats.extraTimeSeconds + profile.skillTree.extraTimeSeconds
             this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.baseQuestionTimeSeconds + extraSeconds).toInt()
 
-            val recentIds =
-                if (isMistakesMode) emptyList() else playerRepository.getRecentQuestions(categoryId).first()
-            val accuracy = if (adaptive && !isMistakesMode) categoryAccuracy(categoryId) else null
-            val mistakePool = if (isMistakesMode) mistakesRepository.mistakes.first() else emptyList()
+            val recentIds = playerRepository.getRecentQuestions(categoryId).first()
+            val accuracy = if (adaptive) categoryAccuracy(categoryId) else null
 
             val questions = withContext(Dispatchers.IO) {
                 when {
-                    isMistakesMode -> mistakePool
-                        .shuffled()
-                        .take(questionCount.coerceAtMost(mistakePool.size))
-                        .map { it.shuffledOptions() }
-
                     adaptive -> repository.getAdaptiveQuestions(
                         categoryId = categoryId,
                         counts = AdaptiveDifficulty.mix(accuracy, questionCount),
@@ -492,17 +475,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private suspend fun recordResult(session: QuizSession): QuizReward? {
         val category = categoryId ?: return null
 
-        if (isMistakesMode) {
-            // Practice run: drop the questions answered correctly from the mistakes pool.
-            val wrongIds = session.mistakes.map { it.id }.toSet()
-            val solvedIds = session.questions.map { it.id }.filter { it !in wrongIds }
-            mistakesRepository.removeSolved(solvedIds)
-        } else {
-            statsRepository.recordQuizResult(category, session.correctCount, session.total)
-            playerRepository.saveRecentQuestions(category, session.questions.map { it.id })
-            // Remember the questions answered wrong so they can be practised later.
-            mistakesRepository.addMistakes(session.mistakes)
-        }
+        statsRepository.recordQuizResult(category, session.correctCount, session.total)
+        playerRepository.saveRecentQuestions(category, session.questions.map { it.id })
 
         val reward = playerRepository.grantQuizReward(
             categoryId = category,
@@ -510,17 +484,14 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             answers = session.answerRewards,
             total = session.total,
             eventType = eventType,
-            allowEventBonus = !isMistakesMode
+            allowEventBonus = true
         )
 
-        // Count real quizzes (not mistakes practice) towards the daily quests.
-        if (!isMistakesMode) {
-            dailyQuestRepository.recordQuizFinished(
-                correct = session.correctCount,
-                total = session.total,
-                coinsEarned = reward.coins
-            )
-        }
+        dailyQuestRepository.recordQuizFinished(
+            correct = session.correctCount,
+            total = session.total,
+            coinsEarned = reward.coins
+        )
 
         // Update the day streak first so streak-based achievements see the fresh value,
         // then unlock any newly earned achievements (which may grant bonus coins).

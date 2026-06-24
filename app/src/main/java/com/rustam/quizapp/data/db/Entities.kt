@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
  * Room schema for all persisted player progress. Single-row tables use a fixed
  * [PrimaryKey] of `0` so there is always exactly one row to read/upsert.
  *
- * The two in-progress blobs (saved quiz, mistakes pool) and a few cross-cutting
+ * The in-progress saved-quiz blob and a few cross-cutting
  * scalars/settings live in [AppStateEntity] as they did in the old `quiz_stats`
  * DataStore — they are heterogeneous and not worth normalising.
  *
@@ -26,6 +26,11 @@ data class PlayerEntity(
     val points: Int = 0,
     val coins: Int = 0,
     val lifetimePoints: Int = 0,
+    /**
+     * Hidden lifetime XP banked after reaching [com.rustam.quizapp.domain.CharacterLevelCalculator.MAX_LEVEL].
+     * Counts toward level when the cap is raised (e.g. to 200). Not shown in the UI.
+     */
+    val bankedLifetimePoints: Int = 0,
     val avatarId: String? = null,
     val themeId: String? = null,
     /** Equipped cosmetic title id (see ShopCatalog.titles); null = no title shown. */

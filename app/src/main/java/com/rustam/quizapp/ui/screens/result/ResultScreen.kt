@@ -52,7 +52,6 @@ import com.rustam.quizapp.ui.theme.QuizappTheme
 fun ResultScreen(
     result: QuizResult?,
     onHome: () -> Unit,
-    onRetryMistakes: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     BackHandler(onBack = onHome)
@@ -64,7 +63,6 @@ fun ResultScreen(
     ResultContent(
         result = result,
         onHome = onHome,
-        onRetryMistakes = onRetryMistakes,
         modifier = modifier
     )
 }
@@ -73,7 +71,6 @@ fun ResultScreen(
 private fun ResultContent(
     result: QuizResult,
     onHome: () -> Unit,
-    onRetryMistakes: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -224,14 +221,6 @@ private fun ResultContent(
             }
 
             Spacer(Modifier.height(16.dp))
-            if (result.mistakes.isNotEmpty()) {
-                AppActionButton(
-                    text = stringResource(R.string.result_retry_mistakes),
-                    onClick = onRetryMistakes,
-                    primary = false
-                )
-                Spacer(Modifier.height(12.dp))
-            }
             AppActionButton(
                 text = stringResource(R.string.result_home),
                 onClick = onHome,

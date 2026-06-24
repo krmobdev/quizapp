@@ -258,14 +258,16 @@ private fun PlayerProfileCard(
     modifier: Modifier = Modifier
 ) {
     val lifetimePoints = state.lifetimePoints
-    val progress = remember(lifetimePoints) {
-        CharacterLevelCalculator.getLevelProgress(lifetimePoints)
+    val bankedLifetimePoints = state.bankedLifetimePoints
+    val progress = remember(lifetimePoints, bankedLifetimePoints) {
+        CharacterLevelCalculator.getLevelProgress(lifetimePoints, bankedLifetimePoints)
     }
+    val displayLevel = progress.level
     val locale = androidx.compose.ui.platform.LocalConfiguration.current.locales[0]
     val rankName = if (locale.language == "en") {
-        CharacterLevelCalculator.getLevelRankEn(progress.level)
+        CharacterLevelCalculator.getLevelRankEn(displayLevel)
     } else {
-        CharacterLevelCalculator.getLevelRank(progress.level)
+        CharacterLevelCalculator.getLevelRank(displayLevel)
     }
     val displayName = state.playerName.ifBlank { stringResource(R.string.player_default_name) }
     val title = ShopCatalog.title(state.equippedTitleId)
@@ -322,7 +324,7 @@ private fun PlayerProfileCard(
                         }
                     }
                     Text(
-                        text = "$rankName • " + stringResource(R.string.char_level, progress.level),
+                        text = "$rankName • " + stringResource(R.string.char_level, displayLevel),
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
@@ -335,7 +337,7 @@ private fun PlayerProfileCard(
                     Text(
                         text = stringResource(
                             R.string.char_level_reward_bonus,
-                            CharacterLevelCalculator.rewardMultiplier(progress.level)
+                            CharacterLevelCalculator.rewardMultiplier(displayLevel)
                         ),
                         style = MaterialTheme.typography.bodySmall,
                         color = textColor.copy(alpha = 0.7f)
@@ -349,12 +351,24 @@ private fun PlayerProfileCard(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text(
-                        text = stringResource(R.string.char_xp_progress, lifetimePoints, CharacterLevelCalculator.xpRequiredForLevel(progress.level + 1)),
+                        text = if (progress.isMaxLevel) {
+                            stringResource(R.string.char_xp_max_level, lifetimePoints)
+                        } else {
+                            stringResource(
+                                R.string.char_xp_progress,
+                                progress.currentXp,
+                                progress.requiredXp
+                            )
+                        },
                         style = MaterialTheme.typography.bodySmall,
                         color = textColor.copy(alpha = 0.8f)
                     )
                     Text(
-                        text = "${(progress.progressFraction * 100).toInt()}%",
+                        text = if (progress.isMaxLevel) {
+                            stringResource(R.string.char_level_max)
+                        } else {
+                            "${(progress.progressFraction * 100).toInt()}%"
+                        },
                         style = MaterialTheme.typography.bodySmall,
                         fontWeight = FontWeight.SemiBold,
                         color = textColor
@@ -393,34 +407,41 @@ private fun PlayerProfileCard(
 
             HorizontalDivider(color = textColor.copy(alpha = 0.08f))
 
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                SummaryMetric(
-                    value = "🔥 ${state.streakBest}",
-                    label = stringResource(R.string.player_best_streak),
-                    textColor = textColor,
-                    modifier = Modifier.weight(1f)
-                )
-                SummaryMetric(
-                    value = stringResource(R.string.player_fraction, unlockedAchievements, state.achievements.size),
-                    label = stringResource(R.string.player_achievements),
-                    textColor = textColor,
-                    modifier = Modifier.weight(1f)
-                )
-                SummaryMetric(
-                    value = state.lifetimeCoins.toString(),
-                    label = stringResource(R.string.player_lifetime_coins),
-                    textColor = textColor,
-                    modifier = Modifier.weight(1f)
-                )
-                SummaryMetric(
-                    value = state.totalQuizzes.toString(),
-                    label = stringResource(R.string.player_total_quizzes),
-                    textColor = textColor,
-                    modifier = Modifier.weight(1f)
-                )
+            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    SummaryMetric(
+                        value = "🔥 ${state.streakBest}",
+                        label = stringResource(R.string.player_best_streak),
+                        textColor = textColor,
+                        modifier = Modifier.weight(1f)
+                    )
+                    SummaryMetric(
+                        value = stringResource(R.string.player_fraction, unlockedAchievements, state.achievements.size),
+                        label = stringResource(R.string.player_achievements),
+                        textColor = textColor,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    SummaryMetric(
+                        value = state.lifetimeCoins.toString(),
+                        label = stringResource(R.string.player_lifetime_coins),
+                        textColor = textColor,
+                        modifier = Modifier.weight(1f)
+                    )
+                    SummaryMetric(
+                        value = state.totalQuizzes.toString(),
+                        label = stringResource(R.string.player_total_quizzes),
+                        textColor = textColor,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
             }
 
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -487,13 +508,16 @@ private fun BonusChip(text: String, modifier: Modifier = Modifier) {
     ) {
         Text(
             text = text,
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.labelLarge,
             fontWeight = FontWeight.SemiBold,
             color = MaterialTheme.colorScheme.primary,
             textAlign = TextAlign.Center,
+            maxLines = 2,
+            overflow = TextOverflow.Ellipsis,
+            lineHeight = 18.sp,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 8.dp, vertical = 8.dp)
+                .padding(horizontal = 6.dp, vertical = 10.dp)
         )
     }
 }
@@ -627,7 +651,7 @@ private fun StatUpgradeCard(
     onUpgrade: () -> Unit
 ) {
     val maxStat = CharacterLevelCalculator.MAX_STAT
-    val cost = 100 + value * 25
+    val cost = CharacterLevelCalculator.statUpgradeCost(value)
     GlassCard(colors = colors) {
         Row(
             modifier = Modifier
@@ -1100,6 +1124,11 @@ private fun SummaryMetric(
     textColor: androidx.compose.ui.graphics.Color,
     modifier: Modifier = Modifier
 ) {
+    val valueStyle = if (value.length > 5) {
+        MaterialTheme.typography.titleMedium
+    } else {
+        MaterialTheme.typography.titleLarge
+    }
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -1107,12 +1136,13 @@ private fun SummaryMetric(
     ) {
         Text(
             text = value,
-            style = MaterialTheme.typography.titleLarge,
+            style = valueStyle,
             fontWeight = FontWeight.Bold,
             color = textColor,
             textAlign = TextAlign.Center,
             maxLines = 1,
-            overflow = TextOverflow.Ellipsis
+            softWrap = false,
+            modifier = Modifier.fillMaxWidth()
         )
         Text(
             text = label,
@@ -1121,7 +1151,6 @@ private fun SummaryMetric(
             textAlign = TextAlign.Center,
             maxLines = 2,
             lineHeight = 14.sp,
-            overflow = TextOverflow.Ellipsis,
             modifier = Modifier.fillMaxWidth()
         )
     }

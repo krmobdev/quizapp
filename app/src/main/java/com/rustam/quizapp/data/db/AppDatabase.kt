@@ -20,7 +20,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         AchievementEntity::class,
         AppStateEntity::class
     ],
-    version = 4,
+    version = 5,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -89,6 +89,26 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        /**
+         * Hidden XP bank for players at the level cap. Any lifetime XP above the level-120 threshold
+         * is moved into [bankedLifetimePoints] so a future cap raise can credit it automatically.
+         */
+        private val MIGRATION_4_5 = object : Migration(4, 5) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "ALTER TABLE player ADD COLUMN bankedLifetimePoints INTEGER NOT NULL DEFAULT 0"
+                )
+                val level120Cap = 22 * 120 * 119
+                db.execSQL(
+                    """
+                    UPDATE player SET
+                        bankedLifetimePoints = MAX(0, lifetimePoints - $level120Cap),
+                        lifetimePoints = MIN(lifetimePoints, $level120Cap)
+                    """.trimIndent()
+                )
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase =
             instance ?: synchronized(this) {
                 instance ?: build(context.applicationContext).also { instance = it }
@@ -96,7 +116,7 @@ abstract class AppDatabase : RoomDatabase() {
 
         private fun build(context: Context): AppDatabase =
             Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5)
                 .fallbackToDestructiveMigration(dropAllTables = true)
                 .build()
     }

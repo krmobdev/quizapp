@@ -39,6 +39,7 @@ data class PlayerProfile(
     val stats: CharacterStats,
     val skillTree: SkillTreeState,
     val lifetimePoints: Int,
+    val bankedLifetimePoints: Int = 0,
     val lifetimeCoins: Int = 0,
     val equippedTitleId: String? = null,
     /** Remaining quizzes the active temporary boosts apply to (0 = inactive). */
@@ -76,6 +77,7 @@ class PlayerRepository(
             stats = player.toStats(),
             skillTree = player.toSkillTree(),
             lifetimePoints = player.lifetimePoints,
+            bankedLifetimePoints = player.bankedLifetimePoints,
             lifetimeCoins = player.lifetimeCoins,
             equippedTitleId = player.equippedTitleId,
             coinBoostQuizzesLeft = player.coinBoostQuizzesLeft,
@@ -158,12 +160,7 @@ class PlayerRepository(
             if (count > 0) {
                 dao.upsertInventory(InventoryEntity(boosterId, count - 1))
                 val player = dao.getPlayer() ?: PlayerEntity()
-                dao.upsertPlayer(
-                    player.copy(
-                        points = player.points + booster.rewardPoints,
-                        lifetimePoints = player.lifetimePoints + booster.rewardPoints
-                    )
-                )
+                dao.upsertPlayer(player.withEarnedXp(booster.rewardPoints))
                 activated = true
             }
         }
@@ -252,9 +249,7 @@ class PlayerRepository(
      */
     suspend fun addXp(amount: Int) {
         if (amount <= 0) return
-        updatePlayer {
-            it.copy(points = it.points + amount, lifetimePoints = it.lifetimePoints + amount)
-        }
+        updatePlayer { it.withEarnedXp(amount) }
     }
 
     /**
@@ -304,10 +299,7 @@ class PlayerRepository(
                 }
                 roll <= LootBox.XP_MAX_ROLL -> {
                     val xp = LootBox.weightedPick(LootBox.xpPayouts)
-                    updated = updated.copy(
-                        points = updated.points + xp,
-                        lifetimePoints = updated.lifetimePoints + xp
-                    )
+                    updated = updated.withEarnedXp(xp)
                     LootResult.Xp(xp)
                 }
                 else -> {
@@ -385,12 +377,12 @@ class PlayerRepository(
         val stats = player.toStats()
         val skills = player.toSkillTree()
 
-        // Level scaling: the higher the player's level, the higher the base reward
-        // (+10% per level above 1). Level is derived from lifetime XP.
+        // Level scaling: higher level → higher base reward (active + hidden banked lifetime XP).
         val lifetime = player.lifetimePoints
-        val level = CharacterLevelCalculator.calculateLevel(lifetime)
+        val banked = player.bankedLifetimePoints
+        val level = CharacterLevelCalculator.calculateLevel(lifetime, banked)
         val levelMultiplier = CharacterLevelCalculator.rewardMultiplier(level)
-        // Coins scale faster than XP past level 20 to reward high-level players.
+        // Coins scale faster than XP past level 40.
         val coinLevelMultiplier = CharacterLevelCalculator.coinRewardMultiplier(level)
         val scaledBasePoints = (baseReward.points * levelMultiplier).toInt()
         val scaledBaseCoins = (baseReward.coins * coinLevelMultiplier).toInt()
@@ -417,13 +409,16 @@ class PlayerRepository(
             coinsEarned = (coinsEarned * stats.critMultiplier).toInt()
         }
 
-        // Temporary 2x boosts apply only to real quizzes (not mistakes practice).
+        // Temporary 2x boosts apply only to real quizzes.
         val xpBoosted = allowEventBonus && player.xpBoostQuizzesLeft > 0
         val coinBoosted = allowEventBonus && player.coinBoostQuizzesLeft > 0
         if (xpBoosted) pointsEarned *= 2
         if (coinBoosted) coinsEarned *= 2
 
-        val newLevel = CharacterLevelCalculator.calculateLevel(lifetime + pointsEarned)
+        val (newLifetime, newBanked) = CharacterLevelCalculator.distributeLifetimeXp(
+            lifetime, banked, pointsEarned
+        )
+        val newLevel = CharacterLevelCalculator.calculateLevel(newLifetime, newBanked)
 
         val finalReward = baseReward.copy(
             points = pointsEarned,
@@ -444,10 +439,8 @@ class PlayerRepository(
 
         // Credit the reward and spend one charge per boost that was actually applied.
         updatePlayer {
-            it.copy(
-                points = it.points + pointsEarned,
+            it.withEarnedXp(pointsEarned).copy(
                 coins = it.coins + coinsEarned,
-                lifetimePoints = it.lifetimePoints + pointsEarned,
                 lifetimeCoins = it.lifetimeCoins + coinsEarned,
                 coinBoostQuizzesLeft = if (coinBoosted) it.coinBoostQuizzesLeft - 1 else it.coinBoostQuizzesLeft,
                 xpBoostQuizzesLeft = if (xpBoosted) it.xpBoostQuizzesLeft - 1 else it.xpBoostQuizzesLeft
@@ -462,7 +455,7 @@ class PlayerRepository(
         db.withTransaction {
             val player = dao.getPlayer() ?: PlayerEntity()
             val currentVal = statValue(player, statName) ?: return@withTransaction
-            val cost = 100 + currentVal * 25
+            val cost = CharacterLevelCalculator.statUpgradeCost(currentVal)
             if (currentVal < CharacterLevelCalculator.MAX_STAT && player.points >= cost) {
                 val updated = applyStat(
                     player.copy(points = player.points - cost),
@@ -619,6 +612,21 @@ class PlayerRepository(
         else -> null
     }
 
+    /** Credits spendable XP and splits lifetime XP between the active cap and the hidden bank. */
+    private fun PlayerEntity.withEarnedXp(amount: Int): PlayerEntity {
+        if (amount <= 0) return this
+        val (newLifetime, newBanked) = CharacterLevelCalculator.distributeLifetimeXp(
+            currentLifetime = lifetimePoints,
+            currentBanked = bankedLifetimePoints,
+            earned = amount
+        )
+        return copy(
+            points = points + amount,
+            lifetimePoints = newLifetime,
+            bankedLifetimePoints = newBanked
+        )
+    }
+
     private fun applyStat(player: PlayerEntity, statName: String, value: Int): PlayerEntity = when (statName) {
         "strength" -> player.copy(strength = value)
         "intelligence" -> player.copy(intelligence = value)
@@ -635,7 +643,7 @@ class PlayerRepository(
         const val MAX_NAME_LENGTH = 24
         const val MAX_RECENT = 200
         const val PROMO_CODE = "AAAAAA"
-        const val PROMO_REWARD_COINS = 30000
+        const val PROMO_REWARD_COINS = 2000
     }
 }
 

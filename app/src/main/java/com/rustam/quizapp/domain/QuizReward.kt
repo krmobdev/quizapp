@@ -40,9 +40,9 @@ data class AnswerReward(
 )
 
 object RewardCalculator {
-    private const val POINTS_PER_CORRECT = 10
-    private const val COINS_PER_CORRECT = 3
-    private const val PERFECT_BONUS_POINTS = 50
+    private const val POINTS_PER_CORRECT = 12
+    private const val COINS_PER_CORRECT = 4
+    private const val PERFECT_BONUS_POINTS = 45
     private const val SPEED_LOSS_PER_SECOND = 0.1f
 
     fun speedMultiplier(elapsedSeconds: Int): Float =

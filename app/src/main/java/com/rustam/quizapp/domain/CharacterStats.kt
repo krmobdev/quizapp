@@ -1,7 +1,7 @@
 package com.rustam.quizapp.domain
 
 /**
- * Represents the player's RPG characteristics (from 0 to 20).
+ * Represents the player's RPG characteristics (0 to [CharacterLevelCalculator.MAX_STAT]).
  */
 data class CharacterStats(
     val strength: Int = 0,
@@ -13,7 +13,6 @@ data class CharacterStats(
     val focus: Int = 0,
     val charisma: Int = 0
 ) {
-    // Current active bonus multipliers and absolute values
     val xpBonusPercent: Int get() = strength * 2
     val coinBonusPercent: Int get() = intelligence * 2
     val extraTimeSeconds: Float get() = agility * 0.5f
@@ -34,65 +33,97 @@ data class CharacterStats(
 
 /**
  * Progression logic for computing levels and ranks from overall lifetime points (XP).
+ *
+ * Tuned for ~4–5 quizzes/day: level 120 and full stat + skill progression in roughly 3–6 months.
  */
 object CharacterLevelCalculator {
+    /**
+     * Current level cap. XP beyond [lifetimeCap] is stored in [PlayerEntity.bankedLifetimePoints]
+     * (hidden). Raising this constant (e.g. to 200) automatically credits banked XP toward the new cap.
+     */
+    const val MAX_LEVEL = 120
+
     /** Maximum value any single character stat can be upgraded to. */
     const val MAX_STAT = 50
 
     /**
-     * Calculates the player level (1-based) from total lifetime XP.
-     * Formula: XP(L) = 50 * L * (L - 1)
-     * L = floor( (1 + sqrt(1 + XP / 12.5)) / 2 )
+     * Cumulative lifetime XP to reach level L: [XP_PER_LEVEL_UNIT] × L × (L − 1).
+     * Level 120 ≈ 313 560 XP — aligns with maxing stats + Mastery Tree at average pace.
      */
-    fun calculateLevel(lifetimePoints: Int): Int {
-        if (lifetimePoints <= 0) return 1
-        val xp = lifetimePoints.toDouble()
-        val level = ((1.0 + Math.sqrt(1.0 + xp / 12.5)) / 2.0).toInt()
-        return level.coerceAtLeast(1)
+    const val XP_PER_LEVEL_UNIT = 22
+
+    /** Lifetime XP credited toward the current [MAX_LEVEL] cap (never above [lifetimeCap]). */
+    fun lifetimeCap(): Int = xpRequiredForLevel(MAX_LEVEL)
+
+    /** Active + banked lifetime XP — used for level/rank; banked XP applies when [MAX_LEVEL] rises. */
+    fun effectiveLifetimePoints(lifetimePoints: Int, bankedLifetimePoints: Int = 0): Int =
+        lifetimePoints + bankedLifetimePoints
+
+    fun calculateLevel(lifetimePoints: Int, bankedLifetimePoints: Int = 0): Int {
+        val effective = effectiveLifetimePoints(lifetimePoints, bankedLifetimePoints)
+        if (effective <= 0) return 1
+        val xp = effective.toDouble()
+        val level = ((1.0 + Math.sqrt(1.0 + xp / (XP_PER_LEVEL_UNIT / 4.0))) / 2.0).toInt()
+        return level.coerceIn(1, MAX_LEVEL)
     }
 
-    /** Returns cumulative lifetime XP required to reach the given level. */
     fun xpRequiredForLevel(level: Int): Int {
         if (level <= 1) return 0
-        return 50 * level * (level - 1)
+        return XP_PER_LEVEL_UNIT * level * (level - 1)
     }
 
-    /** Extra reward multiplier gained per player level above 1 (0.10 = +10% per level). */
-    const val REWARD_BONUS_PER_LEVEL = 0.10f
-
-    /** Level beyond which coins start scaling faster than XP. */
-    const val HIGH_LEVEL_THRESHOLD = 20
-
-    /** Base coin multiplier gained per player level above 1 (coins scale faster than XP). */
-    const val COIN_BONUS_PER_LEVEL = 0.35f
-
-    /** Extra coin multiplier gained per player level above [HIGH_LEVEL_THRESHOLD]. */
-    const val HIGH_LEVEL_COIN_BONUS_PER_LEVEL = 0.70f
+    fun isMaxLevel(lifetimePoints: Int, bankedLifetimePoints: Int = 0): Boolean =
+        calculateLevel(lifetimePoints, bankedLifetimePoints) >= MAX_LEVEL
 
     /**
-     * Reward multiplier applied to quiz rewards based on the player's level.
-     * Higher level → higher rewards. Level 1 = x1.0, level 10 = x1.9, etc.
+     * Splits newly earned lifetime XP between the active counter (up to [lifetimeCap]) and the
+     * hidden bank. When [MAX_LEVEL] is raised later, banked XP counts toward the new cap automatically.
      */
+    fun distributeLifetimeXp(
+        currentLifetime: Int,
+        currentBanked: Int,
+        earned: Int
+    ): Pair<Int, Int> {
+        if (earned <= 0) return currentLifetime to currentBanked
+        val cap = lifetimeCap()
+        val newEffective = (currentLifetime + currentBanked + earned).coerceAtLeast(0)
+        val newLifetime = newEffective.coerceAtMost(cap)
+        val newBanked = (newEffective - cap).coerceAtLeast(0)
+        return newLifetime to newBanked
+    }
+
+    /** Extra reward multiplier gained per player level above 1. */
+    const val REWARD_BONUS_PER_LEVEL = 0.075f
+
+    /** Level beyond which coins start scaling faster than XP. */
+    const val HIGH_LEVEL_THRESHOLD = 40
+
+    const val COIN_BONUS_PER_LEVEL = 0.18f
+    const val HIGH_LEVEL_COIN_BONUS_PER_LEVEL = 0.30f
+
     fun rewardMultiplier(level: Int): Float =
         1f + (level - 1).coerceAtLeast(0) * REWARD_BONUS_PER_LEVEL
 
-    /**
-     * Coin reward multiplier. Coins scale faster than XP (+20% per level), and even faster
-     * past [HIGH_LEVEL_THRESHOLD] (+40% extra per level) so high-level players earn noticeably
-     * more coins each game.
-     * E.g. level 10 = x4.2, level 20 = x7.7, level 30 = x18.2, level 40 = x28.7.
-     * Combined with the higher base payout, a strong run at level 30 yields ~300-400 coins.
-     */
     fun coinRewardMultiplier(level: Int): Float =
         1f + (level - 1).coerceAtLeast(0) * COIN_BONUS_PER_LEVEL +
             (level - HIGH_LEVEL_THRESHOLD).coerceAtLeast(0) * HIGH_LEVEL_COIN_BONUS_PER_LEVEL
 
-    /** Returns details about current level progression for progress bars. */
-    fun getLevelProgress(lifetimePoints: Int): LevelProgress {
-        val currentLevel = calculateLevel(lifetimePoints)
+    fun getLevelProgress(lifetimePoints: Int, bankedLifetimePoints: Int = 0): LevelProgress {
+        val effective = effectiveLifetimePoints(lifetimePoints, bankedLifetimePoints)
+        val currentLevel = calculateLevel(lifetimePoints, bankedLifetimePoints)
+        if (currentLevel >= MAX_LEVEL) {
+            return LevelProgress(
+                level = MAX_LEVEL,
+                currentXp = effective - xpRequiredForLevel(MAX_LEVEL),
+                requiredXp = 0,
+                progressFraction = 1f,
+                isMaxLevel = true,
+                bankedLifetimePoints = bankedLifetimePoints
+            )
+        }
         val xpForCurrent = xpRequiredForLevel(currentLevel)
         val xpForNext = xpRequiredForLevel(currentLevel + 1)
-        val xpInCurrentLevel = lifetimePoints - xpForCurrent
+        val xpInCurrentLevel = effective - xpForCurrent
         val xpRequiredForNextLevel = xpForNext - xpForCurrent
         return LevelProgress(
             level = currentLevel,
@@ -100,11 +131,12 @@ object CharacterLevelCalculator {
             requiredXp = xpRequiredForNextLevel,
             progressFraction = if (xpRequiredForNextLevel > 0) {
                 xpInCurrentLevel.toFloat() / xpRequiredForNextLevel
-            } else 0f
+            } else 0f,
+            isMaxLevel = false,
+            bankedLifetimePoints = bankedLifetimePoints
         )
     }
 
-    /** Returns localized rank name (RU) based on the level. */
     fun getLevelRank(level: Int): String {
         return when {
             level <= 4 -> "Новичок"
@@ -116,10 +148,15 @@ object CharacterLevelCalculator {
             level <= 34 -> "Мудрец"
             level <= 39 -> "Магистр"
             level <= 44 -> "Магистр разума"
-            level <= 49 -> "Просвещенный"
+            level <= 49 -> "Просвещённый"
             level <= 54 -> "Хранитель знаний"
             level <= 59 -> "Вершитель судеб"
-            else -> "Легенда"
+            level <= 69 -> "Легенда"
+            level <= 79 -> "Миф"
+            level <= 89 -> "Вечный знаток"
+            level <= 99 -> "Архонт"
+            level <= 109 -> "Превосходящий"
+            else -> "Бессмертный знаток"
         }
     }
 
@@ -137,15 +174,25 @@ object CharacterLevelCalculator {
             level <= 49 -> "Enlightened"
             level <= 54 -> "Loremaster"
             level <= 59 -> "Grandmaster"
-            else -> "Legend"
+            level <= 69 -> "Legend"
+            level <= 79 -> "Mythic"
+            level <= 89 -> "Eternal Scholar"
+            level <= 99 -> "Archon"
+            level <= 109 -> "Transcendent"
+            else -> "Immortal Sage"
         }
     }
+
+    /** Free-XP cost to raise a stat from [currentValue] to the next point. */
+    fun statUpgradeCost(currentValue: Int): Int = 50 + currentValue * 18
 }
 
-/** Helper data structure representing current level progress. */
 data class LevelProgress(
     val level: Int,
     val currentXp: Int,
     val requiredXp: Int,
-    val progressFraction: Float
+    val progressFraction: Float,
+    val isMaxLevel: Boolean = false,
+    /** Hidden overflow XP stored while [CharacterLevelCalculator.MAX_LEVEL] is reached. */
+    val bankedLifetimePoints: Int = 0
 )

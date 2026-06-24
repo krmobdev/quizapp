@@ -20,19 +20,20 @@ object LootBox {
 
     /** Coin payouts as (amount to weight). Average sits a little under [PRICE] — the gamble. */
     val coinPayouts: List<Pair<Int, Int>> = listOf(
-        150 to 30,
-        400 to 34,
-        800 to 22,
-        1500 to 9,
-        3000 to 5
+        100 to 35,
+        250 to 30,
+        450 to 20,
+        700 to 10,
+        1200 to 5
     )
 
     /** Free-XP payouts as (amount to weight). */
     val xpPayouts: List<Pair<Int, Int>> = listOf(
-        300 to 30,
-        700 to 34,
-        1400 to 24,
-        2500 to 12
+        200 to 35,
+        450 to 30,
+        800 to 20,
+        1400 to 10,
+        2200 to 5
     )
 
     /** Picks a value from a weighted (value to weight) table. */

@@ -29,7 +29,10 @@ class AchievementEvaluator(
             totalQuizzes = stats.totalQuizzesCompleted,
             totalCorrect = stats.categories.sumOf { it.correctAnswers },
             bestStreak = streak.best,
-            level = CharacterLevelCalculator.calculateLevel(profile.lifetimePoints),
+            level = CharacterLevelCalculator.calculateLevel(
+                profile.lifetimePoints,
+                profile.bankedLifetimePoints
+            ),
             hasMaxedStat = listOf(
                 charStats.strength,
                 charStats.intelligence,
@@ -39,7 +42,7 @@ class AchievementEvaluator(
                 charStats.endurance,
                 charStats.focus,
                 charStats.charisma
-            ).any { it >= 20 },
+            ).any { it >= CharacterLevelCalculator.MAX_STAT },
             hasPerfectQuiz = stats.categories.any { it.bestScorePercent >= 100 },
             categoriesPlayed = stats.categories.count { it.quizzesCompleted > 0 },
             totalCategories = questionRepository.getCategories().size

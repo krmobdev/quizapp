@@ -62,7 +62,7 @@ class DailyRewardRepository(context: Context) {
 
     companion object {
         /** Coins for each day in the 7-day cycle; it repeats after day 7. */
-        val REWARD_CYCLE = listOf(50, 75, 100, 150, 200, 300, 500)
+        val REWARD_CYCLE = listOf(40, 60, 80, 120, 160, 240, 400)
 
         fun rewardForDay(dayIndex: Int): Int {
             if (dayIndex <= 0) return REWARD_CYCLE.first()

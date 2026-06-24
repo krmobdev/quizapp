@@ -28,13 +28,13 @@ object DailyChallenges {
 
     /** Pool of templates; [dailySet] picks [DAILY_COUNT] of distinct types each day. */
     val pool: List<DailyChallenge> = listOf(
-        DailyChallenge("play3", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 3, 120, 150),
-        DailyChallenge("play5", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 5, 220, 280),
-        DailyChallenge("correct20", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 20, 150, 200),
-        DailyChallenge("correct40", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 40, 260, 320),
-        DailyChallenge("perfect", DailyChallengeType.PERFECT_QUIZ, "💯", R.string.quest_perfect_quiz, 1, 200, 250),
-        DailyChallenge("coins300", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 300, 140, 160),
-        DailyChallenge("coins700", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 700, 240, 240)
+        DailyChallenge("play3", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 3, 100, 130),
+        DailyChallenge("play5", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 5, 180, 240),
+        DailyChallenge("correct20", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 20, 130, 180),
+        DailyChallenge("correct40", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 40, 220, 280),
+        DailyChallenge("perfect", DailyChallengeType.PERFECT_QUIZ, "💯", R.string.quest_perfect_quiz, 1, 180, 220),
+        DailyChallenge("coins400", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 400, 120, 140),
+        DailyChallenge("coins1200", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 1200, 200, 200)
     )
 
     /**

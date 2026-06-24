@@ -178,20 +178,9 @@ private fun HomeContent(
                 xpBoostLeft = state.xpBoostLeft,
                 dailyReward = state.dailyReward,
                 dailyQuests = state.dailyQuests,
-                mistakesCount = state.mistakesCount,
                 onClaimDaily = onClaimDaily,
                 onClaimQuest = onClaimQuest,
                 onCategoryClick = onCategoryClick,
-                onStartMistakes = {
-                    onStartQuiz(
-                        com.rustam.quizapp.data.MISTAKES_CATEGORY_ID,
-                        null,
-                        null,
-                        20,
-                        10,
-                        false
-                    )
-                },
                 onStartEvent = { progress ->
                     val event = progress.event
                     onStartQuiz(
@@ -237,11 +226,9 @@ private fun HomeScrollContent(
     xpBoostLeft: Int,
     dailyReward: com.rustam.quizapp.data.DailyRewardState,
     dailyQuests: List<DailyChallengeProgress>,
-    mistakesCount: Int,
     onClaimDaily: () -> Unit,
     onClaimQuest: (Int) -> Unit,
     onCategoryClick: (Category) -> Unit,
-    onStartMistakes: () -> Unit,
     onStartEvent: (QuizEventProgress) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -262,17 +249,6 @@ private fun HomeScrollContent(
                 DailyRewardCard(
                     reward = dailyReward,
                     onClaim = onClaimDaily,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 20.dp, vertical = 4.dp)
-                )
-            }
-        }
-        if (mistakesCount > 0) {
-            item {
-                MistakesCard(
-                    count = mistakesCount,
-                    onStart = onStartMistakes,
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 20.dp, vertical = 4.dp)
@@ -380,53 +356,6 @@ private fun DailyRewardCard(
             ) {
                 Text(
                     text = stringResource(R.string.daily_reward_claim),
-                    fontWeight = FontWeight.Bold
-                )
-            }
-        }
-    }
-}
-
-@Composable
-private fun MistakesCard(
-    count: Int,
-    onStart: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    val colors = rememberAppThemeColors()
-    val textColor = appTextColor()
-    GlassCard(modifier = modifier, colors = colors, onClick = onStart) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
-        ) {
-            Text(text = "🩹", fontSize = 34.sp)
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = stringResource(R.string.mistakes_card_title),
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = textColor
-                )
-                Text(
-                    text = stringResource(R.string.mistakes_card_subtitle, count),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = textColor.copy(alpha = 0.75f)
-                )
-            }
-            Button(
-                onClick = onStart,
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.9f),
-                    contentColor = MaterialTheme.colorScheme.onPrimary
-                ),
-                shape = AppShapes.Button
-            ) {
-                Text(
-                    text = stringResource(R.string.mistakes_card_button),
                     fontWeight = FontWeight.Bold
                 )
             }
@@ -546,12 +475,21 @@ private fun HomeHeroHeader(
             StreakChip(streak = streak)
         }
         if (coinBoostLeft > 0 || xpBoostLeft > 0) {
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
                 if (coinBoostLeft > 0) {
-                    BoostChip(text = stringResource(R.string.boost_active_coins, coinBoostLeft))
+                    BoostChip(
+                        text = stringResource(R.string.boost_active_coins, coinBoostLeft),
+                        modifier = Modifier.weight(1f)
+                    )
                 }
                 if (xpBoostLeft > 0) {
-                    BoostChip(text = stringResource(R.string.boost_active_xp, xpBoostLeft))
+                    BoostChip(
+                        text = stringResource(R.string.boost_active_xp, xpBoostLeft),
+                        modifier = Modifier.weight(1f)
+                    )
                 }
             }
         }
@@ -599,7 +537,11 @@ private fun BoostChip(text: String, modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.labelMedium,
             fontWeight = FontWeight.SemiBold,
             color = appTextColor(),
-            modifier = Modifier.padding(horizontal = 12.dp, vertical = 5.dp)
+            textAlign = TextAlign.Center,
+            maxLines = 2,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 8.dp, vertical = 6.dp)
         )
     }
 }

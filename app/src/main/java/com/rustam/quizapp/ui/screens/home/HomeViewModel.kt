@@ -12,7 +12,6 @@ import com.rustam.quizapp.data.DailyQuestRepository
 import com.rustam.quizapp.data.DailyRewardRepository
 import com.rustam.quizapp.data.DailyRewardState
 import com.rustam.quizapp.data.Difficulty
-import com.rustam.quizapp.data.MistakesRepository
 import com.rustam.quizapp.data.PlayerRepository
 import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
@@ -49,7 +48,6 @@ data class HomeUiState(
     val events: List<QuizEventProgress> = emptyList(),
     val streak: Int = 0,
     val dailyReward: DailyRewardState = DailyRewardState(),
-    val mistakesCount: Int = 0,
     /** Remaining quizzes for the active temporary boosts (0 = inactive). */
     val coinBoostLeft: Int = 0,
     val xpBoostLeft: Int = 0,
@@ -63,7 +61,6 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private val streakRepository = StreakRepository(application)
     private val dailyRewardRepository = DailyRewardRepository(application)
     private val dailyQuestRepository = DailyQuestRepository(application)
-    private val mistakesRepository = MistakesRepository(application)
     private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
         context = application,
@@ -80,9 +77,8 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         navigationState,
         playerRepository.observeProfile(),
         streakRepository.observeStreak(),
-        dailyRewardRepository.observeReward(),
-        mistakesRepository.count
-    ) { nav, profile, streak, dailyReward, mistakesCount ->
+        dailyRewardRepository.observeReward()
+    ) { nav, profile, streak, dailyReward ->
         HomeUiState(
             categories = nav.categories,
             selectedCategory = nav.selectedCategory,
@@ -90,7 +86,6 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             events = profile.eventProgress,
             streak = streak.current,
             dailyReward = dailyReward,
-            mistakesCount = mistakesCount,
             coinBoostLeft = profile.coinBoostQuizzesLeft,
             xpBoostLeft = profile.xpBoostQuizzesLeft
         )

@@ -77,10 +77,10 @@
     <string name="settings_promo_subtitle">Redeem a code for coins</string>
     <string name="settings_promo_hint">Enter promo code</string>
     <string name="settings_promo_activate">Activate</string>
-    <string name="settings_promo_success">Promo code activated! +30000 coins</string>
+    <string name="settings_promo_success">Promo code activated! +2000 coins</string>
     <string name="settings_promo_invalid">Invalid promo code</string>
     <string name="settings_promo_already">Promo code already redeemed</string>
-    <string name="settings_promo_redeemed">Promo code redeemed · +30000 coins</string>
+    <string name="settings_promo_redeemed">Promo code redeemed · +2000 coins</string>
 
     <!-- Data management: export / import / reset progress -->
     <string name="settings_data_title">Data</string>
@@ -122,7 +122,6 @@
     <string name="result_penalties">Correct: %1$d · Penalties: −%2$d</string>
     <string name="result_mistakes">Mistakes</string>
     <string name="result_perfect">Flawless — great job!</string>
-    <string name="result_retry_mistakes">Retry mistakes</string>
     <string name="result_home">Home</string>
     <string name="result_unavailable">Result unavailable</string>
     <string name="result_correct_answer">Correct answer: %1$s</string>
@@ -245,6 +244,8 @@
     <!-- Character Stats and Levels -->
     <string name="char_level">Level %1$d</string>
     <string name="char_xp_progress">XP: %1$d / %2$d XP</string>
+    <string name="char_xp_max_level">XP: %1$d · max level</string>
+    <string name="char_level_max">MAX</string>
     <string name="char_free_xp">Free XP</string>
     <string name="char_free_xp_balance">🎓 %1$d</string>
     <string name="char_level_reward_bonus">Rewards ×%1$.2f from level</string>
@@ -367,24 +368,25 @@
     <string name="ach_streak30_title">Unstoppable</string>
     <string name="ach_streak30_desc">A 30-day streak</string>
     <string name="ach_maxed_stat_title">Maxed Out</string>
-    <string name="ach_maxed_stat_desc">Upgrade a characteristic to 20</string>
+    <string name="ach_maxed_stat_desc">Max out a characteristic</string>
     <string name="ach_all_categories_title">All-Rounder</string>
     <string name="ach_all_categories_desc">Play every topic</string>
-    <string name="ach_level10_title">Sage</string>
+    <string name="ach_level10_title">Apprentice</string>
     <string name="ach_level10_desc">Reach level 10</string>
+    <string name="ach_level30_title">Expert</string>
+    <string name="ach_level30_desc">Reach level 30</string>
+    <string name="ach_level60_title">Master</string>
+    <string name="ach_level60_desc">Reach level 60</string>
+    <string name="ach_level90_title">Grand Sage</string>
+    <string name="ach_level90_desc">Reach level 90</string>
+    <string name="ach_level120_title">Immortal Sage</string>
+    <string name="ach_level120_desc">Reach level 120</string>
     <string name="ach_hundred_quizzes_title">Quiz Legend</string>
     <string name="ach_hundred_quizzes_desc">Complete 100 quizzes</string>
     <string name="ach_streak14_title">Two Weeks on Fire</string>
     <string name="ach_streak14_desc">A 14-day streak</string>
     <string name="ach_streak100_title">Immortal Streak</string>
     <string name="ach_streak100_desc">A 100-day streak</string>
-
-    <!-- Work on mistakes -->
-    <string name="mistakes_card_title">Work on mistakes</string>
-    <string name="mistakes_card_subtitle">Questions to review: %1$d</string>
-    <string name="mistakes_card_button">Review</string>
-    <string name="mistakes_category_title">Work on mistakes</string>
-    <string name="mistakes_empty">No mistakes to review — great job!</string>
 
     <!-- Adaptive difficulty -->
     <string name="difficulty_adaptive_label">Adaptive</string>

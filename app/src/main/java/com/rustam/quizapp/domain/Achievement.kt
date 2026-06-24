@@ -52,9 +52,13 @@ object Achievements {
         Achievement("streak_14", "🌠", R.string.ach_streak14_title, R.string.ach_streak14_desc, 350) { it.bestStreak to 14 },
         Achievement("streak_30", "🌟", R.string.ach_streak30_title, R.string.ach_streak30_desc, 500) { it.bestStreak to 30 },
         Achievement("streak_100", "💎", R.string.ach_streak100_title, R.string.ach_streak100_desc, 1000) { it.bestStreak to 100 },
-        Achievement("maxed_stat", "💪", R.string.ach_maxed_stat_title, R.string.ach_maxed_stat_desc, 300) { (if (it.hasMaxedStat) 1 else 0) to 1 },
+        Achievement("maxed_stat", "💪", R.string.ach_maxed_stat_title, R.string.ach_maxed_stat_desc, 500) { (if (it.hasMaxedStat) 1 else 0) to 1 },
         Achievement("all_categories", "🗺️", R.string.ach_all_categories_title, R.string.ach_all_categories_desc, 200) { it.categoriesPlayed to it.totalCategories.coerceAtLeast(1) },
-        Achievement("level_10", "👑", R.string.ach_level10_title, R.string.ach_level10_desc, 250) { it.level to 10 }
+        Achievement("level_10", "👑", R.string.ach_level10_title, R.string.ach_level10_desc, 200) { it.level to 10 },
+        Achievement("level_30", "🌟", R.string.ach_level30_title, R.string.ach_level30_desc, 350) { it.level to 30 },
+        Achievement("level_60", "🏆", R.string.ach_level60_title, R.string.ach_level60_desc, 500) { it.level to 60 },
+        Achievement("level_90", "💫", R.string.ach_level90_title, R.string.ach_level90_desc, 750) { it.level to 90 },
+        Achievement("level_120", "💎", R.string.ach_level120_title, R.string.ach_level120_desc, 1500) { it.level to 120 }
     )
 
     fun satisfied(metrics: AchievementMetrics): Set<String> =

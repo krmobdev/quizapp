@@ -64,6 +64,7 @@ data class PlayerUiState(
     val stats: CharacterStats = CharacterStats(),
     val skillTree: SkillTreeState = SkillTreeState(),
     val lifetimePoints: Int = 0,
+    val bankedLifetimePoints: Int = 0,
     val lifetimeCoins: Int = 0,
     val equippedTitleId: String? = null,
     val streakCurrent: Int = 0,
@@ -160,12 +161,15 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             totalQuizzes = stats.totalQuizzesCompleted,
             totalCorrect = totalCorrect,
             bestStreak = streak.best,
-            level = com.rustam.quizapp.domain.CharacterLevelCalculator.calculateLevel(profile.lifetimePoints),
+            level = com.rustam.quizapp.domain.CharacterLevelCalculator.calculateLevel(
+                profile.lifetimePoints,
+                profile.bankedLifetimePoints
+            ),
             hasMaxedStat = listOf(
                 profile.stats.strength, profile.stats.intelligence, profile.stats.agility,
                 profile.stats.luck, profile.stats.wisdom, profile.stats.endurance,
                 profile.stats.focus, profile.stats.charisma
-            ).any { it >= 20 },
+            ).any { it >= com.rustam.quizapp.domain.CharacterLevelCalculator.MAX_STAT },
             hasPerfectQuiz = stats.categories.any { it.bestScorePercent >= 100 },
             categoriesPlayed = stats.categories.count { it.quizzesCompleted > 0 },
             totalCategories = questionRepository.getCategories().size
@@ -197,6 +201,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             stats = profile.stats,
             skillTree = profile.skillTree,
             lifetimePoints = profile.lifetimePoints,
+            bankedLifetimePoints = profile.bankedLifetimePoints,
             lifetimeCoins = profile.lifetimeCoins,
             equippedTitleId = profile.equippedTitleId,
             streakCurrent = streak.current,
