@@ -32,12 +32,12 @@ class StreakRepository(context: Context) {
         val last = streak.lastPlayedDay
         val stored = streak.current
         val freezes = streak.freezeCount
-        val missedDays = today - last - 1
+        val missedDays = if (last >= 0) today - last - 1 else Long.MAX_VALUE
         // The streak survives a gap if the player owns enough Streak Freezes to cover
         // every missed day; the freezes are actually consumed on the next [recordPlayed].
         val current = when {
             last == today || last == today - 1 -> stored
-            missedDays in 1..freezes -> stored
+            last >= 0 && missedDays in 1..freezes -> stored
             else -> 0
         }
         StreakState(
@@ -68,7 +68,7 @@ class StreakRepository(context: Context) {
         val last = streak.lastPlayedDay
         val stored = streak.current
         val freezes = streak.freezeCount
-        val missedDays = today - last - 1
+        val missedDays = if (last >= 0) today - last - 1 else Long.MAX_VALUE
         var newFreezes = freezes
         val newCurrent = when {
             last == today -> stored.coerceAtLeast(1) // already counted today

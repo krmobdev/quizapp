@@ -36,6 +36,9 @@ data class CharacterStats(
  * Progression logic for computing levels and ranks from overall lifetime points (XP).
  */
 object CharacterLevelCalculator {
+    /** Maximum value any single character stat can be upgraded to. */
+    const val MAX_STAT = 50
+
     /**
      * Calculates the player level (1-based) from total lifetime XP.
      * Formula: XP(L) = 50 * L * (L - 1)
@@ -60,8 +63,11 @@ object CharacterLevelCalculator {
     /** Level beyond which coins start scaling faster than XP. */
     const val HIGH_LEVEL_THRESHOLD = 20
 
+    /** Base coin multiplier gained per player level above 1 (coins scale faster than XP). */
+    const val COIN_BONUS_PER_LEVEL = 0.35f
+
     /** Extra coin multiplier gained per player level above [HIGH_LEVEL_THRESHOLD]. */
-    const val HIGH_LEVEL_COIN_BONUS_PER_LEVEL = 0.15f
+    const val HIGH_LEVEL_COIN_BONUS_PER_LEVEL = 0.70f
 
     /**
      * Reward multiplier applied to quiz rewards based on the player's level.
@@ -71,12 +77,14 @@ object CharacterLevelCalculator {
         1f + (level - 1).coerceAtLeast(0) * REWARD_BONUS_PER_LEVEL
 
     /**
-     * Coin reward multiplier. Matches [rewardMultiplier] up to [HIGH_LEVEL_THRESHOLD], then
-     * grows faster so high-level players earn noticeably more coins.
-     * E.g. level 20 = x2.9, level 30 = x5.4, level 40 = x7.9.
+     * Coin reward multiplier. Coins scale faster than XP (+20% per level), and even faster
+     * past [HIGH_LEVEL_THRESHOLD] (+40% extra per level) so high-level players earn noticeably
+     * more coins each game.
+     * E.g. level 10 = x4.2, level 20 = x7.7, level 30 = x18.2, level 40 = x28.7.
+     * Combined with the higher base payout, a strong run at level 30 yields ~300-400 coins.
      */
     fun coinRewardMultiplier(level: Int): Float =
-        rewardMultiplier(level) +
+        1f + (level - 1).coerceAtLeast(0) * COIN_BONUS_PER_LEVEL +
             (level - HIGH_LEVEL_THRESHOLD).coerceAtLeast(0) * HIGH_LEVEL_COIN_BONUS_PER_LEVEL
 
     /** Returns details about current level progression for progress bars. */

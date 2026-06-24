@@ -108,6 +108,19 @@ interface DailyRewardDao {
 }
 
 @Dao
+interface DailyQuestDao {
+
+    @Query("SELECT * FROM daily_quest WHERE id = 0")
+    fun observe(): Flow<DailyQuestEntity?>
+
+    @Query("SELECT * FROM daily_quest WHERE id = 0")
+    suspend fun get(): DailyQuestEntity?
+
+    @Upsert
+    suspend fun upsert(entity: DailyQuestEntity)
+}
+
+@Dao
 interface AchievementDao {
 
     @Query("SELECT id FROM achievement")
@@ -144,5 +157,7 @@ interface BackupDao {
     @Query("DELETE FROM category_stats") suspend fun clearCategoryStats()
     @Query("DELETE FROM streak") suspend fun clearStreak()
     @Query("DELETE FROM daily_reward") suspend fun clearDailyReward()
+    @Query("DELETE FROM daily_quest") suspend fun clearDailyQuest()
     @Query("DELETE FROM achievement") suspend fun clearAchievements()
+    @Query("DELETE FROM app_state") suspend fun clearAppState()
 }

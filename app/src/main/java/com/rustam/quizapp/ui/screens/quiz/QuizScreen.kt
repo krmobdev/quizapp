@@ -10,6 +10,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -24,6 +25,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Check
@@ -46,6 +48,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
@@ -55,12 +58,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
+import com.rustam.quizapp.domain.PowerUpType
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizResult
+import com.rustam.quizapp.domain.ShopCatalog
 import com.rustam.quizapp.ui.components.AppActionButton
 import com.rustam.quizapp.ui.components.AppBackground
 import com.rustam.quizapp.ui.components.AppDimens
@@ -90,7 +96,7 @@ fun QuizScreen(
         viewModel.saveAndExit(onDone = onBack)
     }
 
-    LaunchedEffect(categoryId, difficulty, eventType, questionTimeSeconds, questionCount, adaptive) {
+    LaunchedEffect(Unit) {
         viewModel.prepare(
             categoryId = categoryId,
             difficulty = difficulty,
@@ -320,15 +326,17 @@ private fun QuestionLayout(
                     Text(
                         text = question.text,
                         style = MaterialTheme.typography.headlineSmall,
+                        fontSize = 22.sp,
+                        lineHeight = 28.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = colors.questionText,
                         modifier = Modifier.padding(
                             horizontal = AppDimens.CardPaddingH,
-                            vertical = AppDimens.CardPaddingV
+                            vertical = 18.dp
                         )
                     )
                 }
-                Spacer(Modifier.height(20.dp))
+                Spacer(Modifier.height(16.dp))
 
                 question.options.forEachIndexed { index, option ->
                     val eliminated = index in pageState.hiddenOptions
@@ -347,7 +355,7 @@ private fun QuestionLayout(
                             onAnswerSelected(index)
                         }
                     )
-                    Spacer(Modifier.height(AppDimens.CardSpacing))
+                    Spacer(Modifier.height(10.dp))
                 }
 
                 if (pageState.showExplanation && question.explanation != null) {
@@ -383,10 +391,10 @@ private fun PowerUpBar(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(10.dp)
     ) {
-        com.rustam.quizapp.domain.ShopCatalog.powerUps.forEach { powerUp ->
+        ShopCatalog.powerUps.forEach { powerUp ->
             val count = state.powerUpCounts[powerUp.id] ?: 0
             val usable = when (powerUp.type) {
-                com.rustam.quizapp.domain.PowerUpType.FIFTY_FIFTY -> count > 0 && state.hiddenOptions.isEmpty()
+                PowerUpType.FIFTY_FIFTY -> count > 0 && state.hiddenOptions.isEmpty()
                 else -> count > 0
             }
             PowerUpButton(
@@ -395,9 +403,9 @@ private fun PowerUpBar(
                 enabled = usable,
                 colors = colors,
                 onClick = when (powerUp.type) {
-                    com.rustam.quizapp.domain.PowerUpType.FIFTY_FIFTY -> onFiftyFifty
-                    com.rustam.quizapp.domain.PowerUpType.ADD_TIME -> onAddTime
-                    com.rustam.quizapp.domain.PowerUpType.SKIP -> onSkip
+                    PowerUpType.FIFTY_FIFTY -> onFiftyFifty
+                    PowerUpType.ADD_TIME -> onAddTime
+                    PowerUpType.SKIP -> onSkip
                 },
                 modifier = Modifier.weight(1f)
             )
@@ -475,7 +483,7 @@ private fun AnswerButton(
     }
     val borderColor = when (answerState) {
         AnswerVisual.NEUTRAL -> colors.answerBorder
-        AnswerVisual.CORRECT -> colors.correct.copy(alpha = 0.6f)
+        AnswerVisual.CORRECT -> Color.White.copy(alpha = 0.55f)
         AnswerVisual.WRONG -> colors.wrong.copy(alpha = 0.6f)
     }
     val badgeBg = when (answerState) {
@@ -486,6 +494,7 @@ private fun AnswerButton(
         AnswerVisual.NEUTRAL -> colors.answerBadgeText
         else -> Color.White
     }
+    val isCorrect = answerState == AnswerVisual.CORRECT
 
     Surface(
         onClick = onClick,
@@ -493,20 +502,22 @@ private fun AnswerButton(
         shape = AppShapes.Card,
         color = container,
         contentColor = content,
+        shadowElevation = if (isCorrect) 6.dp else 0.dp,
         modifier = Modifier
             .fillMaxWidth()
             .alpha(if (eliminated) 0.35f else 1f)
-            .border(1.dp, borderColor, AppShapes.Card)
+            .border(
+                width = if (isCorrect) 1.5.dp else 1.dp,
+                color = borderColor,
+                shape = AppShapes.Card
+            )
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
-            modifier = Modifier.padding(
-                horizontal = AppDimens.CardPaddingH,
-                vertical = AppDimens.CardPaddingV
-            )
+            horizontalArrangement = Arrangement.spacedBy(14.dp),
+            modifier = Modifier.padding(horizontal = 18.dp, vertical = 14.dp)
         ) {
-            OptionBadge(label = label, background = badgeBg, content = badgeText)
+            OptionBadge(label = label, background = badgeBg, content = badgeText, size = 38.dp)
             Text(
                 text = text,
                 style = MaterialTheme.typography.titleMedium,
@@ -514,19 +525,32 @@ private fun AnswerButton(
                 modifier = Modifier.weight(1f)
             )
             when (answerState) {
-                AnswerVisual.CORRECT -> Icon(
-                    imageVector = Icons.Rounded.Check,
-                    contentDescription = stringResource(R.string.answer_correct),
-                    modifier = Modifier.size(28.dp)
-                )
-                AnswerVisual.WRONG -> Icon(
-                    imageVector = Icons.Rounded.Close,
-                    contentDescription = stringResource(R.string.answer_wrong),
-                    modifier = Modifier.size(28.dp)
-                )
+                AnswerVisual.CORRECT -> ResultBadge(correct = true, accent = colors.correct)
+                AnswerVisual.WRONG -> ResultBadge(correct = false, accent = colors.wrong)
                 AnswerVisual.NEUTRAL -> Unit
             }
         }
+    }
+}
+
+/** A crisp white circular chip with the result glyph, used on answered option cards. */
+@Composable
+private fun ResultBadge(correct: Boolean, accent: Color) {
+    Box(
+        modifier = Modifier
+            .size(28.dp)
+            .clip(CircleShape)
+            .background(Color.White),
+        contentAlignment = Alignment.Center
+    ) {
+        Icon(
+            imageVector = if (correct) Icons.Rounded.Check else Icons.Rounded.Close,
+            contentDescription = stringResource(
+                if (correct) R.string.answer_correct else R.string.answer_wrong
+            ),
+            tint = accent,
+            modifier = Modifier.size(20.dp)
+        )
     }
 }
 

@@ -59,7 +59,7 @@ class QuizSession(
     }
 
     fun nextQuestion() {
-        if (currentIndex < questions.size) currentIndex++
+        if (!isFinished()) currentIndex++
     }
 
     fun isFinished(): Boolean = currentIndex >= questions.size

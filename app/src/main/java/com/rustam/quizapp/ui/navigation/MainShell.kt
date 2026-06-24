@@ -47,6 +47,8 @@ fun MainShell(
     modifier: Modifier = Modifier
 ) {
     var selectedTab by rememberSaveable { mutableStateOf(MainTab.Home) }
+    // Controls bottom nav visibility when HomeScreen enters "overlay" mode (category selected for difficulty picker).
+    // HomeScreen notifies via onOverlayModeChange when selectedCategory changes.
     var hideBottomBar by rememberSaveable { mutableStateOf(false) }
 
     val textColor = MaterialTheme.colorScheme.onSurface

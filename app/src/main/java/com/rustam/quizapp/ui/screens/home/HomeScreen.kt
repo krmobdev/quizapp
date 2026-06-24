@@ -25,6 +25,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
@@ -40,6 +41,7 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
@@ -55,6 +57,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -64,6 +67,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Category
+import com.rustam.quizapp.data.DailyChallengeProgress
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.domain.QuizEventProgress
 import com.rustam.quizapp.domain.QuizEventType
@@ -102,6 +106,7 @@ fun HomeScreen(
         onDifficultySelected = viewModel::selectDifficulty,
         onBack = viewModel::clearSelection,
         onClaimDaily = viewModel::claimDailyReward,
+        onClaimQuest = viewModel::claimDailyQuest,
         onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount, adaptive ->
             viewModel.playClick()
             onStartQuiz(categoryId, difficulty, event, timeLimit, questionCount, adaptive)
@@ -118,6 +123,7 @@ private fun HomeContent(
     onDifficultySelected: (DifficultyFilter) -> Unit,
     onBack: () -> Unit,
     onClaimDaily: () -> Unit,
+    onClaimQuest: (Int) -> Unit,
     onStartQuiz: (
         categoryId: String,
         difficulty: Difficulty?,
@@ -168,9 +174,13 @@ private fun HomeContent(
                 events = state.events,
                 categories = state.categories,
                 streak = state.streak,
+                coinBoostLeft = state.coinBoostLeft,
+                xpBoostLeft = state.xpBoostLeft,
                 dailyReward = state.dailyReward,
+                dailyQuests = state.dailyQuests,
                 mistakesCount = state.mistakesCount,
                 onClaimDaily = onClaimDaily,
+                onClaimQuest = onClaimQuest,
                 onCategoryClick = onCategoryClick,
                 onStartMistakes = {
                     onStartQuiz(
@@ -223,9 +233,13 @@ private fun HomeScrollContent(
     events: List<QuizEventProgress>,
     categories: List<Category>,
     streak: Int,
+    coinBoostLeft: Int,
+    xpBoostLeft: Int,
     dailyReward: com.rustam.quizapp.data.DailyRewardState,
+    dailyQuests: List<DailyChallengeProgress>,
     mistakesCount: Int,
     onClaimDaily: () -> Unit,
+    onClaimQuest: (Int) -> Unit,
     onCategoryClick: (Category) -> Unit,
     onStartMistakes: () -> Unit,
     onStartEvent: (QuizEventProgress) -> Unit,
@@ -236,7 +250,12 @@ private fun HomeScrollContent(
         contentPadding = PaddingValues(bottom = 16.dp)
     ) {
         item {
-            HomeHeroHeader(streak = streak, modifier = Modifier.fillMaxWidth())
+            HomeHeroHeader(
+                streak = streak,
+                coinBoostLeft = coinBoostLeft,
+                xpBoostLeft = xpBoostLeft,
+                modifier = Modifier.fillMaxWidth()
+            )
         }
         if (dailyReward.canClaim) {
             item {
@@ -254,6 +273,26 @@ private fun HomeScrollContent(
                 MistakesCard(
                     count = mistakesCount,
                     onStart = onStartMistakes,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp, vertical = 4.dp)
+                )
+            }
+        }
+        if (dailyQuests.isNotEmpty()) {
+            item {
+                Text(
+                    text = stringResource(R.string.quests_section_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = appTextColor(),
+                    modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)
+                )
+            }
+            itemsIndexed(dailyQuests, key = { _, quest -> quest.challenge.id }) { index, quest ->
+                DailyQuestCard(
+                    quest = quest,
+                    onClaim = { onClaimQuest(index) },
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 20.dp, vertical = 4.dp)
@@ -396,7 +435,95 @@ private fun MistakesCard(
 }
 
 @Composable
-private fun HomeHeroHeader(streak: Int, modifier: Modifier = Modifier) {
+private fun DailyQuestCard(
+    quest: DailyChallengeProgress,
+    onClaim: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    val challenge = quest.challenge
+    GlassCard(modifier = modifier, colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 14.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = challenge.emoji, fontSize = 30.sp)
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                Text(
+                    text = stringResource(challenge.titleRes, challenge.target),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                LinearProgressIndicator(
+                    progress = { quest.progressFraction },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(6.dp),
+                    strokeCap = StrokeCap.Round,
+                    trackColor = colors.progressTrack,
+                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
+                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(
+                        text = stringResource(R.string.player_fraction, quest.current, challenge.target),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = textColor.copy(alpha = 0.75f)
+                    )
+                    Text(
+                        text = stringResource(R.string.quest_reward, challenge.rewardCoins, challenge.rewardXp),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+            }
+            when {
+                quest.claimed -> {
+                    Icon(
+                        imageVector = Icons.Rounded.CheckCircle,
+                        contentDescription = stringResource(R.string.quest_claimed),
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(26.dp)
+                    )
+                }
+                quest.canClaim -> {
+                    Button(
+                        onClick = onClaim,
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.9f),
+                            contentColor = MaterialTheme.colorScheme.onPrimary
+                        ),
+                        shape = AppShapes.Button
+                    ) {
+                        Text(
+                            text = stringResource(R.string.daily_reward_claim),
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun HomeHeroHeader(
+    streak: Int,
+    coinBoostLeft: Int,
+    xpBoostLeft: Int,
+    modifier: Modifier = Modifier
+) {
     val quote = rememberDailyQuote()
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
 
@@ -417,6 +544,16 @@ private fun HomeHeroHeader(streak: Int, modifier: Modifier = Modifier) {
         )
         if (streak > 0) {
             StreakChip(streak = streak)
+        }
+        if (coinBoostLeft > 0 || xpBoostLeft > 0) {
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                if (coinBoostLeft > 0) {
+                    BoostChip(text = stringResource(R.string.boost_active_coins, coinBoostLeft))
+                }
+                if (xpBoostLeft > 0) {
+                    BoostChip(text = stringResource(R.string.boost_active_xp, xpBoostLeft))
+                }
+            }
         }
         if (quote.isNotBlank()) {
             Text(
@@ -446,6 +583,23 @@ private fun StreakChip(streak: Int, modifier: Modifier = Modifier) {
             fontWeight = FontWeight.SemiBold,
             color = appTextColor(),
             modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp)
+        )
+    }
+}
+
+@Composable
+private fun BoostChip(text: String, modifier: Modifier = Modifier) {
+    Surface(
+        shape = AppShapes.Badge,
+        color = MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.85f),
+        modifier = modifier
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.labelMedium,
+            fontWeight = FontWeight.SemiBold,
+            color = appTextColor(),
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 5.dp)
         )
     }
 }
@@ -857,6 +1011,7 @@ private fun HomeContentCategoriesPreview() {
             onDifficultySelected = {},
             onBack = {},
             onClaimDaily = {},
+            onClaimQuest = {},
             onStartQuiz = { _, _, _, _, _, _ -> }
         )
     }
@@ -876,6 +1031,7 @@ private fun HomeContentDifficultyDarkPreview() {
             onDifficultySelected = {},
             onBack = {},
             onClaimDaily = {},
+            onClaimQuest = {},
             onStartQuiz = { _, _, _, _, _, _ -> }
         )
     }

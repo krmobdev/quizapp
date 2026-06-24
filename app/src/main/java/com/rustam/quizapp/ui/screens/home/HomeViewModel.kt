@@ -7,6 +7,8 @@ import com.rustam.quizapp.audio.SoundManager
 import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.Category
+import com.rustam.quizapp.data.DailyChallengeProgress
+import com.rustam.quizapp.data.DailyQuestRepository
 import com.rustam.quizapp.data.DailyRewardRepository
 import com.rustam.quizapp.data.DailyRewardState
 import com.rustam.quizapp.data.Difficulty
@@ -16,6 +18,7 @@ import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.StreakRepository
 import com.rustam.quizapp.domain.QuizEventProgress
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -46,7 +49,11 @@ data class HomeUiState(
     val events: List<QuizEventProgress> = emptyList(),
     val streak: Int = 0,
     val dailyReward: DailyRewardState = DailyRewardState(),
-    val mistakesCount: Int = 0
+    val mistakesCount: Int = 0,
+    /** Remaining quizzes for the active temporary boosts (0 = inactive). */
+    val coinBoostLeft: Int = 0,
+    val xpBoostLeft: Int = 0,
+    val dailyQuests: List<DailyChallengeProgress> = emptyList()
 )
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
@@ -55,11 +62,13 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private val playerRepository = PlayerRepository(application, repository)
     private val streakRepository = StreakRepository(application)
     private val dailyRewardRepository = DailyRewardRepository(application)
+    private val dailyQuestRepository = DailyQuestRepository(application)
     private val mistakesRepository = MistakesRepository(application)
+    private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
-        soundEnabled = SettingsRepository(application).soundEnabled,
+        soundEnabled = settingsRepository.soundEnabled,
         scope = viewModelScope
     )
 
@@ -67,7 +76,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         NavigationSlice(categories = repository.getCategories())
     )
 
-    val uiState: StateFlow<HomeUiState> = combine(
+    private val coreState: Flow<HomeUiState> = combine(
         navigationState,
         playerRepository.observeProfile(),
         streakRepository.observeStreak(),
@@ -81,8 +90,17 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             events = profile.eventProgress,
             streak = streak.current,
             dailyReward = dailyReward,
-            mistakesCount = mistakesCount
+            mistakesCount = mistakesCount,
+            coinBoostLeft = profile.coinBoostQuizzesLeft,
+            xpBoostLeft = profile.xpBoostQuizzesLeft
         )
+    }
+
+    val uiState: StateFlow<HomeUiState> = combine(
+        coreState,
+        dailyQuestRepository.observe()
+    ) { core, quests ->
+        core.copy(dailyQuests = quests.challenges)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), HomeUiState())
 
     /** Claims today's daily reward and credits the coins. */
@@ -91,6 +109,18 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             val reward = dailyRewardRepository.claim()
             if (reward > 0) {
                 playerRepository.addCoins(reward)
+                soundManager.play(SoundType.COMPLETE)
+            }
+        }
+    }
+
+    /** Claims the daily quest at [index] (if complete) and credits its coin + XP reward. */
+    fun claimDailyQuest(index: Int) {
+        viewModelScope.launch {
+            val challenge = dailyQuestRepository.claim(index)
+            if (challenge != null) {
+                playerRepository.addCoins(challenge.rewardCoins)
+                playerRepository.addXp(challenge.rewardXp)
                 soundManager.play(SoundType.COMPLETE)
             }
         }

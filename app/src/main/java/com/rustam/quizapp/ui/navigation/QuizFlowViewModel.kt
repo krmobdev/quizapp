@@ -8,6 +8,9 @@ import com.rustam.quizapp.domain.QuizResult
  *
  * The quiz screen publishes its [QuizResult] here when finished; the result screen
  * reads it.
+ *
+ * NOTE: [result] may be null if the screen is reached via back navigation / recreation
+ * without a fresh publish. ResultScreen must handle null gracefully (it does).
  */
 class QuizFlowViewModel : ViewModel() {
 

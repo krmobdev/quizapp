@@ -150,6 +150,7 @@
     <string name="shop_booster_small">Малый бустер</string>
     <string name="shop_booster_medium">Средний бустер</string>
     <string name="shop_booster_large">Большой бустер</string>
+    <string name="shop_booster_huge">Огромный бустер</string>
     <string name="shop_booster_desc">+%1$d опыта при активации</string>
     <string name="shop_owned_count">В рюкзаке: %1$d</string>
     <string name="inventory_title">Рюкзак</string>
@@ -172,6 +173,47 @@
     <string name="shop_streak_freeze_section">Защита серии</string>
     <string name="shop_streak_freeze_title">Заморозка серии 🧊</string>
     <string name="shop_streak_freeze_desc">Сохраняет дневную серию, если вы пропустили день</string>
+
+    <!-- Сундук удачи (лутбокс) -->
+    <string name="shop_lootbox_section">Сундук удачи</string>
+    <string name="shop_lootbox_title">Сундук удачи 🎁</string>
+    <string name="shop_lootbox_desc">Случайная награда: монеты, опыт, аватар или титул</string>
+    <string name="shop_lootbox_open">Открыть</string>
+    <string name="loot_reveal_title">Вам выпало!</string>
+    <string name="loot_coins">+%1$d монет</string>
+    <string name="loot_xp">+%1$d опыта</string>
+    <string name="loot_avatar">Новый аватар!</string>
+    <string name="loot_title">Новый титул: %1$s</string>
+    <string name="loot_close">Отлично!</string>
+
+    <!-- Временные усиления (бусты ×2) -->
+    <string name="shop_boosts_section">Временные усиления</string>
+    <string name="boost_coins_title">Монетный бум 💰</string>
+    <string name="boost_coins_desc">×2 монеты за следующие %1$d игр</string>
+    <string name="boost_xp_title">Прилив опыта 🎓</string>
+    <string name="boost_xp_desc">×2 опыта за следующие %1$d игр</string>
+    <string name="boost_active_coins">💰 ×2 монеты · осталось игр: %1$d</string>
+    <string name="boost_active_xp">🎓 ×2 опыта · осталось игр: %1$d</string>
+    <string name="boost_inventory_active">Активно · осталось игр: %1$d</string>
+    <string name="boost_activated_snackbar">Усиление включено! ×2 на %1$d игр</string>
+    <string name="reward_breakdown_boost">Усиление ×2</string>
+
+    <!-- Титулы (косметика для карточки игрока) -->
+    <string name="shop_titles">Титулы</string>
+    <string name="shop_titles_hint">Покупайте титулы за монеты — они отображаются в вашей карточке. Нажмите на выбранный, чтобы снять.</string>
+    <string name="title_none">Без титула</string>
+    <string name="title_curious">Любопытный</string>
+    <string name="title_bookworm">Книжный червь</string>
+    <string name="title_sharp">Острый ум</string>
+    <string name="title_scholar">Эрудит</string>
+    <string name="title_genius">Гений</string>
+    <string name="title_quizmaster">Мастер викторин</string>
+    <string name="title_sage">Мудрец</string>
+    <string name="title_champion">Чемпион</string>
+    <string name="title_legend">Легенда</string>
+    <string name="title_firemind">Огненный разум</string>
+    <string name="title_cosmic">Космический разум</string>
+    <string name="title_immortal">Бессмертный знаток</string>
     <string name="theme_accent_mint">Мятная</string>
     <string name="theme_accent_ocean">Океан</string>
     <string name="theme_accent_grape">Виноград</string>
@@ -181,6 +223,9 @@
     <string name="theme_accent_forest">Лес</string>
     <string name="theme_accent_crimson">Багровая</string>
     <string name="theme_accent_midnight">Полночь</string>
+    <string name="theme_accent_aqua">Аква</string>
+    <string name="theme_accent_lavender">Лаванда</string>
+    <string name="theme_accent_slate">Графит</string>
 
     <string-array name="daily_quotes">
         <item>Знание — сила, а практика — ключ к мастерству.</item>
@@ -224,8 +269,40 @@
     <string name="char_bonus_xp_detail"> (+%1$d от Силы)</string>
     <string name="char_bonus_coins_detail"> (+%1$d от Интеллекта)</string>
 
+    <!-- Карточка игрока — дашборд -->
+    <string name="player_best_streak">Рекорд серии</string>
+    <string name="player_achievements">Достижения</string>
+    <string name="player_lifetime_coins">Монет за всё время</string>
+    <string name="player_total_quizzes">Всего квизов</string>
+    <string name="player_fraction">%1$d / %2$d</string>
+    <string name="player_bonuses_title">Активные бонусы</string>
+    <string name="player_bonus_xp">+%1$d%% опыта</string>
+    <string name="player_bonus_coins">+%1$d%% монет</string>
+    <string name="player_bonus_crit">%1$d%% крит</string>
+    <string name="player_bonus_time">+%1$.1f с</string>
+    <string name="player_bonus_none">Прокачайте характеристики и навыки, чтобы получить бонусы</string>
+
     <string name="stats_characteristics_tab">Характеристики</string>
+    <string name="stats_skilltree_tab">Навыки</string>
     <string name="stats_game_stats_tab">Статистика игр</string>
+    <string name="skill_tree_title">Древо мастерства</string>
+    <string name="skill_tree_balance">🎓 %1$d • 🪙 %2$d</string>
+    <string name="skill_tree_hint">Вкладывайте свободный опыт и монеты в ветви мастерства. Каждый уровень даёт постоянный бонус.</string>
+    <string name="skill_maxed">МАКС</string>
+    <string name="skill_cost_xp">%1$d 🎓</string>
+    <string name="skill_cost_coins">%1$d 🪙</string>
+    <string name="skill_erudition">Эрудиция</string>
+    <string name="skill_erudition_desc">Сейчас: +%1$d%% к опыту за игру</string>
+    <string name="skill_commerce">Коммерция</string>
+    <string name="skill_commerce_desc">Сейчас: +%1$d%% к монетам за игру</string>
+    <string name="skill_fortune">Фортуна</string>
+    <string name="skill_fortune_desc">Сейчас: +%1$d%% к шансу двойной награды</string>
+    <string name="skill_chronos">Хронос</string>
+    <string name="skill_chronos_desc">Сейчас: +%1$.1f сек к таймеру вопроса</string>
+    <string name="skill_sage">Мудрость</string>
+    <string name="skill_sage_desc">Сейчас: +%1$d опыта за игру</string>
+    <string name="skill_resilience">Стойкость</string>
+    <string name="skill_resilience_desc">Сейчас: +%1$d монет за игру</string>
     <string name="stats_character_stats_title">Характеристики персонажа</string>
     <string name="rewards_points_label">очков</string>
     <string name="rewards_coins_label">монет</string>
@@ -250,6 +327,15 @@
     <string name="home_streak_chip">🔥 %1$d дней подряд</string>
     <string name="stats_streak">Серия</string>
     <string name="stats_streak_value">🔥 %1$d</string>
+
+    <!-- Задания дня -->
+    <string name="quests_section_title">Задания дня</string>
+    <string name="quest_play_quizzes">Сыграйте %1$d квизов</string>
+    <string name="quest_answer_correct">Ответьте верно %1$d раз</string>
+    <string name="quest_perfect_quiz">Пройдите квиз без ошибок</string>
+    <string name="quest_earn_coins">Заработайте %1$d монет</string>
+    <string name="quest_reward">+%1$d 🪙 · +%2$d 🎓</string>
+    <string name="quest_claimed">Получено ✓</string>
 
     <!-- Напоминания -->
     <string name="reminder_channel_name">Напоминания о серии</string>

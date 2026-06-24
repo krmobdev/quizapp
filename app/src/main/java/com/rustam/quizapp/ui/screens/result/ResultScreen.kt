@@ -33,6 +33,8 @@ import androidx.compose.ui.unit.dp
 import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.Question
+import com.rustam.quizapp.domain.Achievement
+import com.rustam.quizapp.domain.CharacterLevelCalculator
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.QuizResult
 import com.rustam.quizapp.domain.QuizReward
@@ -241,7 +243,7 @@ private fun ResultContent(
 
 @Composable
 private fun NewAchievementsBanner(
-    achievements: List<com.rustam.quizapp.domain.Achievement>,
+    achievements: List<Achievement>,
     textColor: androidx.compose.ui.graphics.Color
 ) {
     Surface(
@@ -397,6 +399,13 @@ private fun RewardBreakdownCard(
                     textColor = MaterialTheme.colorScheme.primary
                 )
             }
+            if (reward.xpBoosted || reward.coinBoosted) {
+                BreakdownRow(
+                    label = stringResource(R.string.reward_breakdown_boost),
+                    value = stringResource(R.string.reward_breakdown_value, reward.points, reward.coins),
+                    textColor = MaterialTheme.colorScheme.primary
+                )
+            }
             BreakdownRow(
                 label = stringResource(R.string.reward_breakdown_total),
                 value = stringResource(R.string.reward_breakdown_value, reward.points, reward.coins),
@@ -441,11 +450,11 @@ private fun LevelUpBanner(
 ) {
     val locale = androidx.compose.ui.platform.LocalConfiguration.current.locales[0]
     val rankName = if (locale.language == "en") {
-        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRankEn(reward.newLevel)
+        CharacterLevelCalculator.getLevelRankEn(reward.newLevel)
     } else {
-        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRank(reward.newLevel)
+        CharacterLevelCalculator.getLevelRank(reward.newLevel)
     }
-    val multiplier = com.rustam.quizapp.domain.CharacterLevelCalculator.rewardMultiplier(reward.newLevel)
+    val multiplier = CharacterLevelCalculator.rewardMultiplier(reward.newLevel)
 
     Surface(
         color = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),

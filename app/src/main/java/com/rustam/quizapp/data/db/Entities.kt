@@ -28,7 +28,14 @@ data class PlayerEntity(
     val lifetimePoints: Int = 0,
     val avatarId: String? = null,
     val themeId: String? = null,
+    /** Equipped cosmetic title id (see ShopCatalog.titles); null = no title shown. */
+    val equippedTitleId: String? = null,
     val promoRedeemed: Boolean = false,
+    /** Total coins ever earned (never decreases when spending) — powers the player-card dashboard. */
+    val lifetimeCoins: Int = 0,
+    /** Remaining quizzes the active temporary boosts apply to (0 = inactive). */
+    val coinBoostQuizzesLeft: Int = 0,
+    val xpBoostQuizzesLeft: Int = 0,
     val strength: Int = 0,
     val intelligence: Int = 0,
     val agility: Int = 0,
@@ -37,6 +44,13 @@ data class PlayerEntity(
     val endurance: Int = 0,
     val focus: Int = 0,
     val charisma: Int = 0,
+    // Mastery Tree: unlocked tier count per skill branch (see domain SkillBranch).
+    val skillErudition: Int = 0,
+    val skillCommerce: Int = 0,
+    val skillFortune: Int = 0,
+    val skillChronos: Int = 0,
+    val skillSage: Int = 0,
+    val skillResilience: Int = 0,
     val dailyCompletedDay: Long = -1L,
     val weeklyEpoch: Long = -1L,
     val weeklyCompletions: Int = 0,
@@ -99,6 +113,23 @@ data class DailyRewardEntity(
 @Entity(tableName = "achievement")
 data class AchievementEntity(
     @PrimaryKey val id: String
+)
+
+/**
+ * Per-day progress for the daily quests (single row). [day] is the epoch day the counters belong
+ * to; when a quiz is recorded on a new day the counters and [claimedMask] reset. [claimedMask] is a
+ * bitmask over the slots in the day's challenge set (see domain DailyChallenges).
+ */
+@Serializable
+@Entity(tableName = "daily_quest")
+data class DailyQuestEntity(
+    @PrimaryKey val id: Int = SINGLE_ROW_ID,
+    val day: Long = -1L,
+    val quizzesPlayed: Int = 0,
+    val correctAnswers: Int = 0,
+    val perfectQuizzes: Int = 0,
+    val coinsEarned: Int = 0,
+    val claimedMask: Int = 0
 )
 
 @Serializable

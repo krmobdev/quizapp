@@ -1,6 +1,7 @@
 package com.rustam.quizapp.data
 
 import android.content.Context
+import androidx.room.withTransaction
 import com.rustam.quizapp.data.db.AppDatabase
 import com.rustam.quizapp.data.db.DailyRewardEntity
 import kotlinx.coroutines.flow.Flow
@@ -22,7 +23,8 @@ data class DailyRewardState(
  */
 class DailyRewardRepository(context: Context) {
 
-    private val dao = AppDatabase.getInstance(context).dailyRewardDao()
+    private val db = AppDatabase.getInstance(context)
+    private val dao = db.dailyRewardDao()
 
     fun observeReward(): Flow<DailyRewardState> = dao.observe().map { entity ->
         val reward = entity ?: DailyRewardEntity()
@@ -49,11 +51,13 @@ class DailyRewardRepository(context: Context) {
      */
     suspend fun claim(): Int {
         val today = LocalDate.now().toEpochDay()
-        val reward = dao.get() ?: DailyRewardEntity()
-        if (reward.lastClaimDay == today) return 0
-        val newIndex = if (reward.lastClaimDay == today - 1) reward.claimStreak + 1 else 1
-        dao.upsert(reward.copy(lastClaimDay = today, claimStreak = newIndex))
-        return rewardForDay(newIndex)
+        return db.withTransaction {
+            val reward = dao.get() ?: DailyRewardEntity()
+            if (reward.lastClaimDay == today) return@withTransaction 0
+            val newIndex = if (reward.lastClaimDay == today - 1) reward.claimStreak + 1 else 1
+            dao.upsert(reward.copy(lastClaimDay = today, claimStreak = newIndex))
+            rewardForDay(newIndex)
+        }
     }
 
     companion object {

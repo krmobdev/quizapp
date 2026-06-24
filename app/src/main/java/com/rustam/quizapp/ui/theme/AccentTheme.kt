@@ -93,6 +93,30 @@ enum class AccentTheme(
         containerLight = Color(0xFFDFE0FF), tertiaryLight = Color(0xFF585992),
         primaryDark = Color(0xFFBCC2FF), onPrimaryDark = Color(0xFF09155E),
         containerDark = Color(0xFF222C82), tertiaryDark = Color(0xFFC4C4F8)
+    ),
+    AQUA(
+        id = "theme_aqua",
+        swatch = Color(0xFF00BCD4),
+        primaryLight = Color(0xFF006879), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFA5EEFF), tertiaryLight = Color(0xFF4D616C),
+        primaryDark = Color(0xFF52D7F0), onPrimaryDark = Color(0xFF00363F),
+        containerDark = Color(0xFF004E5A), tertiaryDark = Color(0xFFB4CAD3)
+    ),
+    LAVENDER(
+        id = "theme_lavender",
+        swatch = Color(0xFF9C7BE0),
+        primaryLight = Color(0xFF6E4FB0), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFEBDDFF), tertiaryLight = Color(0xFF6B5C7E),
+        primaryDark = Color(0xFFD3BBFF), onPrimaryDark = Color(0xFF3C1F70),
+        containerDark = Color(0xFF553B8C), tertiaryDark = Color(0xFFD6C2E8)
+    ),
+    SLATE(
+        id = "theme_slate",
+        swatch = Color(0xFF5C7A99),
+        primaryLight = Color(0xFF3D5A73), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFCDE5FF), tertiaryLight = Color(0xFF53606E),
+        primaryDark = Color(0xFFA6C8E6), onPrimaryDark = Color(0xFF0A3048),
+        containerDark = Color(0xFF254860), tertiaryDark = Color(0xFFBAC8D6)
     );
 
     companion object {

@@ -8,7 +8,11 @@ import com.rustam.quizapp.data.db.OwnedItemEntity
 import com.rustam.quizapp.data.db.PlayerEntity
 import com.rustam.quizapp.data.db.RecentQuestionsEntity
 import com.rustam.quizapp.domain.AnswerReward
+import com.rustam.quizapp.data.Difficulty
+import com.rustam.quizapp.domain.BoostType
 import com.rustam.quizapp.domain.CharacterLevelCalculator
+import com.rustam.quizapp.domain.LootBox
+import com.rustam.quizapp.domain.LootResult
 import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.EventProgressSnapshot
 import com.rustam.quizapp.domain.QuizEvent
@@ -18,6 +22,9 @@ import com.rustam.quizapp.domain.QuizEvents
 import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.RewardCalculator
 import com.rustam.quizapp.domain.ShopCatalog
+import com.rustam.quizapp.domain.SkillBranch
+import com.rustam.quizapp.domain.SkillTree
+import com.rustam.quizapp.domain.SkillTreeState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -30,7 +37,13 @@ data class PlayerProfile(
     val avatarEmoji: String,
     val eventProgress: List<QuizEventProgress>,
     val stats: CharacterStats,
-    val lifetimePoints: Int
+    val skillTree: SkillTreeState,
+    val lifetimePoints: Int,
+    val lifetimeCoins: Int = 0,
+    val equippedTitleId: String? = null,
+    /** Remaining quizzes the active temporary boosts apply to (0 = inactive). */
+    val coinBoostQuizzesLeft: Int = 0,
+    val xpBoostQuizzesLeft: Int = 0
 )
 
 /** Coins and the cosmetic items a player owns / has equipped, for the shop screen. */
@@ -38,7 +51,10 @@ data class ShopState(
     val coins: Int,
     val ownedItemIds: Set<String>,
     val equippedAvatarId: String,
-    val equippedThemeId: String
+    val equippedThemeId: String,
+    val equippedTitleId: String? = null,
+    val coinBoostQuizzesLeft: Int = 0,
+    val xpBoostQuizzesLeft: Int = 0
 )
 
 class PlayerRepository(
@@ -58,7 +74,12 @@ class PlayerRepository(
             avatarEmoji = ShopCatalog.avatarEmoji(player.avatarId ?: ShopCatalog.DEFAULT_AVATAR_ID),
             eventProgress = QuizEvents.activeEvents(categories, eventSnapshot(player)),
             stats = player.toStats(),
-            lifetimePoints = player.lifetimePoints
+            skillTree = player.toSkillTree(),
+            lifetimePoints = player.lifetimePoints,
+            lifetimeCoins = player.lifetimeCoins,
+            equippedTitleId = player.equippedTitleId,
+            coinBoostQuizzesLeft = player.coinBoostQuizzesLeft,
+            xpBoostQuizzesLeft = player.xpBoostQuizzesLeft
         )
     }
 
@@ -70,7 +91,10 @@ class PlayerRepository(
                 coins = player.coins,
                 ownedItemIds = owned.toSet() + ShopCatalog.freeItemIds,
                 equippedAvatarId = player.avatarId ?: ShopCatalog.DEFAULT_AVATAR_ID,
-                equippedThemeId = player.themeId ?: ShopCatalog.DEFAULT_THEME_ID
+                equippedThemeId = player.themeId ?: ShopCatalog.DEFAULT_THEME_ID,
+                equippedTitleId = player.equippedTitleId,
+                coinBoostQuizzesLeft = player.coinBoostQuizzesLeft,
+                xpBoostQuizzesLeft = player.xpBoostQuizzesLeft
             )
         }
 
@@ -156,6 +180,40 @@ class PlayerRepository(
     suspend fun purchasePowerUp(powerUpId: String, price: Int): Boolean =
         purchaseBooster(powerUpId, price)
 
+    /** Boost id -> how many of that temporary boost the player currently holds in the backpack. */
+    fun observeBoosts(): Flow<Map<String, Int>> = dao.observeInventory().map { rows ->
+        val counts = rows.associate { it.itemId to it.count }
+        ShopCatalog.boosts.associate { it.id to (counts[it.id] ?: 0) }
+    }
+
+    /** Buys one temporary boost for [price] coins if affordable, adding it to the backpack. */
+    suspend fun purchaseBoost(boostId: String, price: Int): Boolean = purchaseBooster(boostId, price)
+
+    /**
+     * Activates one [boostId] from the backpack: consumes it and adds its charges to the matching
+     * boost counter so the next finished quizzes get the doubled reward. Returns `true` on success.
+     */
+    suspend fun activateBoost(boostId: String): Boolean {
+        val boost = ShopCatalog.boost(boostId) ?: return false
+        var activated = false
+        db.withTransaction {
+            val count = dao.getInventoryCount(boostId) ?: 0
+            if (count > 0) {
+                dao.upsertInventory(InventoryEntity(boostId, count - 1))
+                val player = dao.getPlayer() ?: PlayerEntity()
+                val updated = when (boost.type) {
+                    BoostType.COINS ->
+                        player.copy(coinBoostQuizzesLeft = player.coinBoostQuizzesLeft + boost.quizzes)
+                    BoostType.XP ->
+                        player.copy(xpBoostQuizzesLeft = player.xpBoostQuizzesLeft + boost.quizzes)
+                }
+                dao.upsertPlayer(updated)
+                activated = true
+            }
+        }
+        return activated
+    }
+
     /** Consumes one [powerUpId] from the backpack. Returns `true` if one was available. */
     suspend fun consumePowerUp(powerUpId: String): Boolean {
         var consumed = false
@@ -173,6 +231,9 @@ class PlayerRepository(
 
     suspend fun equipTheme(themeId: String) = updatePlayer { it.copy(themeId = themeId) }
 
+    /** Equips [titleId] (must already be owned), or pass `null` to show no title. */
+    suspend fun equipTitle(titleId: String?) = updatePlayer { it.copy(equippedTitleId = titleId) }
+
     suspend fun setPlayerName(name: String) {
         val trimmed = name.trim().take(MAX_NAME_LENGTH)
         if (trimmed.isEmpty()) return
@@ -182,7 +243,18 @@ class PlayerRepository(
     /** Adds coins without touching points/XP (used for achievement and daily rewards). */
     suspend fun addCoins(amount: Int) {
         if (amount <= 0) return
-        updatePlayer { it.copy(coins = it.coins + amount) }
+        updatePlayer { it.copy(coins = it.coins + amount, lifetimeCoins = it.lifetimeCoins + amount) }
+    }
+
+    /**
+     * Adds free + lifetime XP without touching coins (used for daily-quest XP rewards and other
+     * non-quiz XP grants). Mirrors how booster activation grows the player's level.
+     */
+    suspend fun addXp(amount: Int) {
+        if (amount <= 0) return
+        updatePlayer {
+            it.copy(points = it.points + amount, lifetimePoints = it.lifetimePoints + amount)
+        }
     }
 
     /**
@@ -202,14 +274,54 @@ class PlayerRepository(
         return spent
     }
 
-    suspend fun grantReward(reward: QuizReward) {
-        updatePlayer {
-            it.copy(
-                points = it.points + reward.points,
-                coins = it.coins + reward.coins,
-                lifetimePoints = it.lifetimePoints + reward.points
-            )
+    /**
+     * Opens one [LootBox] if the player can afford it: deducts the price, rolls a weighted reward
+     * and grants it, all in a single transaction. Cosmetic rolls only pick items the player does
+     * not own yet; if none remain the roll falls through to XP or coins. Returns the won reward,
+     * or `null` if the player could not afford a chest.
+     */
+    suspend fun openLootBox(): LootResult? {
+        var result: LootResult? = null
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.coins < LootBox.PRICE) return@withTransaction
+
+            val owned = dao.getOwnedIds().toSet() + ShopCatalog.freeItemIds
+            val unownedAvatar = ShopCatalog.avatars
+                .filter { it.priceCoins > 0 && it.id !in owned }.randomOrNull()
+            val unownedTitle = ShopCatalog.titles.filter { it.id !in owned }.randomOrNull()
+            val roll = (1..100).random()
+
+            var updated = player.copy(coins = player.coins - LootBox.PRICE)
+            result = when {
+                roll <= LootBox.AVATAR_MAX_ROLL && unownedAvatar != null -> {
+                    dao.addOwned(OwnedItemEntity(unownedAvatar.id))
+                    LootResult.Avatar(unownedAvatar)
+                }
+                roll <= LootBox.TITLE_MAX_ROLL && unownedTitle != null -> {
+                    dao.addOwned(OwnedItemEntity(unownedTitle.id))
+                    LootResult.Title(unownedTitle)
+                }
+                roll <= LootBox.XP_MAX_ROLL -> {
+                    val xp = LootBox.weightedPick(LootBox.xpPayouts)
+                    updated = updated.copy(
+                        points = updated.points + xp,
+                        lifetimePoints = updated.lifetimePoints + xp
+                    )
+                    LootResult.Xp(xp)
+                }
+                else -> {
+                    val coins = LootBox.weightedPick(LootBox.coinPayouts)
+                    updated = updated.copy(
+                        coins = updated.coins + coins,
+                        lifetimeCoins = updated.lifetimeCoins + coins
+                    )
+                    LootResult.Coins(coins)
+                }
+            }
+            dao.upsertPlayer(updated)
         }
+        return result
     }
 
     val promoRedeemed: Flow<Boolean> = dao.observePlayer().map { it?.promoRedeemed ?: false }
@@ -222,7 +334,11 @@ class PlayerRepository(
             val player = dao.getPlayer() ?: PlayerEntity()
             if (!player.promoRedeemed) {
                 dao.upsertPlayer(
-                    player.copy(promoRedeemed = true, coins = player.coins + PROMO_REWARD_COINS)
+                    player.copy(
+                        promoRedeemed = true,
+                        coins = player.coins + PROMO_REWARD_COINS,
+                        lifetimeCoins = player.lifetimeCoins + PROMO_REWARD_COINS
+                    )
                 )
                 result = PromoRedeemResult.SUCCESS
             }
@@ -267,6 +383,7 @@ class PlayerRepository(
 
         val player = dao.getPlayer() ?: PlayerEntity()
         val stats = player.toStats()
+        val skills = player.toSkillTree()
 
         // Level scaling: the higher the player's level, the higher the base reward
         // (+10% per level above 1). Level is derived from lifetime XP.
@@ -278,21 +395,33 @@ class PlayerRepository(
         val scaledBasePoints = (baseReward.points * levelMultiplier).toInt()
         val scaledBaseCoins = (baseReward.coins * coinLevelMultiplier).toInt()
 
-        // Percentage bonuses (Strength/Intelligence) plus flat bonuses (Wisdom/Endurance).
-        val xpBonus = (scaledBasePoints * (stats.xpBonusPercent / 100f)).toInt() + stats.flatXpBonus
-        val coinBonus = (scaledBaseCoins * (stats.coinBonusPercent / 100f)).toInt() + stats.flatCoinBonus
+        // Percentage bonuses (Strength/Intelligence + Erudition/Commerce skills) plus flat
+        // bonuses (Wisdom/Endurance + Sage/Resilience skills).
+        val xpBonusPercent = stats.xpBonusPercent + skills.xpBonusPercent
+        val coinBonusPercent = stats.coinBonusPercent + skills.coinBonusPercent
+        val flatXpBonus = stats.flatXpBonus + skills.flatXpBonus
+        val flatCoinBonus = stats.flatCoinBonus + skills.flatCoinBonus
+        val xpBonus = (scaledBasePoints * (xpBonusPercent / 100f)).toInt() + flatXpBonus
+        val coinBonus = (scaledBaseCoins * (coinBonusPercent / 100f)).toInt() + flatCoinBonus
 
         var pointsEarned = scaledBasePoints + xpBonus
         var coinsEarned = scaledBaseCoins + coinBonus
 
-        // Luck (+ Charisma) roll for double rewards (Critical Success). Focus sharpens it.
-        val doubleChance = stats.doubleRewardChancePercent + stats.critChanceBonusPercent
+        // Luck (+ Charisma + Fortune skill) roll for double rewards (Critical Success).
+        val doubleChance = stats.doubleRewardChancePercent + stats.critChanceBonusPercent +
+            skills.critChanceBonusPercent
         val isCriticalSuccess = if (doubleChance > 0) (1..100).random() <= doubleChance else false
 
         if (isCriticalSuccess) {
             pointsEarned = (pointsEarned * stats.critMultiplier).toInt()
             coinsEarned = (coinsEarned * stats.critMultiplier).toInt()
         }
+
+        // Temporary 2x boosts apply only to real quizzes (not mistakes practice).
+        val xpBoosted = allowEventBonus && player.xpBoostQuizzesLeft > 0
+        val coinBoosted = allowEventBonus && player.coinBoostQuizzesLeft > 0
+        if (xpBoosted) pointsEarned *= 2
+        if (coinBoosted) coinsEarned *= 2
 
         val newLevel = CharacterLevelCalculator.calculateLevel(lifetime + pointsEarned)
 
@@ -303,6 +432,8 @@ class PlayerRepository(
             critMultiplier = if (isCriticalSuccess) stats.critMultiplier else 1f,
             xpBonus = xpBonus,
             coinBonus = coinBonus,
+            xpBoosted = xpBoosted,
+            coinBoosted = coinBoosted,
             basePoints = baseReward.points,
             baseCoins = baseReward.coins,
             levelMultiplier = levelMultiplier,
@@ -311,7 +442,17 @@ class PlayerRepository(
             newLevel = newLevel
         )
 
-        grantReward(finalReward)
+        // Credit the reward and spend one charge per boost that was actually applied.
+        updatePlayer {
+            it.copy(
+                points = it.points + pointsEarned,
+                coins = it.coins + coinsEarned,
+                lifetimePoints = it.lifetimePoints + pointsEarned,
+                lifetimeCoins = it.lifetimeCoins + coinsEarned,
+                coinBoostQuizzesLeft = if (coinBoosted) it.coinBoostQuizzesLeft - 1 else it.coinBoostQuizzesLeft,
+                xpBoostQuizzesLeft = if (xpBoosted) it.xpBoostQuizzesLeft - 1 else it.xpBoostQuizzesLeft
+            )
+        }
         if (activeEvent != null) markEventCompleted(activeEvent.type)
         return finalReward
     }
@@ -322,11 +463,37 @@ class PlayerRepository(
             val player = dao.getPlayer() ?: PlayerEntity()
             val currentVal = statValue(player, statName) ?: return@withTransaction
             val cost = 100 + currentVal * 25
-            if (currentVal < MAX_STAT && player.points >= cost) {
+            if (currentVal < CharacterLevelCalculator.MAX_STAT && player.points >= cost) {
                 val updated = applyStat(
                     player.copy(points = player.points - cost),
                     statName,
                     currentVal + 1
+                )
+                dao.upsertPlayer(updated)
+                upgraded = true
+            }
+        }
+        return upgraded
+    }
+
+    /**
+     * Buys the next tier of a Mastery Tree [branchId] if the player can afford both the free-XP
+     * and coin cost and the branch is not maxed. Cost and deduction are atomic. Returns `true` on success.
+     */
+    suspend fun upgradeSkill(branchId: String): Boolean {
+        val branch = SkillTree.branch(branchId) ?: return false
+        var upgraded = false
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            val tier = skillTier(player, branch)
+            if (tier >= branch.maxTier) return@withTransaction
+            val xpCost = SkillTree.nextXpCost(branch, tier)
+            val coinCost = SkillTree.nextCoinCost(branch, tier)
+            if (player.points >= xpCost && player.coins >= coinCost) {
+                val updated = applySkill(
+                    player.copy(points = player.points - xpCost, coins = player.coins - coinCost),
+                    branch,
+                    tier + 1
                 )
                 dao.upsertPlayer(updated)
                 upgraded = true
@@ -390,6 +557,35 @@ class PlayerRepository(
         return if (raw.isEmpty()) emptyList() else raw.split(",")
     }
 
+    private fun PlayerEntity.toSkillTree(): SkillTreeState = SkillTreeState(
+        mapOf(
+            SkillBranch.ERUDITION to skillErudition,
+            SkillBranch.COMMERCE to skillCommerce,
+            SkillBranch.FORTUNE to skillFortune,
+            SkillBranch.CHRONOS to skillChronos,
+            SkillBranch.SAGE to skillSage,
+            SkillBranch.RESILIENCE to skillResilience
+        )
+    )
+
+    private fun skillTier(player: PlayerEntity, branch: SkillBranch): Int = when (branch) {
+        SkillBranch.ERUDITION -> player.skillErudition
+        SkillBranch.COMMERCE -> player.skillCommerce
+        SkillBranch.FORTUNE -> player.skillFortune
+        SkillBranch.CHRONOS -> player.skillChronos
+        SkillBranch.SAGE -> player.skillSage
+        SkillBranch.RESILIENCE -> player.skillResilience
+    }
+
+    private fun applySkill(player: PlayerEntity, branch: SkillBranch, tier: Int): PlayerEntity = when (branch) {
+        SkillBranch.ERUDITION -> player.copy(skillErudition = tier)
+        SkillBranch.COMMERCE -> player.copy(skillCommerce = tier)
+        SkillBranch.FORTUNE -> player.copy(skillFortune = tier)
+        SkillBranch.CHRONOS -> player.copy(skillChronos = tier)
+        SkillBranch.SAGE -> player.copy(skillSage = tier)
+        SkillBranch.RESILIENCE -> player.copy(skillResilience = tier)
+    }
+
     private fun PlayerEntity.toStats(): CharacterStats = CharacterStats(
         strength = strength,
         intelligence = intelligence,
@@ -437,7 +633,6 @@ class PlayerRepository(
 
     private companion object {
         const val MAX_NAME_LENGTH = 24
-        const val MAX_STAT = 20
         const val MAX_RECENT = 200
         const val PROMO_CODE = "AAAAAA"
         const val PROMO_REWARD_COINS = 30000

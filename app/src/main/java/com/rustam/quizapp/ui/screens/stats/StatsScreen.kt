@@ -2,6 +2,7 @@ package com.rustam.quizapp.ui.screens.stats
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.lazy.items
@@ -19,6 +21,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.Edit
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
@@ -45,8 +48,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
+import com.rustam.quizapp.domain.CharacterLevelCalculator
+import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.QuizEventProgress
 import com.rustam.quizapp.domain.QuizEventType
+import com.rustam.quizapp.domain.ShopCatalog
+import com.rustam.quizapp.domain.SkillBranch
+import com.rustam.quizapp.domain.SkillBonusKind
+import com.rustam.quizapp.domain.SkillTree
+import com.rustam.quizapp.domain.SkillTreeState
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.ScreenTitle
@@ -64,6 +74,7 @@ fun StatsScreen(
         state = state,
         onUpdateName = viewModel::updatePlayerName,
         onUpgradeStat = viewModel::upgradeStat,
+        onUpgradeSkill = viewModel::upgradeSkill,
         modifier = modifier
     )
 }
@@ -73,6 +84,7 @@ private fun StatsContent(
     state: PlayerUiState,
     onUpdateName: (String) -> Unit,
     onUpgradeStat: (String) -> Unit,
+    onUpgradeSkill: (String) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -104,13 +116,7 @@ private fun StatsContent(
         }
         item {
             PlayerProfileCard(
-                displayName = state.playerName.ifBlank {
-                    stringResource(R.string.player_default_name)
-                },
-                avatarEmoji = state.avatarEmoji,
-                points = state.points,
-                lifetimePoints = state.lifetimePoints,
-                coins = state.coins,
+                state = state,
                 colors = colors,
                 textColor = textColor,
                 onEditName = { showNameDialog = true }
@@ -132,9 +138,17 @@ private fun StatsContent(
                     modifier = Modifier.weight(1f)
                 )
                 SubTabButton(
-                    text = stringResource(R.string.stats_game_stats_tab),
+                    text = stringResource(R.string.stats_skilltree_tab),
                     selected = selectedSubTab == 1,
                     onClick = { selectedSubTab = 1 },
+                    colors = colors,
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+                SubTabButton(
+                    text = stringResource(R.string.stats_game_stats_tab),
+                    selected = selectedSubTab == 2,
+                    onClick = { selectedSubTab = 2 },
                     colors = colors,
                     textColor = textColor,
                     modifier = Modifier.weight(1f)
@@ -150,6 +164,17 @@ private fun StatsContent(
                     textColor = textColor,
                     colors = colors,
                     onUpgrade = onUpgradeStat
+                )
+            }
+        } else if (selectedSubTab == 1) {
+            item {
+                SkillTreeSection(
+                    skillTree = state.skillTree,
+                    freeXp = state.points,
+                    coins = state.coins,
+                    textColor = textColor,
+                    colors = colors,
+                    onUpgrade = onUpgradeSkill
                 )
             }
         } else {
@@ -226,25 +251,32 @@ private fun StatsContent(
 
 @Composable
 private fun PlayerProfileCard(
-    displayName: String,
-    avatarEmoji: String,
-    points: Int,
-    lifetimePoints: Int,
-    coins: Int,
+    state: PlayerUiState,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
     textColor: androidx.compose.ui.graphics.Color,
     onEditName: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val lifetimePoints = state.lifetimePoints
     val progress = remember(lifetimePoints) {
-        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelProgress(lifetimePoints)
+        CharacterLevelCalculator.getLevelProgress(lifetimePoints)
     }
     val locale = androidx.compose.ui.platform.LocalConfiguration.current.locales[0]
     val rankName = if (locale.language == "en") {
-        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRankEn(progress.level)
+        CharacterLevelCalculator.getLevelRankEn(progress.level)
     } else {
-        com.rustam.quizapp.domain.CharacterLevelCalculator.getLevelRank(progress.level)
+        CharacterLevelCalculator.getLevelRank(progress.level)
     }
+    val displayName = state.playerName.ifBlank { stringResource(R.string.player_default_name) }
+    val title = ShopCatalog.title(state.equippedTitleId)
+
+    // Aggregated bonuses currently in effect (characteristics + Mastery Tree combined).
+    val xpBonus = state.stats.xpBonusPercent + state.skillTree.xpBonusPercent
+    val coinBonus = state.stats.coinBonusPercent + state.skillTree.coinBonusPercent
+    val critChance = state.stats.doubleRewardChancePercent +
+        state.stats.critChanceBonusPercent + state.skillTree.critChanceBonusPercent
+    val extraTime = state.stats.extraTimeSeconds + state.skillTree.extraTimeSeconds
+    val unlockedAchievements = state.achievements.count { it.unlocked }
 
     GlassCard(modifier = modifier, colors = colors) {
         Column(
@@ -259,11 +291,14 @@ private fun PlayerProfileCard(
                 horizontalArrangement = Arrangement.spacedBy(14.dp)
             ) {
                 Text(
-                    text = avatarEmoji,
+                    text = state.avatarEmoji,
                     fontSize = 42.sp,
                     modifier = Modifier.padding(end = 4.dp)
                 )
-                Column(modifier = Modifier.weight(1f)) {
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(2.dp)
+                ) {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(6.dp)
@@ -292,10 +327,15 @@ private fun PlayerProfileCard(
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
                     )
+                    if (title != null) {
+                        TitleBadge(
+                            text = "${title.emoji} ${stringResource(title.labelRes)}"
+                        )
+                    }
                     Text(
                         text = stringResource(
                             R.string.char_level_reward_bonus,
-                            com.rustam.quizapp.domain.CharacterLevelCalculator.rewardMultiplier(progress.level)
+                            CharacterLevelCalculator.rewardMultiplier(progress.level)
                         ),
                         style = MaterialTheme.typography.bodySmall,
                         color = textColor.copy(alpha = 0.7f)
@@ -309,7 +349,7 @@ private fun PlayerProfileCard(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text(
-                        text = stringResource(R.string.char_xp_progress, lifetimePoints, com.rustam.quizapp.domain.CharacterLevelCalculator.xpRequiredForLevel(progress.level + 1)),
+                        text = stringResource(R.string.char_xp_progress, lifetimePoints, CharacterLevelCalculator.xpRequiredForLevel(progress.level + 1)),
                         style = MaterialTheme.typography.bodySmall,
                         color = textColor.copy(alpha = 0.8f)
                     )
@@ -338,25 +378,129 @@ private fun PlayerProfileCard(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 SummaryMetric(
-                    value = points.toString(),
+                    value = state.points.toString(),
                     label = stringResource(R.string.char_free_xp),
                     textColor = textColor,
                     modifier = Modifier.weight(1f)
                 )
                 SummaryMetric(
-                    value = coins.toString(),
+                    value = state.coins.toString(),
                     label = stringResource(R.string.player_coins),
                     textColor = textColor,
                     modifier = Modifier.weight(1f)
                 )
+            }
+
+            HorizontalDivider(color = textColor.copy(alpha = 0.08f))
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                SummaryMetric(
+                    value = "🔥 ${state.streakBest}",
+                    label = stringResource(R.string.player_best_streak),
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+                SummaryMetric(
+                    value = stringResource(R.string.player_fraction, unlockedAchievements, state.achievements.size),
+                    label = stringResource(R.string.player_achievements),
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+                SummaryMetric(
+                    value = state.lifetimeCoins.toString(),
+                    label = stringResource(R.string.player_lifetime_coins),
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+                SummaryMetric(
+                    value = state.totalQuizzes.toString(),
+                    label = stringResource(R.string.player_total_quizzes),
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(
+                    text = stringResource(R.string.player_bonuses_title),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                val bonuses = buildList {
+                    if (xpBonus > 0) add(stringResource(R.string.player_bonus_xp, xpBonus))
+                    if (coinBonus > 0) add(stringResource(R.string.player_bonus_coins, coinBonus))
+                    if (critChance > 0) add(stringResource(R.string.player_bonus_crit, critChance))
+                    if (extraTime > 0f) add(stringResource(R.string.player_bonus_time, extraTime))
+                }
+                if (bonuses.isEmpty()) {
+                    Text(
+                        text = stringResource(R.string.player_bonus_none),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = textColor.copy(alpha = 0.7f)
+                    )
+                } else {
+                    bonuses.chunked(2).forEach { rowChips ->
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            rowChips.forEach { chip ->
+                                BonusChip(text = chip, modifier = Modifier.weight(1f))
+                            }
+                            if (rowChips.size == 1) Spacer(Modifier.weight(1f))
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 @Composable
+private fun TitleBadge(text: String, modifier: Modifier = Modifier) {
+    Surface(
+        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.14f),
+        shape = RoundedCornerShape(8.dp),
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.4f)),
+        modifier = modifier
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.labelLarge,
+            fontWeight = FontWeight.SemiBold,
+            color = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+        )
+    }
+}
+
+@Composable
+private fun BonusChip(text: String, modifier: Modifier = Modifier) {
+    Surface(
+        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.1f),
+        shape = RoundedCornerShape(10.dp),
+        modifier = modifier
+    ) {
+        Text(
+            text = text,
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = FontWeight.SemiBold,
+            color = MaterialTheme.colorScheme.primary,
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 8.dp, vertical = 8.dp)
+        )
+    }
+}
+
+@Composable
 private fun CharacterStatsSection(
-    stats: com.rustam.quizapp.domain.CharacterStats,
+    stats: CharacterStats,
     freeXp: Int,
     textColor: androidx.compose.ui.graphics.Color,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
@@ -482,6 +626,7 @@ private fun StatUpgradeCard(
     textColor: androidx.compose.ui.graphics.Color,
     onUpgrade: () -> Unit
 ) {
+    val maxStat = CharacterLevelCalculator.MAX_STAT
     val cost = 100 + value * 25
     GlassCard(colors = colors) {
         Row(
@@ -504,15 +649,15 @@ private fun StatUpgradeCard(
                         color = textColor
                     )
                     Text(
-                        text = "$value / 20",
+                        text = "$value / $maxStat",
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.SemiBold,
                         color = textColor.copy(alpha = 0.8f)
                     )
                 }
-                
+
                 LinearProgressIndicator(
-                    progress = { value / 20f },
+                    progress = { value / maxStat.toFloat() },
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 6.dp)
@@ -531,7 +676,7 @@ private fun StatUpgradeCard(
             
             androidx.compose.material3.Button(
                 onClick = onUpgrade,
-                enabled = freeXp >= cost && value < 20,
+                enabled = freeXp >= cost && value < maxStat,
                 colors = androidx.compose.material3.ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
                     contentColor = MaterialTheme.colorScheme.onPrimary,
@@ -546,6 +691,166 @@ private fun StatUpgradeCard(
                     fontSize = 11.sp,
                     fontWeight = FontWeight.Bold
                 )
+            }
+        }
+    }
+}
+
+@Composable
+private fun SkillTreeSection(
+    skillTree: SkillTreeState,
+    freeXp: Int,
+    coins: Int,
+    textColor: androidx.compose.ui.graphics.Color,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    onUpgrade: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Column(
+        modifier = modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 4.dp, bottom = 2.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Text(
+                text = stringResource(R.string.skill_tree_title),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor
+            )
+            Text(
+                text = stringResource(R.string.skill_tree_balance, freeXp, coins),
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary
+            )
+        }
+        Text(
+            text = stringResource(R.string.skill_tree_hint),
+            style = MaterialTheme.typography.bodySmall,
+            color = textColor.copy(alpha = 0.7f)
+        )
+
+        SkillTree.branches.forEach { branch ->
+            SkillBranchCard(
+                branch = branch,
+                tier = skillTree.tier(branch),
+                freeXp = freeXp,
+                coins = coins,
+                colors = colors,
+                textColor = textColor,
+                onUpgrade = { onUpgrade(branch.id) }
+            )
+        }
+    }
+}
+
+@Composable
+private fun SkillBranchCard(
+    branch: SkillBranch,
+    tier: Int,
+    freeXp: Int,
+    coins: Int,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    onUpgrade: () -> Unit
+) {
+    val maxed = tier >= branch.maxTier
+    val xpCost = SkillTree.nextXpCost(branch, tier)
+    val coinCost = SkillTree.nextCoinCost(branch, tier)
+    val affordable = !maxed && freeXp >= xpCost && coins >= coinCost
+    val bonus = branch.bonusAt(tier)
+    val description = when (branch.kind) {
+        SkillBonusKind.EXTRA_TIME ->
+            stringResource(branch.descRes, bonus)
+        else ->
+            stringResource(branch.descRes, bonus.toInt())
+    }
+
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            Text(text = branch.emoji, fontSize = 30.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = stringResource(branch.titleRes),
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = textColor
+                    )
+                    Text(
+                        text = "$tier / ${branch.maxTier}",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = textColor.copy(alpha = 0.8f)
+                    )
+                }
+
+                LinearProgressIndicator(
+                    progress = { tier / branch.maxTier.toFloat() },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 6.dp)
+                        .height(6.dp),
+                    strokeCap = StrokeCap.Round,
+                    trackColor = colors.progressTrack,
+                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
+                )
+
+                Text(
+                    text = description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.7f)
+                )
+            }
+
+            androidx.compose.material3.Button(
+                onClick = onUpgrade,
+                enabled = affordable,
+                colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                if (maxed) {
+                    Text(
+                        text = stringResource(R.string.skill_maxed),
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                } else {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Text(
+                            text = stringResource(R.string.skill_cost_xp, xpCost),
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = stringResource(R.string.skill_cost_coins, coinCost),
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
             }
         }
     }
@@ -935,16 +1240,23 @@ private fun SubTabButton(
         color = backgroundColor,
         shape = RoundedCornerShape(12.dp),
         border = BorderStroke(1.dp, borderColor),
-        modifier = modifier
+        modifier = modifier.height(56.dp)
     ) {
-        Text(
-            text = text,
-            style = MaterialTheme.typography.bodyMedium,
-            fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
-            color = if (selected) MaterialTheme.colorScheme.primary else textColor.copy(alpha = 0.8f),
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(vertical = 12.dp)
-        )
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 8.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = text,
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
+                color = if (selected) MaterialTheme.colorScheme.primary else textColor.copy(alpha = 0.8f),
+                textAlign = TextAlign.Center,
+                maxLines = 2
+            )
+        }
     }
 }
 

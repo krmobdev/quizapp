@@ -150,6 +150,7 @@
     <string name="shop_booster_small">Small Booster</string>
     <string name="shop_booster_medium">Medium Booster</string>
     <string name="shop_booster_large">Large Booster</string>
+    <string name="shop_booster_huge">Huge Booster</string>
     <string name="shop_booster_desc">+%1$d XP when activated</string>
     <string name="shop_owned_count">In backpack: %1$d</string>
     <string name="inventory_title">Backpack</string>
@@ -172,6 +173,47 @@
     <string name="shop_streak_freeze_section">Streak protection</string>
     <string name="shop_streak_freeze_title">Streak Freeze 🧊</string>
     <string name="shop_streak_freeze_desc">Saves your daily streak if you miss a day</string>
+
+    <!-- Lucky Chest (loot box) -->
+    <string name="shop_lootbox_section">Lucky Chest</string>
+    <string name="shop_lootbox_title">Lucky Chest 🎁</string>
+    <string name="shop_lootbox_desc">A random reward: coins, XP, an avatar or a title</string>
+    <string name="shop_lootbox_open">Open</string>
+    <string name="loot_reveal_title">You got!</string>
+    <string name="loot_coins">+%1$d coins</string>
+    <string name="loot_xp">+%1$d XP</string>
+    <string name="loot_avatar">New avatar!</string>
+    <string name="loot_title">New title: %1$s</string>
+    <string name="loot_close">Nice!</string>
+
+    <!-- Temporary boosts (×2) -->
+    <string name="shop_boosts_section">Temporary boosts</string>
+    <string name="boost_coins_title">Coin Rush 💰</string>
+    <string name="boost_coins_desc">×2 coins for the next %1$d quizzes</string>
+    <string name="boost_xp_title">XP Surge 🎓</string>
+    <string name="boost_xp_desc">×2 XP for the next %1$d quizzes</string>
+    <string name="boost_active_coins">💰 ×2 coins · %1$d quizzes left</string>
+    <string name="boost_active_xp">🎓 ×2 XP · %1$d quizzes left</string>
+    <string name="boost_inventory_active">Active · %1$d quizzes left</string>
+    <string name="boost_activated_snackbar">Boost on! ×2 for %1$d quizzes</string>
+    <string name="reward_breakdown_boost">Boost ×2</string>
+
+    <!-- Titles (player-card cosmetics) -->
+    <string name="shop_titles">Titles</string>
+    <string name="shop_titles_hint">Buy titles with coins — they show on your player card. Tap the equipped one to remove it.</string>
+    <string name="title_none">No title</string>
+    <string name="title_curious">Curious</string>
+    <string name="title_bookworm">Bookworm</string>
+    <string name="title_sharp">Sharp Mind</string>
+    <string name="title_scholar">Scholar</string>
+    <string name="title_genius">Genius</string>
+    <string name="title_quizmaster">Quizmaster</string>
+    <string name="title_sage">Sage</string>
+    <string name="title_champion">Champion</string>
+    <string name="title_legend">Legend</string>
+    <string name="title_firemind">Fire Mind</string>
+    <string name="title_cosmic">Cosmic Mind</string>
+    <string name="title_immortal">Immortal Savant</string>
     <string name="theme_accent_mint">Mint</string>
     <string name="theme_accent_ocean">Ocean</string>
     <string name="theme_accent_grape">Grape</string>
@@ -181,6 +223,9 @@
     <string name="theme_accent_forest">Forest</string>
     <string name="theme_accent_crimson">Crimson</string>
     <string name="theme_accent_midnight">Midnight</string>
+    <string name="theme_accent_aqua">Aqua</string>
+    <string name="theme_accent_lavender">Lavender</string>
+    <string name="theme_accent_slate">Slate</string>
 
     <string-array name="daily_quotes">
         <item>Knowledge is power — practice is the key to mastery.</item>
@@ -224,8 +269,40 @@
     <string name="char_bonus_xp_detail"> (+%1$d from Strength)</string>
     <string name="char_bonus_coins_detail"> (+%1$d from Intelligence)</string>
 
+    <!-- Player card dashboard -->
+    <string name="player_best_streak">Best streak</string>
+    <string name="player_achievements">Achievements</string>
+    <string name="player_lifetime_coins">Coins all-time</string>
+    <string name="player_total_quizzes">Quizzes total</string>
+    <string name="player_fraction">%1$d / %2$d</string>
+    <string name="player_bonuses_title">Active bonuses</string>
+    <string name="player_bonus_xp">+%1$d%% XP</string>
+    <string name="player_bonus_coins">+%1$d%% coins</string>
+    <string name="player_bonus_crit">%1$d%% crit</string>
+    <string name="player_bonus_time">+%1$.1f s</string>
+    <string name="player_bonus_none">Upgrade stats and skills to gain bonuses</string>
+
     <string name="stats_characteristics_tab">Characteristics</string>
+    <string name="stats_skilltree_tab">Skills</string>
     <string name="stats_game_stats_tab">Game Stats</string>
+    <string name="skill_tree_title">Mastery Tree</string>
+    <string name="skill_tree_balance">🎓 %1$d • 🪙 %2$d</string>
+    <string name="skill_tree_hint">Pour free XP and coins into mastery branches. Each level grants a permanent bonus.</string>
+    <string name="skill_maxed">MAX</string>
+    <string name="skill_cost_xp">%1$d 🎓</string>
+    <string name="skill_cost_coins">%1$d 🪙</string>
+    <string name="skill_erudition">Erudition</string>
+    <string name="skill_erudition_desc">Now: +%1$d%% XP per game</string>
+    <string name="skill_commerce">Commerce</string>
+    <string name="skill_commerce_desc">Now: +%1$d%% coins per game</string>
+    <string name="skill_fortune">Fortune</string>
+    <string name="skill_fortune_desc">Now: +%1$d%% double reward chance</string>
+    <string name="skill_chronos">Chronos</string>
+    <string name="skill_chronos_desc">Now: +%1$.1f sec to question timer</string>
+    <string name="skill_sage">Wisdom</string>
+    <string name="skill_sage_desc">Now: +%1$d XP per game</string>
+    <string name="skill_resilience">Resilience</string>
+    <string name="skill_resilience_desc">Now: +%1$d coins per game</string>
     <string name="stats_character_stats_title">Character Stats</string>
     <string name="rewards_points_label">points</string>
     <string name="rewards_coins_label">coins</string>
@@ -250,6 +327,15 @@
     <string name="home_streak_chip">🔥 %1$d-day streak</string>
     <string name="stats_streak">Streak</string>
     <string name="stats_streak_value">🔥 %1$d</string>
+
+    <!-- Daily quests -->
+    <string name="quests_section_title">Daily quests</string>
+    <string name="quest_play_quizzes">Play %1$d quizzes</string>
+    <string name="quest_answer_correct">Answer %1$d correctly</string>
+    <string name="quest_perfect_quiz">Finish a quiz flawlessly</string>
+    <string name="quest_earn_coins">Earn %1$d coins</string>
+    <string name="quest_reward">+%1$d 🪙 · +%2$d 🎓</string>
+    <string name="quest_claimed">Claimed ✓</string>
 
     <!-- Reminders -->
     <string name="reminder_channel_name">Streak reminders</string>

@@ -46,6 +46,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
+import com.rustam.quizapp.domain.LootBox
+import com.rustam.quizapp.domain.LootResult
 import com.rustam.quizapp.domain.ShopCatalog
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppShapes
@@ -66,15 +68,16 @@ fun ShopScreen(
     val textColor = appTextColor()
     var selectedSubTab by rememberSaveable { mutableIntStateOf(0) }
     var boosterToConfirm by remember { mutableStateOf<BoosterUi?>(null) }
-    var snackbarPoints by remember { mutableStateOf<Int?>(null) }
+    var snackbarText by remember { mutableStateOf<String?>(null) }
+    val lootResult by viewModel.lootResult.collectAsState()
 
     LaunchedEffect(Unit) {
-        viewModel.boosterActivated.collect { points -> snackbarPoints = points }
+        viewModel.snackbar.collect { message -> snackbarText = message }
     }
-    LaunchedEffect(snackbarPoints) {
-        if (snackbarPoints != null) {
+    LaunchedEffect(snackbarText) {
+        if (snackbarText != null) {
             delay(2500)
-            snackbarPoints = null
+            snackbarText = null
         }
     }
 
@@ -140,14 +143,15 @@ fun ShopScreen(
                     state = state,
                     colors = colors,
                     textColor = textColor,
-                    onActivate = activateHandler
+                    onActivate = activateHandler,
+                    onBoostActivate = viewModel::onBoostActivate
                 )
             }
         }
 
-        snackbarPoints?.let { points ->
+        snackbarText?.let { text ->
             ActivationSnackbar(
-                points = points,
+                text = text,
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(16.dp)
@@ -183,6 +187,112 @@ fun ShopScreen(
             }
         )
     }
+
+    lootResult?.let { result ->
+        LootRevealDialog(result = result, onDismiss = viewModel::onLootDismiss)
+    }
+}
+
+@Composable
+private fun LootRevealDialog(result: LootResult, onDismiss: () -> Unit) {
+    val emoji: String
+    val text: String
+    when (result) {
+        is LootResult.Coins -> {
+            emoji = "🪙"
+            text = stringResource(R.string.loot_coins, result.amount)
+        }
+        is LootResult.Xp -> {
+            emoji = "🎓"
+            text = stringResource(R.string.loot_xp, result.amount)
+        }
+        is LootResult.Avatar -> {
+            emoji = result.item.emoji
+            text = stringResource(R.string.loot_avatar)
+        }
+        is LootResult.Title -> {
+            emoji = result.item.emoji
+            text = stringResource(R.string.loot_title, stringResource(result.item.labelRes))
+        }
+    }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = {
+            Text(
+                text = stringResource(R.string.loot_reveal_title),
+                fontWeight = FontWeight.Bold
+            )
+        },
+        text = {
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                Text(text = emoji, fontSize = 56.sp)
+                Text(
+                    text = text,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    textAlign = TextAlign.Center,
+                    color = MaterialTheme.colorScheme.primary
+                )
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.loot_close))
+            }
+        }
+    )
+}
+
+@Composable
+private fun LootBoxCard(
+    coins: Int,
+    colors: AppThemeColors,
+    textColor: Color,
+    onOpen: () -> Unit
+) {
+    val affordable = coins >= LootBox.PRICE
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = "🎁", fontSize = 34.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.shop_lootbox_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(R.string.shop_lootbox_desc),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.75f)
+                )
+            }
+            Button(
+                onClick = onOpen,
+                enabled = affordable,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(text = "🪙 ${LootBox.PRICE}", fontWeight = FontWeight.Bold)
+            }
+        }
+    }
 }
 
 /** Boosters granting at least this much XP ask for confirmation before activation. */
@@ -194,6 +304,17 @@ private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
     textColor: Color,
     viewModel: ShopViewModel
 ) {
+    item {
+        SectionHeader(text = stringResource(R.string.shop_lootbox_section), textColor = textColor)
+    }
+    item {
+        LootBoxCard(
+            coins = state.coins,
+            colors = colors,
+            textColor = textColor,
+            onOpen = viewModel::onOpenLootBox
+        )
+    }
     item {
         SectionHeader(text = stringResource(R.string.shop_boosters), textColor = textColor)
     }
@@ -216,6 +337,18 @@ private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
             colors = colors,
             textColor = textColor,
             onBuy = { viewModel.onPowerUpBuy(powerUp) }
+        )
+    }
+    item {
+        SectionHeader(text = stringResource(R.string.shop_boosts_section), textColor = textColor)
+    }
+    items(state.boosts, key = { it.item.id }) { boost ->
+        BoostStoreCard(
+            boost = boost,
+            coins = state.coins,
+            colors = colors,
+            textColor = textColor,
+            onBuy = { viewModel.onBoostBuy(boost) }
         )
     }
     item {
@@ -255,22 +388,98 @@ private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
             onClick = { viewModel.onThemeClick(theme) }
         )
     }
+    item {
+        SectionHeader(text = stringResource(R.string.shop_titles), textColor = textColor)
+    }
+    item {
+        Text(
+            text = stringResource(R.string.shop_titles_hint),
+            style = MaterialTheme.typography.bodySmall,
+            color = textColor.copy(alpha = 0.7f),
+            modifier = Modifier.padding(bottom = 2.dp)
+        )
+    }
+    items(state.titles, key = { it.item.id }) { title ->
+        TitleCard(
+            title = title,
+            coins = state.coins,
+            colors = colors,
+            textColor = textColor,
+            onClick = { viewModel.onTitleClick(title) }
+        )
+    }
+}
+
+@Composable
+private fun TitleCard(
+    title: TitleUi,
+    coins: Int,
+    colors: AppThemeColors,
+    textColor: Color,
+    onClick: () -> Unit
+) {
+    val affordable = title.owned || coins >= title.item.priceCoins
+    GlassCard(colors = colors, onClick = if (affordable) onClick else null) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .alpha(if (affordable) 1f else 0.45f)
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = title.item.emoji, fontSize = 28.sp)
+            Text(
+                text = stringResource(title.item.labelRes),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor,
+                modifier = Modifier.weight(1f)
+            )
+            TitleTrailing(title = title, textColor = textColor)
+        }
+    }
+}
+
+@Composable
+private fun TitleTrailing(title: TitleUi, textColor: Color) {
+    val text = when {
+        title.equipped -> "✓ " + stringResource(R.string.shop_equipped)
+        title.owned -> stringResource(R.string.shop_equip)
+        else -> "🪙 ${title.item.priceCoins}"
+    }
+    Text(
+        text = text,
+        style = MaterialTheme.typography.titleSmall,
+        fontWeight = FontWeight.SemiBold,
+        color = if (title.equipped) MaterialTheme.colorScheme.primary else textColor
+    )
 }
 
 private fun androidx.compose.foundation.lazy.LazyListScope.backpackContent(
     state: ShopUiState,
     colors: AppThemeColors,
     textColor: Color,
-    onActivate: (BoosterUi) -> Unit
+    onActivate: (BoosterUi) -> Unit,
+    onBoostActivate: (BoostUi) -> Unit
 ) {
     val owned = state.boosters.filter { it.owned > 0 }
     val ownedPowerUps = state.powerUps.filter { it.owned > 0 }
+    val backpackBoosts = state.boosts.filter { it.owned > 0 || it.activeQuizzesLeft > 0 }
     val hasFreeze = state.streakFreezeCount > 0
-    if (owned.isEmpty() && ownedPowerUps.isEmpty() && !hasFreeze) {
+    if (owned.isEmpty() && ownedPowerUps.isEmpty() && backpackBoosts.isEmpty() && !hasFreeze) {
         item {
             EmptyBackpackCard(colors = colors, textColor = textColor)
         }
     } else {
+        items(backpackBoosts, key = { it.item.id }) { boost ->
+            BoostInventoryCard(
+                boost = boost,
+                colors = colors,
+                textColor = textColor,
+                onActivate = { onBoostActivate(boost) }
+            )
+        }
         items(owned, key = { it.item.id }) { booster ->
             InventoryItemCard(
                 booster = booster,
@@ -292,6 +501,138 @@ private fun androidx.compose.foundation.lazy.LazyListScope.backpackContent(
                     count = state.streakFreezeCount,
                     colors = colors,
                     textColor = textColor
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun BoostStoreCard(
+    boost: BoostUi,
+    coins: Int,
+    colors: AppThemeColors,
+    textColor: Color,
+    onBuy: () -> Unit
+) {
+    val affordable = coins >= boost.item.priceCoins
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = boost.item.emoji, fontSize = 32.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(boost.item.labelRes),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(boost.item.descRes, boost.item.quizzes),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.75f)
+                )
+                if (boost.owned > 0) {
+                    Text(
+                        text = stringResource(R.string.shop_owned_count, boost.owned),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+                if (boost.activeQuizzesLeft > 0) {
+                    Text(
+                        text = stringResource(R.string.boost_inventory_active, boost.activeQuizzesLeft),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+            }
+            Button(
+                onClick = onBuy,
+                enabled = affordable,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(text = "🪙 ${boost.item.priceCoins}", fontWeight = FontWeight.Bold)
+            }
+        }
+    }
+}
+
+@Composable
+private fun BoostInventoryCard(
+    boost: BoostUi,
+    colors: AppThemeColors,
+    textColor: Color,
+    onActivate: () -> Unit
+) {
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = boost.item.emoji, fontSize = 32.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(boost.item.labelRes),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                if (boost.activeQuizzesLeft > 0) {
+                    Text(
+                        text = stringResource(R.string.boost_inventory_active, boost.activeQuizzesLeft),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                } else {
+                    Text(
+                        text = stringResource(boost.item.descRes, boost.item.quizzes),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = textColor.copy(alpha = 0.75f)
+                    )
+                }
+                if (boost.owned > 0) {
+                    Text(
+                        text = stringResource(R.string.inventory_count, boost.owned),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+            }
+            Button(
+                onClick = onActivate,
+                enabled = boost.owned > 0,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.inventory_activate),
+                    fontWeight = FontWeight.Bold
                 )
             }
         }
@@ -575,7 +916,7 @@ private fun StreakFreezeInfoCard(count: Int, colors: AppThemeColors, textColor: 
 }
 
 @Composable
-private fun ActivationSnackbar(points: Int, modifier: Modifier = Modifier) {
+private fun ActivationSnackbar(text: String, modifier: Modifier = Modifier) {
     Surface(
         color = MaterialTheme.colorScheme.primary,
         shape = RoundedCornerShape(12.dp),
@@ -583,7 +924,7 @@ private fun ActivationSnackbar(points: Int, modifier: Modifier = Modifier) {
         modifier = modifier
     ) {
         Text(
-            text = stringResource(R.string.inventory_activated_snackbar, points),
+            text = text,
             style = MaterialTheme.typography.bodyMedium,
             fontWeight = FontWeight.SemiBold,
             color = MaterialTheme.colorScheme.onPrimary,

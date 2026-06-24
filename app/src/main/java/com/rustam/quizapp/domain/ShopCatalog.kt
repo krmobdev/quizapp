@@ -29,8 +29,39 @@ data class BoosterItem(
     val rewardPoints: Int
 )
 
+/**
+ * A buyable cosmetic title shown on the player card (e.g. "🔥 Огненный разум"). Purely a status
+ * symbol — owned via the same `owned_item` table as avatars/themes and equipped like them. Prices
+ * climb steeply so titles stay a long-term coin sink and a reason to keep earning.
+ */
+data class TitleItem(
+    val id: String,
+    val emoji: String,
+    @param:StringRes val labelRes: Int,
+    val priceCoins: Int
+)
+
 /** The effect a [PowerUpItem] applies when used during a quiz. */
 enum class PowerUpType { FIFTY_FIFTY, ADD_TIME, SKIP }
+
+/** What a [BoostItem] doubles while it is active. */
+enum class BoostType { COINS, XP }
+
+/**
+ * A temporary, consumable boost ("ништяк"): once switched on it doubles its [type] reward for the
+ * next [quizzes] finished quizzes. Bought into the backpack like boosters, then activated from
+ * there — it nudges the player to keep playing while the charges last.
+ */
+data class BoostItem(
+    val id: String,
+    val type: BoostType,
+    val emoji: String,
+    @param:StringRes val labelRes: Int,
+    @param:StringRes val descRes: Int,
+    val priceCoins: Int,
+    val multiplier: Int,
+    val quizzes: Int
+)
 
 /**
  * A consumable used during a quiz (e.g. 50/50, extra time, skip). Bought with coins and
@@ -75,7 +106,30 @@ object ShopCatalog {
         AvatarItem("avatar_crown", "👑", 450),
         AvatarItem("avatar_devil", "😈", 500),
         AvatarItem("avatar_dragon", "🐉", 600),
-        AvatarItem("avatar_phoenix", "🔥", 750)
+        AvatarItem("avatar_phoenix", "🔥", 750),
+        AvatarItem("avatar_dog", "🐶", 150),
+        AvatarItem("avatar_rabbit", "🐰", 150),
+        AvatarItem("avatar_tiger", "🐯", 200),
+        AvatarItem("avatar_koala", "🐨", 200),
+        AvatarItem("avatar_bee", "🐝", 200),
+        AvatarItem("avatar_turtle", "🐢", 250),
+        AvatarItem("avatar_monkey", "🐵", 250),
+        AvatarItem("avatar_eagle", "🦅", 300),
+        AvatarItem("avatar_butterfly", "🦋", 300),
+        AvatarItem("avatar_parrot", "🦜", 350),
+        AvatarItem("avatar_shark", "🦈", 350),
+        AvatarItem("avatar_wolf", "🐺", 400),
+        AvatarItem("avatar_raccoon", "🦝", 400),
+        AvatarItem("avatar_dino", "🦖", 450),
+        AvatarItem("avatar_cowboy", "🤠", 500),
+        AvatarItem("avatar_tophat", "🎩", 550),
+        AvatarItem("avatar_vampire", "🧛", 600),
+        AvatarItem("avatar_merperson", "🧜", 650),
+        AvatarItem("avatar_peacock", "🦚", 700),
+        AvatarItem("avatar_superhero", "🦸", 800),
+        AvatarItem("avatar_star", "🌟", 900),
+        AvatarItem("avatar_gem", "💎", 1100),
+        AvatarItem("avatar_genie", "🧞", 1500)
     )
 
     val themes: List<ThemeItem> = listOf(
@@ -87,7 +141,10 @@ object ShopCatalog {
         ThemeItem("theme_rose", R.string.theme_accent_rose, 350),
         ThemeItem("theme_crimson", R.string.theme_accent_crimson, 400),
         ThemeItem("theme_gold", R.string.theme_accent_gold, 450),
-        ThemeItem("theme_midnight", R.string.theme_accent_midnight, 500)
+        ThemeItem("theme_midnight", R.string.theme_accent_midnight, 500),
+        ThemeItem("theme_aqua", R.string.theme_accent_aqua, 350),
+        ThemeItem("theme_lavender", R.string.theme_accent_lavender, 400),
+        ThemeItem("theme_slate", R.string.theme_accent_slate, 550)
     )
 
     /**
@@ -97,10 +154,32 @@ object ShopCatalog {
     val boosters: List<BoosterItem> = listOf(
         BoosterItem("booster_xp_small", "📘", R.string.shop_booster_small, 500, 1000),
         BoosterItem("booster_xp_medium", "📗", R.string.shop_booster_medium, 1200, 2500),
-        BoosterItem("booster_xp_large", "📕", R.string.shop_booster_large, 2200, 5000)
+        BoosterItem("booster_xp_large", "📕", R.string.shop_booster_large, 2200, 5000),
+        BoosterItem("booster_xp_huge", "📚", R.string.shop_booster_huge, 4000, 11000)
     )
 
     fun booster(id: String): BoosterItem? = boosters.find { it.id == id }
+
+    /**
+     * Cosmetic titles, ordered from cheap to prestigious. The steep price ladder gives coins a
+     * long-term purpose: the top titles take many strong quizzes (or saved daily rewards) to afford.
+     */
+    val titles: List<TitleItem> = listOf(
+        TitleItem("title_curious", "🌱", R.string.title_curious, 300),
+        TitleItem("title_bookworm", "📖", R.string.title_bookworm, 500),
+        TitleItem("title_sharp", "⚡", R.string.title_sharp, 750),
+        TitleItem("title_scholar", "🎓", R.string.title_scholar, 1000),
+        TitleItem("title_genius", "🧠", R.string.title_genius, 1400),
+        TitleItem("title_quizmaster", "🏅", R.string.title_quizmaster, 1900),
+        TitleItem("title_sage", "🦉", R.string.title_sage, 2500),
+        TitleItem("title_champion", "🏆", R.string.title_champion, 3200),
+        TitleItem("title_legend", "🌟", R.string.title_legend, 4200),
+        TitleItem("title_firemind", "🔥", R.string.title_firemind, 5500),
+        TitleItem("title_cosmic", "🌌", R.string.title_cosmic, 7500),
+        TitleItem("title_immortal", "💎", R.string.title_immortal, 10000)
+    )
+
+    fun title(id: String?): TitleItem? = id?.let { tid -> titles.find { it.id == tid } }
 
     /** In-quiz power-ups, used mid-question. Cheap because they are spent every quiz. */
     val powerUps: List<PowerUpItem> = listOf(
@@ -110,6 +189,17 @@ object ShopCatalog {
     )
 
     fun powerUp(id: String): PowerUpItem? = powerUps.find { it.id == id }
+
+    /**
+     * Temporary 2× reward boosts. Cheap enough to buy often, but each only lasts a few quizzes —
+     * so the player has to come back and play to spend the charges.
+     */
+    val boosts: List<BoostItem> = listOf(
+        BoostItem("boost_coins", BoostType.COINS, "💰", R.string.boost_coins_title, R.string.boost_coins_desc, 350, 2, 3),
+        BoostItem("boost_xp", BoostType.XP, "🎓", R.string.boost_xp_title, R.string.boost_xp_desc, 350, 2, 3)
+    )
+
+    fun boost(id: String): BoostItem? = boosts.find { it.id == id }
 
     /** Streak Freeze: a consumable that auto-protects the daily streak when a day is missed. */
     const val STREAK_FREEZE_EMOJI = "🧊"

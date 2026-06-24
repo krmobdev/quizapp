@@ -7,6 +7,7 @@ import com.rustam.quizapp.data.db.AchievementEntity
 import com.rustam.quizapp.data.db.AppDatabase
 import com.rustam.quizapp.data.db.AppStateEntity
 import com.rustam.quizapp.data.db.CategoryStatsEntity
+import com.rustam.quizapp.data.db.DailyQuestEntity
 import com.rustam.quizapp.data.db.DailyRewardEntity
 import com.rustam.quizapp.data.db.InventoryEntity
 import com.rustam.quizapp.data.db.OwnedItemEntity
@@ -39,6 +40,7 @@ data class BackupData(
     val categoryStats: List<CategoryStatsEntity> = emptyList(),
     val streak: StreakEntity? = null,
     val dailyReward: DailyRewardEntity? = null,
+    val dailyQuest: DailyQuestEntity? = null,
     val achievements: List<AchievementEntity> = emptyList(),
     val appState: AppStateEntity? = null
 )
@@ -69,6 +71,7 @@ class BackupRepository(context: Context) {
                 categoryStats = db.backupDao().allCategoryStats(),
                 streak = db.streakDao().get(),
                 dailyReward = db.dailyRewardDao().get(),
+                dailyQuest = db.dailyQuestDao().get(),
                 achievements = db.backupDao().allAchievements(),
                 appState = db.appStateDao().get()
             )
@@ -100,6 +103,7 @@ class BackupRepository(context: Context) {
             db.backupDao().insertAchievements(d.achievements)
             db.streakDao().upsert(d.streak ?: StreakEntity())
             db.dailyRewardDao().upsert(d.dailyReward ?: DailyRewardEntity())
+            db.dailyQuestDao().upsert(d.dailyQuest ?: DailyQuestEntity())
             // Force the migrated flag so the legacy DataStore import can never clobber
             // freshly imported data on a later launch.
             db.appStateDao().upsert((d.appState ?: AppStateEntity()).copy(migratedFromDataStore = true))
@@ -138,7 +142,9 @@ class BackupRepository(context: Context) {
             clearCategoryStats()
             clearStreak()
             clearDailyReward()
+            clearDailyQuest()
             clearAchievements()
+            clearAppState()
         }
     }
 }

@@ -430,11 +430,12 @@ fun OptionBadge(
     label: String,
     background: Color,
     content: Color,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    size: Dp = 44.dp
 ) {
     Box(
         modifier = modifier
-            .size(44.dp)
+            .size(size)
             .clip(AppShapes.Badge)
             .background(background),
         contentAlignment = Alignment.Center

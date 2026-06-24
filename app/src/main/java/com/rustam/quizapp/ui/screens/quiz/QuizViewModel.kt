@@ -7,6 +7,7 @@ import com.rustam.quizapp.audio.SoundManager
 import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.AppLanguage
+import com.rustam.quizapp.data.DailyQuestRepository
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.data.MISTAKES_CATEGORY_ID
 import com.rustam.quizapp.data.MistakesRepository
@@ -89,11 +90,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     )
     private val progressRepository = QuizProgressRepository(application)
     private val mistakesRepository = MistakesRepository(application)
+    private val dailyQuestRepository = DailyQuestRepository(application)
     private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
-        soundEnabled = SettingsRepository(application).soundEnabled,
+        soundEnabled = settingsRepository.soundEnabled,
         scope = viewModelScope
     )
     private var session: QuizSession? = null
@@ -102,12 +104,28 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private var eventType: QuizEventType? = null
     private var quizLanguage: AppLanguage = AppLanguage.RU
     private var questionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS
+    private var baseQuestionTimeSeconds: Int = DEFAULT_QUESTION_TIME_SECONDS
     private var questionCount: Int = QuestionRepository.QUIZ_SIZE
     private var adaptive: Boolean = false
     private var isMistakesMode: Boolean = false
+    // Guards against re-preparing the quiz on every fresh composition (e.g. screen rotation):
+    // the ViewModel survives configuration changes, so the in-progress run and its ticking timer
+    // must be preserved instead of being rebuilt by a second prepare() call.
+    private var hasPrepared = false
+    /** Prevents finishing the same quiz twice when Next is tapped rapidly on the last question. */
+    private var resultRecorded = false
     private var timerJob: Job? = null
     private var lastReward: QuizReward? = null
     private var lastNewAchievements: List<Achievement> = emptyList()
+
+    /**
+     * Latest owned power-up counts from the inventory. Kept in a field so that the value
+     * survives whenever the UI state is rebuilt from scratch (prepare/startNew/continueSaved):
+     * the inventory Flow only re-emits when the counts change, so a freshly built state must
+     * seed itself from here instead of resetting to an empty map.
+     */
+    @Volatile
+    private var powerUpCounts: Map<String, Int> = emptyMap()
 
     private val _uiState = MutableStateFlow(QuizUiState())
     val uiState: StateFlow<QuizUiState> = _uiState.asStateFlow()
@@ -116,6 +134,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         // Keep the in-quiz power-up counts in sync with the player's inventory.
         viewModelScope.launch {
             playerRepository.observePowerUps().collect { counts ->
+                powerUpCounts = counts
                 _uiState.update { it.copy(powerUpCounts = counts) }
             }
         }
@@ -137,8 +156,13 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         questionCount: Int = QuestionRepository.QUIZ_SIZE,
         adaptive: Boolean = false
     ) {
+        // Only prepare once per ViewModel; a rotation re-runs this from the new composition but the
+        // existing session/timer in this surviving ViewModel must not be reset.
+        if (hasPrepared) return
+        hasPrepared = true
         this.eventType = eventType
         this.questionTimeSeconds = questionTimeSeconds
+        this.baseQuestionTimeSeconds = questionTimeSeconds
         this.questionCount = questionCount
         this.adaptive = adaptive
         this.isMistakesMode = categoryId == MISTAKES_CATEGORY_ID
@@ -159,7 +183,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                 _uiState.value = QuizUiState(
                     isLoading = false,
                     resumePrompt = saved,
-                    questionTimeSeconds = saved.questionTimeSeconds
+                    questionTimeSeconds = saved.questionTimeSeconds,
+                    powerUpCounts = powerUpCounts
                 )
             } else {
                 startNew(categoryId, difficulty)
@@ -195,7 +220,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             showExplanation = saved.showExplanation,
             isTimeout = saved.isTimeout,
             questionTimeSeconds = questionTimeSeconds,
-            timeLeftSeconds = if (saved.showExplanation) 0 else questionTimeSeconds
+            timeLeftSeconds = if (saved.showExplanation) 0 else questionTimeSeconds,
+            powerUpCounts = powerUpCounts
         )
         if (!saved.showExplanation) startTimer()
     }
@@ -219,8 +245,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             quizLanguage = settingsRepository.appLanguage.first()
             
             val profile = playerRepository.observeProfile().first()
-            val extraSeconds = profile.stats.extraTimeSeconds
-            this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.questionTimeSeconds + extraSeconds).toInt()
+            val extraSeconds = profile.stats.extraTimeSeconds + profile.skillTree.extraTimeSeconds
+            this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.baseQuestionTimeSeconds + extraSeconds).toInt()
 
             val recentIds =
                 if (isMistakesMode) emptyList() else playerRepository.getRecentQuestions(categoryId).first()
@@ -260,7 +286,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             _uiState.value = QuizUiState(
                 isLoading = false,
                 isFinished = true,
-                questionTimeSeconds = questionTimeSeconds
+                questionTimeSeconds = questionTimeSeconds,
+                powerUpCounts = powerUpCounts
             )
         } else {
             _uiState.value = QuizUiState(
@@ -269,7 +296,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                 questionNumber = newSession.currentIndex + 1,
                 totalQuestions = newSession.total,
                 questionTimeSeconds = questionTimeSeconds,
-                timeLeftSeconds = questionTimeSeconds
+                timeLeftSeconds = questionTimeSeconds,
+                powerUpCounts = powerUpCounts
             )
             startTimer()
         }
@@ -298,7 +326,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         stopTimer()
         current.nextQuestion()
         if (current.isFinished()) {
-            if (!_uiState.value.isFinished) {
+            if (!resultRecorded) {
+                resultRecorded = true
                 viewModelScope.launch {
                     progressRepository.clear()
                     lastReward = recordResult(current)
@@ -342,14 +371,27 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     /** +Time: spend one power-up to add seconds to the current question timer. */
     fun useAddTime() {
-        if (_uiState.value.isAnswered) return
         val id = powerUpId(PowerUpType.ADD_TIME) ?: return
-        viewModelScope.launch {
-            if (playerRepository.consumePowerUp(id)) {
-                _uiState.update { it.copy(timeLeftSeconds = it.timeLeftSeconds + ADD_TIME_SECONDS) }
-                soundManager.play(SoundType.CLICK)
+        // Apply the extra time synchronously (and optimistically drop the count) so it can't
+        // lose the race with an expiring timer — otherwise the question can time out while the
+        // inventory write is in flight, which looks like the question was skipped. The actual
+        // inventory write happens in the background and reconciles the count via its Flow.
+        var applied = false
+        _uiState.update { state ->
+            val count = state.powerUpCounts[id] ?: 0
+            if (state.isAnswered || count <= 0) {
+                state
+            } else {
+                applied = true
+                state.copy(
+                    timeLeftSeconds = state.timeLeftSeconds + ADD_TIME_SECONDS,
+                    powerUpCounts = state.powerUpCounts + (id to count - 1)
+                )
             }
         }
+        if (!applied) return
+        soundManager.play(SoundType.CLICK)
+        viewModelScope.launch { playerRepository.consumePowerUp(id) }
     }
 
     /** Skip: spend one power-up to move to the next question with no penalty (and no points). */
@@ -471,6 +513,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             allowEventBonus = !isMistakesMode
         )
 
+        // Count real quizzes (not mistakes practice) towards the daily quests.
+        if (!isMistakesMode) {
+            dailyQuestRepository.recordQuizFinished(
+                correct = session.correctCount,
+                total = session.total,
+                coinsEarned = reward.coins
+            )
+        }
+
         // Update the day streak first so streak-based achievements see the fresh value,
         // then unlock any newly earned achievements (which may grant bonus coins).
         streakRepository.recordPlayed()
@@ -486,14 +537,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         return if (category.questionsAnswered > 0) {
             category.correctAnswers * 100 / category.questionsAnswered
         } else null
-    }
-
-    private fun Question.shuffledOptions(): Question {
-        val order = options.indices.shuffled()
-        return copy(
-            options = order.map { options[it] },
-            correctIndex = order.indexOf(correctIndex)
-        )
     }
 
     override fun onCleared() {

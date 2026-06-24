@@ -74,7 +74,7 @@ class QuestionRepository(private val context: Context) {
             .take(bankSize)
             .shuffled()
             .take(quizSize)
-            .map { it.withShuffledOptions() }
+            .map { it.shuffledOptions() }
     }
 
     /**
@@ -114,7 +114,7 @@ class QuestionRepository(private val context: Context) {
                 .forEach { chosen[it.id] = it }
         }
 
-        return chosen.values.shuffled().map { it.withShuffledOptions() }
+        return chosen.values.shuffled().map { it.shuffledOptions() }
     }
 
     companion object {
@@ -122,13 +122,5 @@ class QuestionRepository(private val context: Context) {
         const val QUIZ_SIZE = 10
 
         private val questionsCache = java.util.concurrent.ConcurrentHashMap<String, List<Question>>()
-    }
-
-    private fun Question.withShuffledOptions(): Question {
-        val order = options.indices.shuffled()
-        return copy(
-            options = order.map { options[it] },
-            correctIndex = order.indexOf(correctIndex)
-        )
     }
 }

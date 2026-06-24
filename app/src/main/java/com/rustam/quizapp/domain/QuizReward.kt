@@ -13,6 +13,9 @@ data class QuizReward(
     val critMultiplier: Float = 1f,
     val xpBonus: Int = 0,
     val coinBonus: Int = 0,
+    /** Whether an active temporary boost doubled the XP / coins of this reward. */
+    val xpBoosted: Boolean = false,
+    val coinBoosted: Boolean = false,
     /** Raw base reward (before level scaling and stat bonuses), for the result breakdown. */
     val basePoints: Int = 0,
     val baseCoins: Int = 0,
@@ -38,7 +41,7 @@ data class AnswerReward(
 
 object RewardCalculator {
     private const val POINTS_PER_CORRECT = 10
-    private const val COINS_PER_CORRECT = 2
+    private const val COINS_PER_CORRECT = 3
     private const val PERFECT_BONUS_POINTS = 50
     private const val SPEED_LOSS_PER_SECOND = 0.1f
 

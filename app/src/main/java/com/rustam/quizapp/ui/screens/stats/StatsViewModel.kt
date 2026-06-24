@@ -20,6 +20,7 @@ import com.rustam.quizapp.domain.AchievementEvaluator
 import com.rustam.quizapp.domain.Achievements
 import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.QuizEventProgress
+import com.rustam.quizapp.domain.SkillTreeState
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -61,7 +62,10 @@ data class PlayerUiState(
     val averageAccuracyPercent: Int? = null,
     val categories: List<CategoryStatsUi> = emptyList(),
     val stats: CharacterStats = CharacterStats(),
+    val skillTree: SkillTreeState = SkillTreeState(),
     val lifetimePoints: Int = 0,
+    val lifetimeCoins: Int = 0,
+    val equippedTitleId: String? = null,
     val streakCurrent: Int = 0,
     val streakBest: Int = 0,
     val achievements: List<AchievementUi> = emptyList()
@@ -81,10 +85,11 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
         achievementsRepository = achievementsRepository,
         questionRepository = questionRepository
     )
+    private val settingsRepository = SettingsRepository(application)
     private val soundManager = SoundManager(
         context = application,
         sounds = SoundResources.load(application),
-        soundEnabled = SettingsRepository(application).soundEnabled,
+        soundEnabled = settingsRepository.soundEnabled,
         scope = viewModelScope
     )
 
@@ -110,6 +115,14 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
                 soundManager.play(SoundType.CLICK)
                 // Maxing a characteristic can unlock an achievement.
                 achievementEvaluator.evaluate()
+            }
+        }
+    }
+
+    fun upgradeSkill(branchId: String) {
+        viewModelScope.launch {
+            if (playerRepository.upgradeSkill(branchId)) {
+                soundManager.play(SoundType.CLICK)
             }
         }
     }
@@ -182,7 +195,10 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             averageAccuracyPercent = averageAccuracy,
             categories = categories,
             stats = profile.stats,
+            skillTree = profile.skillTree,
             lifetimePoints = profile.lifetimePoints,
+            lifetimeCoins = profile.lifetimeCoins,
+            equippedTitleId = profile.equippedTitleId,
             streakCurrent = streak.current,
             streakBest = streak.best,
             achievements = achievements
