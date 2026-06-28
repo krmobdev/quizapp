@@ -8,11 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Adaptive launcher icon — app teal palette -->
-    <color name="ic_launcher_bg_start">#FF004D40</color>
-    <color name="ic_launcher_bg_mid">#FF006B5B</color>
-    <color name="ic_launcher_bg_end">#FF00251F</color>
-    <color name="ic_launcher_bg_glow">#406FF7DD</color>
-    <color name="ic_launcher_fg">#FFFFFFFF</color>
-    <color name="ic_launcher_accent">#FF6FF7DD</color>
+    <!-- Adaptive launcher icon — deep teal gradient with mint accent (Play Store ready) -->
+    <color name="ic_launcher_bg_start">#FF00695C</color>
+    <color name="ic_launcher_bg_mid">#FF00897B</color>
+    <color name="ic_launcher_bg_end">#FF003D35</color>
+    <color name="ic_launcher_bg_glow">#5080FFD6</color>
+    <color name="ic_launcher_fg">#FFF5FFFD</color>
+    <color name="ic_launcher_accent">#FF80FFD6</color>
 </resources>

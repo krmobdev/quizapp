@@ -17,6 +17,7 @@ import com.rustam.quizapp.data.QuestionRepository
 import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.data.StreakRepository
 import com.rustam.quizapp.domain.QuizEventProgress
+import com.rustam.quizapp.domain.SeasonPass
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -51,7 +52,9 @@ data class HomeUiState(
     /** Remaining quizzes for the active temporary boosts (0 = inactive). */
     val coinBoostLeft: Int = 0,
     val xpBoostLeft: Int = 0,
-    val dailyQuests: List<DailyChallengeProgress> = emptyList()
+    val dailyQuests: List<DailyChallengeProgress> = emptyList(),
+    val seasonLevel: Int = 0,
+    val seasonDaysLeft: Int = 30
 )
 
 class HomeViewModel(application: Application) : AndroidViewModel(application) {
@@ -87,7 +90,9 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             streak = streak.current,
             dailyReward = dailyReward,
             coinBoostLeft = profile.coinBoostQuizzesLeft,
-            xpBoostLeft = profile.xpBoostQuizzesLeft
+            xpBoostLeft = profile.xpBoostQuizzesLeft,
+            seasonLevel = SeasonPass.level(profile.seasonXp),
+            seasonDaysLeft = profile.seasonDaysLeft
         )
     }
 

@@ -5,6 +5,7 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -21,6 +22,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -42,10 +44,12 @@ import com.rustam.quizapp.ui.components.AppActionButton
 import com.rustam.quizapp.ui.components.AppBackground
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppThemeColors
+import com.rustam.quizapp.ui.components.ConfettiBurst
 import com.rustam.quizapp.ui.components.GlassCard
 import com.rustam.quizapp.ui.components.ScoreRing
 import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
+import com.rustam.quizapp.ui.components.rememberHapticHelper
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
@@ -75,6 +79,7 @@ private fun ResultContent(
 ) {
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
+    val haptic = rememberHapticHelper()
     val headlineAlpha by animateFloatAsState(
         targetValue = 1f,
         animationSpec = tween(600),
@@ -87,8 +92,20 @@ private fun ResultContent(
         ratio >= 0.5f -> "📚"
         else -> "💪"
     }
+    // Perfect run (e.g. 10/10 or 15/15): celebrate with a confetti cannon.
+    val isPerfect = result.total > 0 && result.correct == result.total
+    val reward = result.reward
+    // Level-up also triggers confetti burst and celebration haptic.
+    val isLevelUp = reward?.leveledUp == true
+    LaunchedEffect(isLevelUp) {
+        if (isLevelUp) haptic.celebrate()
+    }
+    LaunchedEffect(isPerfect) {
+        if (isPerfect) haptic.celebrate()
+    }
 
     AppBackground(modifier = modifier) {
+      Box(modifier = Modifier.fillMaxSize()) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -227,6 +244,12 @@ private fun ResultContent(
                 primary = true
             )
         }
+        if (isPerfect || isLevelUp) {
+            ConfettiBurst(
+                particleCount = if (isLevelUp && !isPerfect) 80 else 150
+            )
+        }
+      }
     }
 }
 

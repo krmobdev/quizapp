@@ -11,6 +11,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
     entities = [
         PlayerEntity::class,
         OwnedItemEntity::class,
+        ShopDealEntity::class,
         InventoryEntity::class,
         RecentQuestionsEntity::class,
         CategoryStatsEntity::class,
@@ -20,12 +21,13 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         AchievementEntity::class,
         AppStateEntity::class
     ],
-    version = 6,
+    version = 9,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun playerDao(): PlayerDao
+    abstract fun shopDealDao(): ShopDealDao
     abstract fun categoryStatsDao(): CategoryStatsDao
     abstract fun appStateDao(): AppStateDao
     abstract fun streakDao(): StreakDao
@@ -118,6 +120,46 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        /** Four new character stats (Knowledge, Wealth, Precision, Insight) added to the player row. */
+        private val MIGRATION_6_7 = object : Migration(6, 7) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                listOf("knowledge", "wealth", "precision", "insight").forEach { column ->
+                    db.execSQL("ALTER TABLE player ADD COLUMN $column INTEGER NOT NULL DEFAULT 0")
+                }
+            }
+        }
+
+        /**
+         * Economy v2: rare gems currency and the season-track state (period id, accumulated XP and
+         * a claimed-levels bitmask), plus the daily shop-deals table.
+         */
+        private val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE player ADD COLUMN gems INTEGER NOT NULL DEFAULT 0")
+                db.execSQL("ALTER TABLE player ADD COLUMN seasonId INTEGER NOT NULL DEFAULT -1")
+                db.execSQL("ALTER TABLE player ADD COLUMN seasonXp INTEGER NOT NULL DEFAULT 0")
+                db.execSQL("ALTER TABLE player ADD COLUMN seasonClaimedMask INTEGER NOT NULL DEFAULT 0")
+                db.execSQL(
+                    """
+                    CREATE TABLE IF NOT EXISTS shop_deal (
+                        id INTEGER NOT NULL PRIMARY KEY,
+                        day INTEGER NOT NULL DEFAULT -1,
+                        purchasesCsv TEXT NOT NULL DEFAULT ''
+                    )
+                    """.trimIndent()
+                )
+            }
+        }
+
+        /** Adds onboardingShown flag to app_state (keeps all existing user data). */
+        private val MIGRATION_8_9 = object : Migration(8, 9) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "ALTER TABLE app_state ADD COLUMN onboardingShown INTEGER NOT NULL DEFAULT 0"
+                )
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase =
             instance ?: synchronized(this) {
                 instance ?: build(context.applicationContext).also { instance = it }
@@ -126,7 +168,8 @@ abstract class AppDatabase : RoomDatabase() {
         private fun build(context: Context): AppDatabase =
             Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME)
                 .addMigrations(
-                    MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6
+                    MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6,
+                    MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9
                 )
                 .fallbackToDestructiveMigration(dropAllTables = true)
                 .build()

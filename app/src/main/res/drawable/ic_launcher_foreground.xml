@@ -4,29 +4,44 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Bulb glass -->
+
+    <!-- Bulb glass body -->
     <path
         android:fillColor="@color/ic_launcher_fg"
-        android:pathData="M54,27c-14.5,0 -24.5,10.2 -24.5,23.5c0,9.2 5.2,16.2 13.2,19.2l-3.8,8.8c-0.5,1.2 0.4,2.5 1.7,2.5h26.8c1.3,0 2.2,-1.3 1.7,-2.5l-3.8,-8.8c8,-3 13.2,-10 13.2,-19.2c0,-13.3 -10,-23.5 -24.5,-23.5z" />
-    <!-- Screw-base -->
+        android:pathData="M54,24c-15.5,0 -26,11 -26,25c0,10 5.5,17.5 14,21l-4,9.5c-0.6,1.3 0.4,2.7 1.9,2.7h28.2c1.5,0 2.5,-1.4 1.9,-2.7l-4,-9.5c8.5,-3.5 14,-11 14,-21c0,-14 -10.5,-25 -26,-25z" />
+
+    <!-- Screw base ring top -->
     <path
         android:fillColor="@color/ic_launcher_fg"
-        android:pathData="M44.5,79.5h19c1.1,0 2,0.9 2,2v1.5c0,1.1 -0.9,2 -2,2h-19c-1.1,0 -2,-0.9 -2,-2v-1.5c0,-1.1 0.9,-2 2,-2z" />
+        android:pathData="M43.5,82h21c1.2,0 2.2,1 2.2,2.2v1.6c0,1.2 -1,2.2 -2.2,2.2h-21c-1.2,0 -2.2,-1 -2.2,-2.2v-1.6c0,-1.2 1,-2.2 2.2,-2.2z" />
+
+    <!-- Screw base ring bottom -->
     <path
         android:fillColor="@color/ic_launcher_fg"
-        android:pathData="M42.5,85h23c1.4,0 2.5,1.1 2.5,2.5v1c0,1.4 -1.1,2.5 -2.5,2.5h-23c-1.4,0 -2.5,-1.1 -2.5,-2.5v-1c0,-1.4 1.1,-2.5 2.5,-2.5z" />
-    <!-- Filament (mint accent) -->
+        android:pathData="M41,88h26c1.5,0 2.7,1.2 2.7,2.7v0.8c0,1.5 -1.2,2.7 -2.7,2.7h-26c-1.5,0 -2.7,-1.2 -2.7,-2.7v-0.8c0,-1.5 1.2,-2.7 2.7,-2.7z" />
+
+    <!-- Filament center vertical (mint) -->
     <path
         android:fillColor="@color/ic_launcher_accent"
-        android:pathData="M52.5,41h3v16h-3z" />
+        android:pathData="M51.5,39h5v19h-5z" />
+
+    <!-- Filament left arm (mint) -->
     <path
         android:fillColor="@color/ic_launcher_accent"
-        android:pathData="M48,46.5l6,-5.5l2.2,2.4l-6.2,5.3z" />
+        android:pathData="M46,44.5L54.5,38L57,40.8L47.5,47.2Z" />
+
+    <!-- Filament right arm (mint) -->
     <path
         android:fillColor="@color/ic_launcher_accent"
-        android:pathData="M60,46.5l-6,-5.5l-2.2,2.4l6.2,5.3z" />
-    <!-- Insight sparkle -->
+        android:pathData="M62,44.5L53.5,38L51,40.8L60.5,47.2Z" />
+
+    <!-- Sparkle top-right — large (mint) -->
     <path
         android:fillColor="@color/ic_launcher_accent"
-        android:pathData="M78,30l1.4,3.6l3.6,1.4l-3.6,1.4l-1.4,3.6l-1.4,-3.6l-3.6,-1.4l3.6,-1.4z" />
+        android:pathData="M78,30l1.6,4L84,35.6l-4.4,1.6L78,41.2l-1.6,-4L72,35.6l4.4,-1.6z" />
+
+    <!-- Sparkle small top-left (mint) -->
+    <path
+        android:fillColor="@color/ic_launcher_accent"
+        android:pathData="M30,32l1,2.4l2.4,1l-2.4,1L30,38.8l-1,-2.4L26.6,35.4l2.4,-1z" />
 </vector>

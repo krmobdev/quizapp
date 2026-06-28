@@ -13,6 +13,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.data.SettingsRepository
 import com.rustam.quizapp.notifications.ReminderScheduler
 import com.rustam.quizapp.ui.localization.LocalizedApp
 import com.rustam.quizapp.ui.navigation.AppNavHost
@@ -29,6 +30,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setupStreakReminders()
+        val settingsRepo = SettingsRepository(applicationContext)
         setContent {
             val settingsViewModel: SettingsViewModel = viewModel()
             val themeMode by settingsViewModel.themeMode.collectAsState()
@@ -44,7 +46,7 @@ class MainActivity : ComponentActivity() {
                         darkTheme = shouldUseDarkTheme(themeMode),
                         accent = accentTheme
                     ) {
-                        AppNavHost()
+                        AppNavHost(settingsRepository = settingsRepo)
                     }
                 }
             }

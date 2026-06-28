@@ -56,6 +56,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.res.stringResource
@@ -80,6 +82,7 @@ import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberDailyQuote
 import com.rustam.quizapp.ui.localization.labelRes
 import com.rustam.quizapp.ui.localization.subtitleRes
+import com.rustam.quizapp.ui.screens.season.SeasonPassDialog
 import com.rustam.quizapp.ui.theme.QuizappTheme
 
 @Composable
@@ -178,6 +181,8 @@ private fun HomeContent(
                 xpBoostLeft = state.xpBoostLeft,
                 dailyReward = state.dailyReward,
                 dailyQuests = state.dailyQuests,
+                seasonLevel = state.seasonLevel,
+                seasonDaysLeft = state.seasonDaysLeft,
                 onClaimDaily = onClaimDaily,
                 onClaimQuest = onClaimQuest,
                 onCategoryClick = onCategoryClick,
@@ -226,6 +231,8 @@ private fun HomeScrollContent(
     xpBoostLeft: Int,
     dailyReward: com.rustam.quizapp.data.DailyRewardState,
     dailyQuests: List<DailyChallengeProgress>,
+    seasonLevel: Int,
+    seasonDaysLeft: Int,
     onClaimDaily: () -> Unit,
     onClaimQuest: (Int) -> Unit,
     onCategoryClick: (Category) -> Unit,
@@ -283,6 +290,15 @@ private fun HomeScrollContent(
                     modifier = Modifier.padding(top = 4.dp, bottom = 8.dp)
                 )
             }
+        }
+        item {
+            SeasonPassHomeChip(
+                level = seasonLevel,
+                daysLeft = seasonDaysLeft,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 4.dp)
+            )
         }
         item {
             Text(
@@ -704,8 +720,10 @@ private fun CategoryCard(
         MaterialTheme.colorScheme.surface.copy(alpha = 0.92f)
     }
 
+    val categoryName = stringResource(category.titleRes)
+    val categoryDesc = stringResource(R.string.a11y_category_card, categoryName)
     GlassCard(
-        modifier = modifier,
+        modifier = modifier.semantics { contentDescription = categoryDesc },
         colors = colors,
         onClick = onClick
     ) {
@@ -726,7 +744,7 @@ private fun CategoryCard(
                 Text(text = category.emoji, style = MaterialTheme.typography.headlineLarge)
             }
             Text(
-                text = stringResource(category.titleRes),
+                text = categoryName,
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
                 textAlign = TextAlign.Center,
@@ -937,6 +955,59 @@ private fun DifficultyOptionCard(
                     modifier = Modifier.size(24.dp)
                 )
             }
+        }
+    }
+}
+
+/**
+ * Compact chip shown on the Home screen that opens the Season Pass dialog on tap.
+ */
+@Composable
+private fun SeasonPassHomeChip(
+    level: Int,
+    daysLeft: Int,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    var showDialog by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf(false) }
+
+    if (showDialog) {
+        SeasonPassDialog(onDismiss = { showDialog = false })
+    }
+
+    GlassCard(
+        modifier = modifier,
+        colors = colors,
+        onClick = { showDialog = true }
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(text = "🏆", fontSize = 26.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.season_pass_title),
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(R.string.season_pass_home_card, level, daysLeft),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.7f)
+                )
+            }
+            Icon(
+                imageVector = androidx.compose.material.icons.Icons.Rounded.CheckCircle,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.7f),
+                modifier = Modifier.size(20.dp)
+            )
         }
     }
 }

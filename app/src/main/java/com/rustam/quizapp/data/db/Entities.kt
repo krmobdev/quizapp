@@ -41,6 +41,13 @@ data class PlayerEntity(
     /** Remaining quizzes the active temporary boosts apply to (0 = inactive). */
     val coinBoostQuizzesLeft: Int = 0,
     val xpBoostQuizzesLeft: Int = 0,
+    /** Rare premium currency (gems 💎), earned from achievements, events and the season track. */
+    val gems: Int = 0,
+    /** Season track state: the season period currently tracked, accumulated season XP and a
+     *  bitmask of reward levels already claimed (added in DB v8). */
+    val seasonId: Int = -1,
+    val seasonXp: Int = 0,
+    val seasonClaimedMask: Long = 0L,
     val strength: Int = 0,
     val intelligence: Int = 0,
     val agility: Int = 0,
@@ -49,6 +56,11 @@ data class PlayerEntity(
     val endurance: Int = 0,
     val focus: Int = 0,
     val charisma: Int = 0,
+    // Expanded characteristics (added in DB v7).
+    val knowledge: Int = 0,
+    val wealth: Int = 0,
+    val precision: Int = 0,
+    val insight: Int = 0,
     // Mastery Tree: unlocked tier count per skill branch (see domain SkillBranch).
     val skillErudition: Int = 0,
     val skillCommerce: Int = 0,
@@ -71,6 +83,19 @@ data class PlayerEntity(
 @Entity(tableName = "owned_item")
 data class OwnedItemEntity(
     @PrimaryKey val itemId: String
+)
+
+/**
+ * Daily shop deals state (single row). [day] is the epoch day the current rotation belongs to;
+ * [purchasesCsv] holds `dealId:count` pairs counting how many times each of today's deals has been
+ * bought, enforcing per-deal daily caps. Both reset when a new day's rotation is generated.
+ */
+@Serializable
+@Entity(tableName = "shop_deal")
+data class ShopDealEntity(
+    @PrimaryKey val id: Int = SINGLE_ROW_ID,
+    val day: Long = -1L,
+    val purchasesCsv: String = ""
 )
 
 @Serializable
@@ -150,5 +175,7 @@ data class AppStateEntity(
     val themeMode: String? = null,
     val appLanguage: String? = null,
     /** Guards the one-time DataStore -> Room import. */
-    val migratedFromDataStore: Boolean = false
+    val migratedFromDataStore: Boolean = false,
+    /** Set to true after the user has seen the first-launch onboarding screens. */
+    val onboardingShown: Boolean = false
 )

@@ -4,6 +4,8 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,6 +14,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -106,40 +109,38 @@ fun ShopScreen(
                 BalanceCard(coins = state.coins, colors = colors, textColor = textColor)
             }
             item {
+                val tabs = listOf(
+                    stringResource(R.string.shop_tab_consumables),
+                    stringResource(R.string.shop_tab_avatars),
+                    stringResource(R.string.shop_tab_themes),
+                    stringResource(R.string.shop_tab_titles),
+                    stringResource(R.string.inventory_title)
+                )
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
+                        .horizontalScroll(rememberScrollState())
                         .padding(vertical = 4.dp),
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    SubTabButton(
-                        text = stringResource(R.string.shop_tab_store),
-                        selected = selectedSubTab == 0,
-                        onClick = { selectedSubTab = 0 },
-                        colors = colors,
-                        textColor = textColor,
-                        modifier = Modifier.weight(1f)
-                    )
-                    SubTabButton(
-                        text = stringResource(R.string.inventory_title),
-                        selected = selectedSubTab == 1,
-                        onClick = { selectedSubTab = 1 },
-                        colors = colors,
-                        textColor = textColor,
-                        modifier = Modifier.weight(1f)
-                    )
+                    tabs.forEachIndexed { index, label ->
+                        SubTabButton(
+                            text = label,
+                            selected = selectedSubTab == index,
+                            onClick = { selectedSubTab = index },
+                            colors = colors,
+                            textColor = textColor
+                        )
+                    }
                 }
             }
 
-            if (selectedSubTab == 0) {
-                storeContent(
-                    state = state,
-                    colors = colors,
-                    textColor = textColor,
-                    viewModel = viewModel
-                )
-            } else {
-                backpackContent(
+            when (selectedSubTab) {
+                0 -> consumablesContent(state, colors, textColor, viewModel)
+                1 -> avatarsGridContent(state, colors, textColor, viewModel)
+                2 -> themesListContent(state, colors, textColor, viewModel)
+                3 -> titlesListContent(state, colors, textColor, viewModel)
+                else -> backpackContent(
                     state = state,
                     colors = colors,
                     textColor = textColor,
@@ -248,6 +249,79 @@ private fun LootRevealDialog(result: LootResult, onDismiss: () -> Unit) {
 }
 
 @Composable
+private fun DailyDealCard(
+    deal: com.rustam.quizapp.data.ShopDealState,
+    coins: Int,
+    colors: AppThemeColors,
+    textColor: Color,
+    onBuy: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    GlassCard(modifier = modifier, colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(text = deal.template.emoji, fontSize = 28.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(deal.template.labelRes),
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(
+                        R.string.deals_bought,
+                        deal.purchasedToday,
+                        com.rustam.quizapp.domain.ShopDeals.MAX_PER_DAY
+                    ),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.65f)
+                )
+            }
+            // Discount badge
+            Surface(
+                shape = RoundedCornerShape(6.dp),
+                color = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.75f)
+            ) {
+                Text(
+                    text = stringResource(R.string.deals_discount, com.rustam.quizapp.domain.ShopDeals.DISCOUNT_PERCENT),
+                    style = MaterialTheme.typography.labelSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.error,
+                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                )
+            }
+            if (deal.soldOut) {
+                Text(
+                    text = stringResource(R.string.deals_sold_out),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.45f)
+                )
+            } else {
+                Button(
+                    onClick = onBuy,
+                    enabled = coins >= deal.dealPrice,
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                    modifier = Modifier.height(34.dp),
+                    shape = RoundedCornerShape(8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.deals_buy, deal.dealPrice),
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
 private fun LootBoxCard(
     coins: Int,
     colors: AppThemeColors,
@@ -296,14 +370,40 @@ private fun LootBoxCard(
 }
 
 /** Boosters granting at least this much XP ask for confirmation before activation. */
-private const val BOOSTER_CONFIRM_THRESHOLD = 2500
+private const val BOOSTER_CONFIRM_THRESHOLD = 1500
 
-private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
+private fun androidx.compose.foundation.lazy.LazyListScope.consumablesContent(
     state: ShopUiState,
     colors: AppThemeColors,
     textColor: Color,
     viewModel: ShopViewModel
 ) {
+    if (state.deals.isNotEmpty()) {
+        item {
+            SectionHeader(text = stringResource(R.string.deals_section_title), textColor = textColor)
+        }
+        items(state.deals, key = { "deal_${it.template.dealId}" }) { deal ->
+            DailyDealCard(
+                deal = deal,
+                coins = state.coins,
+                colors = colors,
+                textColor = textColor,
+                onBuy = { viewModel.onDealBuy(deal.template.dealId) }
+            )
+        }
+    }
+    item {
+        SectionHeader(text = stringResource(R.string.shop_quiz_boosters_section), textColor = textColor)
+    }
+    items(state.powerUps, key = { it.item.id }) { powerUp ->
+        PowerUpCard(
+            powerUp = powerUp,
+            coins = state.coins,
+            colors = colors,
+            textColor = textColor,
+            onBuy = { viewModel.onPowerUpBuy(powerUp) }
+        )
+    }
     item {
         SectionHeader(text = stringResource(R.string.shop_lootbox_section), textColor = textColor)
     }
@@ -325,18 +425,6 @@ private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
             colors = colors,
             textColor = textColor,
             onBuy = { viewModel.onBoosterBuy(booster) }
-        )
-    }
-    item {
-        SectionHeader(text = stringResource(R.string.shop_powerups_section), textColor = textColor)
-    }
-    items(state.powerUps, key = { it.item.id }) { powerUp ->
-        PowerUpCard(
-            powerUp = powerUp,
-            coins = state.coins,
-            colors = colors,
-            textColor = textColor,
-            onBuy = { viewModel.onPowerUpBuy(powerUp) }
         )
     }
     item {
@@ -364,18 +452,44 @@ private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
             onBuy = viewModel::onStreakFreezeBuy
         )
     }
+}
+
+/** Avatars rendered as lazy rows of four cells, so only on-screen rows compose (no lag). */
+private fun androidx.compose.foundation.lazy.LazyListScope.avatarsGridContent(
+    state: ShopUiState,
+    colors: AppThemeColors,
+    textColor: Color,
+    viewModel: ShopViewModel
+) {
     item {
         SectionHeader(text = stringResource(R.string.shop_avatars), textColor = textColor)
     }
-    item {
-        AvatarsCard(
-            avatars = state.avatars,
-            coins = state.coins,
-            colors = colors,
-            textColor = textColor,
-            onClick = viewModel::onAvatarClick
-        )
+    items(state.avatars.chunked(4), key = { row -> row.first().item.id }) { rowItems ->
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            rowItems.forEach { avatar ->
+                AvatarCell(
+                    avatar = avatar,
+                    coins = state.coins,
+                    colors = colors,
+                    textColor = textColor,
+                    onClick = { viewModel.onAvatarClick(avatar) },
+                    modifier = Modifier.weight(1f)
+                )
+            }
+            repeat(4 - rowItems.size) { Box(modifier = Modifier.weight(1f)) }
+        }
     }
+}
+
+private fun androidx.compose.foundation.lazy.LazyListScope.themesListContent(
+    state: ShopUiState,
+    colors: AppThemeColors,
+    textColor: Color,
+    viewModel: ShopViewModel
+) {
     item {
         SectionHeader(text = stringResource(R.string.shop_themes), textColor = textColor)
     }
@@ -388,6 +502,14 @@ private fun androidx.compose.foundation.lazy.LazyListScope.storeContent(
             onClick = { viewModel.onThemeClick(theme) }
         )
     }
+}
+
+private fun androidx.compose.foundation.lazy.LazyListScope.titlesListContent(
+    state: ShopUiState,
+    colors: AppThemeColors,
+    textColor: Color,
+    viewModel: ShopViewModel
+) {
     item {
         SectionHeader(text = stringResource(R.string.shop_titles), textColor = textColor)
     }
@@ -758,6 +880,14 @@ private fun PowerUpCard(
                     style = MaterialTheme.typography.bodySmall,
                     color = textColor.copy(alpha = 0.75f)
                 )
+                if (powerUp.item.packSize > 1) {
+                    Text(
+                        text = stringResource(R.string.shop_powerup_pack_size, powerUp.item.packSize),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
                 if (powerUp.owned > 0) {
                     Text(
                         text = stringResource(R.string.shop_owned_count, powerUp.owned),
@@ -1040,7 +1170,7 @@ private fun SubTabButton(
             fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
             color = if (selected) MaterialTheme.colorScheme.primary else textColor.copy(alpha = 0.8f),
             textAlign = TextAlign.Center,
-            modifier = Modifier.padding(vertical = 12.dp)
+            modifier = Modifier.padding(horizontal = 18.dp, vertical = 12.dp)
         )
     }
 }
@@ -1054,44 +1184,6 @@ private fun SectionHeader(text: String, textColor: Color) {
         color = textColor,
         modifier = Modifier.padding(top = 4.dp, bottom = 2.dp)
     )
-}
-
-@Composable
-private fun AvatarsCard(
-    avatars: List<AvatarUi>,
-    coins: Int,
-    colors: AppThemeColors,
-    textColor: Color,
-    onClick: (AvatarUi) -> Unit
-) {
-    GlassCard(colors = colors) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
-            avatars.chunked(4).forEach { rowItems ->
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(12.dp)
-                ) {
-                    rowItems.forEach { avatar ->
-                        AvatarCell(
-                            avatar = avatar,
-                            coins = coins,
-                            colors = colors,
-                            textColor = textColor,
-                            onClick = { onClick(avatar) },
-                            modifier = Modifier.weight(1f)
-                        )
-                    }
-                    // Pad the last row so cells keep their width.
-                    repeat(4 - rowItems.size) { Box(modifier = Modifier.weight(1f)) }
-                }
-            }
-        }
-    }
 }
 
 @Composable

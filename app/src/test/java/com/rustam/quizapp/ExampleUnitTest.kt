@@ -32,14 +32,36 @@ class ExampleUnitTest {
             try {
                 val questions = json.decodeFromString<List<Question>>(text)
                 assertFalse("Questions list in ${file.name} should not be empty", questions.isEmpty())
+
+                val seenIds = mutableSetOf<String>()
+                val difficulties = mutableSetOf<String>()
+
                 for (q in questions) {
-                    val expectedCategory = file.name.substringAfter("questions_").substringBefore("_en").substringBefore(".json")
+                    val expectedCategory = file.name
+                        .substringAfter("questions_")
+                        .substringBefore("_en")
+                        .substringBefore(".json")
                     assertEquals("Question ${q.id} in ${file.name} has wrong category", expectedCategory, q.category)
                     assertEquals("Question ${q.id} in ${file.name} should have 4 options", 4, q.options.size)
                     assertEquals("Question ${q.id} in ${file.name} should have correctIndex = 0", 0, q.correctIndex)
                     assertFalse("Question ${q.id} text in ${file.name} should not be blank", q.text.isBlank())
+
+                    assertTrue(
+                        "Duplicate id '${q.id}' in ${file.name}",
+                        seenIds.add(q.id)
+                    )
+                    difficulties.add(q.difficulty.name)
                 }
-                println("Successfully validated ${file.name} with ${questions.size} questions.")
+
+                // Every production bank must cover all three difficulty levels so
+                // players at every skill level always have questions to answer.
+                val allDifficulties = setOf("EASY", "MEDIUM", "HARD")
+                assertTrue(
+                    "${file.name} is missing difficulty levels: ${allDifficulties - difficulties}",
+                    difficulties.containsAll(allDifficulties)
+                )
+
+                println("OK ${file.name}: ${questions.size} questions, difficulties=$difficulties")
             } catch (e: Exception) {
                 fail("Failed to parse ${file.name}: ${e.message}")
             }

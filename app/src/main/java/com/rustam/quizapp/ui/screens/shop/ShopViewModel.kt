@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.rustam.quizapp.R
 import com.rustam.quizapp.audio.SoundManager
+import com.rustam.quizapp.data.ShopDealState
 import com.rustam.quizapp.audio.SoundResources
 import com.rustam.quizapp.audio.SoundType
 import com.rustam.quizapp.data.PlayerRepository
@@ -77,7 +78,8 @@ data class ShopUiState(
     val boosts: List<BoostUi> = emptyList(),
     val titles: List<TitleUi> = emptyList(),
     val streakFreezeCount: Int = 0,
-    val streakFreezePrice: Int = ShopCatalog.STREAK_FREEZE_PRICE
+    val streakFreezePrice: Int = ShopCatalog.STREAK_FREEZE_PRICE,
+    val deals: List<ShopDealState> = emptyList()
 )
 
 class ShopViewModel(application: Application) : AndroidViewModel(application) {
@@ -103,13 +105,18 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
     val lootResult: StateFlow<LootResult?> = _lootResult.asStateFlow()
 
     val uiState: StateFlow<ShopUiState> = combine(
-        playerRepository.observeShop(),
-        playerRepository.observeInventory(),
-        playerRepository.observePowerUps(),
-        playerRepository.observeBoosts(),
-        streakRepository.observeFreezeCount()
-    ) { shop, inventory, powerUps, boosts, freezeCount ->
-        toUiState(shop, inventory, powerUps, boosts, freezeCount)
+        combine(
+            playerRepository.observeShop(),
+            playerRepository.observeInventory(),
+            playerRepository.observePowerUps(),
+            playerRepository.observeBoosts(),
+            streakRepository.observeFreezeCount()
+        ) { shop, inventory, powerUps, boosts, freezeCount ->
+            toUiState(shop, inventory, powerUps, boosts, freezeCount)
+        },
+        playerRepository.observeDeals()
+    ) { baseState, deals ->
+        baseState.copy(deals = deals)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), ShopUiState())
 
     /** Buys the avatar if not owned, otherwise equips it. */
@@ -213,6 +220,15 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
     /** Dismisses the Lucky Chest reveal dialog. */
     fun onLootDismiss() {
         _lootResult.value = null
+    }
+
+    /** Buys one unit of a daily deal at its discounted price. */
+    fun onDealBuy(dealId: String) {
+        viewModelScope.launch {
+            if (playerRepository.purchaseDeal(dealId)) {
+                soundManager.play(SoundType.CLICK)
+            }
+        }
     }
 
     /** Buys one Streak Freeze: deducts coins, then adds the freeze to the streak store. */

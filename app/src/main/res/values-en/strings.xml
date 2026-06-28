@@ -42,7 +42,7 @@
 
     <string name="choose_level">Choose a level</string>
     <string name="quiz_rules">10 questions · 10 seconds per answer · faster answers earn more</string>
-    <string name="question_bank_size">400 questions in the bank</string>
+    <string name="question_bank_size">100+ unique questions per topic</string>
     <string name="start_quiz">Start quiz</string>
 
     <string name="difficulty_easy_label">Easy</string>
@@ -101,6 +101,9 @@
 
     <string name="settings_language_title">Language</string>
     <string name="settings_language_subtitle">Interface language</string>
+    <string name="settings_attribution_title">Question sources</string>
+    <string name="settings_attribution_body">Some English questions are from Open Trivia Database (CC BY-SA 4.0). Russian questions are the app\'s own curated bank.</string>
+    <string name="settings_attribution_link">opentdb.com</string>
     <string name="language_russian">Русский</string>
     <string name="language_english">English</string>
 
@@ -145,11 +148,16 @@
     <string name="shop_equip">Equip</string>
     <string name="shop_equipped">Equipped</string>
     <string name="shop_tab_store">Store</string>
+    <string name="shop_tab_consumables">Consumables</string>
+    <string name="shop_tab_avatars">Avatars</string>
+    <string name="shop_tab_themes">Themes</string>
+    <string name="shop_tab_titles">Titles</string>
     <string name="shop_boosters">XP Boosters</string>
     <string name="shop_booster_small">Small Booster</string>
     <string name="shop_booster_medium">Medium Booster</string>
     <string name="shop_booster_large">Large Booster</string>
     <string name="shop_booster_huge">Huge Booster</string>
+    <string name="shop_booster_colossal">Colossal Booster</string>
     <string name="shop_booster_desc">+%1$d XP when activated</string>
     <string name="shop_owned_count">In backpack: %1$d</string>
     <string name="inventory_title">Backpack</string>
@@ -163,12 +171,26 @@
     <string name="inventory_streak_freeze_auto">Applies automatically when you miss a day</string>
     <string name="inventory_powerup_auto">Used during a quiz</string>
     <string name="shop_powerups_section">In-quiz power-ups</string>
+    <string name="shop_quiz_boosters_section">Quiz boosters</string>
+    <string name="shop_powerup_pack_size">×%d per purchase</string>
     <string name="powerup_fifty_title">50/50 ✂️</string>
     <string name="powerup_fifty_desc">Removes two wrong options</string>
+    <string name="powerup_fifty_pack_title">50/50 pack ✂️</string>
+    <string name="powerup_fifty_pack_desc">Three 50/50 at a discount</string>
     <string name="powerup_time_title">+5 seconds ⏱️</string>
     <string name="powerup_time_desc">Adds time to the current question</string>
+    <string name="powerup_time_pack_title">+5 sec pack ⏱️</string>
+    <string name="powerup_time_pack_desc">Three time boosts at a discount</string>
     <string name="powerup_skip_title">Skip ⏭️</string>
     <string name="powerup_skip_desc">Skips a question with no penalty</string>
+    <string name="powerup_skip_pack_title">Skip pack ⏭️</string>
+    <string name="powerup_skip_pack_desc">Three skips at a discount</string>
+    <string name="powerup_fifty_mega_title">50/50 mega pack ✂️</string>
+    <string name="powerup_fifty_mega_desc">Six 50/50 at a big discount</string>
+    <string name="powerup_time_mega_title">+5 sec mega pack ⏱️</string>
+    <string name="powerup_time_mega_desc">Six time boosts at a big discount</string>
+    <string name="powerup_skip_mega_title">Skip mega pack ⏭️</string>
+    <string name="powerup_skip_mega_desc">Six skips at a big discount</string>
     <string name="shop_streak_freeze_section">Streak protection</string>
     <string name="shop_streak_freeze_title">Streak Freeze 🧊</string>
     <string name="shop_streak_freeze_desc">Saves your daily streak if you miss a day</string>
@@ -191,6 +213,10 @@
     <string name="boost_coins_desc">×2 coins for the next %1$d quizzes</string>
     <string name="boost_xp_title">XP Surge 🎓</string>
     <string name="boost_xp_desc">×2 XP for the next %1$d quizzes</string>
+    <string name="boost_coins_long_title">Great Coin Rush 💰</string>
+    <string name="boost_coins_long_desc">×2 coins for the next %1$d quizzes</string>
+    <string name="boost_xp_long_title">Great XP Surge 🎓</string>
+    <string name="boost_xp_long_desc">×2 XP for the next %1$d quizzes</string>
     <string name="boost_active_coins">💰 ×2 coins · %1$d quizzes left</string>
     <string name="boost_active_xp">🎓 ×2 XP · %1$d quizzes left</string>
     <string name="boost_inventory_active">Active · %1$d quizzes left</string>
@@ -213,6 +239,14 @@
     <string name="title_firemind">Fire Mind</string>
     <string name="title_cosmic">Cosmic Mind</string>
     <string name="title_immortal">Immortal Savant</string>
+    <string name="title_explorer">Trailblazer</string>
+    <string name="title_strategist">Strategist</string>
+    <string name="title_virtuoso">Virtuoso</string>
+    <string name="title_titan">Titan</string>
+    <string name="title_oracle">Oracle</string>
+    <string name="title_gem_mythic">Mythic</string>
+    <string name="title_gem_ascended">Ascended</string>
+    <string name="title_gem_eternal">Eternal</string>
     <string name="theme_accent_mint">Mint</string>
     <string name="theme_accent_ocean">Ocean</string>
     <string name="theme_accent_grape">Grape</string>
@@ -225,6 +259,9 @@
     <string name="theme_accent_aqua">Aqua</string>
     <string name="theme_accent_lavender">Lavender</string>
     <string name="theme_accent_slate">Slate</string>
+    <string name="theme_accent_ember">Ember</string>
+    <string name="theme_accent_jade">Jade</string>
+    <string name="theme_accent_cosmos">Cosmos</string>
 
     <string-array name="daily_quotes">
         <item>Knowledge is power — practice is the key to mastery.</item>
@@ -250,21 +287,29 @@
     <string name="char_free_xp_balance">🎓 %1$d</string>
     <string name="char_level_reward_bonus">Rewards ×%1$.2f from level</string>
     <string name="char_stat_strength">Strength 💪</string>
-    <string name="char_stat_strength_desc">Willpower: +2%% XP gained for correct answers (current: +%1$d%% XP)</string>
+    <string name="char_stat_strength_desc">Willpower: +3%% XP gained for correct answers (current: +%1$d%% XP)</string>
     <string name="char_stat_intelligence">Intelligence 🧠</string>
-    <string name="char_stat_intelligence_desc">Wits: +2%% Coins gained from quizzes (current: +%1$d%% Coins)</string>
+    <string name="char_stat_intelligence_desc">Wits: +3%% Coins gained from quizzes (current: +%1$d%% Coins)</string>
     <string name="char_stat_agility">Agility ⚡</string>
-    <string name="char_stat_agility_desc">Reflexes: +0.5 sec to question timer (current: +%1$.1f sec)</string>
+    <string name="char_stat_agility_desc">Reflexes: +0.6 sec to question timer (current: +%1$.1f sec)</string>
     <string name="char_stat_luck">Luck 🍀</string>
     <string name="char_stat_luck_desc">Fortune: %1$d%% chance of Critical Success (x2 rewards at the end)</string>
     <string name="char_stat_wisdom">Wisdom 📖</string>
-    <string name="char_stat_wisdom_desc">Knowledge is power: +3 XP for every finished quiz (current: +%1$d XP)</string>
+    <string name="char_stat_wisdom_desc">Knowledge is power: +5 XP for every finished quiz (current: +%1$d XP)</string>
     <string name="char_stat_endurance">Endurance 🛡️</string>
-    <string name="char_stat_endurance_desc">Stamina: +1 Coin for every finished quiz (current: +%1$d Coins)</string>
+    <string name="char_stat_endurance_desc">Stamina: +2 Coins for every finished quiz (current: +%1$d Coins)</string>
     <string name="char_stat_focus">Focus 🎯</string>
     <string name="char_stat_focus_desc">Concentration: empowers Critical Success (current: x%1$.1f rewards)</string>
     <string name="char_stat_charisma">Charisma 💫</string>
-    <string name="char_stat_charisma_desc">Charm: +1%% Critical Success chance (current: +%1$d%%)</string>
+    <string name="char_stat_charisma_desc">Charm: +2%% Critical Success chance (current: +%1$d%%)</string>
+    <string name="char_stat_knowledge">Erudition 📖</string>
+    <string name="char_stat_knowledge_desc">Depth of knowledge: +2 XP per correct answer (current: +%1$d XP per answer)</string>
+    <string name="char_stat_wealth">Affluence 💎</string>
+    <string name="char_stat_wealth_desc">Business sense: +1 Coin per correct answer (current: +%1$d Coins per answer)</string>
+    <string name="char_stat_precision">Precision 🎯</string>
+    <string name="char_stat_precision_desc">Sharp calculation: +2%% Critical Success chance (current: +%1$d%%)</string>
+    <string name="char_stat_insight">Insight 🧩</string>
+    <string name="char_stat_insight_desc">Flash of thought: +2%% XP gained (current: +%1$d%% XP)</string>
     <string name="char_upgrade_cost">+1 (%1$d XP)</string>
     <string name="char_critical_success">CRITICAL SUCCESS! Fortune doubles your rewards! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d from Strength)</string>
@@ -281,6 +326,8 @@
     <string name="player_bonus_coins">+%1$d%% coins</string>
     <string name="player_bonus_crit">%1$d%% crit</string>
     <string name="player_bonus_time">+%1$.1f s</string>
+    <string name="player_bonus_xp_per_correct">+%1$d XP/answer</string>
+    <string name="player_bonus_coin_per_correct">+%1$d coins/answer</string>
     <string name="player_bonus_none">Upgrade stats, the talent tree and skills to gain bonuses</string>
 
     <!-- Passive talent tree (free-XP sink) -->
@@ -409,12 +456,64 @@
     <string name="ach_level90_desc">Reach level 90</string>
     <string name="ach_level120_title">Immortal Sage</string>
     <string name="ach_level120_desc">Reach level 120</string>
+    <string name="ach_level256_title">Absolute</string>
+    <string name="ach_level256_desc">Reach level 256</string>
+    <string name="ach_level512_title">World Conqueror</string>
+    <string name="ach_level512_desc">Reach level 512</string>
+    <string name="ach_level1024_title">Omniarch</string>
+    <string name="ach_level1024_desc">Reach the max level 1024</string>
     <string name="ach_hundred_quizzes_title">Quiz Legend</string>
     <string name="ach_hundred_quizzes_desc">Complete 100 quizzes</string>
     <string name="ach_streak14_title">Two Weeks on Fire</string>
     <string name="ach_streak14_desc">A 14-day streak</string>
     <string name="ach_streak100_title">Immortal Streak</string>
     <string name="ach_streak100_desc">A 100-day streak</string>
+
+    <!-- Accessibility (a11y) -->
+    <string name="a11y_category_card">Start quiz on topic: %1$s</string>
+    <string name="a11y_daily_reward_claim">Claim daily reward: %1$d coins</string>
+    <string name="a11y_streak">Streak: %1$d days in a row</string>
+    <string name="a11y_start_quiz">Start quiz</string>
+    <string name="a11y_lootbox_open">Open Lucky Chest for %1$d coins</string>
+    <string name="a11y_theme_preview">Accent theme %1$s</string>
+    <string name="a11y_avatar_item">Avatar %1$s</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Let\'s go!</string>
+    <string name="onboarding_page1_title">Welcome to AnimaQuiz! 🎓</string>
+    <string name="onboarding_page1_body">10 knowledge categories: history, science, movies and more. Answer correctly and level up!</string>
+    <string name="onboarding_page2_title">Choose your difficulty 🎯</string>
+    <string name="onboarding_page2_body">Easy · Medium · Hard · Mixed · Adaptive — the system picks questions that match your accuracy.</string>
+    <string name="onboarding_page3_title">In-quiz power-ups ⚡</string>
+    <string name="onboarding_page3_body">50/50 removes two wrong options, +5 sec adds time, Skip passes the question without a penalty.</string>
+    <string name="onboarding_page4_title">Coins and levels 🪙</string>
+    <string name="onboarding_page4_body">Correct answers earn coins and XP. Upgrade your stats, unlock cosmetics, and keep your daily streak!</string>
+
+    <!-- Daily Deals -->
+    <string name="deals_section_title">Daily Deals 🏷️</string>
+    <string name="deals_discount">−%1$d%%</string>
+    <string name="deals_sold_out">Sold out</string>
+    <string name="deals_bought">Bought: %1$d / %2$d</string>
+    <string name="deals_buy">%1$d 🪙</string>
+    <string name="deals_refreshes">Refreshes in %1$d h</string>
+
+    <!-- Season track -->
+    <string name="season_pass_title">Season Track</string>
+    <string name="season_pass_subtitle">Earn XP — collect rewards</string>
+    <string name="season_pass_level">Level %1$d / %2$d</string>
+    <string name="season_pass_xp_progress">%1$d / %2$d XP</string>
+    <string name="season_pass_days_left">Days left: %1$d</string>
+    <string name="season_pass_claim">Claim</string>
+    <string name="season_pass_claimed">Claimed ✓</string>
+    <string name="season_pass_locked">Locked</string>
+    <string name="season_pass_reward_coins">+%1$d 🪙</string>
+    <string name="season_pass_reward_gems">+%1$d 💎</string>
+    <string name="season_pass_reward_booster">Booster 🎓</string>
+    <string name="season_pass_close">Close</string>
+    <string name="season_pass_home_card">Season · Lvl %1$d · %2$d d.</string>
+    <string name="season_pass_xp_hint">+%1$d XP per quiz · level every %2$d XP</string>
 
     <!-- Adaptive difficulty -->
     <string name="difficulty_adaptive_label">Adaptive</string>

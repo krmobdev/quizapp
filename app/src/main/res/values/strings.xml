@@ -42,7 +42,7 @@
 
     <string name="choose_level">Выберите уровень</string>
     <string name="quiz_rules">10 вопросов · 10 секунд на ответ · быстрый ответ даёт больше наград</string>
-    <string name="question_bank_size">400 вопросов в банке</string>
+    <string name="question_bank_size">Более 300 уникальных вопросов</string>
     <string name="start_quiz">Начать квиз</string>
 
     <string name="difficulty_easy_label">Лёгкий</string>
@@ -101,6 +101,9 @@
 
     <string name="settings_language_title">Язык</string>
     <string name="settings_language_subtitle">Язык интерфейса</string>
+    <string name="settings_attribution_title">Источники вопросов</string>
+    <string name="settings_attribution_body">Часть английских вопросов взята из Open Trivia Database (CC BY-SA 4.0). Русские вопросы — собственная база приложения.</string>
+    <string name="settings_attribution_link">opentdb.com</string>
     <string name="language_russian">Русский</string>
     <string name="language_english">English</string>
 
@@ -145,11 +148,16 @@
     <string name="shop_equip">Выбрать</string>
     <string name="shop_equipped">Выбрано</string>
     <string name="shop_tab_store">Магазин</string>
+    <string name="shop_tab_consumables">Расходники</string>
+    <string name="shop_tab_avatars">Аватары</string>
+    <string name="shop_tab_themes">Темы</string>
+    <string name="shop_tab_titles">Титулы</string>
     <string name="shop_boosters">Бустеры опыта</string>
     <string name="shop_booster_small">Малый бустер</string>
     <string name="shop_booster_medium">Средний бустер</string>
     <string name="shop_booster_large">Большой бустер</string>
     <string name="shop_booster_huge">Огромный бустер</string>
+    <string name="shop_booster_colossal">Колоссальный бустер</string>
     <string name="shop_booster_desc">+%1$d опыта при активации</string>
     <string name="shop_owned_count">В рюкзаке: %1$d</string>
     <string name="inventory_title">Рюкзак</string>
@@ -163,12 +171,26 @@
     <string name="inventory_streak_freeze_auto">Сработает автоматически при пропуске дня</string>
     <string name="inventory_powerup_auto">Используется во время викторины</string>
     <string name="shop_powerups_section">Усиления в игре</string>
+    <string name="shop_quiz_boosters_section">Бустеры для квиза</string>
+    <string name="shop_powerup_pack_size">×%d за покупку</string>
     <string name="powerup_fifty_title">50/50 ✂️</string>
     <string name="powerup_fifty_desc">Убирает два неверных варианта</string>
+    <string name="powerup_fifty_pack_title">Набор 50/50 ✂️</string>
+    <string name="powerup_fifty_pack_desc">Три 50/50 со скидкой</string>
     <string name="powerup_time_title">+5 секунд ⏱️</string>
     <string name="powerup_time_desc">Добавляет время на текущий вопрос</string>
+    <string name="powerup_time_pack_title">Набор +5 сек ⏱️</string>
+    <string name="powerup_time_pack_desc">Три продления времени со скидкой</string>
     <string name="powerup_skip_title">Пропуск ⏭️</string>
     <string name="powerup_skip_desc">Пропускает вопрос без штрафа</string>
+    <string name="powerup_skip_pack_title">Набор пропусков ⏭️</string>
+    <string name="powerup_skip_pack_desc">Три пропуска со скидкой</string>
+    <string name="powerup_fifty_mega_title">Мега-набор 50/50 ✂️</string>
+    <string name="powerup_fifty_mega_desc">Шесть 50/50 с большой скидкой</string>
+    <string name="powerup_time_mega_title">Мега-набор +5 сек ⏱️</string>
+    <string name="powerup_time_mega_desc">Шесть продлений времени с большой скидкой</string>
+    <string name="powerup_skip_mega_title">Мега-набор пропусков ⏭️</string>
+    <string name="powerup_skip_mega_desc">Шесть пропусков с большой скидкой</string>
     <string name="shop_streak_freeze_section">Защита серии</string>
     <string name="shop_streak_freeze_title">Заморозка серии 🧊</string>
     <string name="shop_streak_freeze_desc">Сохраняет дневную серию, если вы пропустили день</string>
@@ -191,6 +213,10 @@
     <string name="boost_coins_desc">×2 монеты за следующие %1$d игр</string>
     <string name="boost_xp_title">Прилив опыта 🎓</string>
     <string name="boost_xp_desc">×2 опыта за следующие %1$d игр</string>
+    <string name="boost_coins_long_title">Большой монетный бум 💰</string>
+    <string name="boost_coins_long_desc">×2 монеты за следующие %1$d игр</string>
+    <string name="boost_xp_long_title">Большой прилив опыта 🎓</string>
+    <string name="boost_xp_long_desc">×2 опыта за следующие %1$d игр</string>
     <string name="boost_active_coins">💰 ×2 монеты · осталось игр: %1$d</string>
     <string name="boost_active_xp">🎓 ×2 опыта · осталось игр: %1$d</string>
     <string name="boost_inventory_active">Активно · осталось игр: %1$d</string>
@@ -213,6 +239,14 @@
     <string name="title_firemind">Огненный разум</string>
     <string name="title_cosmic">Космический разум</string>
     <string name="title_immortal">Бессмертный знаток</string>
+    <string name="title_explorer">Первопроходец</string>
+    <string name="title_strategist">Стратег</string>
+    <string name="title_virtuoso">Виртуоз</string>
+    <string name="title_titan">Титан</string>
+    <string name="title_oracle">Оракул</string>
+    <string name="title_gem_mythic">Мифический</string>
+    <string name="title_gem_ascended">Вознесённый</string>
+    <string name="title_gem_eternal">Вечный</string>
     <string name="theme_accent_mint">Мятная</string>
     <string name="theme_accent_ocean">Океан</string>
     <string name="theme_accent_grape">Виноград</string>
@@ -225,6 +259,9 @@
     <string name="theme_accent_aqua">Аква</string>
     <string name="theme_accent_lavender">Лаванда</string>
     <string name="theme_accent_slate">Графит</string>
+    <string name="theme_accent_ember">Тлеющий уголь</string>
+    <string name="theme_accent_jade">Нефрит</string>
+    <string name="theme_accent_cosmos">Космос</string>
 
     <string-array name="daily_quotes">
         <item>Знание — сила, а практика — ключ к мастерству.</item>
@@ -250,21 +287,29 @@
     <string name="char_free_xp_balance">🎓 %1$d</string>
     <string name="char_level_reward_bonus">Награды ×%1$.2f за уровень</string>
     <string name="char_stat_strength">Сила 💪</string>
-    <string name="char_stat_strength_desc">Сила воли: +2%% к получаемому XP за правильные ответы (сейчас: +%1$d%% XP)</string>
+    <string name="char_stat_strength_desc">Сила воли: +3%% к получаемому XP за правильные ответы (сейчас: +%1$d%% XP)</string>
     <string name="char_stat_intelligence">Интеллект 🧠</string>
-    <string name="char_stat_intelligence_desc">Острота ума: +2%% к получаемым монетам (сейчас: +%1$d%% монет)</string>
+    <string name="char_stat_intelligence_desc">Острота ума: +3%% к получаемым монетам (сейчас: +%1$d%% монет)</string>
     <string name="char_stat_agility">Ловкость ⚡</string>
-    <string name="char_stat_agility_desc">Скорость реакции: +0.5 сек к таймеру вопроса (сейчас: +%1$.1f сек)</string>
+    <string name="char_stat_agility_desc">Скорость реакции: +0.6 сек к таймеру вопроса (сейчас: +%1$.1f сек)</string>
     <string name="char_stat_luck">Удача 🍀</string>
     <string name="char_stat_luck_desc">Улыбка фортуны: шанс %1$d%% на Критический успех (x2 наград в конце игры)</string>
     <string name="char_stat_wisdom">Мудрость 📖</string>
-    <string name="char_stat_wisdom_desc">Сила знаний: +3 XP за каждую завершённую викторину (сейчас: +%1$d XP)</string>
+    <string name="char_stat_wisdom_desc">Сила знаний: +5 XP за каждую завершённую викторину (сейчас: +%1$d XP)</string>
     <string name="char_stat_endurance">Выносливость 🛡️</string>
-    <string name="char_stat_endurance_desc">Стойкость: +1 монета за каждую завершённую викторину (сейчас: +%1$d монет)</string>
+    <string name="char_stat_endurance_desc">Стойкость: +2 монеты за каждую завершённую викторину (сейчас: +%1$d монет)</string>
     <string name="char_stat_focus">Концентрация 🎯</string>
     <string name="char_stat_focus_desc">Сосредоточенность: усиливает Критический успех (сейчас: x%1$.1f к наградам)</string>
     <string name="char_stat_charisma">Харизма 💫</string>
-    <string name="char_stat_charisma_desc">Обаяние: +1%% к шансу Критического успеха (сейчас: +%1$d%%)</string>
+    <string name="char_stat_charisma_desc">Обаяние: +2%% к шансу Критического успеха (сейчас: +%1$d%%)</string>
+    <string name="char_stat_knowledge">Эрудиция 📖</string>
+    <string name="char_stat_knowledge_desc">Глубина знаний: +2 XP за каждый правильный ответ (сейчас: +%1$d XP за ответ)</string>
+    <string name="char_stat_wealth">Достаток 💎</string>
+    <string name="char_stat_wealth_desc">Деловая хватка: +1 монета за каждый правильный ответ (сейчас: +%1$d монет за ответ)</string>
+    <string name="char_stat_precision">Меткость 🎯</string>
+    <string name="char_stat_precision_desc">Точный расчёт: +2%% к шансу Критического успеха (сейчас: +%1$d%%)</string>
+    <string name="char_stat_insight">Озарение 🧩</string>
+    <string name="char_stat_insight_desc">Вспышка мысли: +2%% к получаемому XP (сейчас: +%1$d%% XP)</string>
     <string name="char_upgrade_cost">+1 (%1$d XP)</string>
     <string name="char_critical_success">КРИТИЧЕСКИЙ УСПЕХ! Удача удваивает ваши награды! 🌟</string>
     <string name="char_bonus_xp_detail"> (+%1$d от Силы)</string>
@@ -281,6 +326,8 @@
     <string name="player_bonus_coins">+%1$d%% монет</string>
     <string name="player_bonus_crit">%1$d%% крит</string>
     <string name="player_bonus_time">+%1$.1f с</string>
+    <string name="player_bonus_xp_per_correct">+%1$d XP/ответ</string>
+    <string name="player_bonus_coin_per_correct">+%1$d монет/ответ</string>
     <string name="player_bonus_none">Прокачайте характеристики, дерево талантов и навыки, чтобы получить бонусы</string>
 
     <!-- Дерево талантов (пассивная прокачка за свободный опыт) -->
@@ -409,12 +456,64 @@
     <string name="ach_level90_desc">Достигни 90 уровня</string>
     <string name="ach_level120_title">Бессмертный знаток</string>
     <string name="ach_level120_desc">Достигни 120 уровня</string>
+    <string name="ach_level256_title">Абсолют</string>
+    <string name="ach_level256_desc">Достигни 256 уровня</string>
+    <string name="ach_level512_title">Покоритель миров</string>
+    <string name="ach_level512_desc">Достигни 512 уровня</string>
+    <string name="ach_level1024_title">Омниарх</string>
+    <string name="ach_level1024_desc">Достигни максимального 1024 уровня</string>
     <string name="ach_hundred_quizzes_title">Легенда квизов</string>
     <string name="ach_hundred_quizzes_desc">Пройди 100 квизов</string>
     <string name="ach_streak14_title">Две недели огня</string>
     <string name="ach_streak14_desc">Серия 14 дней подряд</string>
     <string name="ach_streak100_title">Бессмертная серия</string>
     <string name="ach_streak100_desc">Серия 100 дней подряд</string>
+
+    <!-- Доступность (a11y) -->
+    <string name="a11y_category_card">Начать квиз по теме «%1$s»</string>
+    <string name="a11y_daily_reward_claim">Забрать ежедневную награду %1$d монет</string>
+    <string name="a11y_streak">Серия: %1$d дней подряд</string>
+    <string name="a11y_start_quiz">Начать квиз</string>
+    <string name="a11y_lootbox_open">Открыть сундук удачи за %1$d монет</string>
+    <string name="a11y_theme_preview">Акцентная тема %1$s</string>
+    <string name="a11y_avatar_item">Аватар %1$s</string>
+
+    <!-- Онбординг первого запуска -->
+    <string name="onboarding_skip">Пропустить</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_start">Начать!</string>
+    <string name="onboarding_page1_title">Добро пожаловать в AnimaQuiz! 🎓</string>
+    <string name="onboarding_page1_body">10 категорий знаний: история, наука, кино и многое другое. Отвечай правильно и расти в уровнях!</string>
+    <string name="onboarding_page2_title">Выбирай сложность 🎯</string>
+    <string name="onboarding_page2_body">Лёгкий · Средний · Сложный · Смешанный · Адаптивный — система подберёт вопросы по твоей точности.</string>
+    <string name="onboarding_page3_title">Усиления в игре ⚡</string>
+    <string name="onboarding_page3_body">50/50 убирает половину вариантов, +5 сек добавляет время, «Пропуск» переходит к следующему вопросу без штрафа.</string>
+    <string name="onboarding_page4_title">Монеты и уровни 🪙</string>
+    <string name="onboarding_page4_body">Правильные ответы приносят монеты и опыт. Прокачивай характеристики, открывай косметику и следи за серией дней!</string>
+
+    <!-- Ежедневные акции (Daily Deals) -->
+    <string name="deals_section_title">Акции дня 🏷️</string>
+    <string name="deals_discount">−%1$d%%</string>
+    <string name="deals_sold_out">Лимит исчерпан</string>
+    <string name="deals_bought">Куплено: %1$d / %2$d</string>
+    <string name="deals_buy">%1$d 🪙</string>
+    <string name="deals_refreshes">Обновление через %1$d ч</string>
+
+    <!-- Сезонный трек -->
+    <string name="season_pass_title">Сезонный трек</string>
+    <string name="season_pass_subtitle">Зарабатывай опыт — получай награды</string>
+    <string name="season_pass_level">Уровень %1$d / %2$d</string>
+    <string name="season_pass_xp_progress">%1$d / %2$d XP</string>
+    <string name="season_pass_days_left">Осталось дней: %1$d</string>
+    <string name="season_pass_claim">Забрать</string>
+    <string name="season_pass_claimed">Получено ✓</string>
+    <string name="season_pass_locked">Заблокировано</string>
+    <string name="season_pass_reward_coins">+%1$d 🪙</string>
+    <string name="season_pass_reward_gems">+%1$d 💎</string>
+    <string name="season_pass_reward_booster">Бустер 🎓</string>
+    <string name="season_pass_close">Закрыть</string>
+    <string name="season_pass_home_card">Сезон · Ур. %1$d · %2$d дн.</string>
+    <string name="season_pass_xp_hint">+%1$d XP за квиз · уровень каждые %2$d XP</string>
 
     <!-- Адаптивная сложность -->
     <string name="difficulty_adaptive_label">Адаптивный</string>

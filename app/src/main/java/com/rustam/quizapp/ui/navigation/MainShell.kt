@@ -73,28 +73,48 @@ fun MainShell(
                         NavigationBarItem(
                             selected = selectedTab == MainTab.Home,
                             onClick = { selectedTab = MainTab.Home },
-                            icon = { Icon(Icons.Rounded.Home, contentDescription = null) },
+                            icon = {
+                                Icon(
+                                    Icons.Rounded.Home,
+                                    contentDescription = stringResource(R.string.home_title)
+                                )
+                            },
                             label = { Text(stringResource(R.string.home_title)) },
                             colors = navItemColors
                         )
                         NavigationBarItem(
                             selected = selectedTab == MainTab.Stats,
                             onClick = { selectedTab = MainTab.Stats },
-                            icon = { Icon(Icons.Rounded.Person, contentDescription = null) },
+                            icon = {
+                                Icon(
+                                    Icons.Rounded.Person,
+                                    contentDescription = stringResource(R.string.player_tab)
+                                )
+                            },
                             label = { Text(stringResource(R.string.player_tab)) },
                             colors = navItemColors
                         )
                         NavigationBarItem(
                             selected = selectedTab == MainTab.Shop,
                             onClick = { selectedTab = MainTab.Shop },
-                            icon = { Icon(Icons.Rounded.ShoppingCart, contentDescription = null) },
+                            icon = {
+                                Icon(
+                                    Icons.Rounded.ShoppingCart,
+                                    contentDescription = stringResource(R.string.shop_title)
+                                )
+                            },
                             label = { Text(stringResource(R.string.shop_title)) },
                             colors = navItemColors
                         )
                         NavigationBarItem(
                             selected = selectedTab == MainTab.Settings,
                             onClick = { selectedTab = MainTab.Settings },
-                            icon = { Icon(Icons.Rounded.Settings, contentDescription = null) },
+                            icon = {
+                                Icon(
+                                    Icons.Rounded.Settings,
+                                    contentDescription = stringResource(R.string.settings)
+                                )
+                            },
                             label = { Text(stringResource(R.string.settings)) },
                             colors = navItemColors
                         )

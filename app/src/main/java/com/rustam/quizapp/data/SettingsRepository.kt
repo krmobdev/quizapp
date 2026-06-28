@@ -29,6 +29,11 @@ class SettingsRepository(context: Context) {
 
     suspend fun setAppLanguage(language: AppLanguage) = update { it.copy(appLanguage = language.name) }
 
+    /** Whether the first-launch onboarding has been completed. */
+    val onboardingShown: Flow<Boolean> = dao.observe().map { it?.onboardingShown ?: false }
+
+    suspend fun setOnboardingShown() = update { it.copy(onboardingShown = true) }
+
     private suspend inline fun update(crossinline transform: (AppStateEntity) -> AppStateEntity) {
         db.withTransaction {
             val current = dao.get() ?: AppStateEntity()

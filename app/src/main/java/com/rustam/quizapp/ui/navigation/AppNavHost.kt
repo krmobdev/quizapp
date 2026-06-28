@@ -1,8 +1,13 @@
 package com.rustam.quizapp.ui.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rustam.quizapp.data.SettingsRepository
+import com.rustam.quizapp.ui.screens.onboarding.OnboardingViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavController
@@ -16,12 +21,14 @@ import androidx.navigation.navArgument
 import com.rustam.quizapp.data.Difficulty
 
 import com.rustam.quizapp.domain.QuizEventType
+import com.rustam.quizapp.ui.screens.onboarding.OnboardingScreen
 import com.rustam.quizapp.ui.screens.quiz.QuizScreen
 import com.rustam.quizapp.ui.screens.result.ResultScreen
 
 /** Route definitions and helpers for building/parsing the quiz flow destinations. */
 object Routes {
     const val GRAPH = "quiz_flow"
+    const val ONBOARDING = "onboarding"
     const val MAIN = "main"
     const val QUIZ = "quiz/{categoryId}/{difficulty}/{event}/{timeLimit}/{questionCount}/{adaptive}"
     const val RESULT = "result"
@@ -47,9 +54,27 @@ object Routes {
 }
 
 @Composable
-fun AppNavHost(navController: NavHostController = rememberNavController()) {
+fun AppNavHost(
+    navController: NavHostController = rememberNavController(),
+    settingsRepository: SettingsRepository
+) {
+    val onboardingShown by settingsRepository.onboardingShown.collectAsState(initial = true)
+    val startDest = if (onboardingShown) Routes.MAIN else Routes.ONBOARDING
+
     NavHost(navController = navController, startDestination = Routes.GRAPH) {
-        navigation(route = Routes.GRAPH, startDestination = Routes.MAIN) {
+        navigation(route = Routes.GRAPH, startDestination = startDest) {
+
+            composable(Routes.ONBOARDING) {
+                val onboardingVm: OnboardingViewModel = viewModel()
+                OnboardingScreen(
+                    onFinish = {
+                        onboardingVm.markShown()
+                        navController.navigate(Routes.MAIN) {
+                            popUpTo(Routes.ONBOARDING) { inclusive = true }
+                        }
+                    }
+                )
+            }
 
             composable(Routes.MAIN) {
                 MainShell(
