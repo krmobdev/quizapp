@@ -53,6 +53,20 @@ interface PlayerDao {
     suspend fun upsertRecent(recent: RecentQuestionsEntity)
 }
 
+/** Daily shop deals rotation + per-deal purchase counts (single row). */
+@Dao
+interface ShopDealDao {
+
+    @Query("SELECT * FROM shop_deal WHERE id = 0")
+    fun observe(): Flow<ShopDealEntity?>
+
+    @Query("SELECT * FROM shop_deal WHERE id = 0")
+    suspend fun get(): ShopDealEntity?
+
+    @Upsert
+    suspend fun upsert(deal: ShopDealEntity)
+}
+
 /** Per-category quiz statistics. */
 @Dao
 interface CategoryStatsDao {
@@ -133,6 +147,17 @@ interface AchievementDao {
     suspend fun unlock(achievement: AchievementEntity)
 }
 
+/** Redeemed (one-time) promo codes. */
+@Dao
+interface PromoDao {
+
+    @Query("SELECT code FROM redeemed_promo")
+    suspend fun getRedeemed(): List<String>
+
+    @Upsert
+    suspend fun insert(entity: RedeemedPromoEntity)
+}
+
 /** Bulk operations used by backup import and full reset. */
 @Dao
 interface BackupDao {
@@ -143,12 +168,14 @@ interface BackupDao {
     @Query("SELECT * FROM recent_questions") suspend fun allRecent(): List<RecentQuestionsEntity>
     @Query("SELECT * FROM category_stats") suspend fun allCategoryStats(): List<CategoryStatsEntity>
     @Query("SELECT * FROM achievement") suspend fun allAchievements(): List<AchievementEntity>
+    @Query("SELECT * FROM redeemed_promo") suspend fun allRedeemedPromo(): List<RedeemedPromoEntity>
 
     @Upsert suspend fun insertOwned(items: List<OwnedItemEntity>)
     @Upsert suspend fun insertInventory(items: List<InventoryEntity>)
     @Upsert suspend fun insertRecent(items: List<RecentQuestionsEntity>)
     @Upsert suspend fun insertCategoryStats(items: List<CategoryStatsEntity>)
     @Upsert suspend fun insertAchievements(items: List<AchievementEntity>)
+    @Upsert suspend fun insertRedeemedPromo(items: List<RedeemedPromoEntity>)
 
     @Query("DELETE FROM player") suspend fun clearPlayer()
     @Query("DELETE FROM owned_item") suspend fun clearOwned()
@@ -159,5 +186,6 @@ interface BackupDao {
     @Query("DELETE FROM daily_reward") suspend fun clearDailyReward()
     @Query("DELETE FROM daily_quest") suspend fun clearDailyQuest()
     @Query("DELETE FROM achievement") suspend fun clearAchievements()
+    @Query("DELETE FROM redeemed_promo") suspend fun clearRedeemedPromo()
     @Query("DELETE FROM app_state") suspend fun clearAppState()
 }

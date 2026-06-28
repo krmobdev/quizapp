@@ -14,19 +14,20 @@ class EconomyBalanceTest {
     }
 
     @Test
-    fun level240_requires_expectedLifetimeXp() {
-        assertEquals(1_261_920, CharacterLevelCalculator.xpRequiredForLevel(240))
-        val level241Xp = CharacterLevelCalculator.xpRequiredForLevel(241)
-        assertEquals(240, CharacterLevelCalculator.calculateLevel(level241Xp - 1))
-        assertEquals(240, CharacterLevelCalculator.calculateLevel(level241Xp - 1, 50_000))
+    fun level1024_requires_expectedLifetimeXp() {
+        assertEquals(23_046_144, CharacterLevelCalculator.xpRequiredForLevel(1024))
+        val level1025Xp = CharacterLevelCalculator.xpRequiredForLevel(1025)
+        assertEquals(1024, CharacterLevelCalculator.calculateLevel(level1025Xp - 1))
+        assertEquals(1024, CharacterLevelCalculator.calculateLevel(level1025Xp - 1, 50_000))
     }
 
     @Test
     fun statUpgradeCosts_sumToExpectedSink() {
         val perStat = (0 until CharacterLevelCalculator.MAX_STAT)
             .sumOf { CharacterLevelCalculator.statUpgradeCost(it) }
-        assertEquals(24_550, perStat)
-        assertEquals(196_400, perStat * 8)
+        assertEquals(7_645, perStat)
+        // Twelve characteristics now share the (cheaper) cost curve.
+        assertEquals(91_740, perStat * 12)
     }
 
     @Test

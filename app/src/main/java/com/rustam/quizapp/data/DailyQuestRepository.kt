@@ -103,10 +103,38 @@ class DailyQuestRepository(context: Context) {
         return claimed
     }
 
+    /**
+     * Grants the once-per-day "all daily quests done" gem bonus exactly once: returns `true` only
+     * the first time today's full set has been claimed. Uses the high bit ([ALL_DONE_BIT]) of the
+     * existing [DailyQuestEntity.claimedMask] as the "bonus already paid today" flag, so no schema
+     * change is needed. The caller credits the gems.
+     */
+    suspend fun claimAllCompleteBonus(): Boolean {
+        val today = LocalDate.now()
+        val todayEpoch = today.toEpochDay()
+        val slots = DailyChallenges.dailySet(today).size
+        if (slots <= 0) return false
+        val fullMask = (1 shl slots) - 1
+        var granted = false
+        db.withTransaction {
+            val entity = dao.get()?.takeIf { it.day == todayEpoch } ?: return@withTransaction
+            if (entity.claimedMask and ALL_DONE_BIT != 0) return@withTransaction
+            if (entity.claimedMask and fullMask != fullMask) return@withTransaction
+            dao.upsert(entity.copy(claimedMask = entity.claimedMask or ALL_DONE_BIT))
+            granted = true
+        }
+        return granted
+    }
+
     private fun progressFor(type: DailyChallengeType, entity: DailyQuestEntity): Int = when (type) {
         DailyChallengeType.PLAY_QUIZZES -> entity.quizzesPlayed
         DailyChallengeType.ANSWER_CORRECT -> entity.correctAnswers
         DailyChallengeType.PERFECT_QUIZ -> entity.perfectQuizzes
         DailyChallengeType.EARN_COINS -> entity.coinsEarned
+    }
+
+    private companion object {
+        /** High bit of [DailyQuestEntity.claimedMask] marking the all-quests gem bonus as paid. */
+        const val ALL_DONE_BIT = 1 shl 31
     }
 }

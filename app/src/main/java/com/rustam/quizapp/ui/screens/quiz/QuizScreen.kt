@@ -391,18 +391,20 @@ private fun PowerUpBar(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.spacedBy(10.dp)
     ) {
-        ShopCatalog.powerUps.forEach { powerUp ->
-            val count = state.powerUpCounts[powerUp.id] ?: 0
-            val usable = when (powerUp.type) {
+        PowerUpType.entries.forEach { type ->
+            val items = ShopCatalog.powerUpsOfType(type)
+            val representative = items.first()
+            val count = items.sumOf { state.powerUpCounts[it.id] ?: 0 }
+            val usable = when (type) {
                 PowerUpType.FIFTY_FIFTY -> count > 0 && state.hiddenOptions.isEmpty()
                 else -> count > 0
             }
             PowerUpButton(
-                emoji = powerUp.emoji,
+                emoji = representative.emoji,
                 count = count,
                 enabled = usable,
                 colors = colors,
-                onClick = when (powerUp.type) {
+                onClick = when (type) {
                     PowerUpType.FIFTY_FIFTY -> onFiftyFifty
                     PowerUpType.ADD_TIME -> onAddTime
                     PowerUpType.SKIP -> onSkip

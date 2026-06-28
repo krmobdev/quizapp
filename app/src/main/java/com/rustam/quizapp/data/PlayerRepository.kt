@@ -7,12 +7,23 @@ import com.rustam.quizapp.data.db.InventoryEntity
 import com.rustam.quizapp.data.db.OwnedItemEntity
 import com.rustam.quizapp.data.db.PlayerEntity
 import com.rustam.quizapp.data.db.RecentQuestionsEntity
+import com.rustam.quizapp.data.db.RedeemedPromoEntity
+import com.rustam.quizapp.data.db.ShopDealEntity
+import com.rustam.quizapp.domain.DealKind
+import com.rustam.quizapp.domain.DealTemplate
+import com.rustam.quizapp.domain.SeasonPass
+import com.rustam.quizapp.domain.SeasonReward
+import com.rustam.quizapp.domain.SeasonRewardKind
+import com.rustam.quizapp.domain.ShopDeals
 import com.rustam.quizapp.domain.AnswerReward
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.domain.BoostType
 import com.rustam.quizapp.domain.CharacterLevelCalculator
+import com.rustam.quizapp.domain.GemEconomy
 import com.rustam.quizapp.domain.LootBox
 import com.rustam.quizapp.domain.LootResult
+import com.rustam.quizapp.domain.MythicBox
+import com.rustam.quizapp.domain.PackCurrency
 import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.EventProgressSnapshot
 import com.rustam.quizapp.domain.QuizEvent
@@ -23,6 +34,7 @@ import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.RewardCalculator
 import com.rustam.quizapp.domain.ShopCatalog
 import com.rustam.quizapp.domain.PassiveTalentTree
+import com.rustam.quizapp.domain.PromoCodes
 import com.rustam.quizapp.domain.SkillBranch
 import com.rustam.quizapp.domain.SkillTree
 import com.rustam.quizapp.domain.SkillTreeState
@@ -47,12 +59,19 @@ data class PlayerProfile(
     val equippedTitleId: String? = null,
     /** Remaining quizzes the active temporary boosts apply to (0 = inactive). */
     val coinBoostQuizzesLeft: Int = 0,
-    val xpBoostQuizzesLeft: Int = 0
+    val xpBoostQuizzesLeft: Int = 0,
+    /** Rare premium currency. */
+    val gems: Int = 0,
+    /** Season-track state for the current period (reset automatically when the season rolls over). */
+    val seasonXp: Int = 0,
+    val seasonClaimedMask: Long = 0L,
+    val seasonDaysLeft: Int = SeasonPass.LENGTH_DAYS
 )
 
 /** Coins and the cosmetic items a player owns / has equipped, for the shop screen. */
 data class ShopState(
     val coins: Int,
+    val gems: Int,
     val ownedItemIds: Set<String>,
     val equippedAvatarId: String,
     val equippedThemeId: String,
@@ -61,16 +80,30 @@ data class ShopState(
     val xpBoostQuizzesLeft: Int = 0
 )
 
+/** One of today's discounted shop deals, with its current daily purchase count. */
+data class ShopDealState(
+    val template: DealTemplate,
+    val dealPrice: Int,
+    val purchasedToday: Int
+) {
+    val soldOut: Boolean get() = purchasedToday >= ShopDeals.MAX_PER_DAY
+}
+
 class PlayerRepository(
     context: Context,
     private val questionRepository: QuestionRepository
 ) {
     private val db = AppDatabase.getInstance(context)
     private val dao = db.playerDao()
+    private val dealDao = db.shopDealDao()
+    private val promoDao = db.promoDao()
 
     fun observeProfile(): Flow<PlayerProfile> = dao.observePlayer().map { entity ->
         val player = entity ?: PlayerEntity()
         val categories = questionRepository.getCategories()
+        val today = LocalDate.now().toEpochDay()
+        val currentSeason = SeasonPass.currentSeasonId(today)
+        val seasonActive = player.seasonId == currentSeason
         PlayerProfile(
             name = player.name,
             points = player.points,
@@ -85,7 +118,11 @@ class PlayerRepository(
             lifetimeCoins = player.lifetimeCoins,
             equippedTitleId = player.equippedTitleId,
             coinBoostQuizzesLeft = player.coinBoostQuizzesLeft,
-            xpBoostQuizzesLeft = player.xpBoostQuizzesLeft
+            xpBoostQuizzesLeft = player.xpBoostQuizzesLeft,
+            gems = player.gems,
+            seasonXp = if (seasonActive) player.seasonXp else 0,
+            seasonClaimedMask = if (seasonActive) player.seasonClaimedMask else 0L,
+            seasonDaysLeft = SeasonPass.daysLeft(today)
         )
     }
 
@@ -95,6 +132,7 @@ class PlayerRepository(
             val player = entity ?: PlayerEntity()
             ShopState(
                 coins = player.coins,
+                gems = player.gems,
                 ownedItemIds = owned.toSet() + ShopCatalog.freeItemIds,
                 equippedAvatarId = player.avatarId ?: ShopCatalog.DEFAULT_AVATAR_ID,
                 equippedThemeId = player.themeId ?: ShopCatalog.DEFAULT_THEME_ID,
@@ -177,9 +215,21 @@ class PlayerRepository(
         ShopCatalog.powerUps.associate { it.id to (counts[it.id] ?: 0) }
     }
 
-    /** Buys one power-up for [price] coins if affordable. Returns `true` on success. */
-    suspend fun purchasePowerUp(powerUpId: String, price: Int): Boolean =
-        purchaseBooster(powerUpId, price)
+    /** Buys a power-up (or bundle) for [price] coins if affordable. Returns `true` on success. */
+    suspend fun purchasePowerUp(powerUpId: String, price: Int): Boolean {
+        val item = ShopCatalog.powerUp(powerUpId) ?: return false
+        var purchased = false
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.coins >= price) {
+                dao.upsertPlayer(player.copy(coins = player.coins - price))
+                val count = dao.getInventoryCount(powerUpId) ?: 0
+                dao.upsertInventory(InventoryEntity(powerUpId, count + item.packSize))
+                purchased = true
+            }
+        }
+        return purchased
+    }
 
     /** Boost id -> how many of that temporary boost the player currently holds in the backpack. */
     fun observeBoosts(): Flow<Map<String, Int>> = dao.observeInventory().map { rows ->
@@ -241,10 +291,40 @@ class PlayerRepository(
         updatePlayer { it.copy(name = trimmed) }
     }
 
+    /** Current player level, derived from lifetime XP. Usable from any coroutine context. */
+    suspend fun getPlayerLevel(): Int {
+        val player = dao.getPlayer() ?: PlayerEntity()
+        return CharacterLevelCalculator.calculateLevel(player.lifetimePoints, player.bankedLifetimePoints)
+    }
+
     /** Adds coins without touching points/XP (used for achievement and daily rewards). */
     suspend fun addCoins(amount: Int) {
         if (amount <= 0) return
         updatePlayer { it.copy(coins = it.coins + amount, lifetimeCoins = it.lifetimeCoins + amount) }
+    }
+
+    /** Adds rare gems (achievements, events, season rewards). */
+    suspend fun addGems(amount: Int) {
+        if (amount <= 0) return
+        updatePlayer { it.copy(gems = it.gems + amount) }
+    }
+
+    /**
+     * Buys a premium cosmetic [itemId] for [priceGems] gems if affordable and not already owned.
+     * Returns `true` on success. Mirrors [purchase] but spends gems instead of coins.
+     */
+    suspend fun purchaseWithGems(itemId: String, priceGems: Int): Boolean {
+        var purchased = false
+        db.withTransaction {
+            val owned = dao.getOwnedIds().toSet() + ShopCatalog.freeItemIds
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (itemId !in owned && player.gems >= priceGems) {
+                dao.upsertPlayer(player.copy(gems = player.gems - priceGems))
+                dao.addOwned(OwnedItemEntity(itemId))
+                purchased = true
+            }
+        }
+        return purchased
     }
 
     /**
@@ -271,6 +351,51 @@ class PlayerRepository(
             }
         }
         return spent
+    }
+
+    /** Atomically deducts [amount] spendable XP (points) if affordable. Returns `true` on success. */
+    suspend fun spendXp(amount: Int): Boolean {
+        if (amount <= 0) return false
+        var spent = false
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.points >= amount) {
+                dao.upsertPlayer(player.copy(points = player.points - amount))
+                spent = true
+            }
+        }
+        return spent
+    }
+
+    /** Atomically deducts [amount] gems if affordable. Returns `true` on success. */
+    suspend fun spendGems(amount: Int): Boolean {
+        if (amount <= 0) return false
+        var spent = false
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.gems >= amount) {
+                dao.upsertPlayer(player.copy(gems = player.gems - amount))
+                spent = true
+            }
+        }
+        return spent
+    }
+
+    /** Pays a Millionaire pack buy-in in [currency]; returns `true` if the player could afford it. */
+    suspend fun payPackEntry(currency: PackCurrency, amount: Int): Boolean = when (currency) {
+        PackCurrency.XP -> spendXp(amount)
+        PackCurrency.COINS -> spendCoins(amount)
+        PackCurrency.GEMS -> spendGems(amount)
+    }
+
+    /** Awards a Millionaire prize in [currency] (XP also grows lifetime XP/level). */
+    suspend fun awardPackPrize(currency: PackCurrency, amount: Int) {
+        if (amount <= 0) return
+        when (currency) {
+            PackCurrency.XP -> addXp(amount)
+            PackCurrency.COINS -> addCoins(amount)
+            PackCurrency.GEMS -> addGems(amount)
+        }
     }
 
     /**
@@ -320,24 +445,117 @@ class PlayerRepository(
         return result
     }
 
-    val promoRedeemed: Flow<Boolean> = dao.observePlayer().map { it?.promoRedeemed ?: false }
-
-    suspend fun redeemPromoCode(code: String): PromoRedeemResult {
-        val normalized = code.trim().uppercase()
-        if (normalized != PROMO_CODE) return PromoRedeemResult.INVALID_CODE
-        var result = PromoRedeemResult.ALREADY_REDEEMED
+    /**
+     * Opens one [MythicBox] if the player can afford its gem price: deducts gems, then rolls an
+     * unowned cosmetic across every catalogue (avatars, titles and themes, including premium ones),
+     * falling through to a large coin or XP payout when nothing is left to win. All in one
+     * transaction. Returns the won reward, or `null` if the player could not afford a chest.
+     */
+    suspend fun openMythicChest(): LootResult? {
+        var result: LootResult? = null
         db.withTransaction {
             val player = dao.getPlayer() ?: PlayerEntity()
-            if (!player.promoRedeemed) {
-                dao.upsertPlayer(
-                    player.copy(
-                        promoRedeemed = true,
-                        coins = player.coins + PROMO_REWARD_COINS,
-                        lifetimeCoins = player.lifetimeCoins + PROMO_REWARD_COINS
+            if (player.gems < MythicBox.PRICE_GEMS) return@withTransaction
+
+            val owned = dao.getOwnedIds().toSet() + ShopCatalog.freeItemIds
+            val unownedAvatar = (ShopCatalog.avatars + ShopCatalog.premiumAvatars)
+                .filter { (it.priceCoins > 0 || it.priceGems > 0) && it.id !in owned }.randomOrNull()
+            val unownedTitle = (ShopCatalog.titles + ShopCatalog.premiumTitles)
+                .filter { it.id !in owned }.randomOrNull()
+            val unownedTheme = (ShopCatalog.themes + ShopCatalog.premiumThemes)
+                .filter { (it.priceCoins > 0 || it.priceGems > 0) && it.id !in owned }.randomOrNull()
+            val cosmetics: List<LootResult> = listOfNotNull(
+                unownedAvatar?.let { LootResult.Avatar(it) },
+                unownedTitle?.let { LootResult.Title(it) },
+                unownedTheme?.let { LootResult.Theme(it) }
+            )
+            val roll = (1..100).random()
+
+            var updated = player.copy(gems = player.gems - MythicBox.PRICE_GEMS)
+            result = when {
+                roll <= MythicBox.COSMETIC_MAX_ROLL && cosmetics.isNotEmpty() -> {
+                    val won = cosmetics.random()
+                    val itemId = when (won) {
+                        is LootResult.Avatar -> won.item.id
+                        is LootResult.Title -> won.item.id
+                        is LootResult.Theme -> won.item.id
+                        else -> null
+                    }
+                    itemId?.let { dao.addOwned(OwnedItemEntity(it)) }
+                    won
+                }
+                roll <= MythicBox.XP_MAX_ROLL -> {
+                    val xp = LootBox.weightedPick(MythicBox.xpPayouts)
+                    updated = updated.withEarnedXp(xp)
+                    LootResult.Xp(xp)
+                }
+                else -> {
+                    val coins = LootBox.weightedPick(MythicBox.coinPayouts)
+                    updated = updated.copy(
+                        coins = updated.coins + coins,
+                        lifetimeCoins = updated.lifetimeCoins + coins
                     )
-                )
-                result = PromoRedeemResult.SUCCESS
+                    LootResult.Coins(coins)
+                }
             }
+            dao.upsertPlayer(updated)
+        }
+        return result
+    }
+
+    /**
+     * Buys a [com.rustam.quizapp.domain.GemBundle] for its gem price if affordable, atomically
+     * granting its coins, free XP and/or inventory items. Powers both the gem→coin exchange and the
+     * premium consumable packs. Returns `true` on success.
+     */
+    suspend fun purchaseGemBundle(bundleId: String): Boolean {
+        val bundle = ShopCatalog.gemBundle(bundleId) ?: return false
+        var purchased = false
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.gems < bundle.priceGems) return@withTransaction
+            var updated = player.copy(gems = player.gems - bundle.priceGems)
+            if (bundle.coins > 0) {
+                updated = updated.copy(
+                    coins = updated.coins + bundle.coins,
+                    lifetimeCoins = updated.lifetimeCoins + bundle.coins
+                )
+            }
+            if (bundle.xp > 0) updated = updated.withEarnedXp(bundle.xp)
+            dao.upsertPlayer(updated)
+            bundle.items.forEach { (itemId, count) ->
+                val current = dao.getInventoryCount(itemId) ?: 0
+                dao.upsertInventory(InventoryEntity(itemId, current + count))
+            }
+            purchased = true
+        }
+        return purchased
+    }
+
+    /**
+     * Redeems a one-time promo [code] (see [PromoCodes]). Unknown codes return [PromoRedeemResult.Invalid];
+     * codes already claimed on this device return [PromoRedeemResult.AlreadyRedeemed]. On success the
+     * reward (coins / gems / XP) is granted atomically and the code is recorded so it can't be reused.
+     */
+    suspend fun redeemPromoCode(code: String): PromoRedeemResult {
+        val promo = PromoCodes.find(code) ?: return PromoRedeemResult.Invalid
+        var result: PromoRedeemResult = PromoRedeemResult.AlreadyRedeemed
+        db.withTransaction {
+            if (promo.code in promoDao.getRedeemed().toSet()) return@withTransaction
+            promoDao.insert(RedeemedPromoEntity(promo.code))
+            val player = dao.getPlayer() ?: PlayerEntity()
+            val reward = promo.reward
+            var updated = player
+            if (reward.coins > 0) {
+                updated = updated.copy(
+                    coins = updated.coins + reward.coins,
+                    lifetimeCoins = updated.lifetimeCoins + reward.coins
+                )
+            }
+            if (reward.gems > 0) updated = updated.copy(gems = updated.gems + reward.gems)
+            if (reward.xp > 0) updated = updated.withEarnedXp(reward.xp)
+            dao.upsertPlayer(updated)
+            result = PromoRedeemResult.Success(reward.coins, reward.gems, reward.xp)
         }
         return result
     }
@@ -392,21 +610,31 @@ class PlayerRepository(
         val scaledBasePoints = (baseReward.points * levelMultiplier).toInt()
         val scaledBaseCoins = (baseReward.coins * coinLevelMultiplier).toInt()
 
-        // Percentage bonuses (Strength/Intelligence + Erudition/Commerce skills) plus flat
-        // bonuses (Wisdom/Endurance + Sage/Resilience skills).
+        // Percentage bonuses (Strength/Insight/Intelligence + Erudition/Commerce skills) plus flat
+        // bonuses (Wisdom/Endurance + Sage/Resilience skills) and the per-correct channels
+        // (Knowledge/Wealth), which scale with how many answers were correct this run.
+        // Flat bonuses are multiplied by the level multiplier so they grow meaningfully over time,
+        // just like the base reward — without this they'd stay constant and feel irrelevant at high level.
+        val correctCount = answers.count { it.isCorrect }
         val xpBonusPercent = stats.xpBonusPercent + skills.xpBonusPercent + talents.xpBonusPercent
         val coinBonusPercent = stats.coinBonusPercent + skills.coinBonusPercent + talents.coinBonusPercent
-        val flatXpBonus = stats.flatXpBonus + skills.flatXpBonus + talents.flatXpBonus
-        val flatCoinBonus = stats.flatCoinBonus + skills.flatCoinBonus + talents.flatCoinBonus
+        val rawFlatXpBonus = stats.flatXpBonus + skills.flatXpBonus + talents.flatXpBonus +
+            stats.flatXpPerCorrect * correctCount
+        val rawFlatCoinBonus = stats.flatCoinBonus + skills.flatCoinBonus + talents.flatCoinBonus +
+            stats.flatCoinPerCorrect * correctCount
+        val flatXpBonus = (rawFlatXpBonus * levelMultiplier).toInt()
+        val flatCoinBonus = (rawFlatCoinBonus * coinLevelMultiplier).toInt()
         val xpBonus = (scaledBasePoints * (xpBonusPercent / 100f)).toInt() + flatXpBonus
         val coinBonus = (scaledBaseCoins * (coinBonusPercent / 100f)).toInt() + flatCoinBonus
 
         var pointsEarned = scaledBasePoints + xpBonus
         var coinsEarned = scaledBaseCoins + coinBonus
 
-        // Luck (+ Charisma + Fortune skill) roll for double rewards (Critical Success).
-        val doubleChance = stats.doubleRewardChancePercent + stats.critChanceBonusPercent +
-            skills.critChanceBonusPercent + talents.critChanceBonusPercent
+        // Luck (+ Charisma + Precision + Fortune skill/talents) roll for double rewards (Critical
+        // Success). Capped so a fully-invested build still gambles rather than always critting.
+        val doubleChance = (stats.doubleRewardChancePercent + stats.critChanceBonusPercent +
+            skills.critChanceBonusPercent + talents.critChanceBonusPercent)
+            .coerceAtMost(CharacterLevelCalculator.MAX_CRIT_CHANCE_PERCENT)
         val isCriticalSuccess = if (doubleChance > 0f) (1..100).random() <= doubleChance else false
 
         if (isCriticalSuccess) {
@@ -425,6 +653,15 @@ class PlayerRepository(
         )
         val newLevel = CharacterLevelCalculator.calculateLevel(newLifetime, newBanked)
 
+        // Gems (💎) woven into the core loop: a bonus for a perfect run plus a payout per level
+        // gained. Only real quizzes (not previews) earn the perfect-quiz bonus.
+        val perfectQuizGems = if (allowEventBonus && total > 0 && correctCount == total) {
+            GemEconomy.PERFECT_QUIZ_GEMS
+        } else {
+            0
+        }
+        val gemsEarned = perfectQuizGems + GemEconomy.levelUpGems(level, newLevel)
+
         val finalReward = baseReward.copy(
             points = pointsEarned,
             coins = coinsEarned,
@@ -439,21 +676,139 @@ class PlayerRepository(
             levelMultiplier = levelMultiplier,
             coinLevelMultiplier = coinLevelMultiplier,
             previousLevel = level,
-            newLevel = newLevel
+            newLevel = newLevel,
+            gemsEarned = gemsEarned
         )
 
-        // Credit the reward and spend one charge per boost that was actually applied.
+        // Credit the reward, advance the season track, and spend one charge per applied boost.
+        val today = LocalDate.now().toEpochDay()
+        val currentSeason = SeasonPass.currentSeasonId(today)
+        val seasonGain = SeasonPass.xpForQuiz(correctCount)
         updatePlayer {
+            val seasonActive = it.seasonId == currentSeason
+            val baseSeasonXp = if (seasonActive) it.seasonXp else 0
+            val baseSeasonMask = if (seasonActive) it.seasonClaimedMask else 0L
             it.withEarnedXp(pointsEarned).copy(
                 coins = it.coins + coinsEarned,
                 lifetimeCoins = it.lifetimeCoins + coinsEarned,
+                gems = it.gems + gemsEarned,
                 coinBoostQuizzesLeft = if (coinBoosted) it.coinBoostQuizzesLeft - 1 else it.coinBoostQuizzesLeft,
-                xpBoostQuizzesLeft = if (xpBoosted) it.xpBoostQuizzesLeft - 1 else it.xpBoostQuizzesLeft
+                xpBoostQuizzesLeft = if (xpBoosted) it.xpBoostQuizzesLeft - 1 else it.xpBoostQuizzesLeft,
+                seasonId = currentSeason,
+                seasonXp = baseSeasonXp + seasonGain,
+                seasonClaimedMask = baseSeasonMask
             )
         }
-        if (activeEvent != null) markEventCompleted(activeEvent.type)
+        if (activeEvent != null) {
+            markEventCompleted(activeEvent.type)
+            addGems(EVENT_GEM_REWARD)
+        }
         return finalReward
     }
+
+    /**
+     * Claims the season-track reward at [level] if it has been reached and not yet claimed, granting
+     * coins / gems / XP / a booster accordingly. Returns the granted reward, or `null` if not claimable.
+     */
+    suspend fun claimSeasonReward(level: Int): SeasonReward? {
+        val today = LocalDate.now().toEpochDay()
+        val currentSeason = SeasonPass.currentSeasonId(today)
+        var granted: SeasonReward? = null
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            val seasonActive = player.seasonId == currentSeason
+            val seasonXp = if (seasonActive) player.seasonXp else 0
+            val mask = if (seasonActive) player.seasonClaimedMask else 0L
+            if (!SeasonPass.canClaim(level, seasonXp, mask)) return@withTransaction
+            val reward = SeasonPass.reward(level)
+            var updated = player.copy(
+                seasonId = currentSeason,
+                seasonXp = seasonXp,
+                seasonClaimedMask = SeasonPass.withClaimed(mask, level)
+            )
+            when (reward.kind) {
+                SeasonRewardKind.COINS -> updated = updated.copy(
+                    coins = updated.coins + reward.amount,
+                    lifetimeCoins = updated.lifetimeCoins + reward.amount
+                )
+                SeasonRewardKind.GEMS -> updated = updated.copy(gems = updated.gems + reward.amount)
+                SeasonRewardKind.XP -> updated = updated.withEarnedXp(reward.amount)
+                SeasonRewardKind.BOOSTER -> reward.itemId?.let { id ->
+                    val count = dao.getInventoryCount(id) ?: 0
+                    dao.upsertInventory(InventoryEntity(id, count + reward.amount))
+                }
+            }
+            dao.upsertPlayer(updated)
+            granted = reward
+        }
+        return granted
+    }
+
+    /** Today's discounted deals, with how many times each has been bought today (for the daily cap). */
+    fun observeDeals(): Flow<List<ShopDealState>> = dealDao.observe().map { entity ->
+        val today = LocalDate.now().toEpochDay()
+        val purchases = if (entity?.day == today) parseDealPurchases(entity.purchasesCsv) else emptyMap()
+        ShopDeals.dealsForDay(today).map { template ->
+            ShopDealState(
+                template = template,
+                dealPrice = ShopDeals.dealPrice(template.basePrice),
+                purchasedToday = purchases[template.dealId] ?: 0
+            )
+        }
+    }
+
+    /**
+     * Buys one unit of today's deal [dealId] at its discounted price if affordable and under the
+     * daily cap, granting the consumable. Returns `true` on success.
+     */
+    suspend fun purchaseDeal(dealId: String): Boolean {
+        val today = LocalDate.now().toEpochDay()
+        val template = ShopDeals.dealsForDay(today).find { it.dealId == dealId } ?: return false
+        var purchased = false
+        db.withTransaction {
+            val deal = dealDao.get()
+            val purchases = if (deal?.day == today) {
+                parseDealPurchases(deal.purchasesCsv).toMutableMap()
+            } else {
+                mutableMapOf()
+            }
+            val boughtToday = purchases[dealId] ?: 0
+            if (boughtToday >= ShopDeals.MAX_PER_DAY) return@withTransaction
+
+            val price = ShopDeals.dealPrice(template.basePrice)
+            val player = dao.getPlayer() ?: PlayerEntity()
+            if (player.coins < price) return@withTransaction
+            dao.upsertPlayer(player.copy(coins = player.coins - price))
+            grantDealItem(template)
+
+            purchases[dealId] = boughtToday + 1
+            dealDao.upsert(ShopDealEntity(day = today, purchasesCsv = serializeDealPurchases(purchases)))
+            purchased = true
+        }
+        return purchased
+    }
+
+    private suspend fun grantDealItem(template: DealTemplate) {
+        val addCount = when (template.kind) {
+            DealKind.POWERUP -> ShopCatalog.powerUp(template.dealId)?.packSize ?: 1
+            else -> 1
+        }
+        val count = dao.getInventoryCount(template.dealId) ?: 0
+        dao.upsertInventory(InventoryEntity(template.dealId, count + addCount))
+    }
+
+    private fun parseDealPurchases(csv: String): Map<String, Int> {
+        if (csv.isBlank()) return emptyMap()
+        return csv.split(",").mapNotNull { entry ->
+            val parts = entry.split(":")
+            if (parts.size != 2) return@mapNotNull null
+            val count = parts[1].toIntOrNull() ?: return@mapNotNull null
+            parts[0] to count
+        }.toMap()
+    }
+
+    private fun serializeDealPurchases(purchases: Map<String, Int>): String =
+        purchases.filter { it.value > 0 }.entries.joinToString(",") { "${it.key}:${it.value}" }
 
     suspend fun upgradeStat(statName: String): Boolean {
         var upgraded = false
@@ -619,7 +974,11 @@ class PlayerRepository(
         wisdom = wisdom,
         endurance = endurance,
         focus = focus,
-        charisma = charisma
+        charisma = charisma,
+        knowledge = knowledge,
+        wealth = wealth,
+        precision = precision,
+        insight = insight
     )
 
     private fun eventSnapshot(player: PlayerEntity): EventProgressSnapshot = EventProgressSnapshot(
@@ -641,6 +1000,10 @@ class PlayerRepository(
         "endurance" -> player.endurance
         "focus" -> player.focus
         "charisma" -> player.charisma
+        "knowledge" -> player.knowledge
+        "wealth" -> player.wealth
+        "precision" -> player.precision
+        "insight" -> player.insight
         else -> null
     }
 
@@ -668,19 +1031,23 @@ class PlayerRepository(
         "endurance" -> player.copy(endurance = value)
         "focus" -> player.copy(focus = value)
         "charisma" -> player.copy(charisma = value)
+        "knowledge" -> player.copy(knowledge = value)
+        "wealth" -> player.copy(wealth = value)
+        "precision" -> player.copy(precision = value)
+        "insight" -> player.copy(insight = value)
         else -> player
     }
 
     private companion object {
         const val MAX_NAME_LENGTH = 24
         const val MAX_RECENT = 200
-        const val PROMO_CODE = "AAAAAA"
-        const val PROMO_REWARD_COINS = 2000
+        const val EVENT_GEM_REWARD = 2
     }
 }
 
-enum class PromoRedeemResult {
-    SUCCESS,
-    INVALID_CODE,
-    ALREADY_REDEEMED
+/** Outcome of redeeming a promo code. [Success] carries the granted reward for the UI message. */
+sealed interface PromoRedeemResult {
+    data class Success(val coins: Int, val gems: Int, val xp: Int) : PromoRedeemResult
+    data object Invalid : PromoRedeemResult
+    data object AlreadyRedeemed : PromoRedeemResult
 }

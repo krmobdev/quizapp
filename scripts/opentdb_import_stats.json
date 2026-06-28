@@ -1,0 +1,52 @@
+{
+  "geography": {
+    "local": 134,
+    "imported": 182,
+    "total": 316
+  },
+  "history": {
+    "local": 135,
+    "imported": 217,
+    "total": 352
+  },
+  "movies": {
+    "local": 135,
+    "imported": 1382,
+    "total": 1517
+  },
+  "art": {
+    "local": 116,
+    "imported": 90,
+    "total": 206
+  },
+  "animals": {
+    "local": 135,
+    "imported": 6,
+    "total": 141
+  },
+  "math": {
+    "local": 134,
+    "imported": 1,
+    "total": 135
+  },
+  "informatics": {
+    "local": 135,
+    "imported": 102,
+    "total": 237
+  },
+  "chemistry": {
+    "local": 140,
+    "imported": 54,
+    "total": 194
+  },
+  "physics": {
+    "local": 123,
+    "imported": 9,
+    "total": 132
+  },
+  "astronomy": {
+    "local": 135,
+    "imported": 67,
+    "total": 202
+  }
+}

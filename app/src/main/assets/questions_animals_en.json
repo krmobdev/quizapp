@@ -845,12 +845,12 @@
     "text": "What is the name for a male bee that comes from an unfertilized egg?",
     "options": [
       "Drone",
-      "Soldier",
-      "Worker",
-      "Male"
+      "Worker bee",
+      "Queen bee",
+      "Bumblebee"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Drone.",
+    "explanation": "A drone is a male honey bee from an unfertilized egg.",
     "id": "anim_061"
   },
   {
@@ -930,7 +930,7 @@
     "options": [
       "Dalmatian",
       "Pekingnese",
-      "Chihuahua ",
+      "Chihuahua",
       "Pomeranian"
     ],
     "correctIndex": 0,
@@ -954,7 +954,7 @@
   {
     "category": "animals",
     "difficulty": "EASY",
-    "text": "What is the fastest  land animal?",
+    "text": "What is the fastest land animal?",
     "options": [
       "Cheetah",
       "Lion",
@@ -1528,7 +1528,7 @@
   {
     "category": "animals",
     "difficulty": "MEDIUM",
-    "text": "\"Decapods\" are an order of ten-footed crustaceans.  Which of these are NOT decapods?",
+    "text": "\"Decapods\" are an order of ten-footed crustaceans. Which of these are NOT decapods?",
     "options": [
       "Krill",
       "Lobsters",
@@ -1642,13 +1642,13 @@
     "difficulty": "HARD",
     "text": "What is the scientific name for the Bald Eagle?",
     "options": [
-      "Haliaeetus Leucocephalus ",
-      "Tyto Alba",
-      "Cyanocitta Cristata",
-      "Aquila Chrysaetos"
+      "Haliaeetus leucocephalus",
+      "Tyto alba",
+      "Cyanocitta cristata",
+      "Aquila chrysaetos"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Haliaeetus Leucocephalus .",
+    "explanation": "The bald eagle is Haliaeetus leucocephalus.",
     "id": "anim_118"
   },
   {
@@ -1846,5 +1846,131 @@
     "correctIndex": 0,
     "explanation": "Eusociality is observed in ants, termites, certain bees, and naked mole-rats.",
     "id": "anim_132"
+  },
+  {
+    "id": "anim_133",
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Flying mammal?",
+    "options": [
+      "Bat",
+      "Squirrel",
+      "Kangaroo",
+      "Otter"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bats are the only flying mammals."
+  },
+  {
+    "id": "anim_134",
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "How many hearts does an octopus have?",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Two branchial and one systemic."
+  },
+  {
+    "id": "anim_135",
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "Iconic animal of Australia?",
+    "options": [
+      "Kangaroo",
+      "Panda",
+      "Elephant",
+      "Giraffe"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kangaroo on Australia's coat of arms."
+  },
+  {
+    "id": "otdb_animals_0001",
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "Which animal was part of an Russian domestication experiment in 1959?",
+    "options": [
+      "Foxes",
+      "Pigeons",
+      "Bears",
+      "Alligators"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Foxes."
+  },
+  {
+    "id": "otdb_animals_0002",
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "The now extinct species \"Thylacine\" was native to where?",
+    "options": [
+      "Tasmania, Australia",
+      "Baluchistan, Pakistan",
+      "Wallachia, Romania",
+      "Oregon, United States"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Tasmania, Australia."
+  },
+  {
+    "id": "otdb_animals_0003",
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "What is Grumpy Cat's real name?",
+    "options": [
+      "Tardar Sauce",
+      "Sauce",
+      "Minnie",
+      "Broccoli"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Tardar Sauce."
+  },
+  {
+    "id": "otdb_animals_0004",
+    "category": "animals",
+    "difficulty": "EASY",
+    "text": "How many legs do butterflies have?",
+    "options": [
+      "6",
+      "2",
+      "4",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6."
+  },
+  {
+    "id": "otdb_animals_0005",
+    "category": "animals",
+    "difficulty": "HARD",
+    "text": "What bird is born with claws on its wing digits?",
+    "options": [
+      "Hoatzin",
+      "Cormorant",
+      "Cassowary",
+      "Secretary bird"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hoatzin."
+  },
+  {
+    "id": "otdb_animals_0006",
+    "category": "animals",
+    "difficulty": "MEDIUM",
+    "text": "What does \"hippopotamus\" mean and in what langauge?",
+    "options": [
+      "River Horse (Greek)",
+      "River Horse (Latin)",
+      "Fat Pig (Greek)",
+      "Fat Pig (Latin)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is River Horse (Greek)."
   }
 ]

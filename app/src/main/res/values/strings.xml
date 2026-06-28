@@ -73,14 +73,17 @@
     <string name="theme_light">Светлая</string>
     <string name="theme_dark">Тёмная</string>
 
-    <string name="settings_promo_title">Промо-код</string>
-    <string name="settings_promo_subtitle">Активируйте код и получите монеты</string>
-    <string name="settings_promo_hint">Введите промо-код</string>
+    <string name="settings_promo_title">Промокоды</string>
+    <string name="settings_promo_subtitle">Активируйте код и получите пак ресурсов (монеты, гемы или опыт). Каждый код одноразовый.</string>
+    <string name="settings_promo_hint">Введите промокод</string>
     <string name="settings_promo_activate">Активировать</string>
-    <string name="settings_promo_success">Промо-код активирован! +2000 монет</string>
-    <string name="settings_promo_invalid">Неверный промо-код</string>
-    <string name="settings_promo_already">Промо-код уже был активирован</string>
-    <string name="settings_promo_redeemed">Промо-код активирован · +2000 монет</string>
+    <string name="settings_promo_success_format">Активировано! %1$s</string>
+    <string name="settings_promo_invalid">Неверный промокод</string>
+    <string name="settings_promo_already">Этот промокод уже активирован</string>
+
+    <string name="settings_appearance_title">Внешний вид</string>
+    <string name="settings_appearance_subtitle">Язык приложения и оформление</string>
+    <string name="settings_about_title">О приложении</string>
 
     <!-- Управление данными: экспорт / импорт / сброс прогресса -->
     <string name="settings_data_title">Данные</string>
@@ -104,6 +107,9 @@
     <string name="settings_attribution_title">Источники вопросов</string>
     <string name="settings_attribution_body">Часть английских вопросов взята из Open Trivia Database (CC BY-SA 4.0). Русские вопросы — собственная база приложения.</string>
     <string name="settings_attribution_link">opentdb.com</string>
+    <string name="settings_onboarding_title">Обучение</string>
+    <string name="settings_onboarding_subtitle">Повторно показать вводные экраны приложения</string>
+    <string name="settings_onboarding_show">Показать обучение снова</string>
     <string name="language_russian">Русский</string>
     <string name="language_english">English</string>
 
@@ -144,6 +150,7 @@
     <string name="shop_title">Магазин</string>
     <string name="shop_balance">Ваши монеты</string>
     <string name="shop_avatars">Аватары</string>
+    <string name="shop_premium_avatars">Премиум-аватары (за 💎)</string>
     <string name="shop_themes">Цветовые темы</string>
     <string name="shop_equip">Выбрать</string>
     <string name="shop_equipped">Выбрано</string>
@@ -205,7 +212,56 @@
     <string name="loot_xp">+%1$d опыта</string>
     <string name="loot_avatar">Новый аватар!</string>
     <string name="loot_title">Новый титул: %1$s</string>
+    <string name="loot_theme">Новая тема: %1$s</string>
     <string name="loot_close">Отлично!</string>
+
+    <!-- Гемы 💎 -->
+    <string name="player_gems">Гемы</string>
+    <string name="shop_premium_themes">Премиум-темы (за 💎)</string>
+    <string name="shop_mythic_title">Мифический сундук 🔮</string>
+    <string name="shop_mythic_desc">Премиум-сундук за гемы: редкая косметика либо крупные монеты/опыт</string>
+    <string name="shop_gem_exchange_section">Обмен и наборы за гемы</string>
+    <string name="gem_exchange_small">Горсть монет</string>
+    <string name="gem_exchange_medium">Мешок монет</string>
+    <string name="gem_exchange_large">Сундук монет</string>
+    <string name="gem_bundle_power">Набор паверапов</string>
+    <string name="gem_bundle_boost">Набор усилений</string>
+    <string name="gem_bundle_booster">Набор бустеров опыта</string>
+    <string name="rewards_gems_earned">+%1$d 💎</string>
+    <string name="daily_reward_gems">+%1$d 💎 бонус!</string>
+    <string name="theme_accent_aurora">Аврора</string>
+    <string name="theme_accent_obsidian">Обсидиан</string>
+    <string name="theme_accent_prism">Призма</string>
+
+    <!-- Режим «Миллионер» -->
+    <string name="millionaire_title">Кто хочет стать миллионером</string>
+    <string name="millionaire_subtitle">Купи пак, отвечай на 15 вопросов с растущим призом. Ошибся — теряешь несгораемое; можно забрать деньги в любой момент.</string>
+    <string name="millionaire_all_categories">Все категории</string>
+    <string name="millionaire_tab_xp">Опыт</string>
+    <string name="millionaire_tab_coins">Монеты</string>
+    <string name="millionaire_tab_gems">Гемы</string>
+    <string name="millionaire_balance">Баланс: %1$s</string>
+    <string name="millionaire_cost_prize">Ставка %1$s · Приз %2$s</string>
+    <string name="millionaire_buy">Играть</string>
+    <string name="millionaire_home_title">Кто хочет стать миллионером</string>
+    <string name="millionaire_home_desc">Покупай пак, отвечай и забирай приз</string>
+    <string name="millionaire_rung">Вопрос %1$d из %2$d</string>
+    <string name="millionaire_next">За правильный ответ: %1$s</string>
+    <string name="millionaire_guaranteed">Несгораемая сумма: %1$s</string>
+    <string name="millionaire_take_money">Забрать %1$s</string>
+    <string name="millionaire_continue">Продолжить</string>
+    <string name="millionaire_phone_confident">Друг уверен: вариант %1$s</string>
+    <string name="millionaire_phone_unsure">Друг не уверен, возможно вариант %1$s</string>
+    <string name="millionaire_won">Поздравляем! Ваш выигрыш: %1$s</string>
+    <string name="millionaire_won_all">Джекпот! Вы прошли все вопросы и забрали %1$s</string>
+    <string name="millionaire_lost">Увы! Несгораемый выигрыш: %1$s</string>
+    <string name="millionaire_lost_zero">Увы! На этот раз без приза</string>
+    <string name="millionaire_outcome_title">Итог</string>
+    <string name="millionaire_outcome_ok">Готово</string>
+    <string name="millionaire_leave_title">Покинуть игру?</string>
+    <string name="millionaire_leave_text">Вы заберёте только несгораемую сумму: %1$s</string>
+    <string name="millionaire_leave_confirm">Выйти</string>
+    <string name="millionaire_leave_cancel">Остаться</string>
 
     <!-- Временные усиления (бусты ×2) -->
     <string name="shop_boosts_section">Временные усиления</string>
@@ -225,6 +281,7 @@
 
     <!-- Титулы (косметика для карточки игрока) -->
     <string name="shop_titles">Титулы</string>
+    <string name="shop_premium_titles">Премиум-титулы (за 💎)</string>
     <string name="shop_titles_hint">Покупайте титулы за монеты — они отображаются в вашей карточке. Нажмите на выбранный, чтобы снять.</string>
     <string name="title_none">Без титула</string>
     <string name="title_curious">Любопытный</string>
@@ -411,6 +468,7 @@
     <string name="quest_perfect_quiz">Пройдите квиз без ошибок</string>
     <string name="quest_earn_coins">Заработайте %1$d монет</string>
     <string name="quest_reward">+%1$d 🪙 · +%2$d 🎓</string>
+    <string name="quest_level_bonus">Ур. %1$d · %2$s</string>
     <string name="quest_claimed">Получено ✓</string>
 
     <!-- Напоминания -->
@@ -513,6 +571,9 @@
     <string name="season_pass_reward_booster">Бустер 🎓</string>
     <string name="season_pass_close">Закрыть</string>
     <string name="season_pass_home_card">Сезон · Ур. %1$d · %2$d дн.</string>
+    <string name="home_shop_deals_btn">Акции дня</string>
+    <string name="home_shop_deals_hint">Скидки в магазине</string>
+    <string name="settings_app_version">Версия %1$s · сборка %2$d</string>
     <string name="season_pass_xp_hint">+%1$d XP за квиз · уровень каждые %2$d XP</string>
 
     <!-- Адаптивная сложность -->

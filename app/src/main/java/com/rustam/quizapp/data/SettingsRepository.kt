@@ -34,6 +34,9 @@ class SettingsRepository(context: Context) {
 
     suspend fun setOnboardingShown() = update { it.copy(onboardingShown = true) }
 
+    /** Allows replaying the first-launch tutorial from Settings. */
+    suspend fun resetOnboarding() = update { it.copy(onboardingShown = false) }
+
     private suspend inline fun update(crossinline transform: (AppStateEntity) -> AppStateEntity) {
         db.withTransaction {
             val current = dao.get() ?: AppStateEntity()

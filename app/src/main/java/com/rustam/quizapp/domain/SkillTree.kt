@@ -34,17 +34,23 @@ enum class SkillBranch(
     val coinCostBase: Int
 ) {
     ERUDITION("erudition", "📚", R.string.skill_erudition, R.string.skill_erudition_desc,
-        SkillBonusKind.XP_PERCENT, maxTier = 10, perTier = 4f, xpCostBase = 450, coinCostBase = 190),
+        SkillBonusKind.XP_PERCENT, maxTier = 15, perTier = 4f,
+        xpCostBase = EconomyBalance.scale(450), coinCostBase = EconomyBalance.scale(190)),
     COMMERCE("commerce", "💰", R.string.skill_commerce, R.string.skill_commerce_desc,
-        SkillBonusKind.COIN_PERCENT, maxTier = 10, perTier = 5f, xpCostBase = 450, coinCostBase = 190),
+        SkillBonusKind.COIN_PERCENT, maxTier = 15, perTier = 5f,
+        xpCostBase = EconomyBalance.scale(450), coinCostBase = EconomyBalance.scale(190)),
     FORTUNE("fortune", "🎲", R.string.skill_fortune, R.string.skill_fortune_desc,
-        SkillBonusKind.CRIT_CHANCE, maxTier = 8, perTier = 3f, xpCostBase = 600, coinCostBase = 300),
+        SkillBonusKind.CRIT_CHANCE, maxTier = 12, perTier = 3f,
+        xpCostBase = EconomyBalance.scale(600), coinCostBase = EconomyBalance.scale(300)),
     CHRONOS("chronos", "⏳", R.string.skill_chronos, R.string.skill_chronos_desc,
-        SkillBonusKind.EXTRA_TIME, maxTier = 6, perTier = 1f, xpCostBase = 525, coinCostBase = 265),
+        SkillBonusKind.EXTRA_TIME, maxTier = 8, perTier = 1f,
+        xpCostBase = EconomyBalance.scale(525), coinCostBase = EconomyBalance.scale(265)),
     SAGE("sage", "🦉", R.string.skill_sage, R.string.skill_sage_desc,
-        SkillBonusKind.FLAT_XP, maxTier = 8, perTier = 25f, xpCostBase = 375, coinCostBase = 225),
+        SkillBonusKind.FLAT_XP, maxTier = 12, perTier = 25f,
+        xpCostBase = EconomyBalance.scale(375), coinCostBase = EconomyBalance.scale(225)),
     RESILIENCE("resilience", "🛡️", R.string.skill_resilience, R.string.skill_resilience_desc,
-        SkillBonusKind.FLAT_COINS, maxTier = 8, perTier = 10f, xpCostBase = 375, coinCostBase = 265);
+        SkillBonusKind.FLAT_COINS, maxTier = 12, perTier = 10f,
+        xpCostBase = EconomyBalance.scale(375), coinCostBase = EconomyBalance.scale(265));
 
     /** The aggregate bonus value from [tier] unlocked levels of this branch. */
     fun bonusAt(tier: Int): Float = tier.coerceIn(0, maxTier) * perTier

@@ -18,7 +18,7 @@ enum class TalentBranch(
     val kind: SkillBonusKind,
     /** Bonus granted per rank of any node in this branch. */
     val perRank: Float,
-    val nodeCount: Int = 8
+    val nodeCount: Int = 10
 ) {
     INSIGHT("insight", "💡", R.string.talent_branch_insight, SkillBonusKind.XP_PERCENT, 0.25f),
     PROSPERITY("prosperity", "🪙", R.string.talent_branch_prosperity, SkillBonusKind.COIN_PERCENT, 0.25f),
@@ -66,7 +66,7 @@ data class TalentTreeState(val ranks: Map<String, Int> = emptyMap()) {
 }
 
 object PassiveTalentTree {
-    const val MAX_RANK = 5
+    const val MAX_RANK = 8
 
     val branches: List<TalentBranch> = TalentBranch.entries
 
@@ -101,7 +101,8 @@ object PassiveTalentTree {
     /** Free-XP cost for the next rank on [node] given [state]. */
     fun nextXpCost(node: TalentNode, state: TalentTreeState): Int {
         val completed = state.totalRanks
-        return 60 + completed * 14 + node.depth * 18
+        return EconomyBalance.scale(60) + completed * EconomyBalance.scale(14) +
+            node.depth * EconomyBalance.scale(18)
     }
 
     fun isUnlocked(node: TalentNode, state: TalentTreeState): Boolean {

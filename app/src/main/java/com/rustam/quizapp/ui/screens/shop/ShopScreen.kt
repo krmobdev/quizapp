@@ -49,8 +49,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.rustam.quizapp.R
+import com.rustam.quizapp.domain.GemBundle
 import com.rustam.quizapp.domain.LootBox
 import com.rustam.quizapp.domain.LootResult
+import com.rustam.quizapp.domain.MythicBox
 import com.rustam.quizapp.domain.ShopCatalog
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppShapes
@@ -106,7 +108,21 @@ fun ShopScreen(
                 )
             }
             item {
-                BalanceCard(coins = state.coins, colors = colors, textColor = textColor)
+                BalanceCard(coins = state.coins, gems = state.gems, colors = colors, textColor = textColor)
+            }
+            if (state.deals.isNotEmpty()) {
+                item {
+                    SectionHeader(text = stringResource(R.string.deals_section_title), textColor = textColor)
+                }
+                items(state.deals, key = { "deal_${it.template.dealId}" }) { deal ->
+                    DailyDealCard(
+                        deal = deal,
+                        coins = state.coins,
+                        colors = colors,
+                        textColor = textColor,
+                        onBuy = { viewModel.onDealBuy(deal.template.dealId) }
+                    )
+                }
             }
             item {
                 val tabs = listOf(
@@ -214,6 +230,10 @@ private fun LootRevealDialog(result: LootResult, onDismiss: () -> Unit) {
         is LootResult.Title -> {
             emoji = result.item.emoji
             text = stringResource(R.string.loot_title, stringResource(result.item.labelRes))
+        }
+        is LootResult.Theme -> {
+            emoji = "🎨"
+            text = stringResource(R.string.loot_theme, stringResource(result.item.labelRes))
         }
     }
     AlertDialog(
@@ -369,6 +389,97 @@ private fun LootBoxCard(
     }
 }
 
+@Composable
+private fun MythicChestCard(
+    gems: Int,
+    colors: AppThemeColors,
+    textColor: Color,
+    onOpen: () -> Unit
+) {
+    val affordable = gems >= MythicBox.PRICE_GEMS
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = "🔮", fontSize = 34.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.shop_mythic_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(R.string.shop_mythic_desc),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.75f)
+                )
+            }
+            Button(
+                onClick = onOpen,
+                enabled = affordable,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(text = "💎 ${MythicBox.PRICE_GEMS}", fontWeight = FontWeight.Bold)
+            }
+        }
+    }
+}
+
+@Composable
+private fun GemBundleCard(
+    bundle: GemBundle,
+    gems: Int,
+    colors: AppThemeColors,
+    textColor: Color,
+    onBuy: () -> Unit
+) {
+    val affordable = gems >= bundle.priceGems
+    GlassCard(colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = bundle.emoji, fontSize = 32.sp)
+            Text(
+                text = stringResource(bundle.labelRes),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = textColor,
+                modifier = Modifier.weight(1f)
+            )
+            Button(
+                onClick = onBuy,
+                enabled = affordable,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                ),
+                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(text = "💎 ${bundle.priceGems}", fontWeight = FontWeight.Bold)
+            }
+        }
+    }
+}
+
 /** Boosters granting at least this much XP ask for confirmation before activation. */
 private const val BOOSTER_CONFIRM_THRESHOLD = 1500
 
@@ -378,20 +489,6 @@ private fun androidx.compose.foundation.lazy.LazyListScope.consumablesContent(
     textColor: Color,
     viewModel: ShopViewModel
 ) {
-    if (state.deals.isNotEmpty()) {
-        item {
-            SectionHeader(text = stringResource(R.string.deals_section_title), textColor = textColor)
-        }
-        items(state.deals, key = { "deal_${it.template.dealId}" }) { deal ->
-            DailyDealCard(
-                deal = deal,
-                coins = state.coins,
-                colors = colors,
-                textColor = textColor,
-                onBuy = { viewModel.onDealBuy(deal.template.dealId) }
-            )
-        }
-    }
     item {
         SectionHeader(text = stringResource(R.string.shop_quiz_boosters_section), textColor = textColor)
     }
@@ -413,6 +510,26 @@ private fun androidx.compose.foundation.lazy.LazyListScope.consumablesContent(
             colors = colors,
             textColor = textColor,
             onOpen = viewModel::onOpenLootBox
+        )
+    }
+    item {
+        MythicChestCard(
+            gems = state.gems,
+            colors = colors,
+            textColor = textColor,
+            onOpen = viewModel::onOpenMythicChest
+        )
+    }
+    item {
+        SectionHeader(text = stringResource(R.string.shop_gem_exchange_section), textColor = textColor)
+    }
+    items(ShopCatalog.gemBundles, key = { it.id }) { bundle ->
+        GemBundleCard(
+            bundle = bundle,
+            gems = state.gems,
+            colors = colors,
+            textColor = textColor,
+            onBuy = { viewModel.onGemBundleBuy(bundle.id) }
         )
     }
     item {
@@ -473,6 +590,7 @@ private fun androidx.compose.foundation.lazy.LazyListScope.avatarsGridContent(
                 AvatarCell(
                     avatar = avatar,
                     coins = state.coins,
+                    gems = state.gems,
                     colors = colors,
                     textColor = textColor,
                     onClick = { viewModel.onAvatarClick(avatar) },
@@ -480,6 +598,30 @@ private fun androidx.compose.foundation.lazy.LazyListScope.avatarsGridContent(
                 )
             }
             repeat(4 - rowItems.size) { Box(modifier = Modifier.weight(1f)) }
+        }
+    }
+    if (state.premiumAvatars.isNotEmpty()) {
+        item {
+            SectionHeader(text = stringResource(R.string.shop_premium_avatars), textColor = textColor)
+        }
+        items(state.premiumAvatars.chunked(4), key = { row -> "premium_${row.first().item.id}" }) { rowItems ->
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                rowItems.forEach { avatar ->
+                    AvatarCell(
+                        avatar = avatar,
+                        coins = state.coins,
+                        gems = state.gems,
+                        colors = colors,
+                        textColor = textColor,
+                        onClick = { viewModel.onPremiumAvatarClick(avatar) },
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+                repeat(4 - rowItems.size) { Box(modifier = Modifier.weight(1f)) }
+            }
         }
     }
 }
@@ -497,10 +639,26 @@ private fun androidx.compose.foundation.lazy.LazyListScope.themesListContent(
         ThemeCard(
             theme = theme,
             coins = state.coins,
+            gems = state.gems,
             colors = colors,
             textColor = textColor,
             onClick = { viewModel.onThemeClick(theme) }
         )
+    }
+    if (state.premiumThemes.isNotEmpty()) {
+        item {
+            SectionHeader(text = stringResource(R.string.shop_premium_themes), textColor = textColor)
+        }
+        items(state.premiumThemes, key = { "premium_${it.item.id}" }) { theme ->
+            ThemeCard(
+                theme = theme,
+                coins = state.coins,
+                gems = state.gems,
+                colors = colors,
+                textColor = textColor,
+                onClick = { viewModel.onPremiumThemeClick(theme) }
+            )
+        }
     }
 }
 
@@ -525,10 +683,26 @@ private fun androidx.compose.foundation.lazy.LazyListScope.titlesListContent(
         TitleCard(
             title = title,
             coins = state.coins,
+            gems = state.gems,
             colors = colors,
             textColor = textColor,
             onClick = { viewModel.onTitleClick(title) }
         )
+    }
+    if (state.premiumTitles.isNotEmpty()) {
+        item {
+            SectionHeader(text = stringResource(R.string.shop_premium_titles), textColor = textColor)
+        }
+        items(state.premiumTitles, key = { "premium_${it.item.id}" }) { title ->
+            TitleCard(
+                title = title,
+                coins = state.coins,
+                gems = state.gems,
+                colors = colors,
+                textColor = textColor,
+                onClick = { viewModel.onPremiumTitleClick(title) }
+            )
+        }
     }
 }
 
@@ -536,11 +710,14 @@ private fun androidx.compose.foundation.lazy.LazyListScope.titlesListContent(
 private fun TitleCard(
     title: TitleUi,
     coins: Int,
+    gems: Int,
     colors: AppThemeColors,
     textColor: Color,
     onClick: () -> Unit
 ) {
-    val affordable = title.owned || coins >= title.item.priceCoins
+    val isPremium = title.item.priceGems > 0
+    val affordable = title.owned ||
+        if (isPremium) gems >= title.item.priceGems else coins >= title.item.priceCoins
     GlassCard(colors = colors, onClick = if (affordable) onClick else null) {
         Row(
             modifier = Modifier
@@ -568,6 +745,7 @@ private fun TitleTrailing(title: TitleUi, textColor: Color) {
     val text = when {
         title.equipped -> "✓ " + stringResource(R.string.shop_equipped)
         title.owned -> stringResource(R.string.shop_equip)
+        title.item.priceGems > 0 -> "💎 ${title.item.priceGems}"
         else -> "🪙 ${title.item.priceCoins}"
     }
     Text(
@@ -764,6 +942,7 @@ private fun BoostInventoryCard(
 @Composable
 private fun BalanceCard(
     coins: Int,
+    gems: Int,
     colors: AppThemeColors,
     textColor: Color
 ) {
@@ -780,12 +959,20 @@ private fun BalanceCard(
                 style = MaterialTheme.typography.titleMedium,
                 color = textColor
             )
-            Text(
-                text = "🪙 $coins",
-                style = MaterialTheme.typography.headlineSmall,
-                fontWeight = FontWeight.Bold,
-                color = textColor
-            )
+            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+                Text(
+                    text = "💎 $gems",
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = textColor
+                )
+                Text(
+                    text = "🪙 $coins",
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = textColor
+                )
+            }
         }
     }
 }
@@ -1190,12 +1377,15 @@ private fun SectionHeader(text: String, textColor: Color) {
 private fun AvatarCell(
     avatar: AvatarUi,
     coins: Int,
+    gems: Int,
     colors: AppThemeColors,
     textColor: Color,
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val affordable = avatar.owned || coins >= avatar.item.priceCoins
+    val isPremium = avatar.item.priceGems > 0
+    val affordable = avatar.owned ||
+        if (isPremium) gems >= avatar.item.priceGems else coins >= avatar.item.priceCoins
     val tileColor = when {
         avatar.equipped -> MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f)
         else -> colors.answerCard
@@ -1235,6 +1425,7 @@ private fun AvatarCellLabel(avatar: AvatarUi, textColor: Color) {
     val text = when {
         avatar.equipped -> "✓ " + stringResource(R.string.shop_equipped)
         avatar.owned -> stringResource(R.string.shop_equip)
+        avatar.item.priceGems > 0 -> "💎 ${avatar.item.priceGems}"
         else -> "🪙 ${avatar.item.priceCoins}"
     }
     Text(
@@ -1251,11 +1442,14 @@ private fun AvatarCellLabel(avatar: AvatarUi, textColor: Color) {
 private fun ThemeCard(
     theme: ThemeUi,
     coins: Int,
+    gems: Int,
     colors: AppThemeColors,
     textColor: Color,
     onClick: () -> Unit
 ) {
-    val affordable = theme.owned || coins >= theme.item.priceCoins
+    val isPremium = theme.item.priceGems > 0
+    val affordable = theme.owned ||
+        if (isPremium) gems >= theme.item.priceGems else coins >= theme.item.priceCoins
     GlassCard(colors = colors, onClick = if (affordable) onClick else null) {
         Row(
             modifier = Modifier
@@ -1299,6 +1493,7 @@ private fun ThemeTrailing(theme: ThemeUi, textColor: Color) {
     val text = when {
         theme.equipped -> "✓ " + stringResource(R.string.shop_equipped)
         theme.owned -> stringResource(R.string.shop_equip)
+        theme.item.priceGems > 0 -> "💎 ${theme.item.priceGems}"
         else -> "🪙 ${theme.item.priceCoins}"
     }
     Text(

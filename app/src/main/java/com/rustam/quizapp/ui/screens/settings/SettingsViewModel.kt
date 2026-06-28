@@ -23,6 +23,9 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
+/** A promo-redemption result message for the UI: the text to show and whether it was a success. */
+data class PromoUiMessage(val text: String, val success: Boolean)
+
 class SettingsViewModel(application: Application) : AndroidViewModel(application) {
 
     private val settingsRepository = SettingsRepository(application)
@@ -45,11 +48,8 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         .map { AccentTheme.fromId(it) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), AccentTheme.DEFAULT)
 
-    val promoRedeemed: StateFlow<Boolean> = playerRepository.promoRedeemed
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
-
-    private val _promoMessageRes = MutableStateFlow<Int?>(null)
-    val promoMessageRes: StateFlow<Int?> = _promoMessageRes.asStateFlow()
+    private val _promoMessage = MutableStateFlow<PromoUiMessage?>(null)
+    val promoMessage: StateFlow<PromoUiMessage?> = _promoMessage.asStateFlow()
 
     /** Result message for the last export/import/reset action (string res id), or null. */
     private val _backupMessageRes = MutableStateFlow<Int?>(null)
@@ -72,16 +72,34 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun redeemPromoCode(code: String) {
         viewModelScope.launch {
-            when (playerRepository.redeemPromoCode(code)) {
-                PromoRedeemResult.SUCCESS -> _promoMessageRes.value = R.string.settings_promo_success
-                PromoRedeemResult.INVALID_CODE -> _promoMessageRes.value = R.string.settings_promo_invalid
-                PromoRedeemResult.ALREADY_REDEEMED -> _promoMessageRes.value = R.string.settings_promo_already
+            _promoMessage.value = when (val result = playerRepository.redeemPromoCode(code)) {
+                is PromoRedeemResult.Success -> PromoUiMessage(
+                    text = getApplication<Application>().getString(
+                        R.string.settings_promo_success_format,
+                        formatReward(result.coins, result.gems, result.xp)
+                    ),
+                    success = true
+                )
+                PromoRedeemResult.Invalid -> PromoUiMessage(
+                    text = getApplication<Application>().getString(R.string.settings_promo_invalid),
+                    success = false
+                )
+                PromoRedeemResult.AlreadyRedeemed -> PromoUiMessage(
+                    text = getApplication<Application>().getString(R.string.settings_promo_already),
+                    success = false
+                )
             }
         }
     }
 
+    private fun formatReward(coins: Int, gems: Int, xp: Int): String = buildList {
+        if (coins > 0) add("+$coins 🪙")
+        if (gems > 0) add("+$gems 💎")
+        if (xp > 0) add("+$xp ✨")
+    }.joinToString("  ")
+
     fun clearPromoMessage() {
-        _promoMessageRes.value = null
+        _promoMessage.value = null
     }
 
     fun exportProgress(target: Uri) {
@@ -111,5 +129,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun clearBackupMessage() {
         _backupMessageRes.value = null
+    }
+
+    /** Resets the onboarding flag; MainActivity observes it and reopens the tutorial. */
+    fun showOnboardingAgain() {
+        viewModelScope.launch { settingsRepository.resetOnboarding() }
     }
 }

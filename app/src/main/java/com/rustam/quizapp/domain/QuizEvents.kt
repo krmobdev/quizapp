@@ -90,7 +90,7 @@ object QuizEvents {
                     questionCount = 10,
                     questionTimeSeconds = 10,
                     coinMultiplier = 3,
-                    bonusPoints = 100,
+                    bonusPoints = EconomyBalance.scale(100),
                     maxCompletions = 1
                 )
             }
@@ -102,7 +102,7 @@ object QuizEvents {
                     questionCount = 10,
                     questionTimeSeconds = 10,
                     coinMultiplier = 3,
-                    bonusPoints = 75,
+                    bonusPoints = EconomyBalance.scale(75),
                     maxCompletions = WEEKLY_MAX_COMPLETIONS
                 )
             }
@@ -116,7 +116,7 @@ object QuizEvents {
                         questionCount = 10,
                         questionTimeSeconds = 5,
                         coinMultiplier = 2,
-                        bonusPoints = 50,
+                        bonusPoints = EconomyBalance.scale(50),
                         maxCompletions = WEEKEND_BLITZ_MAX_COMPLETIONS
                     )
                 }
@@ -129,7 +129,7 @@ object QuizEvents {
                     questionCount = 15,
                     questionTimeSeconds = 10,
                     coinMultiplier = 2,
-                    bonusPoints = 60,
+                    bonusPoints = EconomyBalance.scale(60),
                     maxCompletions = MARATHON_MAX_COMPLETIONS
                 )
             }

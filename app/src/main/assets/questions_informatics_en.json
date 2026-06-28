@@ -164,7 +164,7 @@
       ".exe"
     ],
     "correctIndex": 0,
-    "explanation": "Images often have the extension .jpg.",
+    "explanation": "Images often have the extension.jpg.",
     "id": "inf_012"
   },
   {
@@ -1125,7 +1125,7 @@
     "text": "Which internet company began life as an online bookstore called 'Cadabra'?",
     "options": [
       "Amazon",
-      "eBay",
+      "EBay",
       "Overstock",
       "Shopify"
     ],
@@ -1210,7 +1210,7 @@
     "options": [
       "Captures what's on the screen and copies it to your clipboard",
       "Nothing",
-      "Saves a .png file of what's on the screen in your screenshots folder in photos",
+      "Saves a.png file of what's on the screen in your screenshots folder in photos",
       "Closes all windows"
     ],
     "correctIndex": 0,
@@ -1234,7 +1234,7 @@
   {
     "category": "informatics",
     "difficulty": "EASY",
-    "text": "The numbering system with a radix of 16 is more commonly referred to as ",
+    "text": "The numbering system with a radix of 16 is more commonly referred to as",
     "options": [
       "Hexidecimal",
       "Binary",
@@ -1248,7 +1248,7 @@
   {
     "category": "informatics",
     "difficulty": "MEDIUM",
-    "text": "What does AD stand for in relation to Windows Operating Systems? ",
+    "text": "What does AD stand for in relation to Windows Operating Systems?",
     "options": [
       "Active Directory",
       "Alternative Drive",
@@ -1307,7 +1307,7 @@
     "text": "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
     "options": [
       "HD Graphics 500",
-      "HD Graphics 700 ",
+      "HD Graphics 700",
       "HD Graphics 600",
       "HD Graphics 7000"
     ],
@@ -1402,11 +1402,11 @@
   {
     "category": "informatics",
     "difficulty": "EASY",
-    "text": "The C programming language was created by this American computer scientist. ",
+    "text": "The C programming language was created by this American computer scientist.",
     "options": [
       "Dennis Ritchie",
       "Tim Berners Lee",
-      "al-Khwārizmī",
+      "Al-Khwārizmī",
       "Willis Ware"
     ],
     "correctIndex": 0,
@@ -1472,7 +1472,7 @@
   {
     "category": "informatics",
     "difficulty": "EASY",
-    "text": "The Electron computer was released in Britain during 1983 for the home computing market, by which company? ",
+    "text": "The Electron computer was released in Britain during 1983 for the home computing market, by which company?",
     "options": [
       "Acorn Computers",
       "Sinclair Research",
@@ -1572,10 +1572,10 @@
     "difficulty": "MEDIUM",
     "text": "In CSS, which of these values CANNOT be used with the \"position\" property?",
     "options": [
-      "center",
-      "static",
-      "absolute",
-      "relative"
+      "Center",
+      "Static",
+      "Absolute",
+      "Relative"
     ],
     "correctIndex": 0,
     "explanation": "The correct answer is center.",
@@ -1846,5 +1846,1475 @@
     "correctIndex": 0,
     "explanation": "The ACID properties guarantee data integrity and validity in the event of failures.",
     "id": "info_132"
+  },
+  {
+    "id": "info_133",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Bits in one byte?",
+    "options": [
+      "8",
+      "4",
+      "16",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "1 byte = 8 bits."
+  },
+  {
+    "id": "info_134",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Language for web page structure?",
+    "options": [
+      "HTML",
+      "Python",
+      "C++",
+      "SQL"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTML structures pages."
+  },
+  {
+    "id": "info_135",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "LIFO structure name?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "Last in, first out — stack."
+  },
+  {
+    "id": "otdb_informatics_0001",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "On which day did the World Wide Web go online?",
+    "options": [
+      "December 20, 1990",
+      "December 17, 1996",
+      "November 12, 1990",
+      "November 24, 1995"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is December 20, 1990."
+  },
+  {
+    "id": "otdb_informatics_0002",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "How fast is USB 3.1 Gen 2 theoretically?",
+    "options": [
+      "10 Gb/s",
+      "5 Gb/s",
+      "8 Gb/s",
+      "1 Gb/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 10 Gb/s."
+  },
+  {
+    "id": "otdb_informatics_0003",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?",
+    "options": [
+      "Clipper Chip",
+      "Enigma Machine",
+      "Skipjack",
+      "Nautilus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Clipper Chip."
+  },
+  {
+    "id": "otdb_informatics_0004",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Who built the first laser?",
+    "options": [
+      "Theodore Harold Maiman",
+      "Nikola Tesla",
+      "Jack Kilby",
+      "Edith Clarke"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Theodore Harold Maiman."
+  },
+  {
+    "id": "otdb_informatics_0005",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What was the name of the security vulnerability found in Bash in 2014?",
+    "options": [
+      "Shellshock",
+      "Heartbleed",
+      "Bashbug",
+      "Stagefright"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shellshock."
+  },
+  {
+    "id": "otdb_informatics_0006",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What was the first commerically available computer processor?",
+    "options": [
+      "Intel 4004",
+      "Intel 486SX",
+      "TMS 1000",
+      "AMD AM386"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Intel 4004."
+  },
+  {
+    "id": "otdb_informatics_0007",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the most significant side venture the popular firearms company, Remington, has pursued?",
+    "options": [
+      "Typewriters",
+      "Blenders",
+      "Ceiling Fans",
+      "Door Knobs"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Typewriters."
+  },
+  {
+    "id": "otdb_informatics_0008",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does RAID stand for?",
+    "options": [
+      "Redundant Array of Independent Disks",
+      "Rapid Access for Indexed Devices",
+      "Range of Applications with Identical Designs",
+      "Randomized Abstract Identification Description"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Redundant Array of Independent Disks."
+  },
+  {
+    "id": "otdb_informatics_0009",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "How many bits make up the significand portion of a single precision floating point number?",
+    "options": [
+      "23",
+      "8",
+      "53",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 23."
+  },
+  {
+    "id": "otdb_informatics_0010",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does LTS stand for in the software market?",
+    "options": [
+      "Long Term Support",
+      "Long Taco Service",
+      "Ludicrous Transfer Speed",
+      "Ludicrous Turbo Speed"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Long Term Support."
+  },
+  {
+    "id": "otdb_informatics_0011",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In computing terms, typically what does CLI stand for?",
+    "options": [
+      "Command Line Interface",
+      "Common Language Input",
+      "Control Line Interface",
+      "Common Language Interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Command Line Interface."
+  },
+  {
+    "id": "otdb_informatics_0012",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What is the domain name for the country Tuvalu?",
+    "options": [
+      ".tv",
+      ".tu",
+      ".tt",
+      ".tl"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is.tv."
+  },
+  {
+    "id": "otdb_informatics_0013",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which of these programming languages is a low-level language?",
+    "options": [
+      "Assembly",
+      "Python",
+      "C#",
+      "Pascal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Assembly."
+  },
+  {
+    "id": "otdb_informatics_0014",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In the server hosting industry IaaS stands for...",
+    "options": [
+      "Infrastructure as a Service",
+      "Internet as a Service",
+      "Internet and a Server",
+      "Infrastructure as a Server"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Infrastructure as a Service."
+  },
+  {
+    "id": "otdb_informatics_0015",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Nvidia's headquarters are based in which Silicon Valley city?",
+    "options": [
+      "Santa Clara",
+      "Palo Alto",
+      "Cupertino",
+      "Mountain View"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Santa Clara."
+  },
+  {
+    "id": "otdb_informatics_0016",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which gaming console is developed by Sony?",
+    "options": [
+      "PlayStation",
+      "Xbox",
+      "Atari",
+      "Nintendo Switch"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is PlayStation."
+  },
+  {
+    "id": "otdb_informatics_0017",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following is a personal computer made by the Japanese company Fujitsu?",
+    "options": [
+      "FM-7",
+      "PC-9801",
+      "Xmillennium",
+      "MSX"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is FM-7."
+  },
+  {
+    "id": "otdb_informatics_0018",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does GPS stand for?",
+    "options": [
+      "Global Positioning System",
+      "Global Personal System",
+      "General Positioning System",
+      "General Personal Satellite"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Global Positioning System."
+  },
+  {
+    "id": "otdb_informatics_0019",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which virtual assistant is developed by Amazon?",
+    "options": [
+      "Alexa",
+      "Google Assistant",
+      "Siri",
+      "Cortana"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Alexa."
+  },
+  {
+    "id": "otdb_informatics_0020",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "The Harvard architecture for micro-controllers added which additional bus?",
+    "options": [
+      "Instruction",
+      "Address",
+      "Data",
+      "Control"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Instruction."
+  },
+  {
+    "id": "otdb_informatics_0021",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What is the name of the process that sends one qubit of information using two bits of classical information?",
+    "options": [
+      "Quantum Teleportation",
+      "Super Dense Coding",
+      "Quantum Entanglement",
+      "Quantum Programming"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Quantum Teleportation."
+  },
+  {
+    "id": "otdb_informatics_0022",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Moore's law originally stated that the number of transistors on a microprocessor chip would double every...",
+    "options": [
+      "Year",
+      "Four Years",
+      "Two Years",
+      "Eight Years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Year."
+  },
+  {
+    "id": "otdb_informatics_0023",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of the following cellular device companies is NOT headquartered in Asia?",
+    "options": [
+      "Nokia",
+      "LG Electronics",
+      "Samsung",
+      "HTC"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nokia."
+  },
+  {
+    "id": "otdb_informatics_0024",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of these is not a layer in the OSI model for data communications?",
+    "options": [
+      "Connection Layer",
+      "Application Layer",
+      "Transport Layer",
+      "Physical Layer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Connection Layer."
+  },
+  {
+    "id": "otdb_informatics_0025",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "When Gmail first launched, how much storage did it provide for your email?",
+    "options": [
+      "1GB",
+      "512MB",
+      "5GB",
+      "Unlimited"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1GB."
+  },
+  {
+    "id": "otdb_informatics_0026",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?",
+    "options": [
+      "Transport",
+      "Session",
+      "Data link",
+      "Network"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Transport."
+  },
+  {
+    "id": "otdb_informatics_0027",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does GHz stand for?",
+    "options": [
+      "Gigahertz",
+      "Gigahotz",
+      "Gigahetz",
+      "Gigahatz"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gigahertz."
+  },
+  {
+    "id": "otdb_informatics_0028",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "America Online (AOL) started out as which of these online service providers?",
+    "options": [
+      "Quantum Link",
+      "CompuServe",
+      "Prodigy",
+      "GEnie"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Quantum Link."
+  },
+  {
+    "id": "otdb_informatics_0029",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Out of all of the NASA Space Shuttles, which 2 have been destroyed in disasters?",
+    "options": [
+      "Challenger and Columbia",
+      "Enterprise and Atlantis",
+      "Discovery and Endeavour",
+      "None of the Above"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Challenger and Columbia."
+  },
+  {
+    "id": "otdb_informatics_0030",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What major programming language does Unreal Engine 4 use?",
+    "options": [
+      "C++",
+      "Assembly",
+      "C#",
+      "ECMAScript"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is C++."
+  },
+  {
+    "id": "otdb_informatics_0031",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Who patented a steam engine that produced continuous rotary motion?",
+    "options": [
+      "James Watt",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Alessandro Volta"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is James Watt."
+  },
+  {
+    "id": "otdb_informatics_0032",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "This mobile OS held the largest market share in 2012.",
+    "options": [
+      "IOS",
+      "Android",
+      "BlackBerry",
+      "Symbian"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is iOS."
+  },
+  {
+    "id": "otdb_informatics_0033",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "According to DeMorgan's Theorem, the Boolean expression (AB)' is equivalent to:",
+    "options": [
+      "A' + B'",
+      "A'B + B'A",
+      "A'B'",
+      "AB' + AB"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A' + B'."
+  },
+  {
+    "id": "otdb_informatics_0034",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What is the codename of the eighth generation Intel Core micro-architecture launched in October 2017?",
+    "options": [
+      "Coffee Lake",
+      "Sandy Bridge",
+      "Skylake",
+      "Broadwell"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Coffee Lake."
+  },
+  {
+    "id": "otdb_informatics_0035",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In \"Hexadecimal\", what color would be displayed from the color code? \"#00FF00\"?",
+    "options": [
+      "Green",
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Green."
+  },
+  {
+    "id": "otdb_informatics_0036",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "The internet domain.fm is the country-code top-level domain for which Pacific Ocean island nation?",
+    "options": [
+      "Micronesia",
+      "Fiji",
+      "Tuvalu",
+      "Marshall Islands"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Micronesia."
+  },
+  {
+    "id": "otdb_informatics_0037",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which company designed the \"Betamax\" video cassette format?",
+    "options": [
+      "Sony",
+      "Panasonic",
+      "LG",
+      "Fujitsu"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sony."
+  },
+  {
+    "id": "otdb_informatics_0038",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the correct term for the metal object in between the CPU and the CPU fan within a computer system?",
+    "options": [
+      "Heat Sink",
+      "CPU Vent",
+      "Temperature Decipator",
+      "Heat Vent"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Heat Sink."
+  },
+  {
+    "id": "otdb_informatics_0039",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In what year was the Oculus Rift revealed to the public through a Kickstarter campaign?",
+    "options": [
+      "2012",
+      "2010",
+      "2011",
+      "2013"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2012."
+  },
+  {
+    "id": "otdb_informatics_0040",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Whistler was the codename of this Microsoft Operating System.",
+    "options": [
+      "Windows XP",
+      "Windows 2000",
+      "Windows 7",
+      "Windows 95"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Windows XP."
+  },
+  {
+    "id": "otdb_informatics_0041",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "All of the following programs are classified as raster graphics editors EXCEPT:",
+    "options": [
+      "Inkscape",
+      "Paint.NET",
+      "GIMP",
+      "Adobe Photoshop"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Inkscape."
+  },
+  {
+    "id": "otdb_informatics_0042",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "How many values can a single byte represent?",
+    "options": [
+      "256",
+      "8",
+      "1",
+      "1024"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 256."
+  },
+  {
+    "id": "otdb_informatics_0043",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does the \"MP\" stand for in MP3?",
+    "options": [
+      "Moving Picture",
+      "Music Player",
+      "Multi Pass",
+      "Micro Point"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Moving Picture."
+  },
+  {
+    "id": "otdb_informatics_0044",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What round is a classic AK-47 chambered in?",
+    "options": [
+      "7.62x39mm",
+      "7.62x51mm",
+      "5.56x45mm",
+      "5.45x39mm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 7.62x39mm."
+  },
+  {
+    "id": "otdb_informatics_0045",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Central Process Unit",
+      "Computer Personal Unit",
+      "Central Processor Unit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Central Processing Unit."
+  },
+  {
+    "id": "otdb_informatics_0046",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which one of these is not an official development name for a Ubuntu release?",
+    "options": [
+      "Mystic Mansion",
+      "Trusty Tahr",
+      "Utopic Unicorn",
+      "Wily Werewolf"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mystic Mansion."
+  },
+  {
+    "id": "otdb_informatics_0047",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What are the base station trackers used for the HTC Vive called?",
+    "options": [
+      "Lighthouse",
+      "Motion",
+      "Constellation",
+      "Trackers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Lighthouse."
+  },
+  {
+    "id": "otdb_informatics_0048",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In web design, what does CSS stand for?",
+    "options": [
+      "Cascading Style Sheet",
+      "Counter Strike: Source",
+      "Corrective Style Sheet",
+      "Computer Style Sheet"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cascading Style Sheet."
+  },
+  {
+    "id": "otdb_informatics_0049",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "When was the DVD invented?",
+    "options": [
+      "1995",
+      "2000",
+      "1990",
+      "1980"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1995."
+  },
+  {
+    "id": "otdb_informatics_0050",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The term \"battery\" to describe an electrical storage device was coined by?",
+    "options": [
+      "Benjamin Franklin",
+      "Nikola Tesla",
+      "Luigi Galvani",
+      "Alessandro Volta"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Benjamin Franklin."
+  },
+  {
+    "id": "otdb_informatics_0051",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In programming, the ternary operator is mostly defined with what symbol(s)?",
+    "options": [
+      "?:",
+      "??",
+      "If then",
+      "?"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is \"?:\"."
+  },
+  {
+    "id": "otdb_informatics_0052",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "The acronym \"RIP\" stands for which of these?",
+    "options": [
+      "Routing Information Protocol",
+      "Runtime Instance Processes",
+      "Regular Interval Processes",
+      "Routine Inspection Protocol"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Routing Information Protocol."
+  },
+  {
+    "id": "otdb_informatics_0053",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "When did the CD begin to appear on the consumer market?",
+    "options": [
+      "1982",
+      "1992",
+      "1972",
+      "1962"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1982."
+  },
+  {
+    "id": "otdb_informatics_0054",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which data structure does FILO apply to?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Tree"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Stack."
+  },
+  {
+    "id": "otdb_informatics_0055",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "If you were to code software in this language you'd only be able to type 0's and 1's.",
+    "options": [
+      "Binary",
+      "JavaScript",
+      "C++",
+      "Python"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Binary."
+  },
+  {
+    "id": "otdb_informatics_0056",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which computer hardware device provides an interface for all other connected devices to communicate?",
+    "options": [
+      "Motherboard",
+      "Central Processing Unit",
+      "Hard Disk Drive",
+      "Random Access Memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Motherboard."
+  },
+  {
+    "id": "otdb_informatics_0057",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "On Twitter, what was the original character limit for a Tweet?",
+    "options": [
+      "140",
+      "120",
+      "160",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 140."
+  },
+  {
+    "id": "otdb_informatics_0058",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In programming, what do you call functions with the same name but different implementations?",
+    "options": [
+      "Overloading",
+      "Overriding",
+      "Abstracting",
+      "Inheriting"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Overloading."
+  },
+  {
+    "id": "otdb_informatics_0059",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which round does a WW2 M1 Garand fire?",
+    "options": [
+      ".30-06",
+      ".308",
+      "7.62",
+      "7.62x51mm"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is.30-06."
+  },
+  {
+    "id": "otdb_informatics_0060",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the \"Mitsubishi Wakamaru\"?",
+    "options": [
+      "A robot",
+      "A pickup truck",
+      "An motorcycle",
+      "A motorboat"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A robot."
+  },
+  {
+    "id": "otdb_informatics_0061",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Generally, which component of a computer draws the most power?",
+    "options": [
+      "Video Card",
+      "Hard Drive",
+      "Processor",
+      "Power Supply"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Video Card."
+  },
+  {
+    "id": "otdb_informatics_0062",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which buzzword did Apple Inc. use to describe their removal of the headphone jack?",
+    "options": [
+      "Courage",
+      "Innovation",
+      "Revolution",
+      "Bravery"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Courage."
+  },
+  {
+    "id": "otdb_informatics_0063",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which kind of algorithm is Ron Rivest not famous for creating?",
+    "options": [
+      "Secret sharing scheme",
+      "Hashing algorithm",
+      "Asymmetric encryption",
+      "Stream cipher"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Secret sharing scheme."
+  },
+  {
+    "id": "otdb_informatics_0064",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What amount of bits commonly equals one byte?",
+    "options": [
+      "8",
+      "1",
+      "2",
+      "64"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 8."
+  },
+  {
+    "id": "otdb_informatics_0065",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What type of sound chip does the Super Nintendo Entertainment System (SNES) have?",
+    "options": [
+      "ADPCM Sampler",
+      "FM Synthesizer",
+      "Programmable Sound Generator (PSG)",
+      "PCM Sampler"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is ADPCM Sampler."
+  },
+  {
+    "id": "otdb_informatics_0066",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which operating system was released first?",
+    "options": [
+      "Mac OS",
+      "Windows",
+      "Linux",
+      "OS/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mac OS."
+  },
+  {
+    "id": "otdb_informatics_0067",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of the following is used to measure blood pressure?",
+    "options": [
+      "Sphygmomanometer",
+      "Barometer",
+      "Ruler",
+      "Haemoerythrometer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sphygmomanometer."
+  },
+  {
+    "id": "otdb_informatics_0068",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which company developed the Hololens?",
+    "options": [
+      "Microsoft",
+      "HTC",
+      "Oculus",
+      "Tobii"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Microsoft."
+  },
+  {
+    "id": "otdb_informatics_0069",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does the computer software acronym JVM stand for?",
+    "options": [
+      "Java Virtual Machine",
+      "Java Vendor Machine",
+      "Java Visual Machine",
+      "Just Virtual Machine"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Java Virtual Machine."
+  },
+  {
+    "id": "otdb_informatics_0070",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In computing, what does MIDI stand for?",
+    "options": [
+      "Musical Instrument Digital Interface",
+      "Musical Interface of Digital Instruments",
+      "Modular Interface of Digital Instruments",
+      "Musical Instrument Data Interface"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Musical Instrument Digital Interface."
+  },
+  {
+    "id": "otdb_informatics_0071",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of these names was an actual codename for a cancelled Microsoft project?",
+    "options": [
+      "Neptune",
+      "Enceladus",
+      "Pollux",
+      "Saturn"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Neptune."
+  },
+  {
+    "id": "otdb_informatics_0072",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "When was the Tamagotchi digital pet released?",
+    "options": [
+      "1996",
+      "1989",
+      "1992",
+      "1990"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1996."
+  },
+  {
+    "id": "otdb_informatics_0073",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What is the most preferred image format used for logos in the Wikimedia database?",
+    "options": [
+      ".svg",
+      ".png",
+      ".jpeg",
+      ".gif"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is.svg."
+  },
+  {
+    "id": "otdb_informatics_0074",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": ".at is the top-level domain for what country?",
+    "options": [
+      "Austria",
+      "Argentina",
+      "Australia",
+      "Angola"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Austria."
+  },
+  {
+    "id": "otdb_informatics_0075",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which of the following is not a type of computer mouse?",
+    "options": [
+      "Smoothie mouse",
+      "Drum mouse",
+      "Trackball mouse",
+      "Optical mouse"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Smoothie mouse."
+  },
+  {
+    "id": "otdb_informatics_0076",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In the programming language \"Python\", which of these statements would display the string \"Hello World\" correctly?",
+    "options": [
+      "Print(\"Hello World\")",
+      "console.log(\"Hello World\")",
+      "Echo \"Hello World\"",
+      "Printf(\"Hello World\")"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is print(\"Hello World\")."
+  },
+  {
+    "id": "otdb_informatics_0077",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does the term GPU stand for?",
+    "options": [
+      "Graphics Processing Unit",
+      "Gaming Processor Unit",
+      "Graphite Producing Unit",
+      "Graphical Proprietary Unit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Graphics Processing Unit."
+  },
+  {
+    "id": "otdb_informatics_0078",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which RAID array type is associated with data mirroring?",
+    "options": [
+      "RAID 1",
+      "RAID 0",
+      "RAID 10",
+      "RAID 5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is RAID 1."
+  },
+  {
+    "id": "otdb_informatics_0079",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following languages is used as a scripting language in the Unity 3D game engine?",
+    "options": [
+      "C#",
+      "Java",
+      "C++",
+      "Objective-C"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is C#."
+  },
+  {
+    "id": "otdb_informatics_0080",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In computing, what does LAN stand for?",
+    "options": [
+      "Local Area Network",
+      "Long Antenna Node",
+      "Light Access Node",
+      "Land Address Navigation"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Local Area Network."
+  },
+  {
+    "id": "otdb_informatics_0081",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "In HTML, which non-standard tag used to be be used to make elements scroll across the viewport?",
+    "options": [
+      "<marquee></marquee>",
+      "<scroll></scroll>",
+      "<move></move>",
+      "<slide></slide>"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is <marquee></marquee>."
+  },
+  {
+    "id": "otdb_informatics_0082",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "HTML is what type of language?",
+    "options": [
+      "Markup Language",
+      "Macro Language",
+      "Programming Language",
+      "Scripting Language"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Markup Language."
+  },
+  {
+    "id": "otdb_informatics_0083",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": ".rs is the top-level domain for what country?",
+    "options": [
+      "Serbia",
+      "Romania",
+      "Russia",
+      "Rwanda"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Serbia."
+  },
+  {
+    "id": "otdb_informatics_0084",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "When was the iPhone released?",
+    "options": [
+      "2007",
+      "2005",
+      "2006",
+      "2004"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2007."
+  },
+  {
+    "id": "otdb_informatics_0085",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What is the number of keys on a standard Windows Keyboard?",
+    "options": [
+      "104",
+      "64",
+      "94",
+      "76"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 104."
+  },
+  {
+    "id": "otdb_informatics_0086",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Released in 2001, the first edition of Apple's Mac OS X operating system (version 10.0) was given what animal code name?",
+    "options": [
+      "Cheetah",
+      "Puma",
+      "Tiger",
+      "Leopard"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cheetah."
+  },
+  {
+    "id": "otdb_informatics_0087",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "Mobile hardware and software company \"Blackberry Limited\" was founded in which country?",
+    "options": [
+      "Canada",
+      "Norway",
+      "United States of America",
+      "United Kingdom"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Canada."
+  },
+  {
+    "id": "otdb_informatics_0088",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+    "options": [
+      "Apple",
+      "Microsoft",
+      "Atari",
+      "Commodore"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Apple."
+  },
+  {
+    "id": "otdb_informatics_0089",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "What does the International System of Quantities refer 1024 bytes as?",
+    "options": [
+      "Kibibyte",
+      "Kylobyte",
+      "Kilobyte",
+      "Kelobyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Kibibyte."
+  },
+  {
+    "id": "otdb_informatics_0090",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What does SSD stand for in the context of computer storage?",
+    "options": [
+      "Solid State Drive",
+      "Software Storage Device",
+      "Super Speed Data",
+      "Secure System Disk"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Solid State Drive."
+  },
+  {
+    "id": "otdb_informatics_0091",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Which of the following is the standard THX subwoofer crossover frequency?",
+    "options": [
+      "80 Hz",
+      "70 Hz",
+      "90 Hz",
+      "100 Hz"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 80 Hz."
+  },
+  {
+    "id": "otdb_informatics_0092",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Who is the original author of the realtime physics engine called PhysX?",
+    "options": [
+      "NovodeX",
+      "Ageia",
+      "Nvidia",
+      "AMD"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is NovodeX."
+  },
+  {
+    "id": "otdb_informatics_0093",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "Which computer language would you associate Django framework with?",
+    "options": [
+      "Python",
+      "C#",
+      "C++",
+      "Java"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Python."
+  },
+  {
+    "id": "otdb_informatics_0094",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does \"LCD\" stand for?",
+    "options": [
+      "Liquid Crystal Display",
+      "Language Control Design",
+      "Last Common Difference",
+      "Long Continuous Design"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Liquid Crystal Display."
+  },
+  {
+    "id": "otdb_informatics_0095",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What was the name given to Android 4.3?",
+    "options": [
+      "Jelly Bean",
+      "Lollipop",
+      "Nutella",
+      "Froyo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jelly Bean."
+  },
+  {
+    "id": "otdb_informatics_0096",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What does the acronym CDN stand for in terms of networking?",
+    "options": [
+      "Content Delivery Network",
+      "Content Distribution Network",
+      "Computational Data Network",
+      "Compressed Data Network"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Content Delivery Network."
+  },
+  {
+    "id": "otdb_informatics_0097",
+    "category": "informatics",
+    "difficulty": "MEDIUM",
+    "text": "What did the name of the Tor Anonymity Network orignially stand for?",
+    "options": [
+      "The Onion Router",
+      "The Only Router",
+      "The Orange Router",
+      "The Ominous Router"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Onion Router."
+  },
+  {
+    "id": "otdb_informatics_0098",
+    "category": "informatics",
+    "difficulty": "HARD",
+    "text": "Lenovo acquired IBM's personal computer division, including the ThinkPad line of laptops and tablets, in what year?",
+    "options": [
+      "2005",
+      "1999",
+      "2002",
+      "2008"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2005."
+  },
+  {
+    "id": "otdb_informatics_0099",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "The programming language 'Swift' was created to replace what other programming language?",
+    "options": [
+      "Objective-C",
+      "C#",
+      "Ruby",
+      "C++"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Objective-C."
+  },
+  {
+    "id": "otdb_informatics_0100",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "What is the code name for the mobile operating system Android 7.0?",
+    "options": [
+      "Nougat",
+      "Ice Cream Sandwich",
+      "Jelly Bean",
+      "Marshmallow"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nougat."
+  },
+  {
+    "id": "otdb_informatics_0101",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In any programming language, what is the most common way to iterate through an array?",
+    "options": [
+      "'For' loops",
+      "'If' Statements",
+      "'Do-while' loops",
+      "'While' loops"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 'For' loops."
+  },
+  {
+    "id": "otdb_informatics_0102",
+    "category": "informatics",
+    "difficulty": "EASY",
+    "text": "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
+    "options": [
+      "Final",
+      "Static",
+      "Private",
+      "Public"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Final."
   }
 ]

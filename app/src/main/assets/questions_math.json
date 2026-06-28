@@ -626,7 +626,7 @@
       "1,62"
     ],
     "correctIndex": 0,
-    "explanation": "e ≈ 2,71828.",
+    "explanation": "E ≈ 2,71828.",
     "id": "math_045"
   },
   {
@@ -1110,13 +1110,13 @@
     "difficulty": "MEDIUM",
     "text": "Какова площадь круга диаметром 20 дюймов, если π= 3,1415?",
     "options": [
+      "314,15 кв. дюймов",
       "314,15 дюймов",
-      "380,1215 дюймов",
-      "3141,5 дюймов",
-      "1256,6 дюймов"
+      "314,15 кв. см",
+      "314,15 см"
     ],
     "correctIndex": 0,
-    "explanation": "Правильный ответ — 314,15 дюймов.",
+    "explanation": "Площадь круга измеряется в квадратных единицах: πr² ≈ 314,15 кв. дюймов.",
     "id": "math_080"
   },
   {
@@ -1209,9 +1209,9 @@
     "text": "Что такое символ смещения?",
     "options": [
       "Δр",
-      "доктор",
+      "Доктор",
       "Дп",
-      "р"
+      "Р"
     ],
     "correctIndex": 0,
     "explanation": "Правильный ответ — Δр.",
@@ -1334,13 +1334,13 @@
     "difficulty": "MEDIUM",
     "text": "Что такое функция x²+2x+1?",
     "options": [
-      "квадратичный",
+      "Квадратичный",
       "Рациональный",
       "Линейный",
       "Экспоненциальный"
     ],
     "correctIndex": 0,
-    "explanation": "Правильный ответ — квадратичный.",
+    "explanation": "Правильный ответ — Квадратичный.",
     "id": "math_096"
   },
   {
@@ -1430,15 +1430,15 @@
   {
     "category": "math",
     "difficulty": "MEDIUM",
-    "text": "Какова производная от sin(x)",
+    "text": "Чему равна производная sin(x)?",
     "options": [
-      "потому что (х)",
-      "csc(х)",
-      "-cos(х)",
-      "-грех(х)"
+      "cos(x)",
+      "−sin(x)",
+      "tan(x)",
+      "1"
     ],
     "correctIndex": 0,
-    "explanation": "Правильный ответ — потому что (х).",
+    "explanation": "Производная синуса: (sin x)′ = cos x.",
     "id": "math_103"
   },
   {
@@ -1544,13 +1544,13 @@
     "difficulty": "MEDIUM",
     "text": "Как обозначается буквенно-цифровое представление мнимого числа?",
     "options": [
-      "я",
-      "е",
-      "н",
-      "х"
+      "Я",
+      "Е",
+      "Н",
+      "Х"
     ],
     "correctIndex": 0,
-    "explanation": "Правильный ответ — я.",
+    "explanation": "Правильный ответ — Я.",
     "id": "math_111"
   },
   {
@@ -1573,7 +1573,7 @@
     "text": "Какая римская цифра означает 500?",
     "options": [
       "Д",
-      "л",
+      "Л",
       "С",
       "Х"
     ],
@@ -1832,5 +1832,2791 @@
     "correctIndex": 0,
     "explanation": "Формула Байеса P(A|B) = [P(B|A)*P(A)] / P(B) лежит в основе байесовского вывода.",
     "id": "math_131"
+  },
+  {
+    "id": "math_132",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько градусов в прямом угле?",
+    "options": [
+      "90",
+      "180",
+      "45",
+      "360"
+    ],
+    "correctIndex": 0,
+    "explanation": "Прямой угол = 90°."
+  },
+  {
+    "id": "math_133",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Чему равно 15% от 200?",
+    "options": [
+      "30",
+      "25",
+      "35",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "0,15 × 200 = 30."
+  },
+  {
+    "id": "math_134",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Как называется многоугольник с 8 сторонами?",
+    "options": [
+      "Восьмиугольник",
+      "Шестиугольник",
+      "Пятиугольник",
+      "Десятиугольник"
+    ],
+    "correctIndex": 0,
+    "explanation": "Октогон — 8 сторон."
+  },
+  {
+    "id": "math_135",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 7 + 8?",
+    "options": [
+      "15",
+      "14",
+      "16",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "7 + 8 = 15."
+  },
+  {
+    "id": "math_136",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 9 × 6?",
+    "options": [
+      "54",
+      "56",
+      "48",
+      "63"
+    ],
+    "correctIndex": 0,
+    "explanation": "9 × 6 = 54."
+  },
+  {
+    "id": "math_137",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое из чисел является чётным?",
+    "options": [
+      "24",
+      "17",
+      "31",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "24 делится на 2 без остатка."
+  },
+  {
+    "id": "math_138",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое число больше: 0,75 или 0,7?",
+    "options": [
+      "0,75",
+      "0,7",
+      "Они равны",
+      "0,705"
+    ],
+    "correctIndex": 0,
+    "explanation": "Семь десятых меньше, чем семьдесят пять сотых."
+  },
+  {
+    "id": "math_139",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько дней в високосном году?",
+    "options": [
+      "366",
+      "365",
+      "364",
+      "360"
+    ],
+    "correctIndex": 0,
+    "explanation": "В високосном году февраль имеет 29 дней."
+  },
+  {
+    "id": "math_140",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое число является квадратом числа 9?",
+    "options": [
+      "81",
+      "18",
+      "99",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "9² = 9 × 9 = 81."
+  },
+  {
+    "id": "math_141",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 48 ÷ 6?",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "48 ÷ 6 = 8."
+  },
+  {
+    "id": "math_142",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какая цифра в числе 5432 обозначает сотни?",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "В разряде сотен стоит цифра 4."
+  },
+  {
+    "id": "math_143",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько минут в 2 часах?",
+    "options": [
+      "120",
+      "60",
+      "100",
+      "90"
+    ],
+    "correctIndex": 0,
+    "explanation": "2 × 60 = 120 минут."
+  },
+  {
+    "id": "math_144",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое из чисел является простым?",
+    "options": [
+      "13",
+      "15",
+      "21",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "13 делится только на 1 и на себя."
+  },
+  {
+    "id": "math_145",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 5²?",
+    "options": [
+      "25",
+      "10",
+      "52",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "5² означает 5 × 5 = 25."
+  },
+  {
+    "id": "math_146",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое число следует сразу за 99?",
+    "options": [
+      "100",
+      "98",
+      "101",
+      "990"
+    ],
+    "correctIndex": 0,
+    "explanation": "Следующее натуральное число после 99 — 100."
+  },
+  {
+    "id": "math_147",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 3 + 4 × 2 (без скобок)?",
+    "options": [
+      "11",
+      "14",
+      "10",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сначала умножение: 4 × 2 = 8, затем 3 + 8 = 11."
+  },
+  {
+    "id": "math_148",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется результат сложения?",
+    "options": [
+      "Сумма",
+      "Разность",
+      "Произведение",
+      "Частное"
+    ],
+    "correctIndex": 0,
+    "explanation": "При сложении получают сумму."
+  },
+  {
+    "id": "math_149",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь прямоугольника со сторонами 12 м и 8 м?",
+    "options": [
+      "96 м²",
+      "40 м²",
+      "20 м²",
+      "48 м²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = 12 × 8 = 96 м²."
+  },
+  {
+    "id": "math_150",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет 156 ÷ 12?",
+    "options": [
+      "13",
+      "12",
+      "14",
+      "11"
+    ],
+    "correctIndex": 0,
+    "explanation": "156 ÷ 12 = 13."
+  },
+  {
+    "id": "math_151",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Три друга поровну заплатили 450 ₽. Сколько заплатил каждый?",
+    "options": [
+      "150 ₽",
+      "135 ₽",
+      "225 ₽",
+      "165 ₽"
+    ],
+    "correctIndex": 0,
+    "explanation": "450 ÷ 3 = 150 ₽."
+  },
+  {
+    "id": "math_152",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите наибольший общий делитель чисел 24 и 36?",
+    "options": [
+      "12",
+      "6",
+      "8",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "НОД(24, 36) = 12."
+  },
+  {
+    "id": "math_153",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Если число делится на 3 и на 5, то оно обязательно делится на…?",
+    "options": [
+      "15",
+      "8",
+      "35",
+      "45"
+    ],
+    "correctIndex": 0,
+    "explanation": "Общий делитель 3 и 5 равен 15."
+  },
+  {
+    "id": "math_154",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Температура упала с 8°C до −3°C. На сколько градусов изменилась температура?",
+    "options": [
+      "11°C",
+      "5°C",
+      "−5°C",
+      "8°C"
+    ],
+    "correctIndex": 0,
+    "explanation": "8 − (−3) = 11°C."
+  },
+  {
+    "id": "math_155",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какая дробь соответствует отношению 2: 3?",
+    "options": [
+      "2/3",
+      "3/2",
+      "2/5",
+      "3/5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Отношение a: b записывают как a/b."
+  },
+  {
+    "id": "math_156",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько составляет одна треть числа 90?",
+    "options": [
+      "30",
+      "27",
+      "45",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "90 ÷ 3 = 30."
+  },
+  {
+    "id": "math_157",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько составляет 15% от 200?",
+    "options": [
+      "30",
+      "25",
+      "35",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "200 × 0,15 = 30."
+  },
+  {
+    "id": "math_158",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите среднее арифметическое чисел 4, 8 и 12?",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "(4 + 8 + 12) ÷ 3 = 8."
+  },
+  {
+    "id": "math_159",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Решите уравнение: x + 7 = 15?",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "X = 15 − 7 = 8."
+  },
+  {
+    "id": "math_160",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите периметр квадрата со стороной 9 см?",
+    "options": [
+      "36 см",
+      "81 см",
+      "18 см",
+      "27 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "P = 4 × 9 = 36 см."
+  },
+  {
+    "id": "math_161",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько секунд в 5 минутах?",
+    "options": [
+      "300",
+      "250",
+      "360",
+      "500"
+    ],
+    "correctIndex": 0,
+    "explanation": "5 × 60 = 300 секунд."
+  },
+  {
+    "id": "math_162",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Чему равно римское число XVIII?",
+    "options": [
+      "18",
+      "16",
+      "19",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "X = 10, VIII = 8, всего 18."
+  },
+  {
+    "id": "math_163",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какое число противоположно числу −5?",
+    "options": [
+      "5",
+      "−5",
+      "0",
+      "1/5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Противоположные числа дают в сумме 0."
+  },
+  {
+    "id": "math_164",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Округлите 4,67 до десятых?",
+    "options": [
+      "4,7",
+      "4,6",
+      "5,0",
+      "4,67"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сотые равны 7, поэтому десятые увеличиваются."
+  },
+  {
+    "id": "math_165",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько составляет одна восьмая часть числа 64?",
+    "options": [
+      "8",
+      "6",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "64 ÷ 8 = 8."
+  },
+  {
+    "id": "math_166",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите сумму первых пяти натуральных чисел?",
+    "options": [
+      "15",
+      "10",
+      "20",
+      "14"
+    ],
+    "correctIndex": 0,
+    "explanation": "1 + 2 + 3 + 4 + 5 = 15."
+  },
+  {
+    "id": "math_167",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Удвоенное число увеличили на 6 и получили 26. Каково это число?",
+    "options": [
+      "10",
+      "8",
+      "12",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "2x + 6 = 26, откуда x = 10."
+  },
+  {
+    "id": "math_168",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Старшему из трёх братьев 12 лет, младшему — 8. Средний на 2 года младше старшего. Сколько лет среднему?",
+    "options": [
+      "10",
+      "9",
+      "11",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "12 − 2 = 10 лет."
+  },
+  {
+    "id": "math_169",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "В корзине 3 красных, 4 зелёных и 5 синих шаров. Сколько всего шаров?",
+    "options": [
+      "12",
+      "11",
+      "13",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "3 + 4 + 5 = 12."
+  },
+  {
+    "id": "math_170",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Следующий член последовательности 5, 8, 11, 14, …?",
+    "options": [
+      "17",
+      "16",
+      "18",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Каждый раз прибавляется 3."
+  },
+  {
+    "id": "math_171",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Число увеличили на 25% и получили 50. Каково исходное число?",
+    "options": [
+      "40",
+      "35",
+      "45",
+      "37,5"
+    ],
+    "correctIndex": 0,
+    "explanation": "1,25x = 50, значит x = 40."
+  },
+  {
+    "id": "math_172",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько различных способов разменять 10 ₽ монетами по 2 ₽ и 5 ₽ (без сдачи)?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Возможны: 5×2; 3×2+1×5; 1×2+2×5."
+  },
+  {
+    "id": "math_173",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Что обозначает буква x в уравнении 2x = 10?",
+    "options": [
+      "Неизвестное число",
+      "Умножение",
+      "Степень",
+      "Дробь"
+    ],
+    "correctIndex": 0,
+    "explanation": "X — переменная, обозначающая искомое значение."
+  },
+  {
+    "id": "math_174",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое значение x удовлетворяет равенству x = 5?",
+    "options": [
+      "5",
+      "0",
+      "10",
+      "−5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Если x = 5, то x равно 5."
+  },
+  {
+    "id": "math_175",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет (−3)²?",
+    "options": [
+      "9",
+      "−9",
+      "6",
+      "−6"
+    ],
+    "correctIndex": 0,
+    "explanation": "(−3)² = (−3) × (−3) = 9."
+  },
+  {
+    "id": "math_176",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Чему равно произведение −4 и −2?",
+    "options": [
+      "8",
+      "−8",
+      "6",
+      "−6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Минус на минус даёт плюс: 4 × 2 = 8."
+  },
+  {
+    "id": "math_177",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько нулей у числа 10⁴?",
+    "options": [
+      "4",
+      "10",
+      "1",
+      "40"
+    ],
+    "correctIndex": 0,
+    "explanation": "10⁴ = 10000 — четыре нуля."
+  },
+  {
+    "id": "math_178",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется выражение вида 3x + 2?",
+    "options": [
+      "Многочлен",
+      "Дробь",
+      "Корень",
+      "Логарифм"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сумма одночленов образует многочлен."
+  },
+  {
+    "id": "math_179",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 2x при x = 4?",
+    "options": [
+      "8",
+      "6",
+      "10",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "2 × 4 = 8."
+  },
+  {
+    "id": "math_180",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется число перед переменной в одночлене 7x?",
+    "options": [
+      "Коэффициент",
+      "Степень",
+      "Корень",
+      "Свободный член"
+    ],
+    "correctIndex": 0,
+    "explanation": "7 — коэффициент при x."
+  },
+  {
+    "id": "math_181",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какая степень у одночлена 5x³?",
+    "options": [
+      "3",
+      "5",
+      "8",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Показатель степени у x равен 3."
+  },
+  {
+    "id": "math_182",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 3(x + 2) при x = 1?",
+    "options": [
+      "9",
+      "6",
+      "5",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "3(1 + 2) = 3 × 3 = 9."
+  },
+  {
+    "id": "math_183",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется действие, обратное умножению?",
+    "options": [
+      "Деление",
+      "Сложение",
+      "Возведение в степень",
+      "Извлечение корня"
+    ],
+    "correctIndex": 0,
+    "explanation": "A × b = c ⟺ c ÷ b = a."
+  },
+  {
+    "id": "math_184",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какой знак ставят, если a больше b?",
+    "options": [
+      ">",
+      "<",
+      "=",
+      "≥"
+    ],
+    "correctIndex": 0,
+    "explanation": "Запись a > b означает «a больше b»."
+  },
+  {
+    "id": "math_185",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Чему равно x + 0?",
+    "options": [
+      "x",
+      "0",
+      "1",
+      "2x"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ноль — нейтральный элемент сложения."
+  },
+  {
+    "id": "math_186",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет x · 1?",
+    "options": [
+      "x",
+      "1",
+      "0",
+      "x²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Единицу называют нейтральным элементом умножения."
+  },
+  {
+    "id": "math_187",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется выражение a² − b²?",
+    "options": [
+      "Разность квадратов",
+      "Квадрат суммы",
+      "Куб разности",
+      "Сумма кубов"
+    ],
+    "correctIndex": 0,
+    "explanation": "Формула разности квадратов: a² − b²."
+  },
+  {
+    "id": "math_188",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько корней имеет уравнение x² = 0?",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "Бесконечно много"
+    ],
+    "correctIndex": 0,
+    "explanation": "X = 0 — единственный корень."
+  },
+  {
+    "id": "math_189",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Решите уравнение: 3x − 9 = 0?",
+    "options": [
+      "3",
+      "−3",
+      "9",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "3x = 9, x = 3."
+  },
+  {
+    "id": "math_190",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Раскройте скобки: (x + 3)(x − 3)?",
+    "options": [
+      "x² − 9",
+      "x² + 9",
+      "x² − 6",
+      "x² + 6x − 9"
+    ],
+    "correctIndex": 0,
+    "explanation": "По формуле разности квадратов: x² − 9."
+  },
+  {
+    "id": "math_191",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Упростите: 5x + 3x − 2x?",
+    "options": [
+      "6x",
+      "10x",
+      "8x",
+      "4x"
+    ],
+    "correctIndex": 0,
+    "explanation": "5 + 3 − 2 = 6, получаем 6x."
+  },
+  {
+    "id": "math_192",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "При каком k выражение kx + 4 при x = 2 равно 10?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "2k + 4 = 10, 2k = 6, k = 3."
+  },
+  {
+    "id": "math_193",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Что означает коэффициент k в формуле y = kx?",
+    "options": [
+      "Угловой коэффициент",
+      "Свободный член",
+      "Корень",
+      "Площадь"
+    ],
+    "correctIndex": 0,
+    "explanation": "K показывает наклон прямой на координатной плоскости."
+  },
+  {
+    "id": "math_194",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "При каком x выражение 1/(x − 2) не имеет смысла?",
+    "options": [
+      "2",
+      "0",
+      "−2",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Знаменатель не может быть равен нулю."
+  },
+  {
+    "id": "math_195",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Решите пропорцию: x/4 = 6/8?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "X = 4 × 6/8 = 3."
+  },
+  {
+    "id": "math_196",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Запишите условие «число на 5 больше 12» как уравнение?",
+    "options": [
+      "x = 12 + 5",
+      "x = 12 − 5",
+      "x = 12 × 5",
+      "x = 12 ÷ 5"
+    ],
+    "correctIndex": 0,
+    "explanation": "«На 5 больше» означает сложение: x = 17."
+  },
+  {
+    "id": "math_197",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Разложите на множители: x² − 16?",
+    "options": [
+      "(x − 4)(x + 4)",
+      "(x − 8)(x + 8)",
+      "(x − 4)²",
+      "(x + 4)²"
+    ],
+    "correctIndex": 0,
+    "explanation": "16 = 4², применяем разность квадратов."
+  },
+  {
+    "id": "math_198",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Решите систему: x + y = 7, x − y = 1?",
+    "options": [
+      "x = 4, y = 3",
+      "x = 3, y = 4",
+      "x = 5, y = 2",
+      "x = 6, y = 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сложив уравнения, получаем 2x = 8, x = 4, y = 3."
+  },
+  {
+    "id": "math_199",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какое уравнение описывает прямую, проходящую через начало координат с наклоном 2?",
+    "options": [
+      "y = 2x",
+      "y = x + 2",
+      "y = 2",
+      "x = 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Прямая через (0;0) с угловым коэффициентом 2: y = 2x."
+  },
+  {
+    "id": "math_200",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Решите неравенство: −2x > 6?",
+    "options": [
+      "x < −3",
+      "x > −3",
+      "x < 3",
+      "x > 3"
+    ],
+    "correctIndex": 0,
+    "explanation": "При делении на отрицательное число знак неравенства меняется."
+  },
+  {
+    "id": "math_201",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет (2x)² при x = 3?",
+    "options": [
+      "36",
+      "12",
+      "18",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "(2 × 3)² = 6² = 36."
+  },
+  {
+    "id": "math_202",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какой корень уравнения 2(x − 1) = x + 3?",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "2x − 2 = x + 3, x = 5."
+  },
+  {
+    "id": "math_203",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Чему равна дискриминанта уравнения x² − 4x + 4 = 0?",
+    "options": [
+      "0",
+      "4",
+      "8",
+      "−4"
+    ],
+    "correctIndex": 0,
+    "explanation": "D = (−4)² − 4·1·4 = 16 − 16 = 0."
+  },
+  {
+    "id": "math_204",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Упростите: (x²)³?",
+    "options": [
+      "x⁶",
+      "x⁵",
+      "x⁹",
+      "x⁸"
+    ],
+    "correctIndex": 0,
+    "explanation": "При возведении степени в степень показатели перемножаются: 2 × 3 = 6."
+  },
+  {
+    "id": "math_205",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Решите уравнение: x² − 5x + 6 = 0?",
+    "options": [
+      "x = 2 или x = 3",
+      "x = 1 или x = 6",
+      "x = −2 или x = −3",
+      "x = 5 или x = 6"
+    ],
+    "correctIndex": 0,
+    "explanation": "X² − 5x + 6 = (x − 2)(x − 3) = 0."
+  },
+  {
+    "id": "math_206",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сумма двух последовательных целых чисел равна 47. Найдите большее из них?",
+    "options": [
+      "24",
+      "23",
+      "25",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "N + (n + 1) = 47, 2n = 46, n = 23, большее — 24."
+  },
+  {
+    "id": "math_207",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "При каких a уравнение ax + 3 = 7 не имеет решений?",
+    "options": [
+      "a = 0",
+      "a = 1",
+      "a = 4",
+      "a = −1"
+    ],
+    "correctIndex": 0,
+    "explanation": "При a = 0 получаем 0·x + 3 = 7, что невозможно."
+  },
+  {
+    "id": "math_208",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите произведение корней уравнения x² − 7x + 10 = 0 (по теореме Виета)?",
+    "options": [
+      "10",
+      "7",
+      "−7",
+      "−10"
+    ],
+    "correctIndex": 0,
+    "explanation": "X₁ · x₂ = c/a = 10/1 = 10."
+  },
+  {
+    "id": "math_209",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Решите уравнение: |x − 3| = 5?",
+    "options": [
+      "x = 8 или x = −2",
+      "x = 5 или x = 3",
+      "x = 8 или x = 2",
+      "x = −8 или x = 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "|x − 3| = 5 ⟺ x − 3 = 5 или x − 3 = −5."
+  },
+  {
+    "id": "math_210",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько решений имеет уравнение x² + 1 = 0 в множестве действительных чисел?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "Бесконечно много"
+    ],
+    "correctIndex": 0,
+    "explanation": "X² = −1 не имеет действительных корней."
+  },
+  {
+    "id": "math_211",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите x, если 2ˣ = 16?",
+    "options": [
+      "4",
+      "8",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "16 = 2⁴, значит x = 4."
+  },
+  {
+    "id": "math_212",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Какое значение x делает дробь (x + 1)/(x − 5) равной нулю?",
+    "options": [
+      "−1",
+      "1",
+      "5",
+      "0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Числитель должен быть 0, знаменатель — не 0: x = −1."
+  },
+  {
+    "id": "math_213",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько градусов в сумме углов треугольника?",
+    "options": [
+      "180°",
+      "90°",
+      "360°",
+      "270°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сумма внутренних углов любого треугольника равна 180°."
+  },
+  {
+    "id": "math_214",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько градусов в сумме углов четырёхугольника?",
+    "options": [
+      "360°",
+      "180°",
+      "270°",
+      "540°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Любой выпуклый четырёхугольник имеет сумму углов 360°."
+  },
+  {
+    "id": "math_215",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется треугольник со всеми равными сторонами?",
+    "options": [
+      "Равносторонний",
+      "Равнобедренный",
+      "Прямоугольный",
+      "Тупоугольный"
+    ],
+    "correctIndex": 0,
+    "explanation": "Все три стороны равны."
+  },
+  {
+    "id": "math_216",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется сторона прямоугольного треугольника, противолежащая прямому углу?",
+    "options": [
+      "Гипотенуза",
+      "Катет",
+      "Высота",
+      "Медиана"
+    ],
+    "correctIndex": 0,
+    "explanation": "Гипотенуза — самая длинная сторона."
+  },
+  {
+    "id": "math_217",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется отрезок, соединяющий центр окружности с точкой на окружности?",
+    "options": [
+      "Радиус",
+      "Диаметр",
+      "Хорда",
+      "Касательная"
+    ],
+    "correctIndex": 0,
+    "explanation": "Радиус равен половине диаметра."
+  },
+  {
+    "id": "math_218",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Найдите периметр прямоугольника 5 см на 3 см?",
+    "options": [
+      "16 см",
+      "15 см",
+      "8 см",
+      "10 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "P = 2(5 + 3) = 16 см."
+  },
+  {
+    "id": "math_219",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Найдите площадь квадрата со стороной 6 см?",
+    "options": [
+      "36 см²",
+      "24 см²",
+      "12 см²",
+      "30 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = 6² = 36 см²."
+  },
+  {
+    "id": "math_220",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называются прямые, которые никогда не пересекаются на плоскости?",
+    "options": [
+      "Параллельные",
+      "Перпендикулярные",
+      "Секущие",
+      "Медианы"
+    ],
+    "correctIndex": 0,
+    "explanation": "Параллельные прямые лежат в одной плоскости и не имеют общих точек."
+  },
+  {
+    "id": "math_221",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется четырёхугольник с четырьмя прямыми углами?",
+    "options": [
+      "Прямоугольник",
+      "Ромб",
+      "Трапеция",
+      "Параллелограмм"
+    ],
+    "correctIndex": 0,
+    "explanation": "Все углы по 90°."
+  },
+  {
+    "id": "math_222",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Чему равен диаметр окружности с радиусом 7 см?",
+    "options": [
+      "14 см",
+      "7 см",
+      "21 см",
+      "3,5 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "D = 2r = 14 см."
+  },
+  {
+    "id": "math_223",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется многогранник с 6 гранями?",
+    "options": [
+      "Куб",
+      "Тетраэдр",
+      "Октаэдр",
+      "Додекаэдр"
+    ],
+    "correctIndex": 0,
+    "explanation": "Куб — правильный шестигранник."
+  },
+  {
+    "id": "math_224",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется угол между двумя перпендикулярными прямыми?",
+    "options": [
+      "90°",
+      "180°",
+      "45°",
+      "60°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Перпендикулярные прямые образуют прямой угол."
+  },
+  {
+    "id": "math_225",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Найдите объём куба с ребром 3 см?",
+    "options": [
+      "27 см³",
+      "9 см³",
+      "18 см³",
+      "6 см³"
+    ],
+    "correctIndex": 0,
+    "explanation": "V = 3³ = 27 см³."
+  },
+  {
+    "id": "math_226",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется линия, равноудалённая от центра окружности во всех направлениях?",
+    "options": [
+      "Окружность",
+      "Хорда",
+      "Диаметр",
+      "Сектор"
+    ],
+    "correctIndex": 0,
+    "explanation": "Окружность — множество точек на фиксированном расстоянии от центра."
+  },
+  {
+    "id": "math_227",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь треугольника с основанием 10 см и высотой 6 см?",
+    "options": [
+      "30 см²",
+      "60 см²",
+      "16 см²",
+      "20 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = ½ × 10 × 6 = 30 см²."
+  },
+  {
+    "id": "math_228",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь параллелограмма с основанием 8 см и высотой 5 см?",
+    "options": [
+      "40 см²",
+      "13 см²",
+      "20 см²",
+      "80 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = a × h = 8 × 5 = 40 см²."
+  },
+  {
+    "id": "math_229",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите длину окружности при радиусе 5 см (π ≈ 3,14)?",
+    "options": [
+      "31,4 см",
+      "15,7 см",
+      "25 см",
+      "62,8 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "C = 2πr = 2 × 3,14 × 5 = 31,4 см."
+  },
+  {
+    "id": "math_230",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь круга с радиусом 3 см (π ≈ 3,14)?",
+    "options": [
+      "28,26 см²",
+      "18,84 см²",
+      "9,42 см²",
+      "6 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = πr² = 3,14 × 9 = 28,26 см²."
+  },
+  {
+    "id": "math_231",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "В прямоугольном треугольнике катеты 3 см и 4 см. Найдите гипотенузу?",
+    "options": [
+      "5 см",
+      "7 см",
+      "6 см",
+      "4,5 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "По теореме Пифагора: 3² + 4² = 5²."
+  },
+  {
+    "id": "math_232",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь трапеции с основаниями 5 см и 9 см и высотой 4 см?",
+    "options": [
+      "28 см²",
+      "36 см²",
+      "20 см²",
+      "56 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = ½(5 + 9) × 4 = 28 см²."
+  },
+  {
+    "id": "math_233",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько градусов в угле при вершине правильного шестиугольника?",
+    "options": [
+      "120°",
+      "108°",
+      "135°",
+      "150°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Каждый угол: (6 − 2) × 180° ÷ 6 = 120°."
+  },
+  {
+    "id": "math_234",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите расстояние между точками (0; 0) и (3; 4)?",
+    "options": [
+      "5",
+      "7",
+      "6",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "D = √(3² + 4²) = 5."
+  },
+  {
+    "id": "math_235",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Площади подобных треугольников относятся как 4: 9. Каково отношение их сторон?",
+    "options": [
+      "2: 3",
+      "4: 9",
+      "16: 81",
+      "3: 2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Отношение площадей равно квадрату отношения сторон."
+  },
+  {
+    "id": "math_236",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите объём прямоугольного параллелепипеда 4 × 3 × 2 см?",
+    "options": [
+      "24 см³",
+      "12 см³",
+      "9 см³",
+      "18 см³"
+    ],
+    "correctIndex": 0,
+    "explanation": "V = 4 × 3 × 2 = 24 см³."
+  },
+  {
+    "id": "math_237",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "В равнобедренном треугольнике углы при основании по 65°. Найдите угол при вершине?",
+    "options": [
+      "50°",
+      "65°",
+      "70°",
+      "80°"
+    ],
+    "correctIndex": 0,
+    "explanation": "180° − 2 × 65° = 50°."
+  },
+  {
+    "id": "math_238",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь ромба с диагоналями 6 см и 8 см?",
+    "options": [
+      "24 см²",
+      "48 см²",
+      "14 см²",
+      "28 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = ½ × d₁ × d₂ = 24 см²."
+  },
+  {
+    "id": "math_239",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько градусов составляет угол между часовой и минутной стрелками в 3:00?",
+    "options": [
+      "90°",
+      "60°",
+      "120°",
+      "180°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Минутная на 12, часовая на 3 — четверть круга."
+  },
+  {
+    "id": "math_240",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите объём цилиндра с радиусом 2 см и высотой 5 см (π ≈ 3,14)?",
+    "options": [
+      "62,8 см³",
+      "31,4 см³",
+      "20 см³",
+      "12,56 см³"
+    ],
+    "correctIndex": 0,
+    "explanation": "V = πr²h = 3,14 × 4 × 5 = 62,8 см³."
+  },
+  {
+    "id": "math_241",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Внешний угол при вершине равнобедренного треугольника равен 120°. Найдите угол при основании?",
+    "options": [
+      "60°",
+      "30°",
+      "120°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Внешний угол равен сумме двух удалённых внутренних; здесь 120° = 2 × угол при основании."
+  },
+  {
+    "id": "math_242",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите площадь прямоугольника со сторонами 7 см и 9 см?",
+    "options": [
+      "63 см²",
+      "32 см²",
+      "56 см²",
+      "16 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = 7 × 9 = 63 см²."
+  },
+  {
+    "id": "math_243",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Центральный угол в окружности равен 60°. Чему равен вписанный угол, опирающийся на ту же дугу?",
+    "options": [
+      "30°",
+      "60°",
+      "120°",
+      "90°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Вписанный угол равен половине центрального."
+  },
+  {
+    "id": "math_244",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите объём шара с радиусом 3 см (π ≈ 3,14)?",
+    "options": [
+      "113,04 см³",
+      "84,78 см³",
+      "28,26 см³",
+      "37,68 см³"
+    ],
+    "correctIndex": 0,
+    "explanation": "V = ⁴⁄₃πr³ = ⁴⁄₃ × 3,14 × 27 ≈ 113,04 см³."
+  },
+  {
+    "id": "math_245",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "В треугольнике стороны 5, 5 и 6 см. Найдите высоту к стороне 6 см?",
+    "options": [
+      "4 см",
+      "3 см",
+      "5 см",
+      "6 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "Полуоснование 3 см; по Пифагору h = √(5² − 3²) = 4 см."
+  },
+  {
+    "id": "math_246",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Площадь квадрата равна 50 см². Найдите длину диагонали?",
+    "options": [
+      "10 см",
+      "5√2 см",
+      "7 см",
+      "25 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сторона a = √50 = 5√2; диагональ = a√2 = 10 см."
+  },
+  {
+    "id": "math_247",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько диагоналей у выпуклого пятиугольника?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Число диагоналей n-угольника: n(n − 3)/2 = 5."
+  },
+  {
+    "id": "math_248",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "В прямоугольном треугольнике гипотенуза 13 см, один катет 5 см. Найдите второй катет?",
+    "options": [
+      "12 см",
+      "8 см",
+      "10 см",
+      "11 см"
+    ],
+    "correctIndex": 0,
+    "explanation": "13² − 5² = 12²."
+  },
+  {
+    "id": "math_249",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите площадь поверхности куба с ребром 4 см?",
+    "options": [
+      "96 см²",
+      "64 см²",
+      "48 см²",
+      "16 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "6 граней по 16 см²: 6 × 16 = 96 см²."
+  },
+  {
+    "id": "math_250",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Угол между двумя сторонами ромба 60°. Сторона 6 см. Найдите площадь?",
+    "options": [
+      "18√3 см²",
+      "36 см²",
+      "12√3 см²",
+      "24 см²"
+    ],
+    "correctIndex": 0,
+    "explanation": "S = a² sin α = 36 × sin 60° = 36 × (√3/2) = 18√3 см²."
+  },
+  {
+    "id": "math_251",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сократите дробь 8/12?",
+    "options": [
+      "2/3",
+      "4/6",
+      "3/4",
+      "1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "НОД(8, 12) = 4; 8/12 = 2/3."
+  },
+  {
+    "id": "math_252",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какая дробь равна 1/2?",
+    "options": [
+      "3/6",
+      "2/5",
+      "1/3",
+      "3/5"
+    ],
+    "correctIndex": 0,
+    "explanation": "3/6 = 1/2 после сокращения."
+  },
+  {
+    "id": "math_253",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько процентов составляет 1/4?",
+    "options": [
+      "25%",
+      "20%",
+      "40%",
+      "50%"
+    ],
+    "correctIndex": 0,
+    "explanation": "1/4 = 0,25 = 25%."
+  },
+  {
+    "id": "math_254",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько составляет 50% от 80?",
+    "options": [
+      "40",
+      "50",
+      "30",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "80 × 0,5 = 40."
+  },
+  {
+    "id": "math_255",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое число является простым?",
+    "options": [
+      "29",
+      "27",
+      "33",
+      "39"
+    ],
+    "correctIndex": 0,
+    "explanation": "29 делится только на 1 и 29."
+  },
+  {
+    "id": "math_256",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 3/5 + 1/5?",
+    "options": [
+      "4/5",
+      "4/10",
+      "2/5",
+      "3/10"
+    ],
+    "correctIndex": 0,
+    "explanation": "При одинаковых знаменателях складывают числители."
+  },
+  {
+    "id": "math_257",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 7/8 − 3/8?",
+    "options": [
+      "4/8",
+      "1/2",
+      "10/8",
+      "3/8"
+    ],
+    "correctIndex": 0,
+    "explanation": "7/8 − 3/8 = 4/8 = 1/2."
+  },
+  {
+    "id": "math_258",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как записать 0,6 в виде обыкновенной дроби?",
+    "options": [
+      "3/5",
+      "6/10",
+      "2/3",
+      "1/6"
+    ],
+    "correctIndex": 0,
+    "explanation": "0,6 = 6/10 = 3/5."
+  },
+  {
+    "id": "math_259",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько составляет 10% от 250?",
+    "options": [
+      "25",
+      "20",
+      "30",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "250 × 0,1 = 25."
+  },
+  {
+    "id": "math_260",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое число не является простым?",
+    "options": [
+      "21",
+      "19",
+      "23",
+      "29"
+    ],
+    "correctIndex": 0,
+    "explanation": "21 = 3 × 7 — составное число."
+  },
+  {
+    "id": "math_261",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 2/3 × 3?",
+    "options": [
+      "2",
+      "6",
+      "3/2",
+      "9"
+    ],
+    "correctIndex": 0,
+    "explanation": "2/3 × 3 = 2."
+  },
+  {
+    "id": "math_262",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какая дробь больше: 3/4 или 2/3?",
+    "options": [
+      "3/4",
+      "2/3",
+      "Они равны",
+      "1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "3/4 = 0,75, 2/3 ≈ 0,67."
+  },
+  {
+    "id": "math_263",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько составляет 1% от 500?",
+    "options": [
+      "5",
+      "50",
+      "10",
+      "25"
+    ],
+    "correctIndex": 0,
+    "explanation": "500 × 0,01 = 5."
+  },
+  {
+    "id": "math_264",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какое число является кратным 6?",
+    "options": [
+      "24",
+      "20",
+      "25",
+      "22"
+    ],
+    "correctIndex": 0,
+    "explanation": "24 = 6 × 4."
+  },
+  {
+    "id": "math_265",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 1/2 ÷ 2?",
+    "options": [
+      "1/4",
+      "1",
+      "2",
+      "1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Деление на 2 равно умножению на 1/2: 1/2 × 1/2 = 1/4."
+  },
+  {
+    "id": "math_266",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется число, делящее другое без остатка?",
+    "options": [
+      "Делитель",
+      "Множитель",
+      "Степень",
+      "Корень"
+    ],
+    "correctIndex": 0,
+    "explanation": "Если a делит b, то a — делитель b."
+  },
+  {
+    "id": "math_267",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет 2/3 + 1/4?",
+    "options": [
+      "11/12",
+      "3/7",
+      "5/12",
+      "3/4"
+    ],
+    "correctIndex": 0,
+    "explanation": "НОК(3, 4) = 12; 8/12 + 3/12 = 11/12."
+  },
+  {
+    "id": "math_268",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет 5/6 − 1/3?",
+    "options": [
+      "1/2",
+      "4/3",
+      "1/3",
+      "2/3"
+    ],
+    "correctIndex": 0,
+    "explanation": "1/3 = 2/6; 5/6 − 2/6 = 3/6 = 1/2."
+  },
+  {
+    "id": "math_269",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет 3/4 × 2/5?",
+    "options": [
+      "3/10",
+      "6/20",
+      "5/9",
+      "1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "3/4 × 2/5 = 6/20 = 3/10."
+  },
+  {
+    "id": "math_270",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет 2/3 ÷ 4/9?",
+    "options": [
+      "3/2",
+      "8/27",
+      "6/13",
+      "9/8"
+    ],
+    "correctIndex": 0,
+    "explanation": "2/3 × 9/4 = 18/12 = 3/2."
+  },
+  {
+    "id": "math_271",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Цена товара 800 ₽ снизили на 20%. Какова новая цена?",
+    "options": [
+      "640 ₽",
+      "760 ₽",
+      "600 ₽",
+      "720 ₽"
+    ],
+    "correctIndex": 0,
+    "explanation": "800 × 0,8 = 640 ₽."
+  },
+  {
+    "id": "math_272",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Число увеличили на 10% и получили 110. Каково исходное число?",
+    "options": [
+      "100",
+      "90",
+      "99",
+      "105"
+    ],
+    "correctIndex": 0,
+    "explanation": "1,1x = 110, x = 100."
+  },
+  {
+    "id": "math_273",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите НОК чисел 12 и 18?",
+    "options": [
+      "36",
+      "24",
+      "54",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "12 = 2²×3, 18 = 2×3², НОК = 2²×3² = 36."
+  },
+  {
+    "id": "math_274",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Разложите 60 на простые множители?",
+    "options": [
+      "2² × 3 × 5",
+      "2 × 15",
+      "3² × 5",
+      "2³ × 7"
+    ],
+    "correctIndex": 0,
+    "explanation": "60 = 2 × 2 × 3 × 5."
+  },
+  {
+    "id": "math_275",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько простых чисел между 10 и 20?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Простые: 11, 13, 17, 19."
+  },
+  {
+    "id": "math_276",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "В классе 30 учеников, 40% — девочки. Сколько девочек?",
+    "options": [
+      "12",
+      "15",
+      "10",
+      "18"
+    ],
+    "correctIndex": 0,
+    "explanation": "30 × 0,4 = 12."
+  },
+  {
+    "id": "math_277",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Отношение 3: 5 равно какому процентному соотношению первого ко второму?",
+    "options": [
+      "60%",
+      "50%",
+      "75%",
+      "35%"
+    ],
+    "correctIndex": 0,
+    "explanation": "3/5 = 0,6 = 60%."
+  },
+  {
+    "id": "math_278",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет 0,125 в виде обыкновенной дроби?",
+    "options": [
+      "1/8",
+      "1/4",
+      "1/5",
+      "1/10"
+    ],
+    "correctIndex": 0,
+    "explanation": "0,125 = 125/1000 = 1/8."
+  },
+  {
+    "id": "math_279",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Товар стоил 500 ₽, подорожал на 15%, затем подешевел на 15%. Какова итоговая цена?",
+    "options": [
+      "488,75 ₽",
+      "500 ₽",
+      "475 ₽",
+      "492,5 ₽"
+    ],
+    "correctIndex": 0,
+    "explanation": "500 × 1,15 × 0,85 = 488,75 ₽."
+  },
+  {
+    "id": "math_280",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Найдите НОД чисел 48 и 72?",
+    "options": [
+      "24",
+      "12",
+      "36",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "48 = 2⁴×3, 72 = 2³×3², НОД = 2³×3 = 24."
+  },
+  {
+    "id": "math_281",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какая дробь соответствует бесконечной периодической десятичной 0,(3)?",
+    "options": [
+      "1/3",
+      "3/10",
+      "1/9",
+      "3/9"
+    ],
+    "correctIndex": 0,
+    "explanation": "0,(3) = 3/9 = 1/3."
+  },
+  {
+    "id": "math_282",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Смешали 2 кг сиропа (40% сахара) и 3 кг воды. Каков процент сахара?",
+    "options": [
+      "16%",
+      "20%",
+      "24%",
+      "8%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сахара 0,8 кг в 5 кг: 0,8/5 = 16%."
+  },
+  {
+    "id": "math_283",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите наименьшее число, делящееся на 4, 6 и 9?",
+    "options": [
+      "36",
+      "18",
+      "24",
+      "72"
+    ],
+    "correctIndex": 0,
+    "explanation": "НОК(4, 6, 9) = 36."
+  },
+  {
+    "id": "math_284",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сумма двух чисел 100, одно на 20% больше другого. Найдите меньшее?",
+    "options": [
+      "45,45",
+      "40",
+      "50",
+      "48"
+    ],
+    "correctIndex": 0,
+    "explanation": "X + 1,2x = 100, 2,2x = 100, x ≈ 45,45."
+  },
+  {
+    "id": "math_285",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько натуральных делителей у числа 36?",
+    "options": [
+      "9",
+      "8",
+      "6",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "36 = 2²×3²; (2+1)(2+1) = 9 делителей."
+  },
+  {
+    "id": "math_286",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Докажите числом: какое наименьшее составное число больше 10?",
+    "options": [
+      "12",
+      "11",
+      "14",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "12 = 2 × 6 — первое составное после 10."
+  },
+  {
+    "id": "math_287",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Два числа относятся как 2: 3, их сумма 50. Найдите большее?",
+    "options": [
+      "30",
+      "25",
+      "20",
+      "35"
+    ],
+    "correctIndex": 0,
+    "explanation": "2k + 3k = 50, k = 10, большее 3k = 30."
+  },
+  {
+    "id": "math_288",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько процентов составляет число 45 от числа 180?",
+    "options": [
+      "25%",
+      "20%",
+      "30%",
+      "15%"
+    ],
+    "correctIndex": 0,
+    "explanation": "45/180 = 1/4 = 25%."
+  },
+  {
+    "id": "math_289",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите сумму всех простых чисел от 2 до 10?",
+    "options": [
+      "17",
+      "18",
+      "28",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "2 + 3 + 5 + 7 = 17."
+  },
+  {
+    "id": "math_290",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Найдите наименьшее общее кратное простых чисел 7 и 11?",
+    "options": [
+      "77",
+      "70",
+      "18",
+      "121"
+    ],
+    "correctIndex": 0,
+    "explanation": "НОК двух простых чисел равно их произведению: 7 × 11 = 77."
+  },
+  {
+    "id": "math_291",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Кто сформулировал знаменитую теорему a² + b² = c² для прямоугольного треугольника?",
+    "options": [
+      "Пифагор",
+      "Евклид",
+      "Архимед",
+      "Декарт"
+    ],
+    "correctIndex": 0,
+    "explanation": "Теорема Пифагора названа в честь древнегреческого математика."
+  },
+  {
+    "id": "math_292",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 1 + 2 + 3 + … + 10?",
+    "options": [
+      "55",
+      "45",
+      "50",
+      "60"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сумма арифметической прогрессии: 10 × 11 / 2 = 55."
+  },
+  {
+    "id": "math_293",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Если все розы — цветы, а некоторые цветы красные, можно ли утверждать, что некоторые розы красные?",
+    "options": [
+      "Нет, логически не следует",
+      "Да, обязательно",
+      "Только если роз больше трёх",
+      "Да, все розы красные"
+    ],
+    "correctIndex": 0,
+    "explanation": "Из данных посылок вывод о красных розах не обязателен."
+  },
+  {
+    "id": "math_294",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько сторон у правильного треугольника?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "Треугольник по определению имеет три стороны."
+  },
+  {
+    "id": "math_295",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Что утверждает основная теорема арифметики?",
+    "options": [
+      "Любое натуральное число > 1 раскладывается в произведение простых единственным способом",
+      "Сумма углов треугольника 180°",
+      "Квадрат гипотенузы равен сумме квадратов катетов",
+      "Делитель на ноль равен нулю"
+    ],
+    "correctIndex": 0,
+    "explanation": "Разложение на простые множители единственно с точностью до порядка."
+  },
+  {
+    "id": "math_296",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 2⁰?",
+    "options": [
+      "1",
+      "0",
+      "2",
+      "Не определено"
+    ],
+    "correctIndex": 0,
+    "explanation": "Любое ненулевое число в нулевой степени равно 1."
+  },
+  {
+    "id": "math_297",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется число π (пи) с точностью до сотых?",
+    "options": [
+      "3,14",
+      "3,41",
+      "2,14",
+      "3,16"
+    ],
+    "correctIndex": 0,
+    "explanation": "Π ≈ 3,14159…, округлённо 3,14."
+  },
+  {
+    "id": "math_298",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Верно ли, что если n чётное, то n² тоже чётное?",
+    "options": [
+      "Да",
+      "Нет",
+      "Только для n > 2",
+      "Только для простых n"
+    ],
+    "correctIndex": 0,
+    "explanation": "Квадрат чётного числа всегда чётен."
+  },
+  {
+    "id": "math_299",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько элементов в пустом множестве?",
+    "options": [
+      "0",
+      "1",
+      "Не определено",
+      "Бесконечно"
+    ],
+    "correctIndex": 0,
+    "explanation": "Пустое множество не содержит элементов."
+  },
+  {
+    "id": "math_300",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Как называется отрезок, соединяющий две точки окружности и проходящий через центр?",
+    "options": [
+      "Диаметр",
+      "Радиус",
+      "Хорда",
+      "Касательная"
+    ],
+    "correctIndex": 0,
+    "explanation": "Диаметр — самая длинная хорда."
+  },
+  {
+    "id": "math_301",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Если подбросить честную монету, какова вероятность выпадения орла?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "2/3"
+    ],
+    "correctIndex": 0,
+    "explanation": "Два равновероятных исхода: орёл и решка."
+  },
+  {
+    "id": "math_302",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько будет 0! (ноль факториал)?",
+    "options": [
+      "1",
+      "0",
+      "Не определено",
+      "−1"
+    ],
+    "correctIndex": 0,
+    "explanation": "По определению 0! = 1."
+  },
+  {
+    "id": "math_303",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Какой математик написал «Начала» — основу геометрии?",
+    "options": [
+      "Евклид",
+      "Пифагор",
+      "Ньютон",
+      "Гаусс"
+    ],
+    "correctIndex": 0,
+    "explanation": "«Начала» Евклида — фундаментальный труд по геометрии."
+  },
+  {
+    "id": "math_304",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько решений имеет уравнение x = x?",
+    "options": [
+      "Бесконечно много",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Тождество верно для любого x."
+  },
+  {
+    "id": "math_305",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Если a < b и b < c, то a … c. Какой знак верен?",
+    "options": [
+      "<",
+      ">",
+      "=",
+      "≥"
+    ],
+    "correctIndex": 0,
+    "explanation": "Транзитивность порядка: a < c."
+  },
+  {
+    "id": "math_306",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Сколько треугольников в фигуре «два треугольника с общей стороной»?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "Два отдельных треугольника, соединённых по стороне."
+  },
+  {
+    "id": "math_307",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "В урне 3 красных и 2 синих шара. Какова вероятность вытащить красный?",
+    "options": [
+      "3/5",
+      "2/5",
+      "1/3",
+      "1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "3 благоприятных из 5 возможных."
+  },
+  {
+    "id": "math_308",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько способов выбрать 2 книги из 4 (порядок не важен)?",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "4"
+    ],
+    "correctIndex": 0,
+    "explanation": "C(4,2) = 4!/(2!·2!) = 6."
+  },
+  {
+    "id": "math_309",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Логическая загадка: утром рост 2 м, днём 4 м, вечером 3 м. Что это (классическая)?",
+    "options": [
+      "Гриб",
+      "Дерево",
+      "Тень",
+      "Свеча"
+    ],
+    "correctIndex": 0,
+    "explanation": "Классическая загадка про гриб, растущий днём."
+  },
+  {
+    "id": "math_310",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Если утверждение «все A есть B» ложно, что можно заключить?",
+    "options": [
+      "Существует A, не являющийся B",
+      "Все A не являются B",
+      "Ни один A не является B",
+      "Все B являются A"
+    ],
+    "correctIndex": 0,
+    "explanation": "Отрицание универсального квантора: ∃A: ¬B."
+  },
+  {
+    "id": "math_311",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько различных перестановок букв в слове «МАТ»?",
+    "options": [
+      "6",
+      "3",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "3! = 6 перестановок трёх различных букв."
+  },
+  {
+    "id": "math_312",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какова сумма углов выпуклого n-угольника?",
+    "options": [
+      "(n − 2) × 180°",
+      "n × 180°",
+      "n × 90°",
+      "(n − 1) × 180°"
+    ],
+    "correctIndex": 0,
+    "explanation": "Формула суммы углов многоугольника."
+  },
+  {
+    "id": "math_313",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Теорема Ферма (малая): если p — простое и a не делится на p, то a^(p−1) при делении на p даёт остаток…?",
+    "options": [
+      "1",
+      "0",
+      "p − 1",
+      "a"
+    ],
+    "correctIndex": 0,
+    "explanation": "Малая теорема Ферма: a^(p−1) ≡ 1 (mod p)."
+  },
+  {
+    "id": "math_314",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько диагоналей у шестиугольника?",
+    "options": [
+      "9",
+      "6",
+      "12",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "N(n − 3)/2 = 6 × 3 / 2 = 9."
+  },
+  {
+    "id": "math_315",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "В логической головоломке «лжецы и рыцари» рыцарь всегда…?",
+    "options": [
+      "Говорит правду",
+      "Всегда лжёт",
+      "Молчит",
+      "Говорит наоборот"
+    ],
+    "correctIndex": 0,
+    "explanation": "Рыцарь — персонаж, всегда говорящий истину."
+  },
+  {
+    "id": "math_316",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько будет C(5,0)?",
+    "options": [
+      "1",
+      "0",
+      "5",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "Выбрать 0 элементов из 5 — один способ (пустое множество)."
+  },
+  {
+    "id": "math_317",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Какой принцип: «если n + 1 верно при условии n, и верно для n = 1, то верно для всех n»?",
+    "options": [
+      "Математическая индукция",
+      "Принцип Дирихле",
+      "Правило трёх",
+      "Метод исключения"
+    ],
+    "correctIndex": 0,
+    "explanation": "Индукция доказывает утверждения для всех натуральных n."
+  },
+  {
+    "id": "math_318",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Вероятность двух независимых событий с p₁ = 1/2 и p₂ = 1/3 равна…?",
+    "options": [
+      "1/6",
+      "1/5",
+      "2/5",
+      "1/2"
+    ],
+    "correctIndex": 0,
+    "explanation": "P(A ∩ B) = P(A) · P(B) = 1/2 × 1/3 = 1/6."
+  },
+  {
+    "id": "math_319",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько целых решений имеет неравенство 1 ≤ x ≤ 5?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "Бесконечно"
+    ],
+    "correctIndex": 0,
+    "explanation": "X ∈ {1, 2, 3, 4, 5} — пять значений."
+  },
+  {
+    "id": "math_320",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Как называется число e (основание натурального логарифма) приблизительно?",
+    "options": [
+      "2,72",
+      "3,14",
+      "1,62",
+      "1,41"
+    ],
+    "correctIndex": 0,
+    "explanation": "E ≈ 2,71828…"
+  },
+  {
+    "id": "math_321",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Если в классе 25 учеников, докажите, что хотя бы двое родились в одном месяце. Какой принцип?",
+    "options": [
+      "Принцип Дирихле",
+      "Принцип включения-исключения",
+      "Правило произведения",
+      "Бином Ньютона"
+    ],
+    "correctIndex": 0,
+    "explanation": "12 месяцев < 25 учеников — хотя бы двое в одном месяце."
+  },
+  {
+    "id": "math_322",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "Сколько рёбер у графа «полный K₄» (4 вершины, все соединены)?",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "correctIndex": 0,
+    "explanation": "C(4,2) = 6 рёбер."
+  },
+  {
+    "id": "math_323",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько решений имеет уравнение x + y = 10 в натуральных числах (x, y ≥ 1)?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "X = 1…9, y = 10 − x; при x ≥ 1 получаем y ≥ 1, всего 9 пар."
+  },
+  {
+    "id": "math_324",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "У отца 7 сыновей, и у каждого сына по одной сестре. Сколько всего детей у отца?",
+    "options": [
+      "8",
+      "7",
+      "14",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Сестра одна на всех, значит 7 сыновей + 1 дочь = 8 детей."
+  },
+  {
+    "id": "math_325",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько подмножеств у множества из 5 элементов?",
+    "options": [
+      "32",
+      "25",
+      "16",
+      "10"
+    ],
+    "correctIndex": 0,
+    "explanation": "2⁵ = 32 подмножества."
+  },
+  {
+    "id": "math_326",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Теорема о трёх медианах: медианы треугольника…?",
+    "options": [
+      "Пересекаются в одной точке",
+      "Параллельны друг другу",
+      "Равны по длине",
+      "Перпендикулярны сторонам"
+    ],
+    "correctIndex": 0,
+    "explanation": "Точка пересечения медиан — центр масс (центроид)."
+  },
+  {
+    "id": "math_327",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько способов разложить 7 одинаковых яблок в 3 различные корзины (корзины могут быть пустыми)?",
+    "options": [
+      "36",
+      "21",
+      "28",
+      "15"
+    ],
+    "correctIndex": 0,
+    "explanation": "Звёзды и полосы: C(7+3−1, 3−1) = C(9,2) = 36."
+  },
+  {
+    "id": "math_328",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Если сумма цифр числа делится на 3, то само число…?",
+    "options": [
+      "Делится на 3",
+      "Делится на 9",
+      "Является простым",
+      "Чётное"
+    ],
+    "correctIndex": 0,
+    "explanation": "Признак делимости на 3."
+  },
+  {
+    "id": "math_329",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Сколько различных значений принимает |x − 2| + |x + 2| при целых x от −3 до 3 включительно?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "При x = ±3 получаем 6, при остальных x из диапазона — 4; всего два различных значения."
+  },
+  {
+    "id": "math_330",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Какова вероятность выпадения суммы 7 при броске двух игральных костей?",
+    "options": [
+      "1/6",
+      "1/12",
+      "1/8",
+      "1/9"
+    ],
+    "correctIndex": 0,
+    "explanation": "6 благоприятных пар из 36: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)."
   }
 ]

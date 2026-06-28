@@ -884,7 +884,7 @@
   {
     "category": "art",
     "difficulty": "HARD",
-    "text": "What French sculptor designed the Statue of Liberty? ",
+    "text": "What French sculptor designed the Statue of Liberty?",
     "options": [
       "Frédéric Auguste Bartholdi",
       "Jean-Léon Gérôme",
@@ -954,7 +954,7 @@
   {
     "category": "art",
     "difficulty": "EASY",
-    "text": " What color is produced by mixing black and white?",
+    "text": "What color is produced by mixing black and white?",
     "options": [
       "Grey",
       "Black",
@@ -1012,13 +1012,13 @@
     "difficulty": "EASY",
     "text": "Who painted the Mona Lisa?",
     "options": [
-      "Leonardo da Vinci ",
+      "Leonardo da Vinci",
       "Pablo Picasso",
-      " Vincent van Gogh",
+      "Vincent van Gogh",
       "Michelangelo"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Leonardo da Vinci .",
+    "explanation": "The correct answer is Leonardo da Vinci.",
     "id": "art_073"
   },
   {
@@ -1029,7 +1029,7 @@
       "Magritte",
       "Matisse",
       "Modigliani",
-      "Munch "
+      "Munch"
     ],
     "correctIndex": 0,
     "explanation": "The correct answer is Magritte.",
@@ -1082,13 +1082,13 @@
     "difficulty": "MEDIUM",
     "text": "What were Marcel Duchamp's readymades?",
     "options": [
-      "utilitarian objects elevated to the status of art",
-      "a series focused on color and light as opposed to line and shape",
-      "paintings with a barely visible outlined square",
-      "a group of identical steel boxes jutting from the wall "
+      "Pointed arch",
+      "Coffered ceilings",
+      "Pedimented facades",
+      "Interior frescoes"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is utilitarian objects elevated to the status of art.",
+    "explanation": "The pointed arch is a hallmark of Gothic architecture.",
     "id": "art_078"
   },
   {
@@ -1096,10 +1096,10 @@
     "difficulty": "EASY",
     "text": "What is a fundamental element of the Gothic style of architecture?",
     "options": [
-      "pointed arch",
-      "coffered ceilings",
-      "façades surmounted by a pediment ",
-      "internal frescoes"
+      "Pointed arch",
+      "Coffered ceilings",
+      "Pedimented facades",
+      "Interior frescoes"
     ],
     "correctIndex": 0,
     "explanation": "The correct answer is pointed arch.",
@@ -1580,5 +1580,1307 @@
     "correctIndex": 0,
     "explanation": "The original Spanish title of this painting is 'La persistencia de la memoria'.",
     "id": "art_113"
+  },
+  {
+    "id": "art_114",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted the Mona Lisa?",
+    "options": [
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Claude Monet",
+      "Raphael"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leonardo's masterpiece in the Louvre."
+  },
+  {
+    "id": "art_115",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Van Gogh is associated with:",
+    "options": [
+      "Post-Impressionism",
+      "Cubism",
+      "Baroque",
+      "Rococo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Van Gogh was a Post-Impressionist."
+  },
+  {
+    "id": "art_116",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Blue + yellow pigment gives:",
+    "options": [
+      "Green",
+      "Orange",
+      "Purple",
+      "Red"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subtractive color mixing."
+  },
+  {
+    "id": "otdb_art_0001",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Under what pseudonym did Stephen King publish five novels between 1977 and 1984?",
+    "options": [
+      "Richard Bachman",
+      "J. D. Robb",
+      "Mark Twain",
+      "Lewis Carroll"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Richard Bachman."
+  },
+  {
+    "id": "otdb_art_0002",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In the novel \"Lord of the Rings\", how many rings of power were given to the race of man?",
+    "options": [
+      "9",
+      "5",
+      "11",
+      "13"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 9."
+  },
+  {
+    "id": "otdb_art_0003",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In \"Little Women\", which of the March sisters married Laurie?",
+    "options": [
+      "Amy",
+      "Beth",
+      "Jo",
+      "Meg"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Amy."
+  },
+  {
+    "id": "otdb_art_0004",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the Magic: The Gathering universe, the Antiquities, Ice Age, and Alliances expansions take place on which continent?",
+    "options": [
+      "Terisiare",
+      "Aerona",
+      "Shiv",
+      "Jamuraa"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Terisiare."
+  },
+  {
+    "id": "otdb_art_0005",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which painting was not made by Vincent Van Gogh?",
+    "options": [
+      "The Ninth Wave",
+      "Café Terrace at Night",
+      "Bedroom In Arles",
+      "Starry Night"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Ninth Wave."
+  },
+  {
+    "id": "otdb_art_0006",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the Beatrix Potter books, what type of animal is Tommy Brock?",
+    "options": [
+      "Badger",
+      "Fox",
+      "Frog",
+      "Rabbit"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Badger."
+  },
+  {
+    "id": "otdb_art_0007",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "How many Harry Potter books are there?",
+    "options": [
+      "7",
+      "8",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 7."
+  },
+  {
+    "id": "otdb_art_0008",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which famous book is sub-titled 'The Modern Prometheus'?",
+    "options": [
+      "Frankenstein",
+      "Dracula",
+      "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "The Legend of Sleepy Hollow"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Frankenstein."
+  },
+  {
+    "id": "otdb_art_0009",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which of the following is the world's best-selling book?",
+    "options": [
+      "The Lord of the Rings",
+      "The Little Prince",
+      "Harry Potter and the Philosopher's Stone",
+      "The Da Vinci Code"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Lord of the Rings."
+  },
+  {
+    "id": "otdb_art_0010",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In which classic novel by Mark Twain did a beggar and Prince of Wales switch clothes, and learn about social class inequality?",
+    "options": [
+      "The Prince and the Pauper",
+      "Hamlet",
+      "Wealthy Boy and the Schmuck",
+      "A Modern Twain Story"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Prince and the Pauper."
+  },
+  {
+    "id": "otdb_art_0011",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who painted the epic mural Guernica?",
+    "options": [
+      "Pablo Picasso",
+      "Francisco Goya",
+      "Leonardo da Vinci",
+      "Henri Matisse"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pablo Picasso."
+  },
+  {
+    "id": "otdb_art_0012",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the book series \"Odd Thomas\", Danny Jessup has what genetic disease?",
+    "options": [
+      "Osteogenesis Imperfecta",
+      "Spinocerebellar ataxia",
+      "Adrenoleukodystrophy",
+      "Cystic Fibrosis"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Osteogenesis Imperfecta."
+  },
+  {
+    "id": "otdb_art_0013",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "J.K. Rowling completed \"Harry Potter and the Deathly Hallows\" in which hotel in Edinburgh, Scotland?",
+    "options": [
+      "The Balmoral",
+      "The Dunstane Hotel",
+      "Hotel Novotel",
+      "Sheraton Grand Hotel & Spa"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Balmoral."
+  },
+  {
+    "id": "otdb_art_0014",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who wrote the children's story \"The Little Match Girl\"?",
+    "options": [
+      "Hans Christian Andersen",
+      "Charles Dickens",
+      "Lewis Carroll",
+      "Oscar Wilde"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hans Christian Andersen."
+  },
+  {
+    "id": "otdb_art_0015",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who wrote the \"A Song of Ice And Fire\" fantasy novel series?",
+    "options": [
+      "George R. R. Martin",
+      "George Lucas",
+      "George Orwell",
+      "George Eliot"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is George R. R. Martin."
+  },
+  {
+    "id": "otdb_art_0016",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What was Sir Handel's original name in \"The Railway Series\" and it's animated counterpart \"Thomas and Friends?\"",
+    "options": [
+      "Falcon",
+      "Eagle",
+      "Kyte",
+      "Swallow"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Falcon."
+  },
+  {
+    "id": "otdb_art_0017",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following is not a work authored by Fyodor Dostoevsky?",
+    "options": [
+      "Anna Karenina",
+      "Notes from the Underground",
+      "Crime and Punishment",
+      "The Brothers Karamazov"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Anna Karenina."
+  },
+  {
+    "id": "otdb_art_0018",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What was the name of the Mysterious Island, in Jules Verne's \"The Mysterious Island\"?",
+    "options": [
+      "Lincoln Island",
+      "Vulcania Island",
+      "Prometheus Island",
+      "Neptune Island"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Lincoln Island."
+  },
+  {
+    "id": "otdb_art_0019",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who wrote \"A Tale of Two Cities\"?",
+    "options": [
+      "Charles Dickens",
+      "Charles Darwin",
+      "Mark Twain",
+      "Roald Dahl"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Charles Dickens."
+  },
+  {
+    "id": "otdb_art_0020",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which is NOT a book in the Harry Potter Series?",
+    "options": [
+      "The House Elf",
+      "The Chamber of Secrets",
+      "The Prisoner of Azkaban",
+      "The Deathly Hallows"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The House Elf."
+  },
+  {
+    "id": "otdb_art_0021",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What was the first ever entry written for the SCP Foundation collaborative writing project?",
+    "options": [
+      "SCP-173",
+      "SCP-001",
+      "SCP-999",
+      "SCP-1459"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is SCP-173."
+  },
+  {
+    "id": "otdb_art_0022",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the \"Harry Potter\" series, what is Headmaster Dumbledore's full name?",
+    "options": [
+      "Albus Percival Wulfric Brian Dumbledore",
+      "Albus Valum Jetta Mobius Dumbledore",
+      "Albus James Lunae Otto Dumbledore",
+      "Albus Valencium Horatio Kul Dumbledore"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Albus Percival Wulfric Brian Dumbledore."
+  },
+  {
+    "id": "otdb_art_0023",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which of these does Charlie NOT read in The Perks of Being a Wallflower?",
+    "options": [
+      "The Grapes of Wrath",
+      "Hamlet",
+      "The Great Gatsby",
+      "Peter Pan"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Grapes of Wrath."
+  },
+  {
+    "id": "otdb_art_0024",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following was the author of \"Username Evie\"?",
+    "options": [
+      "Joe Sugg",
+      "Zoe Sugg",
+      "Joe Weller",
+      "Alfie Deyes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Joe Sugg."
+  },
+  {
+    "id": "otdb_art_0025",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In Michael Crichton's novel \"Jurassic Park\", John Hammond meets his demise at the claws of which dinosaur?",
+    "options": [
+      "Procompsognathus",
+      "Dilophosaurus",
+      "Tyrannosaurus Rex",
+      "Velociraptor"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Procompsognathus."
+  },
+  {
+    "id": "otdb_art_0026",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "George Orwell wrote this book, which is often considered a statement on government oversight.",
+    "options": [
+      "1984",
+      "The Old Man and the Sea",
+      "Catcher and the Rye",
+      "To Kill a Mockingbird"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1984."
+  },
+  {
+    "id": "otdb_art_0027",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who wrote the young adult novel \"The Fault in Our Stars\"?",
+    "options": [
+      "John Green",
+      "Stephenie Meyer",
+      "Suzanne Collins",
+      "Stephen Chbosky"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is John Green."
+  },
+  {
+    "id": "otdb_art_0028",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Who wrote the novel \"Moby-Dick\"?",
+    "options": [
+      "Herman Melville",
+      "William Golding",
+      "William Shakespeare",
+      "J. R. R. Tolkien"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Herman Melville."
+  },
+  {
+    "id": "otdb_art_0029",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Which famous spy novelist wrote the childrens' story \"Chitty-Chitty-Bang-Bang\"?",
+    "options": [
+      "Ian Fleming",
+      "Joseph Conrad",
+      "John Buchan",
+      "Graham Greene"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ian Fleming."
+  },
+  {
+    "id": "otdb_art_0030",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who wrote \"Harry Potter\"?",
+    "options": [
+      "J.K. Rowling",
+      "J.R.R. Tolkien",
+      "Terry Pratchett",
+      "Daniel Radcliffe"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is J.K. Rowling."
+  },
+  {
+    "id": "otdb_art_0031",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the Harry Potter universe, what is Cornelius Fudge's middle name?",
+    "options": [
+      "Oswald",
+      "James",
+      "Harold",
+      "Christopher"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Oswald."
+  },
+  {
+    "id": "otdb_art_0032",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the gang that Ponyboy is a part of in the book, The Outsiders?",
+    "options": [
+      "The Greasers",
+      "The Outsiders",
+      "The Mafia",
+      "The Socs"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Greasers."
+  },
+  {
+    "id": "otdb_art_0033",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
+    "options": [
+      "Holden Caulfield",
+      "Fletcher Christian",
+      "Jay Gatsby",
+      "Randall Flagg"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Holden Caulfield."
+  },
+  {
+    "id": "otdb_art_0034",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which American author was also a budding travel writer and wrote of his adventures with his dog Charley?",
+    "options": [
+      "John Steinbeck",
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway",
+      "William Faulkner"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is John Steinbeck."
+  },
+  {
+    "id": "otdb_art_0035",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who painted the biblical fresco The Creation of Adam?",
+    "options": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Caravaggio",
+      "Rembrandt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Michelangelo."
+  },
+  {
+    "id": "otdb_art_0036",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What's Harry Potter's dad's name?",
+    "options": [
+      "James Potter",
+      "Joey Potter",
+      "Frank Potter",
+      "Hairy Potter Sr."
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is James Potter."
+  },
+  {
+    "id": "otdb_art_0037",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "The novel \"Jane Eyre\" was written by what author?",
+    "options": [
+      "Charlotte Brontë",
+      "Emily Brontë",
+      "Jane Austen",
+      "Louisa May Alcott"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Charlotte Brontë."
+  },
+  {
+    "id": "otdb_art_0038",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In The Lies Of Locke Lamora, what does \"Lamora\" mean in Throne Therin?",
+    "options": [
+      "Shadow",
+      "Thievery",
+      "Justice",
+      "Chaos"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shadow."
+  },
+  {
+    "id": "otdb_art_0039",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is the title of the first Sherlock Holmes book by Arthur Conan Doyle?",
+    "options": [
+      "A Study in Scarlet",
+      "The Sign of the Four",
+      "A Case of Identity",
+      "The Doings of Raffles Haw"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A Study in Scarlet."
+  },
+  {
+    "id": "otdb_art_0040",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What is Hermione Granger's middle name?",
+    "options": [
+      "Jean",
+      "Jane",
+      "Emma",
+      "Jo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jean."
+  },
+  {
+    "id": "otdb_art_0041",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which Russian author wrote the epic novel War and Peace?",
+    "options": [
+      "Leo Tolstoy",
+      "Fyodor Dostoyevsky",
+      "Alexander Pushkin",
+      "Vladimir Nabokov"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Leo Tolstoy."
+  },
+  {
+    "id": "otdb_art_0042",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the book \"The Martian\", how long was Mark Watney trapped on Mars (in Sols)?",
+    "options": [
+      "549 Days",
+      "765 Days",
+      "401 Days",
+      "324 Days"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 549 Days."
+  },
+  {
+    "id": "otdb_art_0043",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "The title of Adolf Hitler's autobiography \"Mein Kampf\" is what when translated to English?",
+    "options": [
+      "My Struggle",
+      "My Hatred",
+      "My Sadness",
+      "My Desire"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is My Struggle."
+  },
+  {
+    "id": "otdb_art_0044",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What year did Albrecht Dürer create the painting \"The Young Hare\"?",
+    "options": [
+      "1502",
+      "1702",
+      "1402",
+      "1602"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1502."
+  },
+  {
+    "id": "otdb_art_0045",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What is the fourth book of the Old Testament?",
+    "options": [
+      "Numbers",
+      "Genesis",
+      "Exodus",
+      "Leviticus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Numbers."
+  },
+  {
+    "id": "otdb_art_0046",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What is the make and model of the tour vehicles in \"Jurassic Park\" (1990)?",
+    "options": [
+      "1989 Toyota Land Cruiser",
+      "1989 Jeep Wrangler YJ Sahar",
+      "1989 Ford Explorer XLT",
+      "Mercedes M-Class"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1989 Toyota Land Cruiser."
+  },
+  {
+    "id": "otdb_art_0047",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which of these book series is by James Patterson?",
+    "options": [
+      "Maximum Ride",
+      "Harry Potter",
+      "The Legend of Xanth",
+      "The Bartemaeus Trilogy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Maximum Ride."
+  },
+  {
+    "id": "otdb_art_0048",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who wrote the 1967 horror novel \"Rosemary's Baby\"?",
+    "options": [
+      "Ira Levin",
+      "Stephen King",
+      "Robert Bloch",
+      "Mary Shelley"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ira Levin."
+  },
+  {
+    "id": "otdb_art_0049",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which novel by John Grisham was conceived on a road trip to Florida while thinking about stolen books with his wife?",
+    "options": [
+      "Camino Island",
+      "Rogue Lawyer",
+      "Gray Mountain",
+      "The Litigators"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Camino Island."
+  },
+  {
+    "id": "otdb_art_0050",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who wrote the novel 'Fear And Loathing In Las Vegas'?",
+    "options": [
+      "Hunter S. Thompson",
+      "F. Scott Fitzgerald",
+      "Henry Miller",
+      "William S. Burroughs"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hunter S. Thompson."
+  },
+  {
+    "id": "otdb_art_0051",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "How many books are in the Chronicles of Narnia series?",
+    "options": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 7."
+  },
+  {
+    "id": "otdb_art_0052",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which fictional English county was the setting for Thomas Hardy's novels?",
+    "options": [
+      "Wessex",
+      "Barsetshire",
+      "Fulchester",
+      "Ambridge"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Wessex."
+  },
+  {
+    "id": "otdb_art_0053",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What was the name of Captain Nemo's submarine in \"20,000 Leagues Under the Sea\"?",
+    "options": [
+      "The Nautilus",
+      "The Neptune",
+      "The Poseidon",
+      "The Atlantis"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Nautilus."
+  },
+  {
+    "id": "otdb_art_0054",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What is Ron Weasley's middle name?",
+    "options": [
+      "Bilius",
+      "Arthur",
+      "John",
+      "Dominic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bilius."
+  },
+  {
+    "id": "otdb_art_0055",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In Romance of the Three Kingdoms, who was not a member of the Peach Garden Oath?",
+    "options": [
+      "Zhao Yun",
+      "Liu Bei",
+      "Guan Yu",
+      "Zhang Fei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Zhao Yun."
+  },
+  {
+    "id": "otdb_art_0056",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What position does Harry Potter play in Quidditch?",
+    "options": [
+      "Seeker",
+      "Beater",
+      "Chaser",
+      "Keeper"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Seeker."
+  },
+  {
+    "id": "otdb_art_0057",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "The novel \"Of Mice And Men\" was written by what author?",
+    "options": [
+      "John Steinbeck",
+      "George Orwell",
+      "Mark Twain",
+      "Harper Lee"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is John Steinbeck."
+  },
+  {
+    "id": "otdb_art_0058",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who was the original author of Frankenstein?",
+    "options": [
+      "Mary Shelley",
+      "Edgar Allan Poe",
+      "Bram Stoker",
+      "H. P. Lovecraft"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mary Shelley."
+  },
+  {
+    "id": "otdb_art_0059",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following authors was not born in England?",
+    "options": [
+      "Arthur Conan Doyle",
+      "Graham Greene",
+      "H G Wells",
+      "Arthur C Clarke"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Arthur Conan Doyle."
+  },
+  {
+    "id": "otdb_art_0060",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What was the pen name of novelist, Mary Ann Evans?",
+    "options": [
+      "George Eliot",
+      "George Orwell",
+      "George Bernard Shaw",
+      "George Saunders"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is George Eliot."
+  },
+  {
+    "id": "otdb_art_0061",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "In the novel 1984, written by George Orwell, what is the name of the totalitarian regime that controls Oceania?",
+    "options": [
+      "INGSOC",
+      "Neo-Bolshevism",
+      "Obliteration of the Self",
+      "Earth Alliance"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is INGSOC."
+  },
+  {
+    "id": "otdb_art_0062",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is the name of Sherlock Holmes's brother?",
+    "options": [
+      "Mycroft Holmes",
+      "Mederi Holmes",
+      "Martin Holmes",
+      "Herbie Hancock Holmes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mycroft Holmes."
+  },
+  {
+    "id": "otdb_art_0063",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the Magic: The Gathering universe, which plane does the Homelands expansion take place in?",
+    "options": [
+      "Ulgrotha",
+      "Bant",
+      "Llanowar",
+      "Tazeem"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ulgrotha."
+  },
+  {
+    "id": "otdb_art_0064",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What is the name of the three headed dog in Harry Potter and the Sorcerer's Stone?",
+    "options": [
+      "Fluffy",
+      "Spike",
+      "Poofy",
+      "Spot"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Fluffy."
+  },
+  {
+    "id": "otdb_art_0065",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Abel Magwitch is a character from which Charles Dickens novel?",
+    "options": [
+      "Great Expectations",
+      "The Pickwick Papers",
+      "Nicholas Nickleby",
+      "Oliver Twist"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Great Expectations."
+  },
+  {
+    "id": "otdb_art_0066",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In which classic novel is there a character named Homer Simpson?",
+    "options": [
+      "The Day of the Locust",
+      "Catch-22",
+      "Of Mice and Men",
+      "A Separate Peace"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Day of the Locust."
+  },
+  {
+    "id": "otdb_art_0067",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In Terry Pratchett's Discworld novel 'Wyrd Sisters', which of these are not one of the three main witches?",
+    "options": [
+      "Winny Hathersham",
+      "Granny Weatherwax",
+      "Nanny Ogg",
+      "Magrat Garlick"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Winny Hathersham."
+  },
+  {
+    "id": "otdb_art_0068",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "Who is the author of the series \"Malazan Book of the Fallen\"?",
+    "options": [
+      "Steven Erikson",
+      "Ian Cameron Esslemont",
+      "George R. R. Martin",
+      "J. R. R. Tolkien"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Steven Erikson."
+  },
+  {
+    "id": "otdb_art_0069",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of Eragon's dragon in \"Eragon\"?",
+    "options": [
+      "Saphira",
+      "Glaedr",
+      "Thorn",
+      "Arya"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Saphira."
+  },
+  {
+    "id": "otdb_art_0070",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "By what name was the author Eric Blair better known?",
+    "options": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ernest Hemingway",
+      "Ray Bradbury"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is George Orwell."
+  },
+  {
+    "id": "otdb_art_0071",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which of the following is NOT a work done by Shakespeare?",
+    "options": [
+      "Trial of Temperance",
+      "Measure For Measure",
+      "Titus Andronicus",
+      "Cymbeline"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Trial of Temperance."
+  },
+  {
+    "id": "otdb_art_0072",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In the \"Harry Potter\" novels, what must a Hogwarts student do to enter the Ravenclaw Common Room?",
+    "options": [
+      "Answer a riddle",
+      "Rhythmically tap barrels with a wand",
+      "Speak a password",
+      "Knock in sequence"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Answer a riddle."
+  },
+  {
+    "id": "otdb_art_0073",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In the \"The Hobbit\", who kills Smaug?",
+    "options": [
+      "Bard",
+      "Bilbo Baggins",
+      "Gandalf the Grey",
+      "Frodo"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bard."
+  },
+  {
+    "id": "otdb_art_0074",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "\"Green Eggs And Ham\" is a book by which author?",
+    "options": [
+      "Dr. Seuss",
+      "Beatrix Potter",
+      "Roald Dahl",
+      "A.A. Milne"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dr. Seuss."
+  },
+  {
+    "id": "otdb_art_0075",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "By what nickname is Jack Dawkins known in the Charles Dickens novel, 'Oliver Twist'?",
+    "options": [
+      "The Artful Dodger",
+      "Fagin",
+      "Bull’s-eye",
+      "Mr. Fang"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Artful Dodger."
+  },
+  {
+    "id": "otdb_art_0076",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In The Lies of Locke Lamora, what title is Locke known by in the criminal world?",
+    "options": [
+      "The Thorn of Camorr",
+      "The Rose of the Marrows",
+      "The Thorn of Emberlain",
+      "The Thorn of the Marrows"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Thorn of Camorr."
+  },
+  {
+    "id": "otdb_art_0077",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "The book \"The Little Prince\" was written by...",
+    "options": [
+      "Antoine de Saint-Exupéry",
+      "Miguel de Cervantes Saavedra",
+      "Jane Austen",
+      "F. Scott Fitzgerald"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Antoine de Saint-Exupéry."
+  },
+  {
+    "id": "otdb_art_0078",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Where does the book \"The Silence of the Lambs\" get its title from?",
+    "options": [
+      "The main character's trauma in childhood",
+      "The relation it has with killing the innocents",
+      "The villain's favourite meal",
+      "The voice of innocent people being shut by the powerful"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The main character's trauma in childhood."
+  },
+  {
+    "id": "otdb_art_0079",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the Harry Potter universe, who does Draco Malfoy end up marrying?",
+    "options": [
+      "Astoria Greengrass",
+      "Pansy Parkinson",
+      "Millicent Bulstrode",
+      "Hermione Granger"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Astoria Greengrass."
+  },
+  {
+    "id": "otdb_art_0080",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "What is the name of the town in which Lily and James Potter are buried?",
+    "options": [
+      "Godric's Hollow",
+      "Hogsmeade",
+      "Ottery St. Catchpole",
+      "Little Hangleton"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Godric's Hollow."
+  },
+  {
+    "id": "otdb_art_0081",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In Alice in Wonderland, what is the name of Alice's kitten?",
+    "options": [
+      "Dinah",
+      "Oscar",
+      "Heath",
+      "Smokey"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dinah."
+  },
+  {
+    "id": "otdb_art_0082",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "In the Lord of the Rings, who is the father of the dwarf Gimli?",
+    "options": [
+      "Gloin",
+      "Thorin Oakenshield",
+      "Bombur",
+      "Dwalin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gloin."
+  },
+  {
+    "id": "otdb_art_0083",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "In the Magic: The Gathering universe, the Fallen Empires expansion takes place on which continent?",
+    "options": [
+      "Sarpadia",
+      "Otaria",
+      "Terisiare",
+      "Shiv"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sarpadia."
+  },
+  {
+    "id": "otdb_art_0084",
+    "category": "art",
+    "difficulty": "HARD",
+    "text": "Which author co-wrote \"The Communist Manifesto\" alongside Karl Marx?",
+    "options": [
+      "Friedrich Engels",
+      "Robert Owen",
+      "Alexander Kerensky",
+      "Paul Lafargue"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Friedrich Engels."
+  },
+  {
+    "id": "otdb_art_0085",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
+    "options": [
+      "A Clash of Kings",
+      "A Dance with Dragons",
+      "A Storm of Swords",
+      "A Feast for Crows"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A Clash of Kings."
+  },
+  {
+    "id": "otdb_art_0086",
+    "category": "art",
+    "difficulty": "EASY",
+    "text": "Who was the author of the 1954 novel, \"Lord of the Flies\"?",
+    "options": [
+      "William Golding",
+      "Stephen King",
+      "F. Scott Fitzgerald",
+      "Hunter Fox"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is William Golding."
+  },
+  {
+    "id": "otdb_art_0087",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "According to The Hitchhiker's Guide to the Galaxy book, the answer to life, the universe and everything else is...",
+    "options": [
+      "42",
+      "Loving everyone around you",
+      "Chocolate",
+      "Death"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 42."
+  },
+  {
+    "id": "otdb_art_0088",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "The book \"Fahrenheit 451\" was written by whom?",
+    "options": [
+      "Ray Bradbury",
+      "R. L. Stine",
+      "Wolfgang Amadeus Mozart",
+      "Stephen King"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ray Bradbury."
+  },
+  {
+    "id": "otdb_art_0089",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What book series published by Jim Butcher follows a wizard in modern day Chicago?",
+    "options": [
+      "The Dresden Files",
+      "A Hat in Time",
+      "The Cinder Spires",
+      "My Life as a Teenage Wizard"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The Dresden Files."
+  },
+  {
+    "id": "otdb_art_0090",
+    "category": "art",
+    "difficulty": "MEDIUM",
+    "text": "What was the last message of the Dolphins in \"The Hitchhiker's Guide to the Galaxy\"?",
+    "options": [
+      "\"So long, and thanks for all the fish.\"",
+      "\"The answer is 42.\"",
+      "\"Land of the brave.\"",
+      "\"Goodbye cruel world!\""
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is \"So long, and thanks for all the fish.\"."
   }
 ]

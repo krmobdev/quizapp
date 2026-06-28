@@ -13,6 +13,7 @@ import com.rustam.quizapp.data.db.InventoryEntity
 import com.rustam.quizapp.data.db.OwnedItemEntity
 import com.rustam.quizapp.data.db.PlayerEntity
 import com.rustam.quizapp.data.db.RecentQuestionsEntity
+import com.rustam.quizapp.data.db.RedeemedPromoEntity
 import com.rustam.quizapp.data.db.StreakEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -42,6 +43,7 @@ data class BackupData(
     val dailyReward: DailyRewardEntity? = null,
     val dailyQuest: DailyQuestEntity? = null,
     val achievements: List<AchievementEntity> = emptyList(),
+    val redeemedPromo: List<RedeemedPromoEntity> = emptyList(),
     val appState: AppStateEntity? = null
 )
 
@@ -73,6 +75,7 @@ class BackupRepository(context: Context) {
                 dailyReward = db.dailyRewardDao().get(),
                 dailyQuest = db.dailyQuestDao().get(),
                 achievements = db.backupDao().allAchievements(),
+                redeemedPromo = db.backupDao().allRedeemedPromo(),
                 appState = db.appStateDao().get()
             )
         )
@@ -101,6 +104,7 @@ class BackupRepository(context: Context) {
             db.backupDao().insertRecent(d.recent)
             db.backupDao().insertCategoryStats(d.categoryStats)
             db.backupDao().insertAchievements(d.achievements)
+            db.backupDao().insertRedeemedPromo(d.redeemedPromo)
             db.streakDao().upsert(d.streak ?: StreakEntity())
             db.dailyRewardDao().upsert(d.dailyReward ?: DailyRewardEntity())
             db.dailyQuestDao().upsert(d.dailyQuest ?: DailyQuestEntity())
@@ -144,6 +148,7 @@ class BackupRepository(context: Context) {
             clearDailyReward()
             clearDailyQuest()
             clearAchievements()
+            clearRedeemedPromo()
             clearAppState()
         }
     }

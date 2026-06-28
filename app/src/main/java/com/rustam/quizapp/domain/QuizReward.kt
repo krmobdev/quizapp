@@ -25,7 +25,9 @@ data class QuizReward(
     val coinLevelMultiplier: Float = 1f,
     /** Player level before and after this reward was granted (for level-up detection). */
     val previousLevel: Int = 1,
-    val newLevel: Int = 1
+    val newLevel: Int = 1,
+    /** Gems (💎) earned from this quiz: a perfect-score bonus plus any level-up payouts. */
+    val gemsEarned: Int = 0
 ) {
     val hasEventBonus: Boolean get() = eventBonus != null
 
@@ -40,9 +42,9 @@ data class AnswerReward(
 )
 
 object RewardCalculator {
-    private const val POINTS_PER_CORRECT = 12
-    private const val COINS_PER_CORRECT = 4
-    private const val PERFECT_BONUS_POINTS = 45
+    private val POINTS_PER_CORRECT = EconomyBalance.scale(12)
+    private val COINS_PER_CORRECT = EconomyBalance.scale(4)
+    private val PERFECT_BONUS_POINTS = EconomyBalance.scale(45)
     private const val SPEED_LOSS_PER_SECOND = 0.1f
 
     fun speedMultiplier(elapsedSeconds: Int): Float =

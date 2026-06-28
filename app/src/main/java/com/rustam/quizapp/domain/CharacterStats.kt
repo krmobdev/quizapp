@@ -11,24 +11,38 @@ data class CharacterStats(
     val wisdom: Int = 0,
     val endurance: Int = 0,
     val focus: Int = 0,
-    val charisma: Int = 0
+    val charisma: Int = 0,
+    /** Knowledge: flat XP added per correct answer (scales with quiz length and accuracy). */
+    val knowledge: Int = 0,
+    /** Wealth: flat coins added per correct answer. */
+    val wealth: Int = 0,
+    /** Precision: extra Critical Success chance, stacking with Luck and Charisma. */
+    val precision: Int = 0,
+    /** Insight: extra XP percent, stacking with Strength. */
+    val insight: Int = 0
 ) {
-    val xpBonusPercent: Int get() = strength * 2
-    val coinBonusPercent: Int get() = intelligence * 2
-    val extraTimeSeconds: Float get() = agility * 0.5f
+    val xpBonusPercent: Int get() = strength * 3 + insight * 2
+    val coinBonusPercent: Int get() = intelligence * 3
+    val extraTimeSeconds: Float get() = agility * 0.6f
     val doubleRewardChancePercent: Int get() = luck * 2
 
     /** Wisdom: flat XP added to every finished quiz. */
-    val flatXpBonus: Int get() = wisdom * 3
+    val flatXpBonus: Int get() = wisdom * 5
 
     /** Endurance: flat coins added to every finished quiz. */
-    val flatCoinBonus: Int get() = endurance
+    val flatCoinBonus: Int get() = endurance * 2
 
-    /** Charisma: extra Critical Success chance, stacking on top of [doubleRewardChancePercent]. */
-    val critChanceBonusPercent: Int get() = charisma
+    /** Charisma + Precision: extra Critical Success chance on top of [doubleRewardChancePercent]. */
+    val critChanceBonusPercent: Int get() = charisma * 2 + precision * 2
 
     /** Focus: reward multiplier applied on a Critical Success (base x2, sharpened by Focus). */
-    val critMultiplier: Float get() = 2f + focus * 0.1f
+    val critMultiplier: Float get() = 2f + focus * 0.15f
+
+    /** Knowledge: flat XP granted for each correct answer in the quiz. */
+    val flatXpPerCorrect: Int get() = knowledge * 2
+
+    /** Wealth: flat coins granted for each correct answer in the quiz. */
+    val flatCoinPerCorrect: Int get() = wealth
 }
 
 /**
@@ -41,14 +55,21 @@ object CharacterLevelCalculator {
      * Current level cap. XP beyond [lifetimeCap] is stored in [PlayerEntity.bankedLifetimePoints]
      * (hidden). Raising this constant automatically credits banked XP toward the new cap.
      */
-    const val MAX_LEVEL = 240
+    const val MAX_LEVEL = 1024
 
     /** Maximum value any single character stat can be upgraded to. */
     const val MAX_STAT = 50
 
     /**
+     * Upper bound on the combined Critical Success chance (Luck + Charisma + Precision + Fortune
+     * skill + Fortune talents). Keeps the crit roll a gamble even at full investment instead of a
+     * guaranteed double.
+     */
+    const val MAX_CRIT_CHANCE_PERCENT = 90f
+
+    /**
      * Cumulative lifetime XP to reach level L: [XP_PER_LEVEL_UNIT] × L × (L − 1).
-     * Level 240 ≈ 1 261 920 XP — aligns with maxing stats, Mastery Tree and Talent Tree at average pace.
+     * Level 1024 ≈ 23 046 144 XP at the current unit.
      */
     const val XP_PER_LEVEL_UNIT = 22
 
@@ -108,6 +129,16 @@ object CharacterLevelCalculator {
         1f + (level - 1).coerceAtLeast(0) * COIN_BONUS_PER_LEVEL +
             (level - HIGH_LEVEL_THRESHOLD).coerceAtLeast(0) * HIGH_LEVEL_COIN_BONUS_PER_LEVEL
 
+    /**
+     * Multiplier applied to daily quest rewards (coins + XP). Grows at 4% per level — slower than
+     * the quiz multiplier (7.5%) because quests are guaranteed completions without a skill element.
+     * Level 1 → ×1.0, Level 10 → ×1.36, Level 25 → ×1.96, Level 50 → ×2.96, Level 100 → ×4.96.
+     */
+    const val QUEST_BONUS_PER_LEVEL = 0.04f
+
+    fun questRewardMultiplier(level: Int): Float =
+        1f + (level - 1).coerceAtLeast(0) * QUEST_BONUS_PER_LEVEL
+
     fun getLevelProgress(lifetimePoints: Int, bankedLifetimePoints: Int = 0): LevelProgress {
         val effective = effectiveLifetimePoints(lifetimePoints, bankedLifetimePoints)
         val currentLevel = calculateLevel(lifetimePoints, bankedLifetimePoints)
@@ -163,7 +194,27 @@ object CharacterLevelCalculator {
             level <= 199 -> "Титан эрудиции"
             level <= 219 -> "Вечный оракул"
             level <= 239 -> "Хранитель истины"
-            else -> "Абсолют"
+            level <= 279 -> "Абсолют"
+            level <= 319 -> "Верховный мудрец"
+            level <= 359 -> "Повелитель знаний"
+            level <= 399 -> "Создатель истин"
+            level <= 439 -> "Вечный архивариус"
+            level <= 479 -> "Хранитель вечности"
+            level <= 519 -> "Покоритель миров"
+            level <= 559 -> "Суверен разума"
+            level <= 599 -> "Божество эрудиции"
+            level <= 639 -> "Архитектор реальности"
+            level <= 679 -> "Властелин хроноса"
+            level <= 719 -> "Оракул бесконечности"
+            level <= 759 -> "Титан аксиом"
+            level <= 799 -> "Первопричина"
+            level <= 839 -> "Небесный картограф"
+            level <= 879 -> "Повелитель парадоксов"
+            level <= 919 -> "Созвездие разума"
+            level <= 959 -> "Космический архонт"
+            level <= 999 -> "Вечный первоисточник"
+            level <= 1023 -> "Апофеоз знания"
+            else -> "Омниарх"
         }
     }
 
@@ -193,12 +244,37 @@ object CharacterLevelCalculator {
             level <= 199 -> "Erudition Titan"
             level <= 219 -> "Eternal Oracle"
             level <= 239 -> "Truth Keeper"
-            else -> "Absolute"
+            level <= 279 -> "Absolute"
+            level <= 319 -> "Sovereign Sage"
+            level <= 359 -> "Knowledge Lord"
+            level <= 399 -> "Truth Forger"
+            level <= 439 -> "Eternal Archivist"
+            level <= 479 -> "Eternity Keeper"
+            level <= 519 -> "World Conqueror"
+            level <= 559 -> "Mind Sovereign"
+            level <= 599 -> "Erudition Deity"
+            level <= 639 -> "Reality Architect"
+            level <= 679 -> "Chronos Lord"
+            level <= 719 -> "Infinity Oracle"
+            level <= 759 -> "Axiom Titan"
+            level <= 799 -> "Prime Cause"
+            level <= 839 -> "Celestial Cartographer"
+            level <= 879 -> "Paradox Ruler"
+            level <= 919 -> "Constellation of Mind"
+            level <= 959 -> "Cosmic Archon"
+            level <= 999 -> "Eternal Wellspring"
+            level <= 1023 -> "Apotheosis of Knowledge"
+            else -> "Omniarch"
         }
     }
 
-    /** Free-XP cost to raise a stat from [currentValue] to the next point. */
-    fun statUpgradeCost(currentValue: Int): Int = 50 + currentValue * 18
+    /**
+     * Free-XP cost to raise a stat from [currentValue] to the next point. Cheaper and gentler than
+     * the old curve so early upgrades feel rewarding; the deep sink now comes from breadth
+     * (12 characteristics + the Mastery and Talent trees) rather than punishing per-point cost.
+     */
+    fun statUpgradeCost(currentValue: Int): Int =
+        EconomyBalance.scale(35 + currentValue * 9)
 }
 
 data class LevelProgress(

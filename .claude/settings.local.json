@@ -32,7 +32,9 @@
       "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 12)",
       "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain -q)",
       "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain -q 2>&1 | Select-Object -Last 40)",
-      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 30)"
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:assembleDebug --console=plain 2>&1 | Select-Object -Last 30)",
+      "PowerShell($env:JAVA_HOME = \"C:\\\\Program Files\\\\Android\\\\openjdk\\\\jdk-21.0.8\"; .\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1 | Select-Object -Last 80)",
+      "Bash(python scripts/validate_questions.py)"
     ]
   }
 }

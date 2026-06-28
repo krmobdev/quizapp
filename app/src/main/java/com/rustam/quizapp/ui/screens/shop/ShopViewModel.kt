@@ -71,12 +71,16 @@ data class BoostUi(
 
 data class ShopUiState(
     val coins: Int = 0,
+    val gems: Int = 0,
     val avatars: List<AvatarUi> = emptyList(),
+    val premiumAvatars: List<AvatarUi> = emptyList(),
     val themes: List<ThemeUi> = emptyList(),
+    val premiumThemes: List<ThemeUi> = emptyList(),
     val boosters: List<BoosterUi> = emptyList(),
     val powerUps: List<PowerUpUi> = emptyList(),
     val boosts: List<BoostUi> = emptyList(),
     val titles: List<TitleUi> = emptyList(),
+    val premiumTitles: List<TitleUi> = emptyList(),
     val streakFreezeCount: Int = 0,
     val streakFreezePrice: Int = ShopCatalog.STREAK_FREEZE_PRICE,
     val deals: List<ShopDealState> = emptyList()
@@ -142,6 +146,29 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    /** Buys a premium (gem-priced) avatar if not owned, otherwise equips it. */
+    fun onPremiumAvatarClick(avatar: AvatarUi) {
+        viewModelScope.launch {
+            if (avatar.owned) {
+                playerRepository.equipAvatar(avatar.item.id)
+            } else if (playerRepository.purchaseWithGems(avatar.item.id, avatar.item.priceGems)) {
+                playerRepository.equipAvatar(avatar.item.id)
+            }
+        }
+    }
+
+    /** Buys a premium (gem-priced) title, equips an owned one, or unequips the equipped one. */
+    fun onPremiumTitleClick(title: TitleUi) {
+        viewModelScope.launch {
+            when {
+                title.equipped -> playerRepository.equipTitle(null)
+                title.owned -> playerRepository.equipTitle(title.item.id)
+                playerRepository.purchaseWithGems(title.item.id, title.item.priceGems) ->
+                    playerRepository.equipTitle(title.item.id)
+            }
+        }
+    }
+
     /** Buys the theme if not owned, otherwise equips it. */
     fun onThemeClick(theme: ThemeUi) {
         viewModelScope.launch {
@@ -149,6 +176,37 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
                 playerRepository.equipTheme(theme.item.id)
             } else if (playerRepository.purchase(theme.item.id, theme.item.priceCoins)) {
                 playerRepository.equipTheme(theme.item.id)
+            }
+        }
+    }
+
+    /** Buys a premium (gem-priced) theme if not owned, otherwise equips it. */
+    fun onPremiumThemeClick(theme: ThemeUi) {
+        viewModelScope.launch {
+            if (theme.owned) {
+                playerRepository.equipTheme(theme.item.id)
+            } else if (playerRepository.purchaseWithGems(theme.item.id, theme.item.priceGems)) {
+                playerRepository.equipTheme(theme.item.id)
+            }
+        }
+    }
+
+    /** Opens one Mythic Chest (gem-priced) if affordable, surfacing the rolled reward. */
+    fun onOpenMythicChest() {
+        viewModelScope.launch {
+            val result = playerRepository.openMythicChest()
+            if (result != null) {
+                soundManager.play(SoundType.COMPLETE)
+                _lootResult.value = result
+            }
+        }
+    }
+
+    /** Buys one gem bundle (gem→coin exchange or a premium consumable pack). */
+    fun onGemBundleBuy(bundleId: String) {
+        viewModelScope.launch {
+            if (playerRepository.purchaseGemBundle(bundleId)) {
+                soundManager.play(SoundType.CLICK)
             }
         }
     }
@@ -253,6 +311,7 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
         freezeCount: Int
     ): ShopUiState = ShopUiState(
         coins = state.coins,
+        gems = state.gems,
         streakFreezeCount = freezeCount,
         boosters = ShopCatalog.boosters.map { item ->
             BoosterUi(item = item, owned = inventory[item.id] ?: 0)
@@ -284,7 +343,29 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
                 equipped = item.id == state.equippedAvatarId
             )
         },
+        premiumAvatars = ShopCatalog.premiumAvatars.map { item ->
+            AvatarUi(
+                item = item,
+                owned = item.id in state.ownedItemIds,
+                equipped = item.id == state.equippedAvatarId
+            )
+        },
+        premiumTitles = ShopCatalog.premiumTitles.map { item ->
+            TitleUi(
+                item = item,
+                owned = item.id in state.ownedItemIds,
+                equipped = item.id == state.equippedTitleId
+            )
+        },
         themes = ShopCatalog.themes.map { item ->
+            ThemeUi(
+                item = item,
+                accent = AccentTheme.fromId(item.id),
+                owned = item.id in state.ownedItemIds,
+                equipped = item.id == state.equippedThemeId
+            )
+        },
+        premiumThemes = ShopCatalog.premiumThemes.map { item ->
             ThemeUi(
                 item = item,
                 accent = AccentTheme.fromId(item.id),

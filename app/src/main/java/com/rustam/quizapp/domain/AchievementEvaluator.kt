@@ -41,7 +41,11 @@ class AchievementEvaluator(
                 charStats.wisdom,
                 charStats.endurance,
                 charStats.focus,
-                charStats.charisma
+                charStats.charisma,
+                charStats.knowledge,
+                charStats.wealth,
+                charStats.precision,
+                charStats.insight
             ).any { it >= CharacterLevelCalculator.MAX_STAT },
             hasPerfectQuiz = stats.categories.any { it.bestScorePercent >= 100 },
             categoriesPlayed = stats.categories.count { it.quizzesCompleted > 0 },
@@ -51,6 +55,13 @@ class AchievementEvaluator(
         val newlyUnlocked = achievementsRepository.unlockNew(metrics)
         val coins = newlyUnlocked.sumOf { it.rewardCoins }
         if (coins > 0) playerRepository.addCoins(coins)
+        // Each achievement also grants a few gems (the rare currency).
+        val gems = newlyUnlocked.size * GEMS_PER_ACHIEVEMENT
+        if (gems > 0) playerRepository.addGems(gems)
         return newlyUnlocked
+    }
+
+    private companion object {
+        const val GEMS_PER_ACHIEVEMENT = 5
     }
 }

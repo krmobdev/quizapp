@@ -44,6 +44,7 @@ fun MainShell(
         questionCount: Int,
         adaptive: Boolean
     ) -> Unit,
+    onOpenMillionaire: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     var selectedTab by rememberSaveable { mutableStateOf(MainTab.Home) }
@@ -125,6 +126,8 @@ fun MainShell(
             when (selectedTab) {
                 MainTab.Home -> HomeScreen(
                     onStartQuiz = onStartQuiz,
+                    onOpenShop = { selectedTab = MainTab.Shop },
+                    onOpenMillionaire = onOpenMillionaire,
                     onOverlayModeChange = { hideBottomBar = it },
                     modifier = Modifier.padding(innerPadding)
                 )

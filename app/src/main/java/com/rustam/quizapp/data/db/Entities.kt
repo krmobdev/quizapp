@@ -147,6 +147,13 @@ data class AchievementEntity(
     @PrimaryKey val id: String
 )
 
+/** A promo code that has been redeemed on this device (one-time guard). */
+@Serializable
+@Entity(tableName = "redeemed_promo")
+data class RedeemedPromoEntity(
+    @PrimaryKey val code: String
+)
+
 /**
  * Per-day progress for the daily quests (single row). [day] is the epoch day the counters belong
  * to; when a quiz is recorded on a new day the counters and [claimedMask] reset. [claimedMask] is a

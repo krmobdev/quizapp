@@ -58,6 +58,7 @@ data class PlayerUiState(
     val avatarEmoji: String = "🙂",
     val points: Int = 0,
     val coins: Int = 0,
+    val gems: Int = 0,
     val events: List<QuizEventProgress> = emptyList(),
     val totalQuizzes: Int = 0,
     val averageAccuracyPercent: Int? = null,
@@ -178,7 +179,9 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             hasMaxedStat = listOf(
                 profile.stats.strength, profile.stats.intelligence, profile.stats.agility,
                 profile.stats.luck, profile.stats.wisdom, profile.stats.endurance,
-                profile.stats.focus, profile.stats.charisma
+                profile.stats.focus, profile.stats.charisma,
+                profile.stats.knowledge, profile.stats.wealth,
+                profile.stats.precision, profile.stats.insight
             ).any { it >= com.rustam.quizapp.domain.CharacterLevelCalculator.MAX_STAT },
             hasPerfectQuiz = stats.categories.any { it.bestScorePercent >= 100 },
             categoriesPlayed = stats.categories.count { it.quizzesCompleted > 0 },
@@ -204,6 +207,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             avatarEmoji = profile.avatarEmoji,
             points = profile.points,
             coins = profile.coins,
+            gems = profile.gems,
             events = profile.eventProgress,
             totalQuizzes = stats.totalQuizzesCompleted,
             averageAccuracyPercent = averageAccuracy,

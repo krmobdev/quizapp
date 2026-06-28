@@ -51,6 +51,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -84,6 +87,7 @@ import com.rustam.quizapp.ui.localization.labelRes
 import com.rustam.quizapp.ui.localization.subtitleRes
 import com.rustam.quizapp.ui.screens.season.SeasonPassDialog
 import com.rustam.quizapp.ui.theme.QuizappTheme
+import kotlin.math.roundToInt
 
 @Composable
 fun HomeScreen(
@@ -95,6 +99,8 @@ fun HomeScreen(
         questionCount: Int,
         adaptive: Boolean
     ) -> Unit,
+    onOpenShop: () -> Unit = {},
+    onOpenMillionaire: () -> Unit = {},
     onOverlayModeChange: (Boolean) -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = viewModel()
@@ -110,6 +116,8 @@ fun HomeScreen(
         onBack = viewModel::clearSelection,
         onClaimDaily = viewModel::claimDailyReward,
         onClaimQuest = viewModel::claimDailyQuest,
+        onOpenShop = onOpenShop,
+        onOpenMillionaire = onOpenMillionaire,
         onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount, adaptive ->
             viewModel.playClick()
             onStartQuiz(categoryId, difficulty, event, timeLimit, questionCount, adaptive)
@@ -127,6 +135,8 @@ private fun HomeContent(
     onBack: () -> Unit,
     onClaimDaily: () -> Unit,
     onClaimQuest: (Int) -> Unit,
+    onOpenShop: () -> Unit,
+    onOpenMillionaire: () -> Unit,
     onStartQuiz: (
         categoryId: String,
         difficulty: Difficulty?,
@@ -183,6 +193,9 @@ private fun HomeContent(
                 dailyQuests = state.dailyQuests,
                 seasonLevel = state.seasonLevel,
                 seasonDaysLeft = state.seasonDaysLeft,
+                playerLevel = state.playerLevel,
+                onOpenShop = onOpenShop,
+                onOpenMillionaire = onOpenMillionaire,
                 onClaimDaily = onClaimDaily,
                 onClaimQuest = onClaimQuest,
                 onCategoryClick = onCategoryClick,
@@ -233,6 +246,9 @@ private fun HomeScrollContent(
     dailyQuests: List<DailyChallengeProgress>,
     seasonLevel: Int,
     seasonDaysLeft: Int,
+    playerLevel: Int,
+    onOpenShop: () -> Unit,
+    onOpenMillionaire: () -> Unit,
     onClaimDaily: () -> Unit,
     onClaimQuest: (Int) -> Unit,
     onCategoryClick: (Category) -> Unit,
@@ -248,7 +264,18 @@ private fun HomeScrollContent(
                 streak = streak,
                 coinBoostLeft = coinBoostLeft,
                 xpBoostLeft = xpBoostLeft,
+                seasonLevel = seasonLevel,
+                seasonDaysLeft = seasonDaysLeft,
+                onOpenShop = onOpenShop,
                 modifier = Modifier.fillMaxWidth()
+            )
+        }
+        item {
+            MillionaireEntryCard(
+                onClick = onOpenMillionaire,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 4.dp)
             )
         }
         if (dailyReward.canClaim) {
@@ -275,6 +302,7 @@ private fun HomeScrollContent(
             itemsIndexed(dailyQuests, key = { _, quest -> quest.challenge.id }) { index, quest ->
                 DailyQuestCard(
                     quest = quest,
+                    playerLevel = playerLevel,
                     onClaim = { onClaimQuest(index) },
                     modifier = Modifier
                         .fillMaxWidth()
@@ -290,15 +318,6 @@ private fun HomeScrollContent(
                     modifier = Modifier.padding(top = 4.dp, bottom = 8.dp)
                 )
             }
-        }
-        item {
-            SeasonPassHomeChip(
-                level = seasonLevel,
-                daysLeft = seasonDaysLeft,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp, vertical = 4.dp)
-            )
         }
         item {
             Text(
@@ -333,6 +352,45 @@ private fun HomeScrollContent(
 }
 
 @Composable
+private fun MillionaireEntryCard(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val colors = rememberAppThemeColors()
+    val textColor = appTextColor()
+    GlassCard(modifier = modifier, colors = colors, onClick = onClick) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+            Text(text = "💰", fontSize = 34.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(R.string.millionaire_home_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(R.string.millionaire_home_desc),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.75f)
+                )
+            }
+            Text(
+                text = stringResource(R.string.millionaire_buy),
+                style = MaterialTheme.typography.titleSmall,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary
+            )
+        }
+    }
+}
+
+@Composable
 private fun DailyRewardCard(
     reward: com.rustam.quizapp.data.DailyRewardState,
     onClaim: () -> Unit,
@@ -361,6 +419,14 @@ private fun DailyRewardCard(
                     style = MaterialTheme.typography.bodySmall,
                     color = textColor.copy(alpha = 0.75f)
                 )
+                if (reward.rewardGems > 0) {
+                    Text(
+                        text = stringResource(R.string.daily_reward_gems, reward.rewardGems),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
             }
             Button(
                 onClick = onClaim,
@@ -382,12 +448,20 @@ private fun DailyRewardCard(
 @Composable
 private fun DailyQuestCard(
     quest: DailyChallengeProgress,
+    playerLevel: Int,
     onClaim: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
     val challenge = quest.challenge
+    val questMult = com.rustam.quizapp.domain.CharacterLevelCalculator.questRewardMultiplier(playerLevel)
+    // Round the same way HomeViewModel.claimDailyQuest credits the reward, so the preview
+    // matches the coins/XP actually granted (toInt would truncate and show one less).
+    val scaledCoins = (challenge.rewardCoins * questMult).roundToInt()
+    val scaledXp = (challenge.rewardXp * questMult).roundToInt()
+    val isScaled = playerLevel > 1
+
     GlassCard(modifier = modifier, colors = colors) {
         Row(
             modifier = Modifier
@@ -418,19 +492,34 @@ private fun DailyQuestCard(
                 )
                 Row(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.Bottom
                 ) {
                     Text(
                         text = stringResource(R.string.player_fraction, quest.current, challenge.target),
                         style = MaterialTheme.typography.bodySmall,
                         color = textColor.copy(alpha = 0.75f)
                     )
-                    Text(
-                        text = stringResource(R.string.quest_reward, challenge.rewardCoins, challenge.rewardXp),
-                        style = MaterialTheme.typography.bodySmall,
-                        fontWeight = FontWeight.SemiBold,
-                        color = MaterialTheme.colorScheme.primary
-                    )
+                    Column(horizontalAlignment = Alignment.End) {
+                        Text(
+                            text = stringResource(R.string.quest_reward, scaledCoins, scaledXp),
+                            style = MaterialTheme.typography.bodySmall,
+                            fontWeight = FontWeight.SemiBold,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                        if (isScaled) {
+                            Text(
+                                text = stringResource(
+                                    R.string.quest_level_bonus,
+                                    playerLevel,
+                                    "×${"%.2f".format(questMult)}"
+                                ),
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.tertiary,
+                                fontSize = 10.sp
+                            )
+                        }
+                    }
                 }
             }
             when {
@@ -467,17 +556,25 @@ private fun HomeHeroHeader(
     streak: Int,
     coinBoostLeft: Int,
     xpBoostLeft: Int,
+    seasonLevel: Int,
+    seasonDaysLeft: Int,
+    onOpenShop: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val quote = rememberDailyQuote()
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
+    var showSeasonPass by remember { mutableStateOf(false) }
+
+    if (showSeasonPass) {
+        SeasonPassDialog(onDismiss = { showSeasonPass = false })
+    }
 
     Column(
         modifier = modifier
-            .padding(horizontal = 24.dp)
+            .padding(horizontal = 20.dp)
             .padding(top = topInset + 8.dp, bottom = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(6.dp)
+        verticalArrangement = Arrangement.spacedBy(10.dp)
     ) {
         Text(
             text = stringResource(R.string.home_title),
@@ -505,6 +602,65 @@ private fun HomeHeroHeader(
                     BoostChip(
                         text = stringResource(R.string.boost_active_xp, xpBoostLeft),
                         modifier = Modifier.weight(1f)
+                    )
+                }
+            }
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            Button(
+                onClick = { showSeasonPass = true },
+                modifier = Modifier.weight(1f),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary,
+                    contentColor = MaterialTheme.colorScheme.onPrimary
+                ),
+                shape = AppShapes.Button
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.padding(vertical = 4.dp)
+                ) {
+                    Text(text = "🏆", fontSize = 20.sp)
+                    Text(
+                        text = stringResource(R.string.season_pass_title),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 13.sp,
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        text = stringResource(R.string.season_pass_home_card, seasonLevel, seasonDaysLeft),
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center
+                    )
+                }
+            }
+            Button(
+                onClick = onOpenShop,
+                modifier = Modifier.weight(1f),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.tertiary,
+                    contentColor = MaterialTheme.colorScheme.onTertiary
+                ),
+                shape = AppShapes.Button
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.padding(vertical = 4.dp)
+                ) {
+                    Text(text = "🏷️", fontSize = 20.sp)
+                    Text(
+                        text = stringResource(R.string.home_shop_deals_btn),
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 13.sp,
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        text = stringResource(R.string.home_shop_deals_hint),
+                        fontSize = 11.sp,
+                        textAlign = TextAlign.Center
                     )
                 }
             }
@@ -959,59 +1115,6 @@ private fun DifficultyOptionCard(
     }
 }
 
-/**
- * Compact chip shown on the Home screen that opens the Season Pass dialog on tap.
- */
-@Composable
-private fun SeasonPassHomeChip(
-    level: Int,
-    daysLeft: Int,
-    modifier: Modifier = Modifier
-) {
-    val colors = rememberAppThemeColors()
-    val textColor = appTextColor()
-    var showDialog by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf(false) }
-
-    if (showDialog) {
-        SeasonPassDialog(onDismiss = { showDialog = false })
-    }
-
-    GlassCard(
-        modifier = modifier,
-        colors = colors,
-        onClick = { showDialog = true }
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 12.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
-            Text(text = "🏆", fontSize = 26.sp)
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = stringResource(R.string.season_pass_title),
-                    style = MaterialTheme.typography.titleSmall,
-                    fontWeight = FontWeight.SemiBold,
-                    color = textColor
-                )
-                Text(
-                    text = stringResource(R.string.season_pass_home_card, level, daysLeft),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = textColor.copy(alpha = 0.7f)
-                )
-            }
-            Icon(
-                imageVector = androidx.compose.material.icons.Icons.Rounded.CheckCircle,
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.7f),
-                modifier = Modifier.size(20.dp)
-            )
-        }
-    }
-}
-
 @Preview(showBackground = true)
 @Composable
 private fun HomeContentCategoriesPreview() {
@@ -1025,6 +1128,8 @@ private fun HomeContentCategoriesPreview() {
             onBack = {},
             onClaimDaily = {},
             onClaimQuest = {},
+            onOpenShop = {},
+            onOpenMillionaire = {},
             onStartQuiz = { _, _, _, _, _, _ -> }
         )
     }
@@ -1045,6 +1150,8 @@ private fun HomeContentDifficultyDarkPreview() {
             onBack = {},
             onClaimDaily = {},
             onClaimQuest = {},
+            onOpenShop = {},
+            onOpenMillionaire = {},
             onStartQuiz = { _, _, _, _, _, _ -> }
         )
     }

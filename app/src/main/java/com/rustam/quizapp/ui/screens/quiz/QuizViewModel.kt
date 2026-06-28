@@ -392,7 +392,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private fun powerUpId(type: PowerUpType): String? =
-        ShopCatalog.powerUps.find { it.type == type }?.id
+        ShopCatalog.powerUpsOfType(type).firstOrNull { (powerUpCounts[it.id] ?: 0) > 0 }?.id
 
     /** Persists the current run and invokes [onDone] when written. */
     fun saveAndExit(onDone: () -> Unit) {

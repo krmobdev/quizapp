@@ -318,7 +318,7 @@
       "Conductivity"
     ],
     "correctIndex": 0,
-    "explanation": "pH measures how acidic or alkaline a solution is.",
+    "explanation": "PH measures how acidic or alkaline a solution is.",
     "id": "chem_023"
   },
   {
@@ -840,18 +840,18 @@
     "id": "chem_060"
   },
   {
+    "id": "chem_061",
     "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "Which of these animals belongs in class Chondrichthyes?",
+    "difficulty": "MEDIUM",
+    "text": "Which class includes hydrocarbons with triple C≡C bonds?",
     "options": [
-      "Great white shark",
-      "Octopus",
-      "Killer whale",
-      "Catfish"
+      "Alkynes",
+      "Alkenes",
+      "Alkanes",
+      "Alcohols"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Great white shark.",
-    "id": "chem_061"
+    "explanation": "Alkynes contain a triple bond between carbon atoms."
   },
   {
     "category": "chemistry",
@@ -924,18 +924,18 @@
     "id": "chem_066"
   },
   {
+    "id": "chem_067",
     "category": "chemistry",
-    "difficulty": "MEDIUM",
-    "text": "What part of the body produces insulin?",
+    "difficulty": "EASY",
+    "text": "Which gas is required for most combustion processes?",
     "options": [
-      "Pancreas",
-      "Kidney",
-      "Liver",
-      "Stomach"
+      "Oxygen",
+      "Nitrogen",
+      "Argon",
+      "Helium"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Pancreas.",
-    "id": "chem_067"
+    "explanation": "Oxygen acts as the oxidizer in combustion."
   },
   {
     "category": "chemistry",
@@ -952,23 +952,23 @@
     "id": "chem_068"
   },
   {
+    "id": "chem_069",
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "What cell organelle is known as \"the powerhouse of the cell?\"",
+    "text": "What is Avogadro's number (approximately)?",
     "options": [
-      "Mitochondria",
-      "Nucleus",
-      "Golgi apparatus",
-      "Endoplasmic reticulum"
+      "6.022×10²³",
+      "3.14×10²³",
+      "9.81×10²³",
+      "1.602×10²³"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Mitochondria.",
-    "id": "chem_069"
+    "explanation": "One mole contains 6.022×10²³ particles."
   },
   {
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "What is the atomic number of Uranium ",
+    "text": "What is the atomic number of uranium?",
     "options": [
       "92",
       "235",
@@ -1010,7 +1010,7 @@
   {
     "category": "chemistry",
     "difficulty": "HARD",
-    "text": "How many objects are equivalent to one mole?",
+    "text": "How many objects are in one mole?",
     "options": [
       "6.022 x 10^23",
       "6.002 x 10^22",
@@ -1018,7 +1018,7 @@
       "6.002 x 10^23"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is 6.022 x 10^23.",
+    "explanation": "One mole contains 6.022×10²³ particles (Avogadro's number).",
     "id": "chem_073"
   },
   {
@@ -1036,45 +1036,45 @@
     "id": "chem_074"
   },
   {
+    "id": "chem_075",
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "The humerus, paired radius, and ulna come together to form what joint?",
+    "text": "Which element has the lowest electronegativity?",
     "options": [
-      "Elbow",
-      "Knee",
-      "Sholder",
-      "Ankle"
+      "Cesium",
+      "Fluorine",
+      "Oxygen",
+      "Chlorine"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Elbow.",
-    "id": "chem_075"
+    "explanation": "Cesium is the most electropositive alkali metal."
   },
   {
+    "id": "chem_076",
     "category": "chemistry",
-    "difficulty": "MEDIUM",
-    "text": "What does CPR, the emergency procedure to assist someone who has suffered cardiac arrest, stand for?",
+    "difficulty": "EASY",
+    "text": "Which indicator turns pink in alkaline solution?",
     "options": [
-      "Cardiopulmonary resuscitation",
-      "Chronic pain relief",
-      "Cancer pain release",
-      "Contraceptive prevalence rate"
+      "Phenolphthalein",
+      "Methyl orange",
+      "Litmus only blue",
+      "Iodine"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Cardiopulmonary resuscitation.",
-    "id": "chem_076"
+    "explanation": "Phenolphthalein is colorless in acid and pink in base."
   },
   {
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Which of the following plastic is commonly used for window frames, gutters and drain pipes?",
     "options": [
-      "Polyvinylchloride (PVC) ",
+      "Polyvinylchloride (PVC)",
       "Polyethylene (PE)",
       "Polypropylene (PP)",
       "Polystyrene (PS)"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Polyvinylchloride (PVC) .",
+    "explanation": "The correct answer is Polyvinylchloride (PVC).",
     "id": "chem_077"
   },
   {
@@ -1092,18 +1092,18 @@
     "id": "chem_078"
   },
   {
+    "id": "chem_079",
     "category": "chemistry",
-    "difficulty": "MEDIUM",
-    "text": "How many baby/milk teeth does a human child have in total?",
+    "difficulty": "HARD",
+    "text": "Which element forms the diatomic gas H₂?",
     "options": [
-      "20",
-      "10",
-      "15",
-      "25"
+      "Hydrogen",
+      "Helium",
+      "Nitrogen",
+      "Oxygen"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is 20.",
-    "id": "chem_079"
+    "explanation": "Molecular hydrogen is H₂."
   },
   {
     "category": "chemistry",
@@ -1120,32 +1120,32 @@
     "id": "chem_080"
   },
   {
+    "id": "chem_081",
     "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
+    "difficulty": "MEDIUM",
+    "text": "What process changes a gas into a liquid?",
     "options": [
-      "Cretaceous-Paleogene",
-      "Triassic–Jurassic",
-      "Permian–Triassic",
-      "Ordovician–Silurian"
+      "Condensation",
+      "Sublimation",
+      "Evaporation",
+      "Melting"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Cretaceous-Paleogene.",
-    "id": "chem_081"
+    "explanation": "Condensation is gas → liquid."
   },
   {
+    "id": "chem_082",
     "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "Coulrophobia is the irrational fear of what?",
+    "difficulty": "MEDIUM",
+    "text": "Which acid residue is in sulfuric acid?",
     "options": [
-      "Clowns",
-      "Cemeteries",
-      "Needles",
-      "Tunnels"
+      "SO₄²⁻",
+      "NO₃⁻",
+      "CO₃²⁻",
+      "PO₄³⁻"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Clowns.",
-    "id": "chem_082"
+    "explanation": "Sulfuric acid is H₂SO₄."
   },
   {
     "category": "chemistry",
@@ -1162,31 +1162,31 @@
     "id": "chem_083"
   },
   {
+    "id": "chem_084",
     "category": "chemistry",
-    "difficulty": "MEDIUM",
-    "text": "An organism described as \"heliotropic\" has a tendancy to move towards which of these things?",
+    "difficulty": "EASY",
+    "text": "Which metal is liquid at room temperature?",
     "options": [
-      "Light",
-      "Water",
-      "Trees",
-      "Pollen"
+      "Mercury",
+      "Iron",
+      "Copper",
+      "Aluminum"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Light.",
-    "id": "chem_084"
+    "explanation": "Mercury melts at −38.8 °C."
   },
   {
     "category": "chemistry",
     "difficulty": "HARD",
-    "text": "Which is the chemical name of H2O?",
+    "text": "What is the common name for H₂O?",
     "options": [
-      "Dihydrogen Monoxide",
-      "Ammonium chloride",
-      "Anhydrous Sodium Carbonate",
-      "Manganese dioxide"
+      "Water",
+      "Table salt",
+      "Carbon dioxide",
+      "Ammonia"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Dihydrogen Monoxide.",
+    "explanation": "H₂O is the water molecule.",
     "id": "chem_085"
   },
   {
@@ -1264,154 +1264,154 @@
     "difficulty": "EASY",
     "text": "Which element has the highest melting point?",
     "options": [
-      "Carbon",
       "Tungsten",
-      "Platinum",
-      "Osmium"
+      "Carbon",
+      "Iron",
+      "Silicon"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Carbon.",
+    "explanation": "Tungsten melts at 3422 °C — highest among metals.",
     "id": "chem_091"
   },
   {
+    "id": "chem_092",
     "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "Botanically speaking, which of these fruits is NOT a berry?",
+    "difficulty": "MEDIUM",
+    "text": "Which gas is released when acid reacts with a carbonate?",
     "options": [
-      "Strawberry",
-      "Blueberry",
-      "Banana",
-      "Concord Grape"
+      "Carbon dioxide",
+      "Hydrogen",
+      "Oxygen",
+      "Ammonia"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Strawberry.",
-    "id": "chem_092"
+    "explanation": "Acids with carbonates produce CO₂."
   },
   {
     "category": "chemistry",
     "difficulty": "EASY",
-    "text": " What is the chemical symbol for Helium?",
+    "text": "What is the chemical symbol for Helium?",
     "options": [
       "He",
       "H",
-      "Hg",
-      "Hs"
+      "Ne",
+      "Ho"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is He.",
+    "explanation": "Helium's symbol is He.",
     "id": "chem_093"
   },
   {
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "Deionized water is water with which of the following removed?",
+    "text": "Deionized water has primarily been stripped of:",
     "options": [
+      "Mineral salt ions",
       "Iron",
       "Oxygen",
-      "Hydrogen",
-      "Uncharged atoms"
+      "Hydrogen"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Iron.",
+    "explanation": "Deionization removes dissolved ionic salts.",
     "id": "chem_094"
   },
   {
+    "id": "chem_095",
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "What is the mathematical formula of Ohm's law?",
+    "text": "Which element has the symbol K?",
     "options": [
-      "V = I*R",
-      "I = V*R",
-      "R = V*I",
-      "V = I / R"
+      "Potassium",
+      "Calcium",
+      "Krypton",
+      "Cobalt"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is V = I*R.",
-    "id": "chem_095"
+    "explanation": "K stands for potassium (kalium), atomic number 19."
   },
   {
     "category": "chemistry",
     "difficulty": "HARD",
     "text": "Folic acid is the synthetic form of which vitamin?",
     "options": [
-      "Vitamin B",
-      "Vitamin A",
+      "Vitamin B9",
+      "Vitamin B1",
       "Vitamin C",
       "Vitamin D"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Vitamin B.",
+    "explanation": "Folic acid is the synthetic form of vitamin B9.",
     "id": "chem_096"
   },
   {
+    "id": "chem_097",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which bond type is typical in metallic crystals?",
+    "options": [
+      "Metallic",
+      "Ionic",
+      "Nonpolar covalent",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Delocalized electrons form metallic bonding."
+  },
+  {
+    "id": "chem_098",
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "The medical condition osteoporosis affects which part of the body?",
+    "text": "What is a reaction that releases heat called?",
     "options": [
-      "Bones",
-      "Skin",
-      "Brain",
-      "Heart"
+      "Exothermic",
+      "Endothermic",
+      "Hydrolysis",
+      "Electrolysis"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Bones.",
-    "id": "chem_097"
+    "explanation": "Exothermic reactions release heat to surroundings."
   },
   {
-    "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "What does the term \"isolation\" refer to in microbiology?",
-    "options": [
-      "The separation of a strain from a natural, mixed population of living microbes",
-      "A lack of nutrition in microenviroments",
-      "The nitrogen level in soil",
-      "Testing effects of certain microorganisms in an isolated enviroments, such as caves"
-    ],
-    "correctIndex": 0,
-    "explanation": "The correct answer is The separation of a strain from a natural, mixed population of living microbes.",
-    "id": "chem_098"
-  },
-  {
+    "id": "chem_099",
     "category": "chemistry",
     "difficulty": "EASY",
-    "text": "How many bones are in the human body?",
+    "text": "What pH is neutral at 25 °C?",
     "options": [
-      "206",
-      "203",
-      "209",
-      "200"
+      "7",
+      "0",
+      "14",
+      "1"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is 206.",
-    "id": "chem_099"
+    "explanation": "Neutral water has pH = 7."
   },
   {
+    "id": "chem_100",
     "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
+    "difficulty": "MEDIUM",
+    "text": "Which element is in all organic compounds?",
     "options": [
-      "Shin Splints",
-      "Tennis Elbow",
-      "Carpal Tunnel",
-      "Housemaid's Knee"
+      "Carbon",
+      "Silicon",
+      "Nitrogen",
+      "Sulfur"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Shin Splints.",
-    "id": "chem_100"
+    "explanation": "Organic chemistry studies carbon compounds."
   },
   {
+    "id": "chem_101",
     "category": "chemistry",
     "difficulty": "HARD",
-    "text": "Which of the following is a major muscle of the back?",
+    "text": "Which butane isomer has a branched chain?",
     "options": [
-      "Trapezius",
-      "Trapezium",
-      "Trapezoid",
-      "Triquetrum"
+      "Isobutane",
+      "n-Butane",
+      "Propane",
+      "Pentane"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Trapezius.",
-    "id": "chem_101"
+    "explanation": "Isobutane (2-methylpropane) is the branched C₄H₁₀ isomer."
   },
   {
     "category": "chemistry",
@@ -1462,7 +1462,7 @@
     "options": [
       "Water",
       "Methane",
-      "Ammonia ",
+      "Ammonia",
       "Laughing Gas"
     ],
     "correctIndex": 0,
@@ -1582,46 +1582,46 @@
     "id": "chem_113"
   },
   {
+    "id": "chem_114",
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "What stage of development do the majority of eukaryotic cells remain in for most of their life?",
+    "text": "Which law states compounds have fixed composition?",
     "options": [
-      "Interphase",
-      "Prophase",
-      "Stasis",
-      "Telophase"
+      "Law of definite proportions",
+      "Boyle's law",
+      "Hooke's law",
+      "Ohm's law"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Interphase.",
-    "id": "chem_114"
+    "explanation": "Proust formulated the law of definite proportions."
   },
   {
+    "id": "chem_115",
     "category": "chemistry",
-    "difficulty": "HARD",
-    "text": "What is the standard SI unit for luminous intensity?",
-    "options": [
-      "Candela",
-      "Lumen",
-      "Faraday",
-      "Coulomb"
-    ],
-    "correctIndex": 0,
-    "explanation": "The correct answer is Candela.",
-    "id": "chem_115"
-  },
-  {
-    "category": "chemistry",
-    "difficulty": "MEDIUM",
-    "text": "Along with Oxygen, which element is primarily responsible for the sky appearing blue?",
+    "difficulty": "EASY",
+    "text": "Which gas makes up most of Earth's atmosphere?",
     "options": [
       "Nitrogen",
-      "Helium",
-      "Carbon",
-      "Hydrogen"
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Nitrogen.",
-    "id": "chem_116"
+    "explanation": "Nitrogen is about 78% of air."
+  },
+  {
+    "id": "chem_116",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which process separates liquids by boiling point?",
+    "options": [
+      "Distillation",
+      "Filtration",
+      "Centrifugation",
+      "Crystallization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distillation uses different boiling points."
   },
   {
     "category": "chemistry",
@@ -1638,18 +1638,18 @@
     "id": "chem_117"
   },
   {
+    "id": "chem_118",
     "category": "chemistry",
     "difficulty": "HARD",
-    "text": "What is the name for the auditory illusion of a note that seems to be rising infinitely?",
+    "text": "Which principle forbids identical quantum states for two electrons?",
     "options": [
-      "Shepard Tone",
-      "Glissandro Illusion",
-      "Fransen Effect",
-      "McGurck Effect"
+      "Pauli exclusion principle",
+      "Heisenberg uncertainty",
+      "Hund's rule",
+      "Hess's law"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Shepard Tone.",
-    "id": "chem_118"
+    "explanation": "Pauli exclusion applies to fermions including electrons."
   },
   {
     "category": "chemistry",
@@ -1668,15 +1668,15 @@
   {
     "category": "chemistry",
     "difficulty": "MEDIUM",
-    "text": "The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.",
+    "text": "Which metal is alloyed into steel to improve corrosion resistance?",
     "options": [
-      "low, all",
-      "low, some",
-      "high, all",
-      "high, some"
+      "Chromium",
+      "Copper",
+      "Zinc",
+      "Lead"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is low, all.",
+    "explanation": "Chromium forms a protective oxide layer on stainless steel.",
     "id": "chem_120"
   },
   {
@@ -1713,7 +1713,7 @@
     "text": "Which indicator is used to express the acidity or alkalinity of aqueous solutions?",
     "options": [
       "pH",
-      "pOH",
+      "POH",
       "Mass fraction",
       "Molarity"
     ],
@@ -1846,5 +1846,873 @@
     "correctIndex": 0,
     "explanation": "Marie Curie received Nobel Prizes in Physics (1903) and Chemistry (1911).",
     "id": "chem_132"
+  },
+  {
+    "id": "chem_133",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which gas fills party balloons safely?",
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Nitrogen",
+      "Oxygen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Helium is lighter than air and nonflammable."
+  },
+  {
+    "id": "chem_134",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which element is in table salt?",
+    "options": [
+      "Sodium",
+      "Potassium",
+      "Calcium",
+      "Magnesium"
+    ],
+    "correctIndex": 0,
+    "explanation": "NaCl is sodium chloride."
+  },
+  {
+    "id": "chem_135",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which catalyst speeds H₂O₂ decomposition in school demos?",
+    "options": [
+      "Manganese dioxide",
+      "Copper",
+      "Gold",
+      "Graphite"
+    ],
+    "correctIndex": 0,
+    "explanation": "MnO₂ catalyzes 2H₂O₂ → 2H₂O + O₂."
+  },
+  {
+    "id": "chem_136",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Litmus color in acid?",
+    "options": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acid turns litmus red."
+  },
+  {
+    "id": "chem_137",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Symbol Fe stands for:",
+    "options": [
+      "Iron",
+      "Fluorine",
+      "Francium",
+      "Phosphorus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fe is ferrum — iron."
+  },
+  {
+    "id": "chem_138",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Acid + base reaction is called:",
+    "options": [
+      "Neutralization",
+      "Combustion",
+      "Polymerization",
+      "Fermentation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acid + base → salt + water."
+  },
+  {
+    "id": "chem_139",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which gas smells like rotten eggs?",
+    "options": [
+      "Hydrogen sulfide",
+      "Ammonia",
+      "Chlorine",
+      "Methane"
+    ],
+    "correctIndex": 0,
+    "explanation": "H₂S has a distinctive odor."
+  },
+  {
+    "id": "chem_140",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "How many valence electrons does sodium have?",
+    "options": [
+      "1",
+      "2",
+      "7",
+      "8"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sodium is group 1 — one valence electron."
+  },
+  {
+    "id": "otdb_chemistry_0001",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of the following is NOT a real element?",
+    "options": [
+      "Vitrainium",
+      "Praseodymium",
+      "Hassium",
+      "Lutetium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vitrainium."
+  },
+  {
+    "id": "otdb_chemistry_0002",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which gas forms about 78% of the Earth’s atmosphere?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Argon",
+      "Carbon Dioxide"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nitrogen."
+  },
+  {
+    "id": "otdb_chemistry_0003",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What was the first organic compound to be synthesized from inorganic compounds?",
+    "options": [
+      "Urea",
+      "Propane",
+      "Ethanol",
+      "Formaldehyde"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Urea."
+  },
+  {
+    "id": "otdb_chemistry_0004",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the elemental symbol for mercury?",
+    "options": [
+      "Hg",
+      "Me",
+      "Mc",
+      "Hy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hg."
+  },
+  {
+    "id": "otdb_chemistry_0005",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Along with Oxygen, which element is primarily responsible for the sky appearing blue?",
+    "options": [
+      "Nitrogen",
+      "Helium",
+      "Carbon",
+      "Hydrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nitrogen."
+  },
+  {
+    "id": "otdb_chemistry_0006",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
+    "options": [
+      "Shin Splints",
+      "Tennis Elbow",
+      "Carpal Tunnel",
+      "Housemaid's Knee"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shin Splints."
+  },
+  {
+    "id": "otdb_chemistry_0007",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which is the most abundant element in the universe?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Oxygen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydrogen."
+  },
+  {
+    "id": "otdb_chemistry_0008",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the scientific term for 'taste'?",
+    "options": [
+      "Gustatory Perception",
+      "Olfaction",
+      "Somatosensation",
+      "Auditory Perception"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gustatory Perception."
+  },
+  {
+    "id": "otdb_chemistry_0009",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the chemical makeup of water?",
+    "options": [
+      "H20",
+      "C12H6O2",
+      "CO2",
+      "H"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is H20."
+  },
+  {
+    "id": "otdb_chemistry_0010",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the name for the auditory illusion of a note that seems to be rising infinitely?",
+    "options": [
+      "Shepard Tone",
+      "Glissandro Illusion",
+      "Fransen Effect",
+      "McGurck Effect"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shepard Tone."
+  },
+  {
+    "id": "otdb_chemistry_0011",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Deionized water is water with which of the following removed?",
+    "options": [
+      "Iron",
+      "Oxygen",
+      "Hydrogen",
+      "Uncharged atoms"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Iron."
+  },
+  {
+    "id": "otdb_chemistry_0012",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of the following is the term for \"surgical complications resulting from surgical sponges left inside the patient's body?",
+    "options": [
+      "Gossypiboma",
+      "Gongoozler",
+      "Jentacular",
+      "Meupareunia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gossypiboma."
+  },
+  {
+    "id": "otdb_chemistry_0013",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which chemical element was originally known as Alabamine?",
+    "options": [
+      "Astatine",
+      "Selenium",
+      "Antimony",
+      "Molybdenum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Astatine."
+  },
+  {
+    "id": "otdb_chemistry_0014",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which one of these is scientific term for \"Brain Freeze\"?",
+    "options": [
+      "Sphenopalatine Ganglioneuralgia",
+      "Hyacinthoides Italica",
+      "Amaranthus Retroflexus",
+      "Amblyomma Americanum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sphenopalatine Ganglioneuralgia."
+  },
+  {
+    "id": "otdb_chemistry_0015",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "How much radiation does a banana emit?",
+    "options": [
+      "0.1 Microsievert",
+      "0.3 Microsievert",
+      "0.5 Microsievert",
+      "0.7 Microsievert"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 0.1 Microsievert."
+  },
+  {
+    "id": "otdb_chemistry_0016",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "How long is a light-year?",
+    "options": [
+      "9.461 Trillion Kilometres",
+      "1 AU",
+      "105.40 Earth-years",
+      "501.2 Million Miles"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 9.461 Trillion Kilometres."
+  },
+  {
+    "id": "otdb_chemistry_0017",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which major extinction event was caused by an asteroid collision and eliminated the majority of non-avian dinosaurs?",
+    "options": [
+      "Cretaceous-Paleogene",
+      "Triassic–Jurassic",
+      "Permian–Triassic",
+      "Ordovician–Silurian"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cretaceous-Paleogene."
+  },
+  {
+    "id": "otdb_chemistry_0018",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which of these elements on the Periodic Table is a Noble Gas?",
+    "options": [
+      "Neon",
+      "Potassium",
+      "Iodine",
+      "Colbalt"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Neon."
+  },
+  {
+    "id": "otdb_chemistry_0019",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which Apollo mission was the first one to land on the Moon?",
+    "options": [
+      "Apollo 11",
+      "Apollo 10",
+      "Apollo 9",
+      "Apollo 13"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Apollo 11."
+  },
+  {
+    "id": "otdb_chemistry_0020",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is the molecular formula of Glucose?",
+    "options": [
+      "C6H12O6",
+      "C2H4O2",
+      "K+",
+      "CH4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is C6H12O6."
+  },
+  {
+    "id": "otdb_chemistry_0021",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which constellation contains the center of the Milky Way?",
+    "options": [
+      "Sagittarius",
+      "Scorpius",
+      "Ophiuchus",
+      "Capricornus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Sagittarius."
+  },
+  {
+    "id": "otdb_chemistry_0022",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "About how old is Earth?",
+    "options": [
+      "4.5 Billion Years",
+      "3.5 Billion Years",
+      "2.5 Billion Years",
+      "5.5 Billion Years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 4.5 Billion Years."
+  },
+  {
+    "id": "otdb_chemistry_0023",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What does LASER stand for?",
+    "options": [
+      "Light amplification by stimulated emission of radiation",
+      "Lite analysing by stereo ecorazer",
+      "Light amplifier by standby energy of radio",
+      "Life antimatter by standing entry of range"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Light amplification by stimulated emission of radiation."
+  },
+  {
+    "id": "otdb_chemistry_0024",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "In the Scoville scale, what is the hottest chemical?",
+    "options": [
+      "Resiniferatoxin",
+      "Capsaicin",
+      "Dihydrocapsaicin",
+      "Tinyatoxin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Resiniferatoxin."
+  },
+  {
+    "id": "otdb_chemistry_0025",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What does the term \"isolation\" refer to in microbiology?",
+    "options": [
+      "The separation of a strain from a natural, mixed population of living microbes",
+      "A lack of nutrition in microenviroments",
+      "The nitrogen level in soil",
+      "Testing effects of certain microorganisms in an isolated enviroments, such as caves"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The separation of a strain from a natural, mixed population of living microbes."
+  },
+  {
+    "id": "otdb_chemistry_0026",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Coulrophobia is the irrational fear of what?",
+    "options": [
+      "Clowns",
+      "Cemeteries",
+      "Needles",
+      "Tunnels"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Clowns."
+  },
+  {
+    "id": "otdb_chemistry_0027",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "What is the first element on the periodic table?",
+    "options": [
+      "Hydrogen",
+      "Helium",
+      "Oxygen",
+      "Lithium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydrogen."
+  },
+  {
+    "id": "otdb_chemistry_0028",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which of these Elements is a metalloid?",
+    "options": [
+      "Antimony",
+      "Tin",
+      "Bromine",
+      "Rubidium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Antimony."
+  },
+  {
+    "id": "otdb_chemistry_0029",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "Which of the following blood vessels carries deoxygenated blood?",
+    "options": [
+      "Pulmonary Artery",
+      "Pulmonary Vein",
+      "Aorta",
+      "Coronary Artery"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pulmonary Artery."
+  },
+  {
+    "id": "otdb_chemistry_0030",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which color cannot be produced in Roses, even through genetic alteration?",
+    "options": [
+      "Blue",
+      "Black",
+      "Orange",
+      "Brown"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Blue."
+  },
+  {
+    "id": "otdb_chemistry_0031",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "Which of the following is considered classical conditioning?",
+    "options": [
+      "Pavlov's dog experiments",
+      "Skinner box experiment",
+      "Schrödinger's cat experiment",
+      "Harlow’s monkey experiments"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pavlov's dog experiments."
+  },
+  {
+    "id": "otdb_chemistry_0032",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What element on the periodic table has 92 electrons?",
+    "options": [
+      "Uranium",
+      "Sulfur",
+      "Hydrogen",
+      "Iron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Uranium."
+  },
+  {
+    "id": "otdb_chemistry_0033",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Deuterium is an isotope of which element?",
+    "options": [
+      "Hydrogen",
+      "Nitrogen",
+      "Helium",
+      "Neon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydrogen."
+  },
+  {
+    "id": "otdb_chemistry_0034",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "When the Falcon Heavy was launched on it's test flight, what was the only part of the operation that failed?",
+    "options": [
+      "Center Core Landing",
+      "Side Booster Landing",
+      "Deployment of Starman",
+      "Ignition and Liftoff"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Center Core Landing."
+  },
+  {
+    "id": "otdb_chemistry_0035",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is Hypernatremia?",
+    "options": [
+      "Increase in blood sodium",
+      "Decrease in blood potassium",
+      "Increase in blood glucose",
+      "Decrease in blood iron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Increase in blood sodium."
+  },
+  {
+    "id": "otdb_chemistry_0036",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which portion of the Marijuana plant produces the psychoactive substance known as THC?",
+    "options": [
+      "Female Flower",
+      "Leaves",
+      "Male Flower",
+      "Root Ball"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Female Flower."
+  },
+  {
+    "id": "otdb_chemistry_0037",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "The medical condition osteoporosis affects which part of the body?",
+    "options": [
+      "Bones",
+      "Skin",
+      "Brain",
+      "Heart"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bones."
+  },
+  {
+    "id": "otdb_chemistry_0038",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which chemical element has the lowest boiling point?",
+    "options": [
+      "Helium",
+      "Hydrogen",
+      "Neon",
+      "Nitrogen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Helium."
+  },
+  {
+    "id": "otdb_chemistry_0039",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "After which Danish city is the 72th element on the periodic table named?",
+    "options": [
+      "Copenhagen",
+      "Odense",
+      "Herning",
+      "Skagen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Copenhagen."
+  },
+  {
+    "id": "otdb_chemistry_0040",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "The Sun consists of mostly which two elements?",
+    "options": [
+      "Hydrogen & Helium",
+      "Hydrogen & Nitrogen",
+      "Carbon & Nitrogen",
+      "Carbon & Helium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydrogen & Helium."
+  },
+  {
+    "id": "otdb_chemistry_0041",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "In Chemistry, how many isomers does Butanol (C4H9OH) have?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 4."
+  },
+  {
+    "id": "otdb_chemistry_0042",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "A comet's gaseous envelope (which creates the tail) is called what?",
+    "options": [
+      "The coma",
+      "The wake",
+      "The backwash",
+      "The ablative"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The coma."
+  },
+  {
+    "id": "otdb_chemistry_0043",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the colour of unoxidized blood?",
+    "options": [
+      "Red",
+      "Blue",
+      "Purple",
+      "Green"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Red."
+  },
+  {
+    "id": "otdb_chemistry_0044",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Au on the Periodic Table refers to which element?",
+    "options": [
+      "Gold",
+      "Silver",
+      "Oxygen",
+      "Nickel"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gold."
+  },
+  {
+    "id": "otdb_chemistry_0045",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "What is isobutylphenylpropanoic acid more commonly known as?",
+    "options": [
+      "Ibuprofen",
+      "Morphine",
+      "Ketamine",
+      "Aspirin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ibuprofen."
+  },
+  {
+    "id": "otdb_chemistry_0046",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "On which mission did the Space Shuttle Columbia break up upon re-entry?",
+    "options": [
+      "STS-107",
+      "STS-51-L",
+      "STS-61-C",
+      "STS-109"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is STS-107."
+  },
+  {
+    "id": "otdb_chemistry_0047",
+    "category": "chemistry",
+    "difficulty": "HARD",
+    "text": "An organic compound is considered an alcohol if it has what functional group?",
+    "options": [
+      "Hydroxyl",
+      "Carbonyl",
+      "Alkyl",
+      "Aldehyde"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hydroxyl."
+  },
+  {
+    "id": "otdb_chemistry_0048",
+    "category": "chemistry",
+    "difficulty": "EASY",
+    "text": "The biggest distinction between a eukaryotic cell and a prokaryotic cell is:",
+    "options": [
+      "The presence or absence of a nucleus",
+      "The overall size",
+      "The presence or absence of certain organelles",
+      "The mode of reproduction"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is The presence or absence of a nucleus."
+  },
+  {
+    "id": "otdb_chemistry_0049",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Myopia is the scientific term for which condition?",
+    "options": [
+      "Shortsightedness",
+      "Farsightedness",
+      "Double Vision",
+      "Clouded Vision"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Shortsightedness."
+  },
+  {
+    "id": "otdb_chemistry_0050",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What polymer is used to make CDs, safety goggles and riot shields?",
+    "options": [
+      "Polycarbonate",
+      "Rubber",
+      "Nylon",
+      "Bakelite"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polycarbonate."
+  },
+  {
+    "id": "otdb_chemistry_0051",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "Which one of these scientists conducted the Gold Foil Experiment which concluded that atoms are mostly made of empty space?",
+    "options": [
+      "Ernest Rutherford",
+      "Joseph John Thomson",
+      "Archimedes",
+      "Niels Henrik David Bohr"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ernest Rutherford."
+  },
+  {
+    "id": "otdb_chemistry_0052",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "How old is the universe?",
+    "options": [
+      "13.8 Billion Years",
+      "4.5 Billion Years",
+      "7.9 Billion Years",
+      "16.2 Billion Years"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 13.8 Billion Years."
+  },
+  {
+    "id": "otdb_chemistry_0053",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is the chemical formula for ammonia?",
+    "options": [
+      "NH3",
+      "CO2",
+      "NO3",
+      "CH4"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is NH3."
+  },
+  {
+    "id": "otdb_chemistry_0054",
+    "category": "chemistry",
+    "difficulty": "MEDIUM",
+    "text": "What is radiation measured in?",
+    "options": [
+      "Gray",
+      "Watt",
+      "Decibel",
+      "Kelvin"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gray."
   }
 ]

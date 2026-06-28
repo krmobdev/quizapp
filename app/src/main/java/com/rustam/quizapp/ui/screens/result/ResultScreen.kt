@@ -181,6 +181,16 @@ private fun ResultContent(
                                     color = textColor
                                 )
                             }
+                            if (reward.gemsEarned > 0) {
+                                Spacer(Modifier.height(4.dp))
+                                Text(
+                                    text = stringResource(R.string.rewards_gems_earned, reward.gemsEarned),
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Bold,
+                                    textAlign = TextAlign.Center,
+                                    color = MaterialTheme.colorScheme.primary
+                                )
+                            }
 
                             Spacer(Modifier.height(12.dp))
                             RewardBreakdownCard(reward = reward, colors = colors, textColor = textColor)

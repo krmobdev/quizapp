@@ -1010,7 +1010,7 @@
   {
     "category": "astronomy",
     "difficulty": "MEDIUM",
-    "text": "Which of these two plates are best know for forming earthquakes and tsunami's? ",
+    "text": "Which of these two plates are best know for forming earthquakes and tsunami's?",
     "options": [
       "Convergent Plate Boundaries/Oceanic Crust",
       "Divergent Plate Boundaries/Convergent/Oceanic Crust",
@@ -1122,7 +1122,7 @@
   {
     "category": "astronomy",
     "difficulty": "EASY",
-    "text": "Which is the longest bone in the human body? ",
+    "text": "Which is the longest bone in the human body?",
     "options": [
       "Femur",
       "Scapula",
@@ -1136,7 +1136,7 @@
   {
     "category": "astronomy",
     "difficulty": "MEDIUM",
-    "text": "How many degrees Fahrenheit is 100 degrees Celsius? ",
+    "text": "How many degrees Fahrenheit is 100 degrees Celsius?",
     "options": [
       "212",
       "326",
@@ -1178,7 +1178,7 @@
   {
     "category": "astronomy",
     "difficulty": "MEDIUM",
-    "text": "Which NASA Space Shuttle broke apart during atmospheric re-entry on February 1, 2003? ",
+    "text": "Which NASA Space Shuttle broke apart during atmospheric re-entry on February 1, 2003?",
     "options": [
       "Columbia",
       "Challenger",
@@ -1672,7 +1672,7 @@
     "options": [
       "Venus",
       "Jupiter",
-      "Mercury ",
+      "Mercury",
       "Mars"
     ],
     "correctIndex": 0,
@@ -1846,5 +1846,985 @@
     "correctIndex": 0,
     "explanation": "The Chandrasekhar limit determines the maximum mass supportable by electron degeneracy pressure.",
     "id": "astr_132"
+  },
+  {
+    "id": "astr_133",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Our galaxy's name?",
+    "options": [
+      "Milky Way",
+      "Andromeda",
+      "Sombrero",
+      "Whirlpool"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solar system is in the Milky Way."
+  },
+  {
+    "id": "astr_134",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Planet closest to the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Earth"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mercury is innermost."
+  },
+  {
+    "id": "astr_135",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is a supernova?",
+    "options": [
+      "Massive star explosion",
+      "Black hole",
+      "Comet",
+      "Asteroid"
+    ],
+    "correctIndex": 0,
+    "explanation": "Catastrophic end of a massive star."
+  },
+  {
+    "id": "otdb_astronomy_0001",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "The humerus, paired radius, and ulna come together to form what joint?",
+    "options": [
+      "Elbow",
+      "Knee",
+      "Sholder",
+      "Ankle"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Elbow."
+  },
+  {
+    "id": "otdb_astronomy_0002",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Rhinoplasty is a surgical procedure on what part of the human body?",
+    "options": [
+      "Nose",
+      "Ears",
+      "Chin",
+      "Neck"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nose."
+  },
+  {
+    "id": "otdb_astronomy_0003",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "How many legs is it biologically impossible for a centipede to have?",
+    "options": [
+      "100",
+      "26",
+      "50",
+      "74"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 100."
+  },
+  {
+    "id": "otdb_astronomy_0004",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "How many planets make up our Solar System?",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "6"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 8."
+  },
+  {
+    "id": "otdb_astronomy_0005",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Botanically speaking, which of these fruits is NOT a berry?",
+    "options": [
+      "Strawberry",
+      "Blueberry",
+      "Banana",
+      "Concord Grape"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Strawberry."
+  },
+  {
+    "id": "otdb_astronomy_0006",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Who made the discovery of X-rays?",
+    "options": [
+      "Wilhelm Conrad Röntgen",
+      "Thomas Alva Edison",
+      "James Watt",
+      "Albert Einstein"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Wilhelm Conrad Röntgen."
+  },
+  {
+    "id": "otdb_astronomy_0007",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "How many objects are equivalent to one mole?",
+    "options": [
+      "6.022 x 10^23",
+      "6.002 x 10^22",
+      "6.022 x 10^22",
+      "6.002 x 10^23"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 6.022 x 10^23."
+  },
+  {
+    "id": "otdb_astronomy_0008",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What causes the sound of a heartbeat?",
+    "options": [
+      "Closure of the heart valves",
+      "Contraction of the heart chambers",
+      "Blood exiting the heart",
+      "Relaxation of the heart chambers"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Closure of the heart valves."
+  },
+  {
+    "id": "otdb_astronomy_0009",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of the following are cells of the adaptive immune system?",
+    "options": [
+      "Cytotoxic T cells",
+      "Dendritic cells",
+      "Natural killer cells",
+      "White blood cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cytotoxic T cells."
+  },
+  {
+    "id": "otdb_astronomy_0010",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What animal takes part in Schrödinger's most famous thought experiment?",
+    "options": [
+      "Cat",
+      "Dog",
+      "Bat",
+      "Butterfly"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cat."
+  },
+  {
+    "id": "otdb_astronomy_0011",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.",
+    "options": [
+      "Low, all",
+      "Low, some",
+      "High, all",
+      "High, some"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is low, all."
+  },
+  {
+    "id": "otdb_astronomy_0012",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "The human heart has how many chambers?",
+    "options": [
+      "4",
+      "2",
+      "6",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 4."
+  },
+  {
+    "id": "otdb_astronomy_0013",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which of these is NOT a part of the structure of a typical neuron?",
+    "options": [
+      "Islets of Langerhans",
+      "Node of Ranvier",
+      "Schwann cell",
+      "Myelin sheath"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Islets of Langerhans."
+  },
+  {
+    "id": "otdb_astronomy_0014",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What do you study if you are studying entomology?",
+    "options": [
+      "Insects",
+      "Humans",
+      "The Brain",
+      "Fish"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Insects."
+  },
+  {
+    "id": "otdb_astronomy_0015",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What mineral has the lowest number on the Mohs scale?",
+    "options": [
+      "Talc",
+      "Quartz",
+      "Diamond",
+      "Gypsum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Talc."
+  },
+  {
+    "id": "otdb_astronomy_0016",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "The human right lung has how many lobes?",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 3."
+  },
+  {
+    "id": "otdb_astronomy_0017",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Gannymede is the largest moon of which planet?",
+    "options": [
+      "Jupiter",
+      "Uranus",
+      "Neptune",
+      "Mars"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jupiter."
+  },
+  {
+    "id": "otdb_astronomy_0018",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "When was the first mammal successfully cloned?",
+    "options": [
+      "1996",
+      "2009",
+      "1999",
+      "1985"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 1996."
+  },
+  {
+    "id": "otdb_astronomy_0019",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What name is given to all baby marsupials?",
+    "options": [
+      "Joey",
+      "Calf",
+      "Pup",
+      "Cub"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Joey."
+  },
+  {
+    "id": "otdb_astronomy_0020",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "In aeronautics, flaps and slats are used to control what on an aircraft?",
+    "options": [
+      "Lift",
+      "Thrust",
+      "Drag",
+      "Weight"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Lift."
+  },
+  {
+    "id": "otdb_astronomy_0021",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Down Syndrome is usually caused by an extra copy of which chromosome?",
+    "options": [
+      "21",
+      "23",
+      "15",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 21."
+  },
+  {
+    "id": "otdb_astronomy_0022",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which horizon in a soil profile consists of bedrock?",
+    "options": [
+      "R",
+      "O",
+      "B",
+      "D"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is R."
+  },
+  {
+    "id": "otdb_astronomy_0023",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Where did the Great Storm of 1987 make landfall at, first?",
+    "options": [
+      "Cornwall",
+      "Surrey",
+      "Wales",
+      "The Midlands"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Cornwall."
+  },
+  {
+    "id": "otdb_astronomy_0024",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is the same in Celsius and Fahrenheit?",
+    "options": [
+      "-40",
+      "32",
+      "-39",
+      "-42"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is -40."
+  },
+  {
+    "id": "otdb_astronomy_0025",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What does the yellow diamond on the NFPA 704 fire diamond represent?",
+    "options": [
+      "Reactivity",
+      "Health",
+      "Flammability",
+      "Radioactivity"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Reactivity."
+  },
+  {
+    "id": "otdb_astronomy_0026",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "How many chromosomes are in your body cells?",
+    "options": [
+      "23",
+      "21",
+      "22",
+      "24"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 23."
+  },
+  {
+    "id": "otdb_astronomy_0027",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the study of the cells and tissues of plants and animals?",
+    "options": [
+      "Histology",
+      "Microbiology",
+      "Anatomy",
+      "Biochemistry"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Histology."
+  },
+  {
+    "id": "otdb_astronomy_0028",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of the following plastic is commonly used for window frames, gutters and drain pipes?",
+    "options": [
+      "Polyvinylchloride (PVC)",
+      "Polyethylene (PE)",
+      "Polypropylene (PP)",
+      "Polystyrene (PS)"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Polyvinylchloride (PVC)."
+  },
+  {
+    "id": "otdb_astronomy_0029",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "The medial meniscus forms which part of what joint in the human body?",
+    "options": [
+      "Knee",
+      "Elbow",
+      "Ankle",
+      "Shoulder"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Knee."
+  },
+  {
+    "id": "otdb_astronomy_0030",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?",
+    "options": [
+      "Dunning-Kruger effect",
+      "Meyers-Briggs effect",
+      "Müller-Lyer effect",
+      "Freud-Hall effect"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Dunning-Kruger effect."
+  },
+  {
+    "id": "otdb_astronomy_0031",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the half-life of Uranium-235?",
+    "options": [
+      "703,800,000 years",
+      "4,300,400,000 years",
+      "1,260,900,000 years",
+      "Uranium-235 is a stable isotope"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 703,800,000 years."
+  },
+  {
+    "id": "otdb_astronomy_0032",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What are human nails made of?",
+    "options": [
+      "Keratin",
+      "Bone",
+      "Chitin",
+      "Calcium"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Keratin."
+  },
+  {
+    "id": "otdb_astronomy_0033",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "All of the following human genetic haplogroup names are shared between Y-chromosome and mitochondrial DNA haplogroups EXCEPT:",
+    "options": [
+      "Haplogroup U",
+      "Haplogroup L",
+      "Haplogroup T",
+      "Haplogroup J"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Haplogroup U."
+  },
+  {
+    "id": "otdb_astronomy_0034",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which planet did the \"Viking 1\" spacecraft send surface images of, starting in 1976?",
+    "options": [
+      "Mars",
+      "Saturn",
+      "Jupiter",
+      "Venus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mars."
+  },
+  {
+    "id": "otdb_astronomy_0035",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which of these choices is not one of the phases of mitosis?",
+    "options": [
+      "Diplophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Diplophase."
+  },
+  {
+    "id": "otdb_astronomy_0036",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of the following is a major muscle of the back?",
+    "options": [
+      "Trapezius",
+      "Trapezium",
+      "Trapezoid",
+      "Triquetrum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Trapezius."
+  },
+  {
+    "id": "otdb_astronomy_0037",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is considered the rarist form of color blindness?",
+    "options": [
+      "Blue",
+      "Red",
+      "Green",
+      "Purple"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Blue."
+  },
+  {
+    "id": "otdb_astronomy_0038",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which is not a type of neuron?",
+    "options": [
+      "Perceptual Neuron",
+      "Sensory Neuron",
+      "Motor Neuron",
+      "Interneuron"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Perceptual Neuron."
+  },
+  {
+    "id": "otdb_astronomy_0039",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What stage of development do the majority of eukaryotic cells remain in for most of their life?",
+    "options": [
+      "Interphase",
+      "Prophase",
+      "Stasis",
+      "Telophase"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Interphase."
+  },
+  {
+    "id": "otdb_astronomy_0040",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "The 'Islets of Langerhans' is found in which human organ?",
+    "options": [
+      "Pancreas",
+      "Kidney",
+      "Liver",
+      "Brain"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Pancreas."
+  },
+  {
+    "id": "otdb_astronomy_0041",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which of the following bones is not in the leg?",
+    "options": [
+      "Radius",
+      "Patella",
+      "Tibia",
+      "Fibula"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Radius."
+  },
+  {
+    "id": "otdb_astronomy_0042",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the Linnean name of the domestic apple tree?",
+    "options": [
+      "Malus pumila",
+      "Malus americana",
+      "Pomus domestica",
+      "Appelus delectica"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Malus pumila."
+  },
+  {
+    "id": "otdb_astronomy_0043",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Where did the dog breed \"Chihuahua\" originate?",
+    "options": [
+      "Mexico",
+      "France",
+      "Spain",
+      "Russia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Mexico."
+  },
+  {
+    "id": "otdb_astronomy_0044",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What is the primary addictive substance found in tobacco?",
+    "options": [
+      "Nicotine",
+      "Cathinone",
+      "Ephedrine",
+      "Glaucine"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Nicotine."
+  },
+  {
+    "id": "otdb_astronomy_0045",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which part of the body does glaucoma affect?",
+    "options": [
+      "Eyes",
+      "Throat",
+      "Stomach",
+      "Blood"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Eyes."
+  },
+  {
+    "id": "otdb_astronomy_0046",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Which of these is a type of stretch/deep tendon reflex?",
+    "options": [
+      "Ankle jerk reflex",
+      "Gag reflex",
+      "Pupillary light reflex",
+      "Scratch reflex"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ankle jerk reflex."
+  },
+  {
+    "id": "otdb_astronomy_0047",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What is the largest living organism currently known to man?",
+    "options": [
+      "Honey Fungus",
+      "Blue Whale",
+      "Redwood Tree",
+      "The Coral Reef"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Honey Fungus."
+  },
+  {
+    "id": "otdb_astronomy_0048",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "In human biology, a circadium rhythm relates to a period of roughly how many hours?",
+    "options": [
+      "24",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 24."
+  },
+  {
+    "id": "otdb_astronomy_0049",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Which of these bones is hardest to break?",
+    "options": [
+      "Femur",
+      "Cranium",
+      "Humerus",
+      "Tibia"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Femur."
+  },
+  {
+    "id": "otdb_astronomy_0050",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "How many bones are in the human body?",
+    "options": [
+      "206",
+      "203",
+      "209",
+      "200"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 206."
+  },
+  {
+    "id": "otdb_astronomy_0051",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "Who developed the first successful polio vaccine in the 1950s?",
+    "options": [
+      "Jonas Salk",
+      "John F. Enders",
+      "Thomas Weller",
+      "Frederick Robbins"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jonas Salk."
+  },
+  {
+    "id": "otdb_astronomy_0052",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "The Western Lowland Gorilla is scientifically know as?",
+    "options": [
+      "Gorilla Gorilla Gorilla",
+      "Gorilla Gorilla Diehli",
+      "Gorilla Beringei Graueri",
+      "Gorilla Beringei Beringei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Gorilla Gorilla Gorilla."
+  },
+  {
+    "id": "otdb_astronomy_0053",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "\"The Big Bang Theory\" was first theorized by a priest of what religious ideology?",
+    "options": [
+      "Catholic",
+      "Christian",
+      "Jewish",
+      "Islamic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Catholic."
+  },
+  {
+    "id": "otdb_astronomy_0054",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is the scientific name of the knee cap?",
+    "options": [
+      "Patella",
+      "Femur",
+      "Foramen Magnum",
+      "Scapula"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Patella."
+  },
+  {
+    "id": "otdb_astronomy_0055",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What genetic disease is caused by having an extra Y chromosome (XYY)?",
+    "options": [
+      "Jacob's Syndrome",
+      "Klinefelter's Syndrome",
+      "Turner's Syndrome",
+      "Down Syndrome"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Jacob's Syndrome."
+  },
+  {
+    "id": "otdb_astronomy_0056",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is the scientific name of the red fox?",
+    "options": [
+      "Vulpes Vulpes",
+      "Vulpes Redus",
+      "Red Fox",
+      "Vulpes Vulpie"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Vulpes Vulpes."
+  },
+  {
+    "id": "otdb_astronomy_0057",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What was the first living creature in space?",
+    "options": [
+      "Fruit Flies",
+      "Monkey",
+      "Dog",
+      "Mouse"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Fruit Flies."
+  },
+  {
+    "id": "otdb_astronomy_0058",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "The medical term for the belly button is which of the following?",
+    "options": [
+      "Umbilicus",
+      "Nevus",
+      "Nares",
+      "Paxillus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Umbilicus."
+  },
+  {
+    "id": "otdb_astronomy_0059",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is \"Stenoma\"?",
+    "options": [
+      "A genus of moths",
+      "A combat stimulant from WW2",
+      "A type of seasoning",
+      "A port city in the carribean"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A genus of moths."
+  },
+  {
+    "id": "otdb_astronomy_0060",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "Human cells typically have how many copies of each gene?",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 2."
+  },
+  {
+    "id": "otdb_astronomy_0061",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What part of the brain takes its name from the Greek for seahorse?",
+    "options": [
+      "Hippocampus",
+      "Cerebellum",
+      "Thalamus",
+      "Amygdala"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Hippocampus."
+  },
+  {
+    "id": "otdb_astronomy_0062",
+    "category": "astronomy",
+    "difficulty": "EASY",
+    "text": "What lies at the center of our galaxy?",
+    "options": [
+      "A black hole",
+      "A wormhole",
+      "A supernova",
+      "A quasar"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is A black hole."
+  },
+  {
+    "id": "otdb_astronomy_0063",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "Which of these animals belongs in class Chondrichthyes?",
+    "options": [
+      "Great white shark",
+      "Octopus",
+      "Killer whale",
+      "Catfish"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Great white shark."
+  },
+  {
+    "id": "otdb_astronomy_0064",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "What is the most potent toxin known?",
+    "options": [
+      "Botulinum toxin",
+      "Ricin",
+      "Cyanide",
+      "Asbestos"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Botulinum toxin."
+  },
+  {
+    "id": "otdb_astronomy_0065",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "What term is best associated with Sigmund Freud?",
+    "options": [
+      "Psychoanalysis",
+      "Cognitive-Behavioral Therapy",
+      "Theory of Gravity",
+      "Dialectical Behavior Therapy"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Psychoanalysis."
+  },
+  {
+    "id": "otdb_astronomy_0066",
+    "category": "astronomy",
+    "difficulty": "HARD",
+    "text": "The word \"science\" stems from the word \"scire\" meaning what?",
+    "options": [
+      "To know",
+      "To measure",
+      "To live",
+      "To count"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is To know."
+  },
+  {
+    "id": "otdb_astronomy_0067",
+    "category": "astronomy",
+    "difficulty": "MEDIUM",
+    "text": "A positron is an antiparticle of a what?",
+    "options": [
+      "Electron",
+      "Neutron",
+      "Proton",
+      "Photon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Electron."
   }
 ]

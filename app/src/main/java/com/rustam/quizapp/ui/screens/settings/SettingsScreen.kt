@@ -63,8 +63,7 @@ fun SettingsScreen(
     val soundEnabled by viewModel.soundEnabled.collectAsState()
     val themeMode by viewModel.themeMode.collectAsState()
     val appLanguage by viewModel.appLanguage.collectAsState()
-    val promoRedeemed by viewModel.promoRedeemed.collectAsState()
-    val promoMessageRes by viewModel.promoMessageRes.collectAsState()
+    val promoMessage by viewModel.promoMessage.collectAsState()
     val backupMessageRes by viewModel.backupMessageRes.collectAsState()
 
     val exportLauncher = rememberLauncherForActivityResult(
@@ -78,8 +77,7 @@ fun SettingsScreen(
         soundEnabled = soundEnabled,
         themeMode = themeMode,
         appLanguage = appLanguage,
-        promoRedeemed = promoRedeemed,
-        promoMessageRes = promoMessageRes,
+        promoMessage = promoMessage,
         backupMessageRes = backupMessageRes,
         onSoundEnabledChange = viewModel::setSoundEnabled,
         onThemeModeChange = viewModel::setThemeMode,
@@ -90,6 +88,7 @@ fun SettingsScreen(
         onImport = { importLauncher.launch(arrayOf("application/json")) },
         onReset = viewModel::resetProgress,
         onClearBackupMessage = viewModel::clearBackupMessage,
+        onShowOnboardingAgain = viewModel::showOnboardingAgain,
         modifier = modifier
     )
 }
@@ -99,8 +98,7 @@ private fun SettingsContent(
     soundEnabled: Boolean,
     themeMode: ThemeMode,
     appLanguage: AppLanguage,
-    promoRedeemed: Boolean,
-    promoMessageRes: Int?,
+    promoMessage: PromoUiMessage?,
     backupMessageRes: Int?,
     onSoundEnabledChange: (Boolean) -> Unit,
     onThemeModeChange: (ThemeMode) -> Unit,
@@ -111,6 +109,7 @@ private fun SettingsContent(
     onImport: () -> Unit,
     onReset: () -> Unit,
     onClearBackupMessage: () -> Unit,
+    onShowOnboardingAgain: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
@@ -125,8 +124,18 @@ private fun SettingsContent(
     ) {
         ScreenTitle(stringResource(R.string.settings))
 
+        // Promo codes — featured near the top.
+        PromoCodeSection(
+            message = promoMessage,
+            onRedeem = onRedeemPromo,
+            onClearMessage = onClearPromoMessage,
+            colors = colors,
+            textColor = textColor
+        )
+
+        // Sound.
         SoundSettingCard(
-            title = stringResource(R.string.settings_sound_title),
+            title = "🔊 " + stringResource(R.string.settings_sound_title),
             subtitle = stringResource(R.string.settings_sound_subtitle),
             checked = soundEnabled,
             onCheckedChange = onSoundEnabledChange,
@@ -134,11 +143,14 @@ private fun SettingsContent(
             textColor = textColor
         )
 
+        // Appearance: language + theme grouped together.
         SettingsSection(
-            title = stringResource(R.string.settings_language_title),
-            subtitle = stringResource(R.string.settings_language_subtitle),
+            title = stringResource(R.string.settings_appearance_title),
+            subtitle = stringResource(R.string.settings_appearance_subtitle),
+            icon = "🎨",
             colors = colors
         ) {
+            SettingGroupLabel(stringResource(R.string.settings_language_title), textColor)
             AppLanguage.entries.forEach { language ->
                 SettingChoiceCard(
                     label = stringResource(language.labelRes),
@@ -146,13 +158,7 @@ private fun SettingsContent(
                     onClick = { onAppLanguageChange(language) }
                 )
             }
-        }
-
-        SettingsSection(
-            title = stringResource(R.string.settings_theme_title),
-            subtitle = stringResource(R.string.settings_theme_subtitle),
-            colors = colors
-        ) {
+            SettingGroupLabel(stringResource(R.string.settings_theme_title), textColor)
             ThemeMode.entries.forEach { mode ->
                 SettingChoiceCard(
                     label = stringResource(mode.labelRes),
@@ -162,15 +168,7 @@ private fun SettingsContent(
             }
         }
 
-        PromoCodeSection(
-            redeemed = promoRedeemed,
-            messageRes = promoMessageRes,
-            onRedeem = onRedeemPromo,
-            onClearMessage = onClearPromoMessage,
-            colors = colors,
-            textColor = textColor
-        )
-
+        // Data.
         DataSection(
             messageRes = backupMessageRes,
             onExport = onExport,
@@ -181,7 +179,74 @@ private fun SettingsContent(
             textColor = textColor
         )
 
+        // Tutorial replay.
+        SettingsSection(
+            title = stringResource(R.string.settings_onboarding_title),
+            subtitle = stringResource(R.string.settings_onboarding_subtitle),
+            icon = "🎓",
+            colors = colors
+        ) {
+            OutlinedButton(
+                onClick = onShowOnboardingAgain,
+                modifier = Modifier.fillMaxWidth(),
+                shape = AppShapes.Button
+            ) {
+                Text(stringResource(R.string.settings_onboarding_show))
+            }
+        }
+
+        // About: attribution + version.
+        AboutSection(colors = colors, textColor = textColor)
+
         Spacer(Modifier.height(8.dp))
+    }
+}
+
+@Composable
+private fun SettingGroupLabel(text: String, textColor: androidx.compose.ui.graphics.Color) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.titleSmall,
+        fontWeight = FontWeight.SemiBold,
+        color = textColor.copy(alpha = 0.85f),
+        modifier = Modifier.padding(top = 4.dp)
+    )
+}
+
+@Composable
+private fun AboutSection(
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    modifier: Modifier = Modifier
+) {
+    SettingsSection(
+        title = stringResource(R.string.settings_about_title),
+        subtitle = "",
+        icon = "ℹ️",
+        colors = colors,
+        modifier = modifier
+    ) {
+        Text(
+            text = stringResource(
+                R.string.settings_app_version,
+                com.rustam.quizapp.BuildConfig.VERSION_NAME,
+                com.rustam.quizapp.BuildConfig.VERSION_CODE
+            ),
+            style = MaterialTheme.typography.bodyMedium,
+            fontWeight = FontWeight.Medium,
+            color = MaterialTheme.colorScheme.primary
+        )
+        Text(
+            text = stringResource(R.string.settings_attribution_body),
+            style = MaterialTheme.typography.bodyMedium,
+            color = textColor.copy(alpha = 0.85f)
+        )
+        Text(
+            text = stringResource(R.string.settings_attribution_link),
+            style = MaterialTheme.typography.bodySmall,
+            fontWeight = FontWeight.SemiBold,
+            color = MaterialTheme.colorScheme.primary
+        )
     }
 }
 
@@ -209,6 +274,7 @@ private fun DataSection(
     SettingsSection(
         title = stringResource(R.string.settings_data_title),
         subtitle = stringResource(R.string.settings_data_subtitle),
+        icon = "💾",
         colors = colors,
         modifier = modifier
     ) {
@@ -307,8 +373,7 @@ private fun ConfirmDialog(
 
 @Composable
 private fun PromoCodeSection(
-    redeemed: Boolean,
-    messageRes: Int?,
+    message: PromoUiMessage?,
     onRedeem: (String) -> Unit,
     onClearMessage: () -> Unit,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
@@ -317,8 +382,8 @@ private fun PromoCodeSection(
 ) {
     var code by rememberSaveable { mutableStateOf("") }
 
-    LaunchedEffect(messageRes) {
-        if (messageRes != null) {
+    LaunchedEffect(message) {
+        if (message != null) {
             kotlinx.coroutines.delay(4_000)
             onClearMessage()
         }
@@ -327,54 +392,53 @@ private fun PromoCodeSection(
     SettingsSection(
         title = stringResource(R.string.settings_promo_title),
         subtitle = stringResource(R.string.settings_promo_subtitle),
+        icon = "🎁",
         colors = colors,
         modifier = modifier
     ) {
-        if (redeemed) {
-            Text(
-                text = stringResource(R.string.settings_promo_redeemed),
-                style = MaterialTheme.typography.bodyLarge,
-                fontWeight = FontWeight.SemiBold,
-                color = MaterialTheme.colorScheme.primary
-            )
-        } else {
-            OutlinedTextField(
-                value = code,
-                onValueChange = { code = it.uppercase().take(12) },
-                modifier = Modifier.fillMaxWidth(),
-                label = { Text(stringResource(R.string.settings_promo_hint)) },
-                singleLine = true,
-                keyboardOptions = KeyboardOptions(
-                    capitalization = KeyboardCapitalization.Characters,
-                    imeAction = ImeAction.Done
-                ),
-                keyboardActions = KeyboardActions(
-                    onDone = {
-                        if (code.isNotBlank()) onRedeem(code)
+        OutlinedTextField(
+            value = code,
+            onValueChange = { code = it.uppercase().take(16) },
+            modifier = Modifier.fillMaxWidth(),
+            label = { Text(stringResource(R.string.settings_promo_hint)) },
+            singleLine = true,
+            keyboardOptions = KeyboardOptions(
+                capitalization = KeyboardCapitalization.Characters,
+                imeAction = ImeAction.Done
+            ),
+            keyboardActions = KeyboardActions(
+                onDone = {
+                    if (code.isNotBlank()) {
+                        onRedeem(code)
+                        code = ""
                     }
-                )
+                }
             )
-            Button(
-                onClick = { onRedeem(code) },
-                enabled = code.isNotBlank(),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(48.dp),
-                shape = AppShapes.Button,
-                colors = ButtonDefaults.buttonColors(contentColor = textColor)
-            ) {
-                Text(
-                    text = stringResource(R.string.settings_promo_activate),
-                    style = MaterialTheme.typography.labelLarge,
-                    fontWeight = FontWeight.SemiBold
-                )
-            }
-        }
-        messageRes?.let { resId ->
+        )
+        Button(
+            onClick = {
+                onRedeem(code)
+                code = ""
+            },
+            enabled = code.isNotBlank(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(48.dp),
+            shape = AppShapes.Button,
+            colors = ButtonDefaults.buttonColors(contentColor = textColor)
+        ) {
             Text(
-                text = stringResource(resId),
+                text = stringResource(R.string.settings_promo_activate),
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.SemiBold
+            )
+        }
+        message?.let { msg ->
+            Text(
+                text = msg.text,
                 style = MaterialTheme.typography.bodyMedium,
-                color = if (resId == R.string.settings_promo_success) {
+                fontWeight = FontWeight.SemiBold,
+                color = if (msg.success) {
                     MaterialTheme.colorScheme.primary
                 } else {
                     MaterialTheme.colorScheme.error
@@ -390,6 +454,7 @@ private fun SettingsSection(
     subtitle: String,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
     modifier: Modifier = Modifier,
+    icon: String = "",
     content: @Composable () -> Unit
 ) {
     GlassCard(colors = colors, modifier = modifier) {
@@ -400,12 +465,14 @@ private fun SettingsSection(
             verticalArrangement = Arrangement.spacedBy(14.dp)
         ) {
             Text(
-                text = title,
+                text = if (icon.isBlank()) title else "$icon  $title",
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.SemiBold,
                 color = appTextColor()
             )
-            ScreenSubtitle(subtitle)
+            if (subtitle.isNotBlank()) {
+                ScreenSubtitle(subtitle)
+            }
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 content()
             }
@@ -467,8 +534,7 @@ private fun SettingsContentPreview() {
             soundEnabled = true,
             themeMode = ThemeMode.SYSTEM,
             appLanguage = AppLanguage.RU,
-            promoRedeemed = false,
-            promoMessageRes = null,
+            promoMessage = null,
             backupMessageRes = null,
             onSoundEnabledChange = {},
             onThemeModeChange = {},
@@ -478,7 +544,8 @@ private fun SettingsContentPreview() {
             onExport = {},
             onImport = {},
             onReset = {},
-            onClearBackupMessage = {}
+            onClearBackupMessage = {},
+            onShowOnboardingAgain = {}
         )
     }
 }

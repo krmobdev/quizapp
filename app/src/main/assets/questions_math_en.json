@@ -570,7 +570,7 @@
       "3.33"
     ],
     "correctIndex": 0,
-    "explanation": "π ≈ 3.14159.",
+    "explanation": "Π ≈ 3.14159.",
     "id": "math_041"
   },
   {
@@ -626,7 +626,7 @@
       "1.62"
     ],
     "correctIndex": 0,
-    "explanation": "e ≈ 2.71828.",
+    "explanation": "E ≈ 2.71828.",
     "id": "math_045"
   },
   {
@@ -732,10 +732,10 @@
     "difficulty": "HARD",
     "text": "What is the formula for the area of a circle of radius r?",
     "options": [
-      "πr²",
+      "Πr²",
       "2πr",
-      "πd",
-      "r²"
+      "Πd",
+      "R²"
     ],
     "correctIndex": 0,
     "explanation": "The area of a circle is πr².",
@@ -1043,7 +1043,7 @@
       "(4/3)πr^3",
       "4πr^2",
       "(1/3)πhr^2",
-      "πr^4"
+      "Πr^4"
     ],
     "correctIndex": 0,
     "explanation": "The correct answer is (4/3)πr^3.",
@@ -1110,13 +1110,13 @@
     "difficulty": "MEDIUM",
     "text": "What is the area of a circle with a diameter of 20 inches if π= 3.1415?",
     "options": [
-      "314.15 Inches",
-      "380.1215 Inches",
-      "3141.5 Inches",
-      "1256.6 Inches"
+      "314.15 square inches",
+      "314.15 inches",
+      "314.15 square cm",
+      "314.15 cm"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is 314.15 Inches.",
+    "explanation": "Circle area uses square units: πr² ≈ 314.15 square inches.",
     "id": "math_080"
   },
   {
@@ -1168,7 +1168,7 @@
     "options": [
       "1.58 x 10^20",
       "1.58 x 10^22",
-      "1.58 x  10^18",
+      "1.58 x 10^18",
       "1.58 x 10^24"
     ],
     "correctIndex": 0,
@@ -1209,9 +1209,9 @@
     "text": "What is the symbol for Displacement?",
     "options": [
       "Δr",
-      "dr",
+      "Dr",
       "Dp",
-      "r"
+      "R"
     ],
     "correctIndex": 0,
     "explanation": "The correct answer is Δr.",
@@ -1420,7 +1420,7 @@
     "options": [
       "Galois Theory",
       "Galois' Continued Fractions",
-      "Galois' Method for PDE's ",
+      "Galois' Method for PDE's",
       "Abelian Integration"
     ],
     "correctIndex": 0,
@@ -1430,15 +1430,15 @@
   {
     "category": "math",
     "difficulty": "MEDIUM",
-    "text": "What is the derivative of sin(x)",
+    "text": "What is the derivative of sin(x)?",
     "options": [
       "cos(x)",
-      "csc(x)",
-      "-cos(x)",
-      "-sin(x)"
+      "−sin(x)",
+      "Tan(x)",
+      "1"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is cos(x).",
+    "explanation": "The derivative of sin x is cos x.",
     "id": "math_103"
   },
   {
@@ -1544,10 +1544,10 @@
     "difficulty": "MEDIUM",
     "text": "What is the alphanumeric representation of the imaginary number?",
     "options": [
-      "i",
-      "e",
-      "n",
-      "x"
+      "I",
+      "E",
+      "N",
+      "X"
     ],
     "correctIndex": 0,
     "explanation": "The correct answer is i.",
@@ -1612,7 +1612,7 @@
   {
     "category": "math",
     "difficulty": "EASY",
-    "text": "Which two men are credited with independently discovering differential calculus? ",
+    "text": "Which two men are credited with independently discovering differential calculus?",
     "options": [
       "Newton and Leibnitz",
       "Plato and Aristotle",
@@ -1832,5 +1832,61 @@
     "correctIndex": 0,
     "explanation": "Bayes' theorem formula P(A|B) = [P(B|A)*P(A)] / P(B) is fundamental to Bayesian statistics.",
     "id": "math_131"
+  },
+  {
+    "id": "math_132",
+    "category": "math",
+    "difficulty": "EASY",
+    "text": "Degrees in a right angle?",
+    "options": [
+      "90",
+      "180",
+      "45",
+      "360"
+    ],
+    "correctIndex": 0,
+    "explanation": "Right angle = 90°."
+  },
+  {
+    "id": "math_133",
+    "category": "math",
+    "difficulty": "MEDIUM",
+    "text": "15% of 200 equals?",
+    "options": [
+      "30",
+      "25",
+      "35",
+      "20"
+    ],
+    "correctIndex": 0,
+    "explanation": "0.15 × 200 = 30."
+  },
+  {
+    "id": "math_134",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "Polygon with 8 sides?",
+    "options": [
+      "Octagon",
+      "Hexagon",
+      "Pentagon",
+      "Decagon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Octagon has eight sides."
+  },
+  {
+    "id": "otdb_math_0001",
+    "category": "math",
+    "difficulty": "HARD",
+    "text": "The notion of a \"set that contains all sets which do not contain themselves\" is a paradoxical idea attributed to which English philospher?",
+    "options": [
+      "Bertrand Russel",
+      "Francis Bacon",
+      "John Locke",
+      "Alfred North Whitehead"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Bertrand Russel."
   }
 ]

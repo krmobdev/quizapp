@@ -298,9 +298,10 @@ private fun PlayerProfileCard(
         state.talentTree.xpBonusPercent
     val coinBonus = state.stats.coinBonusPercent + state.skillTree.coinBonusPercent +
         state.talentTree.coinBonusPercent
-    val critChance = state.stats.doubleRewardChancePercent +
+    val critChance = (state.stats.doubleRewardChancePercent +
         state.stats.critChanceBonusPercent + state.skillTree.critChanceBonusPercent +
-        state.talentTree.critChanceBonusPercent
+        state.talentTree.critChanceBonusPercent)
+        .coerceAtMost(CharacterLevelCalculator.MAX_CRIT_CHANCE_PERCENT)
     val extraTime = state.stats.extraTimeSeconds + state.skillTree.extraTimeSeconds +
         state.talentTree.extraTimeSeconds
     val unlockedAchievements = state.achievements.count { it.unlocked }
@@ -428,6 +429,12 @@ private fun PlayerProfileCard(
                     textColor = textColor,
                     modifier = Modifier.weight(1f)
                 )
+                SummaryMetric(
+                    value = "💎 ${state.gems}",
+                    label = stringResource(R.string.player_gems),
+                    textColor = textColor,
+                    modifier = Modifier.weight(1f)
+                )
             }
 
             HorizontalDivider(color = textColor.copy(alpha = 0.08f))
@@ -476,9 +483,13 @@ private fun PlayerProfileCard(
                     fontWeight = FontWeight.SemiBold,
                     color = textColor
                 )
+                val xpPerCorrect = state.stats.flatXpPerCorrect
+                val coinPerCorrect = state.stats.flatCoinPerCorrect
                 val bonuses = buildList {
                     if (xpBonus >= 0.5f) add(stringResource(R.string.player_bonus_xp, kotlin.math.round(xpBonus).toInt()))
                     if (coinBonus >= 0.5f) add(stringResource(R.string.player_bonus_coins, kotlin.math.round(coinBonus).toInt()))
+                    if (xpPerCorrect > 0) add(stringResource(R.string.player_bonus_xp_per_correct, xpPerCorrect))
+                    if (coinPerCorrect > 0) add(stringResource(R.string.player_bonus_coin_per_correct, coinPerCorrect))
                     if (critChance >= 0.5f) add(stringResource(R.string.player_bonus_crit, kotlin.math.round(critChance).toInt()))
                     if (extraTime > 0f) add(stringResource(R.string.player_bonus_time, extraTime))
                 }
@@ -654,7 +665,7 @@ private fun CharacterStatsSection(
         StatUpgradeCard(
             title = stringResource(R.string.char_stat_strength),
             value = stats.strength,
-            description = stringResource(R.string.char_stat_strength_desc, stats.xpBonusPercent),
+            description = stringResource(R.string.char_stat_strength_desc, stats.strength * 3),
             freeXp = freeXp,
             colors = colors,
             textColor = textColor,
@@ -724,11 +735,51 @@ private fun CharacterStatsSection(
         StatUpgradeCard(
             title = stringResource(R.string.char_stat_charisma),
             value = stats.charisma,
-            description = stringResource(R.string.char_stat_charisma_desc, stats.critChanceBonusPercent),
+            description = stringResource(R.string.char_stat_charisma_desc, stats.charisma * 2),
             freeXp = freeXp,
             colors = colors,
             textColor = textColor,
             onUpgrade = { onUpgrade("charisma") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_knowledge),
+            value = stats.knowledge,
+            description = stringResource(R.string.char_stat_knowledge_desc, stats.flatXpPerCorrect),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("knowledge") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_wealth),
+            value = stats.wealth,
+            description = stringResource(R.string.char_stat_wealth_desc, stats.flatCoinPerCorrect),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("wealth") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_precision),
+            value = stats.precision,
+            description = stringResource(R.string.char_stat_precision_desc, stats.precision * 2),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("precision") }
+        )
+
+        StatUpgradeCard(
+            title = stringResource(R.string.char_stat_insight),
+            value = stats.insight,
+            description = stringResource(R.string.char_stat_insight_desc, stats.insight * 2),
+            freeXp = freeXp,
+            colors = colors,
+            textColor = textColor,
+            onUpgrade = { onUpgrade("insight") }
         )
     }
 }

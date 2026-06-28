@@ -117,6 +117,55 @@ enum class AccentTheme(
         containerLight = Color(0xFFCDE5FF), tertiaryLight = Color(0xFF53606E),
         primaryDark = Color(0xFFA6C8E6), onPrimaryDark = Color(0xFF0A3048),
         containerDark = Color(0xFF254860), tertiaryDark = Color(0xFFBAC8D6)
+    ),
+    EMBER(
+        id = "theme_ember",
+        swatch = Color(0xFFE2502E),
+        primaryLight = Color(0xFFB22E12), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFFFDAD2), tertiaryLight = Color(0xFF775650),
+        primaryDark = Color(0xFFFFB4A4), onPrimaryDark = Color(0xFF5F1400),
+        containerDark = Color(0xFF862200), tertiaryDark = Color(0xFFE7BDB4)
+    ),
+    JADE(
+        id = "theme_jade",
+        swatch = Color(0xFF18A66B),
+        primaryLight = Color(0xFF006C4C), onPrimaryLight = Color.White,
+        containerLight = Color(0xFF89F8C4), tertiaryLight = Color(0xFF4C6358),
+        primaryDark = Color(0xFF6CDBA8), onPrimaryDark = Color(0xFF003825),
+        containerDark = Color(0xFF005138), tertiaryDark = Color(0xFFB3CCBE)
+    ),
+    COSMOS(
+        id = "theme_cosmos",
+        swatch = Color(0xFF6A4DE0),
+        primaryLight = Color(0xFF5238C2), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFE5DEFF), tertiaryLight = Color(0xFF5F5C71),
+        primaryDark = Color(0xFFCABEFF), onPrimaryDark = Color(0xFF230E92),
+        containerDark = Color(0xFF3B23AB), tertiaryDark = Color(0xFFC8C3DC)
+    ),
+    // Premium accent themes (bought with gems).
+    AURORA(
+        id = "theme_gem_aurora",
+        swatch = Color(0xFF00BFA6),
+        primaryLight = Color(0xFF00897B), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFB2F1E8), tertiaryLight = Color(0xFF4A6360),
+        primaryDark = Color(0xFF5FE0CE), onPrimaryDark = Color(0xFF00382F),
+        containerDark = Color(0xFF005047), tertiaryDark = Color(0xFFB1CCC7)
+    ),
+    OBSIDIAN(
+        id = "theme_gem_obsidian",
+        swatch = Color(0xFF37474F),
+        primaryLight = Color(0xFF2E3D44), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFCDD8DE), tertiaryLight = Color(0xFF4F5B62),
+        primaryDark = Color(0xFFB6C5CD), onPrimaryDark = Color(0xFF20292E),
+        containerDark = Color(0xFF37444B), tertiaryDark = Color(0xFFBDC8CE)
+    ),
+    PRISM(
+        id = "theme_gem_prism",
+        swatch = Color(0xFFD81B9C),
+        primaryLight = Color(0xFFB10A82), onPrimaryLight = Color.White,
+        containerLight = Color(0xFFFFD7EE), tertiaryLight = Color(0xFF6F5563),
+        primaryDark = Color(0xFFFFAEDC), onPrimaryDark = Color(0xFF5E0046),
+        containerDark = Color(0xFF860062), tertiaryDark = Color(0xFFE3BDCF)
     );
 
     companion object {

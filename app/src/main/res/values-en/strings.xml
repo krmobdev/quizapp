@@ -73,14 +73,17 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
 
-    <string name="settings_promo_title">Promo code</string>
-    <string name="settings_promo_subtitle">Redeem a code for coins</string>
+    <string name="settings_promo_title">Promo codes</string>
+    <string name="settings_promo_subtitle">Redeem a code for a resource pack (coins, gems or XP). Each code is single-use.</string>
     <string name="settings_promo_hint">Enter promo code</string>
     <string name="settings_promo_activate">Activate</string>
-    <string name="settings_promo_success">Promo code activated! +2000 coins</string>
+    <string name="settings_promo_success_format">Redeemed! %1$s</string>
     <string name="settings_promo_invalid">Invalid promo code</string>
-    <string name="settings_promo_already">Promo code already redeemed</string>
-    <string name="settings_promo_redeemed">Promo code redeemed · +2000 coins</string>
+    <string name="settings_promo_already">This promo code is already redeemed</string>
+
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_appearance_subtitle">App language and theme</string>
+    <string name="settings_about_title">About</string>
 
     <!-- Data management: export / import / reset progress -->
     <string name="settings_data_title">Data</string>
@@ -104,6 +107,9 @@
     <string name="settings_attribution_title">Question sources</string>
     <string name="settings_attribution_body">Some English questions are from Open Trivia Database (CC BY-SA 4.0). Russian questions are the app\'s own curated bank.</string>
     <string name="settings_attribution_link">opentdb.com</string>
+    <string name="settings_onboarding_title">Tutorial</string>
+    <string name="settings_onboarding_subtitle">Show the intro screens again</string>
+    <string name="settings_onboarding_show">Show tutorial again</string>
     <string name="language_russian">Русский</string>
     <string name="language_english">English</string>
 
@@ -144,6 +150,7 @@
     <string name="shop_title">Shop</string>
     <string name="shop_balance">Your coins</string>
     <string name="shop_avatars">Avatars</string>
+    <string name="shop_premium_avatars">Premium avatars (💎)</string>
     <string name="shop_themes">Colour themes</string>
     <string name="shop_equip">Equip</string>
     <string name="shop_equipped">Equipped</string>
@@ -205,7 +212,56 @@
     <string name="loot_xp">+%1$d XP</string>
     <string name="loot_avatar">New avatar!</string>
     <string name="loot_title">New title: %1$s</string>
+    <string name="loot_theme">New theme: %1$s</string>
     <string name="loot_close">Nice!</string>
+
+    <!-- Gems 💎 -->
+    <string name="player_gems">Gems</string>
+    <string name="shop_premium_themes">Premium themes (💎)</string>
+    <string name="shop_mythic_title">Mythic Chest 🔮</string>
+    <string name="shop_mythic_desc">Premium gem chest: rare cosmetics or a large coin/XP payout</string>
+    <string name="shop_gem_exchange_section">Gem exchange &amp; bundles</string>
+    <string name="gem_exchange_small">Handful of coins</string>
+    <string name="gem_exchange_medium">Bag of coins</string>
+    <string name="gem_exchange_large">Chest of coins</string>
+    <string name="gem_bundle_power">Power-up pack</string>
+    <string name="gem_bundle_boost">Boost pack</string>
+    <string name="gem_bundle_booster">XP booster pack</string>
+    <string name="rewards_gems_earned">+%1$d 💎</string>
+    <string name="daily_reward_gems">+%1$d 💎 bonus!</string>
+    <string name="theme_accent_aurora">Aurora</string>
+    <string name="theme_accent_obsidian">Obsidian</string>
+    <string name="theme_accent_prism">Prism</string>
+
+    <!-- Millionaire mode -->
+    <string name="millionaire_title">Who Wants to Be a Millionaire</string>
+    <string name="millionaire_subtitle">Buy a pack, answer 15 questions with a growing prize. A wrong answer drops you to your safe level; take the money any time.</string>
+    <string name="millionaire_all_categories">All categories</string>
+    <string name="millionaire_tab_xp">XP</string>
+    <string name="millionaire_tab_coins">Coins</string>
+    <string name="millionaire_tab_gems">Gems</string>
+    <string name="millionaire_balance">Balance: %1$s</string>
+    <string name="millionaire_cost_prize">Stake %1$s · Prize %2$s</string>
+    <string name="millionaire_buy">Play</string>
+    <string name="millionaire_home_title">Who Wants to Be a Millionaire</string>
+    <string name="millionaire_home_desc">Buy a pack, answer and claim the prize</string>
+    <string name="millionaire_rung">Question %1$d of %2$d</string>
+    <string name="millionaire_next">For a correct answer: %1$s</string>
+    <string name="millionaire_guaranteed">Safe amount: %1$s</string>
+    <string name="millionaire_take_money">Take %1$s</string>
+    <string name="millionaire_continue">Continue</string>
+    <string name="millionaire_phone_confident">Your friend is sure: option %1$s</string>
+    <string name="millionaire_phone_unsure">Your friend is unsure, maybe option %1$s</string>
+    <string name="millionaire_won">Congratulations! You won: %1$s</string>
+    <string name="millionaire_won_all">Jackpot! You cleared every question and won %1$s</string>
+    <string name="millionaire_lost">Too bad! Your safe winnings: %1$s</string>
+    <string name="millionaire_lost_zero">Too bad! No prize this time</string>
+    <string name="millionaire_outcome_title">Result</string>
+    <string name="millionaire_outcome_ok">Done</string>
+    <string name="millionaire_leave_title">Leave the game?</string>
+    <string name="millionaire_leave_text">You\'ll only keep your safe amount: %1$s</string>
+    <string name="millionaire_leave_confirm">Leave</string>
+    <string name="millionaire_leave_cancel">Stay</string>
 
     <!-- Temporary boosts (×2) -->
     <string name="shop_boosts_section">Temporary boosts</string>
@@ -225,6 +281,7 @@
 
     <!-- Titles (player-card cosmetics) -->
     <string name="shop_titles">Titles</string>
+    <string name="shop_premium_titles">Premium titles (💎)</string>
     <string name="shop_titles_hint">Buy titles with coins — they show on your player card. Tap the equipped one to remove it.</string>
     <string name="title_none">No title</string>
     <string name="title_curious">Curious</string>
@@ -513,6 +570,10 @@
     <string name="season_pass_reward_booster">Booster 🎓</string>
     <string name="season_pass_close">Close</string>
     <string name="season_pass_home_card">Season · Lvl %1$d · %2$d d.</string>
+    <string name="quest_level_bonus">Lvl %1$d · %2$s</string>
+    <string name="home_shop_deals_btn">Daily deals</string>
+    <string name="home_shop_deals_hint">Shop discounts</string>
+    <string name="settings_app_version">Version %1$s · build %2$d</string>
     <string name="season_pass_xp_hint">+%1$d XP per quiz · level every %2$d XP</string>
 
     <!-- Adaptive difficulty -->

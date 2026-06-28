@@ -413,7 +413,7 @@
       "E = mc²",
       "F = ma",
       "P = UI",
-      "s = vt"
+      "S = vt"
     ],
     "correctIndex": 0,
     "explanation": "The mass–energy relation is E = mc².",
@@ -840,18 +840,18 @@
     "id": "phys_060"
   },
   {
+    "id": "phys_061",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "When the Falcon Heavy was launched on it's test flight, what was the only part of the operation that failed?",
+    "text": "Which quantity is measured in pascals?",
     "options": [
-      "Center Core Landing",
-      "Side Booster Landing",
-      "Deployment of Starman",
-      "Ignition and Liftoff"
+      "Pressure",
+      "Force",
+      "Energy",
+      "Power"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Center Core Landing.",
-    "id": "phys_061"
+    "explanation": "The pascal (Pa) is the SI unit of pressure."
   },
   {
     "category": "physics",
@@ -868,18 +868,18 @@
     "id": "phys_062"
   },
   {
+    "id": "phys_063",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Who developed the first successful polio vaccine in the 1950s?",
+    "text": "Who formulated the three laws of mechanics?",
     "options": [
-      "Jonas Salk",
-      "John F. Enders",
-      "Thomas Weller",
-      "Frederick Robbins"
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Niels Bohr"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Jonas Salk.",
-    "id": "phys_063"
+    "explanation": "Newton's laws underpin classical mechanics."
   },
   {
     "category": "physics",
@@ -910,88 +910,88 @@
     "id": "phys_065"
   },
   {
+    "id": "phys_066",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "The medial meniscus forms which part of what joint in the human body?",
+    "text": "What force points toward the center in circular motion?",
     "options": [
-      "Knee",
-      "Elbow",
-      "Ankle",
-      "Shoulder"
+      "Centripetal",
+      "Friction",
+      "Elastic",
+      "Buoyant"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Knee.",
-    "id": "phys_066"
+    "explanation": "Centripetal force enables curved paths."
   },
   {
+    "id": "phys_067",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Who predicted antimatter?",
+    "options": [
+      "Paul Dirac",
+      "Ernest Rutherford",
+      "Max Planck",
+      "Werner Heisenberg"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dirac's equation allowed negative-energy solutions."
+  },
+  {
+    "id": "phys_068",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "What is the name of the cognitive bias wherein a person with low ability in a particular skill mistake themselves as being superior?",
+    "text": "Which instrument measures electrical resistance?",
     "options": [
-      "Dunning-Kruger effect",
-      "Meyers-Briggs effect",
-      "Müller-Lyer effect",
-      "Freud-Hall effect"
+      "Ohmmeter",
+      "Ammeter",
+      "Voltmeter",
+      "Wattmeter"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Dunning-Kruger effect.",
-    "id": "phys_067"
+    "explanation": "Resistance is measured in ohms."
   },
   {
+    "id": "phys_069",
     "category": "physics",
-    "difficulty": "HARD",
-    "text": "Where in the human body is the Pineal Gland located?",
+    "difficulty": "EASY",
+    "text": "In SI, work is measured in:",
     "options": [
-      "Brain",
-      "Groin",
-      "Chest",
-      "Throat"
+      "Joule",
+      "Newton",
+      "Watt",
+      "Pascal"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Brain.",
-    "id": "phys_068"
+    "explanation": "Work and energy use joules."
   },
   {
-    "category": "physics",
-    "difficulty": "HARD",
-    "text": "The 'Islets of Langerhans' is found in which human organ?",
-    "options": [
-      "Pancreas",
-      "Kidney",
-      "Liver",
-      "Brain"
-    ],
-    "correctIndex": 0,
-    "explanation": "The correct answer is Pancreas.",
-    "id": "phys_069"
-  },
-  {
-    "category": "physics",
-    "difficulty": "HARD",
-    "text": "How many legs is it biologically impossible for a centipede to have?",
-    "options": [
-      "100",
-      "26",
-      "50",
-      "74"
-    ],
-    "correctIndex": 0,
-    "explanation": "The correct answer is 100.",
-    "id": "phys_070"
-  },
-  {
+    "id": "phys_070",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Which continent do sweet potatoes originally come from?",
+    "text": "Which law relates current, voltage, and resistance?",
     "options": [
-      "South America",
-      "Asia",
-      "Africa",
-      "Europe"
+      "Ohm's law",
+      "Coulomb's law",
+      "Hooke's law",
+      "Pascal's law"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is South America.",
-    "id": "phys_071"
+    "explanation": "U = I·R for a circuit segment."
+  },
+  {
+    "id": "phys_071",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "What is bending of light at a boundary between media?",
+    "options": [
+      "Refraction",
+      "Diffraction",
+      "Interference",
+      "Polarization"
+    ],
+    "correctIndex": 0,
+    "explanation": "Refraction changes light's direction."
   },
   {
     "category": "physics",
@@ -1022,18 +1022,18 @@
     "id": "phys_073"
   },
   {
+    "id": "phys_074",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Which of these is NOT a bone found in the human arm?",
+    "text": "Which particle carries current in metals?",
     "options": [
-      "Tibia",
-      "Humerus",
-      "Ulna",
-      "Radius"
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Positron"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Tibia.",
-    "id": "phys_074"
+    "explanation": "Free electrons are charge carriers in conductors."
   },
   {
     "category": "physics",
@@ -1064,18 +1064,18 @@
     "id": "phys_076"
   },
   {
+    "id": "phys_077",
     "category": "physics",
     "difficulty": "HARD",
-    "text": "What is the scientific name of the red fox?",
+    "text": "What is the kinetic energy formula?",
     "options": [
-      "Vulpes Vulpes",
-      "Vulpes Redus",
-      "Red Fox",
-      "Vulpes Vulpie"
+      "Vulpes vulpes",
+      "Vulpes redus",
+      "Red fox",
+      "Vulpes vulpi"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Vulpes Vulpes.",
-    "id": "phys_077"
+    "explanation": "The red fox is Vulpes vulpes."
   },
   {
     "category": "physics",
@@ -1092,18 +1092,18 @@
     "id": "phys_078"
   },
   {
+    "id": "phys_079",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Which of the following is the male pollen-producing reproductive part of a flower?",
+    "text": "Which wave type needs a material medium?",
     "options": [
-      "Stamen",
-      "Sepal",
-      "Pistil",
-      "Petal"
+      "Sound",
+      "Light",
+      "X-ray",
+      "Radio in vacuum"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Stamen.",
-    "id": "phys_079"
+    "explanation": "Sound is mechanical vibration of a medium."
   },
   {
     "category": "physics",
@@ -1120,18 +1120,18 @@
     "id": "phys_080"
   },
   {
+    "id": "phys_081",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Which part of the body does glaucoma affect?",
+    "text": "Minimum energy to eject an electron from a metal is called:",
     "options": [
-      "Eyes",
-      "Throat",
-      "Stomach",
-      "Blood"
+      "Work function",
+      "Binding energy",
+      "Heat capacity",
+      "Ionization potential"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Eyes.",
-    "id": "phys_081"
+    "explanation": "The photoelectric effect uses the work function."
   },
   {
     "category": "physics",
@@ -1148,18 +1148,18 @@
     "id": "phys_082"
   },
   {
+    "id": "phys_083",
     "category": "physics",
-    "difficulty": "MEDIUM",
-    "text": "Down Syndrome is usually caused by an extra copy of which chromosome?",
+    "difficulty": "HARD",
+    "text": "Which law describes force between two point charges?",
     "options": [
-      "21",
-      "23",
-      "15",
-      "24"
+      "Coulomb's law",
+      "Ohm's law",
+      "Faraday's law",
+      "Boyle's law"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is 21.",
-    "id": "phys_083"
+    "explanation": "F = k·|q₁·q₂|/r²."
   },
   {
     "category": "physics",
@@ -1176,74 +1176,74 @@
     "id": "phys_084"
   },
   {
+    "id": "phys_085",
     "category": "physics",
     "difficulty": "EASY",
-    "text": "Which of these bones is hardest to break?",
+    "text": "What does a barometer measure?",
     "options": [
-      "Femur",
-      "Cranium",
-      "Humerus",
-      "Tibia"
+      "Atmospheric pressure",
+      "Temperature",
+      "Humidity",
+      "Wind speed"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Femur.",
-    "id": "phys_085"
+    "explanation": "Barometers read air pressure."
   },
   {
+    "id": "phys_086",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "What are human nails made of?",
+    "text": "Which visible color has the longest wavelength?",
     "options": [
-      "Keratin",
-      "Bone",
-      "Chitin",
-      "Calcium"
+      "Red",
+      "Violet",
+      "Blue",
+      "Green"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Keratin.",
-    "id": "phys_086"
+    "explanation": "Red light is about 650–700 nm."
   },
   {
+    "id": "phys_087",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Myopia is the scientific term for which condition?",
+    "text": "What is the SI unit of frequency?",
     "options": [
-      "Shortsightedness",
-      "Farsightedness",
-      "Double Vision",
-      "Clouded Vision"
+      "Hertz",
+      "Newton",
+      "Joule",
+      "Volt"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Shortsightedness.",
-    "id": "phys_087"
+    "explanation": "Hertz = cycles per second."
   },
   {
+    "id": "phys_088",
     "category": "physics",
     "difficulty": "HARD",
-    "text": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
+    "text": "Ratio of light speed in vacuum to speed in a medium is:",
     "options": [
-      "Acetone",
-      "Water",
-      "Mercury",
-      "Benzene"
+      "Refractive index",
+      "Friction coefficient",
+      "Young's modulus",
+      "Density"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Acetone.",
-    "id": "phys_088"
+    "explanation": "N = c/v."
   },
   {
+    "id": "phys_089",
     "category": "physics",
-    "difficulty": "HARD",
-    "text": "What causes the sound of a heartbeat?",
+    "difficulty": "MEDIUM",
+    "text": "Which device converts mechanical energy to electrical?",
     "options": [
-      "Closure of the heart valves",
-      "Contraction of the heart chambers",
-      "Blood exiting the heart",
-      "Relaxation of the heart chambers"
+      "Generator",
+      "Transformer",
+      "Rheostat",
+      "Capacitor"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Closure of the heart valves.",
-    "id": "phys_089"
+    "explanation": "Generators produce electric current."
   },
   {
     "category": "physics",
@@ -1260,46 +1260,46 @@
     "id": "phys_090"
   },
   {
+    "id": "phys_091",
     "category": "physics",
-    "difficulty": "MEDIUM",
-    "text": "What is the Linnean name of the domestic apple tree?",
+    "difficulty": "HARD",
+    "text": "What is the approximate speed of sound in air at 20 °C?",
     "options": [
-      "Malus pumila",
-      "Malus americana",
-      "Pomus domestica",
-      "Appelus delectica"
+      "343 m/s",
+      "1500 m/s",
+      "100 m/s",
+      "3000 m/s"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Malus pumila.",
-    "id": "phys_091"
+    "explanation": "Sound travels at about 343 m/s in air at room temperature."
   },
   {
+    "id": "phys_092",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Where did the dog breed \"Chihuahua\" originate?",
+    "text": "«Action equals reaction» is which law?",
     "options": [
-      "Mexico",
-      "France",
-      "Spain",
-      "Russia"
+      "Newton's third law",
+      "Newton's first law",
+      "Energy conservation",
+      "Hooke's law"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Mexico.",
-    "id": "phys_092"
+    "explanation": "Newton's third law describes force pairs."
   },
   {
+    "id": "phys_093",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "Which of these choices is not one of the phases of mitosis?",
+    "text": "Ability of materials to conduct electric current:",
     "options": [
-      "Diplophase",
-      "Metaphase",
-      "Anaphase",
-      "Telophase"
+      "Electrical conductivity",
+      "Thermal conductivity",
+      "Magnetism",
+      "Viscosity"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Diplophase.",
-    "id": "phys_093"
+    "explanation": "Conductivity depends on charge carriers."
   },
   {
     "category": "physics",
@@ -1330,32 +1330,32 @@
     "id": "phys_095"
   },
   {
-    "category": "physics",
-    "difficulty": "MEDIUM",
-    "text": "What is the largest living organism currently known to man?",
-    "options": [
-      "Honey Fungus",
-      "Blue Whale",
-      "Redwood Tree",
-      "The Coral Reef"
-    ],
-    "correctIndex": 0,
-    "explanation": "The correct answer is Honey Fungus.",
-    "id": "phys_096"
-  },
-  {
+    "id": "phys_096",
     "category": "physics",
     "difficulty": "HARD",
-    "text": "The Western Lowland Gorilla is scientifically know as?",
+    "text": "Who discovered radioactivity?",
     "options": [
-      "Gorilla Gorilla Gorilla",
-      "Gorilla Gorilla Diehli",
-      "Gorilla Beringei Graueri",
-      "Gorilla Beringei Beringei"
+      "Henri Becquerel",
+      "Marie Curie",
+      "Ernest Rutherford",
+      "James Chadwick"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Gorilla Gorilla Gorilla.",
-    "id": "phys_097"
+    "explanation": "Becquerel found natural radioactivity in uranium salts."
+  },
+  {
+    "id": "phys_097",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which lens focuses parallel rays at a focal point?",
+    "options": [
+      "Converging (convex)",
+      "Diverging (concave)",
+      "Flat",
+      "Cylindrical"
+    ],
+    "correctIndex": 0,
+    "explanation": "A converging lens has positive optical power."
   },
   {
     "category": "physics",
@@ -1364,7 +1364,7 @@
     "options": [
       "Leg",
       "Arm",
-      "Hand",
+      "Torso",
       "Head"
     ],
     "correctIndex": 0,
@@ -1372,18 +1372,18 @@
     "id": "phys_098"
   },
   {
+    "id": "phys_099",
     "category": "physics",
-    "difficulty": "HARD",
-    "text": "What is considered the rarest form of color blindness?",
+    "difficulty": "EASY",
+    "text": "Which instrument measures electric current?",
     "options": [
-      "Blue",
-      "Red",
-      "Green",
-      "Purple"
+      "Ammeter",
+      "Voltmeter",
+      "Ohmmeter",
+      "Galvanometer only DC"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Blue.",
-    "id": "phys_099"
+    "explanation": "Ammeters are connected in series."
   },
   {
     "category": "physics",
@@ -1400,46 +1400,46 @@
     "id": "phys_100"
   },
   {
-    "category": "physics",
-    "difficulty": "EASY",
-    "text": "How many chromosomes are in your body cells?",
-    "options": [
-      "23",
-      "21",
-      "22",
-      "24"
-    ],
-    "correctIndex": 0,
-    "explanation": "The correct answer is 23.",
-    "id": "phys_101"
-  },
-  {
+    "id": "phys_101",
     "category": "physics",
     "difficulty": "MEDIUM",
-    "text": "At what depth should you make a decompression stop, or safety stop, on a typical scuba dive?",
+    "text": "How many chromosomes in a human diploid cell?",
     "options": [
-      "15 Feet / 5 Meters",
-      "25 Feet / 7.5 Meters",
-      "50 Feet / 15 Meters",
-      "75 Feet / 23 Meters"
+      "46",
+      "23",
+      "48",
+      "44"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is 15 Feet / 5 Meters.",
-    "id": "phys_102"
+    "explanation": "Human somatic cells have 46 chromosomes (23 pairs)."
   },
   {
+    "id": "phys_102",
     "category": "physics",
-    "difficulty": "HARD",
-    "text": "Which is not a type of neuron?",
+    "difficulty": "MEDIUM",
+    "text": "At constant temperature, pressure is inversely proportional to volume:",
     "options": [
-      "Perceptual Neuron",
-      "Sensory Neuron",
-      "Motor Neuron",
-      "Interneuron"
+      "Boyle's law",
+      "Gay-Lussac's law",
+      "Avogadro's law",
+      "Hooke's law"
     ],
     "correctIndex": 0,
-    "explanation": "The correct answer is Perceptual Neuron.",
-    "id": "phys_103"
+    "explanation": "P·V = const at constant T."
+  },
+  {
+    "id": "phys_103",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Constituent particles of protons and neutrons:",
+    "options": [
+      "Quark",
+      "Electron",
+      "Neutrino",
+      "Muon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Protons and neutrons are made of u and d quarks."
   },
   {
     "category": "physics",
@@ -1608,5 +1608,243 @@
     "correctIndex": 0,
     "explanation": "The Michelson-Morley experiment demonstrated that the speed of light is independent of Earth's motion.",
     "id": "phys_115"
+  },
+  {
+    "id": "phys_116",
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What force keeps planets in orbit around the Sun?",
+    "options": [
+      "Gravity",
+      "Magnetism",
+      "Friction",
+      "Buoyancy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Solar gravitational attraction."
+  },
+  {
+    "id": "phys_117",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which instrument measures voltage?",
+    "options": [
+      "Voltmeter",
+      "Ammeter",
+      "Barometer",
+      "Thermometer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Voltmeters connect in parallel."
+  },
+  {
+    "id": "phys_118",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Wave bending around obstacles is called:",
+    "options": [
+      "Diffraction",
+      "Reflection",
+      "Refraction",
+      "Absorption"
+    ],
+    "correctIndex": 0,
+    "explanation": "Diffraction is wave spreading."
+  },
+  {
+    "id": "phys_119",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Approximate g on Earth?",
+    "options": [
+      "9.8 m/s²",
+      "1 m/s²",
+      "98 m/s²",
+      "0.98 m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "G ≈ 9.8 m/s²."
+  },
+  {
+    "id": "phys_120",
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Lowest frequency visible color?",
+    "options": [
+      "Red",
+      "Violet",
+      "Blue",
+      "Yellow"
+    ],
+    "correctIndex": 0,
+    "explanation": "Red has the lowest frequency."
+  },
+  {
+    "id": "phys_121",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "F = k·Δx describes which law?",
+    "options": [
+      "Hooke's law",
+      "Ohm's law",
+      "Coulomb's law",
+      "Pascal's law"
+    ],
+    "correctIndex": 0,
+    "explanation": "Elastic force ∝ deformation."
+  },
+  {
+    "id": "phys_122",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Elementary charge e is:",
+    "options": [
+      "Electron charge",
+      "Energy",
+      "Mass",
+      "Speed"
+    ],
+    "correctIndex": 0,
+    "explanation": "E ≈ 1.602×10⁻¹⁹ C."
+  },
+  {
+    "id": "phys_123",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Current that reverses direction periodically:",
+    "options": [
+      "Alternating",
+      "Direct",
+      "Pulsed",
+      "Static"
+    ],
+    "correctIndex": 0,
+    "explanation": "AC changes direction."
+  },
+  {
+    "id": "otdb_physics_0001",
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "What is the unit of electrical resistance?",
+    "options": [
+      "Ohm",
+      "Mho",
+      "Tesla",
+      "Joule"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Ohm."
+  },
+  {
+    "id": "otdb_physics_0002",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which of the following liquids is least viscous? Assume temperature is 25°C.",
+    "options": [
+      "Acetone",
+      "Water",
+      "Mercury",
+      "Benzene"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Acetone."
+  },
+  {
+    "id": "otdb_physics_0003",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "What is the unit of electrical inductance?",
+    "options": [
+      "Henry",
+      "Weber",
+      "Coulomb",
+      "Mho"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Henry."
+  },
+  {
+    "id": "otdb_physics_0004",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+    "options": [
+      "8 Minutes",
+      "6 Minutes",
+      "2 Minutes",
+      "12 Minutes"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 8 Minutes."
+  },
+  {
+    "id": "otdb_physics_0005",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "At what temperature does water boil?",
+    "options": [
+      "212°F",
+      "200°F",
+      "181°F",
+      "178°F"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is 212°F."
+  },
+  {
+    "id": "otdb_physics_0006",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "An organism described as \"heliotropic\" has a tendancy to move towards which of these things?",
+    "options": [
+      "Light",
+      "Water",
+      "Trees",
+      "Pollen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Light."
+  },
+  {
+    "id": "otdb_physics_0007",
+    "category": "physics",
+    "difficulty": "HARD",
+    "text": "Which scientific unit is named after an Italian nobleman?",
+    "options": [
+      "Volt",
+      "Pascal",
+      "Ohm",
+      "Hertz"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Volt."
+  },
+  {
+    "id": "otdb_physics_0008",
+    "category": "physics",
+    "difficulty": "EASY",
+    "text": "Which type of rock is created by intense heat AND pressure?",
+    "options": [
+      "Metamorphic",
+      "Sedimentary",
+      "Igneous",
+      "Diamond"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Metamorphic."
+  },
+  {
+    "id": "otdb_physics_0009",
+    "category": "physics",
+    "difficulty": "MEDIUM",
+    "text": "Which of the following is NOT a passive electrical component?",
+    "options": [
+      "Transistor",
+      "Resistor",
+      "Capacitor",
+      "Inductor"
+    ],
+    "correctIndex": 0,
+    "explanation": "The correct answer is Transistor."
   }
 ]

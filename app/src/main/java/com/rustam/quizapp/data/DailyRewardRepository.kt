@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.withTransaction
 import com.rustam.quizapp.data.db.AppDatabase
 import com.rustam.quizapp.data.db.DailyRewardEntity
+import com.rustam.quizapp.domain.GemEconomy
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.time.LocalDate
@@ -14,8 +15,13 @@ data class DailyRewardState(
     /** Position in the reward cycle the current/next claim corresponds to (1-based). */
     val dayIndex: Int = 1,
     /** Coins awarded for [dayIndex]. */
-    val rewardCoins: Int = 0
+    val rewardCoins: Int = 0,
+    /** Gems awarded for [dayIndex] (0 on non-milestone days). */
+    val rewardGems: Int = 0
 )
+
+/** What a daily-login claim grants, so the caller can credit both currencies. */
+data class DailyRewardClaim(val coins: Int, val gems: Int)
 
 /**
  * Tracks the daily login reward. The reward grows with the login streak over a fixed cycle
@@ -38,31 +44,33 @@ class DailyRewardRepository(context: Context) {
             else -> 1                                  // streak (re)starts
         }
         val index = if (canClaim) nextIndex else streak
+        val safeIndex = index.coerceAtLeast(1)
         DailyRewardState(
             canClaim = canClaim,
-            dayIndex = index.coerceAtLeast(1),
-            rewardCoins = rewardForDay(index)
+            dayIndex = safeIndex,
+            rewardCoins = rewardForDay(safeIndex),
+            rewardGems = GemEconomy.dailyLoginGems(safeIndex)
         )
     }
 
     /**
-     * Claims today's reward if available. Returns the number of coins awarded, or 0 if it
-     * was already claimed today. The caller is responsible for crediting the coins.
+     * Claims today's reward if available. Returns the coins and gems awarded, or zero of each if it
+     * was already claimed today. The caller is responsible for crediting both currencies.
      */
-    suspend fun claim(): Int {
+    suspend fun claim(): DailyRewardClaim {
         val today = LocalDate.now().toEpochDay()
         return db.withTransaction {
             val reward = dao.get() ?: DailyRewardEntity()
-            if (reward.lastClaimDay == today) return@withTransaction 0
+            if (reward.lastClaimDay == today) return@withTransaction DailyRewardClaim(0, 0)
             val newIndex = if (reward.lastClaimDay == today - 1) reward.claimStreak + 1 else 1
             dao.upsert(reward.copy(lastClaimDay = today, claimStreak = newIndex))
-            rewardForDay(newIndex)
+            DailyRewardClaim(rewardForDay(newIndex), GemEconomy.dailyLoginGems(newIndex))
         }
     }
 
     companion object {
         /** Coins for each day in the 7-day cycle; it repeats after day 7. */
-        val REWARD_CYCLE = listOf(40, 60, 80, 120, 160, 240, 400)
+        val REWARD_CYCLE = listOf(24, 36, 48, 72, 96, 144, 240)
 
         fun rewardForDay(dayIndex: Int): Int {
             if (dayIndex <= 0) return REWARD_CYCLE.first()

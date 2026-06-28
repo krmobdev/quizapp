@@ -10,7 +10,7 @@ package com.rustam.quizapp.domain
  */
 object LootBox {
     /** Coin cost to open one chest. */
-    const val PRICE = 500
+    val PRICE: Int = EconomyBalance.scale(500)
 
     /** Roll thresholds (1..100). A failed cosmetic roll (nothing left to win) falls through. */
     const val AVATAR_MAX_ROLL = 15
@@ -20,20 +20,20 @@ object LootBox {
 
     /** Coin payouts as (amount to weight). Average sits a little under [PRICE] — the gamble. */
     val coinPayouts: List<Pair<Int, Int>> = listOf(
-        100 to 35,
-        250 to 30,
-        450 to 20,
-        700 to 10,
-        1200 to 5
+        EconomyBalance.scale(100) to 35,
+        EconomyBalance.scale(250) to 30,
+        EconomyBalance.scale(450) to 20,
+        EconomyBalance.scale(700) to 10,
+        EconomyBalance.scale(1200) to 5
     )
 
     /** Free-XP payouts as (amount to weight). */
     val xpPayouts: List<Pair<Int, Int>> = listOf(
-        200 to 35,
-        450 to 30,
-        800 to 20,
-        1400 to 10,
-        2200 to 5
+        EconomyBalance.scale(200) to 35,
+        EconomyBalance.scale(450) to 30,
+        EconomyBalance.scale(800) to 20,
+        EconomyBalance.scale(1400) to 10,
+        EconomyBalance.scale(2200) to 5
     )
 
     /** Picks a value from a weighted (value to weight) table. */
@@ -49,10 +49,11 @@ object LootBox {
     }
 }
 
-/** The outcome of opening one [LootBox], surfaced to the shop screen for the reveal dialog. */
+/** The outcome of opening a [LootBox] or [MythicBox], surfaced to the shop reveal dialog. */
 sealed interface LootResult {
     data class Coins(val amount: Int) : LootResult
     data class Xp(val amount: Int) : LootResult
     data class Avatar(val item: AvatarItem) : LootResult
     data class Title(val item: TitleItem) : LootResult
+    data class Theme(val item: ThemeItem) : LootResult
 }

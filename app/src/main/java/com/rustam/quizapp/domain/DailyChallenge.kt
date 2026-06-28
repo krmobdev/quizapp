@@ -27,14 +27,16 @@ object DailyChallenges {
     const val DAILY_COUNT = 3
 
     /** Pool of templates; [dailySet] picks [DAILY_COUNT] of distinct types each day. */
+    private fun c(value: Int) = EconomyBalance.scale(value)
+
     val pool: List<DailyChallenge> = listOf(
-        DailyChallenge("play3", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 3, 100, 130),
-        DailyChallenge("play5", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 5, 180, 240),
-        DailyChallenge("correct20", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 20, 130, 180),
-        DailyChallenge("correct40", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 40, 220, 280),
-        DailyChallenge("perfect", DailyChallengeType.PERFECT_QUIZ, "💯", R.string.quest_perfect_quiz, 1, 180, 220),
-        DailyChallenge("coins400", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 400, 120, 140),
-        DailyChallenge("coins1200", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 1200, 200, 200)
+        DailyChallenge("play3", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 3, c(100), c(130)),
+        DailyChallenge("play5", DailyChallengeType.PLAY_QUIZZES, "🎯", R.string.quest_play_quizzes, 5, c(180), c(240)),
+        DailyChallenge("correct20", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 20, c(130), c(180)),
+        DailyChallenge("correct40", DailyChallengeType.ANSWER_CORRECT, "✅", R.string.quest_answer_correct, 40, c(220), c(280)),
+        DailyChallenge("perfect", DailyChallengeType.PERFECT_QUIZ, "💯", R.string.quest_perfect_quiz, 1, c(180), c(220)),
+        DailyChallenge("coins400", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 400, c(120), c(140)),
+        DailyChallenge("coins1200", DailyChallengeType.EARN_COINS, "🪙", R.string.quest_earn_coins, 1200, c(200), c(200))
     )
 
     /**
