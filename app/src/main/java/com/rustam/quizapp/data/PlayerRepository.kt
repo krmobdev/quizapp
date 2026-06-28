@@ -22,9 +22,11 @@ import com.rustam.quizapp.domain.QuizEvents
 import com.rustam.quizapp.domain.QuizReward
 import com.rustam.quizapp.domain.RewardCalculator
 import com.rustam.quizapp.domain.ShopCatalog
+import com.rustam.quizapp.domain.PassiveTalentTree
 import com.rustam.quizapp.domain.SkillBranch
 import com.rustam.quizapp.domain.SkillTree
 import com.rustam.quizapp.domain.SkillTreeState
+import com.rustam.quizapp.domain.TalentTreeState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -38,6 +40,7 @@ data class PlayerProfile(
     val eventProgress: List<QuizEventProgress>,
     val stats: CharacterStats,
     val skillTree: SkillTreeState,
+    val talentTree: TalentTreeState,
     val lifetimePoints: Int,
     val bankedLifetimePoints: Int = 0,
     val lifetimeCoins: Int = 0,
@@ -76,6 +79,7 @@ class PlayerRepository(
             eventProgress = QuizEvents.activeEvents(categories, eventSnapshot(player)),
             stats = player.toStats(),
             skillTree = player.toSkillTree(),
+            talentTree = player.toTalentTree(),
             lifetimePoints = player.lifetimePoints,
             bankedLifetimePoints = player.bankedLifetimePoints,
             lifetimeCoins = player.lifetimeCoins,
@@ -376,6 +380,7 @@ class PlayerRepository(
         val player = dao.getPlayer() ?: PlayerEntity()
         val stats = player.toStats()
         val skills = player.toSkillTree()
+        val talents = player.toTalentTree()
 
         // Level scaling: higher level → higher base reward (active + hidden banked lifetime XP).
         val lifetime = player.lifetimePoints
@@ -389,10 +394,10 @@ class PlayerRepository(
 
         // Percentage bonuses (Strength/Intelligence + Erudition/Commerce skills) plus flat
         // bonuses (Wisdom/Endurance + Sage/Resilience skills).
-        val xpBonusPercent = stats.xpBonusPercent + skills.xpBonusPercent
-        val coinBonusPercent = stats.coinBonusPercent + skills.coinBonusPercent
-        val flatXpBonus = stats.flatXpBonus + skills.flatXpBonus
-        val flatCoinBonus = stats.flatCoinBonus + skills.flatCoinBonus
+        val xpBonusPercent = stats.xpBonusPercent + skills.xpBonusPercent + talents.xpBonusPercent
+        val coinBonusPercent = stats.coinBonusPercent + skills.coinBonusPercent + talents.coinBonusPercent
+        val flatXpBonus = stats.flatXpBonus + skills.flatXpBonus + talents.flatXpBonus
+        val flatCoinBonus = stats.flatCoinBonus + skills.flatCoinBonus + talents.flatCoinBonus
         val xpBonus = (scaledBasePoints * (xpBonusPercent / 100f)).toInt() + flatXpBonus
         val coinBonus = (scaledBaseCoins * (coinBonusPercent / 100f)).toInt() + flatCoinBonus
 
@@ -401,8 +406,8 @@ class PlayerRepository(
 
         // Luck (+ Charisma + Fortune skill) roll for double rewards (Critical Success).
         val doubleChance = stats.doubleRewardChancePercent + stats.critChanceBonusPercent +
-            skills.critChanceBonusPercent
-        val isCriticalSuccess = if (doubleChance > 0) (1..100).random() <= doubleChance else false
+            skills.critChanceBonusPercent + talents.critChanceBonusPercent
+        val isCriticalSuccess = if (doubleChance > 0f) (1..100).random() <= doubleChance else false
 
         if (isCriticalSuccess) {
             pointsEarned = (pointsEarned * stats.critMultiplier).toInt()
@@ -473,6 +478,30 @@ class PlayerRepository(
      * Buys the next tier of a Mastery Tree [branchId] if the player can afford both the free-XP
      * and coin cost and the branch is not maxed. Cost and deduction are atomic. Returns `true` on success.
      */
+    /**
+     * Upgrades one rank of a passive talent [nodeId] if prerequisites are met and the player
+     * can afford the free-XP cost. Returns `true` on success.
+     */
+    suspend fun upgradeTalent(nodeId: String): Boolean {
+        val node = PassiveTalentTree.node(nodeId) ?: return false
+        var upgraded = false
+        db.withTransaction {
+            val player = dao.getPlayer() ?: PlayerEntity()
+            val state = player.toTalentTree()
+            if (!PassiveTalentTree.canUpgrade(node, state, player.points)) return@withTransaction
+            val cost = PassiveTalentTree.nextXpCost(node, state)
+            val newRanks = state.ranks.toMutableMap()
+            newRanks[node.id] = state.rank(node) + 1
+            val updated = player.copy(
+                points = player.points - cost,
+                talentProgressCsv = PassiveTalentTree.serializeProgress(TalentTreeState(newRanks))
+            )
+            dao.upsertPlayer(updated)
+            upgraded = true
+        }
+        return upgraded
+    }
+
     suspend fun upgradeSkill(branchId: String): Boolean {
         val branch = SkillTree.branch(branchId) ?: return false
         var upgraded = false
@@ -549,6 +578,9 @@ class PlayerRepository(
         val raw = this?.idsCsv.orEmpty()
         return if (raw.isEmpty()) emptyList() else raw.split(",")
     }
+
+    private fun PlayerEntity.toTalentTree(): TalentTreeState =
+        PassiveTalentTree.parseProgress(talentProgressCsv)
 
     private fun PlayerEntity.toSkillTree(): SkillTreeState = SkillTreeState(
         mapOf(

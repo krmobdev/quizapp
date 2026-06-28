@@ -20,7 +20,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         AchievementEntity::class,
         AppStateEntity::class
     ],
-    version = 5,
+    version = 6,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -109,6 +109,15 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        /** Passive talent tree progress stored as `nodeId:rank` CSV on the player row. */
+        private val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "ALTER TABLE player ADD COLUMN talentProgressCsv TEXT NOT NULL DEFAULT ''"
+                )
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase =
             instance ?: synchronized(this) {
                 instance ?: build(context.applicationContext).also { instance = it }
@@ -116,7 +125,9 @@ abstract class AppDatabase : RoomDatabase() {
 
         private fun build(context: Context): AppDatabase =
             Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME)
-                .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5)
+                .addMigrations(
+                    MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6
+                )
                 .fallbackToDestructiveMigration(dropAllTables = true)
                 .build()
     }

@@ -56,6 +56,8 @@ data class PlayerEntity(
     val skillChronos: Int = 0,
     val skillSage: Int = 0,
     val skillResilience: Int = 0,
+    /** Passive talent tree progress: comma-separated `nodeId:rank` pairs (see PassiveTalentTree). */
+    val talentProgressCsv: String = "",
     val dailyCompletedDay: Long = -1L,
     val weeklyEpoch: Long = -1L,
     val weeklyCompletions: Int = 0,

@@ -39,16 +39,16 @@ data class CharacterStats(
 object CharacterLevelCalculator {
     /**
      * Current level cap. XP beyond [lifetimeCap] is stored in [PlayerEntity.bankedLifetimePoints]
-     * (hidden). Raising this constant (e.g. to 200) automatically credits banked XP toward the new cap.
+     * (hidden). Raising this constant automatically credits banked XP toward the new cap.
      */
-    const val MAX_LEVEL = 120
+    const val MAX_LEVEL = 240
 
     /** Maximum value any single character stat can be upgraded to. */
     const val MAX_STAT = 50
 
     /**
      * Cumulative lifetime XP to reach level L: [XP_PER_LEVEL_UNIT] × L × (L − 1).
-     * Level 120 ≈ 313 560 XP — aligns with maxing stats + Mastery Tree at average pace.
+     * Level 240 ≈ 1 261 920 XP — aligns with maxing stats, Mastery Tree and Talent Tree at average pace.
      */
     const val XP_PER_LEVEL_UNIT = 22
 
@@ -156,7 +156,14 @@ object CharacterLevelCalculator {
             level <= 89 -> "Вечный знаток"
             level <= 99 -> "Архонт"
             level <= 109 -> "Превосходящий"
-            else -> "Бессмертный знаток"
+            level <= 119 -> "Бессмертный знаток"
+            level <= 139 -> "Воплощение мудрости"
+            level <= 159 -> "Покоритель знаний"
+            level <= 179 -> "Властелин разума"
+            level <= 199 -> "Титан эрудиции"
+            level <= 219 -> "Вечный оракул"
+            level <= 239 -> "Хранитель истины"
+            else -> "Абсолют"
         }
     }
 
@@ -179,7 +186,14 @@ object CharacterLevelCalculator {
             level <= 89 -> "Eternal Scholar"
             level <= 99 -> "Archon"
             level <= 109 -> "Transcendent"
-            else -> "Immortal Sage"
+            level <= 119 -> "Immortal Sage"
+            level <= 139 -> "Wisdom Incarnate"
+            level <= 159 -> "Knowledge Conqueror"
+            level <= 179 -> "Mind Sovereign"
+            level <= 199 -> "Erudition Titan"
+            level <= 219 -> "Eternal Oracle"
+            level <= 239 -> "Truth Keeper"
+            else -> "Absolute"
         }
     }
 

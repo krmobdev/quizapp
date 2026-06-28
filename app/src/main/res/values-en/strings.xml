@@ -281,7 +281,35 @@
     <string name="player_bonus_coins">+%1$d%% coins</string>
     <string name="player_bonus_crit">%1$d%% crit</string>
     <string name="player_bonus_time">+%1$.1f s</string>
-    <string name="player_bonus_none">Upgrade stats and skills to gain bonuses</string>
+    <string name="player_bonus_none">Upgrade stats, the talent tree and skills to gain bonuses</string>
+
+    <!-- Passive talent tree (free-XP sink) -->
+    <string name="talent_tree_title">Talent Tree</string>
+    <string name="talent_tree_entry_title">Talent Tree</string>
+    <string name="talent_tree_entry_subtitle">Upgraded %1$d / %2$d · free XP only</string>
+    <string name="talent_tree_open">Open</string>
+    <string name="talent_tree_close">Close</string>
+    <string name="talent_tree_progress">Progress: %1$d / %2$d</string>
+    <string name="talent_tree_hint">Pour free XP into passive talents. Bonuses are small but plentiful — a perfect sink for spare XP.</string>
+    <string name="talent_node_title">Node %1$d · %2$s</string>
+    <string name="talent_node_short">Node %1$d</string>
+    <string name="talent_node_locked">Unlock the previous node first</string>
+    <string name="talent_node_bonus">Per rank: %1$s</string>
+    <string name="talent_upgrade_cost">+%1$d 🎓</string>
+    <string name="talent_upgrade_xp">%1$d XP</string>
+    <string name="talent_nodes_hidden">%1$d more nodes ahead</string>
+    <string name="talent_branch_insight">Insight</string>
+    <string name="talent_branch_prosperity">Prosperity</string>
+    <string name="talent_branch_fortune">Fortune</string>
+    <string name="talent_branch_celerity">Celerity</string>
+    <string name="talent_branch_acumen">Acumen</string>
+    <string name="talent_branch_fortitude">Fortitude</string>
+    <string name="talent_bonus_xp">+%1$.2f%% XP</string>
+    <string name="talent_bonus_coins">+%1$.2f%% coins</string>
+    <string name="talent_bonus_crit">+%1$.2f%% crit</string>
+    <string name="talent_bonus_time">+%1$.1f s</string>
+    <string name="talent_bonus_flat_xp">+%1$d XP per game</string>
+    <string name="talent_bonus_flat_coins">+%1$d coins per game</string>
 
     <string name="stats_characteristics_tab">Characteristics</string>
     <string name="stats_skilltree_tab">Skills</string>

@@ -55,6 +55,7 @@ import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.domain.ShopCatalog
 import com.rustam.quizapp.domain.SkillBranch
 import com.rustam.quizapp.domain.SkillBonusKind
+import com.rustam.quizapp.domain.PassiveTalentTree
 import com.rustam.quizapp.domain.SkillTree
 import com.rustam.quizapp.domain.SkillTreeState
 import com.rustam.quizapp.ui.components.AppDimens
@@ -75,6 +76,7 @@ fun StatsScreen(
         onUpdateName = viewModel::updatePlayerName,
         onUpgradeStat = viewModel::upgradeStat,
         onUpgradeSkill = viewModel::upgradeSkill,
+        onUpgradeTalent = viewModel::upgradeTalent,
         modifier = modifier
     )
 }
@@ -85,12 +87,23 @@ private fun StatsContent(
     onUpdateName: (String) -> Unit,
     onUpgradeStat: (String) -> Unit,
     onUpgradeSkill: (String) -> Unit = {},
+    onUpgradeTalent: (String) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
     var showNameDialog by rememberSaveable { mutableStateOf(false) }
+    var showTalentTree by rememberSaveable { mutableStateOf(false) }
     var selectedSubTab by rememberSaveable { mutableStateOf(0) }
+
+    if (showTalentTree) {
+        TalentTreeDialog(
+            talentTree = state.talentTree,
+            freeXp = state.points,
+            onDismiss = { showTalentTree = false },
+            onUpgrade = onUpgradeTalent
+        )
+    }
 
     if (showNameDialog) {
         EditNameDialog(
@@ -120,6 +133,14 @@ private fun StatsContent(
                 colors = colors,
                 textColor = textColor,
                 onEditName = { showNameDialog = true }
+            )
+        }
+        item {
+            TalentTreeEntryCard(
+                talentTree = state.talentTree,
+                colors = colors,
+                textColor = textColor,
+                onOpen = { showTalentTree = true }
             )
         }
         item {
@@ -272,12 +293,16 @@ private fun PlayerProfileCard(
     val displayName = state.playerName.ifBlank { stringResource(R.string.player_default_name) }
     val title = ShopCatalog.title(state.equippedTitleId)
 
-    // Aggregated bonuses currently in effect (characteristics + Mastery Tree combined).
-    val xpBonus = state.stats.xpBonusPercent + state.skillTree.xpBonusPercent
-    val coinBonus = state.stats.coinBonusPercent + state.skillTree.coinBonusPercent
+    // Aggregated bonuses: characteristics + Mastery Tree + passive Talent Tree.
+    val xpBonus = state.stats.xpBonusPercent + state.skillTree.xpBonusPercent +
+        state.talentTree.xpBonusPercent
+    val coinBonus = state.stats.coinBonusPercent + state.skillTree.coinBonusPercent +
+        state.talentTree.coinBonusPercent
     val critChance = state.stats.doubleRewardChancePercent +
-        state.stats.critChanceBonusPercent + state.skillTree.critChanceBonusPercent
-    val extraTime = state.stats.extraTimeSeconds + state.skillTree.extraTimeSeconds
+        state.stats.critChanceBonusPercent + state.skillTree.critChanceBonusPercent +
+        state.talentTree.critChanceBonusPercent
+    val extraTime = state.stats.extraTimeSeconds + state.skillTree.extraTimeSeconds +
+        state.talentTree.extraTimeSeconds
     val unlockedAchievements = state.achievements.count { it.unlocked }
 
     GlassCard(modifier = modifier, colors = colors) {
@@ -452,9 +477,9 @@ private fun PlayerProfileCard(
                     color = textColor
                 )
                 val bonuses = buildList {
-                    if (xpBonus > 0) add(stringResource(R.string.player_bonus_xp, xpBonus))
-                    if (coinBonus > 0) add(stringResource(R.string.player_bonus_coins, coinBonus))
-                    if (critChance > 0) add(stringResource(R.string.player_bonus_crit, critChance))
+                    if (xpBonus >= 0.5f) add(stringResource(R.string.player_bonus_xp, kotlin.math.round(xpBonus).toInt()))
+                    if (coinBonus >= 0.5f) add(stringResource(R.string.player_bonus_coins, kotlin.math.round(coinBonus).toInt()))
+                    if (critChance >= 0.5f) add(stringResource(R.string.player_bonus_crit, kotlin.math.round(critChance).toInt()))
                     if (extraTime > 0f) add(stringResource(R.string.player_bonus_time, extraTime))
                 }
                 if (bonuses.isEmpty()) {
@@ -476,6 +501,74 @@ private fun PlayerProfileCard(
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@Composable
+private fun TalentTreeEntryCard(
+    talentTree: com.rustam.quizapp.domain.TalentTreeState,
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    textColor: androidx.compose.ui.graphics.Color,
+    onOpen: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    GlassCard(modifier = modifier, colors = colors) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            Text(text = "🌳", fontSize = 32.sp)
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.talent_tree_entry_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = textColor
+                )
+                Text(
+                    text = stringResource(
+                        R.string.talent_tree_entry_subtitle,
+                        talentTree.totalRanks,
+                        PassiveTalentTree.totalMaxRanks
+                    ),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = textColor.copy(alpha = 0.7f)
+                )
+                LinearProgressIndicator(
+                    progress = {
+                        talentTree.totalRanks.toFloat() /
+                            PassiveTalentTree.totalMaxRanks.coerceAtLeast(1)
+                    },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(5.dp),
+                    strokeCap = StrokeCap.Round,
+                    trackColor = colors.progressTrack,
+                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f)
+                )
+            }
+            androidx.compose.material3.Button(
+                onClick = onOpen,
+                colors = androidx.compose.material3.ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary
+                ),
+                contentPadding = PaddingValues(horizontal = 14.dp, vertical = 8.dp),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text(
+                    text = stringResource(R.string.talent_tree_open),
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
             }
         }
     }

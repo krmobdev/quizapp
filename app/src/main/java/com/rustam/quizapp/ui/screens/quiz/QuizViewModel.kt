@@ -235,7 +235,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             quizLanguage = settingsRepository.appLanguage.first()
             
             val profile = playerRepository.observeProfile().first()
-            val extraSeconds = profile.stats.extraTimeSeconds + profile.skillTree.extraTimeSeconds
+            val extraSeconds = profile.stats.extraTimeSeconds +
+                profile.skillTree.extraTimeSeconds + profile.talentTree.extraTimeSeconds
             this@QuizViewModel.questionTimeSeconds = (this@QuizViewModel.baseQuestionTimeSeconds + extraSeconds).toInt()
 
             val recentIds = playerRepository.getRecentQuestions(categoryId).first()

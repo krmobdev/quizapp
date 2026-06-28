@@ -281,7 +281,35 @@
     <string name="player_bonus_coins">+%1$d%% монет</string>
     <string name="player_bonus_crit">%1$d%% крит</string>
     <string name="player_bonus_time">+%1$.1f с</string>
-    <string name="player_bonus_none">Прокачайте характеристики и навыки, чтобы получить бонусы</string>
+    <string name="player_bonus_none">Прокачайте характеристики, дерево талантов и навыки, чтобы получить бонусы</string>
+
+    <!-- Дерево талантов (пассивная прокачка за свободный опыт) -->
+    <string name="talent_tree_title">Дерево талантов</string>
+    <string name="talent_tree_entry_title">Дерево талантов</string>
+    <string name="talent_tree_entry_subtitle">Прокачано %1$d / %2$d · только свободный опыт</string>
+    <string name="talent_tree_open">Открыть</string>
+    <string name="talent_tree_close">Закрыть</string>
+    <string name="talent_tree_progress">Прогресс: %1$d / %2$d</string>
+    <string name="talent_tree_hint">Вкладывайте свободный опыт в пассивные таланты. Бонусы небольшие, но их много — идеальный слив лишнего XP.</string>
+    <string name="talent_node_title">Узел %1$d · %2$s</string>
+    <string name="talent_node_short">Узел %1$d</string>
+    <string name="talent_node_locked">Сначала откройте предыдущий узел</string>
+    <string name="talent_node_bonus">За ранг: %1$s</string>
+    <string name="talent_upgrade_cost">+%1$d 🎓</string>
+    <string name="talent_upgrade_xp">%1$d XP</string>
+    <string name="talent_nodes_hidden">Ещё %1$d узлов впереди</string>
+    <string name="talent_branch_insight">Проницательность</string>
+    <string name="talent_branch_prosperity">Процветание</string>
+    <string name="talent_branch_fortune">Фортуна</string>
+    <string name="talent_branch_celerity">Стремительность</string>
+    <string name="talent_branch_acumen">Остроумие</string>
+    <string name="talent_branch_fortitude">Стойкость</string>
+    <string name="talent_bonus_xp">+%1$.2f%% опыта</string>
+    <string name="talent_bonus_coins">+%1$.2f%% монет</string>
+    <string name="talent_bonus_crit">+%1$.2f%% крит</string>
+    <string name="talent_bonus_time">+%1$.1f с</string>
+    <string name="talent_bonus_flat_xp">+%1$d XP за игру</string>
+    <string name="talent_bonus_flat_coins">+%1$d монет за игру</string>
 
     <string name="stats_characteristics_tab">Характеристики</string>
     <string name="stats_skilltree_tab">Навыки</string>

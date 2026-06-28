@@ -21,6 +21,7 @@ import com.rustam.quizapp.domain.Achievements
 import com.rustam.quizapp.domain.CharacterStats
 import com.rustam.quizapp.domain.QuizEventProgress
 import com.rustam.quizapp.domain.SkillTreeState
+import com.rustam.quizapp.domain.TalentTreeState
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -63,6 +64,7 @@ data class PlayerUiState(
     val categories: List<CategoryStatsUi> = emptyList(),
     val stats: CharacterStats = CharacterStats(),
     val skillTree: SkillTreeState = SkillTreeState(),
+    val talentTree: TalentTreeState = TalentTreeState(),
     val lifetimePoints: Int = 0,
     val bankedLifetimePoints: Int = 0,
     val lifetimeCoins: Int = 0,
@@ -123,6 +125,14 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
     fun upgradeSkill(branchId: String) {
         viewModelScope.launch {
             if (playerRepository.upgradeSkill(branchId)) {
+                soundManager.play(SoundType.CLICK)
+            }
+        }
+    }
+
+    fun upgradeTalent(nodeId: String) {
+        viewModelScope.launch {
+            if (playerRepository.upgradeTalent(nodeId)) {
                 soundManager.play(SoundType.CLICK)
             }
         }
@@ -200,6 +210,7 @@ class StatsViewModel(application: Application) : AndroidViewModel(application) {
             categories = categories,
             stats = profile.stats,
             skillTree = profile.skillTree,
+            talentTree = profile.talentTree,
             lifetimePoints = profile.lifetimePoints,
             bankedLifetimePoints = profile.bankedLifetimePoints,
             lifetimeCoins = profile.lifetimeCoins,

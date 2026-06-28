@@ -8,9 +8,17 @@ class EconomyBalanceTest {
 
     @Test
     fun level120_requires_expectedLifetimeXp() {
-        assertEquals(313_560, CharacterLevelCalculator.xpRequiredForLevel(120))
-        assertEquals(120, CharacterLevelCalculator.calculateLevel(313_560))
-        assertEquals(120, CharacterLevelCalculator.calculateLevel(313_560, 50_000))
+        assertEquals(314_160, CharacterLevelCalculator.xpRequiredForLevel(120))
+        val level121Xp = CharacterLevelCalculator.xpRequiredForLevel(121)
+        assertEquals(120, CharacterLevelCalculator.calculateLevel(level121Xp - 1))
+    }
+
+    @Test
+    fun level240_requires_expectedLifetimeXp() {
+        assertEquals(1_261_920, CharacterLevelCalculator.xpRequiredForLevel(240))
+        val level241Xp = CharacterLevelCalculator.xpRequiredForLevel(241)
+        assertEquals(240, CharacterLevelCalculator.calculateLevel(level241Xp - 1))
+        assertEquals(240, CharacterLevelCalculator.calculateLevel(level241Xp - 1, 50_000))
     }
 
     @Test
@@ -27,30 +35,16 @@ class EconomyBalanceTest {
         val (lifetime, banked) = CharacterLevelCalculator.distributeLifetimeXp(cap, 0, 5_000)
         assertEquals(cap, lifetime)
         assertEquals(5_000, banked)
-        assertEquals(120, CharacterLevelCalculator.calculateLevel(lifetime, banked))
+        assertEquals(CharacterLevelCalculator.MAX_LEVEL, CharacterLevelCalculator.calculateLevel(lifetime, banked))
     }
 
     @Test
-    fun bankedXp_counts_when_level_cap_is_raised() {
-        val cap120 = CharacterLevelCalculator.lifetimeCap()
-        val (_, banked) = CharacterLevelCalculator.distributeLifetimeXp(cap120, 0, 100_000)
-        assertEquals(100_000, banked)
-        // Simulates raising MAX_LEVEL: effective XP would unlock levels beyond 120.
-        val effective = cap120 + banked
-        assertEquals(413_560, effective)
-        assertEquals(128, uncappedLevel(effective))
+    fun bankedXp_counts_toward_level_when_stored() {
+        val cap120 = CharacterLevelCalculator.xpRequiredForLevel(120)
+        val overflow = 100_000
+        // Legacy saves may hold banked XP from the old cap; it counts toward level automatically.
+        assertEquals(137, CharacterLevelCalculator.calculateLevel(cap120, overflow))
+        assertEquals(cap120 + overflow, CharacterLevelCalculator.effectiveLifetimePoints(cap120, overflow))
     }
 
-    @Test
-    fun bankedXp_applies_to_higher_cap_without_migration() {
-        val cap120 = CharacterLevelCalculator.lifetimeCap()
-        val (_, banked) = CharacterLevelCalculator.distributeLifetimeXp(cap120, 0, 100_000)
-        // After MAX_LEVEL is raised, the same split fields already represent 413_560 effective XP.
-        assertEquals(cap120 + banked, CharacterLevelCalculator.effectiveLifetimePoints(cap120, banked))
-    }
-
-    private fun uncappedLevel(effectiveXp: Int): Int {
-        val xp = effectiveXp.toDouble()
-        return ((1.0 + Math.sqrt(1.0 + xp / (CharacterLevelCalculator.XP_PER_LEVEL_UNIT / 4.0))) / 2.0).toInt()
-    }
 }
