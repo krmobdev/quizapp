@@ -541,8 +541,11 @@ class PlayerRepository(
         val promo = PromoCodes.find(code) ?: return PromoRedeemResult.Invalid
         var result: PromoRedeemResult = PromoRedeemResult.AlreadyRedeemed
         db.withTransaction {
-            if (promo.code in promoDao.getRedeemed().toSet()) return@withTransaction
-            promoDao.insert(RedeemedPromoEntity(promo.code))
+            // Infinite codes bypass the already-redeemed gate and are never recorded.
+            if (!promo.infinite) {
+                if (promo.code in promoDao.getRedeemed().toSet()) return@withTransaction
+                promoDao.insert(RedeemedPromoEntity(promo.code))
+            }
             val player = dao.getPlayer() ?: PlayerEntity()
             val reward = promo.reward
             var updated = player

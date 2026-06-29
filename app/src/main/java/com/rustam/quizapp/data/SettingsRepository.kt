@@ -8,18 +8,23 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 /**
- * User-facing settings (sound, theme mode, language), persisted in the shared
+ * User-facing settings (sound, haptic, theme mode, language), persisted in the shared
  * `app_state` Room row.
  */
 class SettingsRepository(context: Context) {
 
-    private val db = AppDatabase.getInstance(context)
+    private val db  = AppDatabase.getInstance(context)
     private val dao = db.appStateDao()
 
     /** Whether sound effects are enabled. Defaults to `true` when never set. */
-    val soundEnabled: Flow<Boolean> = dao.observe().map { it?.soundEnabled ?: DEFAULT_SOUND_ENABLED }
+    val soundEnabled: Flow<Boolean> = dao.observe().map { it?.soundEnabled ?: DEFAULT_ENABLED }
 
     suspend fun setSoundEnabled(enabled: Boolean) = update { it.copy(soundEnabled = enabled) }
+
+    /** Whether haptic (vibration) feedback is enabled. Defaults to `true` when never set. */
+    val hapticEnabled: Flow<Boolean> = dao.observe().map { it?.hapticEnabled ?: DEFAULT_ENABLED }
+
+    suspend fun setHapticEnabled(enabled: Boolean) = update { it.copy(hapticEnabled = enabled) }
 
     val themeMode: Flow<ThemeMode> = dao.observe().map { ThemeMode.fromStored(it?.themeMode) }
 
@@ -45,6 +50,6 @@ class SettingsRepository(context: Context) {
     }
 
     private companion object {
-        const val DEFAULT_SOUND_ENABLED = true
+        const val DEFAULT_ENABLED = true
     }
 }

@@ -179,6 +179,7 @@ data class AppStateEntity(
     val savedQuizJson: String? = null,
     val mistakesJson: String? = null,
     val soundEnabled: Boolean = true,
+    val hapticEnabled: Boolean = true,
     val themeMode: String? = null,
     val appLanguage: String? = null,
     /** Guards the one-time DataStore -> Room import. */

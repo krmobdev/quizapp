@@ -2,50 +2,50 @@ package com.rustam.quizapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// "Химия" brand palette — green / teal accents (Material 3 tonal roles).
+// iOS-style palette — System Blue primary, neutral gray surfaces.
 
-// Light
-val Teal40 = Color(0xFF006B5B)
-val TealContainerLight = Color(0xFF6FF7DD)
-val OnTealContainerLight = Color.Black
-val GreenSecondary40 = Color(0xFF4A635C)
-val GreenSecondaryContainerLight = Color(0xFFCCE8DF)
-val OnGreenSecondaryContainerLight = Color.Black
-val Aqua40 = Color(0xFF3A6470)
-val SurfaceLight = Color(0xFFF4FBF7)
-val OnSurfaceLight = Color.Black
-val SurfaceVariantLight = Color(0xFFDBE5E0)
-val OnSurfaceVariantLight = Color.Black
-val OutlineLight = Color(0xFF6F7975)
-val OutlineVariantLight = Color(0xFFBFC9C3)
+// ── Light mode ──────────────────────────────────────────────────────────────
+/** iOS System Blue */
+val IosBlue40          = Color(0xFF007AFF)
+val IosBlueContainer   = Color(0xFFD6EAFF)
+val OnIosBlueContainer = Color(0xFF001D36)
+val IosIndigo40        = Color(0xFF5856D6)
+/** iOS System Background (level 1) */
+val IosSurface         = Color(0xFFF2F2F7)
+val OnIosSurface       = Color(0xFF1C1C1E)
+/** iOS Secondary System Background (level 2) */
+val IosSurfaceVariant  = Color(0xFFE5E5EA)
+val OnIosSurfaceVariant = Color(0xFF48484A)
+val IosOutline         = Color(0xFFAEAEB2)
+val IosOutlineVariant  = Color(0xFFD1D1D6)
 
-// Dark
-val Teal80 = Color(0xFF50DBC0)
-val OnTeal80 = Color(0xFF00382F)
-val TealContainerDark = Color(0xFF005144)
-val OnTealContainerDark = Color.White
-val GreenSecondary80 = Color(0xFFB1CCC3)
-val GreenSecondaryContainerDark = Color(0xFF334B45)
-val OnGreenSecondaryContainerDark = Color.White
-val Aqua80 = Color(0xFFA2CEDC)
-val SurfaceDark = Color(0xFF101413)
-val OnSurfaceDark = Color.White
-val SurfaceVariantDark = Color(0xFF2A3230)
-val OnSurfaceVariantDark = Color.White
-val OutlineDark = Color(0xFF89938F)
-val OutlineVariantDark = Color(0xFF3F4945)
+// ── Dark mode ────────────────────────────────────────────────────────────────
+/** iOS System Blue Dark */
+val IosBlue80              = Color(0xFF0A84FF)
+val OnIosBlue80            = Color(0xFFFFFFFF)
+val IosBlueContainerDark   = Color(0xFF003A6E)
+val OnIosBlueContainerDark = Color(0xFFCDE5FF)
+val IosIndigo80            = Color(0xFF7D7AFF)
+/** iOS Dark System Background */
+val IosSurfaceDark         = Color(0xFF000000)
+val OnIosSurfaceDark       = Color(0xFFFFFFFF)
+/** iOS Dark Secondary System Background */
+val IosSurfaceVariantDark  = Color(0xFF1C1C1E)
+val OnIosSurfaceVariantDark = Color(0xFFAEAEB2)
+val IosOutlineDark         = Color(0xFF636366)
+val IosOutlineVariantDark  = Color(0xFF3A3A3C)
 
-// Answer feedback colors (kept distinct from the teal primary).
-val CorrectGreen = Color(0xFF2E7D32)
-val WrongRed = Color(0xFFC62828)
-val CorrectGreenDark = Color(0xFF4CAF50)
-val WrongRedDark = Color(0xFFEF5350)
+// ── Answer feedback (iOS Semantic Green / Red) ────────────────────────────────
+val CorrectGreen     = Color(0xFF34C759)   // iOS System Green
+val WrongRed         = Color(0xFFFF3B30)   // iOS System Red
+val CorrectGreenDark = Color(0xFF30D158)
+val WrongRedDark     = Color(0xFFFF453A)
 
-// Quiz screen — tuned for readability on dark backgrounds.
-val QuizBgTopDark = Color(0xFF0A1512)
-val QuizBgMidDark = Color(0xFF101413)
-val QuizBgBottomDark = Color(0xFF121A17)
-val QuizQuestionCardDark = Color(0xFF1E2825)
-val QuizAnswerCardDark = Color(0xFF2C3633)
-val QuizExplanationCardDark = Color(0xFF1F2E2A)
-val QuizCardBorderDark = Color(0xFF3D4A46)
+// ── Quiz screen dark backgrounds ─────────────────────────────────────────────
+val QuizBgTopDark          = Color(0xFF000000)
+val QuizBgMidDark          = Color(0xFF0D0D0F)
+val QuizBgBottomDark       = Color(0xFF1C1C1E)
+val QuizQuestionCardDark   = Color(0xFF2C2C2E)
+val QuizAnswerCardDark     = Color(0xFF3A3A3C)
+val QuizExplanationCardDark = Color(0xFF2C2C2E)
+val QuizCardBorderDark     = Color(0xFF48484A)

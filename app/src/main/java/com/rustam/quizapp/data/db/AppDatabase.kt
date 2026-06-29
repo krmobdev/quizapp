@@ -22,7 +22,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         RedeemedPromoEntity::class,
         AppStateEntity::class
     ],
-    version = 10,
+    version = 11,
     exportSchema = true
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -175,6 +175,15 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        /** Adds hapticEnabled flag to app_state (keeps all existing user data). */
+        private val MIGRATION_10_11 = object : Migration(10, 11) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "ALTER TABLE app_state ADD COLUMN hapticEnabled INTEGER NOT NULL DEFAULT 1"
+                )
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase =
             instance ?: synchronized(this) {
                 instance ?: build(context.applicationContext).also { instance = it }
@@ -184,7 +193,7 @@ abstract class AppDatabase : RoomDatabase() {
             Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME)
                 .addMigrations(
                     MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6,
-                    MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10
+                    MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11
                 )
                 .fallbackToDestructiveMigration(dropAllTables = true)
                 .build()

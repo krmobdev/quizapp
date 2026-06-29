@@ -278,63 +278,77 @@ private fun DailyDealCard(
     modifier: Modifier = Modifier
 ) {
     GlassCard(modifier = modifier, colors = colors) {
-        Row(
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 12.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(12.dp)
+                .padding(horizontal = 14.dp, vertical = 10.dp),
+            verticalArrangement = Arrangement.spacedBy(6.dp)
         ) {
-            Text(text = deal.template.emoji, fontSize = 28.sp)
-            Column(modifier = Modifier.weight(1f)) {
+            // ── Row 1: emoji · label · discount badge ───────────────────────
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                Text(text = deal.template.emoji, fontSize = 22.sp)
                 Text(
                     text = stringResource(deal.template.labelRes),
                     style = MaterialTheme.typography.bodyMedium,
                     fontWeight = FontWeight.SemiBold,
-                    color = textColor
+                    color = textColor,
+                    modifier = Modifier.weight(1f)
                 )
+                Surface(
+                    shape = RoundedCornerShape(6.dp),
+                    color = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.75f)
+                ) {
+                    Text(
+                        text = stringResource(
+                            R.string.deals_discount,
+                            com.rustam.quizapp.domain.ShopDeals.DISCOUNT_PERCENT
+                        ),
+                        style = MaterialTheme.typography.labelSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.error,
+                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                    )
+                }
+            }
+            // ── Row 2: bought count · action ────────────────────────────────
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
                 Text(
                     text = stringResource(
                         R.string.deals_bought,
                         deal.purchasedToday,
                         com.rustam.quizapp.domain.ShopDeals.MAX_PER_DAY
                     ),
-                    style = MaterialTheme.typography.bodySmall,
+                    style = MaterialTheme.typography.labelLarge,
                     color = textColor.copy(alpha = 0.65f)
                 )
-            }
-            // Discount badge
-            Surface(
-                shape = RoundedCornerShape(6.dp),
-                color = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.75f)
-            ) {
-                Text(
-                    text = stringResource(R.string.deals_discount, com.rustam.quizapp.domain.ShopDeals.DISCOUNT_PERCENT),
-                    style = MaterialTheme.typography.labelSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.error,
-                    modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
-                )
-            }
-            if (deal.soldOut) {
-                Text(
-                    text = stringResource(R.string.deals_sold_out),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = textColor.copy(alpha = 0.45f)
-                )
-            } else {
-                Button(
-                    onClick = onBuy,
-                    enabled = coins >= deal.dealPrice,
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
-                    modifier = Modifier.height(34.dp),
-                    shape = RoundedCornerShape(8.dp)
-                ) {
+                if (deal.soldOut) {
                     Text(
-                        text = stringResource(R.string.deals_buy, deal.dealPrice),
-                        fontSize = 13.sp,
-                        fontWeight = FontWeight.Bold
+                        text = stringResource(R.string.deals_sold_out),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = textColor.copy(alpha = 0.45f)
                     )
+                } else {
+                    Button(
+                        onClick = onBuy,
+                        enabled = coins >= deal.dealPrice,
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
+                        modifier = Modifier.height(30.dp),
+                        shape = RoundedCornerShape(8.dp)
+                    ) {
+                        Text(
+                            text = stringResource(R.string.deals_buy, deal.dealPrice),
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
                 }
             }
         }
@@ -353,11 +367,11 @@ private fun LootBoxCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = "🎁", fontSize = 34.sp)
+            Text(text = "🎁", fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(R.string.shop_lootbox_title),
@@ -380,10 +394,10 @@ private fun LootBoxCard(
                     disabledContainerColor = textColor.copy(alpha = 0.08f),
                     disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
-                Text(text = "🪙 ${LootBox.PRICE}", fontWeight = FontWeight.Bold)
+                Text(text = "🪙 ${LootBox.PRICE}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
         }
     }
@@ -401,11 +415,11 @@ private fun MythicChestCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = "🔮", fontSize = 34.sp)
+            Text(text = "🔮", fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(R.string.shop_mythic_title),
@@ -419,23 +433,30 @@ private fun MythicChestCard(
                     color = textColor.copy(alpha = 0.75f)
                 )
             }
+            // Always enabled — ViewModel emits snackbar on insufficient gems.
             Button(
                 onClick = onOpen,
-                enabled = affordable,
+                enabled = true,
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
-                    contentColor = MaterialTheme.colorScheme.onPrimary,
-                    disabledContainerColor = textColor.copy(alpha = 0.08f),
-                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                    containerColor = if (affordable)
+                        MaterialTheme.colorScheme.primary
+                    else
+                        MaterialTheme.colorScheme.surfaceVariant,
+                    contentColor = if (affordable)
+                        MaterialTheme.colorScheme.onPrimary
+                    else
+                        textColor.copy(alpha = 0.55f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp),
+                elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
             ) {
-                Text(text = "💎 ${MythicBox.PRICE_GEMS}", fontWeight = FontWeight.Bold)
+                Text(text = "💎 ${MythicBox.PRICE_GEMS}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
         }
     }
 }
+
 
 @Composable
 private fun GemBundleCard(
@@ -450,11 +471,11 @@ private fun GemBundleCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = bundle.emoji, fontSize = 32.sp)
+            Text(text = bundle.emoji, fontSize = 26.sp)
             Text(
                 text = stringResource(bundle.labelRes),
                 style = MaterialTheme.typography.titleMedium,
@@ -462,19 +483,25 @@ private fun GemBundleCard(
                 color = textColor,
                 modifier = Modifier.weight(1f)
             )
+            // Always enabled — ViewModel emits snackbar on insufficient gems.
             Button(
                 onClick = onBuy,
-                enabled = affordable,
+                enabled = true,
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
-                    contentColor = MaterialTheme.colorScheme.onPrimary,
-                    disabledContainerColor = textColor.copy(alpha = 0.08f),
-                    disabledContentColor = textColor.copy(alpha = 0.3f)
+                    containerColor = if (affordable)
+                        MaterialTheme.colorScheme.primary
+                    else
+                        MaterialTheme.colorScheme.surfaceVariant,
+                    contentColor = if (affordable)
+                        MaterialTheme.colorScheme.onPrimary
+                    else
+                        textColor.copy(alpha = 0.55f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp),
+                elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
             ) {
-                Text(text = "💎 ${bundle.priceGems}", fontWeight = FontWeight.Bold)
+                Text(text = "💎 ${bundle.priceGems}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
         }
     }
@@ -820,11 +847,11 @@ private fun BoostStoreCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = boost.item.emoji, fontSize = 32.sp)
+            Text(text = boost.item.emoji, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(boost.item.labelRes),
@@ -863,10 +890,10 @@ private fun BoostStoreCard(
                     disabledContainerColor = textColor.copy(alpha = 0.08f),
                     disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
-                Text(text = "🪙 ${boost.item.priceCoins}", fontWeight = FontWeight.Bold)
+                Text(text = "🪙 ${boost.item.priceCoins}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
         }
     }
@@ -883,11 +910,11 @@ private fun BoostInventoryCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = boost.item.emoji, fontSize = 32.sp)
+            Text(text = boost.item.emoji, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(boost.item.labelRes),
@@ -927,12 +954,13 @@ private fun BoostInventoryCard(
                     disabledContainerColor = textColor.copy(alpha = 0.08f),
                     disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
                 Text(
                     text = stringResource(R.string.inventory_activate),
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 12.sp
                 )
             }
         }
@@ -950,25 +978,25 @@ private fun BalanceCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 24.dp, vertical = 18.dp),
+                .padding(horizontal = 20.dp, vertical = 14.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
                 text = stringResource(R.string.shop_balance),
-                style = MaterialTheme.typography.titleMedium,
+                style = MaterialTheme.typography.bodyMedium,
                 color = textColor
             )
-            Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+            Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
                 Text(
                     text = "💎 $gems",
-                    style = MaterialTheme.typography.headlineSmall,
+                    style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.Bold,
                     color = textColor
                 )
                 Text(
                     text = "🪙 $coins",
-                    style = MaterialTheme.typography.headlineSmall,
+                    style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.Bold,
                     color = textColor
                 )
@@ -990,11 +1018,11 @@ private fun BoosterCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = booster.item.emoji, fontSize = 32.sp)
+            Text(text = booster.item.emoji, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(booster.item.labelRes),
@@ -1025,12 +1053,13 @@ private fun BoosterCard(
                     disabledContainerColor = textColor.copy(alpha = 0.08f),
                     disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
                 Text(
                     text = "🪙 ${booster.item.priceCoins}",
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 13.sp
                 )
             }
         }
@@ -1050,11 +1079,11 @@ private fun PowerUpCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = powerUp.item.emoji, fontSize = 32.sp)
+            Text(text = powerUp.item.emoji, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(powerUp.item.labelRes),
@@ -1093,10 +1122,10 @@ private fun PowerUpCard(
                     disabledContainerColor = textColor.copy(alpha = 0.08f),
                     disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
-                Text(text = "🪙 ${powerUp.item.priceCoins}", fontWeight = FontWeight.Bold)
+                Text(text = "🪙 ${powerUp.item.priceCoins}", fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
         }
     }
@@ -1112,11 +1141,11 @@ private fun PowerUpInventoryCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = powerUp.item.emoji, fontSize = 32.sp)
+            Text(text = powerUp.item.emoji, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(powerUp.item.labelRes),
@@ -1154,11 +1183,11 @@ private fun StreakFreezeCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = ShopCatalog.STREAK_FREEZE_EMOJI, fontSize = 32.sp)
+            Text(text = ShopCatalog.STREAK_FREEZE_EMOJI, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(R.string.shop_streak_freeze_title),
@@ -1189,10 +1218,10 @@ private fun StreakFreezeCard(
                     disabledContainerColor = textColor.copy(alpha = 0.08f),
                     disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
-                Text(text = "🪙 $price", fontWeight = FontWeight.Bold)
+                Text(text = "🪙 $price", fontWeight = FontWeight.Bold, fontSize = 13.sp)
             }
         }
     }
@@ -1204,11 +1233,11 @@ private fun StreakFreezeInfoCard(count: Int, colors: AppThemeColors, textColor: 
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = ShopCatalog.STREAK_FREEZE_EMOJI, fontSize = 32.sp)
+            Text(text = ShopCatalog.STREAK_FREEZE_EMOJI, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(R.string.shop_streak_freeze_title),
@@ -1282,11 +1311,11 @@ private fun InventoryItemCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 16.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            Text(text = booster.item.emoji, fontSize = 32.sp)
+            Text(text = booster.item.emoji, fontSize = 26.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(booster.item.labelRes),
@@ -1312,12 +1341,13 @@ private fun InventoryItemCard(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
                     contentColor = MaterialTheme.colorScheme.onPrimary
                 ),
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                shape = RoundedCornerShape(12.dp)
+                contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp),
+                shape = RoundedCornerShape(10.dp)
             ) {
                 Text(
                     text = stringResource(R.string.inventory_activate),
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 12.sp
                 )
             }
         }

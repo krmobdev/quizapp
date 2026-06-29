@@ -18,77 +18,80 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 import com.rustam.quizapp.data.ThemeMode
 
+// iOS-style color schemes using Apple Human Interface Guidelines colors.
 private val DarkColorScheme = darkColorScheme(
-    primary = Teal80,
-    onPrimary = OnTeal80,
-    primaryContainer = TealContainerDark,
-    onPrimaryContainer = OnTealContainerDark,
-    secondary = GreenSecondary80,
-    onSecondary = OnSurfaceDark,
-    secondaryContainer = GreenSecondaryContainerDark,
-    onSecondaryContainer = OnGreenSecondaryContainerDark,
-    tertiary = Aqua80,
-    background = SurfaceDark,
-    onBackground = OnSurfaceDark,
-    surface = SurfaceDark,
-    onSurface = OnSurfaceDark,
-    surfaceVariant = SurfaceVariantDark,
-    onSurfaceVariant = OnSurfaceVariantDark,
-    outline = OutlineDark,
-    outlineVariant = OutlineVariantDark
+    primary               = IosBlue80,
+    onPrimary             = OnIosBlue80,
+    primaryContainer      = IosBlueContainerDark,
+    onPrimaryContainer    = OnIosBlueContainerDark,
+    secondary             = IosIndigo80,
+    onSecondary           = OnIosSurfaceDark,
+    secondaryContainer    = IosSurfaceVariantDark,
+    onSecondaryContainer  = OnIosSurfaceDark,
+    tertiary              = Color(0xFF5E5CE6),   // iOS Indigo Dark
+    background            = IosSurfaceDark,
+    onBackground          = OnIosSurfaceDark,
+    surface               = IosSurfaceDark,
+    onSurface             = OnIosSurfaceDark,
+    surfaceVariant        = IosSurfaceVariantDark,
+    onSurfaceVariant      = OnIosSurfaceVariantDark,
+    outline               = IosOutlineDark,
+    outlineVariant        = IosOutlineVariantDark,
+    error                 = WrongRedDark,
+    errorContainer        = Color(0xFF5C1010)
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Teal40,
-    onPrimary = Color.White,
-    primaryContainer = TealContainerLight,
-    onPrimaryContainer = OnTealContainerLight,
-    secondary = GreenSecondary40,
-    onSecondary = OnSurfaceLight,
-    secondaryContainer = GreenSecondaryContainerLight,
-    onSecondaryContainer = OnGreenSecondaryContainerLight,
-    tertiary = Aqua40,
-    background = SurfaceLight,
-    onBackground = OnSurfaceLight,
-    surface = SurfaceLight,
-    onSurface = OnSurfaceLight,
-    surfaceVariant = SurfaceVariantLight,
-    onSurfaceVariant = OnSurfaceVariantLight,
-    outline = OutlineLight,
-    outlineVariant = OutlineVariantLight
+    primary               = IosBlue40,
+    onPrimary             = Color.White,
+    primaryContainer      = IosBlueContainer,
+    onPrimaryContainer    = OnIosBlueContainer,
+    secondary             = IosIndigo40,
+    onSecondary           = Color.White,
+    secondaryContainer    = IosSurfaceVariant,
+    onSecondaryContainer  = OnIosSurface,
+    tertiary              = Color(0xFF5856D6),   // iOS Indigo
+    background            = IosSurface,
+    onBackground          = OnIosSurface,
+    surface               = IosSurface,
+    onSurface             = OnIosSurface,
+    surfaceVariant        = IosSurfaceVariant,
+    onSurfaceVariant      = OnIosSurfaceVariant,
+    outline               = IosOutline,
+    outlineVariant        = IosOutlineVariant,
+    error                 = WrongRed,
+    errorContainer        = Color(0xFFFFDDD8)
 )
 
 /** Overrides the primary/tertiary/container roles of a base scheme with a shop accent palette. */
 private fun ColorScheme.withAccent(accent: AccentTheme, dark: Boolean): ColorScheme =
     if (dark) {
         copy(
-            primary = accent.primaryDark,
-            onPrimary = accent.onPrimaryDark,
+            primary          = accent.primaryDark,
+            onPrimary        = accent.onPrimaryDark,
             primaryContainer = accent.containerDark,
-            tertiary = accent.tertiaryDark
+            tertiary         = accent.tertiaryDark
         )
     } else {
         copy(
-            primary = accent.primaryLight,
-            onPrimary = accent.onPrimaryLight,
+            primary          = accent.primaryLight,
+            onPrimary        = accent.onPrimaryLight,
             primaryContainer = accent.containerLight,
-            tertiary = accent.tertiaryLight
+            tertiary         = accent.tertiaryLight
         )
     }
 
 @Composable
 fun shouldUseDarkTheme(themeMode: ThemeMode): Boolean = when (themeMode) {
-    ThemeMode.DARK -> true
-    ThemeMode.LIGHT -> false
+    ThemeMode.DARK   -> true
+    ThemeMode.LIGHT  -> false
     ThemeMode.SYSTEM -> isSystemInDarkTheme()
 }
 
 @Composable
 fun QuizappTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Brand "Химия" palette by default; flip to true for Material You wallpaper colors.
     dynamicColor: Boolean = false,
-    // Accent palette bought in the shop; overrides the brand primary/tertiary roles.
     accent: AccentTheme = AccentTheme.DEFAULT,
     content: @Composable () -> Unit
 ) {
@@ -97,19 +100,18 @@ fun QuizappTheme(
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
-
         darkTheme -> DarkColorScheme.withAccent(accent, dark = true)
-        else -> LightColorScheme.withAccent(accent, dark = false)
+        else      -> LightColorScheme.withAccent(accent, dark = false)
     }
 
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = Color.Transparent.toArgb()
+            window.statusBarColor     = Color.Transparent.toArgb()
             window.navigationBarColor = Color.Transparent.toArgb()
             WindowCompat.getInsetsController(window, view).apply {
-                isAppearanceLightStatusBars = !darkTheme
+                isAppearanceLightStatusBars    = !darkTheme
                 isAppearanceLightNavigationBars = !darkTheme
             }
         }
@@ -117,7 +119,7 @@ fun QuizappTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
-        content = content
+        typography  = Typography,
+        content     = content
     )
 }

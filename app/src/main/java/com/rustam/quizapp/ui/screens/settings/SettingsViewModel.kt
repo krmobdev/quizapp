@@ -30,11 +30,15 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     private val settingsRepository = SettingsRepository(application)
     private val progressRepository = QuizProgressRepository(application)
-    private val playerRepository = PlayerRepository(application, QuestionRepository(application))
-    private val backupRepository = BackupRepository(application)
+    private val playerRepository   = PlayerRepository(application, QuestionRepository(application))
+    private val backupRepository   = BackupRepository(application)
 
     /** Mirrors the persisted `sound_enabled` flag (default `true`) for the UI switch. */
     val soundEnabled: StateFlow<Boolean> = settingsRepository.soundEnabled
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), true)
+
+    /** Mirrors the persisted `haptic_enabled` flag (default `true`) for the UI switch. */
+    val hapticEnabled: StateFlow<Boolean> = settingsRepository.hapticEnabled
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), true)
 
     val themeMode: StateFlow<ThemeMode> = settingsRepository.themeMode
@@ -59,6 +63,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         viewModelScope.launch { settingsRepository.setSoundEnabled(enabled) }
     }
 
+    fun setHapticEnabled(enabled: Boolean) {
+        viewModelScope.launch { settingsRepository.setHapticEnabled(enabled) }
+    }
+
     fun setThemeMode(mode: ThemeMode) {
         viewModelScope.launch { settingsRepository.setThemeMode(mode) }
     }
@@ -81,11 +89,11 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
                     success = true
                 )
                 PromoRedeemResult.Invalid -> PromoUiMessage(
-                    text = getApplication<Application>().getString(R.string.settings_promo_invalid),
+                    text    = getApplication<Application>().getString(R.string.settings_promo_invalid),
                     success = false
                 )
                 PromoRedeemResult.AlreadyRedeemed -> PromoUiMessage(
-                    text = getApplication<Application>().getString(R.string.settings_promo_already),
+                    text    = getApplication<Application>().getString(R.string.settings_promo_already),
                     success = false
                 )
             }
@@ -94,13 +102,11 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     private fun formatReward(coins: Int, gems: Int, xp: Int): String = buildList {
         if (coins > 0) add("+$coins 🪙")
-        if (gems > 0) add("+$gems 💎")
-        if (xp > 0) add("+$xp ✨")
+        if (gems  > 0) add("+$gems 💎")
+        if (xp    > 0) add("+$xp ✨")
     }.joinToString("  ")
 
-    fun clearPromoMessage() {
-        _promoMessage.value = null
-    }
+    fun clearPromoMessage() { _promoMessage.value = null }
 
     fun exportProgress(target: Uri) {
         viewModelScope.launch {
@@ -113,9 +119,9 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     fun importProgress(source: Uri) {
         viewModelScope.launch {
             _backupMessageRes.value = when (backupRepository.import(source)) {
-                ImportResult.SUCCESS -> R.string.settings_backup_import_success
+                ImportResult.SUCCESS             -> R.string.settings_backup_import_success
                 ImportResult.UNSUPPORTED_VERSION -> R.string.settings_backup_import_version
-                ImportResult.INVALID_FILE -> R.string.settings_backup_import_error
+                ImportResult.INVALID_FILE        -> R.string.settings_backup_import_error
             }
         }
     }
@@ -127,9 +133,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
         }
     }
 
-    fun clearBackupMessage() {
-        _backupMessageRes.value = null
-    }
+    fun clearBackupMessage() { _backupMessageRes.value = null }
 
     /** Resets the onboarding flag; MainActivity observes it and reopens the tutorial. */
     fun showOnboardingAgain() {

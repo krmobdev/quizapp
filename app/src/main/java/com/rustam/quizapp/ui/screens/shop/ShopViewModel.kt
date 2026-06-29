@@ -194,6 +194,12 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
     /** Opens one Mythic Chest (gem-priced) if affordable, surfacing the rolled reward. */
     fun onOpenMythicChest() {
         viewModelScope.launch {
+            if (uiState.value.gems < com.rustam.quizapp.domain.MythicBox.PRICE_GEMS) {
+                _snackbar.tryEmit(
+                    getApplication<Application>().getString(R.string.shop_insufficient_gems)
+                )
+                return@launch
+            }
             val result = playerRepository.openMythicChest()
             if (result != null) {
                 soundManager.play(SoundType.COMPLETE)
@@ -205,6 +211,15 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
     /** Buys one gem bundle (gem→coin exchange or a premium consumable pack). */
     fun onGemBundleBuy(bundleId: String) {
         viewModelScope.launch {
+            val bundle = ShopCatalog.gemBundle(bundleId)
+            if (bundle == null) return@launch
+            val currentGems = uiState.value.gems
+            if (currentGems < bundle.priceGems) {
+                _snackbar.tryEmit(
+                    getApplication<Application>().getString(R.string.shop_insufficient_gems)
+                )
+                return@launch
+            }
             if (playerRepository.purchaseGemBundle(bundleId)) {
                 soundManager.play(SoundType.CLICK)
             }

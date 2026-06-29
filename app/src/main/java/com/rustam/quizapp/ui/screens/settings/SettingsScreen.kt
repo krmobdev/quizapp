@@ -1,6 +1,9 @@
 package com.rustam.quizapp.ui.screens.settings
 
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -8,9 +11,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.background
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
@@ -34,6 +40,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -60,10 +68,11 @@ fun SettingsScreen(
     modifier: Modifier = Modifier,
     viewModel: SettingsViewModel = viewModel()
 ) {
-    val soundEnabled by viewModel.soundEnabled.collectAsState()
-    val themeMode by viewModel.themeMode.collectAsState()
-    val appLanguage by viewModel.appLanguage.collectAsState()
-    val promoMessage by viewModel.promoMessage.collectAsState()
+    val soundEnabled    by viewModel.soundEnabled.collectAsState()
+    val hapticEnabled   by viewModel.hapticEnabled.collectAsState()
+    val themeMode       by viewModel.themeMode.collectAsState()
+    val appLanguage     by viewModel.appLanguage.collectAsState()
+    val promoMessage    by viewModel.promoMessage.collectAsState()
     val backupMessageRes by viewModel.backupMessageRes.collectAsState()
 
     val exportLauncher = rememberLauncherForActivityResult(
@@ -74,33 +83,37 @@ fun SettingsScreen(
     ) { uri -> uri?.let(viewModel::importProgress) }
 
     SettingsContent(
-        soundEnabled = soundEnabled,
-        themeMode = themeMode,
-        appLanguage = appLanguage,
-        promoMessage = promoMessage,
-        backupMessageRes = backupMessageRes,
+        soundEnabled         = soundEnabled,
+        hapticEnabled        = hapticEnabled,
+        themeMode            = themeMode,
+        appLanguage          = appLanguage,
+        promoMessage         = promoMessage,
+        backupMessageRes     = backupMessageRes,
         onSoundEnabledChange = viewModel::setSoundEnabled,
-        onThemeModeChange = viewModel::setThemeMode,
-        onAppLanguageChange = viewModel::setAppLanguage,
-        onRedeemPromo = viewModel::redeemPromoCode,
-        onClearPromoMessage = viewModel::clearPromoMessage,
-        onExport = { exportLauncher.launch("quizapp_backup.json") },
-        onImport = { importLauncher.launch(arrayOf("application/json")) },
-        onReset = viewModel::resetProgress,
+        onHapticEnabledChange = viewModel::setHapticEnabled,
+        onThemeModeChange    = viewModel::setThemeMode,
+        onAppLanguageChange  = viewModel::setAppLanguage,
+        onRedeemPromo        = viewModel::redeemPromoCode,
+        onClearPromoMessage  = viewModel::clearPromoMessage,
+        onExport             = { exportLauncher.launch("quizapp_backup.json") },
+        onImport             = { importLauncher.launch(arrayOf("application/json")) },
+        onReset              = viewModel::resetProgress,
         onClearBackupMessage = viewModel::clearBackupMessage,
         onShowOnboardingAgain = viewModel::showOnboardingAgain,
-        modifier = modifier
+        modifier             = modifier
     )
 }
 
 @Composable
 private fun SettingsContent(
     soundEnabled: Boolean,
+    hapticEnabled: Boolean,
     themeMode: ThemeMode,
     appLanguage: AppLanguage,
     promoMessage: PromoUiMessage?,
     backupMessageRes: Int?,
     onSoundEnabledChange: (Boolean) -> Unit,
+    onHapticEnabledChange: (Boolean) -> Unit,
     onThemeModeChange: (ThemeMode) -> Unit,
     onAppLanguageChange: (AppLanguage) -> Unit,
     onRedeemPromo: (String) -> Unit,
@@ -112,7 +125,7 @@ private fun SettingsContent(
     onShowOnboardingAgain: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val colors = rememberAppThemeColors()
+    val colors    = rememberAppThemeColors()
     val textColor = appTextColor()
 
     Column(
@@ -120,132 +133,233 @@ private fun SettingsContent(
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(horizontal = 20.dp, vertical = 12.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+        verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
         ScreenTitle(stringResource(R.string.settings))
 
         // Promo codes — featured near the top.
         PromoCodeSection(
-            message = promoMessage,
-            onRedeem = onRedeemPromo,
+            message        = promoMessage,
+            onRedeem       = onRedeemPromo,
             onClearMessage = onClearPromoMessage,
-            colors = colors,
-            textColor = textColor
+            colors         = colors,
+            textColor      = textColor
         )
 
-        // Sound.
-        SoundSettingCard(
-            title = "🔊 " + stringResource(R.string.settings_sound_title),
-            subtitle = stringResource(R.string.settings_sound_subtitle),
-            checked = soundEnabled,
-            onCheckedChange = onSoundEnabledChange,
-            colors = colors,
-            textColor = textColor
-        )
+        // Sound & Haptic — grouped in one iOS-style card.
+        IosGroupCard(colors = colors) {
+            IosToggleRow(
+                icon      = "🔊",
+                title     = stringResource(R.string.settings_sound_title),
+                subtitle  = stringResource(R.string.settings_sound_subtitle),
+                checked   = soundEnabled,
+                onCheckedChange = onSoundEnabledChange,
+                textColor = textColor
+            )
+            IosDivider(colors = colors)
+            IosToggleRow(
+                icon      = "📳",
+                title     = stringResource(R.string.settings_haptic_title),
+                subtitle  = stringResource(R.string.settings_haptic_subtitle),
+                checked   = hapticEnabled,
+                onCheckedChange = onHapticEnabledChange,
+                textColor = textColor
+            )
+        }
 
         // Appearance: language + theme grouped together.
         SettingsSection(
-            title = stringResource(R.string.settings_appearance_title),
+            title    = stringResource(R.string.settings_appearance_title),
             subtitle = stringResource(R.string.settings_appearance_subtitle),
-            icon = "🎨",
-            colors = colors
+            icon     = "🎨",
+            colors   = colors
         ) {
             SettingGroupLabel(stringResource(R.string.settings_language_title), textColor)
             AppLanguage.entries.forEach { language ->
                 SettingChoiceCard(
-                    label = stringResource(language.labelRes),
+                    label    = stringResource(language.labelRes),
                     selected = appLanguage == language,
-                    onClick = { onAppLanguageChange(language) }
+                    onClick  = { onAppLanguageChange(language) }
                 )
             }
             SettingGroupLabel(stringResource(R.string.settings_theme_title), textColor)
             ThemeMode.entries.forEach { mode ->
                 SettingChoiceCard(
-                    label = stringResource(mode.labelRes),
+                    label    = stringResource(mode.labelRes),
                     selected = themeMode == mode,
-                    onClick = { onThemeModeChange(mode) }
+                    onClick  = { onThemeModeChange(mode) }
                 )
             }
         }
 
         // Data.
         DataSection(
-            messageRes = backupMessageRes,
-            onExport = onExport,
-            onImport = onImport,
-            onReset = onReset,
+            messageRes     = backupMessageRes,
+            onExport       = onExport,
+            onImport       = onImport,
+            onReset        = onReset,
             onClearMessage = onClearBackupMessage,
-            colors = colors,
-            textColor = textColor
+            colors         = colors,
+            textColor      = textColor
         )
 
         // Tutorial replay.
         SettingsSection(
-            title = stringResource(R.string.settings_onboarding_title),
+            title    = stringResource(R.string.settings_onboarding_title),
             subtitle = stringResource(R.string.settings_onboarding_subtitle),
-            icon = "🎓",
-            colors = colors
+            icon     = "🎓",
+            colors   = colors
         ) {
             OutlinedButton(
-                onClick = onShowOnboardingAgain,
+                onClick  = onShowOnboardingAgain,
                 modifier = Modifier.fillMaxWidth(),
-                shape = AppShapes.Button
+                shape    = AppShapes.Button
             ) {
                 Text(stringResource(R.string.settings_onboarding_show))
             }
         }
 
-        // About: attribution + version.
+        // About.
         AboutSection(colors = colors, textColor = textColor)
 
         Spacer(Modifier.height(8.dp))
     }
 }
 
+// ── iOS grouped card wrapper ──────────────────────────────────────────────────
 @Composable
-private fun SettingGroupLabel(text: String, textColor: androidx.compose.ui.graphics.Color) {
+private fun IosGroupCard(
+    colors: com.rustam.quizapp.ui.components.AppThemeColors,
+    content: @Composable () -> Unit
+) {
+    GlassCard(colors = colors) {
+        Column(modifier = Modifier.fillMaxWidth()) {
+            content()
+        }
+    }
+}
+
+// ── iOS toggle row (like a UITableViewCell with a UISwitch) ───────────────────
+@Composable
+private fun IosToggleRow(
+    icon: String,
+    title: String,
+    subtitle: String,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
+    textColor: Color
+) {
+    val thumbColor by animateColorAsState(
+        targetValue  = if (checked) Color.White else Color.White,
+        animationSpec = tween(200),
+        label = "thumbColor"
+    )
+    val trackColor by animateColorAsState(
+        targetValue  = if (checked) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surfaceVariant,
+        animationSpec = tween(250),
+        label = "trackColor"
+    )
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(AppDimens.SettingChoiceHeight)
+            .padding(horizontal = AppDimens.CardPaddingH),
+        verticalAlignment    = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Row(
+            modifier = Modifier.weight(1f),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(icon, style = MaterialTheme.typography.titleMedium)
+            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(
+                    text       = title,
+                    style      = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Medium,
+                    color      = textColor
+                )
+                Text(
+                    text  = subtitle,
+                    style = MaterialTheme.typography.labelMedium,
+                    color = textColor.copy(alpha = 0.50f)
+                )
+            }
+        }
+        Switch(
+            checked         = checked,
+            onCheckedChange = onCheckedChange,
+            colors          = SwitchDefaults.colors(
+                checkedThumbColor    = thumbColor,
+                checkedTrackColor    = trackColor,
+                uncheckedThumbColor  = Color.White,
+                uncheckedTrackColor  = MaterialTheme.colorScheme.surfaceVariant,
+                uncheckedBorderColor = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f)
+            )
+        )
+    }
+}
+
+// ── 1px iOS divider ───────────────────────────────────────────────────────────
+@Composable
+private fun IosDivider(colors: com.rustam.quizapp.ui.components.AppThemeColors) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(start = AppDimens.CardPaddingH)
+            .height(0.5.dp)
+            .background(colors.glassBorder)
+    )
+}
+
+@Composable
+private fun SettingGroupLabel(
+    text: String,
+    textColor: Color
+) {
     Text(
-        text = text,
-        style = MaterialTheme.typography.titleSmall,
+        text       = text,
+        style      = MaterialTheme.typography.labelLarge,
         fontWeight = FontWeight.SemiBold,
-        color = textColor.copy(alpha = 0.85f),
-        modifier = Modifier.padding(top = 4.dp)
+        color      = textColor.copy(alpha = 0.50f),
+        modifier   = Modifier.padding(top = 4.dp, bottom = 2.dp)
     )
 }
 
 @Composable
 private fun AboutSection(
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
-    textColor: androidx.compose.ui.graphics.Color,
+    textColor: Color,
     modifier: Modifier = Modifier
 ) {
     SettingsSection(
-        title = stringResource(R.string.settings_about_title),
+        title    = stringResource(R.string.settings_about_title),
         subtitle = "",
-        icon = "ℹ️",
-        colors = colors,
+        icon     = "ℹ️",
+        colors   = colors,
         modifier = modifier
     ) {
         Text(
-            text = stringResource(
+            text       = stringResource(
                 R.string.settings_app_version,
                 com.rustam.quizapp.BuildConfig.VERSION_NAME,
                 com.rustam.quizapp.BuildConfig.VERSION_CODE
             ),
-            style = MaterialTheme.typography.bodyMedium,
+            style      = MaterialTheme.typography.bodyMedium,
             fontWeight = FontWeight.Medium,
-            color = MaterialTheme.colorScheme.primary
+            color      = MaterialTheme.colorScheme.primary
         )
         Text(
-            text = stringResource(R.string.settings_attribution_body),
+            text  = stringResource(R.string.settings_attribution_body),
             style = MaterialTheme.typography.bodyMedium,
-            color = textColor.copy(alpha = 0.85f)
+            color = textColor.copy(alpha = 0.75f)
         )
         Text(
-            text = stringResource(R.string.settings_attribution_link),
-            style = MaterialTheme.typography.bodySmall,
+            text       = stringResource(R.string.settings_attribution_link),
+            style      = MaterialTheme.typography.bodySmall,
             fontWeight = FontWeight.SemiBold,
-            color = MaterialTheme.colorScheme.primary
+            color      = MaterialTheme.colorScheme.primary
         )
     }
 }
@@ -258,11 +372,11 @@ private fun DataSection(
     onReset: () -> Unit,
     onClearMessage: () -> Unit,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
-    textColor: androidx.compose.ui.graphics.Color,
+    textColor: Color,
     modifier: Modifier = Modifier
 ) {
     var showImportConfirm by remember { mutableStateOf(false) }
-    var showResetConfirm by remember { mutableStateOf(false) }
+    var showResetConfirm  by remember { mutableStateOf(false) }
 
     LaunchedEffect(messageRes) {
         if (messageRes != null) {
@@ -272,51 +386,52 @@ private fun DataSection(
     }
 
     SettingsSection(
-        title = stringResource(R.string.settings_data_title),
+        title    = stringResource(R.string.settings_data_title),
         subtitle = stringResource(R.string.settings_data_subtitle),
-        icon = "💾",
-        colors = colors,
+        icon     = "💾",
+        colors   = colors,
         modifier = modifier
     ) {
         Button(
-            onClick = onExport,
-            modifier = Modifier.fillMaxWidth().height(48.dp),
-            shape = AppShapes.Button,
-            colors = ButtonDefaults.buttonColors(contentColor = textColor)
+            onClick  = onExport,
+            modifier = Modifier.fillMaxWidth().height(50.dp),
+            shape    = AppShapes.Button,
+            colors   = ButtonDefaults.buttonColors(contentColor = Color.White),
+            elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
         ) {
             Text(
-                text = stringResource(R.string.settings_data_export),
-                style = MaterialTheme.typography.labelLarge,
+                text       = stringResource(R.string.settings_data_export),
+                style      = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.SemiBold
             )
         }
         OutlinedButton(
-            onClick = { showImportConfirm = true },
-            modifier = Modifier.fillMaxWidth().height(48.dp),
-            shape = AppShapes.Button
+            onClick  = { showImportConfirm = true },
+            modifier = Modifier.fillMaxWidth().height(50.dp),
+            shape    = AppShapes.Button
         ) {
             Text(
-                text = stringResource(R.string.settings_data_import),
-                style = MaterialTheme.typography.labelLarge,
+                text       = stringResource(R.string.settings_data_import),
+                style      = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.SemiBold,
-                color = textColor
+                color      = textColor
             )
         }
         OutlinedButton(
-            onClick = { showResetConfirm = true },
-            modifier = Modifier.fillMaxWidth().height(48.dp),
-            shape = AppShapes.Button
+            onClick  = { showResetConfirm = true },
+            modifier = Modifier.fillMaxWidth().height(50.dp),
+            shape    = AppShapes.Button
         ) {
             Text(
-                text = stringResource(R.string.settings_data_reset),
-                style = MaterialTheme.typography.labelLarge,
+                text       = stringResource(R.string.settings_data_reset),
+                style      = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.SemiBold,
-                color = MaterialTheme.colorScheme.error
+                color      = MaterialTheme.colorScheme.error
             )
         }
         messageRes?.let { resId ->
             Text(
-                text = stringResource(resId),
+                text  = stringResource(resId),
                 style = MaterialTheme.typography.bodyMedium,
                 color = if (resId == R.string.settings_backup_export_success ||
                     resId == R.string.settings_backup_import_success ||
@@ -328,26 +443,20 @@ private fun DataSection(
 
     if (showImportConfirm) {
         ConfirmDialog(
-            title = stringResource(R.string.settings_data_import_confirm_title),
-            message = stringResource(R.string.settings_data_import_confirm_message),
+            title        = stringResource(R.string.settings_data_import_confirm_title),
+            message      = stringResource(R.string.settings_data_import_confirm_message),
             confirmLabel = stringResource(R.string.settings_data_import),
-            onConfirm = {
-                showImportConfirm = false
-                onImport()
-            },
-            onDismiss = { showImportConfirm = false }
+            onConfirm    = { showImportConfirm = false; onImport() },
+            onDismiss    = { showImportConfirm = false }
         )
     }
     if (showResetConfirm) {
         ConfirmDialog(
-            title = stringResource(R.string.settings_data_reset_confirm_title),
-            message = stringResource(R.string.settings_data_reset_confirm_message),
+            title        = stringResource(R.string.settings_data_reset_confirm_title),
+            message      = stringResource(R.string.settings_data_reset_confirm_message),
             confirmLabel = stringResource(R.string.settings_data_reset),
-            onConfirm = {
-                showResetConfirm = false
-                onReset()
-            },
-            onDismiss = { showResetConfirm = false }
+            onConfirm    = { showResetConfirm = false; onReset() },
+            onDismiss    = { showResetConfirm = false }
         )
     }
 }
@@ -362,12 +471,10 @@ private fun ConfirmDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(title) },
-        text = { Text(message) },
-        confirmButton = { TextButton(onClick = onConfirm) { Text(confirmLabel) } },
-        dismissButton = {
-            TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) }
-        }
+        title            = { Text(title) },
+        text             = { Text(message) },
+        confirmButton    = { TextButton(onClick = onConfirm) { Text(confirmLabel) } },
+        dismissButton    = { TextButton(onClick = onDismiss) { Text(stringResource(R.string.cancel)) } }
     )
 }
 
@@ -377,7 +484,7 @@ private fun PromoCodeSection(
     onRedeem: (String) -> Unit,
     onClearMessage: () -> Unit,
     colors: com.rustam.quizapp.ui.components.AppThemeColors,
-    textColor: androidx.compose.ui.graphics.Color,
+    textColor: Color,
     modifier: Modifier = Modifier
 ) {
     var code by rememberSaveable { mutableStateOf("") }
@@ -390,59 +497,50 @@ private fun PromoCodeSection(
     }
 
     SettingsSection(
-        title = stringResource(R.string.settings_promo_title),
+        title    = stringResource(R.string.settings_promo_title),
         subtitle = stringResource(R.string.settings_promo_subtitle),
-        icon = "🎁",
-        colors = colors,
+        icon     = "🎁",
+        colors   = colors,
         modifier = modifier
     ) {
         OutlinedTextField(
-            value = code,
+            value         = code,
             onValueChange = { code = it.uppercase().take(16) },
-            modifier = Modifier.fillMaxWidth(),
-            label = { Text(stringResource(R.string.settings_promo_hint)) },
-            singleLine = true,
+            modifier      = Modifier.fillMaxWidth(),
+            label         = { Text(stringResource(R.string.settings_promo_hint)) },
+            singleLine    = true,
+            shape         = RoundedCornerShape(12.dp),
             keyboardOptions = KeyboardOptions(
                 capitalization = KeyboardCapitalization.Characters,
-                imeAction = ImeAction.Done
+                imeAction      = ImeAction.Done
             ),
             keyboardActions = KeyboardActions(
                 onDone = {
-                    if (code.isNotBlank()) {
-                        onRedeem(code)
-                        code = ""
-                    }
+                    if (code.isNotBlank()) { onRedeem(code); code = "" }
                 }
             )
         )
         Button(
-            onClick = {
-                onRedeem(code)
-                code = ""
-            },
-            enabled = code.isNotBlank(),
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(48.dp),
-            shape = AppShapes.Button,
-            colors = ButtonDefaults.buttonColors(contentColor = textColor)
+            onClick   = { onRedeem(code); code = "" },
+            enabled   = code.isNotBlank(),
+            modifier  = Modifier.fillMaxWidth().height(50.dp),
+            shape     = AppShapes.Button,
+            colors    = ButtonDefaults.buttonColors(contentColor = Color.White),
+            elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
         ) {
             Text(
-                text = stringResource(R.string.settings_promo_activate),
-                style = MaterialTheme.typography.labelLarge,
+                text       = stringResource(R.string.settings_promo_activate),
+                style      = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.SemiBold
             )
         }
         message?.let { msg ->
             Text(
-                text = msg.text,
-                style = MaterialTheme.typography.bodyMedium,
+                text       = msg.text,
+                style      = MaterialTheme.typography.bodyMedium,
                 fontWeight = FontWeight.SemiBold,
-                color = if (msg.success) {
-                    MaterialTheme.colorScheme.primary
-                } else {
-                    MaterialTheme.colorScheme.error
-                }
+                color      = if (msg.success) MaterialTheme.colorScheme.primary
+                             else MaterialTheme.colorScheme.error
             )
         }
     }
@@ -461,67 +559,17 @@ private fun SettingsSection(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = AppDimens.CardPaddingH, vertical = 20.dp),
-            verticalArrangement = Arrangement.spacedBy(14.dp)
+                .padding(horizontal = AppDimens.CardPaddingH, vertical = 18.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text(
-                text = if (icon.isBlank()) title else "$icon  $title",
-                style = MaterialTheme.typography.titleLarge,
+                text       = if (icon.isBlank()) title else "$icon  $title",
+                style      = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.SemiBold,
-                color = appTextColor()
+                color      = appTextColor()
             )
-            if (subtitle.isNotBlank()) {
-                ScreenSubtitle(subtitle)
-            }
-            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                content()
-            }
-        }
-    }
-}
-
-@Composable
-private fun SoundSettingCard(
-    title: String,
-    subtitle: String,
-    checked: Boolean,
-    onCheckedChange: (Boolean) -> Unit,
-    colors: com.rustam.quizapp.ui.components.AppThemeColors,
-    textColor: androidx.compose.ui.graphics.Color,
-    modifier: Modifier = Modifier
-) {
-    GlassCard(modifier = modifier, colors = colors) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(AppDimens.SettingChoiceHeight)
-                .padding(horizontal = AppDimens.CardPaddingH),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            Column(
-                modifier = Modifier.weight(1f),
-                verticalArrangement = Arrangement.spacedBy(4.dp)
-            ) {
-                Text(
-                    text = title,
-                    style = MaterialTheme.typography.titleLarge,
-                    fontWeight = FontWeight.SemiBold,
-                    color = textColor
-                )
-                ScreenSubtitle(subtitle)
-            }
-            Switch(
-                checked = checked,
-                onCheckedChange = onCheckedChange,
-                colors = SwitchDefaults.colors(
-                    checkedThumbColor = textColor,
-                    checkedTrackColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.45f),
-                    uncheckedThumbColor = textColor,
-                    uncheckedTrackColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f),
-                    uncheckedBorderColor = colors.glassBorder
-                )
-            )
+            if (subtitle.isNotBlank()) ScreenSubtitle(subtitle)
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) { content() }
         }
     }
 }
@@ -531,19 +579,21 @@ private fun SoundSettingCard(
 private fun SettingsContentPreview() {
     QuizappTheme {
         SettingsContent(
-            soundEnabled = true,
-            themeMode = ThemeMode.SYSTEM,
-            appLanguage = AppLanguage.RU,
-            promoMessage = null,
-            backupMessageRes = null,
+            soundEnabled         = true,
+            hapticEnabled        = true,
+            themeMode            = ThemeMode.SYSTEM,
+            appLanguage          = AppLanguage.RU,
+            promoMessage         = null,
+            backupMessageRes     = null,
             onSoundEnabledChange = {},
-            onThemeModeChange = {},
-            onAppLanguageChange = {},
-            onRedeemPromo = {},
-            onClearPromoMessage = {},
-            onExport = {},
-            onImport = {},
-            onReset = {},
+            onHapticEnabledChange = {},
+            onThemeModeChange    = {},
+            onAppLanguageChange  = {},
+            onRedeemPromo        = {},
+            onClearPromoMessage  = {},
+            onExport             = {},
+            onImport             = {},
+            onReset              = {},
             onClearBackupMessage = {},
             onShowOnboardingAgain = {}
         )

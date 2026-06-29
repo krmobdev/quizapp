@@ -1,12 +1,15 @@
 package com.rustam.quizapp.ui.components
 
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,11 +24,8 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Check
-import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -59,37 +59,40 @@ import com.rustam.quizapp.ui.theme.QuizQuestionCardDark
 import com.rustam.quizapp.ui.theme.WrongRed
 import com.rustam.quizapp.ui.theme.WrongRedDark
 
+// ── Shape tokens — iOS-style large rounded corners ────────────────────────────
 object AppShapes {
-    val Card = RoundedCornerShape(28.dp)
-    val Choice = RoundedCornerShape(20.dp)
-    val Button = RoundedCornerShape(28.dp)
-    val Badge = CircleShape
+    val Card   = RoundedCornerShape(16.dp)   // iOS grouped cell radius
+    val Choice = RoundedCornerShape(14.dp)
+    val Button = RoundedCornerShape(14.dp)   // iOS filled button radius
+    val Badge  = CircleShape
 }
 
+// ── Dimension tokens ──────────────────────────────────────────────────────────
 object AppDimens {
-    val CardPaddingH = 24.dp
-    val CardPaddingV = 22.dp
-    val CardSpacing = 14.dp
-    val ButtonHeight = 72.dp
-    val ButtonSpacing = 12.dp
-    val SettingChoiceHeight = 64.dp
+    val CardPaddingH       = 20.dp
+    val CardPaddingV       = 18.dp
+    val CardSpacing        = 10.dp
+    val ButtonHeight       = 56.dp          // iOS button height
+    val ButtonSpacing      = 10.dp
+    val SettingChoiceHeight = 56.dp
 }
 
+// ── Text colour helper ────────────────────────────────────────────────────────
 @Composable
 fun appTextColor(): Color = MaterialTheme.colorScheme.onSurface
 
+// ── Screen header ─────────────────────────────────────────────────────────────
 @Composable
 fun ScreenTitle(
     title: String,
     modifier: Modifier = Modifier
 ) {
     Text(
-        text = title,
+        text     = title,
         modifier = modifier,
-        style = MaterialTheme.typography.displaySmall,
+        style    = MaterialTheme.typography.displaySmall,
         fontWeight = FontWeight.Bold,
-        fontSize = 32.sp,
-        color = appTextColor()
+        color    = appTextColor()
     )
 }
 
@@ -99,15 +102,15 @@ fun ScreenSubtitle(
     modifier: Modifier = Modifier
 ) {
     Text(
-        text = text,
-        modifier = modifier,
-        style = MaterialTheme.typography.bodyMedium,
-        fontSize = 15.sp,
+        text       = text,
+        modifier   = modifier,
+        style      = MaterialTheme.typography.bodyMedium,
         lineHeight = 21.sp,
-        color = appTextColor()
+        color      = appTextColor().copy(alpha = 0.55f)
     )
 }
 
+// ── Setting choice row (iOS check-cell style) ─────────────────────────────────
 @Composable
 fun SettingChoiceCard(
     label: String,
@@ -115,61 +118,49 @@ fun SettingChoiceCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val colors = rememberAppThemeColors()
+    val colors    = rememberAppThemeColors()
     val textColor = appTextColor()
     val containerColor by animateColorAsState(
-        targetValue = if (selected) {
-            MaterialTheme.colorScheme.primary.copy(alpha = 0.12f)
-        } else {
-            colors.glassCard
-        },
-        animationSpec = tween(200),
-        label = "settingChoiceContainer"
+        targetValue  = if (selected) MaterialTheme.colorScheme.primary.copy(alpha = 0.10f)
+                       else colors.glassCard,
+        animationSpec = tween(180),
+        label = "choiceContainer"
     )
     val borderColor by animateColorAsState(
-        targetValue = if (selected) {
-            MaterialTheme.colorScheme.primary
-        } else {
-            colors.glassBorder
-        },
-        animationSpec = tween(200),
-        label = "settingChoiceBorder"
+        targetValue  = if (selected) MaterialTheme.colorScheme.primary.copy(alpha = 0.70f)
+                       else colors.glassBorder,
+        animationSpec = tween(180),
+        label = "choiceBorder"
     )
 
     Surface(
-        onClick = onClick,
+        onClick  = onClick,
         modifier = modifier
             .fillMaxWidth()
             .height(AppDimens.SettingChoiceHeight)
-            .border(
-                width = if (selected) 2.dp else 1.dp,
-                color = borderColor,
-                shape = AppShapes.Choice
-            ),
-        shape = AppShapes.Choice,
-        color = containerColor,
+            .border(width = if (selected) 1.5.dp else 1.dp, color = borderColor, shape = AppShapes.Choice),
+        shape    = AppShapes.Choice,
+        color    = containerColor,
         shadowElevation = 0.dp,
-        tonalElevation = 0.dp
+        tonalElevation  = 0.dp
     ) {
         Row(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(horizontal = 20.dp),
+            modifier = Modifier.fillMaxSize().padding(horizontal = 18.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
-                text = label,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.SemiBold,
-                color = textColor
+                text       = label,
+                style      = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Medium,
+                color      = textColor
             )
             if (selected) {
                 Icon(
-                    imageVector = Icons.Rounded.Check,
+                    imageVector        = Icons.Rounded.Check,
                     contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.size(22.dp)
+                    tint               = MaterialTheme.colorScheme.primary,
+                    modifier           = Modifier.size(20.dp)
                 )
             }
         }
@@ -178,6 +169,7 @@ fun SettingChoiceCard(
 
 val OptionLabels = listOf("A", "B", "C", "D")
 
+// ── Theme colour token bag ─────────────────────────────────────────────────────
 @Immutable
 data class AppThemeColors(
     val isDark: Boolean,
@@ -200,66 +192,68 @@ data class AppThemeColors(
     val wrong: Color
 )
 
+// ── iOS-tuned theme colours ───────────────────────────────────────────────────
 @Composable
 fun rememberAppThemeColors(): AppThemeColors {
     val scheme = MaterialTheme.colorScheme
-    val dark = scheme.background.luminance() < 0.5f
+    val dark   = scheme.background.luminance() < 0.05f
 
     return remember(scheme, dark) {
         if (dark) {
             AppThemeColors(
-                isDark = true,
+                isDark       = true,
+                // Pure black → dark secondary bg — matches OLED iOS look
                 baseGradient = Brush.verticalGradient(
-                    listOf(QuizBgTopDark, QuizBgMidDark, QuizBgBottomDark)
+                    listOf(Color(0xFF000000), Color(0xFF0D0D0F), Color(0xFF1C1C1E))
                 ),
-                blobPrimary = scheme.primary.copy(alpha = 0.07f),
-                blobSecondary = scheme.tertiary.copy(alpha = 0.05f),
-                questionCard = QuizQuestionCardDark,
-                questionText = scheme.onSurface,
-                answerCard = QuizAnswerCardDark,
-                answerText = scheme.onSurface,
-                answerBorder = QuizCardBorderDark,
-                answerBadgeBg = Color(0xFF3A4643),
+                blobPrimary   = scheme.primary.copy(alpha = 0.05f),
+                blobSecondary = scheme.tertiary.copy(alpha = 0.04f),
+                questionCard  = QuizQuestionCardDark,
+                questionText  = scheme.onSurface,
+                answerCard    = QuizAnswerCardDark,
+                answerText    = scheme.onSurface,
+                answerBorder  = QuizCardBorderDark,
+                answerBadgeBg   = Color(0xFF3A3A3C),
                 answerBadgeText = scheme.onSurface,
-                glassCard = QuizQuestionCardDark,
-                glassBorder = QuizCardBorderDark,
+                // iOS dark card: slightly lighter than background
+                glassCard    = Color(0xFF2C2C2E),
+                glassBorder  = Color(0xFF3A3A3C),
                 explanationCard = QuizExplanationCardDark,
                 explanationText = scheme.onSurface,
-                progressTrack = QuizCardBorderDark,
+                progressTrack   = Color(0xFF3A3A3C),
                 correct = CorrectGreenDark,
-                wrong = WrongRedDark
+                wrong   = WrongRedDark
             )
         } else {
             AppThemeColors(
-                isDark = false,
+                isDark       = false,
+                // iOS light: very subtle white gradient
                 baseGradient = Brush.verticalGradient(
-                    listOf(
-                        Color(0xFFE8FAF4),
-                        Color(0xFFF4FBF7),
-                        Color(0xFFE4F2EC)
-                    )
+                    listOf(Color(0xFFF2F2F7), Color(0xFFF8F8FC), Color(0xFFEEEEF5))
                 ),
-                blobPrimary = scheme.primary.copy(alpha = 0.12f),
-                blobSecondary = scheme.tertiary.copy(alpha = 0.1f),
-                questionCard = Color.White.copy(alpha = 0.92f),
-                questionText = scheme.onSurface,
-                answerCard = Color.White.copy(alpha = 0.88f),
-                answerText = scheme.onSurface,
-                answerBorder = scheme.outlineVariant.copy(alpha = 0.55f),
-                answerBadgeBg = scheme.primaryContainer.copy(alpha = 0.55f),
+                blobPrimary   = scheme.primary.copy(alpha = 0.06f),
+                blobSecondary = scheme.tertiary.copy(alpha = 0.05f),
+                questionCard  = Color.White,
+                questionText  = scheme.onSurface,
+                answerCard    = Color.White,
+                answerText    = scheme.onSurface,
+                answerBorder  = Color(0xFFD1D1D6),
+                answerBadgeBg   = scheme.primaryContainer.copy(alpha = 0.50f),
                 answerBadgeText = scheme.onSurface,
-                glassCard = Color.White.copy(alpha = 0.82f),
-                glassBorder = scheme.outlineVariant.copy(alpha = 0.45f),
-                explanationCard = scheme.secondaryContainer.copy(alpha = 0.85f),
+                // iOS grouped cell: white on gray background
+                glassCard    = Color.White,
+                glassBorder  = Color(0xFFD1D1D6),
+                explanationCard = Color(0xFFEDF4FF),
                 explanationText = scheme.onSurface,
-                progressTrack = scheme.surfaceVariant,
+                progressTrack   = Color(0xFFE5E5EA),
                 correct = CorrectGreen,
-                wrong = WrongRed
+                wrong   = WrongRed
             )
         }
     }
 }
 
+// ── App background — very subtle, no large blobs in iOS style ─────────────────
 @Composable
 fun AppBackground(
     modifier: Modifier = Modifier,
@@ -267,23 +261,20 @@ fun AppBackground(
     content: @Composable () -> Unit
 ) {
     Box(modifier = modifier.fillMaxSize()) {
+        Box(modifier = Modifier.fillMaxSize().background(colors.baseGradient))
+        // Tiny, very-low-opacity accent blobs — barely visible, iOS-appropriate
         Box(
             modifier = Modifier
-                .fillMaxSize()
-                .background(colors.baseGradient)
-        )
-        Box(
-            modifier = Modifier
-                .size(240.dp)
-                .offset(x = (-130).dp, y = 80.dp)
+                .size(300.dp)
+                .offset(x = (-80).dp, y = 40.dp)
                 .clip(CircleShape)
                 .background(colors.blobPrimary)
         )
         Box(
             modifier = Modifier
-                .size(200.dp)
+                .size(260.dp)
                 .align(Alignment.BottomEnd)
-                .offset(x = 110.dp, y = (-20).dp)
+                .offset(x = 90.dp, y = (-40).dp)
                 .clip(CircleShape)
                 .background(colors.blobSecondary)
         )
@@ -295,6 +286,7 @@ fun AppBackground(
 fun Modifier.glassBorder(colors: AppThemeColors): Modifier =
     border(width = 1.dp, color = colors.glassBorder, shape = AppShapes.Card)
 
+// ── Glass Card — iOS grouped-list-card style ───────────────────────────────────
 @Composable
 fun GlassCard(
     modifier: Modifier = Modifier,
@@ -302,31 +294,36 @@ fun GlassCard(
     onClick: (() -> Unit)? = null,
     content: @Composable () -> Unit
 ) {
-    val cardModifier = modifier
-        .fillMaxWidth()
-        .glassBorder(colors)
+    val cardModifier = modifier.fillMaxWidth().glassBorder(colors)
+    val shape        = AppShapes.Card
 
-    val shape = AppShapes.Card
     if (onClick != null) {
+        val interactionSource = remember { MutableInteractionSource() }
         Surface(
-            onClick = onClick,
-            shape = shape,
-            color = colors.glassCard,
-            modifier = cardModifier
+            onClick           = onClick,
+            interactionSource = interactionSource,
+            shape             = shape,
+            color             = colors.glassCard,
+            modifier          = cardModifier.iosSpringScale(interactionSource, 0.97f),
+            shadowElevation   = 0.dp,
+            tonalElevation    = 0.dp
         ) {
             Box(Modifier.clip(shape)) { content() }
         }
     } else {
         Surface(
-            shape = shape,
-            color = colors.glassCard,
-            modifier = cardModifier
+            shape           = shape,
+            color           = colors.glassCard,
+            modifier        = cardModifier,
+            shadowElevation = 0.dp,
+            tonalElevation  = 0.dp
         ) {
             Box(Modifier.clip(shape)) { content() }
         }
     }
 }
 
+// ── Primary action button — iOS filled button style ────────────────────────────
 @Composable
 fun AppActionButton(
     text: String,
@@ -335,35 +332,38 @@ fun AppActionButton(
     enabled: Boolean = true,
     primary: Boolean = true
 ) {
+    val interactionSource = remember { MutableInteractionSource() }
     Button(
-        onClick = onClick,
-        enabled = enabled,
-        modifier = modifier
+        onClick           = onClick,
+        enabled           = enabled,
+        interactionSource = interactionSource,
+        modifier          = modifier
             .fillMaxWidth()
-            .height(AppDimens.ButtonHeight),
-        shape = AppShapes.Button,
+            .height(AppDimens.ButtonHeight)
+            .iosSpringScale(interactionSource, 0.96f),
+        shape  = AppShapes.Button,
         colors = if (primary) {
-            ButtonDefaults.buttonColors(
-                contentColor = appTextColor()
-            )
+            ButtonDefaults.buttonColors(contentColor = Color.White)
         } else {
             ButtonDefaults.buttonColors(
-                containerColor = MaterialTheme.colorScheme.secondaryContainer,
-                contentColor = appTextColor(),
+                containerColor         = MaterialTheme.colorScheme.secondaryContainer,
+                contentColor           = appTextColor(),
                 disabledContainerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f),
-                disabledContentColor = appTextColor().copy(alpha = 0.5f)
+                disabledContentColor   = appTextColor().copy(alpha = 0.4f)
             )
-        }
+        },
+        elevation = ButtonDefaults.buttonElevation(defaultElevation = 0.dp)
     ) {
         Text(
-            text = text,
-            style = MaterialTheme.typography.titleLarge,
+            text       = text,
+            style      = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.SemiBold,
-            color = appTextColor()
+            color      = if (enabled) Color.White else appTextColor().copy(alpha = 0.4f)
         )
     }
 }
 
+// ── Score ring ────────────────────────────────────────────────────────────────
 @Composable
 fun ScoreRing(
     score: Int,
@@ -372,29 +372,29 @@ fun ScoreRing(
     size: Dp = 168.dp
 ) {
     val progress by animateFloatAsState(
-        targetValue = if (total == 0) 0f else score.toFloat() / total.coerceAtLeast(1),
-        animationSpec = tween(durationMillis = 900),
+        targetValue   = if (total == 0) 0f else score.toFloat() / total.coerceAtLeast(1),
+        animationSpec = spring(
+            dampingRatio = Spring.DampingRatioMediumBouncy,
+            stiffness    = Spring.StiffnessLow
+        ),
         label = "scoreRing"
     )
-    val scheme = MaterialTheme.colorScheme
-    val trackColor = scheme.surfaceVariant.copy(alpha = 0.65f)
+    val scheme     = MaterialTheme.colorScheme
+    val trackColor = scheme.surfaceVariant.copy(alpha = 0.60f)
 
-    Box(
-        modifier = modifier.size(size),
-        contentAlignment = Alignment.Center
-    ) {
+    Box(modifier = modifier.size(size), contentAlignment = Alignment.Center) {
         Canvas(modifier = Modifier.fillMaxSize()) {
-            val stroke = 14.dp.toPx()
+            val stroke   = 14.dp.toPx()
             val diameter = this.size.minDimension - stroke
-            val topLeft = Offset(stroke / 2f, stroke / 2f)
+            val topLeft  = Offset(stroke / 2f, stroke / 2f)
             drawArc(
-                color = trackColor,
+                color      = trackColor,
                 startAngle = -90f,
                 sweepAngle = 360f,
-                useCenter = false,
-                topLeft = topLeft,
-                size = androidx.compose.ui.geometry.Size(diameter, diameter),
-                style = Stroke(width = stroke, cap = StrokeCap.Round)
+                useCenter  = false,
+                topLeft    = topLeft,
+                size       = androidx.compose.ui.geometry.Size(diameter, diameter),
+                style      = Stroke(width = stroke, cap = StrokeCap.Round)
             )
             drawArc(
                 brush = Brush.sweepGradient(
@@ -403,28 +403,29 @@ fun ScoreRing(
                 ),
                 startAngle = -90f,
                 sweepAngle = 360f * progress,
-                useCenter = false,
-                topLeft = topLeft,
-                size = androidx.compose.ui.geometry.Size(diameter, diameter),
-                style = Stroke(width = stroke, cap = StrokeCap.Round)
+                useCenter  = false,
+                topLeft    = topLeft,
+                size       = androidx.compose.ui.geometry.Size(diameter, diameter),
+                style      = Stroke(width = stroke, cap = StrokeCap.Round)
             )
         }
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
-                text = score.toString(),
-                style = MaterialTheme.typography.displaySmall,
+                text       = score.toString(),
+                style      = MaterialTheme.typography.displaySmall,
                 fontWeight = FontWeight.Bold,
-                color = scheme.onSurface
+                color      = scheme.onSurface
             )
             Text(
-                text = "/ $total",
+                text  = "/ $total",
                 style = MaterialTheme.typography.titleMedium,
-                color = scheme.onSurface
+                color = scheme.onSurface.copy(alpha = 0.55f)
             )
         }
     }
 }
 
+// ── Option badge (A/B/C/D) ────────────────────────────────────────────────────
 @Composable
 fun OptionBadge(
     label: String,
@@ -434,17 +435,14 @@ fun OptionBadge(
     size: Dp = 44.dp
 ) {
     Box(
-        modifier = modifier
-            .size(size)
-            .clip(AppShapes.Badge)
-            .background(background),
-        contentAlignment = Alignment.Center
+        modifier          = modifier.size(size).clip(AppShapes.Badge).background(background),
+        contentAlignment  = Alignment.Center
     ) {
         Text(
-            text = label,
-            style = MaterialTheme.typography.titleMedium,
+            text       = label,
+            style      = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
-            color = content
+            color      = content
         )
     }
 }

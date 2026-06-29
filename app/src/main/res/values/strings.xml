@@ -67,6 +67,8 @@
 
     <string name="settings_sound_title">Звук</string>
     <string name="settings_sound_subtitle">Звуковые эффекты в квизе</string>
+    <string name="settings_haptic_title">Вибрация</string>
+    <string name="settings_haptic_subtitle">Тактильный отклик при ответах и покупках</string>
     <string name="settings_theme_title">Тема</string>
     <string name="settings_theme_subtitle">Внешний вид приложения</string>
     <string name="theme_system">Системная</string>
@@ -148,6 +150,7 @@
     <string name="em_dash">—</string>
 
     <string name="shop_title">Магазин</string>
+    <string name="shop_insufficient_gems">Недостаточно 💎 гемов</string>
     <string name="shop_balance">Ваши монеты</string>
     <string name="shop_avatars">Аватары</string>
     <string name="shop_premium_avatars">Премиум-аватары (за 💎)</string>

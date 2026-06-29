@@ -67,6 +67,8 @@
 
     <string name="settings_sound_title">Sound</string>
     <string name="settings_sound_subtitle">Sound effects in the quiz</string>
+    <string name="settings_haptic_title">Haptics</string>
+    <string name="settings_haptic_subtitle">Vibration feedback on answers and purchases</string>
     <string name="settings_theme_title">Theme</string>
     <string name="settings_theme_subtitle">App appearance</string>
     <string name="theme_system">System</string>
@@ -148,6 +150,7 @@
     <string name="em_dash">—</string>
 
     <string name="shop_title">Shop</string>
+    <string name="shop_insufficient_gems">Not enough 💎 gems</string>
     <string name="shop_balance">Your coins</string>
     <string name="shop_avatars">Avatars</string>
     <string name="shop_premium_avatars">Premium avatars (💎)</string>
