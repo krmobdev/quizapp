@@ -146,24 +146,17 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun selectCategory(category: Category) {
-        soundManager.play(SoundType.CLICK)
         navigationState.update { it.copy(selectedCategory = category) }
     }
 
     fun clearSelection() {
-        soundManager.play(SoundType.CLICK)
         navigationState.update {
             it.copy(selectedCategory = null, selectedDifficulty = DifficultyFilter.ANY)
         }
     }
 
     fun selectDifficulty(filter: DifficultyFilter) {
-        soundManager.play(SoundType.CLICK)
         navigationState.update { it.copy(selectedDifficulty = filter) }
-    }
-
-    fun playClick() {
-        soundManager.play(SoundType.CLICK)
     }
 
     override fun onCleared() {

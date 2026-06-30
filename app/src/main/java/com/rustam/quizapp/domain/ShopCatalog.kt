@@ -38,7 +38,8 @@ data class GemBundle(
     val priceGems: Int,
     val coins: Int = 0,
     val xp: Int = 0,
-    val items: List<Pair<String, Int>> = emptyList()
+    val items: List<Pair<String, Int>> = emptyList(),
+    @param:StringRes val descRes: Int? = null
 )
 
 /**
@@ -50,7 +51,9 @@ data class BoosterItem(
     val emoji: String,
     @param:StringRes val labelRes: Int,
     val priceCoins: Int,
-    val rewardPoints: Int
+    val rewardPoints: Int,
+    val rewardCoins: Int = 0,
+    val isCoinPouch: Boolean = false
 )
 
 /**
@@ -207,20 +210,26 @@ object ShopCatalog {
      * both. Item ids reference existing power-ups / boosts / boosters.
      */
     val gemBundles: List<GemBundle> = listOf(
-        GemBundle("gem_exchange_s", "🪙", R.string.gem_exchange_small, priceGems = 10, coins = 1200),
-        GemBundle("gem_exchange_m", "💰", R.string.gem_exchange_medium, priceGems = 25, coins = 3300),
-        GemBundle("gem_exchange_l", "🏦", R.string.gem_exchange_large, priceGems = 60, coins = 8500),
+        GemBundle("gem_exchange_s", "🪙", R.string.gem_exchange_small, priceGems = 10,
+            items = listOf("coin_pouch_s" to 1), descRes = R.string.gem_exchange_small_desc),
+        GemBundle("gem_exchange_m", "💰", R.string.gem_exchange_medium, priceGems = 25,
+            items = listOf("coin_pouch_m" to 1), descRes = R.string.gem_exchange_medium_desc),
+        GemBundle("gem_exchange_l", "🏦", R.string.gem_exchange_large, priceGems = 60,
+            items = listOf("coin_pouch_l" to 1), descRes = R.string.gem_exchange_large_desc),
         GemBundle(
             "gem_bundle_power", "🎒", R.string.gem_bundle_power, priceGems = 30,
-            items = listOf("pu_fifty" to 4, "pu_time" to 4, "pu_skip" to 4)
+            items = listOf("pu_fifty" to 4, "pu_time" to 4, "pu_skip" to 4),
+            descRes = R.string.gem_bundle_power_desc
         ),
         GemBundle(
             "gem_bundle_boost", "⚡", R.string.gem_bundle_boost, priceGems = 35,
-            items = listOf("boost_coins_long" to 2, "boost_xp_long" to 2)
+            items = listOf("boost_coins_long" to 2, "boost_xp_long" to 2),
+            descRes = R.string.gem_bundle_boost_desc
         ),
         GemBundle(
             "gem_bundle_booster", "📦", R.string.gem_bundle_booster, priceGems = 40,
-            items = listOf("booster_xp_colossal" to 2)
+            items = listOf("booster_xp_colossal" to 2),
+            descRes = R.string.gem_bundle_booster_desc
         )
     )
 
@@ -231,7 +240,11 @@ object ShopCatalog {
         BoosterItem("booster_xp_medium", "📗", R.string.shop_booster_medium, c(1400), c(2200)),
         BoosterItem("booster_xp_large", "📕", R.string.shop_booster_large, c(2600), c(4500)),
         BoosterItem("booster_xp_huge", "📚", R.string.shop_booster_huge, c(4800), c(9500)),
-        BoosterItem("booster_xp_colossal", "📦", R.string.shop_booster_colossal, c(8500), c(18000))
+        BoosterItem("booster_xp_colossal", "📦", R.string.shop_booster_colossal, c(8500), c(18000)),
+        // Coin pouches — obtained via gem bundles, activated from backpack to receive coins.
+        BoosterItem("coin_pouch_s", "🪙", R.string.gem_exchange_small,  priceCoins = 0, rewardPoints = 0, rewardCoins = 1200,  isCoinPouch = true),
+        BoosterItem("coin_pouch_m", "💰", R.string.gem_exchange_medium, priceCoins = 0, rewardPoints = 0, rewardCoins = 3300,  isCoinPouch = true),
+        BoosterItem("coin_pouch_l", "🏦", R.string.gem_exchange_large,  priceCoins = 0, rewardPoints = 0, rewardCoins = 8500,  isCoinPouch = true)
     )
 
     fun booster(id: String): BoosterItem? = boosters.find { it.id == id }

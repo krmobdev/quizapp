@@ -118,6 +118,7 @@ fun SettingChoiceCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback  = LocalAppFeedback.current
     val colors    = rememberAppThemeColors()
     val textColor = appTextColor()
     val containerColor by animateColorAsState(
@@ -134,7 +135,7 @@ fun SettingChoiceCard(
     )
 
     Surface(
-        onClick  = onClick,
+        onClick  = { feedback?.click(); onClick() },
         modifier = modifier
             .fillMaxWidth()
             .height(AppDimens.SettingChoiceHeight)
@@ -298,9 +299,10 @@ fun GlassCard(
     val shape        = AppShapes.Card
 
     if (onClick != null) {
+        val feedback = LocalAppFeedback.current
         val interactionSource = remember { MutableInteractionSource() }
         Surface(
-            onClick           = onClick,
+            onClick           = { feedback?.click(); onClick() },
             interactionSource = interactionSource,
             shape             = shape,
             color             = colors.glassCard,
@@ -332,9 +334,10 @@ fun AppActionButton(
     enabled: Boolean = true,
     primary: Boolean = true
 ) {
+    val feedback = LocalAppFeedback.current
     val interactionSource = remember { MutableInteractionSource() }
     Button(
-        onClick           = onClick,
+        onClick           = { feedback?.click(); onClick() },
         enabled           = enabled,
         interactionSource = interactionSource,
         modifier          = modifier

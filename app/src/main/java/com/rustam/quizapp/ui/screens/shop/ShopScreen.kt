@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -58,6 +59,7 @@ import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppShapes
 import com.rustam.quizapp.ui.components.AppThemeColors
 import com.rustam.quizapp.ui.components.GlassCard
+import com.rustam.quizapp.ui.components.LocalAppFeedback
 import com.rustam.quizapp.ui.components.ScreenTitle
 import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
@@ -68,6 +70,7 @@ fun ShopScreen(
     modifier: Modifier = Modifier,
     viewModel: ShopViewModel = viewModel()
 ) {
+    val feedback = LocalAppFeedback.current
     val state by viewModel.uiState.collectAsState()
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
@@ -191,6 +194,7 @@ fun ShopScreen(
             },
             confirmButton = {
                 TextButton(onClick = {
+                    feedback?.click()
                     viewModel.onBoosterActivate(booster)
                     boosterToConfirm = null
                 }) {
@@ -198,7 +202,7 @@ fun ShopScreen(
                 }
             },
             dismissButton = {
-                TextButton(onClick = { boosterToConfirm = null }) {
+                TextButton(onClick = { feedback?.click(); boosterToConfirm = null }) {
                     Text(stringResource(R.string.cancel))
                 }
             }
@@ -277,6 +281,7 @@ private fun DailyDealCard(
     onBuy: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback = LocalAppFeedback.current
     GlassCard(modifier = modifier, colors = colors) {
         Column(
             modifier = Modifier
@@ -337,7 +342,7 @@ private fun DailyDealCard(
                     )
                 } else {
                     Button(
-                        onClick = onBuy,
+                        onClick = { feedback?.click(); onBuy() },
                         enabled = coins >= deal.dealPrice,
                         contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
                         modifier = Modifier.height(30.dp),
@@ -362,6 +367,7 @@ private fun LootBoxCard(
     textColor: Color,
     onOpen: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = coins >= LootBox.PRICE
     GlassCard(colors = colors) {
         Row(
@@ -386,7 +392,7 @@ private fun LootBoxCard(
                 )
             }
             Button(
-                onClick = onOpen,
+                onClick = { feedback?.click(); onOpen() },
                 enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
@@ -410,6 +416,7 @@ private fun MythicChestCard(
     textColor: Color,
     onOpen: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = gems >= MythicBox.PRICE_GEMS
     GlassCard(colors = colors) {
         Row(
@@ -433,19 +440,14 @@ private fun MythicChestCard(
                     color = textColor.copy(alpha = 0.75f)
                 )
             }
-            // Always enabled — ViewModel emits snackbar on insufficient gems.
             Button(
-                onClick = onOpen,
-                enabled = true,
+                onClick = { feedback?.click(); onOpen() },
+                enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = if (affordable)
-                        MaterialTheme.colorScheme.primary
-                    else
-                        MaterialTheme.colorScheme.surfaceVariant,
-                    contentColor = if (affordable)
-                        MaterialTheme.colorScheme.onPrimary
-                    else
-                        textColor.copy(alpha = 0.55f)
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
                 shape = RoundedCornerShape(10.dp),
@@ -462,10 +464,13 @@ private fun MythicChestCard(
 private fun GemBundleCard(
     bundle: GemBundle,
     gems: Int,
+    ownedCount: Int,
+    activeQuizzes: Int,
     colors: AppThemeColors,
     textColor: Color,
     onBuy: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = gems >= bundle.priceGems
     GlassCard(colors = colors) {
         Row(
@@ -476,26 +481,45 @@ private fun GemBundleCard(
             horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text(text = bundle.emoji, fontSize = 26.sp)
-            Text(
-                text = stringResource(bundle.labelRes),
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.SemiBold,
-                color = textColor,
-                modifier = Modifier.weight(1f)
-            )
-            // Always enabled — ViewModel emits snackbar on insufficient gems.
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = stringResource(bundle.labelRes),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = textColor
+                )
+                if (bundle.descRes != null) {
+                    Text(
+                        text = stringResource(bundle.descRes),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = textColor.copy(alpha = 0.7f)
+                    )
+                }
+                if (ownedCount > 0) {
+                    Text(
+                        text = stringResource(R.string.inventory_count, ownedCount),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+                if (activeQuizzes > 0) {
+                    Text(
+                        text = stringResource(R.string.boost_inventory_active, activeQuizzes),
+                        style = MaterialTheme.typography.bodySmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+            }
             Button(
-                onClick = onBuy,
-                enabled = true,
+                onClick = { feedback?.click(); onBuy() },
+                enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = if (affordable)
-                        MaterialTheme.colorScheme.primary
-                    else
-                        MaterialTheme.colorScheme.surfaceVariant,
-                    contentColor = if (affordable)
-                        MaterialTheme.colorScheme.onPrimary
-                    else
-                        textColor.copy(alpha = 0.55f)
+                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContainerColor = textColor.copy(alpha = 0.08f),
+                    disabledContentColor = textColor.copy(alpha = 0.3f)
                 ),
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp),
                 shape = RoundedCornerShape(10.dp),
@@ -551,9 +575,20 @@ private fun androidx.compose.foundation.lazy.LazyListScope.consumablesContent(
         SectionHeader(text = stringResource(R.string.shop_gem_exchange_section), textColor = textColor)
     }
     items(ShopCatalog.gemBundles, key = { it.id }) { bundle ->
+        val ownedCount = bundle.items.sumOf { (itemId, _) ->
+            state.powerUps.find { it.item.id == itemId }?.owned
+                ?: state.boosters.find { it.item.id == itemId }?.owned
+                ?: state.boosts.find { it.item.id == itemId }?.owned
+                ?: 0
+        }
+        val activeQuizzes = bundle.items.sumOf { (itemId, _) ->
+            state.boosts.find { it.item.id == itemId }?.activeQuizzesLeft ?: 0
+        }
         GemBundleCard(
             bundle = bundle,
             gems = state.gems,
+            ownedCount = ownedCount,
+            activeQuizzes = activeQuizzes,
             colors = colors,
             textColor = textColor,
             onBuy = { viewModel.onGemBundleBuy(bundle.id) }
@@ -562,7 +597,7 @@ private fun androidx.compose.foundation.lazy.LazyListScope.consumablesContent(
     item {
         SectionHeader(text = stringResource(R.string.shop_boosters), textColor = textColor)
     }
-    items(state.boosters, key = { it.item.id }) { booster ->
+    items(state.boosters.filter { !it.item.isCoinPouch }, key = { it.item.id }) { booster ->
         BoosterCard(
             booster = booster,
             coins = state.coins,
@@ -842,6 +877,7 @@ private fun BoostStoreCard(
     textColor: Color,
     onBuy: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = coins >= boost.item.priceCoins
     GlassCard(colors = colors) {
         Row(
@@ -882,7 +918,7 @@ private fun BoostStoreCard(
                 }
             }
             Button(
-                onClick = onBuy,
+                onClick = { feedback?.click(); onBuy() },
                 enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
@@ -906,6 +942,7 @@ private fun BoostInventoryCard(
     textColor: Color,
     onActivate: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     GlassCard(colors = colors) {
         Row(
             modifier = Modifier
@@ -946,7 +983,7 @@ private fun BoostInventoryCard(
                 }
             }
             Button(
-                onClick = onActivate,
+                onClick = { feedback?.click(); onActivate() },
                 enabled = boost.owned > 0,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
@@ -978,27 +1015,53 @@ private fun BalanceCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 20.dp, vertical = 14.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(
-                text = stringResource(R.string.shop_balance),
-                style = MaterialTheme.typography.bodyMedium,
-                color = textColor
-            )
-            Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+            Column(
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                Text("💎", fontSize = 22.sp)
                 Text(
-                    text = "💎 $gems",
-                    style = MaterialTheme.typography.titleLarge,
-                    fontWeight = FontWeight.Bold,
-                    color = textColor
+                    text = "%,d".format(gems),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.ExtraBold,
+                    color = textColor,
+                    textAlign = TextAlign.Center
                 )
                 Text(
-                    text = "🪙 $coins",
-                    style = MaterialTheme.typography.titleLarge,
-                    fontWeight = FontWeight.Bold,
-                    color = textColor
+                    text = stringResource(R.string.shop_gems_label),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = textColor.copy(alpha = 0.55f),
+                    textAlign = TextAlign.Center
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .width(1.dp)
+                    .height(52.dp)
+                    .background(textColor.copy(alpha = 0.12f))
+            )
+            Column(
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                Text("🪙", fontSize = 22.sp)
+                Text(
+                    text = "%,d".format(coins),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.ExtraBold,
+                    color = textColor,
+                    textAlign = TextAlign.Center
+                )
+                Text(
+                    text = stringResource(R.string.shop_coins_label),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = textColor.copy(alpha = 0.55f),
+                    textAlign = TextAlign.Center
                 )
             }
         }
@@ -1013,6 +1076,7 @@ private fun BoosterCard(
     textColor: Color,
     onBuy: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = coins >= booster.item.priceCoins
     GlassCard(colors = colors) {
         Row(
@@ -1045,7 +1109,7 @@ private fun BoosterCard(
                 }
             }
             Button(
-                onClick = onBuy,
+                onClick = { feedback?.click(); onBuy() },
                 enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
@@ -1074,6 +1138,7 @@ private fun PowerUpCard(
     textColor: Color,
     onBuy: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = coins >= powerUp.item.priceCoins
     GlassCard(colors = colors) {
         Row(
@@ -1114,7 +1179,7 @@ private fun PowerUpCard(
                 }
             }
             Button(
-                onClick = onBuy,
+                onClick = { feedback?.click(); onBuy() },
                 enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
@@ -1178,6 +1243,7 @@ private fun StreakFreezeCard(
     textColor: Color,
     onBuy: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     val affordable = coins >= price
     GlassCard(colors = colors) {
         Row(
@@ -1210,7 +1276,7 @@ private fun StreakFreezeCard(
                 }
             }
             Button(
-                onClick = onBuy,
+                onClick = { feedback?.click(); onBuy() },
                 enabled = affordable,
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
@@ -1307,6 +1373,7 @@ private fun InventoryItemCard(
     textColor: Color,
     onActivate: () -> Unit
 ) {
+    val feedback = LocalAppFeedback.current
     GlassCard(colors = colors) {
         Row(
             modifier = Modifier
@@ -1323,8 +1390,13 @@ private fun InventoryItemCard(
                     fontWeight = FontWeight.SemiBold,
                     color = textColor
                 )
+                val rewardText = if (booster.item.rewardCoins > 0) {
+                    "+${booster.item.rewardCoins} 🪙"
+                } else {
+                    stringResource(R.string.inventory_booster_reward, booster.item.rewardPoints)
+                }
                 Text(
-                    text = stringResource(R.string.inventory_booster_reward, booster.item.rewardPoints),
+                    text = rewardText,
                     style = MaterialTheme.typography.bodySmall,
                     color = textColor.copy(alpha = 0.75f)
                 )
@@ -1336,7 +1408,7 @@ private fun InventoryItemCard(
                 )
             }
             Button(
-                onClick = onActivate,
+                onClick = { feedback?.click(); onActivate() },
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.85f),
                     contentColor = MaterialTheme.colorScheme.onPrimary
@@ -1374,8 +1446,9 @@ private fun SubTabButton(
         textColor.copy(alpha = 0.1f)
     }
 
+    val feedback = LocalAppFeedback.current
     Surface(
-        onClick = onClick,
+        onClick = { feedback?.click(); onClick() },
         color = backgroundColor,
         shape = RoundedCornerShape(12.dp),
         border = BorderStroke(1.dp, borderColor),

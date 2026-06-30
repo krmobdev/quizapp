@@ -62,6 +62,7 @@ import com.rustam.quizapp.R
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.domain.QuizEventType
 import com.rustam.quizapp.ui.components.AppBackground
+import com.rustam.quizapp.ui.components.LocalAppFeedback
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.screens.home.HomeScreen
 import com.rustam.quizapp.ui.screens.settings.SettingsScreen
@@ -221,7 +222,8 @@ private fun IosTabItem(
         label = "pillAlpha"
     )
 
-    // Layout budget: vertical padding 4+4 = 8dp, pill 26dp, gap 2dp, text ~12dp в†’ total ~48dp
+    val feedback = LocalAppFeedback.current
+    // Layout budget: vertical padding 4+4 = 8dp, pill 26dp, gap 2dp, text ~12dp → total ~48dp
     // Fits comfortably inside the 56dp Row.
     Column(
         modifier = Modifier
@@ -229,7 +231,7 @@ private fun IosTabItem(
             .clickable(
                 interactionSource = remember { MutableInteractionSource() },
                 indication        = null,
-                onClick           = onClick
+                onClick           = { feedback?.click(); onClick() }
             )
             .padding(horizontal = 12.dp, vertical = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally,

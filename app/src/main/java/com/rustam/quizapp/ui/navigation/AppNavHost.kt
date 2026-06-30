@@ -15,6 +15,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.rustam.quizapp.data.Difficulty
 import com.rustam.quizapp.domain.QuizEventType
+import com.rustam.quizapp.ui.components.ProvideAppFeedback
 import com.rustam.quizapp.ui.screens.millionaire.MillionaireScreen
 import com.rustam.quizapp.ui.screens.quiz.QuizScreen
 import com.rustam.quizapp.ui.screens.result.ResultScreen
@@ -51,6 +52,7 @@ object Routes {
 fun AppNavHost(
     navController: NavHostController = rememberNavController()
 ) {
+    ProvideAppFeedback {
     NavHost(navController = navController, startDestination = Routes.GRAPH) {
         navigation(route = Routes.GRAPH, startDestination = Routes.MAIN) {
 
@@ -118,6 +120,7 @@ fun AppNavHost(
             }
         }
     }
+    } // ProvideAppFeedback
 }
 
 private fun NavController.popBackToHome() {

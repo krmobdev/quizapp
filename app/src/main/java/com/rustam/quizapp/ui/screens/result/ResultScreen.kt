@@ -447,7 +447,7 @@ private fun BreakdownRow(
 ) {
     Row(
         modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceBetween,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Text(
@@ -460,7 +460,9 @@ private fun BreakdownRow(
             text = value,
             style = MaterialTheme.typography.bodyMedium,
             fontWeight = if (emphasised) FontWeight.Bold else FontWeight.SemiBold,
-            color = textColor
+            color = textColor,
+            textAlign = TextAlign.End,
+            modifier = Modifier.weight(1f)
         )
     }
 }

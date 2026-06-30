@@ -81,6 +81,7 @@ import com.rustam.quizapp.ui.components.AppActionButton
 import com.rustam.quizapp.ui.components.AppDimens
 import com.rustam.quizapp.ui.components.AppShapes
 import com.rustam.quizapp.ui.components.GlassCard
+import com.rustam.quizapp.ui.components.LocalAppFeedback
 import com.rustam.quizapp.ui.components.rememberAppThemeColors
 import com.rustam.quizapp.ui.components.appTextColor
 import com.rustam.quizapp.ui.components.rememberDailyQuote
@@ -119,10 +120,7 @@ fun HomeScreen(
         onClaimQuest = viewModel::claimDailyQuest,
         onOpenShop = onOpenShop,
         onOpenMillionaire = onOpenMillionaire,
-        onStartQuiz = { categoryId, difficulty, event, timeLimit, questionCount, adaptive ->
-            viewModel.playClick()
-            onStartQuiz(categoryId, difficulty, event, timeLimit, questionCount, adaptive)
-        },
+        onStartQuiz = onStartQuiz,
         modifier = modifier
     )
 }
@@ -399,6 +397,7 @@ private fun DailyRewardCard(
     onClaim: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback = LocalAppFeedback.current
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
     GlassCard(modifier = modifier, colors = colors) {
@@ -432,7 +431,7 @@ private fun DailyRewardCard(
                 }
             }
             Button(
-                onClick = onClaim,
+                onClick = { feedback?.click(); onClaim() },
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.9f),
                     contentColor = MaterialTheme.colorScheme.onPrimary
@@ -455,6 +454,7 @@ private fun DailyQuestCard(
     onClaim: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback = LocalAppFeedback.current
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
     val challenge = quest.challenge
@@ -503,12 +503,16 @@ private fun DailyQuestCard(
                         style = MaterialTheme.typography.bodySmall,
                         color = textColor.copy(alpha = 0.75f)
                     )
-                    Column(horizontalAlignment = Alignment.End) {
+                    Column(
+                        horizontalAlignment = Alignment.End,
+                        modifier = Modifier.padding(start = 8.dp)
+                    ) {
                         Text(
                             text = stringResource(R.string.quest_reward, scaledCoins, scaledXp),
                             style = MaterialTheme.typography.bodySmall,
                             fontWeight = FontWeight.SemiBold,
-                            color = MaterialTheme.colorScheme.primary
+                            color = MaterialTheme.colorScheme.primary,
+                            textAlign = TextAlign.End
                         )
                         if (isScaled) {
                             Text(
@@ -519,24 +523,17 @@ private fun DailyQuestCard(
                                 ),
                                 style = MaterialTheme.typography.labelSmall,
                                 color = MaterialTheme.colorScheme.tertiary,
-                                fontSize = 10.sp
+                                fontSize = 10.sp,
+                                textAlign = TextAlign.End
                             )
                         }
                     }
                 }
-            }
-            when {
-                quest.claimed -> {
-                    Icon(
-                        imageVector = Icons.Rounded.CheckCircle,
-                        contentDescription = stringResource(R.string.quest_claimed),
-                        tint = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.size(26.dp)
-                    )
-                }
-                quest.canClaim -> {
+                if (quest.canClaim) {
+                    Spacer(Modifier.height(6.dp))
                     Button(
-                        onClick = onClaim,
+                        onClick = { feedback?.click(); onClaim() },
+                        modifier = Modifier.fillMaxWidth(),
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.9f),
                             contentColor = MaterialTheme.colorScheme.onPrimary
@@ -549,6 +546,14 @@ private fun DailyQuestCard(
                         )
                     }
                 }
+            }
+            if (quest.claimed) {
+                Icon(
+                    imageVector = Icons.Rounded.CheckCircle,
+                    contentDescription = stringResource(R.string.quest_claimed),
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(26.dp)
+                )
             }
         }
     }
@@ -564,6 +569,7 @@ private fun HomeHeroHeader(
     onOpenShop: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback = LocalAppFeedback.current
     val quote = rememberDailyQuote()
     val topInset = WindowInsets.statusBars.asPaddingValues().calculateTopPadding()
     var showSeasonPass by remember { mutableStateOf(false) }
@@ -614,7 +620,7 @@ private fun HomeHeroHeader(
             horizontalArrangement = Arrangement.spacedBy(10.dp)
         ) {
             Button(
-                onClick = { showSeasonPass = true },
+                onClick = { feedback?.click(); showSeasonPass = true },
                 modifier = Modifier.weight(1f),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary,
@@ -641,7 +647,7 @@ private fun HomeHeroHeader(
                 }
             }
             Button(
-                onClick = onOpenShop,
+                onClick = { feedback?.click(); onOpenShop() },
                 modifier = Modifier.weight(1f),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.tertiary,
@@ -759,6 +765,7 @@ private fun EventCard(
     onStart: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback = LocalAppFeedback.current
     val colors = rememberAppThemeColors()
     val textColor = appTextColor()
     val event = progress.event
@@ -813,7 +820,7 @@ private fun EventCard(
             }
             if (progress.available) {
                 Button(
-                    onClick = onStart,
+                    onClick = { feedback?.click(); onStart() },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(44.dp),
@@ -1028,6 +1035,7 @@ private fun DifficultyOptionCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val feedback = LocalAppFeedback.current
     val colors = rememberAppThemeColors()
     val containerColor by animateColorAsState(
         targetValue = if (selected) {
@@ -1054,7 +1062,7 @@ private fun DifficultyOptionCard(
     )
 
     Card(
-        onClick = onClick,
+        onClick = { feedback?.click(); onClick() },
         modifier = modifier
             .fillMaxWidth()
             .scale(scale),

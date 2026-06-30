@@ -152,6 +152,8 @@
     <string name="shop_title">Shop</string>
     <string name="shop_insufficient_gems">Not enough 💎 gems</string>
     <string name="shop_balance">Your coins</string>
+    <string name="shop_gems_label">Gems</string>
+    <string name="shop_coins_label">Coins</string>
     <string name="shop_avatars">Avatars</string>
     <string name="shop_premium_avatars">Premium avatars (💎)</string>
     <string name="shop_themes">Colour themes</string>
@@ -176,6 +178,7 @@
     <string name="inventory_count">Quantity: %1$d</string>
     <string name="inventory_booster_reward">+%1$d XP</string>
     <string name="inventory_activated_snackbar">🎓 +%1$d XP gained!</string>
+    <string name="coins_received_snackbar">🪙 +%1$d coins received!</string>
     <string name="inventory_confirm_title">Activate booster?</string>
     <string name="inventory_confirm_text">"%1$s" grants +%2$d XP. Use it now?</string>
     <string name="inventory_streak_freeze_auto">Applies automatically when you miss a day</string>
@@ -225,11 +228,17 @@
     <string name="shop_mythic_desc">Premium gem chest: rare cosmetics or a large coin/XP payout</string>
     <string name="shop_gem_exchange_section">Gem exchange &amp; bundles</string>
     <string name="gem_exchange_small">Handful of coins</string>
+    <string name="gem_exchange_small_desc">1,200 🪙 — goes to Backpack, activate manually</string>
     <string name="gem_exchange_medium">Bag of coins</string>
+    <string name="gem_exchange_medium_desc">3,300 🪙 — goes to Backpack, activate manually</string>
     <string name="gem_exchange_large">Chest of coins</string>
+    <string name="gem_exchange_large_desc">8,500 🪙 — goes to Backpack, activate manually</string>
     <string name="gem_bundle_power">Power-up pack</string>
+    <string name="gem_bundle_power_desc">4× 50/50 ✂️ · 4× +5 sec ⏱️ · 4× Skip ⏭️ → Backpack</string>
     <string name="gem_bundle_boost">Boost pack</string>
+    <string name="gem_bundle_boost_desc">2× Coins ×2 · 2× XP ×2 → Backpack</string>
     <string name="gem_bundle_booster">XP booster pack</string>
+    <string name="gem_bundle_booster_desc">2× Colossal XP booster → Backpack</string>
     <string name="rewards_gems_earned">+%1$d 💎</string>
     <string name="daily_reward_gems">+%1$d 💎 bonus!</string>
     <string name="theme_accent_aurora">Aurora</string>

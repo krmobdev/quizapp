@@ -220,9 +220,7 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
                 )
                 return@launch
             }
-            if (playerRepository.purchaseGemBundle(bundleId)) {
-                soundManager.play(SoundType.CLICK)
-            }
+            playerRepository.purchaseGemBundle(bundleId)
         }
     }
 
@@ -233,18 +231,23 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    /** Consumes one booster from the backpack, granting its free XP. */
+    /** Consumes one booster (or coin pouch) from the backpack, granting its reward. */
     fun onBoosterActivate(booster: BoosterUi) {
         if (booster.owned <= 0) return
         viewModelScope.launch {
             if (playerRepository.activateBooster(booster.item.id)) {
-                soundManager.play(SoundType.CLICK)
-                _snackbar.tryEmit(
+                val msg = if (booster.item.rewardCoins > 0) {
+                    getApplication<Application>().getString(
+                        R.string.coins_received_snackbar,
+                        booster.item.rewardCoins
+                    )
+                } else {
                     getApplication<Application>().getString(
                         R.string.inventory_activated_snackbar,
                         booster.item.rewardPoints
                     )
-                )
+                }
+                _snackbar.tryEmit(msg)
             }
         }
     }
@@ -268,7 +271,6 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
         if (boost.owned <= 0) return
         viewModelScope.launch {
             if (playerRepository.activateBoost(boost.item.id)) {
-                soundManager.play(SoundType.CLICK)
                 _snackbar.tryEmit(
                     getApplication<Application>().getString(
                         R.string.boost_activated_snackbar,
@@ -298,9 +300,7 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
     /** Buys one unit of a daily deal at its discounted price. */
     fun onDealBuy(dealId: String) {
         viewModelScope.launch {
-            if (playerRepository.purchaseDeal(dealId)) {
-                soundManager.play(SoundType.CLICK)
-            }
+            playerRepository.purchaseDeal(dealId)
         }
     }
 
@@ -309,7 +309,6 @@ class ShopViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             if (playerRepository.spendCoins(ShopCatalog.STREAK_FREEZE_PRICE)) {
                 streakRepository.addFreeze()
-                soundManager.play(SoundType.CLICK)
             }
         }
     }

@@ -152,6 +152,8 @@
     <string name="shop_title">Магазин</string>
     <string name="shop_insufficient_gems">Недостаточно 💎 гемов</string>
     <string name="shop_balance">Ваши монеты</string>
+    <string name="shop_gems_label">Гемы</string>
+    <string name="shop_coins_label">Монеты</string>
     <string name="shop_avatars">Аватары</string>
     <string name="shop_premium_avatars">Премиум-аватары (за 💎)</string>
     <string name="shop_themes">Цветовые темы</string>
@@ -176,6 +178,7 @@
     <string name="inventory_count">Количество: %1$d</string>
     <string name="inventory_booster_reward">+%1$d опыта</string>
     <string name="inventory_activated_snackbar">🎓 +%1$d опыта получено!</string>
+    <string name="coins_received_snackbar">🪙 +%1$d монет получено!</string>
     <string name="inventory_confirm_title">Активировать бустер?</string>
     <string name="inventory_confirm_text">«%1$s» даст +%2$d опыта. Использовать сейчас?</string>
     <string name="inventory_streak_freeze_auto">Сработает автоматически при пропуске дня</string>
@@ -225,11 +228,17 @@
     <string name="shop_mythic_desc">Премиум-сундук за гемы: редкая косметика либо крупные монеты/опыт</string>
     <string name="shop_gem_exchange_section">Обмен и наборы за гемы</string>
     <string name="gem_exchange_small">Горсть монет</string>
+    <string name="gem_exchange_small_desc">1 200 🪙 — в Рюкзак, активировать вручную</string>
     <string name="gem_exchange_medium">Мешок монет</string>
+    <string name="gem_exchange_medium_desc">3 300 🪙 — в Рюкзак, активировать вручную</string>
     <string name="gem_exchange_large">Сундук монет</string>
+    <string name="gem_exchange_large_desc">8 500 🪙 — в Рюкзак, активировать вручную</string>
     <string name="gem_bundle_power">Набор паверапов</string>
+    <string name="gem_bundle_power_desc">4× 50/50 ✂️ · 4× +5 сек ⏱️ · 4× Пропуск ⏭️ → Рюкзак</string>
     <string name="gem_bundle_boost">Набор усилений</string>
+    <string name="gem_bundle_boost_desc">2× Монеты ×2 · 2× Опыт ×2 → Рюкзак</string>
     <string name="gem_bundle_booster">Набор бустеров опыта</string>
+    <string name="gem_bundle_booster_desc">2× Колоссальный бустер опыта → Рюкзак</string>
     <string name="rewards_gems_earned">+%1$d 💎</string>
     <string name="daily_reward_gems">+%1$d 💎 бонус!</string>
     <string name="theme_accent_aurora">Аврора</string>

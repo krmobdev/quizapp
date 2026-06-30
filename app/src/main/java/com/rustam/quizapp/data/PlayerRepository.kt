@@ -201,8 +201,13 @@ class PlayerRepository(
             val count = dao.getInventoryCount(boosterId) ?: 0
             if (count > 0) {
                 dao.upsertInventory(InventoryEntity(boosterId, count - 1))
-                val player = dao.getPlayer() ?: PlayerEntity()
-                dao.upsertPlayer(player.withEarnedXp(booster.rewardPoints))
+                var player = dao.getPlayer() ?: PlayerEntity()
+                if (booster.rewardPoints > 0) player = player.withEarnedXp(booster.rewardPoints)
+                if (booster.rewardCoins > 0) player = player.copy(
+                    coins = player.coins + booster.rewardCoins,
+                    lifetimeCoins = player.lifetimeCoins + booster.rewardCoins
+                )
+                dao.upsertPlayer(player)
                 activated = true
             }
         }

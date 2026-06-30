@@ -17,17 +17,12 @@ enum class SoundType { CORRECT, INCORRECT, COMPLETE, CLICK }
  * Thin wrapper around [SoundPool] that preloads a fixed set of short effects and plays
  * them by [SoundType].
  *
- * When OGG files are absent from `res/raw/` the manager falls back to short tones generated
- * via [ToneGenerator] so the app is never completely silent before the audio assets are added.
- * Add `res/raw/correct.ogg`, `incorrect.ogg`, `complete.ogg`, `click.ogg` (Kenney CC0) to
- * replace the fallback tones with real sounds.
+ * Uses [AudioAttributes.USAGE_GAME] so sounds play through the media/game stream and are
+ * NOT silenced by "Priority only" Do-Not-Disturb mode. Volume follows the device media
+ * volume slider automatically.
  *
- * @param context      used only to load the samples; an application context is taken internally.
- * @param sounds       map of [SoundType] to a raw resource id (e.g. `R.raw.correct`). Typically
- *                     built with [SoundResources.load]. Entries are preloaded on construction.
- * @param soundEnabled stream of the "sound enabled" setting; when it emits `false`,
- *                     [play] becomes a no-op.
- * @param scope        coroutine scope used to observe [soundEnabled].
+ * When OGG files are absent from `res/raw/` the manager falls back to short tones generated
+ * via [ToneGenerator].
  */
 class SoundManager(
     context: Context,
@@ -36,11 +31,16 @@ class SoundManager(
     scope: CoroutineScope
 ) {
 
+    private val appContext = context.applicationContext
+    private val audioManager =
+        appContext.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
     private val soundPool: SoundPool = SoundPool.Builder()
         .setMaxStreams(MAX_STREAMS)
         .setAudioAttributes(
             AudioAttributes.Builder()
-                .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+                // USAGE_GAME routes to STREAM_MUSIC; not silenced by priority-only DND.
+                .setUsage(AudioAttributes.USAGE_GAME)
                 .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
                 .build()
         )
@@ -67,7 +67,6 @@ class SoundManager(
     private var enabled: Boolean = true
 
     init {
-        val appContext = context.applicationContext
         sampleIds = sounds.mapValues { (_, resId) ->
             soundPool.load(appContext, resId, DEFAULT_PRIORITY)
         }
@@ -77,18 +76,28 @@ class SoundManager(
     }
 
     /**
-     * Plays the effect for [type]. Uses the preloaded OGG sample when available; falls back
-     * to a short ToneGenerator tone otherwise. Does nothing when sound is disabled.
+     * Plays the effect for [type]. Volume is taken from the device's media stream in real time
+     * so the hardware volume buttons are respected. Does nothing when sound is disabled or
+     * device volume is zero.
      */
     fun play(type: SoundType) {
         if (!enabled) return
+        val vol = mediaVolume()
+        if (vol == 0f) return
         val sampleId = sampleIds[type]
         if (sampleId != null) {
-            soundPool.play(sampleId, VOLUME, VOLUME, DEFAULT_PRIORITY, NO_LOOP, NORMAL_RATE)
+            soundPool.play(sampleId, vol, vol, DEFAULT_PRIORITY, NO_LOOP, NORMAL_RATE)
         } else {
             val (tone, durationMs) = fallbackTones[type] ?: return
             toneGenerator?.startTone(tone, durationMs)
         }
+    }
+
+    /** Normalised [0, 1] current media stream volume. */
+    private fun mediaVolume(): Float {
+        val max = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
+        if (max <= 0) return 1f
+        return audioManager.getStreamVolume(AudioManager.STREAM_MUSIC).toFloat() / max.toFloat()
     }
 
     /** Releases the underlying [SoundPool] and [ToneGenerator]. Call from `onCleared`/`onDestroy`. */
@@ -100,7 +109,6 @@ class SoundManager(
     private companion object {
         const val MAX_STREAMS = 4
         const val DEFAULT_PRIORITY = 1
-        const val VOLUME = 1f
         const val NO_LOOP = 0
         const val NORMAL_RATE = 1f
         const val TONE_VOLUME_PERCENT = 80
